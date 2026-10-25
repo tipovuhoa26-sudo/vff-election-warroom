@@ -2489,6 +2489,20 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
       }
 
       /* 3. Main Container & Editorial Overview (Tab 01) */
+      .container, .ed-section, .ed-summary-grid, .ed-metric-block,
+      .ed-score-row, .ed-cand-side, .ed-flat-bar, .ed-metric-note,
+      .ed-chart-frame, .panel, .chart-box, .cand-card {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+      }
+      .grid-2, .grid-3, .grid-4, .three-layer-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+      }
+      code {
+        word-break: break-all;
+        overflow-wrap: anywhere;
+      }
       .container {
         padding: 12px 10px 40px;
       }
@@ -2501,6 +2515,13 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
         align-items: flex-start !important;
         gap: 8px;
         margin-bottom: 12px;
+        min-width: 0 !important;
+        max-width: 100% !important;
+      }
+      .ed-section-hdr > div {
+        min-width: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
       }
       .ed-headline {
         font-size: 17px;
@@ -2511,48 +2532,70 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
         line-height: 1.45;
       }
       .ed-summary-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: minmax(0, 1fr) !important;
         gap: 16px;
         padding: 12px;
       }
       .ed-metric-top {
         flex-direction: column;
-        align-items: flex-start !important;
-        gap: 6px;
+        align-items: stretch !important;
+        gap: 8px;
+      }
+      .ed-metric-sample {
+        white-space: normal !important;
+        line-height: 1.35;
       }
       .ed-mini-pills {
         width: 100%;
         display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap !important;
+        gap: 4px;
+        border: none !important;
+        background: transparent !important;
       }
       .ed-mini-pill {
-        flex: 1 0 auto;
+        flex: 1 1 auto;
         white-space: nowrap;
-        padding: 5px 8px;
+        padding: 5px 7px;
         font-size: 10.8px;
         text-align: center;
+        border: 1px solid var(--border-strong) !important;
+        background: var(--bg-main);
+      }
+      .ed-mini-pill.active {
+        background: var(--rule-heavy) !important;
+        color: #FFFFFF !important;
+        border-color: var(--rule-heavy) !important;
       }
       .ed-score-row {
-        gap: 8px;
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        gap: 10px !important;
+        align-items: start !important;
       }
       .ed-big-num {
-        font-size: 26px;
+        font-size: 25px;
       }
       .ed-cand-label {
         font-size: 12px;
+        line-height: 1.25;
       }
       .ed-sub-count {
         font-size: 10.8px;
-        line-height: 1.3;
+        line-height: 1.32;
+        white-space: normal;
       }
       .ed-flat-bar {
         height: 26px;
+        width: 100% !important;
+        overflow: hidden;
       }
       .ed-flat-seg {
-        font-size: 10.2px;
-        padding: 0 5px;
+        min-width: 0 !important;
+        font-size: 9.8px;
+        padding: 0 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       /* 4. Interactive SVG Charts on Mobile */
@@ -2574,16 +2617,26 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
       }
       .ed-mode-switch {
         width: 100%;
+        max-width: 100% !important;
         display: flex;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
+        flex-wrap: wrap !important;
+        gap: 4px;
+        border: none !important;
+        background: transparent !important;
       }
       .ed-mode-btn {
-        flex: 1 0 auto;
+        flex: 1 1 auto;
         white-space: nowrap;
         text-align: center;
-        padding: 6px 8px;
-        font-size: 11px;
+        padding: 5px 8px;
+        font-size: 10.8px;
+        border: 1px solid var(--border-strong) !important;
+        background: var(--bg-main);
+      }
+      .ed-mode-btn.active {
+        background: var(--rule-heavy) !important;
+        color: #FFFFFF !important;
+        border-color: var(--rule-heavy) !important;
       }
       #overviewAnnotatedLineChart {
         overflow-x: auto;
@@ -3028,15 +3081,15 @@ HTML_TEMPLATE_PART2 = r"""
                 <div class="ed-flat-seg tuan" style="width:44.5%;"
                      onmouseenter="showEdTooltip(event, '<strong>Độ phủ tích cực: TS. Trần Quốc Tuấn</strong><div class=ed-tt-row><span>Lũy kế đến 24/10:</span><strong>614 lượt đề cập (Mốc 22/10: 596)</strong></div><div class=ed-tt-row><span>Tỷ trọng tích cực:</span><span>44,5% (433/974 mốc 22/10)</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí & Facebook &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Tích cực Tuấn: 44,5% (614 lượt)</div>
+                     onclick="switchTab('tab-press-fb')">Tuấn 44,5% (614)</div>
                 <div class="ed-flat-seg neutral" style="width:23.1%;"
                      onmouseenter="showEdTooltip(event, '<strong>Nội dung Trung lập / Đưa tin quy chế / Phản biện</strong><div class=ed-tt-row><span>Tỷ trọng:</span><strong>23,1% (225 / 974)</strong></div><div class=ed-tt-row><span>Chi tiết:</span><span>182 trung lập + 43 phản biện</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí & Facebook &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Trung lập / Khác: 23,1%</div>
+                     onclick="switchTab('tab-press-fb')">Khác 23,1%</div>
                 <div class="ed-flat-seg thuy" style="width:32.4%;"
                      onmouseenter="showEdTooltip(event, '<strong>Độ phủ tích cực: Ông Nguyễn Đức Thụy</strong><div class=ed-tt-row><span>Lũy kế đến 24/10:</span><strong>481 lượt đề cập (Mốc 22/10: 454)</strong></div><div class=ed-tt-row><span>Tỷ trọng tích cực:</span><span>32,4% (316/974 mốc 22/10)</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí & Facebook &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Tích cực Thụy: 32,4% (481 lượt)</div>
+                     onclick="switchTab('tab-press-fb')">Thụy 32,4% (481)</div>
               </div>
             </div>
             <div class="ed-metric-note" id="covBarFootNote">
@@ -4635,18 +4688,18 @@ HTML_TEMPLATE_PART3 = r"""
       const note = document.getElementById('covBarFootNote');
 
       if (mode === 'all974') {
-        sampleEl.textContent = 'Lượt bài viết & video đề cập lũy tiến (N = 974 bài/video)';
+        sampleEl.textContent = 'Lượt bài viết & video đề cập lũy tiến (01–24/10: 614 vs 481 · Mốc 22/10: 596 vs 454)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
-        lBig.textContent = '596';
-        lSub.textContent = 'lượt đề cập · 433 bài/video tích cực (44,5%)';
+        lBig.textContent = '614';
+        lSub.textContent = 'lượt đề cập đến 24/10 (Mốc 22/10: 596 · 44,5% tích cực)';
         rName.textContent = 'Ông Nguyễn Đức Thụy';
-        rBig.textContent = '454';
-        rSub.textContent = 'lượt đề cập · 316 bài/video tích cực (32,4%)';
+        rBig.textContent = '481';
+        rSub.textContent = 'lượt đề cập đến 24/10 (Mốc 22/10: 454 · 32,4% tích cực)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:44.5%;" onclick="switchTab('tab-press-fb')">Tích cực Tuấn: 433 (44,5%)</div>
-          <div class="ed-flat-seg neutral" style="width:23.1%;" onclick="switchTab('tab-press-fb')">Trung lập / Khác: 225</div>
-          <div class="ed-flat-seg thuy" style="width:32.4%;" onclick="switchTab('tab-press-fb')">Tích cực Thụy: 316 (32,4%)</div>`;
-        note.innerHTML = `<strong>Ngữ cảnh nguồn phát (N = 974 đơn vị nội dung xác thực):</strong> Gồm <strong>78 bài báo chính thống</strong>, <strong>665 bài Facebook xác thực URL</strong>, <strong>169 video YouTube</strong> và <strong>62/68 video TikTok</strong>. Ứng viên thứ ba (Ông Nguyễn Xuân Vũ) ghi nhận <strong>119 lượt đề cập</strong>.`;
+          <div class="ed-flat-seg tuan" style="width:44.5%;" onclick="switchTab('tab-press-fb')">Tuấn 44,5% (614)</div>
+          <div class="ed-flat-seg neutral" style="width:23.1%;" onclick="switchTab('tab-press-fb')">Khác 23,1%</div>
+          <div class="ed-flat-seg thuy" style="width:32.4%;" onclick="switchTab('tab-press-fb')">Thụy 32,4% (481)</div>`;
+        note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đến 24/10/2026: N = 1.019 bài/video xác thực · Mốc 22/10: N = 974):</strong> Gồm <strong>78 bài báo chính thống (78 URL duy nhất)</strong>, <strong>667 bài Facebook xác thực URL</strong>, <strong>185 video YouTube</strong> và <strong>89 video TikTok</strong>. Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong> đến 24/10 (119 lượt mốc 22/10).`;
       } else if (mode === 'press78') {
         sampleEl.textContent = 'Mặt trận Báo chí Chính thống & Trang tin (N = 78 bài)';
         lName.textContent = 'TS. Tuấn (Báo chí)';
@@ -4656,9 +4709,9 @@ HTML_TEMPLATE_PART3 = r"""
         rBig.textContent = '24 bài';
         rSub.textContent = '30,8% tổng số bài báo (Đề cử & gói 600–1.000 tỷ)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:44.9%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Báo chí Tuấn: 35 (44,9%)</div>
-          <div class="ed-flat-seg neutral" style="width:24.3%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Trung lập/Quy chế: 19 (24,3%)</div>
-          <div class="ed-flat-seg thuy" style="width:30.8%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Báo chí Thụy: 24 (30,8%)</div>`;
+          <div class="ed-flat-seg tuan" style="width:44.9%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Tuấn 35 (44,9%)</div>
+          <div class="ed-flat-seg neutral" style="width:24.3%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Khác 19 (24,3%)</div>
+          <div class="ed-flat-seg thuy" style="width:30.8%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Thụy 24 (30,8%)</div>`;
         note.innerHTML = `<strong>Báo chí chính thống (78 bài):</strong> 35 bài ca ngợi thành tựu ĐTQG & ngoại giao của TS. Tuấn; 24 bài khối báo kinh tế/tài chính đưa tin Ông Thụy được đề cử và cam kết 1.000 tỷ; 18 bài đưa tin quy chế Đại hội + 1 bài phản biện.`;
       } else if (mode === 'fb665') {
         sampleEl.textContent = 'Mặt trận Facebook xác thực URL gốc (N = 665 bài)';
