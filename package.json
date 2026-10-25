@@ -1,0 +1,13 @@
+{
+  "name": "vff-warroom-dashboard-2026",
+  "version": "2.0.0",
+  "description": "Trung tâm Chỉ huy & Giám sát Dư luận Đa nền tảng - Bầu cử Chủ tịch VFF Khóa X (2026-2030) - Node.js & React Command Center",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "sync": "python3 scripts/sync_from_excel.py && python3 scripts/build_standalone_html.py"
+  },
+  "author": "Sunext AI War-Room Analytics",
+  "license": "PRIVATE"
+}
+
