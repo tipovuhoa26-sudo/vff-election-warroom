@@ -2804,12 +2804,19 @@ HTML_TEMPLATE_PART2 = r"""
               </span>
               <span class="item-meta">6.203 dòng · .xlsx</span>
             </a>
-            <a class="exec-menu-item" href="BAO_CAO_DA_SHEET_TONG_HOP_3_NEN_TANG_UNG_HO_UNG_VIEN_VFF_2026.xlsx" target="_blank">
+            <a class="exec-menu-item" href="BAO_CAO_DA_SHEET_TONG_HOP_3_NEN_TANG_UNG_HO_UNG_VIEN_VFF_2026.xlsx" target="_blank" rel="noopener noreferrer">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
                 <span>Báo cáo Đa Sheet 3 Nền tảng (v4.5)</span>
               </span>
               <span class="item-meta">10 Sheets · 20.767 BL</span>
+            </a>
+            <a class="exec-menu-item" href="BAO_CAO_RAW_SOCIAL_LISTENING_UNG_HO_UNG_VIEN_VFF.xlsx" target="_blank" rel="noopener noreferrer">
+              <span class="item-left">
+                <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+                <span>Dữ liệu Thô Social Listening (Raw 24/10)</span>
+              </span>
+              <span class="item-meta">1.137 bài · 20.767 BL</span>
             </a>
             <button class="exec-menu-item" onclick="exportMasterSourceLedgerCSV(); closeAllDropdowns();">
               <span class="item-left">
@@ -3737,50 +3744,58 @@ HTML_TEMPLATE_PART2 = r"""
                       <th>Tổng Link Gốc</th>
                       <th>Đã Tích Hợp Dashboard</th>
                       <th>Phát Hiện &amp; Xử Lý Kỹ Thuật Khi Fact-Check</th>
+                      <th style="text-align:center;">Truy Cập / Kiểm Chứng</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <tr onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')" style="cursor:pointer;" title="Bấm để mở 81 bài báo chính thống tại Sổ cái Tab 08">
                       <td><strong>1. Báo cáo Tổng hợp Markdown (.md)</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">BAO_CAO_TONG_HOP_3_NEN_TANG_..._2026.md</span></td>
                       <td style="text-align:center;font-weight:800;">92 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">92 / 92 (100%)</td>
                       <td>Bổ sung <strong>03 bài báo chính thống mới</strong> (<em>CAND, SGGP Thể Thao, Tiền Phong</em> &rarr; nâng kho báo chí lên <strong>81 bài</strong>) + 02 link BL FB + 03 link mốc giây YT.</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Mở 81 Báo ↗</button></td>
                     </tr>
-                    <tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','YT-VID','')" style="cursor:pointer;" title="Bấm để mở danh sách Video &amp; 115 cặp link Mốc giây YouTube tại Sổ cái Tab 08">
                       <td><strong>2. Sheet 2 — Raw Bài Viết &amp; Video (3 Nền tảng)</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">568 FB · 310 YT · 259 TT (Col 6, Col 7, Col 8)</span></td>
                       <td style="text-align:center;font-weight:800;">1.137 bài<br/><span style="font-size:10.5px;color:var(--text-muted);">+112 mốc giây YT</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">1.137 / 1.137 (100%)</td>
                       <td><strong>Khôi phục 03 URL bài FB bị cắt cụt ở 200 ký tự</strong> từ file <code>BAO_CAO_RAW</code>; bảo toàn song song <strong>112 cặp link gốc (Col 7) &amp; mốc giây (Col 8)</strong>; chuẩn hóa <strong>132 URL kênh YT</strong> bị lỗi khoảng trắng (<code>%20</code>).</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','YT-VID','')">Mở Bài &amp; Mốc giây ↗</button></td>
                     </tr>
-                    <tr>
+                    <tr onclick="switchTab('tab-comments')" style="cursor:pointer;" title="Bấm để mở Sổ cái 3.345 Bình luận tại Tab 06">
                       <td><strong>3. Sheet 3 — Raw Comment 3 Nền tảng</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">20.767 BL (2.916 BL chính kiến [S1..S5])</span></td>
                       <td style="text-align:center;font-weight:800;">2.916 BL [S1..S5]<br/><span style="font-size:10.5px;color:var(--text-muted);">+17.851 BL [S6]</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">2.916 / 2.916 (100%)</td>
                       <td><strong>Khôi phục nguyên vẹn 1.315 permalink bình luận FB bị cắt ở 200 ký tự</strong> (trong đó có <strong>262 BL chính kiến [S1..S5]</strong>) từ mã <code>Comment_ID</code> &amp; <code>BAO_CAO_RAW</code>; ẩn danh 100% link cá nhân FB.</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-comments')">Mở 3.345 BL ↗</button></td>
                     </tr>
-                    <tr>
+                    <tr onclick="switchTab('tab-press-fb');switchPressFbSub('fb378');" style="cursor:pointer;" title="Bấm để mở Danh bạ 881 Kênh đa nền tảng tại Tab 04">
                       <td><strong>4. Sheet 4 — Phân loại Page / Kênh / KOL</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">512 kênh có bài (334 FB · 116 YT · 62 TT)</span></td>
                       <td style="text-align:center;font-weight:800;">501 URL kênh<br/><span style="font-size:10.5px;color:var(--text-muted);">+30 kênh Col 6</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">531 / 531 (100%)</td>
                       <td>Hợp nhất cùng 378 kênh FB nền (22/10) thành <strong>881 mục danh bạ kênh</strong> trong <code>Sheet 05</code>; <strong>khôi phục 02 URL kênh bị cắt ở 200 ký tự</strong>.</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-press-fb');switchPressFbSub('fb378');">Mở 881 Kênh ↗</button></td>
                     </tr>
-                    <tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')" style="cursor:pointer;" title="Bấm để mở 269 Top Trích dẫn nguyên văn Sheet 5 tại Sổ cái Tab 08">
                       <td><strong>5. Sheet 5 — Top Luận điểm &amp; Trích dẫn</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">269 trích dẫn nguyên văn (Verbatim Quotes)</span></td>
                       <td style="text-align:center;font-weight:800;">269 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">269 / 269 (100%)</td>
                       <td>Tích hợp toàn bộ <strong>269 trích dẫn nguyên văn</strong> vào Sổ cái Tab 08 (<code>#QUOTE-001..269</code>); <strong>khôi phục 11 URL bị cắt ở 200 ký tự</strong>; gắn cờ 08 trích dẫn lệch chủ đề.</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')">Mở 269 Quote ↗</button></td>
                     </tr>
-                    <tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')" style="cursor:pointer;" title="Bấm để mở 83 Biên bản Lọc nhiễu 2 Khóa Sheet 8 tại Sổ cái Tab 08">
                       <td><strong>6. Sheet 8 — Biên bản Lọc nhiễu 2 Khóa</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">83 video ngoài phạm vi bị chặn (38 TT · 45 YT)</span></td>
                       <td style="text-align:center;font-weight:800;">83 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">83 / 83 (100%)</td>
                       <td>Tích hợp toàn bộ <strong>83 bằng chứng lọc nhiễu 2 khóa</strong> vào Sổ cái Tab 08 (<code>#NOISE-001..083</code>) để kiểm chứng độc lập.</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Mở 83 Lọc nhiễu ↗</button></td>
                     </tr>
                     <tr style="background:#EFECE6;font-weight:900;">
                       <td>TỔNG HỢP SỔ CÁI KIỂM CHỨNG TOÀN DIỆN</td>
                       <td style="text-align:center;">100% Kho 2410</td>
                       <td style="text-align:center;color:#166534;">6.203 bản ghi · 5.187 URL</td>
-                      <td><strong>Khôi phục tổng cộng 1.331 URL bị cắt 200 ký tự · 0 link thiếu · 0 lỗi HTTP</strong></td>
+                      <td><strong>Khôi phục tổng cộng 1.344 URL bị cắt 200 ký tự · 100% ô có Hyperlink · 0 lỗi HTTP</strong></td>
+                      <td style="text-align:center;"><a href="BAO_CAO_DA_SHEET_TONG_HOP_3_NEN_TANG_UNG_HO_UNG_VIEN_VFF_2026.xlsx" target="_blank" rel="noopener noreferrer" class="fc-mini-btn audit-btn" style="text-decoration:none;">Tải Đa Sheet .xlsx ↗</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -3838,8 +3853,8 @@ HTML_TEMPLATE_PART2 = r"""
                     <tr style="background:#EDF3FC;">
                       <td><strong>6. Xác nhận Hợp lệ (True Positive Audit)</strong></td>
                       <td colspan="3" style="font-size:11.5px;">
-                        • Bài <code>TT-183</code> (<em>Phó Chủ tịch Sacombank Nguyễn Xuân Vũ</em>) &rarr; <strong>Hợp lệ 100%</strong> (Ông Nguyễn Xuân Vũ là Ứng viên Chủ tịch/Phó CT VFF Khóa X, Chủ tịch CLB Phù Đổng Ninh Bình).<br/>
-                        • Bài <code>FB-500-077</code> (<em>MAT TV — Mưa tiền thưởng</em>) &rarr; <strong>Hợp lệ 100%</strong> (174 BL bàn về chia tiền thưởng cầu thủ ĐTQG Việt Nam).
+                        • Bài <a href="https://www.tiktok.com/@tintuc.247.online/video/7560587587096120594" target="_blank" rel="noopener noreferrer" style="font-weight:800;color:var(--tuan-blue);text-decoration:underline;"><code>TT-183 ↗</code></a> (<em>Phó Chủ tịch Sacombank Nguyễn Xuân Vũ</em>) &rarr; <strong>Hợp lệ 100%</strong> (Ông Nguyễn Xuân Vũ là Ứng viên Chủ tịch/Phó CT VFF Khóa X, Chủ tịch CLB Phù Đổng Ninh Bình).<br/>
+                        • Bài <a href="https://www.facebook.com/reel/2150610198796608/" target="_blank" rel="noopener noreferrer" style="font-weight:800;color:var(--tuan-blue);text-decoration:underline;"><code>FB-500-077 ↗</code></a> (<em>MAT TV — Mưa tiền thưởng</em>) &rarr; <strong>Hợp lệ 100%</strong> (174 BL bàn về chia tiền thưởng cầu thủ ĐTQG Việt Nam).
                       </td>
                     </tr>
                   </tbody>
@@ -4909,6 +4924,10 @@ HTML_TEMPLATE_PART3 = r"""
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;')
         .replace(/"/g, '&quot;');
+    }
+
+    function escLinkify(s) {
+      return esc(s).replace(/(https?:\/\/[^\s<>"')\]]+)/g, '<a href="$1" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation();" style="color:var(--tuan-blue);text-decoration:underline;font-weight:700;word-break:break-all;">$1</a>');
     }
 
     function fmtNum(n) {
@@ -7139,7 +7158,7 @@ HTML_TEMPLATE_PART3 = r"""
               <strong>${esc(r.c4)}</strong>
               <div style="font-size:10px;color:var(--text-muted);margin-top:2px;">Đã ẩn link cá nhân · Bảo mật TK</div>
             </td>
-            <td style="max-width:420px;">${esc(r.c5)}</td>
+            <td style="max-width:420px;">${escLinkify(r.c5)}</td>
             <td>${stanceBadge(getEffectiveStance('09_887_Binh_Luan_Bau_Cu_FB', idx, r.c6))}</td>
             <td style="text-align:center;">${esc(r.c7)}</td>
             <td style="white-space:nowrap;">${esc(r.c8)}</td>
@@ -7165,7 +7184,7 @@ HTML_TEMPLATE_PART3 = r"""
             <td><strong>${esc(r.c3)}</strong></td>
             <td><strong>${esc(r.c4)}</strong></td>
             <td style="white-space:nowrap;">${esc(r.c5)}</td>
-            <td style="max-width:420px;">${esc(r.c8)}</td>
+            <td style="max-width:420px;">${escLinkify(r.c8)}</td>
             <td style="text-align:center;font-weight:700;color:var(--gold);">${esc(r.c9)}</td>
             <td>${stanceBadge(getEffectiveStance('10_604_Binh_Luan_Bau_Cu_YT_TT', idx, r.c11))}</td>
             <td>${linkBtn(r.c13, 'Video nguồn', { sheet: '10_604_Binh_Luan_Bau_Cu_YT_TT', idx })}</td>
@@ -7509,7 +7528,7 @@ HTML_TEMPLATE_PART3 = r"""
                 Link Bài / Video Gốc Trực Tiếp (Bấm để mở kiểm chứng):
               </span>
               <div style="display:flex;gap:6px;flex-wrap:wrap;">
-                <span class="status-badge verified" style="padding:1px 7px;font-size:10px;">Đã kiểm tra link: 24/10/2026 · URL còn truy cập</span>
+                <span class="status-badge verified" style="padding:1px 7px;font-size:10px;">Đã kiểm tra link: 25/10/2026 · URL còn truy cập</span>
                 <span class="status-badge snapshot" style="padding:1px 7px;font-size:10px;">Nội dung nguồn khớp nhận định</span>
               </div>
             </div>
@@ -7517,8 +7536,10 @@ HTML_TEMPLATE_PART3 = r"""
               <a href="${esc(primaryUrl)}" target="_blank" rel="noopener noreferrer" style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:12.2px;font-weight:700;color:#1B4F9C;word-break:break-all;text-decoration:underline;">
                 ${esc(primaryUrl || 'Không có URL')}
               </a>
-              <div style="display:flex;gap:6px;">
+              <div style="display:flex;gap:6px;flex-wrap:wrap;">
                 <a href="${esc(primaryUrl)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:5px 10px;font-size:11.5px;">Mở Nguồn ↗</a>
+                ${(r && r.canonical_url && r.canonical_url !== primaryUrl) ? `<a href="${esc(r.canonical_url)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding:5px 10px;font-size:11.5px;color:#1B4F9C;border-color:#1B4F9C;">Mở Video Gốc (Col 7) ↗</a>` : ''}
+                ${(r && r.timestamp_url && r.timestamp_url !== primaryUrl) ? `<a href="${esc(r.timestamp_url)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding:5px 10px;font-size:11.5px;color:#1B4F9C;border-color:#1B4F9C;">Mở Mốc Giây (?t=XXs) ↗</a>` : ''}
                 <button type="button" class="btn btn-outline" style="padding:5px 10px;font-size:11.5px;" onclick="copyUrlToClipboard('${esc(primaryUrl)}', this, event)">Sao chép link</button>
               </div>
             </div>
@@ -7534,7 +7555,7 @@ HTML_TEMPLATE_PART3 = r"""
           <div style="font-weight:800;font-size:12px;text-transform:uppercase;color:#141923;margin-bottom:4px;">
             Nội dung Toàn văn Bài viết / Kịch bản ASR / Bình luận:
           </div>
-          <div style="padding:12px;background:#FFFFFF;border:1px solid var(--border-strong);font-size:13px;line-height:1.55;white-space:pre-wrap;max-height:220px;overflow-y:auto;">${esc(mainContent)}</div>
+          <div style="padding:12px;background:#FFFFFF;border:1px solid var(--border-strong);font-size:13px;line-height:1.55;white-space:pre-wrap;max-height:220px;overflow-y:auto;">${escLinkify(mainContent)}</div>
         </div>
 
         <!-- Interactive Personal Fact-Check Audit Panel -->
@@ -7930,9 +7951,13 @@ HTML_TEMPLATE_PART3 = r"""
         el.style.display = (el.id === paneId) ? 'block' : 'none';
       });
       if (btnEl && btnEl.parentElement) {
-        btnEl.parentElement.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btnEl.parentElement.querySelectorAll('.pill-btn, .ed-mode-btn').forEach(b => b.classList.remove('active'));
         btnEl.classList.add('active');
       }
+    }
+
+    function switch2410SubPanel(paneId, btnEl) {
+      return switch2410Tab(paneId, btnEl);
     }
 
     function renderHomonymAuditTable() {
@@ -7940,7 +7965,7 @@ HTML_TEMPLATE_PART3 = r"""
       if (!tbody) return;
       const list = ((DB && DB.extra_2410) || {}).homonym_flagged_34 || [];
       tbody.innerHTML = list.map((r, i) => `
-        <tr>
+        <tr onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','${esc(r.post_code)}')" style="cursor:pointer;" title="Bấm để lọc mã ${esc(r.post_code)} trong Sổ cái Tab 08">
           <td style="font-weight:700;">${i + 1}</td>
           <td style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800;color:var(--thuy-red);">${esc(r.post_code)}</td>
           <td><strong>${esc(r.plat)}</strong><br/><span style="font-size:11px;color:var(--text-muted);">${esc(r.date)}</span></td>
@@ -7948,15 +7973,15 @@ HTML_TEMPLATE_PART3 = r"""
           <td><span class="badge badge-gray" style="font-size:10.5px;">${esc(r.orig_stance || '[S6] Trung lập')}</span></td>
           <td style="text-align:center;font-weight:800;">${r.cmts_all || 0} (${r.cmts_s15 || 0} S2)</td>
           <td style="max-width:340px;">
-            <div style="max-height:54px;overflow-y:auto;line-height:1.4;margin-bottom:4px;">${esc(r.title)}</div>
+            <div style="max-height:54px;overflow-y:auto;line-height:1.4;margin-bottom:4px;">${escLinkify(r.title)}</div>
             <span class="status-badge risk" style="font-size:10px;padding:1px 6px;">${esc(r.reason)}</span>
           </td>
-          <td>
+          <td onclick="event.stopPropagation();">
             <div class="fc-btn-row">
-              <a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn primary-link">Mở link gốc</a>
+              <a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn primary-link">Mở link gốc ↗</a>
               <button type="button" class="fc-mini-btn" onclick="copyUrlToClipboard('${esc(r.url)}', this, event)">Sao chép</button>
             </div>
-            <div style="font-size:10px;color:var(--text-muted);margin-top:2px;word-break:break-all;">${esc(r.url)}</div>
+            <a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" class="raw-url-inline" title="${esc(r.url)}">${esc(r.url)}</a>
           </td>
         </tr>
       `).join('');
@@ -8120,7 +8145,7 @@ HTML_TEMPLATE_PART3 = r"""
               <div style="font-size:11.2px;color:var(--text-muted);margin-top:2px;">${esc(it.channel)}</div>
             </td>
             <td style="max-width:390px;">
-              <div style="max-height:74px;overflow-y:auto;line-height:1.42;font-size:12px;">${esc(it.excerpt)}</div>
+              <div style="max-height:74px;overflow-y:auto;line-height:1.42;font-size:12px;">${escLinkify(it.excerpt)}</div>
             </td>
             <td>
               ${stanceBadge(effStance)}
@@ -8208,7 +8233,7 @@ HTML_TEMPLATE_PART3 = r"""
           <td><span class="badge badge-coal">${esc(m.sheet)}</span></td>
           <td><strong>${esc(m.id)}</strong></td>
           <td><strong>${esc(m.ch)}</strong></td>
-          <td>${esc(m.txt)}</td>
+          <td>${escLinkify(m.txt)}</td>
           <td>${stanceBadge(getEffectiveStance(m.sheet, m.idx, m.stance))}</td>
           <td>${m.url ? linkBtn(m.url, 'Mở nguồn', { sheet: m.sheet, idx: m.idx }) : '—'}</td>
         </tr>
