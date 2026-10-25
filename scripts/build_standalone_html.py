@@ -2337,6 +2337,7 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
 print("Prepared HTML_TEMPLATE_PART1 (Light Presidential Tracker).")
 
 HTML_TEMPLATE_PART2 = r"""
+  <div id="protectedDashboardVault" style="display:none;">
   <!-- TOP US ELECTION TRICOLOR RIBBON -->
   <div class="tricolor-bar">
     <div class="c-blue"></div>
@@ -3700,6 +3701,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="modal-body" id="modalContent"></div>
     </div>
   </div>
+  </div><!-- /#protectedDashboardVault -->
 
   <!-- GOOGLE SHEET PASSWORD LOCK GATE OVERLAY (ONLY 1 PASSWORD FIELD) -->
   <div class="gs-auth-overlay" id="gsAuthGateOverlay">
@@ -3730,10 +3732,13 @@ HTML_TEMPLATE_PART2 = r"""
 
 HTML_TEMPLATE_PART3 = r"""
   <script>
-    // Embedded 12-Sheet Database (3,014 records through 24/10/2026; 2,951 baseline through 22/10/2026)
-    window.__WARROOM_DB__ = __EMBEDDED_JSON_PLACEHOLDER__;
+    // Private Vault Closure: Data and DOM are NOT mounted until Google Sheet Auth succeeds
+    const _privateVaultDb = __EMBEDDED_JSON_PLACEHOLDER__;
+    let _vaultTemplateHtml = '';
+    let _isDashboardUnlocked = false;
+    let _authOverlayClone = null;
 
-    let DB = window.__WARROOM_DB__;
+    let DB = { meta: {}, sheets: {} };
     let currentTab = 'tab-overview';
     let currentWaveFilter = 'ALL';
     let currentMatrixPlat = 'ALL';
@@ -7310,10 +7315,62 @@ HTML_TEMPLATE_PART3 = r"""
       }
     }
 
+    function mountAndRenderAllDashboardViews() {
+      const vault = document.getElementById('protectedDashboardVault');
+      if (vault && _vaultTemplateHtml && !vault.innerHTML.trim()) {
+        vault.innerHTML = _vaultTemplateHtml;
+      }
+      if (vault) {
+        vault.style.display = 'block';
+      }
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        const dlEx = document.getElementById('dlExcelBtn');
+        const dlPp = document.getElementById('dlPptxBtn');
+        const dlAu1 = document.getElementById('dlAuditExcelBtn');
+        const dlAu2 = document.getElementById('dlAuditExcelTabBtn');
+        if (dlEx) dlEx.href = '/download/excel';
+        if (dlPp) dlPp.href = '/download/pptx';
+        if (dlAu1) dlAu1.href = '/download/audit-excel';
+        if (dlAu2) dlAu2.href = '/download/audit-excel';
+      }
+      updateFcExportCounter();
+      checkServerConnection();
+      renderElectionNeedles();
+      renderElectoralCartogram();
+      renderExitPolls();
+      renderOverviewTable();
+      renderTimelineTable();
+      renderTimelineCharts();
+      renderMatrixTable();
+      renderAbsaTable();
+      renderPressFbSub();
+      renderVideoSub();
+      renderCommentSub();
+      renderTop15Table();
+      initMasterSourceLedger();
+    }
+
+    function unmountAndPurgeDashboardDom() {
+      _isDashboardUnlocked = false;
+      DB = { meta: {}, sheets: {} };
+      masterSourceLedgerCache = null;
+      const vault = document.getElementById('protectedDashboardVault');
+      if (vault) {
+        vault.innerHTML = '';
+        vault.style.display = 'none';
+      }
+    }
+
     function unlockDashboardWithSession(sessionObj) {
+      _isDashboardUnlocked = true;
+      DB = _privateVaultDb;
       document.body.classList.remove('auth-locked');
       const overlay = document.getElementById('gsAuthGateOverlay');
-      if (overlay) overlay.classList.remove('active');
+      if (overlay) {
+        overlay.classList.remove('active');
+        overlay.style.display = 'none';
+      }
+      mountAndRenderAllDashboardViews();
       startSecuritySessionTimer(sessionObj);
     }
 
@@ -7330,12 +7387,19 @@ HTML_TEMPLATE_PART3 = r"""
         localStorage.removeItem(GS_AUTH_CONFIG.storageSessionKey);
       } catch (e) {}
 
-      document.body.classList.add('auth-locked');
-      const overlay = document.getElementById('gsAuthGateOverlay');
-      if (overlay) overlay.classList.add('active');
+      // Xóa sạch toàn bộ HTML & dữ liệu của Dashboard khỏi DOM khi đang khóa
+      unmountAndPurgeDashboardDom();
 
-      const pill = document.getElementById('securitySessionCountdown');
-      if (pill) pill.textContent = 'Bảo mật Sheet: Đã khóa';
+      document.body.classList.add('auth-locked');
+      let overlay = document.getElementById('gsAuthGateOverlay');
+      if (!overlay && _authOverlayClone) {
+        overlay = _authOverlayClone.cloneNode(true);
+        document.body.appendChild(overlay);
+      }
+      if (overlay) {
+        overlay.classList.add('active');
+        overlay.style.display = 'flex';
+      }
 
       const passInput = document.getElementById('gsAuthPassword');
       if (passInput) {
@@ -7351,7 +7415,7 @@ HTML_TEMPLATE_PART3 = r"""
       } else if (reason === 'MANUAL') {
         setGsAuthMessage(
           'info',
-          'Màn hình đã được khóa bảo mật. Vui lòng nhập mật khẩu từ Google Sheet (Sheet <code>id</code>) để mở khóa.'
+          'Màn hình đã được khóa bảo mật. Vui lòng nhập mật khẩu để mở khóa.'
         );
       }
     }
@@ -7418,10 +7482,43 @@ HTML_TEMPLATE_PART3 = r"""
       }, 45000);
     }
 
-    function initGoogleSheetAuthGate() {
-      const savedUrl = getConfiguredGasWebAppUrl();
-      const urlInp = document.getElementById('gsWebAppUrlInput');
-      if (urlInp && savedUrl) urlInp.value = savedUrl;
+    function startDomAntiTamperGuard() {
+      const obs = new MutationObserver(() => {
+        if (_isDashboardUnlocked) return;
+        // Nếu đang khóa mà ai đó cố tình can thiệp DOM qua Inspect Element:
+        const vault = document.getElementById('protectedDashboardVault');
+        if (vault && vault.innerHTML !== '') {
+          vault.innerHTML = '';
+          vault.style.display = 'none';
+        }
+        let overlay = document.getElementById('gsAuthGateOverlay');
+        if (!overlay && _authOverlayClone) {
+          overlay = _authOverlayClone.cloneNode(true);
+          overlay.classList.add('active');
+          overlay.style.display = 'flex';
+          document.body.appendChild(overlay);
+        } else if (overlay && (!overlay.classList.contains('active') || overlay.style.display === 'none')) {
+          overlay.classList.add('active');
+          overlay.style.display = 'flex';
+        }
+      });
+      obs.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['style', 'class'] });
+    }
+
+    function initDashboard() {
+      const vault = document.getElementById('protectedDashboardVault');
+      if (vault && !_vaultTemplateHtml) {
+        _vaultTemplateHtml = vault.innerHTML;
+        // Xóa ngay khỏi DOM trước khi kiểm tra xác thực
+        vault.innerHTML = '';
+        vault.style.display = 'none';
+      }
+      const ov = document.getElementById('gsAuthGateOverlay');
+      if (ov && !_authOverlayClone) {
+        _authOverlayClone = ov.cloneNode(true);
+      }
+
+      startDomAntiTamperGuard();
 
       const sess = getSavedGsSession();
       if (sess && sess.expiresAtMs && sess.expiresAtMs > Date.now()) {
@@ -7429,40 +7526,7 @@ HTML_TEMPLATE_PART3 = r"""
         return;
       }
 
-      // Nếu đã cấu hình URL Google Apps Script Web App (hoặc bật chế độ bắt buộc khóa ?lock=1), tự động khóa ngay khi mở trang
-      const forceLockParam = new URLSearchParams(window.location.search).get('lock');
-      if (savedUrl || forceLockParam === '1') {
-        lockDashboardSession(sess ? 'EXPIRED' : 'STARTUP');
-      }
-    }
-
-    function initDashboard() {
-      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-        const dlEx = document.getElementById('dlExcelBtn');
-        const dlPp = document.getElementById('dlPptxBtn');
-        const dlAu1 = document.getElementById('dlAuditExcelBtn');
-        const dlAu2 = document.getElementById('dlAuditExcelTabBtn');
-        if (dlEx) dlEx.href = '/download/excel';
-        if (dlPp) dlPp.href = '/download/pptx';
-        if (dlAu1) dlAu1.href = '/download/audit-excel';
-        if (dlAu2) dlAu2.href = '/download/audit-excel';
-      }
-      updateFcExportCounter();
-      checkServerConnection();
-      renderElectionNeedles();
-      renderElectoralCartogram();
-      renderExitPolls();
-      renderOverviewTable();
-      renderTimelineTable();
-      renderTimelineCharts();
-      renderMatrixTable();
-      renderAbsaTable();
-      renderPressFbSub();
-      renderVideoSub();
-      renderCommentSub();
-      renderTop15Table();
-      initMasterSourceLedger();
-      initGoogleSheetAuthGate();
+      lockDashboardSession(sess ? 'EXPIRED' : 'STARTUP');
     }
 
     window.addEventListener('DOMContentLoaded', initDashboard);
