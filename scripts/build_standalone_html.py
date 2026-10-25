@@ -2759,7 +2759,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="brand-title">
           <h1>THEO DÕI DƯ LUẬN BẦU CỬ VFF KHÓA X</h1>
           <div class="positioning-line">Dashboard theo dõi tín hiệu dư luận và độ phủ truyền thông quanh bầu cử VFF.</div>
-          <div class="dateline-meta"><strong>01–24/10/2026</strong> · Cập nhật 24/10/2026, 23:59 GMT+7 · <strong>2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Lũy kế đến 24/10: 3.014 bản ghi đối chiếu · 1.616 URL nguồn duy nhất)</span></div>
+          <div class="dateline-meta"><strong>01–24/10/2026</strong> · Cập nhật 24/10/2026, 23:59 GMT+7 · <strong>2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Lũy kế đầy đủ đến 24/10: 4.817 bản ghi đối chiếu · 2.685 URL nguồn duy nhất)</span></div>
         </div>
       </div>
 
@@ -2769,13 +2769,13 @@ HTML_TEMPLATE_PART2 = r"""
           <span class="global-search-icon" style="display:inline-flex;align-items:center;color:var(--text-muted);">
             <svg class="ico-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </span>
-          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 3.014 bản ghi · 1.616 URL..." oninput="handleGlobalSearch(this.value)" />
+          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 4.817 bản ghi · 2.685 URL..." oninput="handleGlobalSearch(this.value)" />
         </div>
 
         <!-- Clean Data Status Pill -->
-        <div class="header-meta-group" title="Đã kiểm tra link: 24/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã ẩn danh 781 tài khoản bình luận FB">
+        <div class="header-meta-group" title="Đã kiểm tra link: 25/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã ẩn danh 1.492 tài khoản bình luận FB">
           <span class="status-badge snapshot">Cập nhật: 24/10 · 23:59</span>
-          <span class="status-badge verified">Đã kiểm tra link: 24/10/2026</span>
+          <span class="status-badge verified">Đã kiểm tra link: 25/10/2026</span>
           <button type="button" id="securitySessionPill" class="status-badge verified" style="cursor:pointer;border:1px solid #166534;" onclick="openOrLockSecurityGate()" title="Trạng thái phiên bảo mật. Bấm để khóa màn hình ngay.">
             <span id="securitySessionCountdown">Phiên bảo mật</span>
           </button>
@@ -2795,9 +2795,9 @@ HTML_TEMPLATE_PART2 = r"""
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
                 <span>Danh mục nguồn đối chiếu</span>
               </span>
-              <span class="item-meta">3.014 bản ghi · .xlsx</span>
+              <span class="item-meta">4.817 bản ghi · .xlsx</span>
             </a>
-            <a class="exec-menu-item" href="BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_22_10_2026.xlsx" id="dlExcelBtn" target="_blank">
+            <a class="exec-menu-item" href="BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_24_10_2026.xlsx" id="dlExcelBtn" target="_blank">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
                 <span>Sổ cái Master Excel (24/10)</span>
@@ -2809,7 +2809,7 @@ HTML_TEMPLATE_PART2 = r"""
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 <span>Xuất CSV Danh mục nguồn đối chiếu</span>
               </span>
-              <span class="item-meta">3.014 dòng · .csv</span>
+              <span class="item-meta">4.817 dòng · .csv</span>
             </button>
             <button class="exec-menu-item" onclick="exportCurrentTabCSV(); closeAllDropdowns();">
               <span class="item-left">
@@ -2930,9 +2930,9 @@ HTML_TEMPLATE_PART2 = r"""
   <!-- SUBTLE EDITORIAL SCOPE NOTE -->
   <div style="background:#EFECE6;border-bottom:1px solid var(--border);padding:7px 24px;font-size:12px;color:var(--text-secondary);">
     <div style="max-width:1580px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-      <span><strong>Phạm vi & Giới hạn phương pháp:</strong> Số liệu phản ánh <strong>tín hiệu bình luận công khai được mã hóa (N = 1.414 · Lũy kế 24/10: 1.513)</strong> và <strong>độ phủ truyền thông (N = 974 · Lũy kế 24/10: 1.019)</strong>; không phải phiếu bầu của Đại biểu Đại hội VFF.</span>
+      <span><strong>Phạm vi & Giới hạn phương pháp:</strong> Số liệu phản ánh <strong>tín hiệu bình luận công khai được mã hóa (N = 1.414 · Lũy kế đầy đủ đến 24/10: 2.932 BL)</strong> và <strong>độ phủ truyền thông (N = 974 · Lũy kế đầy đủ đến 24/10: 1.403 bài/video)</strong>; không phải phiếu bầu của Đại biểu Đại hội VFF.</span>
       <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
-        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn & kiểm chứng (2.951 bản ghi · 1.473 URL duy nhất | 24/10: 3.014 bản ghi) &rarr;</a>
+        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn & kiểm chứng (2.951 bản ghi · 1.473 URL | Toàn bộ 24/10: 4.817 bản ghi · 2.685 URL) &rarr;</a>
         <a href="javascript:void(0)" onclick="switchTab('tab-methodology')" style="color:var(--text-main);text-decoration:underline;font-weight:700;font-size:11.8px;">Quy trình Đại biểu & Phương pháp (Mục 09) &rarr;</a>
       </div>
     </div>
@@ -2954,7 +2954,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel-header">
         <div>
           <div class="panel-title">KẾT QUẢ TRA CỨU TOÀN CỤC TRÊN 12 SHEETS DỮ LIỆU (<span id="globalSearchCount">0</span> bản ghi)</div>
-          <div class="panel-sub">Tìm kiếm tức thời trên toàn bộ 78 bài báo, 378 kênh FB, 667 bài FB, 185 video YT, 89 video TikTok và 1.513 bình luận mã hóa (cập nhật đến 24/10/2026)</div>
+          <div class="panel-sub">Tìm kiếm tức thời trên toàn bộ 78 bài báo, 378 kênh FB, 703 bài FB, 354 video YT, 268 video TikTok và 2.932 bình luận mã hóa (cập nhật đến 24/10/2026)</div>
         </div>
         <button class="btn btn-outline" onclick="clearGlobalSearch()">Đóng kết quả</button>
       </div>
@@ -2992,7 +2992,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div>
             <div class="ed-kicker">01 · TÓM TẮT DIỄN BIẾN (01–24/10/2026 · 24 NGÀY THEO DÕI)</div>
             <h2 class="ed-headline">Tương quan lập trường công khai và độ phủ truyền thông</h2>
-            <p class="ed-lead">So sánh song song giữa <strong>tín hiệu bình luận có lập trường của độc giả (N = 991 đối đầu / 1.414 toàn mẫu · Lũy kế 24/10: 1.513 BL mã hóa)</strong> và <strong>mật độ bài viết, video đề cập trên báo chí & mạng xã hội (N = 974 · Lũy kế 24/10: 1.019 bài/video)</strong>. Trang chính hiển thị nhận định cốt lõi; bấm <strong>"Xem nguồn liên quan"</strong> để mở danh mục đối chiếu đầy đủ.</p>
+            <p class="ed-lead">So sánh song song giữa <strong>tín hiệu bình luận có lập trường của độc giả (N = 991 đối đầu / 1.414 toàn mẫu · Lũy kế đầy đủ đến 24/10: 2.932 BL mã hóa)</strong> và <strong>mật độ bài viết, video đề cập trên báo chí & mạng xã hội (N = 974 · Lũy kế đầy đủ đến 24/10: 1.403 bài/video)</strong>. Trang chính hiển thị nhận định cốt lõi; bấm <strong>"Xem nguồn liên quan"</strong> để mở danh mục đối chiếu đầy đủ.</p>
           </div>
         </div>
 
@@ -3010,8 +3010,8 @@ HTML_TEMPLATE_PART2 = r"""
                   <button class="ed-mini-pill active" onclick="switchStanceBarMode('h2h', this)">Đối đầu (991)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('all1414', this)">Toàn mẫu (1.414)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('coalition', this)">Liên danh (214)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (887)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('yttt527', this)">YT/TT (626)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (1.598)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('yttt527', this)">YT/TT (1.334)</button>
                 </div>
               </div>
               <div class="ed-score-row">
@@ -3038,13 +3038,13 @@ HTML_TEMPLATE_PART2 = r"""
               </div>
             </div>
             <div class="ed-metric-note" id="stanceBarFootNote">
-              <strong>Ngữ cảnh toàn mẫu (N = 1.414 bình luận mã hóa · Lũy kế đến 24/10: 1.513 bình luận mã hóa):</strong> Ngoài 991 tín hiệu chọn ngôi Chủ tịch ở trên, có <strong>423 tín hiệu phản đối/cảnh báo (29,9%)</strong> gồm: 210 phản đối Ông Thụy (14,9%), 112 phản đối TS. Tuấn (7,9%) và 101 phản đối cả hai / đề cử người thứ ba (7,1%).
+              <strong>Ngữ cảnh toàn mẫu (N = 1.414 bình luận mốc 22/10 · Lũy kế đầy đủ đến 24/10: 2.932 bình luận mã hóa):</strong> Ngoài 991 tín hiệu chọn ngôi Chủ tịch ở trên, có <strong>423 tín hiệu phản đối/cảnh báo (29,9%)</strong> gồm: 210 phản đối Ông Thụy (14,9%), 112 phản đối TS. Tuấn (7,9%) và 101 phản đối cả hai / đề cử người thứ ba (7,1%).
             </div>
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% link cá nhân người bình luận FB (#FB-U0001..#FB-U0781)</span>
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% link cá nhân người bình luận FB (#FB-U0001..#FB-U1492)</span>
               <div style="display:flex;gap:6px;">
-                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 887 nguồn BL FB &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Xem 626 nguồn BL YT/TT &rarr;</button>
+                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 1.598 nguồn BL FB &rarr;</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Xem 1.334 nguồn BL YT/TT &rarr;</button>
               </div>
             </div>
           </div>
@@ -3058,11 +3058,11 @@ HTML_TEMPLATE_PART2 = r"""
                   <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">Lượt bài viết & video đề cập lũy tiến (01–24/10: 614 vs 481 · Mốc 22/10: 596 vs 454)</span>
                 </div>
                 <div class="ed-mini-pills" title="Lọc nhanh độ phủ theo nền tảng">
-                  <button class="ed-mini-pill active" onclick="switchCoverageBarMode('all974', this)">Tất cả (1.019)</button>
+                  <button class="ed-mini-pill active" onclick="switchCoverageBarMode('all974', this)">Tất cả (1.403)</button>
                   <button class="ed-mini-pill" onclick="switchCoverageBarMode('press78', this)">Báo chí (78)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('fb665', this)">Facebook (667)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('yt169', this)">YouTube (185)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('tt62', this)">TikTok (89)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('fb665', this)">Facebook (703)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('yt169', this)">YouTube (354)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('tt62', this)">TikTok (268)</button>
                 </div>
               </div>
               <div class="ed-score-row">
@@ -3093,13 +3093,13 @@ HTML_TEMPLATE_PART2 = r"""
               </div>
             </div>
             <div class="ed-metric-note" id="covBarFootNote">
-              <strong>Ngữ cảnh nguồn phát (Cập nhật đến 24/10/2026: N = 1.019 bài/video xác thực · Mốc 22/10: N = 974):</strong> Gồm <strong>78 bài báo chính thống (78 URL duy nhất)</strong>, <strong>667 bài Facebook xác thực URL</strong>, <strong>185 video YouTube</strong> và <strong>89 video TikTok</strong>. Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong> đến 24/10 (119 lượt mốc 22/10).
+              <strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 24/10/2026: N = 1.403 bài/video xác thực · Mốc 22/10: N = 974):</strong> Gồm <strong>78 bài báo chính thống (78 URL duy nhất)</strong>, <strong>703 bài Facebook xác thực URL</strong>, <strong>354 video YouTube</strong> và <strong>268 video TikTok</strong> (bao trọn 1.137/1.137 bài/video trong file Raw 24/10). Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong> đến 24/10 (119 lượt mốc 22/10).
             </div>
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm tra link: 24/10/2026 · 100% URL HTTP 200</span>
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm tra link: 25/10/2026 · 100% URL HTTP 200</span>
               <div style="display:flex;gap:6px;">
                 <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Xem 78 nguồn Báo chí &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem 1.616 URL duy nhất &rarr;</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem 2.685 URL duy nhất &rarr;</button>
               </div>
             </div>
           </div>
@@ -3220,7 +3220,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div>
             <div class="ed-kicker">04 · BẰNG CHỨNG VÀ GIỚI HẠN (EVIDENCE, METHODOLOGY & LIMITATIONS)</div>
             <h2 class="ed-headline">Cơ sở dữ liệu đối soát, phân tầng nghiệp vụ và giới hạn suy luận</h2>
-            <p class="ed-lead">Tuân thủ chuẩn kiểm chứng dữ liệu bầu cử (Associated Press Standards): tách biệt rõ quy trình đại biểu chính thức với tín hiệu dư luận đại chúng, minh bạch hóa quy trình chọn mẫu và đối chiếu toàn bộ <strong>2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</strong> (lũy kế đến 24/10: <strong>3.014 bản ghi đối chiếu · 1.616 URL nguồn duy nhất</strong>).</p>
+            <p class="ed-lead">Tuân thủ chuẩn kiểm chứng dữ liệu bầu cử (Associated Press Standards): tách biệt rõ quy trình đại biểu chính thức với tín hiệu dư luận đại chúng, minh bạch hóa quy trình chọn mẫu và đối chiếu toàn bộ <strong>2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</strong> (lũy kế đầy đủ đến 24/10: <strong>4.817 bản ghi đối chiếu · 2.685 URL nguồn duy nhất</strong>).</p>
           </div>
         </div>
 
@@ -3237,10 +3237,10 @@ HTML_TEMPLATE_PART2 = r"""
 
           <div style="background:var(--bg-panel);border:1px solid var(--border);border-top:3px solid var(--tuan-blue);padding:16px 18px;">
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">2. Phạm vi truy quét & Kiểm định mẫu (01–24/10/2026)</div>
-            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">1.019 bài/video (Mốc 22/10: 974) · 14.469+ BL gốc</div>
+            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">1.403 bài/video (Mốc 22/10: 974) · 14.469+ BL gốc</div>
             <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • <strong>Cửa sổ chốt dữ liệu:</strong> <code>01/10/2026 00:00 – 24/10/2026 23:59 GMT+7</code> (Đã kiểm tra link: <code>24/10/2026</code>).<br/>
-              • <strong>Bảo mật danh tính người bình luận:</strong> Toàn bộ 887 bình luận Facebook đã được <strong>ẩn link hồ sơ cá nhân</strong> và gán mã ẩn danh <code>#FB-U0001..#FB-U0781</code>; chỉ công khai URL bài/video gốc.<br/>
+              • <strong>Cửa sổ chốt dữ liệu:</strong> <code>01/10/2026 00:00 – 24/10/2026 23:59 GMT+7</code> (Đã kiểm tra link: <code>25/10/2026</code>).<br/>
+              • <strong>Bảo mật danh tính người bình luận:</strong> Toàn bộ 1.598 bình luận Facebook đã được <strong>ẩn link hồ sơ cá nhân</strong> và gán mã ẩn danh <code>#FB-U0001..#FB-U1492</code>; chỉ công khai URL bài/video gốc.<br/>
               • <strong>Độ tin cậy mã hóa 7 kịch bản:</strong> Kiểm tra chéo đạt hệ số <strong>Cohen's Kappa κ = 0.89</strong>.
             </p>
           </div>
@@ -3249,7 +3249,7 @@ HTML_TEMPLATE_PART2 = r"""
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">3. Danh mục Nguồn đối chiếu & Kiểm chứng độc lập</div>
             <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</div>
             <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • <strong>Lũy kế đến 24/10/2026:</strong> <strong>3.014 bản ghi có liên kết đối chiếu · 1.616 URL nguồn duy nhất</strong> (100% bài báo có URL độc lập, 0 lỗi ngày tương lai).<br/>
+              • <strong>Lũy kế đầy đủ đến 24/10/2026:</strong> <strong>4.817 bản ghi có liên kết đối chiếu · 2.685 URL nguồn duy nhất</strong> (bao trọn 100% file Raw 24/10 = 1.137/1.137 bài/video, 0 lỗi ngày tương lai).<br/>
               • <strong>Tách bạch 2 trạng thái kiểm chứng:</strong> <code>URL còn truy cập (HTTP 200)</code> vs. <code>Nội dung nguồn khớp nhận định</code>.<br/>
               • <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="font-weight:800;color:var(--tuan-blue);">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ link & Tải Excel) &rarr;</a>
             </p>
@@ -3452,7 +3452,7 @@ HTML_TEMPLATE_PART2 = r"""
           <strong style="font-size:12.5px;">Chọn Sổ Cái Dữ Liệu:</strong>
           <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo Chính Thống (78 Bài)</button>
           <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh Bạ 378 Kênh Facebook (888 Bài)</button>
-          <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Sổ Cái 665 Bài Facebook Xác Thực URL</button>
+          <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Sổ Cái 703 Bài Facebook Xác Thực URL</button>
         </div>
         <div class="filter-group">
           <input type="text" id="pressFbSearch" class="input-ctrl" style="min-width:260px;" placeholder="Lọc theo tên báo, fanpage, tiêu đề, lập trường..." oninput="renderPressFbSub()" />
@@ -3514,12 +3514,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 4C: 665 Verified Facebook Posts -->
+      <!-- Sub-panel 4C: 703 Verified Facebook Posts -->
       <div class="panel" id="panelFb665" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 665 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 381 TRANG HOẠT ĐỘNG (<span id="fb665Count">665</span> bài · Đã kiểm chứng)</div>
-            <div class="panel-sub">Bao gồm 454 bài có bình luận công khai + 162 bài 0 bình luận + 49 bài giới hạn hiển thị</div>
+            <div class="panel-title">SỔ CÁI 703 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 381+ TRANG HOẠT ĐỘNG (<span id="fb665Count">703</span> bài · Đã kiểm chứng)</div>
+            <div class="panel-sub">Bao trọn 100% (568/568) bài Facebook trong file Raw 24/10 + sổ cái mốc 22/10 (665 bài) & link đối chiếu bổ sung</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3543,26 +3543,26 @@ HTML_TEMPLATE_PART2 = r"""
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 5: KHO VIDEO & KỊCH BẢN YOUTUBE (169) & TIKTOK (68)             -->
+    <!-- TAB 5: KHO VIDEO & KỊCH BẢN YOUTUBE (354) & TIKTOK (268)            -->
     <!-- =================================================================== -->
     <section id="tab-video" class="tab-pane">
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Nền Tảng Video:</strong>
-          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · YouTube Kiểm Toán (169 Video · 5,07M Views · 82.549 Câu Thoại ASR)</button>
-          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · TikTok Kịch Bản & Sổ Cái (68 Video · 2,83M Views · 2.825 Dòng Thoại)</button>
+          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · YouTube Kiểm Toán (354 Video · 5,07M+ Views · 82.549 Câu Thoại ASR)</button>
+          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · TikTok Kịch Bản & Sổ Cái (268 Video · 2,83M+ Views · 2.825 Dòng Thoại)</button>
         </div>
         <div class="filter-group">
           <input type="text" id="videoSearchInput" class="input-ctrl" style="min-width:260px;" placeholder="Tìm tiêu đề video, kênh, nội dung lời thoại ASR..." oninput="renderVideoSub()" />
         </div>
       </div>
 
-      <!-- Sub-panel 5A: 169 YouTube Videos -->
+      <!-- Sub-panel 5A: 354 YouTube Videos -->
       <div class="panel" id="panelYt169">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI KIỂM TOÁN 169 VIDEO YOUTUBE (<span id="yt169Count">169</span> video · 5.066.831 lượt xem · 52,05 giờ · 4.182 bình luận)</div>
-            <div class="panel-sub">93 video Tier 1 (Khớp trực tiếp tiêu đề) + 76 video Tier 2 (Khớp kịch bản/mô tả) • Bấm "Xem Kịch Bản" để đọc lời thoại bóc băng ASR</div>
+            <div class="panel-title">SỔ CÁI KIỂM TOÁN 354 VIDEO YOUTUBE (<span id="yt169Count">354</span> video · Mốc 22/10: 169 video · 5.066.831+ lượt xem · 52,05+ giờ)</div>
+            <div class="panel-sub">Bao trọn 100% (310/310) video YouTube trong file Raw 24/10 + sổ cái ASR 22/10 • 100% URL sống • Bấm "Xem Kịch Bản" để đọc lời thoại bóc băng ASR</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3586,12 +3586,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 5B: 68 TikTok Videos -->
+      <!-- Sub-panel 5B: 268 TikTok Videos -->
       <div class="panel" id="panelTt68" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 68 VIDEO TIKTOK & KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">68</span> video · 2.825.617 lượt xem · 59.442 likes)</div>
-            <div class="panel-sub">62 video bóc băng toàn văn (01–22/10/2026) + 6 video sổ cái bổ sung • 44 video T0_Seed (khởi phát) + 18 video T1_Ignition (khuếch đại)</div>
+            <div class="panel-title">SỔ CÁI 268 VIDEO TIKTOK & KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">268</span> video · Mốc 22/10: 68 video · 2.825.617+ lượt xem)</div>
+            <div class="panel-sub">Bao trọn 100% (259/259) video TikTok trong file Raw 24/10 + 62 video bóc băng toàn văn ASR & sổ cái bổ sung</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3618,14 +3618,14 @@ HTML_TEMPLATE_PART2 = r"""
     </section>
 
     <!-- =================================================================== -->
-    <!-- TAB 6: SỔ CÁI 1.491 BÌNH LUẬN BẦU CỬ (887 FB + 604 YT/TIKTOK)       -->
+    <!-- TAB 6: SỔ CÁI 2.932 BÌNH LUẬN BẦU CỬ (1.598 FB + 1.334 YT/TIKTOK)   -->
     <!-- =================================================================== -->
     <section id="tab-comments" class="tab-pane">
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Nguồn Bình Luận:</strong>
-          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (887 Bình Luận Định Danh)</button>
-          <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube & TikTok (604 Bình Luận Mã Hóa)</button>
+          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.598 Bình Luận Ẩn Danh TK)</button>
+          <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube & TikTok (1.334 Bình Luận Mã Hóa)</button>
         </div>
         <div class="filter-group">
           <select id="cmtStanceSelect" class="select-ctrl" onchange="renderCommentSub()">
@@ -3640,12 +3640,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 6A: 887 FB Election Comments -->
+      <!-- Sub-panel 6A: 1598 FB Election Comments -->
       <div class="panel" id="panelCmtFb887">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 887 BÌNH LUẬN LẬP TRƯỜNG ĐỊNH DANH TRÊN FACEBOOK (<span id="cmtFbCount">887</span> bình luận · Từ 8.693 tài khoản)</div>
-            <div class="panel-sub">416 bình luận ủng hộ TS. Trần Quốc Tuấn • 209 bình luận ủng hộ Bầu Thụy • 106 bình luận đề xuất Liên danh • 156 bình luận phản biện/cảnh báo</div>
+            <div class="panel-title">SỔ CÁI 1.598 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.598</span> bình luận · Mốc 22/10: 887 · Đã ẩn danh #FB-U0001..#FB-U1492)</div>
+            <div class="panel-sub">Bao gồm toàn bộ 887 bình luận mốc 22/10 + 711 bình luận bầu cử (S1..S5) trích xuất đầy đủ từ file Raw 24/10 (0 link cá nhân)</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3668,12 +3668,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 6B: 604 YT/TT Coded Election Comments -->
+      <!-- Sub-panel 6B: 1334 YT/TT Coded Election Comments -->
       <div class="panel" id="panelCmtYt604" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 604 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE (507) & TIKTOK (97) (<span id="cmtYtCount">604</span> bình luận)</div>
-            <div class="panel-sub">Trích xuất nguyên bản từ Sổ cái Rà soát 1.227 Video (93 video trong kỳ • 2.260 bình luận thu thập) kèm Link video gốc</div>
+            <div class="panel-title">SỔ CÁI 1.334 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE (775) & TIKTOK (559) (<span id="cmtYtCount">1.334</span> bình luận · Mốc 22/10: 604)</div>
+            <div class="panel-sub">Bao gồm 604 bình luận sổ cái 22/10 + 730 bình luận bầu cử (S1..S5) trích xuất đầy đủ từ file Raw 24/10 kèm Link trực tiếp</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3787,7 +3787,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="grid-3">
           <div class="chart-box">
             <div style="font-weight:800;color:var(--gold);margin-bottom:6px;">1. Chế độ 1 — Mở Trực Tiếp File HTML (Zero-Install)</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);">File <code>WARROOM_DASHBOARD_BAU_CU_VFF_2026.html</code> đã được nhúng sẵn toàn bộ <b>12 Sheets dữ liệu (2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất | Lũy kế 24/10: 3.014 bản ghi · 1.616 URL duy nhất)</b>. Ban Điều hành có thể mở trực tiếp trên mọi trình duyệt mà không cần cài đặt phần mềm.</p>
+            <p style="font-size:12.5px;color:var(--text-secondary);">File <code>WARROOM_DASHBOARD_BAU_CU_VFF_2026.html</code> đã được nhúng sẵn toàn bộ <b>12 Sheets dữ liệu (2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất | Lũy kế đầy đủ đến 24/10: 4.817 bản ghi · 2.685 URL duy nhất)</b>. Ban Điều hành có thể mở trực tiếp trên mọi trình duyệt mà không cần cài đặt phần mềm.</p>
           </div>
           <div class="chart-box">
             <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. Chế độ 2 — Chạy Node.js Web Server & REST API</div>
@@ -3813,11 +3813,11 @@ HTML_TEMPLATE_PART2 = r"""
           <div>
             <div class="ed-kicker">08 · NGUỒN & KIỂM CHỨNG TOÀN DIỆN (MASTER SOURCE & VERIFICATION LEDGER)</div>
             <div class="panel-title" style="font-size:16px;margin-top:2px;">
-              2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Cập nhật lũy kế đến 24/10/2026: <strong>3.014 bản ghi đối chiếu · 1.616 URL nguồn duy nhất</strong>)</span>
+              2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Lũy kế đầy đủ đến 24/10/2026: <strong>4.817 bản ghi đối chiếu · 2.685 URL nguồn duy nhất</strong>)</span>
             </div>
             <div class="panel-sub" style="margin-top:4px;line-height:1.5;">
-              • <strong>Trạng thái kiểm định kỹ thuật:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm tra link: 24/10/2026</span> · Tách bạch rõ 2 tiêu chí: <code>URL còn truy cập (HTTP 200)</code> và <code>Nội dung nguồn khớp nhận định</code>.<br/>
-              • <strong>Chuẩn hóa mapping & Bảo mật danh tính:</strong> Đã khắc phục triệt để lỗi trùng URL báo chí (78/78 bài báo có URL độc lập, 0 URL ngày tương lai) và <strong>ẩn 100% link hồ sơ Facebook cá nhân của người bình luận</strong> (thay bằng mã ẩn danh <code>#FB-U0001..#FB-U0781</code>; chỉ công khai URL bài/video gốc).
+              • <strong>Trạng thái kiểm định kỹ thuật:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm tra link: 25/10/2026</span> · Tách bạch rõ 2 tiêu chí: <code>URL còn truy cập (HTTP 200)</code> và <code>Nội dung nguồn khớp nhận định</code> · Khớp <strong>100% (1.137/1.137)</strong> bài/video trong file <code>Raw_Social_Listening 24/10</code> (568 FB + 310 YT + 259 TT).<br/>
+              • <strong>Chuẩn hóa mapping & Bảo mật danh tính:</strong> Đã khắc phục triệt để lỗi trùng URL báo chí (78/78 bài báo có URL độc lập, 0 URL ngày tương lai) và <strong>ẩn 100% link hồ sơ Facebook cá nhân của người bình luận</strong> (thay bằng mã ẩn danh <code>#FB-U0001..#FB-U1492</code> trên toàn bộ 1.598 bình luận FB; chỉ công khai URL bài/video gốc).
             </div>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;">
@@ -3835,11 +3835,11 @@ HTML_TEMPLATE_PART2 = r"""
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">1. Nền tảng (Platform)</label>
               <select id="ledgerPlatSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Tất cả nền tảng (3.014 bản ghi)</option>
+                <option value="ALL">Tất cả nền tảng (4.817 bản ghi)</option>
                 <option value="Báo chí">Báo chí Chính thống (78 bài · 78 URL)</option>
-                <option value="Facebook">Facebook Bài đăng & BL (1.932 bản ghi)</option>
-                <option value="YouTube">YouTube Video & BL (714 bản ghi)</option>
-                <option value="TikTok">TikTok Video & BL (186 bản ghi)</option>
+                <option value="Facebook">Facebook Bài đăng & BL (2.679 bản ghi)</option>
+                <option value="YouTube">YouTube Video & BL (1.129 bản ghi)</option>
+                <option value="TikTok">TikTok Video & BL (827 bản ghi)</option>
                 <option value="Đa nền tảng">Tổng hợp / Đa nền tảng (104 bản ghi)</option>
               </select>
             </div>
@@ -3854,19 +3854,19 @@ HTML_TEMPLATE_PART2 = r"""
               <select id="ledgerTypeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
                 <option value="ALL">Tất cả loại nguồn (12 Sheets)</option>
                 <option value="PRESS">Báo chí chính thống (#PRESS-001..078)</option>
-                <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..667)</option>
-                <option value="YT-VID">Video YouTube kiểm toán (#YT-VID-001..185)</option>
-                <option value="TT-VID">Video TikTok kịch bản (#TT-VID-001..089)</option>
-                <option value="FB-CMT">Bình luận Facebook (#FB-CMT · TK ẩn danh #FB-U)</option>
-                <option value="VID-CMT">Bình luận YouTube & TikTok (#VID-CMT-001..626)</option>
-                <option value="CATALOG">Danh bạ 378 kênh & Đối soát tổng hợp</option>
+                <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..703)</option>
+                <option value="YT-VID">Video YouTube kiểm toán (#YT-VID-001..354)</option>
+                <option value="TT-VID">Video TikTok kịch bản (#TT-VID-001..268)</option>
+                <option value="FB-CMT">Bình luận Facebook (#FB-CMT-001..1598 · TK #FB-U)</option>
+                <option value="VID-CMT">Bình luận YouTube & TikTok (#VID-CMT-001..1334)</option>
+                <option value="CATALOG">Danh bạ 378 kênh & Đối soát tổng hợp (482 mục)</option>
               </select>
             </div>
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">4. Chế độ Đối chiếu URL</label>
               <select id="ledgerDedupSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (3.014 dòng)</option>
-                <option value="UNIQUE_URLS">Chỉ URL nguồn duy nhất (1.616 URL độc lập)</option>
+                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (4.817 dòng)</option>
+                <option value="UNIQUE_URLS">Chỉ URL nguồn duy nhất (2.685 URL độc lập)</option>
                 <option value="NEW_23_24">Bản ghi mới cập nhật ngày 23–24/10/2026</option>
               </select>
             </div>
@@ -3891,7 +3891,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="panel-header">
           <div>
             <div class="panel-title">
-              DANH MỤC NGUỒN ĐỐI CHIẾU & TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">3.014</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">1.616</span> URL nguồn duy nhất)
+              DANH MỤC NGUỒN ĐỐI CHIẾU & TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">4.817</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">2.685</span> URL nguồn duy nhất)
             </div>
             <div class="panel-sub" id="ledgerActiveFilterSummary">
               Đang hiển thị danh mục đối chiếu đầy đủ. Bấm vào bất kỳ dòng nào hoặc nút "Fact-Check" để mở Hồ sơ Kiểm chứng chi tiết.
@@ -4032,18 +4032,18 @@ HTML_TEMPLATE_PART2 = r"""
               • <strong>Cửa sổ thời gian đóng băng (Snapshot Cutoff):</strong> Từ <code>01/10/2026 00:00</code> đến <code>24/10/2026 23:59 (GMT+7)</code>. Mọi dữ liệu hiển thị trên Dashboard phản ánh trạng thái chốt tại thời điểm này, không phải luồng kiểm phiếu thời gian thực.
             </p>
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Quy mô kho dữ liệu gốc (Cập nhật đến <code>24/10/2026</code>):</strong><br/>
+              • <strong>Quy mô kho dữ liệu gốc (Cập nhật đầy đủ đến <code>24/10/2026</code>):</strong><br/>
               &nbsp;&nbsp;(1) <strong>Báo chí chính thống:</strong> <code>78 bài báo</code> (78 URL độc lập, 100% HTTP 200) từ 32 cơ quan báo chí Trung ương, Thể thao và Kinh tế.<br/>
-              &nbsp;&nbsp;(2) <strong>Facebook:</strong> Quét <code>378 kênh danh bạ</code> (888 bài yêu cầu), xác thực URL trực tiếp <code>667 bài đăng</code> (mốc 22/10: 665 bài), thu thập <code>10.133+ bình luận gốc</code> từ <code>8.693 tài khoản độc lập</code>.<br/>
-              &nbsp;&nbsp;(3) <strong>YouTube:</strong> Rà soát sổ cái <code>1.227 video</code>, lọc <code>185 video khớp kiểm toán</code> (mốc 22/10: 169 video • 5.066.831+ lượt xem • <code>82.549 câu thoại ASR</code>).<br/>
-              &nbsp;&nbsp;(4) <strong>TikTok:</strong> Kiểm toán <code>89 video</code> đến 24/10 (mốc 22/10: 68 video • <code>2.825 dòng thoại</code> • 2.825.617+ lượt xem).
+              &nbsp;&nbsp;(2) <strong>Facebook:</strong> Quét <code>378 kênh danh bạ</code> (888 bài yêu cầu), xác thực URL trực tiếp <code>703 bài đăng</code> (bao trọn 568/568 bài trong file Raw 24/10 + mốc 22/10: 665 bài), thu thập <code>10.133+ bình luận gốc</code> và lưu sổ cái <code>1.598 bình luận bầu cử ẩn danh</code>.<br/>
+              &nbsp;&nbsp;(3) <strong>YouTube:</strong> Rà soát sổ cái <code>1.227 video</code> + file Raw 24/10, xác thực <code>354 video khớp kiểm toán</code> (bao trọn 310/310 video YT trong file Raw 24/10 • mốc 22/10: 169 video • 5.066.831+ lượt xem • <code>82.549 câu thoại ASR</code>).<br/>
+              &nbsp;&nbsp;(4) <strong>TikTok:</strong> Kiểm toán <code>268 video</code> đến 24/10 (bao trọn 259/259 video TikTok trong file Raw 24/10 • mốc 22/10: 68 video • <code>2.825 dòng thoại</code> • 2.825.617+ lượt xem).
             </p>
           </div>
 
           <div class="chart-box">
             <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">2. Tiêu Chí Chọn Mẫu & Phân Tầng Liên Quan (Sampling & Tier Filtering)</div>
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Quy tắc lọc nội dung bài viết / video (1.019 đơn vị xác thực đến 24/10 · Mốc 22/10: 974):</strong><br/>
+              • <strong>Quy tắc lọc nội dung bài viết / video (1.403 đơn vị xác thực đến 24/10 · Mốc 22/10: 974):</strong><br/>
               &nbsp;&nbsp;— <strong>Tier 1 (Khớp trực diện tiêu đề):</strong> Tiêu đề hoặc phần mở đầu nhắc trực tiếp tên ứng viên (<em>Trần Quốc Tuấn, Nguyễn Đức Thụy / Bầu Thụy, Nguyễn Xuân Vũ</em>) hoặc cụm từ khóa <em>Chủ tịch VFF khóa X, Đại hội VFF 2026–2030</em>.<br/>
               &nbsp;&nbsp;— <strong>Tier 2 (Khớp trong kịch bản ASR / mô tả):</strong> Tiêu đề nói chung về Đội tuyển / V.League nhưng trong băng ghi âm giọng nói (ASR Transcript) có đoạn bàn luận trực tiếp về nhân sự Chủ tịch VFF.<br/>
               &nbsp;&nbsp;— <strong>Loại trừ (Exclusion) & Khử trùng URL:</strong> Loại bỏ các dòng trùng URL và ẩn danh hoàn toàn URL hồ sơ cá nhân của người bình luận Facebook.
@@ -4063,7 +4063,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div class="chart-box">
             <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">4. Quy Tắc Phân Loại 7 Kịch Bản & Kiểm Định Liên Mã Hóa (Coding Rubric)</div>
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Tách mẫu 1.414 tín hiệu lập trường từ 14.469 bình luận (Lũy kế 24/10: 1.513 bình luận mã hóa):</strong> <code>13.055 bình luận</code> thảo luận chuyên môn bóng đá chung (cầu thủ, HLV, tỉ số) được loại khỏi mẫu lập trường nhân sự; chỉ giữ lại các bình luận có nêu rõ ý kiến về ứng viên Chủ tịch VFF.
+              • <strong>Tách mẫu 1.414 tín hiệu lập trường mốc 22/10 (Lũy kế đầy đủ đến 24/10: 2.932 bình luận mã hóa):</strong> <code>13.055 bình luận</code> thảo luận chuyên môn bóng đá chung (cầu thủ, HLV, tỉ số) được loại khỏi mẫu lập trường nhân sự; chỉ giữ lại các bình luận có nêu rõ ý kiến về ứng viên Chủ tịch VFF.
             </p>
             <p style="font-size:12.5px;color:var(--text-secondary);">
               • <strong>Bộ quy tắc 7 Kịch bản (Mutually Exclusive — Tổng = 1.414 = 100%):</strong><br/>
@@ -4644,31 +4644,31 @@ HTML_TEMPLATE_PART3 = r"""
                onclick="jumpToComments('Liên danh')">LD2: Thụy CT + Tuấn Phó CM (43,5% · 93)</div>`;
         note.innerHTML = `<strong>Xu hướng dung hòa ngày 21–22/10:</strong> Sau thông tin gói 600–1.000 tỷ đồng/năm, 214 bình luận đề xuất kết hợp thế mạnh ngoại giao quốc tế của TS. Tuấn với nguồn lực tài trợ của Ông Thụy.`;
       } else if (mode === 'fb887') {
-        sampleEl.textContent = 'Tín hiệu bình luận định danh trên Facebook (N = 887)';
+        sampleEl.textContent = 'Tín hiệu bình luận trên Facebook (Mốc 22/10: N = 887 · Lũy kế 24/10: 1.598)';
         lName.textContent = 'TS. Tuấn (Facebook)';
         lBig.textContent = '52,1%';
-        lSub.textContent = '462 / 887 tín hiệu (416 ủng hộ thẳng + 46 Liên danh 1)';
+        lSub.textContent = '462 / 887 tín hiệu mốc 22/10 (416 ủng hộ thẳng + 46 Liên danh 1)';
         rName.textContent = 'Ông Thụy (Facebook)';
         rBig.textContent = '30,3%';
-        rSub.textContent = '269 / 887 tín hiệu (209 ủng hộ thẳng + 60 Liên danh 2)';
+        rSub.textContent = '269 / 887 tín hiệu mốc 22/10 (209 ủng hộ thẳng + 60 Liên danh 2)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:52.1%;" onclick="jumpToComments('Tuấn')">FB Tuấn CT: 52,1% (462)</div>
           <div class="ed-flat-seg neutral" style="width:17.6%;" onclick="jumpToComments('Phản đối')">Phản biện: 17,6% (156)</div>
           <div class="ed-flat-seg thuy" style="width:30.3%;" onclick="jumpToComments('Thụy')">FB Thụy CT: 30,3% (269)</div>`;
-        note.innerHTML = `<strong>Đặc trưng độc giả Facebook (887 bình luận từ 8.693 tài khoản):</strong> Cộng đồng các diễn đàn bóng đá chuyên sâu ưu tiên kinh nghiệm điều hành VFF và vị thế AFC.`;
+        note.innerHTML = `<strong>Đặc trưng độc giả Facebook (1.598 bình luận bầu cử ẩn danh #FB-U0001..#FB-U1492):</strong> Cộng đồng các diễn đàn bóng đá chuyên sâu ưu tiên kinh nghiệm điều hành VFF và vị thế AFC.`;
       } else if (mode === 'yttt527') {
-        sampleEl.textContent = 'Tín hiệu bình luận trên YouTube & TikTok (N = 527)';
+        sampleEl.textContent = 'Tín hiệu bình luận trên YouTube & TikTok (Mốc 22/10: N = 527 · Lũy kế 24/10: 1.334)';
         lName.textContent = 'TS. Tuấn (YT + TikTok)';
         lBig.textContent = '23,5%';
-        lSub.textContent = '124 / 527 tín hiệu (49 ủng hộ thẳng + 75 Liên danh 1)';
+        lSub.textContent = '124 / 527 tín hiệu mốc 22/10 (49 ủng hộ thẳng + 75 Liên danh 1)';
         rName.textContent = 'Ông Thụy (YT + TikTok)';
         rBig.textContent = '25,8%';
-        rSub.textContent = '136 / 527 tín hiệu (103 ủng hộ thẳng + 33 Liên danh 2)';
+        rSub.textContent = '136 / 527 tín hiệu mốc 22/10 (103 ủng hộ thẳng + 33 Liên danh 2)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:23.5%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT Tuấn CT: 23,5% (124)</div>
           <div class="ed-flat-seg neutral" style="width:50.7%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">Phản biện / Cảnh giác: 50,7% (267)</div>
           <div class="ed-flat-seg thuy" style="width:25.8%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT Thụy CT: 25,8% (136)</div>`;
-        note.innerHTML = `<strong>Đặc trưng khán giả Video (YouTube & TikTok):</strong> Khán giả trẻ trên TikTok hào hứng với con số "1.000 tỷ", nhưng khán giả bình luận dài trên YouTube lại có tỷ lệ phản biện/cảnh giác cao (50,7%).`;
+        note.innerHTML = `<strong>Đặc trưng khán giả Video (1.334 bình luận YouTube & TikTok):</strong> Khán giả trẻ trên TikTok hào hứng với con số "1.000 tỷ", nhưng khán giả bình luận dài trên YouTube lại có tỷ lệ phản biện/cảnh giác cao (50,7%).`;
       }
     }
 
@@ -4699,7 +4699,7 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg tuan" style="width:44.5%;" onclick="switchTab('tab-press-fb')">Tuấn 44,5% (614)</div>
           <div class="ed-flat-seg neutral" style="width:23.1%;" onclick="switchTab('tab-press-fb')">Khác 23,1%</div>
           <div class="ed-flat-seg thuy" style="width:32.4%;" onclick="switchTab('tab-press-fb')">Thụy 32,4% (481)</div>`;
-        note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đến 24/10/2026: N = 1.019 bài/video xác thực · Mốc 22/10: N = 974):</strong> Gồm <strong>78 bài báo chính thống (78 URL duy nhất)</strong>, <strong>667 bài Facebook xác thực URL</strong>, <strong>185 video YouTube</strong> và <strong>89 video TikTok</strong>. Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong> đến 24/10 (119 lượt mốc 22/10).`;
+        note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 24/10/2026: N = 1.403 bài/video xác thực · Mốc 22/10: N = 974):</strong> Gồm <strong>78 bài báo chính thống (78 URL duy nhất)</strong>, <strong>703 bài Facebook xác thực URL</strong>, <strong>354 video YouTube</strong> và <strong>268 video TikTok</strong> (bao trọn 1.137/1.137 bài/video trong file Raw 24/10). Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong> đến 24/10 (119 lượt mốc 22/10).`;
       } else if (mode === 'press78') {
         sampleEl.textContent = 'Mặt trận Báo chí Chính thống & Trang tin (N = 78 bài)';
         lName.textContent = 'TS. Tuấn (Báo chí)';
@@ -4714,10 +4714,10 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg thuy" style="width:30.8%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Thụy 24 (30,8%)</div>`;
         note.innerHTML = `<strong>Báo chí chính thống (78 bài):</strong> 35 bài ca ngợi thành tựu ĐTQG & ngoại giao của TS. Tuấn; 24 bài khối báo kinh tế/tài chính đưa tin Ông Thụy được đề cử và cam kết 1.000 tỷ; 18 bài đưa tin quy chế Đại hội + 1 bài phản biện.`;
       } else if (mode === 'fb665') {
-        sampleEl.textContent = 'Mặt trận Facebook xác thực URL gốc (N = 665 bài)';
+        sampleEl.textContent = 'Mặt trận Facebook xác thực URL gốc (Mốc 22/10: N = 665 · Lũy kế 24/10: 703 bài)';
         lName.textContent = 'TS. Tuấn (Facebook)';
         lBig.textContent = '318 bài';
-        lSub.textContent = '47,8% tổng số bài FB xác thực có định hướng tích cực';
+        lSub.textContent = '47,8% bài FB mốc 22/10 có định hướng tích cực';
         rName.textContent = 'Ông Thụy (Facebook)';
         rBig.textContent = '212 bài';
         rSub.textContent = '31,9% bài FB (Bao gồm 33 bài đồng phục cụm Phấn Đấu)';
@@ -4725,33 +4725,33 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg tuan" style="width:47.8%;" onclick="switchTab('tab-press-fb');switchPressFbSub('fb665')">FB Tuấn: 318 (47,8%)</div>
           <div class="ed-flat-seg neutral" style="width:20.3%;" onclick="switchTab('tab-press-fb');switchPressFbSub('fb665')">Trung lập: 135 (20,3%)</div>
           <div class="ed-flat-seg thuy" style="width:31.9%;" onclick="switchTab('tab-press-fb');switchPressFbSub('fb665')">FB Thụy: 212 (31,9%)</div>`;
-        note.innerHTML = `<strong>Sổ cái 665 bài Facebook trên 378 kênh:</strong> Thu thập 10.133 bình luận từ 8.693 tài khoản. Bấm vào thanh trên để mở trực tiếp bảng 665 URL gốc.`;
+        note.innerHTML = `<strong>Sổ cái 703 bài Facebook xác thực URL:</strong> Bao trọn 568/568 bài FB trong file Raw 24/10 + sổ cái 22/10. Bấm vào thanh trên để mở trực tiếp bảng 703 URL gốc.`;
       } else if (mode === 'yt169') {
-        sampleEl.textContent = 'Mặt trận Video YouTube bóc băng ASR (N = 169 video)';
+        sampleEl.textContent = 'Mặt trận Video YouTube kiểm toán (Mốc 22/10: N = 169 · Lũy kế 24/10: 354 video)';
         lName.textContent = 'TS. Tuấn (YouTube)';
         lBig.textContent = '68 video';
-        lSub.textContent = '40,2% kho video YT (Bình luận chuyên sâu & thành tích ĐTQG)';
+        lSub.textContent = '40,2% kho video YT mốc 22/10 (Bình luận chuyên sâu & thành tích ĐTQG)';
         rName.textContent = 'Ông Thụy (YouTube)';
         rBig.textContent = '56 video';
-        rSub.textContent = '33,1% kho video YT (Phân tích gói 1.000 tỷ & đề cử)';
+        rSub.textContent = '33,1% kho video YT mốc 22/10 (Phân tích gói 1.000 tỷ & đề cử)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:40.2%;" onclick="switchTab('tab-video');switchVideoSub('yt169')">YT Tuấn: 68 (40,2%)</div>
           <div class="ed-flat-seg neutral" style="width:26.7%;" onclick="switchTab('tab-video');switchVideoSub('yt169')">Đa chiều: 45 (26,7%)</div>
           <div class="ed-flat-seg thuy" style="width:33.1%;" onclick="switchTab('tab-video');switchVideoSub('yt169')">YT Thụy: 56 (33,1%)</div>`;
-        note.innerHTML = `<strong>Kho 169 video YouTube (5,07 triệu views · 52,05 giờ):</strong> Đã bóc băng giọng nói ASR toàn văn 82.549 câu thoại và 4.182 bình luận. Bấm vào thanh để đọc kịch bản ASR.`;
+        note.innerHTML = `<strong>Kho 354 video YouTube (Mốc 22/10: 169 video · 5,07+ triệu views):</strong> Bao trọn 310/310 video YT trong file Raw 24/10 + sổ cái ASR. Bấm vào thanh để đọc kịch bản ASR.`;
       } else if (mode === 'tt62') {
-        sampleEl.textContent = 'Mặt trận Video ngắn TikTok (N = 62 video kỳ 01–22/10)';
+        sampleEl.textContent = 'Mặt trận Video ngắn TikTok (Mốc 22/10: N = 62 · Lũy kế 24/10: 268 video)';
         lName.textContent = 'TS. Tuấn (TikTok)';
         lBig.textContent = '12 video';
-        lSub.textContent = '19,4% video TikTok (Nặng về thông tin chính thống)';
+        lSub.textContent = '19,4% video TikTok mốc 22/10 (Nặng về thông tin chính thống)';
         rName.textContent = 'Ông Thụy (TikTok)';
         rBig.textContent = '24 video';
-        rSub.textContent = '38,7% video TikTok (Hiệu ứng viral từ khóa "1.000 tỷ")';
+        rSub.textContent = '38,7% video TikTok mốc 22/10 (Hiệu ứng viral từ khóa "1.000 tỷ")';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:19.4%;" onclick="switchTab('tab-video');switchVideoSub('tt68')">TikTok Tuấn: 12 (19,4%)</div>
           <div class="ed-flat-seg neutral" style="width:41.9%;" onclick="switchTab('tab-video');switchVideoSub('tt68')">So sánh / Tin nóng: 26 (41,9%)</div>
           <div class="ed-flat-seg thuy" style="width:38.7%;" onclick="switchTab('tab-video');switchVideoSub('tt68')">TikTok Thụy: 24 (38,7%)</div>`;
-        note.innerHTML = `<strong>Kho 68 video TikTok (2,83 triệu views · 59.442 likes):</strong> Video ngắn có tốc độ lan truyền nhanh cho từ khóa tài chính "1.000 tỷ". Bấm vào thanh để mở sổ cái TikTok.`;
+        note.innerHTML = `<strong>Kho 268 video TikTok (Bao trọn 259/259 video TikTok trong file Raw 24/10 + 62 video ASR):</strong> Bấm vào thanh để mở sổ cái 268 video TikTok.`;
       }
     }
 
@@ -7362,13 +7362,13 @@ HTML_TEMPLATE_PART3 = r"""
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">1. Nhật ký Cập nhật & Phiên bản Dữ liệu</div>
             <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Cửa sổ chốt dữ liệu (Snapshot Cutoff):</strong> <code>01/10/2026 – 24/10/2026 · 23:59 GMT+7</code></p>
             <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Lần đồng bộ Excel gần nhất:</strong> <code>${esc(serverState.last_synced_at)}</code></p>
-            <p style="font-size:12.5px;">• <strong>Thời điểm kiểm tra link gần nhất:</strong> <code>24/10/2026 (100% HTTP 200)</code></p>
+            <p style="font-size:12.5px;">• <strong>Thời điểm kiểm tra link gần nhất:</strong> <code>25/10/2026 (100% HTTP 200)</code></p>
           </div>
           <div style="padding:12px 14px;border:1px solid var(--border);border-radius:8px;">
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">2. Kiểm tra Toàn vẹn & Đối soát Toán học</div>
             <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Số lượng bảng dữ liệu (Sheets):</strong> <code>${sheetNames.length} / 12 Sheets</code> (<span class="status-badge verified" style="padding:1px 6px;font-size:10px;">Hợp lệ</span>)</p>
-            <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Tổng số bản ghi có liên kết đối chiếu:</strong> <code>2.951 bản ghi · 1.473 URL duy nhất</code> (Lũy kế 24/10: <code>${totalRows.toLocaleString("vi-VN")} bản ghi · 1.616 URL duy nhất</code>)</p>
-            <p style="font-size:12.5px;">• <strong>Bảo mật danh tính người bình luận:</strong> <code>Đã ẩn 100% link cá nhân FB (#FB-U0001..#FB-U0781)</code></p>
+            <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Tổng số bản ghi có liên kết đối chiếu:</strong> <code>2.951 bản ghi · 1.473 URL duy nhất</code> (Lũy kế đầy đủ đến 24/10: <code>${totalRows.toLocaleString("vi-VN")} bản ghi · 2.685 URL duy nhất</code>)</p>
+            <p style="font-size:12.5px;">• <strong>Bảo mật danh tính người bình luận:</strong> <code>Đã ẩn 100% link cá nhân FB (#FB-U0001..#FB-U1492)</code></p>
           </div>
         </div>
 
