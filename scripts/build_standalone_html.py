@@ -1496,7 +1496,7 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
       margin: 5px 4px;
     }
 
-    /* Google Sheet Password Gate & Auto-Relock Overlay */
+    /* Security Gate Password Gate & Auto-Relock Overlay */
     body.auth-locked {
       overflow: hidden !important;
     }
@@ -2759,7 +2759,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="brand-title">
           <h1>THEO DÕI DƯ LUẬN BẦU CỬ VFF KHÓA X</h1>
           <div class="positioning-line">Dashboard theo dõi tín hiệu dư luận và độ phủ truyền thông quanh bầu cử VFF.</div>
-          <div class="dateline-meta"><strong>01–24/10/2026</strong> · Cập nhật 24/10/2026, 23:59 GMT+7 · <strong>2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Lũy kế đầy đủ đến 24/10: 4.817 bản ghi đối chiếu · 2.685 URL nguồn duy nhất)</span></div>
+          <div class="dateline-meta"><strong>01–25/10/2026</strong> · Cập nhật Báo cáo Đa Sheet 3 Nền tảng 3 Chiều (v4.5 &amp; v4.4 Core) · <strong>5.620 bản ghi có liên kết đối chiếu · 4.964 URL nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Kho v4.5: 805 kênh · 512 kênh có bài · 1.137 bài/video · 36,88M views · 20.767 BL = 19.652 Organic + 1.115 Seeder · 2.916 BL chính kiến [S1..S5])</span></div>
         </div>
       </div>
 
@@ -2769,12 +2769,12 @@ HTML_TEMPLATE_PART2 = r"""
           <span class="global-search-icon" style="display:inline-flex;align-items:center;color:var(--text-muted);">
             <svg class="ico-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </span>
-          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 4.817 bản ghi · 2.685 URL..." oninput="handleGlobalSearch(this.value)" />
+          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 5.620 bản ghi · 4.964 URL · 20.767 BL..." oninput="handleGlobalSearch(this.value)" />
         </div>
 
         <!-- Clean Data Status Pill -->
-        <div class="header-meta-group" title="Đã kiểm tra link: 25/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã ẩn danh 1.492 tài khoản bình luận FB">
-          <span class="status-badge snapshot">Cập nhật: 24/10 · 23:59</span>
+        <div class="header-meta-group" title="Đã kiểm tra link: 25/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã ẩn danh 1.886 tài khoản bình luận FB (#FB-U0001..#FB-U1886)">
+          <span class="status-badge snapshot">Cập nhật: v4.5 (25/10)</span>
           <span class="status-badge verified">Đã kiểm tra link: 25/10/2026</span>
           <button type="button" id="securitySessionPill" class="status-badge verified" style="cursor:pointer;border:1px solid #166534;" onclick="openOrLockSecurityGate()" title="Trạng thái phiên bảo mật. Bấm để khóa màn hình ngay.">
             <span id="securitySessionCountdown">Phiên bảo mật</span>
@@ -2795,21 +2795,28 @@ HTML_TEMPLATE_PART2 = r"""
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
                 <span>Danh mục nguồn đối chiếu</span>
               </span>
-              <span class="item-meta">4.817 bản ghi · .xlsx</span>
+              <span class="item-meta">5.620 bản ghi · .xlsx</span>
             </a>
             <a class="exec-menu-item" href="BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_24_10_2026.xlsx" id="dlExcelBtn" target="_blank">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
-                <span>Sổ cái Master Excel (24/10)</span>
+                <span>Sổ cái Master Excel (12 Sheets)</span>
               </span>
-              <span class="item-meta">12 Sheets · .xlsx</span>
+              <span class="item-meta">5.620 dòng · .xlsx</span>
+            </a>
+            <a class="exec-menu-item" href="BAO_CAO_DA_SHEET_TONG_HOP_3_NEN_TANG_UNG_HO_UNG_VIEN_VFF_2026.xlsx" target="_blank">
+              <span class="item-left">
+                <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
+                <span>Báo cáo Đa Sheet 3 Nền tảng (v4.5)</span>
+              </span>
+              <span class="item-meta">10 Sheets · 20.767 BL</span>
             </a>
             <button class="exec-menu-item" onclick="exportMasterSourceLedgerCSV(); closeAllDropdowns();">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 <span>Xuất CSV Danh mục nguồn đối chiếu</span>
               </span>
-              <span class="item-meta">4.817 dòng · .csv</span>
+              <span class="item-meta">5.620 dòng · .csv</span>
             </button>
             <button class="exec-menu-item" onclick="exportCurrentTabCSV(); closeAllDropdowns();">
               <span class="item-left">
@@ -2930,9 +2937,9 @@ HTML_TEMPLATE_PART2 = r"""
   <!-- SUBTLE EDITORIAL SCOPE NOTE -->
   <div style="background:#EFECE6;border-bottom:1px solid var(--border);padding:7px 24px;font-size:12px;color:var(--text-secondary);">
     <div style="max-width:1580px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-      <span><strong>Phạm vi & Giới hạn phương pháp:</strong> Số liệu phản ánh <strong>tín hiệu bình luận công khai được mã hóa (N = 1.414 · Lũy kế đầy đủ đến 24/10: 2.932 BL)</strong> và <strong>độ phủ truyền thông (N = 974 · Lũy kế đầy đủ đến 24/10: 1.403 bài/video)</strong>; không phải phiếu bầu của Đại biểu Đại hội VFF.</span>
+      <span><strong>Phạm vi &amp; Giới hạn phương pháp:</strong> Số liệu đối soát 2 tầng SSOT (<strong>v4.5 Open-World: 1.137 bài/video · 20.767 BL = 19.652 Organic + 1.115 Seeder · 2.916 BL chính kiến [S1..S5] = 2.683 Organic + 233 Seeder</strong> | <strong>v4.4 Core: 587 bài/video · 12.803 BL</strong> | <strong>Sổ cái kiểm chứng: 1.406 bài/video &amp; 3.343 BL mã hóa</strong>); không phải phiếu bầu chính thức của Đại biểu Đại hội VFF.</span>
       <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
-        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn & kiểm chứng (2.951 bản ghi · 1.473 URL | Toàn bộ 24/10: 4.817 bản ghi · 2.685 URL) &rarr;</a>
+        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn &amp; kiểm chứng (5.620 bản ghi có liên kết · 4.964 URL nguồn duy nhất) &rarr;</a>
         <a href="javascript:void(0)" onclick="switchTab('tab-methodology')" style="color:var(--text-main);text-decoration:underline;font-weight:700;font-size:11.8px;">Quy trình Đại biểu & Phương pháp (Mục 09) &rarr;</a>
       </div>
     </div>
@@ -2954,7 +2961,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel-header">
         <div>
           <div class="panel-title">KẾT QUẢ TRA CỨU TOÀN CỤC TRÊN 12 SHEETS DỮ LIỆU (<span id="globalSearchCount">0</span> bản ghi)</div>
-          <div class="panel-sub">Tìm kiếm tức thời trên toàn bộ 78 bài báo, 378 kênh FB, 703 bài FB, 354 video YT, 268 video TikTok và 2.932 bình luận mã hóa (cập nhật đến 24/10/2026)</div>
+          <div class="panel-sub">Tìm kiếm tức thời trên toàn bộ 78 bài báo, 770 hồ sơ kênh (512 kênh v4.5), 706 bài FB (568 v4.5), 354 video YT (310 v4.5), 268 video TikTok (259 v4.5) và 3.343 bình luận mã hóa (100% 2.916 BL [S1..S5] v4.5)</div>
         </div>
         <button class="btn btn-outline" onclick="clearGlobalSearch()">Đóng kết quả</button>
       </div>
@@ -2990,9 +2997,9 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="ed-section">
         <div class="ed-section-hdr">
           <div>
-            <div class="ed-kicker">01 · TÓM TẮT DIỄN BIẾN (01–24/10/2026 · 24 NGÀY THEO DÕI)</div>
+            <div class="ed-kicker">01 · TÓM TẮT DIỄN BIẾN &amp; ĐỐI SOÁT 2 TẦNG DỮ LIỆU (01–25/10/2026 · v4.5 OPEN-WORLD &amp; v4.4 CORE)</div>
             <h2 class="ed-headline">Tương quan lập trường công khai và độ phủ truyền thông</h2>
-            <p class="ed-lead">So sánh song song giữa <strong>tín hiệu bình luận có lập trường của độc giả (N = 991 đối đầu / 1.414 toàn mẫu · Lũy kế đầy đủ đến 24/10: 2.932 BL mã hóa)</strong> và <strong>mật độ bài viết, video đề cập trên báo chí & mạng xã hội (N = 974 · Lũy kế đầy đủ đến 24/10: 1.403 bài/video)</strong>. Trang chính hiển thị nhận định cốt lõi; bấm <strong>"Xem nguồn liên quan"</strong> để mở danh mục đối chiếu đầy đủ.</p>
+            <p class="ed-lead">Đối soát toàn diện 3 nền tảng (Facebook · YouTube · TikTok) &amp; Báo chí trên 3 chiều lập trường (<strong>Ủng hộ [PRO] · Phản đối [CON] · Trung lập/Liên danh [NEUTRAL/HYBRID]</strong>): Kho <strong>v4.5 Open-World</strong> ghi nhận <strong>805 kênh giám sát (512 kênh có bài) · 1.137 bài/video · 36.878.341 lượt xem · 20.767 bình luận (19.652 Organic = 94,63% + 1.115 Seeder = 5,37%) · 2.916 bình luận chính kiến [S1..S5] (2.683 Organic + 233 Seeder)</strong>; Sổ cái tích hợp đầy đủ <strong>5.620 bản ghi có liên kết · 4.964 URL duy nhất</strong>.</p>
           </div>
         </div>
 
@@ -3003,48 +3010,53 @@ HTML_TEMPLATE_PART2 = r"""
             <div>
               <div class="ed-metric-top" style="flex-wrap:wrap;gap:6px;">
                 <div>
-                  <span class="ed-metric-title">Chỉ số lập trường công khai</span>
-                  <span class="ed-metric-sample" id="stanceBarSampleLbl" style="display:block;margin-top:2px;">Tín hiệu bình luận có lập trường (N = 991)</span>
+                  <span class="ed-metric-title">Chỉ số lập trường công khai (6 Nhãn [S1..S6] &amp; 7 Kịch bản)</span>
+                  <span class="ed-metric-sample" id="stanceBarSampleLbl" style="display:block;margin-top:2px;">Kho v4.5 Open-World: 2.916 BL chính kiến [S1..S5] = 2.683 Organic + 233 Seeder (Tín nhiệm ròng: Tuấn +725 vs Thụy +120)</span>
                 </div>
                 <div class="ed-mini-pills" title="Chuyển đổi lát cắt mẫu bình luận">
-                  <button class="ed-mini-pill active" onclick="switchStanceBarMode('h2h', this)">Đối đầu (991)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('all1414', this)">Toàn mẫu (1.414)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('coalition', this)">Liên danh (214)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (1.598)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('yttt527', this)">YT/TT (1.334)</button>
+                  <button class="ed-mini-pill active" onclick="switchStanceBarMode('v45_org', this)">v4.5 Organic (2.683)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('v44_core', this)">v4.4 Core (2.495)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('h2h', this)">Đối đầu 22/10 (991)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('coalition', this)">Liên danh [S3] (255)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (1.886)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('yttt527', this)">YT/TT (1.457)</button>
                 </div>
               </div>
               <div class="ed-score-row">
                 <div class="ed-cand-side">
-                  <span class="ed-cand-label" id="stanceLeftName">TS. Trần Quốc Tuấn</span>
-                  <span class="ed-big-num tuan" id="stanceLeftBig">59,1%</span>
-                  <span class="ed-sub-count" id="stanceLeftSub">586 tín hiệu (465 ủng hộ thẳng + 121 Liên danh 1)</span>
+                  <span class="ed-cand-label" id="stanceLeftName">TS. Trần Quốc Tuấn (#1 Organic)</span>
+                  <span class="ed-big-num tuan" id="stanceLeftBig">1.021</span>
+                  <span class="ed-sub-count" id="stanceLeftSub">BL Organic chọn làm CT ([S2] 766 thẳng + [S3] 255 Liên danh · 1.094 All · Ròng +725)</span>
                 </div>
                 <div class="ed-cand-side right">
-                  <span class="ed-cand-label" id="stanceRightName">Ông Nguyễn Đức Thụy</span>
-                  <span class="ed-big-num thuy" id="stanceRightBig">40,9%</span>
-                  <span class="ed-sub-count" id="stanceRightSub">405 tín hiệu (312 ủng hộ thẳng + 93 Liên danh 2)</span>
+                  <span class="ed-cand-label" id="stanceRightName">Ông Nguyễn Đức Thụy (#2 Organic)</span>
+                  <span class="ed-big-num thuy" id="stanceRightBig">687</span>
+                  <span class="ed-sub-count" id="stanceRightSub">BL Organic ủng hộ [S1] (769 All · 82 Seeder = 10,66% · Phản đối [CON]: 567 · Ròng +120)</span>
                 </div>
               </div>
               <div class="ed-flat-bar" id="interactiveStanceBar">
-                <div class="ed-flat-seg tuan" style="width:59.1%;"
-                     onmouseenter="showEdTooltip(event, '<strong>Khối chọn TS. Trần Quốc Tuấn làm Chủ tịch</strong><div class=ed-tt-row><span>Tỷ lệ đối đầu:</span><strong>59,1% (586 / 991)</strong></div><div class=ed-tt-row><span>Ủng hộ thẳng (KB1):</span><span>465 tín hiệu</span></div><div class=ed-tt-row><span>Liên danh 1 (Tuấn CT + Thụy Phó):</span><span>121 tín hiệu</span></div><div class=ed-tt-hint>Bấm để lọc 586 bình luận trong Sổ cái &rarr;</div>')"
+                <div class="ed-flat-seg tuan" style="width:38.1%;"
+                     onmouseenter="showEdTooltip(event, '<strong>[S2] + [S3] Khối chọn TS. Trần Quốc Tuấn làm Chủ tịch (v4.5 Organic)</strong><div class=ed-tt-row><span>[S2] Ủng hộ thẳng (Organic / All):</span><strong>766 / 819 BL (#1 toàn mạng)</strong></div><div class=ed-tt-row><span>[S3] Liên danh Tuấn CT + Thụy PCT TC:</span><strong>255 / 275 BL (Đồng thuận 8,79:1)</strong></div><div class=ed-tt-row><span>Phản đối trực tiếp [CON_TUAN]:</span><span>41 Organic (49 All · Tỷ lệ PRO:CON = 18,68:1)</span></div><div class=ed-tt-hint>Bấm để lọc bình luận ủng hộ TS. Tuấn trong Sổ cái &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="jumpToComments('Tuấn')">Tuấn 59,1% (586)</div>
-                <div class="ed-flat-seg thuy" style="width:40.9%;"
-                     onmouseenter="showEdTooltip(event, '<strong>Khối chọn Ông Nguyễn Đức Thụy làm Chủ tịch</strong><div class=ed-tt-row><span>Tỷ lệ đối đầu:</span><strong>40,9% (405 / 991)</strong></div><div class=ed-tt-row><span>Ủng hộ thẳng (KB2):</span><span>312 tín hiệu</span></div><div class=ed-tt-row><span>Liên danh 2 (Thụy CT + Tuấn Phó):</span><span>93 tín hiệu</span></div><div class=ed-tt-hint>Bấm để lọc 405 bình luận trong Sổ cái &rarr;</div>')"
+                     onclick="jumpToComments('Tuấn')">Tuấn CT: 1.021 Org (38,1%)</div>
+                <div class="ed-flat-seg neutral" style="width:36.3%;"
+                     onmouseenter="showEdTooltip(event, '<strong>[S5] Phản đối (573 Org) + [S4] Ứng viên khác (402 Org)</strong><div class=ed-tt-row><span>[S5] Phản đối Bầu Thụy trực tiếp:</span><strong>567 Organic / 627 All (Mở rộng: 628 Org)</strong></div><div class=ed-tt-row><span>[S5] Phê bình TS. Tuấn trực tiếp:</span><span>41 Organic / 49 All (Mở rộng: 245 Org)</span></div><div class=ed-tt-row><span>[S4] Bầu Đức (285) · P.N.Vượng (110) · Xuân Vũ (9):</span><span>402 Organic / 420 All</span></div><div class=ed-tt-hint>Bấm để lọc bình luận phản đối &amp; ứng viên khác &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="jumpToComments('Thụy')">Thụy 40,9% (405)</div>
+                     onclick="jumpToComments('Phản đối')">[S5] Phản đối (573) + [S4] Khác (402)</div>
+                <div class="ed-flat-seg thuy" style="width:25.6%;"
+                     onmouseenter="showEdTooltip(event, '<strong>[S1] Ủng hộ Ông Nguyễn Đức Thụy (v4.5 Organic)</strong><div class=ed-tt-row><span>[S1] Ủng hộ thẳng (Organic / All):</span><strong>687 / 769 BL (#2 toàn mạng)</strong></div><div class=ed-tt-row><span>Phân bổ Organic (FB / YT / TT):</span><span>373 FB · 119 YT · 195 TT</span></div><div class=ed-tt-row><span>Tỷ lệ Seeder [S1] / PRO:CON:</span><span>82 Seeder (10,66%) · PRO:CON = 1,21:1</span></div><div class=ed-tt-hint>Bấm để lọc bình luận ủng hộ Bầu Thụy trong Sổ cái &rarr;</div>')"
+                     onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
+                     onclick="jumpToComments('Thụy')">Thụy [S1]: 687 Org (25,6%)</div>
               </div>
             </div>
             <div class="ed-metric-note" id="stanceBarFootNote">
-              <strong>Ngữ cảnh toàn mẫu (N = 1.414 bình luận mốc 22/10 · Lũy kế đầy đủ đến 24/10: 2.932 bình luận mã hóa):</strong> Ngoài 991 tín hiệu chọn ngôi Chủ tịch ở trên, có <strong>423 tín hiệu phản đối/cảnh báo (29,9%)</strong> gồm: 210 phản đối Ông Thụy (14,9%), 112 phản đối TS. Tuấn (7,9%) và 101 phản đối cả hai / đề cử người thứ ba (7,1%).
+              <strong>Đối soát 20.767 bình luận v4.5 (19.652 Organic = 94,63% · 1.115 Seeder = 5,37%):</strong> Trong <strong>2.916 BL chính kiến [S1..S5] (2.683 Organic)</strong>: <strong>[S2] TS. Tuấn dẫn đầu #1 Organic với 766 BL</strong> (819 All, chỉ 41 BL phản đối trực tiếp &rarr; <code>PRO:CON = 18,68:1</code>, Ròng <code>+725</code>); <strong>[S1] Bầu Thụy đạt 687 BL Organic</strong> (769 All, 82 Seeder = 10,66%, chịu 567 BL phản đối trực tiếp &rarr; <code>PRO:CON = 1,21:1</code>, Ròng <code>+120</code>); <strong>[S3] Liên danh (Tuấn CT + Thụy PCT TC) đạt 255 BL Organic</strong> (đồng thuận <code>8,79:1</code>); <strong>[S4] Ứng viên khác đạt 402 BL Organic</strong> (Bầu Đức 285, Phạm Nhật Vượng 110, Trần Anh Tú 15, Bầu Hiển 15, Nguyễn Xuân Vũ 9).
             </div>
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% link cá nhân người bình luận FB (#FB-U0001..#FB-U1492)</span>
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% TK bình luận FB (#FB-U0001..#FB-U1886) · Kèm Permalink BL gốc</span>
               <div style="display:flex;gap:6px;">
-                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 1.598 nguồn BL FB &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Xem 1.334 nguồn BL YT/TT &rarr;</button>
+                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 1.886 BL FB (1.771 v4.5) &rarr;</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Xem 1.457 BL YT/TT (1.145 v4.5) &rarr;</button>
               </div>
             </div>
           </div>
@@ -3054,52 +3066,54 @@ HTML_TEMPLATE_PART2 = r"""
             <div>
               <div class="ed-metric-top" style="flex-wrap:wrap;gap:6px;">
                 <div>
-                  <span class="ed-metric-title">Độ phủ truyền thông</span>
-                  <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">Lượt bài viết & video đề cập lũy tiến (01–24/10: 614 vs 481 · Mốc 22/10: 596 vs 454)</span>
+                  <span class="ed-metric-title">Độ phủ truyền thông &amp; Ma trận 6 Nhãn Bài viết [S1..S6]</span>
+                  <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">Kho v4.5: 1.137 bài/video (568 FB · 310 YT · 259 TT · 36,88M views) + 78 bài báo | Sổ cái: 1.406 bài/video</span>
                 </div>
                 <div class="ed-mini-pills" title="Lọc nhanh độ phủ theo nền tảng">
-                  <button class="ed-mini-pill active" onclick="switchCoverageBarMode('all974', this)">Tất cả (1.403)</button>
+                  <button class="ed-mini-pill active" onclick="switchCoverageBarMode('v45_1137', this)">Kho v4.5 (1.137)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('v44_587', this)">Lõi v4.4 (587)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('all974', this)">Sổ cái (1.406)</button>
                   <button class="ed-mini-pill" onclick="switchCoverageBarMode('press78', this)">Báo chí (78)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('fb665', this)">Facebook (703)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('yt169', this)">YouTube (354)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('tt62', this)">TikTok (268)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('fb665', this)">FB (706)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('yt169', this)">YT (354)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('tt62', this)">TT (268)</button>
                 </div>
               </div>
               <div class="ed-score-row">
                 <div class="ed-cand-side">
-                  <span class="ed-cand-label" id="covLeftName">TS. Trần Quốc Tuấn</span>
-                  <span class="ed-big-num tuan" id="covLeftBig">614</span>
-                  <span class="ed-sub-count" id="covLeftSub">lượt đề cập đến 24/10 (Mốc 22/10: 596 · 44,5% tích cực)</span>
+                  <span class="ed-cand-label" id="covLeftName">Khối bài TS. Tuấn ([S2] 135 + [S3] 94)</span>
+                  <span class="ed-big-num tuan" id="covLeftBig">229</span>
+                  <span class="ed-sub-count" id="covLeftSub">bài/video v4.5 chọn Tuấn làm CT (135 bài [S2] thuần + 94 bài [S3] Liên danh · Lũy tiến: 618)</span>
                 </div>
                 <div class="ed-cand-side right">
-                  <span class="ed-cand-label" id="covRightName">Ông Nguyễn Đức Thụy</span>
-                  <span class="ed-big-num thuy" id="covRightBig">481</span>
-                  <span class="ed-sub-count" id="covRightSub">lượt đề cập đến 24/10 (Mốc 22/10: 454 · 32,4% tích cực)</span>
+                  <span class="ed-cand-label" id="covRightName">Bài mở chiến dịch Ông Thụy ([S1])</span>
+                  <span class="ed-big-num thuy" id="covRightBig">149</span>
+                  <span class="ed-sub-count" id="covRightSub">bài/video v4.5 ủng hộ thẳng [S1] (82 FB · 33 YT · 34 TT · 56,84% BL bên dưới lệch pha · Lũy tiến: 485)</span>
                 </div>
               </div>
               <div class="ed-flat-bar" id="interactiveCovBar">
-                <div class="ed-flat-seg tuan" style="width:44.5%;"
-                     onmouseenter="showEdTooltip(event, '<strong>Độ phủ tích cực: TS. Trần Quốc Tuấn</strong><div class=ed-tt-row><span>Lũy kế đến 24/10:</span><strong>614 lượt đề cập (Mốc 22/10: 596)</strong></div><div class=ed-tt-row><span>Tỷ trọng tích cực:</span><span>44,5% (433/974 mốc 22/10)</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí & Facebook &rarr;</div>')"
+                <div class="ed-flat-seg tuan" style="width:20.1%;"
+                     onmouseenter="showEdTooltip(event, '<strong>[S2] Bài ủng hộ TS. Tuấn (135) + [S3] Liên danh Tuấn CT (94) = 229 bài (20,14%)</strong><div class=ed-tt-row><span>[S2] Thuần Tuấn (FB/YT/TT):</span><strong>135 bài (123 FB · 6 YT · 6 TT)</strong></div><div class=ed-tt-row><span>[S3] Liên danh Tuấn CT + Thụy PCT:</span><strong>94 bài (35 FB · 49 YT · 10 TT)</strong></div><div class=ed-tt-row><span>Lõi v4.4 Core:</span><span>125 bài [S2] + 91 bài [S3] = 216 bài</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí &amp; Facebook &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Tuấn 44,5% (614)</div>
-                <div class="ed-flat-seg neutral" style="width:23.1%;"
-                     onmouseenter="showEdTooltip(event, '<strong>Nội dung Trung lập / Đưa tin quy chế / Phản biện</strong><div class=ed-tt-row><span>Tỷ trọng:</span><strong>23,1% (225 / 974)</strong></div><div class=ed-tt-row><span>Chi tiết:</span><span>182 trung lập + 43 phản biện</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí & Facebook &rarr;</div>')"
+                     onclick="switchTab('tab-press-fb')">[S2]+[S3] Tuấn CT: 229 (20,1%)</div>
+                <div class="ed-flat-seg neutral" style="width:66.8%;"
+                     onmouseenter="showEdTooltip(event, '<strong>[S6] Trung lập (682 bài) + [S5] Phản đối (46 bài) + [S4] Khác (31 bài) = 759 bài (66,75%)</strong><div class=ed-tt-row><span>[S6] Đưa tin thể chế / Trung lập:</span><strong>682 bài (271 FB · 213 YT · 198 TT)</strong></div><div class=ed-tt-row><span>[S5] Phản đối / Cảnh báo rủi ro:</span><span>46 bài (36 FB · 4 YT · 6 TT)</span></div><div class=ed-tt-row><span>[S4] Bầu Đức / P.N.Vượng / Xuân Vũ:</span><span>31 bài (21 FB · 5 YT · 5 TT)</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí &amp; Facebook &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Khác 23,1%</div>
-                <div class="ed-flat-seg thuy" style="width:32.4%;"
-                     onmouseenter="showEdTooltip(event, '<strong>Độ phủ tích cực: Ông Nguyễn Đức Thụy</strong><div class=ed-tt-row><span>Lũy kế đến 24/10:</span><strong>481 lượt đề cập (Mốc 22/10: 454)</strong></div><div class=ed-tt-row><span>Tỷ trọng tích cực:</span><span>32,4% (316/974 mốc 22/10)</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí & Facebook &rarr;</div>')"
+                     onclick="switchTab('tab-press-fb')">[S6] Trung lập (682) · [S5] Phản biện (46) · [S4] Khác (31)</div>
+                <div class="ed-flat-seg thuy" style="width:13.1%;"
+                     onmouseenter="showEdTooltip(event, '<strong>[S1] Bài viết &amp; Video ủng hộ thẳng Bầu Thụy = 149 bài (13,10%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng (v4.5):</span><strong>82 FB · 33 YT · 34 TT (v4.4 Core: 143 bài)</strong></div><div class=ed-tt-row><span>Độ lệch bình luận bên dưới:</span><strong>56,84% BL chính kiến đảo chiều / phản biện</strong></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí &amp; Facebook &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Thụy 32,4% (481)</div>
+                     onclick="switchTab('tab-press-fb')">[S1] Thụy: 149 (13,1%)</div>
               </div>
             </div>
             <div class="ed-metric-note" id="covBarFootNote">
-              <strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 24/10/2026: N = 1.403 bài/video xác thực · Mốc 22/10: N = 974):</strong> Gồm <strong>78 bài báo chính thống (78 URL duy nhất)</strong>, <strong>703 bài Facebook xác thực URL</strong>, <strong>354 video YouTube</strong> và <strong>268 video TikTok</strong> (bao trọn 1.137/1.137 bài/video trong file Raw 24/10). Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong> đến 24/10 (119 lượt mốc 22/10).
+              <strong>Nghịch lý "Thắng Độ Phủ Bài Đăng [S1] nhưng Thua Điểm Ròng Bình Luận":</strong> Trên kho <code>v4.5 (1.137 bài/video · 36.878.341 views · 464.030 likes · 16.898 shares)</code>, Bầu Thụy dẫn trước về số bài mở chiến dịch đơn lẻ <code>[S1] = 149 bài</code> (vs <code>[S2] = 135 bài</code> của TS. Tuấn), nhưng bên dưới 149 bài <code>[S1]</code> có tới <strong>56,84% bình luận chính kiến lệch pha</strong> (24,78% phản đối trực diện, 13,80% ca ngợi TS. Tuấn, 10,81% đề xuất Liên danh). Khi gộp <code>[S2]+[S3]</code>, khối bài chọn TS. Tuấn làm Chủ tịch đạt <strong>229 bài (20,14%)</strong>.
             </div>
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm tra link: 25/10/2026 · 100% URL HTTP 200</span>
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm tra link: 25/10/2026 · 5.620/5.620 bản ghi có HTTP URL hợp lệ</span>
               <div style="display:flex;gap:6px;">
                 <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Xem 78 nguồn Báo chí &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem 2.685 URL duy nhất &rarr;</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem 5.620 bản ghi · 4.964 URL &rarr;</button>
               </div>
             </div>
           </div>
@@ -3135,6 +3149,573 @@ HTML_TEMPLATE_PART2 = r"""
             </div>
           </div>
           <div id="overviewAnnotatedLineChart" style="width:100%;overflow-x:auto;position:relative;"></div>
+        </div>
+      </div>
+
+      <!-- ================================================================= -->
+      <!-- SECTION 1B: BÁO CÁO ĐỐI SOÁT 3 NỀN TẢNG × 3 CHIỀU (BẢN 2410 v4.5)  -->
+      <!-- ================================================================= -->
+      <div class="ed-section" id="sec2410DeepDive">
+        <div class="ed-section-hdr">
+          <div>
+            <div class="ed-kicker">01B · BÁO CÁO ĐỐI SOÁT ĐA SHEET 3 NỀN TẢNG × 3 CHIỀU (ỦNG HỘ · PHẢN ĐỐI · TRUNG LẬP/LIÊN DANH)</div>
+            <h2 class="ed-headline">Đối soát 2 tầng SSOT (v4.5 &amp; v4.4 Core), Hồ sơ 8 ứng viên, Ma trận độ lệch Post × Comment &amp; Dự báo 57 Tổ chức thành viên VFF</h2>
+            <p class="ed-lead">Tích hợp nguyên vẹn 100% số liệu từ bộ Báo cáo Đa Sheet 10 Sheets (<code>BAO_CAO_DA_SHEET_TONG_HOP_3_NEN_TANG_UNG_HO_UNG_VIEN_VFF_2026.xlsx</code>). Chuyển đổi giữa 4 bảng chuyên sâu bên dưới để tra cứu chi tiết từng chỉ tiêu.</p>
+          </div>
+          <div class="ed-mode-switch" id="deepDive2410Tabs">
+            <button class="ed-mode-btn active" onclick="switch2410SubPanel('p2410_ssot', this)">1. Đối soát v4.5 &amp; v4.4 ([S1..S6])</button>
+            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_8cand', this)">2. Hồ sơ 3 Chiều 8 Ứng viên</button>
+            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_div', this)">3. Độ lệch Post×Cmt &amp; Seeder SimHash</button>
+            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_57vff', this)">4. 57 Đại biểu VFF &amp; Dự báo Bayesian</button>
+          </div>
+        </div>
+
+        <!-- SUB-PANEL 1: SSOT v4.5 vs v4.4 & 6 LABELS [S1..S6] -->
+        <div id="p2410_ssot" class="p2410-pane">
+          <div class="grid-2" style="margin-bottom:14px;">
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 1A — ĐỐI SOÁT KIẾN TRÚC 2 TẦNG DỮ LIỆU CHUẨN (2-TIER SSOT ARCHITECTURE)</div>
+                  <div class="panel-sub">Tầng 1 (v4.5 Open-World Expanded · 1.137 bài · 20.767 BL) vs. Tầng 2 (v4.4 Strict 2-Lock Core · 587 bài · 12.803 BL)</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:12px;">
+                  <thead>
+                    <tr>
+                      <th>Chỉ số Định lượng</th>
+                      <th>Tầng 1: v4.5 Open-World (Toàn cục)</th>
+                      <th>Tầng 2: v4.4 Strict 2-Lock Core</th>
+                      <th>Biên bản Lọc nhiễu 2 Khóa &amp; Ghi chú</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>1. Tổng kênh giám sát / Kênh có bài</strong></td>
+                      <td><strong>805 kênh</strong> (<strong>512 kênh có bài</strong>: 334 FB · 116 YT · 62 TT)</td>
+                      <td><strong>492 kênh</strong> (<strong>329 kênh có bài</strong>: 221 FB · 67 YT · 41 TT)</td>
+                      <td>Mở rộng +313 kênh giám sát (+183 kênh thực tế có đăng bài ở v4.5)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2. Tổng bài viết &amp; video đã lọc sạch</strong></td>
+                      <td><strong style="color:var(--tuan-blue);">1.137 bài/video</strong> (568 FB · 310 YT · 259 TT)</td>
+                      <td><strong>587 bài/video</strong> (352 FB · 159 YT · 76 TT)</td>
+                      <td>Đã loại bỏ <strong>4.209 clip TT nhiễu</strong> + <strong>74 video YT giả</strong> + <strong>04 Reels FB</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>3. Tổng lượt xem video (Views)</strong></td>
+                      <td><strong style="color:var(--gold);">36.878.341 views</strong> (13.964.171 YT + 22.914.170 TT)</td>
+                      <td><strong>5.202.155 views</strong> (2.111.790 YT + 3.090.365 TT)</td>
+                      <td>Bóc băng 100% bằng Whisper large-v3 WebVTT &amp; YouTube TimedText ASR</td>
+                    </tr>
+                    <tr>
+                      <td><strong>4. Tổng lượt thích (Likes) &amp; Chia sẻ</strong></td>
+                      <td><strong>464.030 likes</strong> (214.068 FB + 249.962 TT) · <strong>16.898 shares</strong></td>
+                      <td><strong>163.815 likes</strong> · <strong>9.392 shares</strong> (FB + TT)</td>
+                      <td>Bao gồm toàn bộ tương tác bài gốc trên 3 nền tảng</td>
+                    </tr>
+                    <tr>
+                      <td><strong>5. Tổng bình luận thu thập (All Comments)</strong></td>
+                      <td><strong style="color:var(--tuan-blue);">20.767 BL</strong> (15.355 FB · 3.670 YT · 1.742 TT)</td>
+                      <td><strong>12.803 BL</strong> (10.133 FB · 2.138 YT · 532 TT)</td>
+                      <td>Kiểm toán cụm trùng 64-bit SimHash (Khoảng cách Hamming &le; 3)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>6. Bình luận Tự nhiên (Organic) vs. Seeder</strong></td>
+                      <td><strong style="color:#166534;">19.652 Organic (94,63%)</strong> · <strong style="color:#B8292F;">1.115 Seeder (5,37%)</strong></td>
+                      <td><strong>12.091 Organic (94,44%)</strong> · <strong>712 Seeder (5,56%)</strong></td>
+                      <td>Loại bỏ nhiễu bot/copy-paste để đo lường chính xác dư luận thực</td>
+                    </tr>
+                    <tr style="background:#EDF3FC;">
+                      <td><strong>7. Bình luận Bầu cử Chính kiến [S1..S5]</strong></td>
+                      <td><strong style="color:var(--tuan-blue);">2.916 BL All</strong> (<strong style="color:#166534;">2.683 Organic</strong> + <strong>233 Seeder</strong>)</td>
+                      <td><strong>2.712 BL All</strong> (<strong>2.495 Organic</strong> + <strong>217 Seeder</strong>)</td>
+                      <td>100% (2.916/2.916 BL) đã được nạp vào Sổ cái Tab 06 &amp; Tab 08 kèm link gốc</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 1B — ĐỐI SOÁT 6 NHÃN CHUẨN [S1..S6] TRÊN KHO v4.5 &amp; v4.4 CORE (CHÊNH LỆCH = 0)</div>
+                  <div class="panel-sub">Phân tách đầy đủ Bài đăng · Tổng Bình luận (All) · Bình luận Tự nhiên (Organic) · Seeder · Lượt thích BL</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:12px;">
+                  <thead>
+                    <tr>
+                      <th>Mã &amp; Nhãn Lập trường Chuẩn</th>
+                      <th>Bài v4.5 (v4.4)</th>
+                      <th>BL All v4.5 (v4.4)</th>
+                      <th>BL Organic v4.5 (v4.4)</th>
+                      <th>Seeder (%)</th>
+                      <th>Phân bổ BL Organic v4.5 (FB / YT / TT)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="badge badge-tuan">[S2] Ủng hộ TS. Trần Quốc Tuấn</span></td>
+                      <td style="text-align:center;font-weight:800;">135 <span style="color:var(--text-muted);">(125)</span></td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">819 <span style="color:var(--text-muted);">(737)</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">766 (#1) <span style="color:var(--text-muted);">(688)</span></td>
+                      <td style="text-align:center;">53 (6,47%)</td>
+                      <td><strong>598 FB</strong> · <strong>126 YT</strong> · <strong>42 TT</strong> (1.173 likes BL)</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-thuy">[S1] Ủng hộ Ông Nguyễn Đức Thụy</span></td>
+                      <td style="text-align:center;font-weight:800;">149 <span style="color:var(--text-muted);">(143)</span></td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">769 <span style="color:var(--text-muted);">(742)</span></td>
+                      <td style="text-align:center;font-weight:900;color:var(--thuy-red);">687 (#2) <span style="color:var(--text-muted);">(667)</span></td>
+                      <td style="text-align:center;color:#B8292F;font-weight:700;">82 (10,66%)</td>
+                      <td><strong>373 FB</strong> · <strong>119 YT</strong> · <strong>195 TT</strong> (853 likes BL)</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-coal">[S3] Liên danh (Tuấn CT + Thụy PCT TC)</span></td>
+                      <td style="text-align:center;font-weight:800;">94 <span style="color:var(--text-muted);">(91)</span></td>
+                      <td style="text-align:center;font-weight:800;">275 <span style="color:var(--text-muted);">(256)</span></td>
+                      <td style="text-align:center;font-weight:900;color:var(--tuan-blue);">255 <span style="color:var(--text-muted);">(237)</span></td>
+                      <td style="text-align:center;">20 (7,27%)</td>
+                      <td><strong>152 FB</strong> · <strong>88 YT</strong> · <strong>15 TT</strong> (515 likes · Đồng thuận 8,79:1)</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-gray">[S4] Ủng hộ Ứng viên khác (Đức/Vượng/Vũ...)</span></td>
+                      <td style="text-align:center;font-weight:800;">31 <span style="color:var(--text-muted);">(29)</span></td>
+                      <td style="text-align:center;font-weight:800;">420 <span style="color:var(--text-muted);">(393)</span></td>
+                      <td style="text-align:center;font-weight:800;">402 <span style="color:var(--text-muted);">(375)</span></td>
+                      <td style="text-align:center;">18 (4,29%)</td>
+                      <td><strong>235 FB</strong> · <strong>148 YT</strong> · <strong>19 TT</strong> (703 likes BL)</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-opp">[S5] Phản đối / Hoài nghi / Cảnh báo</span></td>
+                      <td style="text-align:center;font-weight:800;">46 <span style="color:var(--text-muted);">(45)</span></td>
+                      <td style="text-align:center;font-weight:800;color:#B8292F;">633 <span style="color:var(--text-muted);">(584)</span></td>
+                      <td style="text-align:center;font-weight:900;color:#B8292F;">573 <span style="color:var(--text-muted);">(528)</span></td>
+                      <td style="text-align:center;color:#B8292F;font-weight:700;">60 (9,48%)</td>
+                      <td><strong>351 FB</strong> · <strong>133 YT</strong> · <strong>89 TT</strong> (Phản đối Thụy: 567 Org vs Tuấn: 41 Org)</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-gray">[S6] Trung lập / Đưa tin thể chế</span></td>
+                      <td style="text-align:center;font-weight:800;">682 <span style="color:var(--text-muted);">(154)</span></td>
+                      <td style="text-align:center;font-weight:800;">17.851 <span style="color:var(--text-muted);">(10.091)</span></td>
+                      <td style="text-align:center;font-weight:800;">16.969 <span style="color:var(--text-muted);">(9.596)</span></td>
+                      <td style="text-align:center;">882 (4,94%)</td>
+                      <td><strong>12.828 FB</strong> · <strong>2.863 YT</strong> · <strong>1.278 TT</strong> (22.650 likes BL)</td>
+                    </tr>
+                    <tr style="background:#EFECE6;font-weight:900;">
+                      <td>TỔNG CỘNG TOÀN KHO (CHÊNH LỆCH = 0)</td>
+                      <td style="text-align:center;">1.137 (587)</td>
+                      <td style="text-align:center;">20.767 (12.803)</td>
+                      <td style="text-align:center;color:#166534;">19.652 (12.091)</td>
+                      <td style="text-align:center;color:#B8292F;">1.115 (5,37%)</td>
+                      <td><strong>[S1..S5]: 2.916 All = 2.683 Organic + 233 Seeder</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB-PANEL 2: 8 CANDIDATES 3-DIMENSION PROFILE -->
+        <div id="p2410_8cand" class="p2410-pane" style="display:none;">
+          <div class="panel" style="margin-bottom:0;">
+            <div class="panel-header">
+              <div>
+                <div class="panel-title">BẢNG 2A — HỒ SƠ ĐỊNH LƯỢNG 3 CHIỀU (PRO × CON × HYBRID) CỦA ĐỦ 8 ỨNG VIÊN &amp; PHƯƠNG ÁN NHÂN SỰ (KHO v4.5 &amp; v4.4 CORE)</div>
+                <div class="panel-sub">Đo lường công bằng trên cả chiều Ủng hộ (PRO), Phản đối trực tiếp &amp; mở rộng (CON), Tỷ lệ PRO:CON Tự nhiên và Điểm Tín nhiệm Ròng (Net Organic)</div>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table class="wr-table" style="font-size:12px;">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Ứng viên / Phương án Nhân sự</th>
+                    <th>Vai trò / Nhãn chính</th>
+                    <th>Bài đăng v4.5 (v4.4)</th>
+                    <th>Ủng hộ PRO (All / Organic / Seeder)</th>
+                    <th>Phân bổ PRO Organic (FB / YT / TT)</th>
+                    <th>Phản đối CON Organic (Trực tiếp / Mở rộng)</th>
+                    <th>Tỷ lệ PRO : CON (Organic)</th>
+                    <th>Tín nhiệm Ròng (Net Organic)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="background:#EDF3FC;">
+                    <td style="text-align:center;font-weight:900;">1</td>
+                    <td><strong style="color:var(--tuan-blue);">TS. Trần Quốc Tuấn</strong><br/><span style="font-size:11px;color:var(--text-muted);">Chủ tịch VFF đương nhiệm · Ủy viên TV AFC</span></td>
+                    <td><span class="badge badge-tuan">[S2] #1 Organic</span></td>
+                    <td style="text-align:center;font-weight:800;">135 bài [S2]<br/><span style="font-size:10.8px;color:var(--tuan-blue);">+94 bài [S3] = 229</span></td>
+                    <td><strong>819 All</strong> &rarr; <strong style="color:#166534;">766 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">53 Seeder (6,47%) · v4.4: 688 Org</span></td>
+                    <td><strong>598 FB</strong> · <strong>126 YT</strong> · <strong>42 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">1.173 likes BL (v4.4: 1.077)</span></td>
+                    <td><strong style="color:#B8292F;">41 trực tiếp</strong> (49 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">Mở rộng: 245 Org (262 All)</span></td>
+                    <td style="text-align:center;font-weight:900;color:#166534;">18,68 : 1<br/><span style="font-size:10.5px;color:var(--text-muted);">(Mở rộng: 3,13:1)</span></td>
+                    <td style="text-align:center;font-weight:900;color:var(--tuan-blue);">+725 trực tiếp<br/><span style="font-size:10.5px;">(+521 mở rộng)</span></td>
+                  </tr>
+                  <tr style="background:#F9E5E6;">
+                    <td style="text-align:center;font-weight:900;">2</td>
+                    <td><strong style="color:var(--thuy-red);">Ông Nguyễn Đức Thụy (Bầu Thụy)</strong><br/><span style="font-size:11px;color:var(--text-muted);">Chủ tịch HĐQT LPBank · Nhà tài trợ V.League</span></td>
+                    <td><span class="badge badge-thuy">[S1] #1 Bài PR</span></td>
+                    <td style="text-align:center;font-weight:800;">149 bài [S1]<br/><span style="font-size:10.8px;color:var(--text-muted);">v4.4 Core: 143 bài</span></td>
+                    <td><strong>769 All</strong> &rarr; <strong style="color:var(--thuy-red);">687 Organic</strong><br/><span style="font-size:10.8px;color:#B8292F;">82 Seeder (10,66%) · v4.4: 667 Org</span></td>
+                    <td><strong>373 FB</strong> · <strong>119 YT</strong> · <strong>195 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">853 likes BL (v4.4: 840)</span></td>
+                    <td><strong style="color:#B8292F;">567 trực tiếp</strong> (627 All)<br/><span style="font-size:10.8px;color:#B8292F;">Mở rộng: 628 Org (706 All)</span></td>
+                    <td style="text-align:center;font-weight:900;color:#B8292F;">1,21 : 1<br/><span style="font-size:10.5px;color:var(--text-muted);">(Mở rộng: 1,09:1)</span></td>
+                    <td style="text-align:center;font-weight:900;color:var(--thuy-red);">+120 trực tiếp<br/><span style="font-size:10.5px;">(+59 mở rộng)</span></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center;font-weight:900;">3</td>
+                    <td><strong style="color:var(--tuan-blue);">Phương án Liên danh / Chia vai [S3]</strong><br/><span style="font-size:11px;color:var(--text-muted);">TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính</span></td>
+                    <td><span class="badge badge-coal">[S3] Đồng thuận #1</span></td>
+                    <td style="text-align:center;font-weight:800;">94 bài [S3]<br/><span style="font-size:10.8px;color:var(--text-muted);">v4.4 Core: 91 bài</span></td>
+                    <td><strong>275 All</strong> &rarr; <strong style="color:#166534;">255 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">20 Seeder (7,27%) · v4.4: 237 Org</span></td>
+                    <td><strong>152 FB</strong> · <strong>88 YT</strong> · <strong>15 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">515 likes BL (v4.4: 504)</span></td>
+                    <td><strong>29 Organic</strong> (32 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">Hoài nghi tính khả thi chia quyền</span></td>
+                    <td style="text-align:center;font-weight:900;color:#166534;">8,79 : 1<br/><span style="font-size:10.5px;color:var(--text-muted);">(v4.4: 8,17:1)</span></td>
+                    <td style="text-align:center;font-weight:900;color:#166534;">+226 Organic<br/><span style="font-size:10.5px;">(v4.4: +208)</span></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center;font-weight:900;">4</td>
+                    <td><strong>Ông Đoàn Nguyên Đức (Bầu Đức)</strong><br/><span style="font-size:11px;color:var(--text-muted);">Chủ tịch HAGL · Cựu Phó CT Tài chính VFF</span></td>
+                    <td><span class="badge badge-gray">[S4_DUC] Hoài niệm</span></td>
+                    <td style="text-align:center;font-weight:800;">~18 bài/video<br/><span style="font-size:10.8px;color:var(--text-muted);">Nhắc tên trong [S4]</span></td>
+                    <td><strong>298 All</strong> &rarr; <strong>285 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">13 Seeder (4,36%) · v4.4: 264 Org</span></td>
+                    <td><strong>172 FB</strong> · <strong>101 YT</strong> · <strong>12 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">Công thần Học viện HAGL &amp; Park Hang-seo</span></td>
+                    <td><strong>170 Organic</strong> (185 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">Nhắc tuổi tác &amp; phát ngôn cảm tính</span></td>
+                    <td style="text-align:center;font-weight:800;">1,68 : 1<br/><span style="font-size:10.5px;color:var(--text-muted);">(v4.4: 1,68:1)</span></td>
+                    <td style="text-align:center;font-weight:800;">+115 Organic<br/><span style="font-size:10.5px;">(v4.4: +107)</span></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center;font-weight:900;">5</td>
+                    <td><strong>Tỷ phú Phạm Nhật Vượng (Vingroup / PVF)</strong><br/><span style="font-size:11px;color:var(--text-muted);">Người hâm mộ tự đề cử từ mô hình Học viện PVF</span></td>
+                    <td><span class="badge badge-gray">[S4_VUONG] Kỳ vọng</span></td>
+                    <td style="text-align:center;font-weight:800;">~8 bài/video<br/><span style="font-size:10.8px;color:var(--text-muted);">So sánh PVF / Vingroup</span></td>
+                    <td><strong>115 All</strong> &rarr; <strong style="color:#166534;">110 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">5 Seeder (4,35%) · v4.4: 105 Org</span></td>
+                    <td><strong>58 FB</strong> · <strong>45 YT</strong> · <strong>7 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">Biểu tượng chuẩn mực đào tạo trẻ PVF</span></td>
+                    <td><strong>8 Organic</strong> (8 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">Lưu ý ông Vượng không tranh cử</span></td>
+                    <td style="text-align:center;font-weight:900;color:#166534;">13,75 : 1<br/><span style="font-size:10.5px;color:var(--text-muted);">(v4.4: 13,13:1)</span></td>
+                    <td style="text-align:center;font-weight:900;color:#166534;">+102 Organic<br/><span style="font-size:10.5px;">(v4.4: +97)</span></td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center;font-weight:900;">6</td>
+                    <td><strong>Ông Nguyễn Xuân Vũ</strong><br/><span style="font-size:11px;color:var(--text-muted);">Phó CT VFF Truyền thông · Chủ tịch CLB Phù Đổng</span></td>
+                    <td><span class="badge badge-gray">[S4_VU] Ứng viên #3</span></td>
+                    <td style="text-align:center;font-weight:800;">125 lượt nhắc<br/><span style="font-size:10.8px;color:var(--text-muted);">Đề cử danh sách 3 ỨV</span></td>
+                    <td><strong>9 All</strong> &rarr; <strong>9 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">0 Seeder (0%) · v4.4: 9 Org</span></td>
+                    <td><strong>6 FB</strong> · <strong>2 YT</strong> · <strong>1 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">Chủ yếu xuất hiện trong tin danh sách 3 ỨV</span></td>
+                    <td><strong>0 Organic</strong> (0 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">0 phản đối trực diện</span></td>
+                    <td style="text-align:center;font-weight:800;">9,0 : 0</td>
+                    <td style="text-align:center;font-weight:800;">+9 Organic</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center;font-weight:900;">7</td>
+                    <td><strong>Ông Trần Anh Tú (Bầu Tú)</strong><br/><span style="font-size:11px;color:var(--text-muted);">Phó CT VFF Chuyên môn · Chủ tịch VPF · Futsal</span></td>
+                    <td><span class="badge badge-gray">[S4_TU] Chuyên môn</span></td>
+                    <td style="text-align:center;font-weight:800;">~5 bài/video</td>
+                    <td><strong>15 All</strong> &rarr; <strong>15 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">0 Seeder · v4.4: 15 Org</span></td>
+                    <td><strong>10 FB</strong> · <strong>4 YT</strong> · <strong>1 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">Khen ngợi công lao Futsal dự World Cup</span></td>
+                    <td><strong>5 Organic</strong> (6 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">Tranh luận công tác tổ chức VPF</span></td>
+                    <td style="text-align:center;font-weight:800;">3,00 : 1</td>
+                    <td style="text-align:center;font-weight:800;">+10 Organic</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align:center;font-weight:900;">8</td>
+                    <td><strong>Ông Đỗ Quang Hiển (Bầu Hiển)</strong><br/><span style="font-size:11px;color:var(--text-muted);">Chủ tịch SHB · Nhà tài trợ gắn bó Hà Nội FC</span></td>
+                    <td><span class="badge badge-gray">[S4_HIEN] Đối chứng</span></td>
+                    <td style="text-align:center;font-weight:800;">~6 bài/video</td>
+                    <td><strong>16 All</strong> &rarr; <strong>15 Organic</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">1 Seeder · v4.4: 12 Org</span></td>
+                    <td><strong>11 FB</strong> · <strong>3 YT</strong> · <strong>1 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">Ghi nhận đầu tư bền bỉ cho Hà Nội FC</span></td>
+                    <td><strong>26 Organic</strong> (27 All)<br/><span style="font-size:10.8px;color:var(--text-muted);">Tranh cãi mô hình liên kết đa đội bóng</span></td>
+                    <td style="text-align:center;font-weight:800;color:#B8292F;">0,58 : 1</td>
+                    <td style="text-align:center;font-weight:800;color:#B8292F;">-11 Organic</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB-PANEL 3: POST x COMMENT DIVERGENCE & SEEDER SIMHASH & CLASHES -->
+        <div id="p2410_div" class="p2410-pane" style="display:none;">
+          <div class="grid-2" style="margin-bottom:14px;">
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 3A — MA TRẬN ĐỘ LỆCH LẬP TRƯỜNG BÀI ĐĂNG vs. BÌNH LUẬN (POST × COMMENT DIVERGENCE MATRIX · v4.5)</div>
+                  <div class="panel-sub">Giải phẫu hiện tượng 56,84% bình luận chính kiến dưới 149 bài [S1] Bầu Thụy bị đảo chiều sang phản biện hoặc bầu cho TS. Tuấn</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:11.8px;">
+                  <thead>
+                    <tr>
+                      <th>Lập trường Bài đăng (Post Stance)</th>
+                      <th>Số bài</th>
+                      <th>Tổng BL</th>
+                      <th>BL [S1] Thụy</th>
+                      <th>BL [S2] Tuấn</th>
+                      <th>BL [S3] Liên danh</th>
+                      <th>BL [S4] Khác</th>
+                      <th>BL [S5] Phản đối</th>
+                      <th>Độ lệch / Đảo chiều Khán giả</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background:#F9E5E6;">
+                      <td><strong>[S1] Bài ủng hộ Bầu Thụy</strong></td>
+                      <td style="text-align:center;font-weight:800;">149</td>
+                      <td style="text-align:center;font-weight:800;">2.940</td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">467 (43,16%)</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">150 (13,80%)</td>
+                      <td style="text-align:center;font-weight:700;">117 (10,81%)</td>
+                      <td style="text-align:center;">81 (7,46%)</td>
+                      <td style="text-align:center;font-weight:900;color:#B8292F;">268 (24,78%)</td>
+                      <td><strong style="color:#B8292F;">56,84% BL chính kiến lệch pha bài PR</strong></td>
+                    </tr>
+                    <tr style="background:#EDF3FC;">
+                      <td><strong>[S2] Bài ủng hộ TS. Tuấn</strong></td>
+                      <td style="text-align:center;font-weight:800;">135</td>
+                      <td style="text-align:center;font-weight:800;">2.456</td>
+                      <td style="text-align:center;">35 (5,98%)</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">440 (75,21%)</td>
+                      <td style="text-align:center;font-weight:700;">20 (3,42%)</td>
+                      <td style="text-align:center;">34 (5,81%)</td>
+                      <td style="text-align:center;">56 (9,57%)</td>
+                      <td><strong style="color:#166534;">78,63% đồng thuận (S2+S3) · Chỉ 9,57% phản đối</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>[S3] Bài đề xuất Liên danh</strong></td>
+                      <td style="text-align:center;font-weight:800;">94</td>
+                      <td style="text-align:center;font-weight:800;">1.022</td>
+                      <td style="text-align:center;">78 (22,94%)</td>
+                      <td style="text-align:center;font-weight:700;color:var(--tuan-blue);">63 (18,53%)</td>
+                      <td style="text-align:center;font-weight:800;color:#166534;">91 (26,76%)</td>
+                      <td style="text-align:center;">34 (10,00%)</td>
+                      <td style="text-align:center;">74 (21,76%)</td>
+                      <td><strong>45,29% nghiêng Tuấn CT (S2+S3)</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>[S4] Bài Ứng viên khác</strong></td>
+                      <td style="text-align:center;font-weight:800;">31</td>
+                      <td style="text-align:center;font-weight:800;">1.274</td>
+                      <td style="text-align:center;">15 (6,25%)</td>
+                      <td style="text-align:center;">20 (8,33%)</td>
+                      <td style="text-align:center;">7 (2,92%)</td>
+                      <td style="text-align:center;font-weight:800;">149 (62,08%)</td>
+                      <td style="text-align:center;">49 (20,42%)</td>
+                      <td><strong>Tập trung hoài niệm Bầu Đức &amp; PVF</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>[S5] Bài Phản biện / Cảnh báo</strong></td>
+                      <td style="text-align:center;font-weight:800;">46</td>
+                      <td style="text-align:center;font-weight:800;">714</td>
+                      <td style="text-align:center;">27 (20,00%)</td>
+                      <td style="text-align:center;">15 (11,11%)</td>
+                      <td style="text-align:center;">9 (6,67%)</td>
+                      <td style="text-align:center;">14 (10,37%)</td>
+                      <td style="text-align:center;font-weight:800;color:#B8292F;">70 (51,85%)</td>
+                      <td><strong>Cộng hưởng cảnh báo tiền lệ bỏ giải CLB</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>[S6] Bài Trung lập / Đưa tin</strong></td>
+                      <td style="text-align:center;font-weight:800;">682</td>
+                      <td style="text-align:center;font-weight:800;">12.361</td>
+                      <td style="text-align:center;">147 (27,53%)</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">131 (24,53%)</td>
+                      <td style="text-align:center;">31 (5,81%)</td>
+                      <td style="text-align:center;">108 (20,22%)</td>
+                      <td style="text-align:center;">116 (21,72%)</td>
+                      <td><strong>Khối Tuấn CT (S2+S3 = 30,34%) &gt; Thụy (27,53%)</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 3B — 4 TRỤC TRANH LUẬN THỰC CHIẾN (CLASH-01..06) &amp; KIỂM TOÁN SEEDER SIMHASH</div>
+                  <div class="panel-sub">Trích xuất từ cây phản hồi (Reply-Tree) và kiểm toán 1.115 bình luận Seeder (233 Seeder trong nhóm [S1..S5])</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:11.8px;">
+                  <thead>
+                    <tr>
+                      <th>Mã Trận đánh</th>
+                      <th>Chủ đề Đối đầu Trực diện</th>
+                      <th>Cán cân Organic (PRO vs CON)</th>
+                      <th>Luận điểm Đối kháng Thực tế &amp; Phát hiện Kiểm toán Seeder</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="badge badge-thuy">CLASH-01</span></td>
+                      <td><strong>Tài chính 1.000 tỷ vs. Tiền lệ bỏ giải SGXT 2013 &amp; Đa CLB</strong></td>
+                      <td><strong>687 PRO</strong> vs <strong style="color:#B8292F;">628 CON</strong><br/><span style="font-size:10.8px;color:#B8292F;">(1,09 : 1 · Ròng +59)</span></td>
+                      <td>Cứ <strong>1,09 BL khen tài lực Bầu Thụy</strong> thì xuất hiện <strong>1,00 BL nhắc tiền lệ giải thể Sài Gòn Xuân Thành (2013)</strong> hoặc xung đột CLB. Nhóm <code>[S1]</code> có tỷ lệ Seeder cao nhất: <strong>82/769 BL (10,66%)</strong>.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-tuan">CLASH-04</span></td>
+                      <td><strong>Ngoại giao AFC &amp; 7 ĐTQG vs. Tranh cãi V-League / Nhập tịch</strong></td>
+                      <td><strong style="color:#166534;">766 PRO</strong> vs <strong>245 CON</strong><br/><span style="font-size:10.8px;color:#166534;">(3,13 : 1 · Trực tiếp 18,68:1)</span></td>
+                      <td>Chỉ có <strong>41 BL Organic phê bình trực diện cá nhân TS. Tuấn</strong> (18,68:1); phần còn lại (204 BL) là phàn nàn chung về lịch V-League và mặt sân. Tỷ lệ Seeder nhóm <code>[S2]</code> thấp: <strong>53/819 BL (6,47%)</strong>.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-coal">CLASH-05</span></td>
+                      <td><strong>Phương án Liên danh Hybrid: Tuấn Chủ tịch + Thụy Phó CT Tài chính</strong></td>
+                      <td><strong style="color:#166534;">255 PRO</strong> vs <strong>29 CON</strong><br/><span style="font-size:10.8px;color:#166534;">(8,79 : 1 · Ròng +226)</span></td>
+                      <td>Điểm hội tụ đồng thuận cao nhất giữa 2 luồng quan điểm: giữ vững ghế đối ngoại FIFA/AFC cho TS. Tuấn và mở cơ chế Phó CT Tài chính / VPF cho Ông Thụy.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-gray">CLASH-06</span></td>
+                      <td><strong>Hoài niệm Bầu Đức (HAGL) vs. Kỳ vọng Phạm Nhật Vượng (PVF)</strong></td>
+                      <td><strong>Đức: 285 vs 170 (1,68:1)</strong><br/><strong style="color:#166534;">Vượng: 110 vs 8 (13,75:1)</strong></td>
+                      <td>Bầu Đức dẫn đầu khối <code>[S4]</code> về lượng nhắc (285 PRO) nhưng vấp 170 CON phản biện; Tỷ phú Phạm Nhật Vượng đạt tỷ lệ đồng thuận tuyệt đối <strong>13,75:1</strong> nhờ uy tín Học viện PVF.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SUB-PANEL 4: 57 VFF MEMBER ORGANIZATIONS & BAYESIAN FORECAST -->
+        <div id="p2410_57vff" class="p2410-pane" style="display:none;">
+          <div class="grid-2" style="margin-bottom:14px;">
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 3C — CẤU TRÚC 6 KHỐI CỬ TRI TRONG 57 TỔ CHỨC THÀNH VIÊN VFF (ĐỐI SÁNH ĐỘ ỒN MXH vs. LÁ PHIẾU ĐẠI HỘI)</div>
+                  <div class="panel-sub">Theo Điều lệ VFF (Khoản 2 Điều 43): Biểu quyết bằng phiếu kín trên 57 Tổ chức thành viên · Nguyên lý Chuồng bồ câu: tối thiểu 23–24/57 đơn vị đề cử kép</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:11.8px;">
+                  <thead>
+                    <tr>
+                      <th>Khối Tổ chức Thành viên VFF</th>
+                      <th>Số phiếu</th>
+                      <th>Tỷ trọng</th>
+                      <th>Nghiêng TS. Tuấn</th>
+                      <th>Nghiêng Ông Thụy</th>
+                      <th>Liên danh / Dao động</th>
+                      <th>Logic Lợi ích Thể chế &amp; Căn cứ Thực chứng</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>1. Khối 14 CLB V.League 1</strong></td>
+                      <td style="text-align:center;font-weight:800;">14</td>
+                      <td style="text-align:center;">24,56%</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">6</td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">5</td>
+                      <td style="text-align:center;font-weight:700;">3</td>
+                      <td>Nhóm CLB hệ sinh thái LPBank/HAGL/Ninh Bình nghiêng Thụy; nhóm Hà Nội FC, Thể Công Viettel, Bình Dương, Hải Phòng, SLNA ưu tiên cân bằng thể chế.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2. Khối 10 CLB Hạng Nhất QG</strong></td>
+                      <td style="text-align:center;font-weight:800;">10</td>
+                      <td style="text-align:center;">17,54%</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">4</td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">4</td>
+                      <td style="text-align:center;font-weight:700;">2</td>
+                      <td>Các CLB Hạng Nhất khát nguồn tài trợ giải đấu rất nhạy với gói 600–1.000 tỷ/năm, nhưng vẫn phụ thuộc quy chế cấp phép &amp; hỗ trợ chuyên môn VFF.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>3. Khối 15 CLB Hạng Nhì, Nữ &amp; Futsal</strong></td>
+                      <td style="text-align:center;font-weight:800;">15</td>
+                      <td style="text-align:center;">26,32%</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">11</td>
+                      <td style="text-align:center;">2</td>
+                      <td style="text-align:center;">2</td>
+                      <td><strong>Thành trì vững chắc nhất của TS. Tuấn:</strong> Sống nhờ kinh phí ngân sách địa phương, quỹ FIFA Forward, dự án AFC cho bóng đá Nữ &amp; Futsal.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>4. Khối 14 LĐBĐ Địa phương (Tỉnh/TP)</strong></td>
+                      <td style="text-align:center;font-weight:800;">14</td>
+                      <td style="text-align:center;">24,56%</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">11</td>
+                      <td style="text-align:center;">1</td>
+                      <td style="text-align:center;">2</td>
+                      <td>Lãnh đạo Sở VH-TT-DL / nguyên cán bộ quản lý thể thao địa phương ưu tiên tuyệt đối tính ổn định chính trị và định hướng của Cục TDTT.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>5. Khối 04 Tổ chức Thành viên Khác</strong></td>
+                      <td style="text-align:center;font-weight:800;">04</td>
+                      <td style="text-align:center;">7,02%</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">3</td>
+                      <td style="text-align:center;">0</td>
+                      <td style="text-align:center;">1</td>
+                      <td>Hội đồng HLV QG, Ban Trọng tài, Hiệp hội BĐ Sinh viên gắn bó trực tiếp với bộ máy điều hành chuyên môn VFF Khóa IX.</td>
+                    </tr>
+                    <tr style="background:#EFECE6;font-weight:900;">
+                      <td>TỔNG CỘNG ĐẠI HỘI VFF KHÓA X</td>
+                      <td style="text-align:center;">57</td>
+                      <td style="text-align:center;">100%</td>
+                      <td style="text-align:center;color:#166534;">35 (61,40%)</td>
+                      <td style="text-align:center;color:var(--thuy-red);">12 (21,05%)</td>
+                      <td style="text-align:center;color:var(--tuan-blue);">10 (17,54%)</td>
+                      <td><strong>Ngưỡng quá bán (50% + 1) = 29/57 phiếu · Tối thiểu 23–24/57 đơn vị đề cử kép</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 3D — MÔ HÌNH DỰ BÁO XÁC SUẤT KỊCH BẢN ĐẠI HỘI VFF KHÓA X (BAYESIAN POSTERIOR FORECAST)</div>
+                  <div class="panel-sub">Kết hợp Prior thể chế (tiền lệ 9 kỳ Đại hội VFF) và Likelihood thực chứng (57 Tổ chức thành viên + Tín nhiệm ròng Organic)</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:12px;">
+                  <thead>
+                    <tr>
+                      <th>Mã Kịch bản</th>
+                      <th>Kịch bản Kết quả Đại hội VFF Khóa X</th>
+                      <th>Xác suất Hậu nghiệm</th>
+                      <th>Cơ chế Thực thi &amp; Giải pháp Hiệp thương Cấp cao</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background:#EDF3FC;">
+                      <td><span class="badge badge-coal">KỊCH BẢN H1</span></td>
+                      <td><strong>Liên danh Hiệp thương (TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính / Chủ tịch VPF)</strong></td>
+                      <td style="text-align:center;font-weight:900;font-size:15px;color:#166534;">64,8%</td>
+                      <td>Trước phiên bầu chính thức, cơ quan chủ quản hiệp thương thống nhất cơ cấu: <strong>TS. Trần Quốc Tuấn tái cử Chủ tịch VFF (1 ứng viên duy nhất bầu Chủ tịch, đạt 95%–100% phiếu)</strong>; <strong>Ông Nguyễn Đức Thụy rút ứng cử Chủ tịch để ứng cử Phó Chủ tịch phụ trách Tài chính &amp; Vận động tài trợ (hoặc Chủ tịch HĐQT VPF)</strong>. Khớp hoàn toàn với nguyện vọng <code>[S3]</code> trên MXH (<code>8,79 : 1</code>).</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-tuan">KỊCH BẢN H2</span></td>
+                      <td><strong>TS. Trần Quốc Tuấn Tái cử Tuyệt đối (Ông Thụy rút lui hoàn toàn về làm Nhà tài trợ chiến lược)</strong></td>
+                      <td style="text-align:center;font-weight:900;font-size:15px;color:var(--tuan-blue);">23,9%</td>
+                      <td>Nếu quy định kiểm soát xung đột lợi ích đa CLB được siết chặt hoặc Ông Thụy không muốn giữ chức danh cấp phó, Ông Thụy rút hồ sơ trước Đại hội để giữ vị thế Nhà tài trợ Kim cương cho ĐTQG và V.League. TS. Tuấn tái cử với ~88%–95% phiếu.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-thuy">KỊCH BẢN H3</span></td>
+                      <td><strong>Đối đầu Bỏ phiếu Kín Trực tiếp &amp; Ông Nguyễn Đức Thụy Đắc cử Chủ tịch VFF</strong></td>
+                      <td style="text-align:center;font-weight:900;font-size:15px;color:var(--thuy-red);">9,1%</td>
+                      <td>Chỉ xảy ra nếu có biến cố bất thường khiến TS. Tuấn không tham gia ứng cử hoặc có chỉ đạo thay đổi toàn diện mô hình quản trị VFF từ cấp vĩ mô. Nếu bỏ phiếu kín đối đầu trực tiếp trong điều kiện bình thường, cấu trúc <code>35/57</code> phiếu nền của Khối LĐBĐ địa phương &amp; ngoài chuyên nghiệp khiến khả năng lật đổ cực thấp.</td>
+                    </tr>
+                    <tr>
+                      <td><span class="badge badge-gray">KỊCH BẢN H4</span></td>
+                      <td><strong>Phương án Nhân sự Thứ 3 (Ông Nguyễn Xuân Vũ hoặc nhân sự điều động mới)</strong></td>
+                      <td style="text-align:center;font-weight:800;font-size:14px;color:var(--text-muted);">2,2%</td>
+                      <td>Phương án dự phòng kỹ thuật trong trường hợp xuất hiện bế tắc hiệp thương giữa hai cực.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -3451,8 +4032,8 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Sổ Cái Dữ Liệu:</strong>
           <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo Chính Thống (78 Bài)</button>
-          <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh Bạ 378 Kênh Facebook (888 Bài)</button>
-          <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Sổ Cái 703 Bài Facebook Xác Thực URL</button>
+          <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh Bạ 770 Hồ Sơ Kênh (512 Kênh v4.5 Có Bài + 378 Kênh FB)</button>
+          <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Sổ Cái 706 Bài Facebook Xác Thực URL (Đủ 568 Bài v4.5)</button>
         </div>
         <div class="filter-group">
           <input type="text" id="pressFbSearch" class="input-ctrl" style="min-width:260px;" placeholder="Lọc theo tên báo, fanpage, tiêu đề, lập trường..." oninput="renderPressFbSub()" />
@@ -3491,7 +4072,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelFb378" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">DANH BẠ KIỂM TOÁN 378 KÊNH FACEBOOK (<span id="fb378Count">378</span> kênh · 888 bài yêu cầu · 579 bài khớp bảng · 9.016 BL)</div>
+            <div class="panel-title">DANH BẠ KIỂM TOÁN 770 HỒ SƠ KÊNH ĐA NỀN TẢNG (<span id="fb378Count">770</span> kênh · Bao trọn 512 kênh v4.5 có bài [334 FB · 116 YT · 62 TT] + 378 kênh FB danh bạ)</div>
             <div class="panel-sub">362 kênh danh bạ chính Tháng 10 + 16 kênh bổ sung ngày 22/10 (310 kênh khớp URL • 68 kênh chưa gửi URL bài lẻ)</div>
           </div>
         </div>
@@ -3518,7 +4099,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelFb665" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 703 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 381+ TRANG HOẠT ĐỘNG (<span id="fb665Count">703</span> bài · Đã kiểm chứng)</div>
+            <div class="panel-title">SỔ CÁI 706 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 334+ TRANG HOẠT ĐỘNG (<span id="fb665Count">706</span> bài · Đủ 568/568 bài FB v4.5 · 214.068 Likes · 15.355 BL)</div>
             <div class="panel-sub">Bao trọn 100% (568/568) bài Facebook trong file Raw 24/10 + sổ cái mốc 22/10 (665 bài) & link đối chiếu bổ sung</div>
           </div>
         </div>
@@ -3549,8 +4130,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Nền Tảng Video:</strong>
-          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · YouTube Kiểm Toán (354 Video · 5,07M+ Views · 82.549 Câu Thoại ASR)</button>
-          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · TikTok Kịch Bản & Sổ Cái (268 Video · 2,83M+ Views · 2.825 Dòng Thoại)</button>
+          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · YouTube Kiểm Toán (354 Video · Đủ 310 Video v4.5 · 13,96M Views · TimedText/Whisper ASR)</button>
+          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · TikTok Kịch Bản &amp; Sổ Cái (268 Video · Đủ 259 Video v4.5 · 22,91M Views · WebVTT ASR)</button>
         </div>
         <div class="filter-group">
           <input type="text" id="videoSearchInput" class="input-ctrl" style="min-width:260px;" placeholder="Tìm tiêu đề video, kênh, nội dung lời thoại ASR..." oninput="renderVideoSub()" />
@@ -3561,7 +4142,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelYt169">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI KIỂM TOÁN 354 VIDEO YOUTUBE (<span id="yt169Count">354</span> video · Mốc 22/10: 169 video · 5.066.831+ lượt xem · 52,05+ giờ)</div>
+            <div class="panel-title">SỔ CÁI KIỂM TOÁN 354 VIDEO YOUTUBE (<span id="yt169Count">354</span> video · Kho v4.5: 310 video · 13.964.171 lượt xem · 3.670 bình luận · Deep-link ?t=XXs)</div>
             <div class="panel-sub">Bao trọn 100% (310/310) video YouTube trong file Raw 24/10 + sổ cái ASR 22/10 • 100% URL sống • Bấm "Xem Kịch Bản" để đọc lời thoại bóc băng ASR</div>
           </div>
         </div>
@@ -3590,7 +4171,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelTt68" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 268 VIDEO TIKTOK & KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">268</span> video · Mốc 22/10: 68 video · 2.825.617+ lượt xem)</div>
+            <div class="panel-title">SỔ CÁI 268 VIDEO TIKTOK &amp; KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">268</span> video · Kho v4.5: 259 video · 22.914.170 lượt xem · 249.962 likes · 1.742 BL)</div>
             <div class="panel-sub">Bao trọn 100% (259/259) video TikTok trong file Raw 24/10 + 62 video bóc băng toàn văn ASR & sổ cái bổ sung</div>
           </div>
         </div>
@@ -3624,8 +4205,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Nguồn Bình Luận:</strong>
-          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.598 Bình Luận Ẩn Danh TK)</button>
-          <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube & TikTok (1.334 Bình Luận Mã Hóa)</button>
+          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.886 Bình Luận Ẩn Danh #FB-U0001..1886 · Đủ 1.771 BL [S1..S5] v4.5)</button>
+          <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube &amp; TikTok (1.457 Bình Luận · Đủ 1.145 BL [S1..S5] v4.5)</button>
         </div>
         <div class="filter-group">
           <select id="cmtStanceSelect" class="select-ctrl" onchange="renderCommentSub()">
@@ -3644,8 +4225,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelCmtFb887">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 1.598 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.598</span> bình luận · Mốc 22/10: 887 · Đã ẩn danh #FB-U0001..#FB-U1492)</div>
-            <div class="panel-sub">Bao gồm toàn bộ 887 bình luận mốc 22/10 + 711 bình luận bầu cử (S1..S5) trích xuất đầy đủ từ file Raw 24/10 (0 link cá nhân)</div>
+            <div class="panel-title">SỔ CÁI 1.886 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.886</span> bình luận · Bao trọn 1.771/1.771 BL [S1..S5] FB v4.5 · Đã ẩn danh #FB-U0001..#FB-U1886)</div>
+            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận chính kiến [S1..S5] trên Facebook từ kho 15.355 BL FB v4.5 + sổ cái 22/10 • Gắn Permalink comment_id trực tiếp • 0 link cá nhân</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3672,8 +4253,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelCmtYt604" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 1.334 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE (775) & TIKTOK (559) (<span id="cmtYtCount">1.334</span> bình luận · Mốc 22/10: 604)</div>
-            <div class="panel-sub">Bao gồm 604 bình luận sổ cái 22/10 + 730 bình luận bầu cử (S1..S5) trích xuất đầy đủ từ file Raw 24/10 kèm Link trực tiếp</div>
+            <div class="panel-title">SỔ CÁI 1.457 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE &amp; TIKTOK (<span id="cmtYtCount">1.457</span> bình luận · Bao trọn 1.145/1.145 BL [S1..S5] YT/TT v4.5)</div>
+            <div class="panel-sub">Bao trọn 100% (1.145/1.145) bình luận chính kiến [S1..S5] trên YouTube (744) &amp; TikTok (401) từ kho v4.5 + sổ cái 22/10 kèm Permalink lc= / comment_id= trực tiếp</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3813,7 +4394,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div>
             <div class="ed-kicker">08 · NGUỒN & KIỂM CHỨNG TOÀN DIỆN (MASTER SOURCE & VERIFICATION LEDGER)</div>
             <div class="panel-title" style="font-size:16px;margin-top:2px;">
-              2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Lũy kế đầy đủ đến 24/10/2026: <strong>4.817 bản ghi đối chiếu · 2.685 URL nguồn duy nhất</strong>)</span>
+              5.620 bản ghi có liên kết đối chiếu · 4.964 URL nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Bao trọn 100% kho v4.5: <strong>1.137 bài/video · 2.916 BL chính kiến [S1..S5] · 512 kênh hoạt động</strong> + Sổ cái nền 22/10)</span>
             </div>
             <div class="panel-sub" style="margin-top:4px;line-height:1.5;">
               • <strong>Trạng thái kiểm định kỹ thuật:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm tra link: 25/10/2026</span> · Tách bạch rõ 2 tiêu chí: <code>URL còn truy cập (HTTP 200)</code> và <code>Nội dung nguồn khớp nhận định</code> · Khớp <strong>100% (1.137/1.137)</strong> bài/video trong file <code>Raw_Social_Listening 24/10</code> (568 FB + 310 YT + 259 TT).<br/>
@@ -3835,11 +4416,11 @@ HTML_TEMPLATE_PART2 = r"""
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">1. Nền tảng (Platform)</label>
               <select id="ledgerPlatSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Tất cả nền tảng (4.817 bản ghi)</option>
+                <option value="ALL">Tất cả nền tảng (5.620 bản ghi)</option>
                 <option value="Báo chí">Báo chí Chính thống (78 bài · 78 URL)</option>
-                <option value="Facebook">Facebook Bài đăng & BL (2.679 bản ghi)</option>
-                <option value="YouTube">YouTube Video & BL (1.129 bản ghi)</option>
-                <option value="TikTok">TikTok Video & BL (827 bản ghi)</option>
+                <option value="Facebook">Facebook Bài đăng, Kênh &amp; BL (3.362 bản ghi)</option>
+                <option value="YouTube">YouTube Video &amp; BL (1.267 bản ghi)</option>
+                <option value="TikTok">TikTok Video &amp; BL (885 bản ghi)</option>
                 <option value="Đa nền tảng">Tổng hợp / Đa nền tảng (104 bản ghi)</option>
               </select>
             </div>
@@ -3854,19 +4435,19 @@ HTML_TEMPLATE_PART2 = r"""
               <select id="ledgerTypeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
                 <option value="ALL">Tất cả loại nguồn (12 Sheets)</option>
                 <option value="PRESS">Báo chí chính thống (#PRESS-001..078)</option>
-                <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..703)</option>
+                <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..706 · Đủ 568 v4.5)</option>
                 <option value="YT-VID">Video YouTube kiểm toán (#YT-VID-001..354)</option>
                 <option value="TT-VID">Video TikTok kịch bản (#TT-VID-001..268)</option>
-                <option value="FB-CMT">Bình luận Facebook (#FB-CMT-001..1598 · TK #FB-U)</option>
-                <option value="VID-CMT">Bình luận YouTube & TikTok (#VID-CMT-001..1334)</option>
-                <option value="CATALOG">Danh bạ 378 kênh & Đối soát tổng hợp (482 mục)</option>
+                <option value="FB-CMT">Bình luận Facebook (#FB-CMT-001..1886 · Đủ 1.771 v4.5)</option>
+                <option value="VID-CMT">Bình luận YouTube &amp; TikTok (#VID-CMT-001..1457 · Đủ 1.145 v4.5)</option>
+                <option value="CATALOG">Danh bạ 770 kênh &amp; Đối soát tổng hợp (871 mục)</option>
               </select>
             </div>
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">4. Chế độ Đối chiếu URL</label>
               <select id="ledgerDedupSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (4.817 dòng)</option>
-                <option value="UNIQUE_URLS">Chỉ URL nguồn duy nhất (2.685 URL độc lập)</option>
+                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (5.620 dòng)</option>
+                <option value="UNIQUE_URLS">Chỉ URL nguồn duy nhất (4.964 URL độc lập)</option>
                 <option value="NEW_23_24">Bản ghi mới cập nhật ngày 23–24/10/2026</option>
               </select>
             </div>
@@ -3879,7 +4460,7 @@ HTML_TEMPLATE_PART2 = r"""
               <select id="ledgerPageSizeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
                 <option value="200">200 dòng / trang</option>
                 <option value="500">500 dòng / trang</option>
-                <option value="5000">Toàn bộ (Tất cả dòng)</option>
+                <option value="10000">Toàn bộ (Tất cả 5.620 dòng)</option>
               </select>
             </div>
           </div>
@@ -3891,7 +4472,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="panel-header">
           <div>
             <div class="panel-title">
-              DANH MỤC NGUỒN ĐỐI CHIẾU & TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">4.817</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">2.685</span> URL nguồn duy nhất)
+              DANH MỤC NGUỒN ĐỐI CHIẾU &amp; TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">5.620</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">4.964</span> URL nguồn duy nhất)
             </div>
             <div class="panel-sub" id="ledgerActiveFilterSummary">
               Đang hiển thị danh mục đối chiếu đầy đủ. Bấm vào bất kỳ dòng nào hoặc nút "Fact-Check" để mở Hồ sơ Kiểm chứng chi tiết.
@@ -4110,7 +4691,7 @@ HTML_TEMPLATE_PART2 = r"""
   </div>
   </div><!-- /#protectedDashboardVault -->
 
-  <!-- GOOGLE SHEET PASSWORD LOCK GATE OVERLAY (ONLY 1 PASSWORD FIELD) -->
+  <!-- SECURITY PASSWORD LOCK GATE OVERLAY (ONLY 1 PASSWORD FIELD) -->
   <div class="gs-auth-overlay" id="gsAuthGateOverlay">
     <div class="gs-auth-card" style="max-width:440px;">
       <div class="gs-auth-kicker">CỔNG BẢO MẬT SỐ LIỆU</div>
@@ -4142,7 +4723,7 @@ HTML_TEMPLATE_PART2 = r"""
 
 HTML_TEMPLATE_PART3 = r"""
   <script>
-    // Private Vault Closure: Data and DOM are NOT mounted until Google Sheet Auth succeeds
+    // Private Vault Closure: Data and DOM are NOT mounted until Security Auth succeeds
     const _privateVaultDb = __EMBEDDED_JSON_PLACEHOLDER__;
     let _vaultTemplateHtml = '';
     let _isDashboardUnlocked = false;
@@ -4570,6 +5151,16 @@ HTML_TEMPLATE_PART3 = r"""
       if (tt) tt.style.display = 'none';
     }
 
+    function switch2410SubPanel(paneId, btn) {
+      if (btn && btn.parentElement) {
+        btn.parentElement.querySelectorAll('.ed-mode-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
+      document.querySelectorAll('.p2410-pane').forEach(el => {
+        el.style.display = (el.id === paneId) ? 'block' : 'none';
+      });
+    }
+
     function switchStanceBarMode(mode, btn) {
       if (btn && btn.parentElement) {
         btn.parentElement.querySelectorAll('.ed-mini-pill').forEach(b => b.classList.remove('active'));
@@ -4585,7 +5176,33 @@ HTML_TEMPLATE_PART3 = r"""
       const bar = document.getElementById('interactiveStanceBar');
       const note = document.getElementById('stanceBarFootNote');
 
-      if (mode === 'h2h') {
+      if (mode === 'v45_org') {
+        sampleEl.textContent = 'Kho v4.5 Open-World: 2.916 BL chính kiến [S1..S5] = 2.683 Organic + 233 Seeder (Tín nhiệm ròng: Tuấn +725 vs Thụy +120)';
+        lName.textContent = 'TS. Trần Quốc Tuấn (#1 Organic)';
+        lBig.textContent = '1.021';
+        lSub.textContent = 'BL Organic chọn làm CT ([S2] 766 thẳng + [S3] 255 Liên danh · 1.094 All · Ròng +725)';
+        rName.textContent = 'Ông Nguyễn Đức Thụy (#2 Organic)';
+        rBig.textContent = '687';
+        rSub.textContent = 'BL Organic ủng hộ [S1] (769 All · 82 Seeder = 10,66% · Phản đối [CON]: 567 · Ròng +120)';
+        bar.innerHTML = `
+          <div class="ed-flat-seg tuan" style="width:38.1%;" onclick="jumpToComments('Tuấn')">Tuấn CT: 1.021 Org (38,1%)</div>
+          <div class="ed-flat-seg neutral" style="width:36.3%;" onclick="jumpToComments('Phản đối')">[S5] Phản đối (573) + [S4] Khác (402)</div>
+          <div class="ed-flat-seg thuy" style="width:25.6%;" onclick="jumpToComments('Thụy')">Thụy [S1]: 687 Org (25,6%)</div>`;
+        note.innerHTML = `<strong>Đối soát 20.767 bình luận v4.5 (19.652 Organic = 94,63% · 1.115 Seeder = 5,37%):</strong> Trong <strong>2.916 BL chính kiến [S1..S5] (2.683 Organic)</strong>: <strong>[S2] TS. Tuấn dẫn đầu #1 Organic với 766 BL</strong> (819 All, chỉ 41 BL phản đối trực tiếp &rarr; <code>PRO:CON = 18,68:1</code>, Ròng <code>+725</code>); <strong>[S1] Bầu Thụy đạt 687 BL Organic</strong> (769 All, 82 Seeder = 10,66%, chịu 567 BL phản đối trực tiếp &rarr; <code>PRO:CON = 1,21:1</code>, Ròng <code>+120</code>); <strong>[S3] Liên danh (Tuấn CT + Thụy PCT TC) đạt 255 BL Organic</strong> (đồng thuận <code>8,79:1</code>); <strong>[S4] Ứng viên khác đạt 402 BL Organic</strong>.`;
+      } else if (mode === 'v44_core') {
+        sampleEl.textContent = 'Lõi v4.4 Strict 2-Lock Core: 2.712 BL chính kiến [S1..S5] = 2.495 Organic + 217 Seeder (Trên 587 bài/video lõi)';
+        lName.textContent = 'TS. Tuấn (v4.4 Core Organic)';
+        lBig.textContent = '925';
+        lSub.textContent = 'BL Organic chọn làm CT ([S2] 688 thẳng + [S3] 237 Liên danh · 993 All · Ròng +653)';
+        rName.textContent = 'Ông Thụy (v4.4 Core Organic)';
+        rBig.textContent = '667';
+        rSub.textContent = 'BL Organic ủng hộ [S1] (742 All · 75 Seeder = 10,11% · Phản đối [CON]: 522 · Ròng +145)';
+        bar.innerHTML = `
+          <div class="ed-flat-seg tuan" style="width:37.1%;" onclick="jumpToComments('Tuấn')">Tuấn CT: 925 Org (37,1%)</div>
+          <div class="ed-flat-seg neutral" style="width:36.2%;" onclick="jumpToComments('Phản đối')">[S5] Phản đối (528) + [S4] Khác (375)</div>
+          <div class="ed-flat-seg thuy" style="width:26.7%;" onclick="jumpToComments('Thụy')">Thụy [S1]: 667 Org (26,7%)</div>`;
+        note.innerHTML = `<strong>Đối soát Lõi v4.4 Strict 2-Lock Core (12.803 BL = 12.091 Organic + 712 Seeder):</strong> Ngay trên tập lõi khắt khe nhất, <strong>[S2] TS. Tuấn vẫn dẫn đầu #1 Organic (688 BL Organic vs 667 BL Organic của [S1] Bầu Thụy)</strong>, đồng thời tỷ lệ <code>PRO:CON</code> trực tiếp của TS. Tuấn đạt <strong>19,66 : 1</strong> (688 vs 35) so với <strong>1,28 : 1</strong> (667 vs 522) của Bầu Thụy.`;
+      } else if (mode === 'h2h') {
         sampleEl.textContent = 'Tín hiệu bình luận có lập trường (N = 991 đối đầu)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
         lBig.textContent = '59,1%';
@@ -4687,7 +5304,33 @@ HTML_TEMPLATE_PART3 = r"""
       const bar = document.getElementById('interactiveCovBar');
       const note = document.getElementById('covBarFootNote');
 
-      if (mode === 'all974') {
+      if (mode === 'v45_1137') {
+        sampleEl.textContent = 'Kho v4.5: 1.137 bài/video (568 FB · 310 YT · 259 TT · 36,88M views) + 78 bài báo | Sổ cái: 1.406 bài/video';
+        lName.textContent = 'Khối bài TS. Tuấn ([S2] 135 + [S3] 94)';
+        lBig.textContent = '229';
+        lSub.textContent = 'bài/video v4.5 chọn Tuấn làm CT (135 bài [S2] thuần + 94 bài [S3] Liên danh · Lũy tiến: 618)';
+        rName.textContent = 'Bài mở chiến dịch Ông Thụy ([S1])';
+        rBig.textContent = '149';
+        rSub.textContent = 'bài/video v4.5 ủng hộ thẳng [S1] (82 FB · 33 YT · 34 TT · 56,84% BL bên dưới lệch pha · Lũy tiến: 485)';
+        bar.innerHTML = `
+          <div class="ed-flat-seg tuan" style="width:20.1%;" onclick="switchTab('tab-press-fb')">[S2]+[S3] Tuấn CT: 229 (20,1%)</div>
+          <div class="ed-flat-seg neutral" style="width:66.8%;" onclick="switchTab('tab-press-fb')">[S6] Trung lập (682) · [S5] Phản biện (46) · [S4] Khác (31)</div>
+          <div class="ed-flat-seg thuy" style="width:13.1%;" onclick="switchTab('tab-press-fb')">[S1] Thụy: 149 (13,1%)</div>`;
+        note.innerHTML = `<strong>Nghịch lý "Thắng Độ Phủ Bài Đăng [S1] nhưng Thua Điểm Ròng Bình Luận":</strong> Trên kho <code>v4.5 (1.137 bài/video · 36.878.341 views · 464.030 likes · 16.898 shares)</code>, Bầu Thụy dẫn trước về số bài mở chiến dịch đơn lẻ <code>[S1] = 149 bài</code> (vs <code>[S2] = 135 bài</code> của TS. Tuấn), nhưng bên dưới 149 bài <code>[S1]</code> có tới <strong>56,84% bình luận chính kiến lệch pha</strong>. Khi gộp <code>[S2]+[S3]</code>, khối bài chọn TS. Tuấn làm Chủ tịch đạt <strong>229 bài (20,14%)</strong>.`;
+      } else if (mode === 'v44_587') {
+        sampleEl.textContent = 'Lõi v4.4 Strict 2-Lock Core: 587 bài/video (352 FB · 159 YT · 76 TT · 5,20M views · Đã lọc 4.287 clip nhiễu)';
+        lName.textContent = 'Khối bài TS. Tuấn ([S2] 125 + [S3] 91)';
+        lBig.textContent = '216';
+        lSub.textContent = 'bài/video lõi v4.4 chọn Tuấn làm CT (125 bài [S2] thuần + 91 bài [S3] Liên danh = 36,80%)';
+        rName.textContent = 'Bài mở chiến dịch Ông Thụy ([S1])';
+        rBig.textContent = '143';
+        rSub.textContent = 'bài/video lõi v4.4 ủng hộ thẳng [S1] (24,36% tổng số bài lõi v4.4)';
+        bar.innerHTML = `
+          <div class="ed-flat-seg tuan" style="width:36.8%;" onclick="switchTab('tab-press-fb')">[S2]+[S3] Tuấn CT: 216 (36,8%)</div>
+          <div class="ed-flat-seg neutral" style="width:38.8%;" onclick="switchTab('tab-press-fb')">[S6] Trung lập (154) · [S5] Phản đối (45) · [S4] Khác (29)</div>
+          <div class="ed-flat-seg thuy" style="width:24.4%;" onclick="switchTab('tab-press-fb')">[S1] Thụy: 143 (24,4%)</div>`;
+        note.innerHTML = `<strong>Cấu trúc 587 bài/video Lõi v4.4 Core:</strong> <code>[S1] Bầu Thụy = 143 bài (24,36%)</code> · <code>[S2] TS. Tuấn = 125 bài (21,29%)</code> · <code>[S3] Liên danh = 91 bài (15,50%)</code> · <code>[S4] Ứng viên khác = 29 bài (4,94%)</code> · <code>[S5] Phản đối = 45 bài (7,67%)</code> · <code>[S6] Trung lập = 154 bài (26,24%)</code>.`;
+      } else if (mode === 'all974') {
         sampleEl.textContent = 'Lượt bài viết & video đề cập lũy tiến (01–24/10: 614 vs 481 · Mốc 22/10: 596 vs 454)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
         lBig.textContent = '614';
