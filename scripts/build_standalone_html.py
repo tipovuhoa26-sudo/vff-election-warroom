@@ -3701,59 +3701,26 @@ HTML_TEMPLATE_PART2 = r"""
     </div>
   </div>
 
-  <!-- GOOGLE SHEET PASSWORD LOCK GATE OVERLAY (SHEET: "id" · A:D = time, id, email, password) -->
+  <!-- GOOGLE SHEET PASSWORD LOCK GATE OVERLAY (ONLY 1 PASSWORD FIELD) -->
   <div class="gs-auth-overlay" id="gsAuthGateOverlay">
-    <div class="gs-auth-card">
-      <div class="gs-auth-kicker">CỔNG BẢO MẬT SỐ LIỆU · GOOGLE SHEETS AUTHENTICATION</div>
-      <div class="gs-auth-title">Xác thực mật khẩu truy cập Dashboard Bầu cử VFF</div>
+    <div class="gs-auth-card" style="max-width:440px;">
+      <div class="gs-auth-kicker">CỔNG BẢO MẬT SỐ LIỆU</div>
+      <div class="gs-auth-title">Nhập mật khẩu để xem báo cáo</div>
       <div class="gs-auth-sub">
-        Hệ thống kiểm tra mật khẩu trực tiếp từ Google Sheet <strong>"id"</strong> (<code>time, id, email, password</code>). Khi hết thời gian phiên bảo mật, màn hình sẽ tự động khóa lại và yêu cầu nhập lại mật khẩu hợp lệ trên Google Sheet.
+        Vui lòng nhập mật khẩu được cấp để truy cập số liệu. Khi hết thời gian phiên bảo mật, bạn cần nhập lại mật khẩu để tiếp tục xem.
       </div>
 
       <div id="gsAuthMessage" class="gs-auth-msg"></div>
 
       <form id="gsAuthForm" onsubmit="submitGoogleSheetAuth(event)">
         <div class="gs-auth-field">
-          <label class="gs-auth-label" for="gsAuthIdOrEmail">ID hoặc Email (Cột B / C trên Sheet "id" — Tùy chọn)</label>
-          <input id="gsAuthIdOrEmail" type="text" class="gs-auth-input" autocomplete="username" placeholder="Nhập ID hoặc Email (để trống nếu chỉ kiểm tra cột password)..." />
+          <label class="gs-auth-label" for="gsAuthPassword">Mật khẩu truy cập</label>
+          <input id="gsAuthPassword" type="password" class="gs-auth-input" autocomplete="current-password" required autofocus placeholder="Nhập mật khẩu..." />
         </div>
 
-        <div class="gs-auth-field">
-          <label class="gs-auth-label" for="gsAuthPassword">Mật khẩu truy cập (Cột D "password" trên Sheet "id" — Bắt buộc)</label>
-          <input id="gsAuthPassword" type="password" class="gs-auth-input" autocomplete="current-password" required placeholder="Nhập mật khẩu từ Google Sheet..." />
-        </div>
-
-        <div class="gs-auth-field">
-          <label class="gs-auth-label" for="gsAuthTimeoutSelect">Thời gian phiên bảo mật (Tự động khóa khi hết giờ)</label>
-          <select id="gsAuthTimeoutSelect" class="gs-auth-input">
-            <option value="SHEET">Theo cột A ("time") trên Google Sheet (Mặc định 30 phút nếu cột A là ngày tạo)</option>
-            <option value="1">1 phút (Kiểm thử nhanh tự động khóa)</option>
-            <option value="5">5 phút</option>
-            <option value="15">15 phút</option>
-            <option value="30">30 phút</option>
-            <option value="60">60 phút (1 giờ)</option>
-            <option value="180">180 phút (3 giờ)</option>
-          </select>
-        </div>
-
-        <details id="gsAuthConfigDetails" style="margin-bottom:14px;background:var(--bg-input);border:1px solid var(--border);padding:10px 12px;">
-          <summary style="cursor:pointer;font-size:11.8px;font-weight:800;color:var(--text-main);">
-            Cấu hình URL Google Apps Script Web App &amp; Sheet ID (Bấm để mở)
-          </summary>
-          <div style="margin-top:10px;">
-            <label class="gs-auth-label" for="gsWebAppUrlInput" style="font-size:10.8px;">URL Web App Google Apps Script (<code>https://script.google.com/macros/s/.../exec</code>)</label>
-            <input id="gsWebAppUrlInput" type="url" class="gs-auth-input" style="font-size:12px;padding:7px 9px;" value="https://script.google.com/macros/s/AKfycbxYsBofxuhhi-jxNTO_PXONYFWK-qvjB41VkS7HA8jw_7hbz3X1e-eLW74T88ZQ2yA/exec" placeholder="Dán URL Web App (/exec) sau khi Deploy Code.gs..." onchange="saveGsWebAppUrl(this.value)" />
-            <div style="font-size:11.2px;color:var(--text-secondary);margin-top:6px;line-height:1.45;">
-              • <strong>Google Sheet đích:</strong> <code>1HJ8jEIBDQIyBob5rWE1c1gJb6V7GGpo12HIsxS3cmG8</code> · Sheet: <strong><code>id</code></strong> (Cột <code>A: time</code>, <code>B: id</code>, <code>C: email</code>, <code>D: password</code>).<br/>
-              • <strong>Chế độ 1 (Sheet riêng tư):</strong> Dán mã <code>Code.gs</code> vào <em>Tiện ích mở rộng &rarr; Apps Script</em> của Sheet, chọn <em>Triển khai &rarr; Ứng dụng web (Quyền truy cập: Bất kỳ ai)</em> rồi dán URL <code>/exec</code> vào ô trên.<br/>
-              • <strong>Chế độ 2 (Tự động dự phòng):</strong> Nếu chưa dán URL <code>/exec</code> nhưng bật chia sẻ Sheet ở chế độ <em>"Bất kỳ ai có liên kết đều có thể xem"</em>, hệ thống sẽ tự động đối chiếu trực tiếp qua Google Sheet <code>gviz/tq</code>.
-            </div>
-          </div>
-        </details>
-
-        <div style="display:flex;gap:10px;align-items:center;justify-content:space-between;margin-top:14px;">
+        <div style="margin-top:14px;">
           <button type="submit" id="gsAuthSubmitBtn" class="btn btn-primary" style="width:100%;padding:11px 16px;font-size:13.5px;font-weight:800;justify-content:center;">
-            Xác thực Mật khẩu trên Google Sheet &rarr;
+            Mở khóa số liệu &rarr;
           </button>
         </div>
       </form>
