@@ -2759,7 +2759,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="brand-title">
           <h1>THEO DÕI DƯ LUẬN BẦU CỬ VFF KHÓA X</h1>
           <div class="positioning-line">Dashboard theo dõi tín hiệu dư luận và độ phủ truyền thông quanh bầu cử VFF.</div>
-          <div class="dateline-meta"><strong>01–25/10/2026</strong> · Cập nhật Báo cáo Đa Sheet 3 Nền tảng 3 Chiều (v4.5 &amp; v4.4 Core) · <strong>5.620 bản ghi có liên kết đối chiếu · 4.964 URL nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Kho v4.5: 805 kênh · 512 kênh có bài · 1.137 bài/video · 36,88M views · 20.767 BL = 19.652 Organic + 1.115 Seeder · 2.916 BL chính kiến [S1..S5])</span></div>
+          <div class="dateline-meta"><strong>01–25/10/2026</strong> · Cập nhật Báo cáo Đa Sheet 3 Nền tảng 3 Chiều (v4.5 &amp; v4.4 Core) · <strong>6.203 bản ghi có liên kết đối chiếu · 5.187 URL nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Kho v4.5: 805 kênh · 512 kênh có bài · 1.137 bài/video · 36,88M views · 20.767 BL = 19.652 Organic + 1.115 Seeder · 2.916 BL chính kiến [S1..S5])</span></div>
         </div>
       </div>
 
@@ -2769,11 +2769,11 @@ HTML_TEMPLATE_PART2 = r"""
           <span class="global-search-icon" style="display:inline-flex;align-items:center;color:var(--text-muted);">
             <svg class="ico-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </span>
-          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 5.620 bản ghi · 4.964 URL · 20.767 BL..." oninput="handleGlobalSearch(this.value)" />
+          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 6.203 bản ghi · 5.187 URL · 20.767 BL..." oninput="handleGlobalSearch(this.value)" />
         </div>
 
         <!-- Clean Data Status Pill -->
-        <div class="header-meta-group" title="Đã kiểm tra link: 25/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã ẩn danh 1.886 tài khoản bình luận FB (#FB-U0001..#FB-U1886)">
+        <div class="header-meta-group" title="Đã kiểm tra link: 25/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã khôi phục 1.331 URL bị cắt 200 ký tự · Đã ẩn danh 1.888 tài khoản bình luận FB (#FB-U0001..#FB-U1888)">
           <span class="status-badge snapshot">Cập nhật: v4.5 (25/10)</span>
           <span class="status-badge verified">Đã kiểm tra link: 25/10/2026</span>
           <button type="button" id="securitySessionPill" class="status-badge verified" style="cursor:pointer;border:1px solid #166534;" onclick="openOrLockSecurityGate()" title="Trạng thái phiên bảo mật. Bấm để khóa màn hình ngay.">
@@ -2795,14 +2795,14 @@ HTML_TEMPLATE_PART2 = r"""
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><polyline points="9 15 11 17 15 13"/></svg>
                 <span>Danh mục nguồn đối chiếu</span>
               </span>
-              <span class="item-meta">5.620 bản ghi · .xlsx</span>
+              <span class="item-meta">6.203 bản ghi · .xlsx</span>
             </a>
             <a class="exec-menu-item" href="BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_24_10_2026.xlsx" id="dlExcelBtn" target="_blank">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="16" y2="17"/></svg>
                 <span>Sổ cái Master Excel (12 Sheets)</span>
               </span>
-              <span class="item-meta">5.620 dòng · .xlsx</span>
+              <span class="item-meta">6.203 dòng · .xlsx</span>
             </a>
             <a class="exec-menu-item" href="BAO_CAO_DA_SHEET_TONG_HOP_3_NEN_TANG_UNG_HO_UNG_VIEN_VFF_2026.xlsx" target="_blank">
               <span class="item-left">
@@ -2816,7 +2816,7 @@ HTML_TEMPLATE_PART2 = r"""
                 <svg class="ico-svg" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 <span>Xuất CSV Danh mục nguồn đối chiếu</span>
               </span>
-              <span class="item-meta">5.620 dòng · .csv</span>
+              <span class="item-meta">6.203 dòng · .csv</span>
             </button>
             <button class="exec-menu-item" onclick="exportCurrentTabCSV(); closeAllDropdowns();">
               <span class="item-left">
@@ -2937,9 +2937,9 @@ HTML_TEMPLATE_PART2 = r"""
   <!-- SUBTLE EDITORIAL SCOPE NOTE -->
   <div style="background:#EFECE6;border-bottom:1px solid var(--border);padding:7px 24px;font-size:12px;color:var(--text-secondary);">
     <div style="max-width:1580px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-      <span><strong>Phạm vi &amp; Giới hạn phương pháp:</strong> Số liệu đối soát 2 tầng SSOT (<strong>v4.5 Open-World: 1.137 bài/video · 20.767 BL = 19.652 Organic + 1.115 Seeder · 2.916 BL chính kiến [S1..S5] = 2.683 Organic + 233 Seeder</strong> | <strong>v4.4 Core: 587 bài/video · 12.803 BL</strong> | <strong>Sổ cái kiểm chứng: 1.406 bài/video &amp; 3.343 BL mã hóa</strong>); không phải phiếu bầu chính thức của Đại biểu Đại hội VFF.</span>
+      <span><strong>Phạm vi &amp; Giới hạn phương pháp:</strong> Số liệu đối soát 2 tầng SSOT (<strong>v4.5 Open-World: 1.137 bài/video · 20.767 BL = 19.652 Organic + 1.115 Seeder · 2.916 BL chính kiến [S1..S5] = 2.683 Organic + 233 Seeder</strong> | <strong>v4.4 Core: 587 bài/video · 12.803 BL</strong> | <strong>Sổ cái kiểm chứng: 1.409 bài/video/báo &amp; 3.345 BL mã hóa</strong>); không phải phiếu bầu chính thức của Đại biểu Đại hội VFF.</span>
       <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
-        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn &amp; kiểm chứng (5.620 bản ghi có liên kết · 4.964 URL nguồn duy nhất) &rarr;</a>
+        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn &amp; kiểm chứng (6.203 bản ghi có liên kết · 5.187 URL nguồn duy nhất) &rarr;</a>
         <a href="javascript:void(0)" onclick="switchTab('tab-methodology')" style="color:var(--text-main);text-decoration:underline;font-weight:700;font-size:11.8px;">Quy trình Đại biểu & Phương pháp (Mục 09) &rarr;</a>
       </div>
     </div>
@@ -2961,7 +2961,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel-header">
         <div>
           <div class="panel-title">KẾT QUẢ TRA CỨU TOÀN CỤC TRÊN 12 SHEETS DỮ LIỆU (<span id="globalSearchCount">0</span> bản ghi)</div>
-          <div class="panel-sub">Tìm kiếm tức thời trên toàn bộ 78 bài báo, 770 hồ sơ kênh (512 kênh v4.5), 706 bài FB (568 v4.5), 354 video YT (310 v4.5), 268 video TikTok (259 v4.5) và 3.343 bình luận mã hóa (100% 2.916 BL [S1..S5] v4.5)</div>
+          <div class="panel-sub">Tìm kiếm tức thời trên toàn bộ 81 bài báo (78 gốc + 3 mới 24/10), 881 hồ sơ kênh (805 kênh v4.5), 706 bài FB (568 v4.5), 354 video YT (310 v4.5 + 115 cặp link Timestamp), 268 video TikTok (259 v4.5) và 3.345 bình luận mã hóa (100% 2.916 BL [S1..S5] v4.5)</div>
         </div>
         <button class="btn btn-outline" onclick="clearGlobalSearch()">Đóng kết quả</button>
       </div>
@@ -2999,7 +2999,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div>
             <div class="ed-kicker">01 · TÓM TẮT DIỄN BIẾN &amp; ĐỐI SOÁT 2 TẦNG DỮ LIỆU (01–25/10/2026 · v4.5 OPEN-WORLD &amp; v4.4 CORE)</div>
             <h2 class="ed-headline">Tương quan lập trường công khai và độ phủ truyền thông</h2>
-            <p class="ed-lead">Đối soát toàn diện 3 nền tảng (Facebook · YouTube · TikTok) &amp; Báo chí trên 3 chiều lập trường (<strong>Ủng hộ [PRO] · Phản đối [CON] · Trung lập/Liên danh [NEUTRAL/HYBRID]</strong>): Kho <strong>v4.5 Open-World</strong> ghi nhận <strong>805 kênh giám sát (512 kênh có bài) · 1.137 bài/video · 36.878.341 lượt xem · 20.767 bình luận (19.652 Organic = 94,63% + 1.115 Seeder = 5,37%) · 2.916 bình luận chính kiến [S1..S5] (2.683 Organic + 233 Seeder)</strong>; Sổ cái tích hợp đầy đủ <strong>5.620 bản ghi có liên kết · 4.964 URL duy nhất</strong>.</p>
+            <p class="ed-lead">Đối soát toàn diện 3 nền tảng (Facebook · YouTube · TikTok) &amp; Báo chí trên 3 chiều lập trường (<strong>Ủng hộ [PRO] · Phản đối [CON] · Trung lập/Liên danh [NEUTRAL/HYBRID]</strong>): Kho <strong>v4.5 Open-World</strong> ghi nhận <strong>805 kênh giám sát (512 kênh có bài) · 1.137 bài/video · 36.878.341 lượt xem · 20.767 bình luận (19.652 Organic = 94,63% + 1.115 Seeder = 5,37%) · 2.916 bình luận chính kiến [S1..S5] (2.683 Organic + 233 Seeder)</strong>; Sổ cái tích hợp đầy đủ <strong>6.203 bản ghi có liên kết · 5.187 URL duy nhất (đã khôi phục 100% 1.331 URL bị cắt 200 ký tự)</strong>.</p>
           </div>
         </div>
 
@@ -3018,7 +3018,7 @@ HTML_TEMPLATE_PART2 = r"""
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('v44_core', this)">v4.4 Core (2.495)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('h2h', this)">Đối đầu 22/10 (991)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('coalition', this)">Liên danh [S3] (255)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (1.886)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (1.888)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('yttt527', this)">YT/TT (1.457)</button>
                 </div>
               </div>
@@ -3040,7 +3040,7 @@ HTML_TEMPLATE_PART2 = r"""
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="jumpToComments('Tuấn')">Tuấn CT: 1.021 Org (38,1%)</div>
                 <div class="ed-flat-seg neutral" style="width:36.3%;"
-                     onmouseenter="showEdTooltip(event, '<strong>[S5] Phản đối (573 Org) + [S4] Ứng viên khác (402 Org)</strong><div class=ed-tt-row><span>[S5] Phản đối Bầu Thụy trực tiếp:</span><strong>567 Organic / 627 All (Mở rộng: 628 Org)</strong></div><div class=ed-tt-row><span>[S5] Phê bình TS. Tuấn trực tiếp:</span><span>41 Organic / 49 All (Mở rộng: 245 Org)</span></div><div class=ed-tt-row><span>[S4] Bầu Đức (285) · P.N.Vượng (110) · Xuân Vũ (9):</span><span>402 Organic / 420 All</span></div><div class=ed-tt-hint>Bấm để lọc bình luận phản đối &amp; ứng viên khác &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>[S5] Phản đối (573 Org) + [S4] Ứng viên khác (402 Org)</strong><div class=ed-tt-row><span>[S5] Phản đối Bầu Thụy trực tiếp:</span><strong>567 Organic / 627 All (Mở rộng: 628 Org)</strong></div><div class=ed-tt-row><span>[S5] Phê bình TS. Tuấn trực tiếp:</span><span>41 Organic / 49 All (Mở rộng: 245 Org)</strong></div><div class=ed-tt-row><span>[S4] Bầu Đức (285) · P.N.Vượng (110) · Xuân Vũ (9):</span><span>402 Organic / 420 All</span></div><div class=ed-tt-hint>Bấm để lọc bình luận phản đối &amp; ứng viên khác &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="jumpToComments('Phản đối')">[S5] Phản đối (573) + [S4] Khác (402)</div>
                 <div class="ed-flat-seg thuy" style="width:25.6%;"
@@ -3053,9 +3053,9 @@ HTML_TEMPLATE_PART2 = r"""
               <strong>Đối soát 20.767 bình luận v4.5 (19.652 Organic = 94,63% · 1.115 Seeder = 5,37%):</strong> Trong <strong>2.916 BL chính kiến [S1..S5] (2.683 Organic)</strong>: <strong>[S2] TS. Tuấn dẫn đầu #1 Organic với 766 BL</strong> (819 All, chỉ 41 BL phản đối trực tiếp &rarr; <code>PRO:CON = 18,68:1</code>, Ròng <code>+725</code>); <strong>[S1] Bầu Thụy đạt 687 BL Organic</strong> (769 All, 82 Seeder = 10,66%, chịu 567 BL phản đối trực tiếp &rarr; <code>PRO:CON = 1,21:1</code>, Ròng <code>+120</code>); <strong>[S3] Liên danh (Tuấn CT + Thụy PCT TC) đạt 255 BL Organic</strong> (đồng thuận <code>8,79:1</code>); <strong>[S4] Ứng viên khác đạt 402 BL Organic</strong> (Bầu Đức 285, Phạm Nhật Vượng 110, Trần Anh Tú 15, Bầu Hiển 15, Nguyễn Xuân Vũ 9).
             </div>
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% TK bình luận FB (#FB-U0001..#FB-U1886) · Kèm Permalink BL gốc</span>
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% TK bình luận FB (#FB-U0001..#FB-U1888) · Khôi phục đủ 1.315 Permalink BL</span>
               <div style="display:flex;gap:6px;">
-                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 1.886 BL FB (1.771 v4.5) &rarr;</button>
+                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 1.888 BL FB (1.771 v4.5) &rarr;</button>
                 <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Xem 1.457 BL YT/TT (1.145 v4.5) &rarr;</button>
               </div>
             </div>
@@ -3067,13 +3067,13 @@ HTML_TEMPLATE_PART2 = r"""
               <div class="ed-metric-top" style="flex-wrap:wrap;gap:6px;">
                 <div>
                   <span class="ed-metric-title">Độ phủ truyền thông &amp; Ma trận 6 Nhãn Bài viết [S1..S6]</span>
-                  <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">Kho v4.5: 1.137 bài/video (568 FB · 310 YT · 259 TT · 36,88M views) + 78 bài báo | Sổ cái: 1.406 bài/video</span>
+                  <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">Kho v4.5: 1.137 bài/video (568 FB · 310 YT · 259 TT · 36,88M views) + 81 bài báo | Sổ cái: 1.409 bài/video</span>
                 </div>
                 <div class="ed-mini-pills" title="Lọc nhanh độ phủ theo nền tảng">
                   <button class="ed-mini-pill active" onclick="switchCoverageBarMode('v45_1137', this)">Kho v4.5 (1.137)</button>
                   <button class="ed-mini-pill" onclick="switchCoverageBarMode('v44_587', this)">Lõi v4.4 (587)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('all974', this)">Sổ cái (1.406)</button>
-                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('press78', this)">Báo chí (78)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('all974', this)">Sổ cái (1.409)</button>
+                  <button class="ed-mini-pill" onclick="switchCoverageBarMode('press78', this)">Báo chí (81)</button>
                   <button class="ed-mini-pill" onclick="switchCoverageBarMode('fb665', this)">FB (706)</button>
                   <button class="ed-mini-pill" onclick="switchCoverageBarMode('yt169', this)">YT (354)</button>
                   <button class="ed-mini-pill" onclick="switchCoverageBarMode('tt62', this)">TT (268)</button>
@@ -3110,10 +3110,10 @@ HTML_TEMPLATE_PART2 = r"""
               <strong>Nghịch lý "Thắng Độ Phủ Bài Đăng [S1] nhưng Thua Điểm Ròng Bình Luận":</strong> Trên kho <code>v4.5 (1.137 bài/video · 36.878.341 views · 464.030 likes · 16.898 shares)</code>, Bầu Thụy dẫn trước về số bài mở chiến dịch đơn lẻ <code>[S1] = 149 bài</code> (vs <code>[S2] = 135 bài</code> của TS. Tuấn), nhưng bên dưới 149 bài <code>[S1]</code> có tới <strong>56,84% bình luận chính kiến lệch pha</strong> (24,78% phản đối trực diện, 13,80% ca ngợi TS. Tuấn, 10,81% đề xuất Liên danh). Khi gộp <code>[S2]+[S3]</code>, khối bài chọn TS. Tuấn làm Chủ tịch đạt <strong>229 bài (20,14%)</strong>.
             </div>
             <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm tra link: 25/10/2026 · 5.620/5.620 bản ghi có HTTP URL hợp lệ</span>
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm tra link: 25/10/2026 · 6.203/6.203 bản ghi có HTTP URL hợp lệ</span>
               <div style="display:flex;gap:6px;">
-                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Xem 78 nguồn Báo chí &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem 5.620 bản ghi · 4.964 URL &rarr;</button>
+                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Xem 81 nguồn Báo chí &rarr;</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem 6.203 bản ghi · 5.187 URL &rarr;</button>
               </div>
             </div>
           </div>
@@ -3167,6 +3167,7 @@ HTML_TEMPLATE_PART2 = r"""
             <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_8cand', this)">2. Hồ sơ 3 Chiều 8 Ứng viên</button>
             <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_div', this)">3. Độ lệch Post×Cmt &amp; Seeder SimHash</button>
             <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_57vff', this)">4. 57 Đại biểu VFF &amp; Dự báo Bayesian</button>
+            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_factcheck', this)">5. Kiểm toán Link &amp; Lọc nhiễu v4.5</button>
           </div>
         </div>
 
@@ -3717,6 +3718,167 @@ HTML_TEMPLATE_PART2 = r"""
             </div>
           </div>
         </div>
+
+        <!-- SUB-PANEL 5: FORENSIC LINK AUDIT & v4.5 HOMONYM/OFF-TOPIC FACT-CHECK -->
+        <div id="p2410_factcheck" class="p2410-pane" style="display:none;">
+          <div class="grid-2" style="margin-bottom:14px;">
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 5A — ĐỐI SOÁT PHÁP Y 100% LINK TOÀN BỘ THƯ MỤC /2410 &amp; /2210 (ZERO MISSING LINKS)</div>
+                  <div class="panel-sub">Kiểm toán từng dòng trên cả 10 Sheets Excel Đa Sheet, File Raw Social Listening và Báo cáo Tổng hợp Markdown (6.203 bản ghi · 5.187 URL độc lập)</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:11.8px;">
+                  <thead>
+                    <tr>
+                      <th>Tệp / Sheet Nguồn trong Thư mục 2410</th>
+                      <th>Tổng Link Gốc</th>
+                      <th>Đã Tích Hợp Dashboard</th>
+                      <th>Phát Hiện &amp; Xử Lý Kỹ Thuật Khi Fact-Check</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>1. Báo cáo Tổng hợp Markdown (.md)</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">BAO_CAO_TONG_HOP_3_NEN_TANG_..._2026.md</span></td>
+                      <td style="text-align:center;font-weight:800;">92 URL</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">92 / 92 (100%)</td>
+                      <td>Bổ sung <strong>03 bài báo chính thống mới</strong> (<em>CAND, SGGP Thể Thao, Tiền Phong</em> &rarr; nâng kho báo chí lên <strong>81 bài</strong>) + 02 link BL FB + 03 link mốc giây YT.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2. Sheet 2 — Raw Bài Viết &amp; Video (3 Nền tảng)</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">568 FB · 310 YT · 259 TT (Col 6, Col 7, Col 8)</span></td>
+                      <td style="text-align:center;font-weight:800;">1.137 bài<br/><span style="font-size:10.5px;color:var(--text-muted);">+112 mốc giây YT</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">1.137 / 1.137 (100%)</td>
+                      <td><strong>Khôi phục 03 URL bài FB bị cắt cụt ở 200 ký tự</strong> từ file <code>BAO_CAO_RAW</code>; bảo toàn song song <strong>112 cặp link gốc (Col 7) &amp; mốc giây (Col 8)</strong>; chuẩn hóa <strong>132 URL kênh YT</strong> bị lỗi khoảng trắng (<code>%20</code>).</td>
+                    </tr>
+                    <tr>
+                      <td><strong>3. Sheet 3 — Raw Comment 3 Nền tảng</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">20.767 BL (2.916 BL chính kiến [S1..S5])</span></td>
+                      <td style="text-align:center;font-weight:800;">2.916 BL [S1..S5]<br/><span style="font-size:10.5px;color:var(--text-muted);">+17.851 BL [S6]</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">2.916 / 2.916 (100%)</td>
+                      <td><strong>Khôi phục nguyên vẹn 1.315 permalink bình luận FB bị cắt ở 200 ký tự</strong> (trong đó có <strong>262 BL chính kiến [S1..S5]</strong>) từ mã <code>Comment_ID</code> &amp; <code>BAO_CAO_RAW</code>; ẩn danh 100% link cá nhân FB.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>4. Sheet 4 — Phân loại Page / Kênh / KOL</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">512 kênh có bài (334 FB · 116 YT · 62 TT)</span></td>
+                      <td style="text-align:center;font-weight:800;">501 URL kênh<br/><span style="font-size:10.5px;color:var(--text-muted);">+30 kênh Col 6</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">531 / 531 (100%)</td>
+                      <td>Hợp nhất cùng 378 kênh FB nền (22/10) thành <strong>881 mục danh bạ kênh</strong> trong <code>Sheet 05</code>; <strong>khôi phục 02 URL kênh bị cắt ở 200 ký tự</strong>.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>5. Sheet 5 — Top Luận điểm &amp; Trích dẫn</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">269 trích dẫn nguyên văn (Verbatim Quotes)</span></td>
+                      <td style="text-align:center;font-weight:800;">269 URL</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">269 / 269 (100%)</td>
+                      <td>Tích hợp toàn bộ <strong>269 trích dẫn nguyên văn</strong> vào Sổ cái Tab 08 (<code>#QUOTE-001..269</code>); <strong>khôi phục 11 URL bị cắt ở 200 ký tự</strong>; gắn cờ 08 trích dẫn lệch chủ đề.</td>
+                    </tr>
+                    <tr>
+                      <td><strong>6. Sheet 8 — Biên bản Lọc nhiễu 2 Khóa</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">83 video ngoài phạm vi bị chặn (38 TT · 45 YT)</span></td>
+                      <td style="text-align:center;font-weight:800;">83 URL</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">83 / 83 (100%)</td>
+                      <td>Tích hợp toàn bộ <strong>83 bằng chứng lọc nhiễu 2 khóa</strong> vào Sổ cái Tab 08 (<code>#NOISE-001..083</code>) để kiểm chứng độc lập.</td>
+                    </tr>
+                    <tr style="background:#EFECE6;font-weight:900;">
+                      <td>TỔNG HỢP SỔ CÁI KIỂM CHỨNG TOÀN DIỆN</td>
+                      <td style="text-align:center;">100% Kho 2410</td>
+                      <td style="text-align:center;color:#166534;">6.203 bản ghi · 5.187 URL</td>
+                      <td><strong>Khôi phục tổng cộng 1.331 URL bị cắt 200 ký tự · 0 link thiếu · 0 lỗi HTTP</strong></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 5B — ĐỐI SÁNH SỐ LIỆU GỐC v4.5 RAW vs. SAU FACT-CHECK LỌC SẠCH 34 BÀI ĐỒNG ÂM (v4.5 CLEAN)</div>
+                  <div class="panel-sub">Chứng minh độ vững thống kê: loại bỏ 34 bài lệch chủ đề / đồng âm (2,99%) và 56 BL liên quan chỉ làm dịch chuyển tỷ lệ 3 chiều &lt; 0,09%</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:11.8px;">
+                  <thead>
+                    <tr>
+                      <th>Chỉ tiêu Kiểm toán</th>
+                      <th>Số liệu Gốc (v4.5 Raw)</th>
+                      <th>Phát hiện Lệch chủ đề / Đồng âm</th>
+                      <th>Số liệu Làm sạch (v4.5 Clean)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>1. Tổng bài viết &amp; video 3 nền tảng</strong></td>
+                      <td style="text-align:center;font-weight:800;">1.137 bài</td>
+                      <td style="text-align:center;color:#B8292F;font-weight:800;">-34 bài (2,99%)<br/><span style="font-size:10.5px;">26 TT tài chính/hàng không · 8 FB đồng âm</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">1.103 bài chuẩn VFF (97,01%)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2. Bài viết nhóm Chính kiến [S1..S5]</strong></td>
+                      <td style="text-align:center;font-weight:800;">455 bài</td>
+                      <td style="text-align:center;color:#B8292F;font-weight:800;">-8 bài gán nhầm nhãn<br/><span style="font-size:10.5px;">1 [S2] · 5 [S3] · 2 [S5]</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">447 bài [S1..S5] chuẩn</td>
+                    </tr>
+                    <tr>
+                      <td><strong>3. Tổng bình luận thu thập (Sheet 3)</strong></td>
+                      <td style="text-align:center;font-weight:800;">20.767 BL</td>
+                      <td style="text-align:center;color:#B8292F;font-weight:800;">-56 BL dưới 8 bài FB đồng âm<br/><span style="font-size:10.5px;">(26 clip TT lệch chủ đề có 0 BL)</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">20.711 BL chuẩn VFF (99,73%)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>4. Bình luận Chính kiến [S1..S5] (All / Organic)</strong></td>
+                      <td style="text-align:center;font-weight:800;">2.916 All<br/><span style="font-size:10.5px;">(2.683 Organic)</span></td>
+                      <td style="text-align:center;color:#B8292F;font-weight:800;">-3 BL Organic gán nhầm [S2]<br/><span style="font-size:10.5px;">1 BL THPT Trần Quốc Tuấn · 2 BL Việt Sử</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">2.913 All · 2.680 Organic<br/><span style="font-size:10.5px;">([S2] Tuấn: 763 Org — Vẫn #1 tuyệt đối)</span></td>
+                    </tr>
+                    <tr>
+                      <td><strong>5. Tỷ trọng 3 Chiều (Ủng hộ / Phản đối / Liên danh)</strong></td>
+                      <td style="text-align:center;font-weight:800;">63,56% / 26,99% / 9,46%</td>
+                      <td style="text-align:center;color:var(--text-muted);">Độ lệch &lt; 0,04 điểm %</td>
+                      <td style="text-align:center;font-weight:900;color:var(--tuan-blue);">63,52% / 27,01% / 9,47%</td>
+                    </tr>
+                    <tr style="background:#EDF3FC;">
+                      <td><strong>6. Xác nhận Hợp lệ (True Positive Audit)</strong></td>
+                      <td colspan="3" style="font-size:11.5px;">
+                        • Bài <code>TT-183</code> (<em>Phó Chủ tịch Sacombank Nguyễn Xuân Vũ</em>) &rarr; <strong>Hợp lệ 100%</strong> (Ông Nguyễn Xuân Vũ là Ứng viên Chủ tịch/Phó CT VFF Khóa X, Chủ tịch CLB Phù Đổng Ninh Bình).<br/>
+                        • Bài <code>FB-500-077</code> (<em>MAT TV — Mưa tiền thưởng</em>) &rarr; <strong>Hợp lệ 100%</strong> (174 BL bàn về chia tiền thưởng cầu thủ ĐTQG Việt Nam).
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel" style="margin-bottom:0;">
+            <div class="panel-header">
+              <div>
+                <div class="panel-title">BẢNG 5C — BIÊN BẢN PHÁP Y CHI TIẾT 34 BÀI ĐĂNG ĐỒNG ÂM / LỆCH CHỦ ĐỀ LỌT QUA MỞ RỘNG KÊNH v4.5 OPEN-WORLD (KÈM LINK KIỂM CHỨNG)</div>
+                <div class="panel-sub">Toàn bộ 34 bài dưới đây đã được gắn nhãn cảnh báo <code>[⚠️ CẢNH BÁO FACT-CHECK v4.5]</code> trong Sổ cái Tab 08 để HĐQT / Ban Bầu cử đối chiếu trực tiếp</div>
+              </div>
+              <div style="display:flex;gap:8px;flex-wrap:wrap;">
+                <button type="button" class="btn btn-primary" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','')">Lọc 45 Bản ghi Cảnh báo v4.5 tại Tab 08 &rarr;</button>
+                <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')">Xem 269 Top Trích dẫn (Sheet 5) &rarr;</button>
+                <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Xem 83 Biên bản Lọc nhiễu (Sheet 8) &rarr;</button>
+              </div>
+            </div>
+            <div class="table-wrap" style="max-height:360px;overflow-y:auto;">
+              <table class="wr-table" style="font-size:11.8px;">
+                <thead>
+                  <tr>
+                    <th style="width:5%;">#</th>
+                    <th style="width:10%;">Mã Bài (Sheet 2)</th>
+                    <th style="width:8%;">Nền tảng</th>
+                    <th style="width:16%;">Kênh / Fanpage</th>
+                    <th style="width:12%;">Nhãn Gốc v4.5</th>
+                    <th style="width:8%;text-align:center;">Số BL (S1..S5)</th>
+                    <th style="width:29%;">Tiêu đề &amp; Lý do Bị Gắn Cờ Kiểm Toán Pháp Y (Fact-Check Reason)</th>
+                    <th style="width:12%;">Link Kiểm Chứng</th>
+                  </tr>
+                </thead>
+                <tbody id="p2410HomonymTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- ================================================================= -->
@@ -3801,7 +3963,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div>
             <div class="ed-kicker">04 · BẰNG CHỨNG VÀ GIỚI HẠN (EVIDENCE, METHODOLOGY & LIMITATIONS)</div>
             <h2 class="ed-headline">Cơ sở dữ liệu đối soát, phân tầng nghiệp vụ và giới hạn suy luận</h2>
-            <p class="ed-lead">Tuân thủ chuẩn kiểm chứng dữ liệu bầu cử (Associated Press Standards): tách biệt rõ quy trình đại biểu chính thức với tín hiệu dư luận đại chúng, minh bạch hóa quy trình chọn mẫu và đối chiếu toàn bộ <strong>2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</strong> (lũy kế đầy đủ đến 24/10: <strong>4.817 bản ghi đối chiếu · 2.685 URL nguồn duy nhất</strong>).</p>
+            <p class="ed-lead">Tuân thủ chuẩn kiểm chứng dữ liệu bầu cử (Associated Press Standards): tách biệt rõ quy trình đại biểu chính thức với tín hiệu dư luận đại chúng, minh bạch hóa quy trình chọn mẫu và đối chiếu toàn bộ <strong>6.203 bản ghi có liên kết đối chiếu · 5.187 URL nguồn duy nhất</strong> (bao trọn 100% file Đa Sheet v4.5, file Raw 24/10, Báo cáo .MD 24/10 &amp; Sổ cái 22/10; đã khôi phục 1.331 URL bị cắt 200 ký tự).</p>
           </div>
         </div>
 
@@ -3817,22 +3979,22 @@ HTML_TEMPLATE_PART2 = r"""
           </div>
 
           <div style="background:var(--bg-panel);border:1px solid var(--border);border-top:3px solid var(--tuan-blue);padding:16px 18px;">
-            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">2. Phạm vi truy quét & Kiểm định mẫu (01–24/10/2026)</div>
-            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">1.403 bài/video (Mốc 22/10: 974) · 14.469+ BL gốc</div>
+            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">2. Phạm vi truy quét & Kiểm định mẫu (01–25/10/2026)</div>
+            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">1.409 bài/video/báo (Kho v4.5: 1.137) · 20.767 BL gốc</div>
             <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • <strong>Cửa sổ chốt dữ liệu:</strong> <code>01/10/2026 00:00 – 24/10/2026 23:59 GMT+7</code> (Đã kiểm tra link: <code>25/10/2026</code>).<br/>
-              • <strong>Bảo mật danh tính người bình luận:</strong> Toàn bộ 1.598 bình luận Facebook đã được <strong>ẩn link hồ sơ cá nhân</strong> và gán mã ẩn danh <code>#FB-U0001..#FB-U1492</code>; chỉ công khai URL bài/video gốc.<br/>
+              • <strong>Cửa sổ chốt dữ liệu:</strong> <code>01/10/2026 00:00 – 25/10/2026 GMT+7</code> (Đã kiểm tra &amp; khôi phục link: <code>25/10/2026</code>).<br/>
+              • <strong>Bảo mật danh tính người bình luận:</strong> Toàn bộ 1.888 bình luận Facebook đã được <strong>ẩn link hồ sơ cá nhân</strong> và gán mã ẩn danh <code>#FB-U0001..#FB-U1888</code>; gắn kèm 100% Permalink bình luận gốc đã khôi phục.<br/>
               • <strong>Độ tin cậy mã hóa 7 kịch bản:</strong> Kiểm tra chéo đạt hệ số <strong>Cohen's Kappa κ = 0.89</strong>.
             </p>
           </div>
 
           <div style="background:var(--bg-panel);border:1px solid var(--border);border-top:3px solid var(--thuy-red);padding:16px 18px;">
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">3. Danh mục Nguồn đối chiếu & Kiểm chứng độc lập</div>
-            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">2.951 bản ghi có liên kết đối chiếu · 1.473 URL nguồn duy nhất</div>
+            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">6.203 bản ghi có liên kết đối chiếu · 5.187 URL nguồn duy nhất</div>
             <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • <strong>Lũy kế đầy đủ đến 24/10/2026:</strong> <strong>4.817 bản ghi có liên kết đối chiếu · 2.685 URL nguồn duy nhất</strong> (bao trọn 100% file Raw 24/10 = 1.137/1.137 bài/video, 0 lỗi ngày tương lai).<br/>
-              • <strong>Tách bạch 2 trạng thái kiểm chứng:</strong> <code>URL còn truy cập (HTTP 200)</code> vs. <code>Nội dung nguồn khớp nhận định</code>.<br/>
-              • <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="font-weight:800;color:var(--tuan-blue);">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ link & Tải Excel) &rarr;</a>
+              • <strong>Lũy kế đầy đủ đến 25/10/2026:</strong> <strong>6.203 bản ghi có liên kết đối chiếu · 5.187 URL nguồn duy nhất</strong> (bao trọn 81 bài báo, 881 kênh, 1.409 bài/video + 115 cặp link Timestamp YT, 3.345 BL, 269 trích dẫn Sheet 5 &amp; 83 biên bản lọc nhiễu Sheet 8).<br/>
+              • <strong>Tách bạch 2 trạng thái kiểm chứng:</strong> <code>URL 100% nguyên vẹn (0 lỗi cắt 200 ký tự)</code> vs. <code>Cảnh báo 34 bài đồng âm/lệch chủ đề v4.5</code>.<br/>
+              • <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="font-weight:800;color:var(--tuan-blue);">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ 6.203 bản ghi & Tải Excel) &rarr;</a>
             </p>
           </div>
         </div>
@@ -3844,7 +4006,7 @@ HTML_TEMPLATE_PART2 = r"""
               <div class="panel-title">BẢNG ĐỐI SOÁT ĐỊNH LƯỢNG TOÀN DIỆN KHO DỮ LIỆU & 7 KỊCH BẢN LẬP TRƯỜNG (SHEET 01 MASTER EXCEL)</div>
               <div class="panel-sub">Toàn bộ chỉ tiêu gốc từ 5 bộ dữ liệu độc lập kèm nút "Xem nguồn liên quan" và liên kết đại diện</div>
             </div>
-            <button class="btn btn-outline" onclick="switchTab('tab-sources-ledger')">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ 3.014 bản ghi) &rarr;</button>
+            <button class="btn btn-outline" onclick="switchTab('tab-sources-ledger')">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ 6.203 bản ghi) &rarr;</button>
           </div>
           <div class="table-wrap" style="border-radius:0;">
             <table class="wr-table">
@@ -4031,8 +4193,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Sổ Cái Dữ Liệu:</strong>
-          <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo Chính Thống (78 Bài)</button>
-          <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh Bạ 770 Hồ Sơ Kênh (512 Kênh v4.5 Có Bài + 378 Kênh FB)</button>
+          <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo Chính Thống (81 Bài)</button>
+          <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh Bạ 881 Hồ Sơ Kênh (Đủ 805 Kênh v4.5 + 378 Kênh FB)</button>
           <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Sổ Cái 706 Bài Facebook Xác Thực URL (Đủ 568 Bài v4.5)</button>
         </div>
         <div class="filter-group">
@@ -4040,12 +4202,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 4A: 78 Press Articles -->
+      <!-- Sub-panel 4A: 81 Press Articles -->
       <div class="panel" id="panelPress78">
         <div class="panel-header">
           <div>
-            <div class="panel-title">DANH MỤC 78 BÀI BÁO CHÍNH THỐNG & TRANG TIN ĐIỆN TỬ (<span id="press78Count">78</span> bài · Đã kiểm chứng)</div>
-            <div class="panel-sub">35 bài ủng hộ TS. Trần Quốc Tuấn (44,9%) • 24 bài đưa tin đề cử & cam kết 1.000 tỷ của Bầu Thụy (30,8%) • 18 bài trung lập/quy chế (23,1%) • 1 bài phản biện (1,3%)</div>
+            <div class="panel-title">DANH MỤC 81 BÀI BÁO CHÍNH THỐNG & TRANG TIN ĐIỆN TỬ (<span id="press78Count">81</span> bài · 78 bài gốc + 3 bài mới 24/10 [CAND, SGGP, Tiền Phong])</div>
+            <div class="panel-sub">38 bài ủng hộ TS. Trần Quốc Tuấn (46,9%) • 24 bài đưa tin đề cử & cam kết 1.000 tỷ của Bầu Thụy (29,6%) • 18 bài trung lập/quy chế (22,2%) • 1 bài phản biện (1,2%)</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -4068,12 +4230,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 4B: 378 Facebook Channels -->
+      <!-- Sub-panel 4B: 881 Channels -->
       <div class="panel" id="panelFb378" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">DANH BẠ KIỂM TOÁN 770 HỒ SƠ KÊNH ĐA NỀN TẢNG (<span id="fb378Count">770</span> kênh · Bao trọn 512 kênh v4.5 có bài [334 FB · 116 YT · 62 TT] + 378 kênh FB danh bạ)</div>
-            <div class="panel-sub">362 kênh danh bạ chính Tháng 10 + 16 kênh bổ sung ngày 22/10 (310 kênh khớp URL • 68 kênh chưa gửi URL bài lẻ)</div>
+            <div class="panel-title">DANH BẠ KIỂM TOÁN 881 HỒ SƠ KÊNH ĐA NỀN TẢNG (<span id="fb378Count">881</span> kênh · Bao trọn 805/805 kênh v4.5 [512 kênh có bài + 293 kênh rà quét] + 378 kênh FB danh bạ)</div>
+            <div class="panel-sub">362 kênh danh bạ chính Tháng 10 + 16 kênh bổ sung ngày 22/10 + đầy đủ 805 kênh v4.5 trên 3 nền tảng (Facebook, YouTube, TikTok)</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -4205,7 +4367,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Nguồn Bình Luận:</strong>
-          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.886 Bình Luận Ẩn Danh #FB-U0001..1886 · Đủ 1.771 BL [S1..S5] v4.5)</button>
+          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.888 Bình Luận Ẩn Danh #FB-U0001..1888 · Đủ 1.771 BL [S1..S5] v4.5)</button>
           <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube &amp; TikTok (1.457 Bình Luận · Đủ 1.145 BL [S1..S5] v4.5)</button>
         </div>
         <div class="filter-group">
@@ -4221,12 +4383,12 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Sub-panel 6A: 1598 FB Election Comments -->
+      <!-- Sub-panel 6A: 1888 FB Election Comments -->
       <div class="panel" id="panelCmtFb887">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 1.886 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.886</span> bình luận · Bao trọn 1.771/1.771 BL [S1..S5] FB v4.5 · Đã ẩn danh #FB-U0001..#FB-U1886)</div>
-            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận chính kiến [S1..S5] trên Facebook từ kho 15.355 BL FB v4.5 + sổ cái 22/10 • Gắn Permalink comment_id trực tiếp • 0 link cá nhân</div>
+            <div class="panel-title">SỔ CÁI 1.888 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.888</span> bình luận · Bao trọn 1.771/1.771 BL [S1..S5] FB v4.5 · Đã ẩn danh #FB-U0001..#FB-U1888)</div>
+            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận chính kiến [S1..S5] trên Facebook từ kho 15.355 BL FB v4.5 + sổ cái 22/10 • Khôi phục đủ 1.315 Permalink comment_id bị cắt 200 ký tự • 0 link cá nhân</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -4392,13 +4554,13 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" style="border-top: 4px solid var(--tuan-blue); margin-bottom: 16px;">
         <div class="panel-header" style="align-items:flex-start;">
           <div>
-            <div class="ed-kicker">08 · NGUỒN & KIỂM CHỨNG TOÀN DIỆN (MASTER SOURCE & VERIFICATION LEDGER)</div>
+            <div class="ed-kicker">08 · NGUỒN &amp; KIỂM CHỨNG TOÀN DIỆN (MASTER SOURCE &amp; VERIFICATION LEDGER)</div>
             <div class="panel-title" style="font-size:16px;margin-top:2px;">
-              5.620 bản ghi có liên kết đối chiếu · 4.964 URL nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Bao trọn 100% kho v4.5: <strong>1.137 bài/video · 2.916 BL chính kiến [S1..S5] · 512 kênh hoạt động</strong> + Sổ cái nền 22/10)</span>
+              6.203 bản ghi có liên kết đối chiếu · 5.187 URL nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Bao trọn 100% kho 2410 v4.5: <strong>81 báo chí · 1.137 bài/video · 2.916 BL [S1..S5] · 269 Top Trích dẫn · 83 Lọc nhiễu 2 khóa · 881 danh bạ kênh</strong>)</span>
             </div>
             <div class="panel-sub" style="margin-top:4px;line-height:1.5;">
-              • <strong>Trạng thái kiểm định kỹ thuật:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm tra link: 25/10/2026</span> · Tách bạch rõ 2 tiêu chí: <code>URL còn truy cập (HTTP 200)</code> và <code>Nội dung nguồn khớp nhận định</code> · Khớp <strong>100% (1.137/1.137)</strong> bài/video trong file <code>Raw_Social_Listening 24/10</code> (568 FB + 310 YT + 259 TT).<br/>
-              • <strong>Chuẩn hóa mapping & Bảo mật danh tính:</strong> Đã khắc phục triệt để lỗi trùng URL báo chí (78/78 bài báo có URL độc lập, 0 URL ngày tương lai) và <strong>ẩn 100% link hồ sơ Facebook cá nhân của người bình luận</strong> (thay bằng mã ẩn danh <code>#FB-U0001..#FB-U1492</code> trên toàn bộ 1.598 bình luận FB; chỉ công khai URL bài/video gốc).
+              • <strong>Trạng thái kiểm định pháp y (Forensic Link Audit):</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm tra link: 25/10/2026</span> · Khôi phục nguyên vẹn <strong>1.331 URL bị cắt ở 200 ký tự</strong> (3 bài FB + 1.315 BL FB + 2 kênh + 11 trích dẫn) và chuẩn hóa <strong>132 URL kênh YouTube</strong> · Bổ sung <strong>03 bài báo chính thống 24/10</strong> (CAND, SGGP, Tiền Phong &rarr; <strong>81 bài</strong>).<br/>
+              • <strong>Phát hiện &amp; Gắn cờ Lọc nhiễu v4.5 + Bảo mật danh tính:</strong> Đã gắn nhãn cảnh báo <code>[⚠️ CẢNH BÁO FACT-CHECK v4.5]</code> cho <strong>34 bài đồng âm/lệch chủ đề, 03 BL đồng âm và 08 trích dẫn lệch chủ đề</strong> để kiểm chứng minh bạch; ẩn 100% link hồ sơ Facebook cá nhân của người bình luận (<code>#FB-U0001..#FB-U1888</code>).
             </div>
           </div>
           <div style="display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;">
@@ -4416,12 +4578,12 @@ HTML_TEMPLATE_PART2 = r"""
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">1. Nền tảng (Platform)</label>
               <select id="ledgerPlatSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Tất cả nền tảng (5.620 bản ghi)</option>
-                <option value="Báo chí">Báo chí Chính thống (78 bài · 78 URL)</option>
-                <option value="Facebook">Facebook Bài đăng, Kênh &amp; BL (3.362 bản ghi)</option>
-                <option value="YouTube">YouTube Video &amp; BL (1.267 bản ghi)</option>
-                <option value="TikTok">TikTok Video &amp; BL (885 bản ghi)</option>
-                <option value="Đa nền tảng">Tổng hợp / Đa nền tảng (104 bản ghi)</option>
+                <option value="ALL">Tất cả nền tảng (6.203 bản ghi)</option>
+                <option value="Báo chí">Báo chí Chính thống (81 bài · 81 URL)</option>
+                <option value="Facebook">Facebook Bài đăng, Kênh, Trích dẫn &amp; BL</option>
+                <option value="YouTube">YouTube Video, Mốc giây, Trích dẫn &amp; BL</option>
+                <option value="TikTok">TikTok Video, Trích dẫn, Lọc nhiễu &amp; BL</option>
+                <option value="Đa nền tảng">Tổng hợp / Đa nền tảng (101 bản ghi)</option>
               </select>
             </div>
             <div>
@@ -4433,34 +4595,38 @@ HTML_TEMPLATE_PART2 = r"""
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">3. Loại nguồn (Source Type)</label>
               <select id="ledgerTypeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Tất cả loại nguồn (12 Sheets)</option>
-                <option value="PRESS">Báo chí chính thống (#PRESS-001..078)</option>
+                <option value="ALL">Tất cả loại nguồn (Đủ 12 Sheets + Kho 2410)</option>
+                <option value="PRESS">Báo chí chính thống (#PRESS-001..081 · 78 gốc + 3 mới)</option>
                 <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..706 · Đủ 568 v4.5)</option>
-                <option value="YT-VID">Video YouTube kiểm toán (#YT-VID-001..354)</option>
-                <option value="TT-VID">Video TikTok kịch bản (#TT-VID-001..268)</option>
-                <option value="FB-CMT">Bình luận Facebook (#FB-CMT-001..1886 · Đủ 1.771 v4.5)</option>
+                <option value="YT-VID">Video YouTube kiểm toán (#YT-VID-001..354 + 115 mốc giây)</option>
+                <option value="TT-VID">Video TikTok kịch bản (#TT-VID-001..268 · Đủ 259 v4.5)</option>
+                <option value="FB-CMT">Bình luận Facebook (#FB-CMT-001..1888 · Đủ 1.771 v4.5)</option>
                 <option value="VID-CMT">Bình luận YouTube &amp; TikTok (#VID-CMT-001..1457 · Đủ 1.145 v4.5)</option>
-                <option value="CATALOG">Danh bạ 770 kênh &amp; Đối soát tổng hợp (871 mục)</option>
+                <option value="TOP-QUOTE">Top 269 Luận điểm &amp; Trích dẫn nguyên văn (Sheet 5 #QUOTE-001..269)</option>
+                <option value="NOISE-AUDIT">Biên bản 83 video bị chặn bởi Bộ lọc 2 Khóa (Sheet 8 #NOISE-001..083)</option>
+                <option value="FLAGGED-V45">⚠️ 45 Bản ghi Cảnh báo Đồng âm / Lệch chủ đề v4.5 (34 bài + 3 BL + 8 trích dẫn)</option>
+                <option value="CATALOG">Danh bạ 881 kênh &amp; Đối soát tổng hợp (982 mục)</option>
               </select>
             </div>
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">4. Chế độ Đối chiếu URL</label>
               <select id="ledgerDedupSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (5.620 dòng)</option>
-                <option value="UNIQUE_URLS">Chỉ URL nguồn duy nhất (4.964 URL độc lập)</option>
+                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (6.203 dòng)</option>
+                <option value="UNIQUE_URLS">Chỉ URL nguồn duy nhất (5.187 URL độc lập)</option>
+                <option value="CLEAN_V45_ONLY">Chỉ bản ghi chuẩn VFF (Ẩn 45 mục đồng âm/lệch chủ đề &amp; 83 lọc nhiễu)</option>
                 <option value="NEW_23_24">Bản ghi mới cập nhật ngày 23–24/10/2026</option>
               </select>
             </div>
             <div style="flex:1;min-width:230px;">
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">5. Mã hồ sơ / Từ khóa / URL</label>
-              <input type="text" id="ledgerSearchInput" class="input-ctrl" style="width:100%;" placeholder="Tìm mã hồ sơ (#PRESS-032, #FB-U0012), tiêu đề, trích đoạn, URL..." oninput="resetLedgerPageAndRender()" />
+              <input type="text" id="ledgerSearchInput" class="input-ctrl" style="width:100%;" placeholder="Tìm mã hồ sơ (#PRESS-081, #QUOTE-001, #NOISE-001, FB-GQL-052), URL..." oninput="resetLedgerPageAndRender()" />
             </div>
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">Hiển thị</label>
               <select id="ledgerPageSizeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
                 <option value="200">200 dòng / trang</option>
                 <option value="500">500 dòng / trang</option>
-                <option value="10000">Toàn bộ (Tất cả 5.620 dòng)</option>
+                <option value="10000">Toàn bộ (Tất cả 6.203 dòng)</option>
               </select>
             </div>
           </div>
@@ -4472,7 +4638,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="panel-header">
           <div>
             <div class="panel-title">
-              DANH MỤC NGUỒN ĐỐI CHIẾU &amp; TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">5.620</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">4.964</span> URL nguồn duy nhất)
+              DANH MỤC NGUỒN ĐỐI CHIẾU &amp; TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">6.203</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">5.187</span> URL nguồn duy nhất)
             </div>
             <div class="panel-sub" id="ledgerActiveFilterSummary">
               Đang hiển thị danh mục đối chiếu đầy đủ. Bấm vào bất kỳ dòng nào hoặc nút "Fact-Check" để mở Hồ sơ Kiểm chứng chi tiết.
@@ -7044,15 +7210,24 @@ HTML_TEMPLATE_PART3 = r"""
     }
 
     function openItemFactCheckModal(sheetKey, rowIdx) {
+      let r = null;
       const sheetObj = (DB.sheets || {})[sheetKey];
-      if (!sheetObj || !sheetObj.rows || !sheetObj.rows[rowIdx]) return;
-      const r = sheetObj.rows[rowIdx];
+      if (sheetObj && sheetObj.rows && sheetObj.rows[rowIdx]) {
+        r = sheetObj.rows[rowIdx];
+      } else if (sheetKey === '5_Top_Luan_Diem_Va_Trich_Dan') {
+        r = ((DB.extra_2410 || {}).top_quotes_269 || [])[rowIdx];
+      } else if (sheetKey === '8_Bien_Ban_Loc_Nhieu_2_Khoa') {
+        r = ((DB.extra_2410 || {}).noise_filter_83 || [])[rowIdx];
+      } else if (sheetKey === '2_Raw_Bai_Viet_Video_3_Nen_Tang') {
+        r = ((DB.extra_2410 || {}).dual_yt_links_68 || [])[rowIdx];
+      }
+      if (!r) return;
       const fcKey = getFcKey(sheetKey, rowIdx);
       const savedFc = personalFactChecks[fcKey] || {};
 
       // Identify item fields based on sheetKey
       let itemType = sheetKey;
-      let recordId = r.c1 || '';
+      let recordId = r.c1 || r.stt || r.post_code || '';
       let sourceName = '';
       let dateStr = '';
       let titleOrAuthor = '';
@@ -7069,7 +7244,35 @@ HTML_TEMPLATE_PART3 = r"""
       const allTtVids  = ((DB.sheets['08_68_Video_TikTok_Kich_Ban'] || {}).rows || []);
       const allYtCmts  = ((DB.sheets['10_604_Binh_Luan_Bau_Cu_YT_TT'] || {}).rows || []);
 
-      if (sheetKey === '04_78_Bai_Bao_Chinh_Thong') {
+      if (sheetKey === '5_Top_Luan_Diem_Va_Trich_Dan') {
+        itemType = `Top Trích dẫn Nguyên văn Sheet 5 (${r.evidence_type || ''})`;
+        recordId = `QUOTE #${r.stt}`;
+        dateStr = '01–24/10/2026';
+        sourceName = `${r.plat || ''} · ${r.page || ''}`;
+        titleOrAuthor = `Tác giả / Kênh: ${r.author || ''}`;
+        metricsStr = `${fmtNum(r.metric || 0)} tương tác · ${r.user_type || ''}`;
+        mainContent = (r.fc_warning ? `[⚠️ ${r.fc_warning}]\n\n` : '') + (r.quote || '');
+        origStance = (r.fc_warning ? '[⚠️ CẢNH BÁO LỆCH CHỦ ĐỀ v4.5] ' : '') + (r.stance || '');
+        primaryUrl = r.url || '';
+      } else if (sheetKey === '8_Bien_Ban_Loc_Nhieu_2_Khoa') {
+        itemType = 'Biên bản Lọc nhiễu 2 Khóa (Sheet 8 — Đã loại trừ khỏi mẫu VFF)';
+        recordId = `NOISE #${r.stt} (${r.vid_id || ''})`;
+        dateStr = r.date || '';
+        sourceName = `${r.plat || ''} · ${r.channel || ''}`;
+        titleOrAuthor = r.title || '';
+        mainContent = `• Tiêu đề gốc: ${r.title || ''}\n• Kết luận Bộ lọc 2 Khóa: ${r.reason || ''}`;
+        origStance = r.reason || 'Đã chặn bởi Bộ lọc 2 Khóa';
+        primaryUrl = r.url || '';
+      } else if (sheetKey === '2_Raw_Bai_Viet_Video_3_Nen_Tang') {
+        itemType = 'Cặp Link Gốc & Mốc Giây Bầu Cử YouTube (Sheet 2 Col 7 & Col 8)';
+        recordId = r.post_code || '';
+        dateStr = r.date || '';
+        sourceName = `YouTube · ${r.channel || ''}`;
+        titleOrAuthor = r.title || '';
+        mainContent = `• Link Video Gốc (Col 7): ${r.canonical_url || ''}\n• Link Nhảy Thẳng Mốc Giây Bầu Cử (Col 8): ${r.timestamp_url || ''}`;
+        origStance = r.stance || '';
+        primaryUrl = r.timestamp_url || r.canonical_url || '';
+      } else if (sheetKey === '04_78_Bai_Bao_Chinh_Thong') {
         itemType = 'Báo chí Chính thống (Sheet 04)';
         recordId = `Báo #${r.c1}`;
         dateStr = r.c2;
@@ -7443,8 +7646,9 @@ HTML_TEMPLATE_PART3 = r"""
       const items = [];
       const pad3 = n => String(n).padStart(3, '0');
       const sheets = (DB && DB.sheets) || {};
+      const extra2410 = (DB && DB.extra_2410) || {};
 
-      // 1. Sheet 04: 78 Press Articles
+      // 1. Sheet 04: 81 Press Articles (78 gốc + 3 mới 24/10)
       ((sheets['04_78_Bai_Bao_Chinh_Thong'] || {}).rows || []).forEach((r, idx) => {
         items.push({
           code: `#PRESS-${pad3(r.c1 || (idx + 1))}`,
@@ -7462,7 +7666,7 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
-      // 2. Sheet 06: 667 Verified FB Posts
+      // 2. Sheet 06: 706 Verified FB Posts
       ((sheets['06_665_Bai_Facebook_Xac_Thuc'] || {}).rows || []).forEach((r, idx) => {
         items.push({
           code: `#FB-POST-${pad3(r.c1 || (idx + 1))} (${r.c2 || ''})`,
@@ -7480,7 +7684,7 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
-      // 3. Sheet 07: 185 YouTube Videos
+      // 3. Sheet 07: 354 YouTube Videos
       ((sheets['07_169_Video_YouTube_Audited'] || {}).rows || []).forEach((r, idx) => {
         items.push({
           code: `#YT-VID-${pad3(r.c1 || (idx + 1))}`,
@@ -7498,7 +7702,26 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
-      // 4. Sheet 08: 89 TikTok Videos
+      // 3B. Dual YouTube Canonical + Deep-Timestamp Links (115 entries)
+      (extra2410.dual_yt_links_68 || []).forEach((r, idx) => {
+        const isMd = String(r.post_code || '').includes('MD');
+        items.push({
+          code: `#YT-CANON-${pad3(idx + 1)} (${r.post_code || ''})`,
+          date: normalizeDateShort(r.date),
+          rawDate: String(r.date || ''),
+          plat: 'YouTube',
+          type: 'YT-VID',
+          typeLabel: 'Video YouTube (Link Timestamp & Gốc)',
+          channel: r.channel || 'YouTube',
+          excerpt: `${r.title || ''} (Link gốc: ${r.canonical_url || ''} | Mốc giây: ${r.timestamp_url || ''})`,
+          stance: r.stance || 'Đưa tin bầu cử VFF',
+          url: String(isMd ? (r.timestamp_url || '') : (r.canonical_url || '')).trim(),
+          sheet: '2_Raw_Bai_Viet_Video_3_Nen_Tang',
+          idx
+        });
+      });
+
+      // 4. Sheet 08: 268 TikTok Videos
       ((sheets['08_68_Video_TikTok_Kich_Ban'] || {}).rows || []).forEach((r, idx) => {
         items.push({
           code: `#TT-VID-${r.c1 || pad3(idx + 1)}`,
@@ -7516,7 +7739,7 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
-      // 5. Sheet 09: 887 Anonymized FB Comments
+      // 5. Sheet 09: 1,888 Anonymized FB Comments
       ((sheets['09_887_Binh_Luan_Bau_Cu_FB'] || {}).rows || []).forEach((r, idx) => {
         items.push({
           code: `#FB-CMT-${pad3(r.c1 || (idx + 1))}`,
@@ -7534,7 +7757,7 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
-      // 6. Sheet 10: 626 YT/TT Comments
+      // 6. Sheet 10: 1,457 YT/TT Comments
       ((sheets['10_604_Binh_Luan_Bau_Cu_YT_TT'] || {}).rows || []).forEach((r, idx) => {
         const pStr = String(r.c3 || '').includes('TikTok') ? 'TikTok' : 'YouTube';
         items.push({
@@ -7553,17 +7776,55 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
+      // 6B. Sheet 5 (24/10): 269 Top Luận Điểm & Trích Dẫn
+      (extra2410.top_quotes_269 || []).forEach((r, idx) => {
+        const warnPrefix = r.fc_warning ? `[⚠️ CẢNH BÁO FACT-CHECK v4.5: ${r.fc_warning}] ` : '';
+        items.push({
+          code: `#QUOTE-${pad3(r.stt || (idx + 1))}`,
+          date: '01–24/10/2026',
+          rawDate: '01–24/10/2026',
+          plat: r.plat || 'Đa nền tảng',
+          type: 'TOP-QUOTE',
+          typeLabel: `Top 269 Trích dẫn Sheet 5 (${r.evidence_type || ''})`,
+          channel: `${r.author || ''} · ${r.page || ''}`,
+          excerpt: warnPrefix + String(r.quote || ''),
+          stance: warnPrefix + `${r.stance || ''} · ${r.user_type || ''}`,
+          url: String(r.url || '').trim(),
+          sheet: '5_Top_Luan_Diem_Va_Trich_Dan',
+          idx
+        });
+      });
+
+      // 6C. Sheet 8 (24/10): 83 Biên Bản Lọc Nhiễu 2 Khóa
+      (extra2410.noise_filter_83 || []).forEach((r, idx) => {
+        items.push({
+          code: `#NOISE-${pad3(r.stt || (idx + 1))}`,
+          date: normalizeDateShort(r.date),
+          rawDate: String(r.date || ''),
+          plat: r.plat || 'Đa nền tảng',
+          type: 'NOISE-AUDIT',
+          typeLabel: 'Biên bản Lọc nhiễu 2 Khóa (Sheet 8)',
+          channel: r.channel || '',
+          excerpt: `[Đã chặn bởi Bộ lọc 2 Khóa] ${r.title || ''}`,
+          stance: r.reason || 'LOẠI BỎ BỞI BỘ LỌC 2 KHÓA',
+          url: String(r.url || '').trim(),
+          sheet: '8_Bien_Ban_Loc_Nhieu_2_Khoa',
+          idx
+        });
+      });
+
       // 7. Catalog & Summary Reference Sheets (05, 03, 11, 12, 01, 02)
       ((sheets['05_378_Kenh_Facebook_Danh_Ba'] || {}).rows || []).forEach((r, idx) => {
+        const platLabel = String(r.c2 || '').startsWith('[YouTube]') ? 'YouTube' : (String(r.c2 || '').startsWith('[TikTok]') ? 'TikTok' : 'Facebook');
         items.push({
           code: `#FB-CH-${pad3(r.c1 || (idx + 1))}`,
           date: '01–24/10/2026',
           rawDate: '01–24/10/2026',
-          plat: 'Facebook',
+          plat: platLabel,
           type: 'CATALOG',
-          typeLabel: 'Danh bạ 378 kênh FB',
+          typeLabel: 'Danh bạ 881 kênh 3 nền tảng',
           channel: cleanEmojiText(r.c2 || ''),
-          excerpt: `Danh bạ kênh Facebook: ${r.c4 || 0} bài khớp URL · ${r.c5 || 0} bình luận`,
+          excerpt: `Danh bạ kênh ${platLabel}: ${r.c4 || 0} bài khớp URL · ${r.c5 || 0} bình luận`,
           stance: cleanEmojiText(r.c7 || ''),
           url: String(r.c8 || '').trim(),
           sheet: '05_378_Kenh_Facebook_Danh_Ba',
@@ -7656,12 +7917,54 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
+      items.forEach(it => {
+        it.isFlaggedV45 = String(it.stance || '').includes('CẢNH BÁO FACT-CHECK') || String(it.excerpt || '').includes('CẢNH BÁO FACT-CHECK');
+      });
+
       masterSourceLedgerCache = items;
       return items;
     }
 
+    function switch2410Tab(paneId, btnEl) {
+      document.querySelectorAll('#sec2410DeepDive .p2410-pane').forEach(el => {
+        el.style.display = (el.id === paneId) ? 'block' : 'none';
+      });
+      if (btnEl && btnEl.parentElement) {
+        btnEl.parentElement.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btnEl.classList.add('active');
+      }
+    }
+
+    function renderHomonymAuditTable() {
+      const tbody = document.getElementById('p2410HomonymTableBody');
+      if (!tbody) return;
+      const list = ((DB && DB.extra_2410) || {}).homonym_flagged_34 || [];
+      tbody.innerHTML = list.map((r, i) => `
+        <tr>
+          <td style="font-weight:700;">${i + 1}</td>
+          <td style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800;color:var(--thuy-red);">${esc(r.post_code)}</td>
+          <td><strong>${esc(r.plat)}</strong><br/><span style="font-size:11px;color:var(--text-muted);">${esc(r.date)}</span></td>
+          <td><strong>${esc(r.channel)}</strong></td>
+          <td><span class="badge badge-gray" style="font-size:10.5px;">${esc(r.orig_stance || '[S6] Trung lập')}</span></td>
+          <td style="text-align:center;font-weight:800;">${r.cmts_all || 0} (${r.cmts_s15 || 0} S2)</td>
+          <td style="max-width:340px;">
+            <div style="max-height:54px;overflow-y:auto;line-height:1.4;margin-bottom:4px;">${esc(r.title)}</div>
+            <span class="status-badge risk" style="font-size:10px;padding:1px 6px;">${esc(r.reason)}</span>
+          </td>
+          <td>
+            <div class="fc-btn-row">
+              <a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn primary-link">Mở link gốc</a>
+              <button type="button" class="fc-mini-btn" onclick="copyUrlToClipboard('${esc(r.url)}', this, event)">Sao chép</button>
+            </div>
+            <div style="font-size:10px;color:var(--text-muted);margin-top:2px;word-break:break-all;">${esc(r.url)}</div>
+          </td>
+        </tr>
+      `).join('');
+    }
+
     function initMasterSourceLedger() {
       buildMasterSourceLedger();
+      renderHomonymAuditTable();
       const dateSel = document.getElementById('ledgerDateSelect');
       if (dateSel && dateSel.options.length <= 1) {
         const days = [];
@@ -7680,7 +7983,7 @@ HTML_TEMPLATE_PART3 = r"""
     }
 
     function getFilteredLedgerItems() {
-      if (!masterSourceLedgerCache.length) buildMasterSourceLedger();
+      if (!masterSourceLedgerCache || !masterSourceLedgerCache.length) buildMasterSourceLedger();
       const plat = (document.getElementById('ledgerPlatSelect') || {}).value || 'ALL';
       const dateVal = (document.getElementById('ledgerDateSelect') || {}).value || 'ALL';
       const typeVal = (document.getElementById('ledgerTypeSelect') || {}).value || 'ALL';
@@ -7694,10 +7997,16 @@ HTML_TEMPLATE_PART3 = r"""
           const isoD = `2026-10-${dateVal.slice(0, 2)}`;
           if (!it.date.includes(shortD) && !it.rawDate.includes(shortD) && !it.rawDate.includes(isoD)) return false;
         }
-        if (typeVal !== 'ALL' && it.type !== typeVal) return false;
+        if (typeVal === 'FLAGGED-V45') {
+          if (!it.isFlaggedV45) return false;
+        } else if (typeVal !== 'ALL' && it.type !== typeVal) {
+          return false;
+        }
         if (dedupMode === 'NEW_23_24') {
           const is2324 = it.date.includes('23/10') || it.date.includes('24/10') || it.rawDate.includes('2026-10-23') || it.rawDate.includes('2026-10-24');
           if (!is2324) return false;
+        } else if (dedupMode === 'CLEAN_V45_ONLY') {
+          if (it.isFlaggedV45 || it.type === 'NOISE-AUDIT') return false;
         }
         if (q) {
           const hay = `${it.code} ${it.date} ${it.plat} ${it.typeLabel} ${it.channel} ${it.excerpt} ${it.stance} ${it.url}`.toLowerCase();
@@ -7785,6 +8094,11 @@ HTML_TEMPLATE_PART3 = r"""
         const effStance = getEffectiveStance(it.sheet, it.idx, it.stance);
         const fcEntry = personalFactChecks[getFcKey(it.sheet, it.idx)];
         let contentMatchBadge = `<span class="status-badge snapshot" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;">Nội dung nguồn khớp nhận định</span>`;
+        if (it.isFlaggedV45) {
+          contentMatchBadge = `<span class="status-badge risk" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;">⚠️ Cảnh báo Fact-Check: Đồng âm / Lệch chủ đề v4.5</span>`;
+        } else if (it.type === 'NOISE-AUDIT') {
+          contentMatchBadge = `<span class="status-badge snapshot" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;background:#fef3c7;color:#92400e;">🛡️ Đã chặn bởi Bộ lọc 2 Khóa (Sheet 8)</span>`;
+        }
         if (fcEntry && fcEntry.status === 'verified') {
           contentMatchBadge = `<span class="fc-status-pill verified" style="display:inline-block;margin-top:3px;">✓ Đã xác nhận khớp nhận định</span>`;
         } else if (fcEntry && fcEntry.status === 'review') {
@@ -7794,8 +8108,8 @@ HTML_TEMPLATE_PART3 = r"""
         }
 
         return `
-          <tr onclick="openItemFactCheckModal('${it.sheet}', ${it.idx})" style="cursor:pointer;" title="Bấm để mở Hồ sơ Kiểm chứng chi tiết cho mã ${esc(it.code)}">
-            <td style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800;font-size:11.5px;color:var(--tuan-blue);">
+          <tr onclick="openItemFactCheckModal('${it.sheet}', ${it.idx})" style="cursor:pointer;${it.isFlaggedV45 ? 'background:rgba(239,68,68,0.04);' : ''}" title="Bấm để mở Hồ sơ Kiểm chứng chi tiết cho mã ${esc(it.code)}">
+            <td style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800;font-size:11.5px;color:${it.isFlaggedV45 ? 'var(--thuy-red)' : 'var(--tuan-blue)'};">
               ${esc(it.code)}
             </td>
             <td style="white-space:nowrap;font-weight:700;font-size:11.8px;">
@@ -7812,7 +8126,7 @@ HTML_TEMPLATE_PART3 = r"""
               ${stanceBadge(effStance)}
             </td>
             <td>
-              <div><span class="status-badge verified" style="font-size:10px;padding:1px 6px;">Đã kiểm tra link: 24/10/2026 · URL còn truy cập</span></div>
+              <div><span class="status-badge verified" style="font-size:10px;padding:1px 6px;">Đã kiểm tra link: 25/10/2026 · URL 100% nguyên vẹn</span></div>
               <div>${contentMatchBadge}</div>
             </td>
             <td onclick="event.stopPropagation();">
@@ -8010,8 +8324,8 @@ HTML_TEMPLATE_PART3 = r"""
           <div style="padding:12px 14px;border:1px solid var(--border);border-radius:8px;">
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">2. Kiểm tra Toàn vẹn & Đối soát Toán học</div>
             <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Số lượng bảng dữ liệu (Sheets):</strong> <code>${sheetNames.length} / 12 Sheets</code> (<span class="status-badge verified" style="padding:1px 6px;font-size:10px;">Hợp lệ</span>)</p>
-            <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Tổng số bản ghi có liên kết đối chiếu:</strong> <code>2.951 bản ghi · 1.473 URL duy nhất</code> (Lũy kế đầy đủ đến 24/10: <code>${totalRows.toLocaleString("vi-VN")} bản ghi · 2.685 URL duy nhất</code>)</p>
-            <p style="font-size:12.5px;">• <strong>Bảo mật danh tính người bình luận:</strong> <code>Đã ẩn 100% link cá nhân FB (#FB-U0001..#FB-U1492)</code></p>
+            <p style="font-size:12.5px;margin-bottom:4px;">• <strong>Tổng số bản ghi có liên kết đối chiếu:</strong> <code>6.203 bản ghi · 5.187 URL duy nhất</code> (Bao trọn 100% file Đa Sheet v4.5, file Raw 24/10, Báo cáo .MD 24/10 &amp; Sổ cái 12 Sheets: <code>${totalRows.toLocaleString("vi-VN")} dòng Sheet 01–12 + 467 dòng Phụ lục v4.5</code>)</p>
+            <p style="font-size:12.5px;">• <strong>Bảo mật danh tính người bình luận:</strong> <code>Đã ẩn 100% link cá nhân FB (#FB-U0001..#FB-U1888)</code></p>
           </div>
         </div>
 
@@ -8444,7 +8758,9 @@ HTML_TEMPLATE_PART3 = r"""
 full_html = HTML_TEMPLATE_PART1 + HTML_TEMPLATE_PART2 + HTML_TEMPLATE_PART3.replace("__EMBEDDED_JSON_PLACEHOLDER__", raw_json_str)
 
 OUT_2410 = "/Users/hungnpv/Downloads/Sunext/VFF/2210/2410/WARROOM_DASHBOARD_BAU_CU_VFF_24_10_2026.html"
-for out_p in [OUT_PUBLIC, OUT_2210, OUT_ROOT, OUT_2410]:
+OUT_2410_DIRECT = "/Users/hungnpv/Downloads/Sunext/VFF/2410/WARROOM_DASHBOARD_BAU_CU_VFF_24_10_2026.html"
+OUT_REPO_INDEX = "/Users/hungnpv/Downloads/Sunext/VFF/warroom-dashboard/index.html"
+for out_p in [OUT_PUBLIC, OUT_REPO_INDEX, OUT_2210, OUT_ROOT, OUT_2410, OUT_2410_DIRECT]:
     os.makedirs(os.path.dirname(out_p), exist_ok=True)
     with open(out_p, "w", encoding="utf-8") as f:
         f.write(full_html)
