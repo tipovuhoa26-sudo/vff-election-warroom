@@ -2354,8 +2354,8 @@
         <div class="header-meta-group" title="Đã kiểm tra link: 24/10/2026 · 100% URL còn truy cập (HTTP 200) · Đã ẩn danh 781 tài khoản bình luận FB">
           <span class="status-badge snapshot">Cập nhật: 24/10 · 23:59</span>
           <span class="status-badge verified">Đã kiểm tra link: 24/10/2026</span>
-          <button type="button" id="securitySessionPill" class="status-badge verified" style="cursor:pointer;border:1px solid #166534;" onclick="openOrLockSecurityGate()" title="Trạng thái phiên bảo mật Google Sheet (Sheet: id). Bấm để khóa ngay hoặc cấu hình.">
-            <span id="securitySessionCountdown">Bảo mật Sheet: Đang mở</span>
+          <button type="button" id="securitySessionPill" class="status-badge verified" style="cursor:pointer;border:1px solid #166534;" onclick="openOrLockSecurityGate()" title="Trạng thái phiên bảo mật. Bấm để khóa màn hình ngay.">
+            <span id="securitySessionCountdown">Phiên bảo mật</span>
           </button>
         </div>
 
@@ -2457,7 +2457,7 @@
             <button class="exec-menu-item" onclick="lockDashboardSession('MANUAL'); closeAllDropdowns();">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span>Khóa mật khẩu Google Sheet (Sheet: id)</span>
+                <span>Khóa màn hình bảo mật</span>
               </span>
               <span class="item-meta" id="menuLockMetaBadge">Khóa ngay</span>
             </button>
@@ -44955,37 +44955,19 @@
     }
 
     // =====================================================================
-    // GOOGLE SHEET PASSWORD LOCK GATE & AUTO-RELOCK SESSION ENGINE
-    // Spreadsheet: 1HJ8jEIBDQIyBob5rWE1c1gJb6V7GGpo12HIsxS3cmG8 | Sheet: "id"
-    // Columns A -> D: time, id, email, password
+    // SECURITY LOCK GATE & AUTO-RELOCK SESSION ENGINE
     // =====================================================================
     const GS_AUTH_CONFIG = {
-      spreadsheetId: '1HJ8jEIBDQIyBob5rWE1c1gJb6V7GGpo12HIsxS3cmG8',
-      sheetName: 'id',
-      gid: '0',
-      // Điền sẵn URL Web App (/exec) tại đây nếu muốn cố định cho mọi người dùng, hoặc nhập ngay trên giao diện:
-      defaultGasWebAppUrl: 'https://script.google.com/macros/s/AKfycbxYsBofxuhhi-jxNTO_PXONYFWK-qvjB41VkS7HA8jw_7hbz3X1e-eLW74T88ZQ2yA/exec',
+      authEndpoint: 'https://script.google.com/macros/s/AKfycbxYsBofxuhhi-jxNTO_PXONYFWK-qvjB41VkS7HA8jw_7hbz3X1e-eLW74T88ZQ2yA/exec',
       defaultTimeoutMinutes: 30,
-      storageSessionKey: 'vff_gs_auth_session_v1',
-      storageWebAppUrlKey: 'vff_gs_webapp_url_v1'
+      storageSessionKey: 'vff_sec_session_v1'
     };
 
     let gsSessionTimerInterval = null;
     let gsBackgroundRecheckInterval = null;
 
     function getConfiguredGasWebAppUrl() {
-      try {
-        return (localStorage.getItem(GS_AUTH_CONFIG.storageWebAppUrlKey) || GS_AUTH_CONFIG.defaultGasWebAppUrl || '').trim();
-      } catch (e) {
-        return GS_AUTH_CONFIG.defaultGasWebAppUrl || '';
-      }
-    }
-
-    function saveGsWebAppUrl(urlVal) {
-      const clean = String(urlVal || '').trim();
-      try {
-        localStorage.setItem(GS_AUTH_CONFIG.storageWebAppUrlKey, clean);
-      } catch (e) {}
+      return GS_AUTH_CONFIG.authEndpoint;
     }
 
     function getSavedGsSession() {
@@ -45010,57 +44992,14 @@
       box.innerHTML = htmlText;
     }
 
-    function parseSheetTimePolicyClient(colTimeRaw, nowMs, overrideMinutes) {
-      const fallbackMins = (overrideMinutes && overrideMinutes !== 'SHEET' && !isNaN(Number(overrideMinutes)))
-        ? Number(overrideMinutes)
-        : GS_AUTH_CONFIG.defaultTimeoutMinutes;
-
-      if (overrideMinutes && overrideMinutes !== 'SHEET' && !isNaN(Number(overrideMinutes))) {
-        const ms = Math.round(Number(overrideMinutes) * 60000);
-        return { isExpiredOnSheet: false, timeoutMinutes: Number(overrideMinutes), expiresAtMs: nowMs + ms };
-      }
-
-      const raw = String(colTimeRaw == null ? '' : colTimeRaw).trim();
-      if (raw) {
-        const durMatch = raw.match(/^(\d+(?:\.\d+)?)\s*(s|sec|giây|m|min|p|phút|phut|h|hr|giờ|gio|d|day|ngày|ngay)?$/i);
-        if (durMatch) {
-          const val = parseFloat(durMatch[1]);
-          const unit = (durMatch[2] || 'm').toLowerCase();
-          let mins = val;
-          if (unit.startsWith('s') || unit.startsWith('g')) mins = Math.max(0.5, val / 60);
-          else if (unit.startsWith('h') || unit === 'giờ' || unit === 'gio') mins = val * 60;
-          else if (unit.startsWith('d') || unit.startsWith('n')) mins = val * 1440;
-          const ms = Math.round(mins * 60000);
-          return { isExpiredOnSheet: false, timeoutMinutes: mins, expiresAtMs: nowMs + ms };
-        }
-        const parsedDate = new Date(raw);
-        if (!isNaN(parsedDate.getTime()) && parsedDate.getTime() > nowMs) {
-          const remainMs = parsedDate.getTime() - nowMs;
-          return {
-            isExpiredOnSheet: false,
-            timeoutMinutes: Math.max(1, Math.round(remainMs / 60000)),
-            expiresAtMs: parsedDate.getTime()
-          };
-        }
-      }
-      const ms = Math.round(fallbackMins * 60000);
-      return { isExpiredOnSheet: false, timeoutMinutes: fallbackMins, expiresAtMs: nowMs + ms };
-    }
-
-    // Phương thức 1: Gọi Google Apps Script Web App (POST text/plain -> fallback JSONP GET)
     async function verifyViaGoogleAppsScript(gasUrl, creds) {
-      const timeoutParam = (creds.timeout && creds.timeout !== 'SHEET') ? creds.timeout : '';
-      // 1A. Thử POST với Content-Type: text/plain;charset=utf-8 (không kích hoạt CORS preflight)
       try {
         const res = await fetch(gasUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({
             action: 'verify',
-            id: creds.idOrEmail,
-            email: '',
-            password: creds.password,
-            timeout: timeoutParam
+            password: creds.password
           }),
           redirect: 'follow'
         });
@@ -45068,17 +45007,14 @@
           const data = await res.json();
           if (data && typeof data.valid === 'boolean') return data;
         }
-      } catch (postErr) {
-        // Chuyển sang JSONP GET nếu trình duyệt chặn fetch từ file://
-      }
+      } catch (postErr) {}
 
-      // 1B. Fallback JSONP qua thẻ <script> (hoạt động 100% trên cả file:// và localhost)
       return new Promise((resolve, reject) => {
-        const cbName = '__vffGasAuthCb_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
+        const cbName = '__vffAuthCb_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
         const script = document.createElement('script');
         let timer = setTimeout(() => {
           cleanup();
-          reject(new Error('Quá thời gian chờ phản hồi từ Google Apps Script Web App.'));
+          reject(new Error('Quá thời gian phản hồi. Vui lòng thử lại.'));
         }, 12000);
 
         function cleanup() {
@@ -45093,80 +45029,11 @@
         };
 
         const sep = gasUrl.includes('?') ? '&' : '?';
-        const q = `action=verify&id=${encodeURIComponent(creds.idOrEmail || '')}&password=${encodeURIComponent(creds.password || '')}&timeout=${encodeURIComponent(timeoutParam)}&callback=${encodeURIComponent(cbName)}`;
+        const q = `action=verify&password=${encodeURIComponent(creds.password || '')}&callback=${encodeURIComponent(cbName)}`;
         script.src = gasUrl + sep + q;
         script.onerror = function() {
           cleanup();
-          reject(new Error('Không thể kết nối tới URL Google Apps Script Web App. Kiểm tra quyền "Who has access: Anyone".'));
-        };
-        document.head.appendChild(script);
-      });
-    }
-
-    // Phương thức 2 (Dự phòng): Đọc trực tiếp Google Sheet "id" (A:D = time, id, email, password) qua Google Visualization JSONP nếu Sheet được mở quyền xem
-    function verifyViaGoogleSheetGviz(creds) {
-      return new Promise((resolve, reject) => {
-        const cbName = '__vffGvizAuthCb_' + Date.now() + '_' + Math.floor(Math.random() * 10000);
-        const script = document.createElement('script');
-        let timer = setTimeout(() => {
-          cleanup();
-          reject(new Error('Google Sheet hiện đang để chế độ Riêng tư (Private). Vui lòng dán URL Google Apps Script Web App (/exec) vào mục Cấu hình bên dưới.'));
-        }, 8000);
-
-        function cleanup() {
-          clearTimeout(timer);
-          try { delete window[cbName]; } catch (e) { window[cbName] = undefined; }
-          if (script.parentNode) script.parentNode.removeChild(script);
-        }
-
-        window[cbName] = function(resp) {
-          cleanup();
-          if (!resp || resp.status === 'error' || !resp.table || !Array.isArray(resp.table.rows)) {
-            reject(new Error('Không thể đọc dữ liệu từ Sheet "id".'));
-            return;
-          }
-          const rows = resp.table.rows;
-          const nowMs = Date.now();
-          const inputPass = String(creds.password || '').trim();
-          const inputId = String(creds.idOrEmail || '').trim().toLowerCase();
-
-          for (let i = rows.length - 1; i >= 0; i--) {
-            const c = (rows[i] && rows[i].c) ? rows[i].c : [];
-            const valTime = c[0] ? (c[0].f || c[0].v || '') : '';
-            const valId   = c[1] && c[1].v != null ? String(c[1].v).trim() : '';
-            const valMail = c[2] && c[2].v != null ? String(c[2].v).trim() : '';
-            const valPass = c[3] && c[3].v != null ? String(c[3].v).trim() : '';
-
-            if (!valPass || valPass.toLowerCase() === 'password') continue;
-            if (valPass !== inputPass) continue;
-            if (inputId && valId.toLowerCase() !== inputId && valMail.toLowerCase() !== inputId) continue;
-
-            const pol = parseSheetTimePolicyClient(valTime, nowMs, creds.timeout);
-            resolve({
-              ok: true,
-              valid: true,
-              user: { id: valId || ('ROW-' + (i + 1)), email: valMail },
-              security: {
-                sheetTimeRaw: String(valTime),
-                timeoutMinutes: pol.timeoutMinutes,
-                verifiedAtMs: nowMs,
-                expiresAtMs: pol.expiresAtMs
-              }
-            });
-            return;
-          }
-          resolve({
-            ok: true,
-            valid: false,
-            message: 'Mật khẩu (hoặc ID/Email) không khớp với bất kỳ dòng nào trên Sheet "id".'
-          });
-        };
-
-        const gvizUrl = `https://docs.google.com/spreadsheets/d/${GS_AUTH_CONFIG.spreadsheetId}/gviz/tq?sheet=${encodeURIComponent(GS_AUTH_CONFIG.sheetName)}&tqx=responseHandler:${cbName}`;
-        script.src = gvizUrl;
-        script.onerror = function() {
-          cleanup();
-          reject(new Error('Google Sheet đang ở chế độ Riêng tư. Hãy dán URL Google Apps Script Web App (/exec) ở mục Cấu hình để xác thực bảo mật.'));
+          reject(new Error('Không thể kết nối máy chủ xác thực. Vui lòng thử lại.'));
         };
         document.head.appendChild(script);
       });
@@ -45174,17 +45041,11 @@
 
     async function submitGoogleSheetAuth(ev) {
       if (ev) ev.preventDefault();
-      const idOrEmail = (document.getElementById('gsAuthIdOrEmail')?.value || '').trim();
       const password = (document.getElementById('gsAuthPassword')?.value || '').trim();
-      const timeoutSel = (document.getElementById('gsAuthTimeoutSelect')?.value || 'SHEET');
-      const webAppInput = document.getElementById('gsWebAppUrlInput');
-      if (webAppInput && webAppInput.value.trim()) {
-        saveGsWebAppUrl(webAppInput.value.trim());
-      }
       const gasUrl = getConfiguredGasWebAppUrl();
 
       if (!password) {
-        setGsAuthMessage('error', 'Vui lòng nhập mật khẩu ở cột D (<code>password</code>) trên Google Sheet.');
+        setGsAuthMessage('error', 'Vui lòng nhập mật khẩu.');
         return;
       }
 
@@ -45192,43 +45053,28 @@
       const origText = btn ? btn.innerHTML : '';
       if (btn) {
         btn.disabled = true;
-        btn.textContent = 'Đang đối chiếu mật khẩu trên Google Sheet (Sheet: "id")...';
+        btn.textContent = 'Đang kiểm tra...';
       }
-      setGsAuthMessage('info', 'Đang kết nối kiểm tra mật khẩu trên Google Sheet <code>id</code>...');
+      setGsAuthMessage('info', 'Đang kiểm tra...');
 
       try {
-        let result = null;
-        if (gasUrl) {
-          result = await verifyViaGoogleAppsScript(gasUrl, { idOrEmail, password, timeout: timeoutSel });
-        } else {
-          result = await verifyViaGoogleSheetGviz({ idOrEmail, password, timeout: timeoutSel });
-        }
+        const result = await verifyViaGoogleAppsScript(gasUrl, { password });
 
         if (!result || !result.valid) {
-          setGsAuthMessage('error', (result && result.message) || 'Mật khẩu không chính xác hoặc đã quá thời gian bảo mật trên Google Sheet.');
+          setGsAuthMessage('error', 'Mật khẩu không chính xác hoặc đã hết hạn.');
           return;
         }
 
-        // Xác thực thành công -> Lưu phiên kèm thời điểm hết hạn
         const nowMs = Date.now();
-        let expiresAtMs = (result.security && result.security.expiresAtMs) ? Number(result.security.expiresAtMs) : (nowMs + 30 * 60000);
-        let timeoutMinutes = (result.security && result.security.timeoutMinutes) ? Number(result.security.timeoutMinutes) : 30;
-
-        if (timeoutSel !== 'SHEET' && !isNaN(Number(timeoutSel)) && Number(timeoutSel) > 0) {
-          timeoutMinutes = Number(timeoutSel);
-          expiresAtMs = nowMs + Math.round(timeoutMinutes * 60000);
-        }
+        const expiresAtMs = (result.security && result.security.expiresAtMs) ? Number(result.security.expiresAtMs) : (nowMs + 30 * 60000);
+        const timeoutMinutes = (result.security && result.security.timeoutMinutes) ? Number(result.security.timeoutMinutes) : 30;
 
         const sessionObj = {
           verifiedAtMs: nowMs,
           expiresAtMs: expiresAtMs,
           timeoutMinutes: timeoutMinutes,
-          userId: (result.user && result.user.id) || idOrEmail || 'VFF-USER',
-          userEmail: (result.user && result.user.email) || '',
-          sheetTimeRaw: (result.security && result.security.sheetTimeRaw) || '',
           sessionSignature: (result.security && result.security.sessionSignature) || '',
-          // Chỉ lưu bản băm nhẹ để kiểm tra định kỳ xem mật khẩu trên Sheet có bị thu hồi không
-          lastCreds: { idOrEmail, password, timeout: timeoutSel }
+          lastCreds: { password }
         };
 
         try {
@@ -45240,9 +45086,7 @@
         setGsAuthMessage('', '');
         unlockDashboardWithSession(sessionObj);
       } catch (err) {
-        const cfgDetails = document.getElementById('gsAuthConfigDetails');
-        if (cfgDetails) cfgDetails.open = true;
-        setGsAuthMessage('error', esc(err.message || String(err)));
+        setGsAuthMessage('error', esc(err.message || 'Lỗi kết nối xác thực.'));
       } finally {
         if (btn) {
           btn.disabled = false;
@@ -45346,7 +45190,7 @@
       if (reason === 'EXPIRED') {
         setGsAuthMessage(
           'error',
-          customMessage || '<strong>Đã quá thời gian bảo mật!</strong> Phiên xem số liệu đã tự động khóa. Vui lòng nhập lại mật khẩu hợp lệ trên Google Sheet (Sheet <code>id</code>) để xem tiếp.'
+          customMessage || '<strong>Đã hết thời gian phiên bảo mật!</strong> Vui lòng nhập lại mật khẩu để tiếp tục xem.'
         );
       } else if (reason === 'MANUAL') {
         setGsAuthMessage(
@@ -45397,24 +45241,19 @@
       updateTick();
       gsSessionTimerInterval = setInterval(updateTick, 1000);
 
-      // Kiểm tra định kỳ mỗi 45 giây xem mật khẩu hoặc cột time trên Google Sheet có bị thu hồi/đổi mới không
       gsBackgroundRecheckInterval = setInterval(async () => {
         const curr = getSavedGsSession();
         if (!curr || !curr.lastCreds) return;
         const gasUrl = getConfiguredGasWebAppUrl();
         try {
-          const checkRes = gasUrl
-            ? await verifyViaGoogleAppsScript(gasUrl, curr.lastCreds)
-            : await verifyViaGoogleSheetGviz(curr.lastCreds);
+          const checkRes = await verifyViaGoogleAppsScript(gasUrl, curr.lastCreds);
           if (checkRes && checkRes.ok && checkRes.valid === false) {
             lockDashboardSession(
               'EXPIRED',
-              '<strong>Mật khẩu trên Google Sheet đã thay đổi hoặc hết hạn!</strong> Vui lòng nhập lại mật khẩu mới trên Sheet <code>id</code> để tiếp tục.'
+              '<strong>Phiên bảo mật đã hết hạn hoặc mật khẩu đã thay đổi!</strong> Vui lòng nhập lại mật khẩu để tiếp tục.'
             );
           }
-        } catch (e) {
-          // Bỏ qua lỗi mạng tạm thời trong lúc đang còn hạn phiên
-        }
+        } catch (e) {}
       }, 45000);
     }
 
