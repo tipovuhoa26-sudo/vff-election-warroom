@@ -2850,6 +2850,13 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
       border-radius: 4px !important;
       box-shadow: none !important;
     }
+    .ed-metric-block {
+      padding: 16px 20px !important;
+    }
+    .ed-summary-grid {
+      padding: 16px !important;
+      gap: 18px !important;
+    }
     .ed-section {
       background: transparent !important;
       border: none !important;
@@ -5049,8 +5056,8 @@ HTML_TEMPLATE_PART2 = r"""
                     <tr style="background:#EDF3FC;">
                       <td><strong>6. Xác nhận Hợp lệ (Kiểm chứng Thực tế)</strong></td>
                       <td colspan="3" style="font-size:11.5px;">
-                        • Bài <a href="https://www.tiktok.com/@tintuc.247.online/video/7560587587096120594" target="_blank" rel="noopener noreferrer" style="font-weight:800;color:var(--tuan-blue);text-decoration:underline;"><code>TT-183 ↗</code></a> (<em>Phó Chủ tịch Sacombank Nguyễn Xuân Vũ</em>) &rarr; <strong>Hợp lệ 100%</strong> (Ông Nguyễn Xuân Vũ là Ứng viên Chủ tịch/Phó CT VFF Khóa X, Chủ tịch CLB Phù Đổng Ninh Bình).<br/>
-                        • Bài <a href="https://www.facebook.com/reel/2150610198796608/" target="_blank" rel="noopener noreferrer" style="font-weight:800;color:var(--tuan-blue);text-decoration:underline;"><code>FB-500-077 ↗</code></a> (<em>MAT TV — Mưa tiền thưởng</em>) &rarr; <strong>Hợp lệ 100%</strong> (174 BL bàn về chia tiền thưởng cầu thủ ĐTQG Việt Nam).
+                        • Bài <a href="https://www.tiktok.com/@dff.vn/video/7693849059911601429" target="_blank" rel="noopener noreferrer" style="font-weight:800;color:var(--tuan-blue);text-decoration:underline;"><code>TT-183 ↗</code></a> (<em>Phó Chủ tịch Sacombank Nguyễn Xuân Vũ</em>) &rarr; <strong>Hợp lệ 100%</strong> (Ông Nguyễn Xuân Vũ là Ứng viên Chủ tịch/Phó CT VFF Khóa X, Chủ tịch CLB Phù Đổng Ninh Bình).<br/>
+                        • Bài <a href="https://www.facebook.com/reel/1748026529651011" target="_blank" rel="noopener noreferrer" style="font-weight:800;color:var(--tuan-blue);text-decoration:underline;"><code>FB-500-077 ↗</code></a> (<em>MAT TV — Mưa tiền thưởng</em>) &rarr; <strong>Hợp lệ 100%</strong> (174 BL bàn về chia tiền thưởng cầu thủ ĐTQG Việt Nam).
                       </td>
                     </tr>
                   </tbody>
