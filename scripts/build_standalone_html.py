@@ -2770,6 +2770,192 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
       }
     }
 
+
+    /* =====================================================================
+       EDITORIAL & EXECUTIVE DESIGN SYSTEM OVERRIDES (5-PILLAR STANDARD)
+       ===================================================================== */
+    :root {
+      --bg-page: #F7F6F2 !important;
+      --bg-panel: #FFFFFF !important;
+      --bg-input: #F3F2EE !important;
+      --border: #E2E0D8 !important;
+      --border-strong: #C8C5BA !important;
+      --rule-heavy: #1B2432 !important;
+      --text-main: #141923 !important;
+      --text-secondary: #3E4652 !important;
+      --text-muted: #6C737F !important;
+      --tuan-blue: #1B4F9C !important;
+      --thuy-red: #B8292F !important;
+      --gold: #B45309 !important;
+      --green: #166534 !important;
+      --shadow: none !important;
+    }
+    body {
+      background: #F7F6F2 !important;
+      color: #141923 !important;
+    }
+    .tricolor-bar, .election-ticker {
+      display: none !important;
+    }
+    .cmd-header {
+      background: #FFFFFF !important;
+      border-bottom: 1px solid #DCD9D0 !important;
+      box-shadow: none !important;
+    }
+    .brand-title h1 {
+      font-size: 19px !important;
+      letter-spacing: -0.01em !important;
+      color: #141923 !important;
+    }
+    .positioning-line {
+      font-size: 12.8px !important;
+      color: #4A5260 !important;
+    }
+    .latest-update-bar {
+      background: #EFECE6;
+      border-bottom: 1px solid #E2E0D8;
+      padding: 8px 24px;
+      font-size: 12.2px;
+      color: #3E4652;
+    }
+    .latest-update-inner {
+      max-width: 1580px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .nav-tabs {
+      border-top: 1px solid #E8E6DF !important;
+      background: #FFFFFF !important;
+      gap: 4px !important;
+    }
+    .nav-tab {
+      padding: 10px 18px !important;
+      font-size: 13px !important;
+      font-weight: 700 !important;
+      border-radius: 0 !important;
+      border-bottom: 3px solid transparent !important;
+    }
+    .nav-tab.active {
+      color: #1B4F9C !important;
+      border-bottom-color: #1B4F9C !important;
+      background: #F7F6F2 !important;
+    }
+    .panel, .ed-metric-block, .ed-chart-frame, .chart-box, .cand-card {
+      background: #FFFFFF !important;
+      border: 1px solid #E2E0D8 !important;
+      border-radius: 4px !important;
+      box-shadow: none !important;
+    }
+    .ed-section {
+      background: transparent !important;
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 !important;
+      margin-bottom: 28px !important;
+    }
+    .ed-section-hdr {
+      border-top: 2px solid #1B2432 !important;
+      padding-top: 12px !important;
+      margin-bottom: 14px !important;
+    }
+    .ed-kicker {
+      font-size: 11px !important;
+      font-weight: 800 !important;
+      letter-spacing: 0.06em !important;
+      text-transform: uppercase !important;
+      color: #1B4F9C !important;
+      margin-bottom: 4px !important;
+    }
+    .ed-headline {
+      font-size: 18px !important;
+      font-weight: 800 !important;
+      color: #141923 !important;
+      margin: 0 0 4px 0 !important;
+    }
+    .ed-lead {
+      font-size: 13px !important;
+      color: #4A5260 !important;
+      line-height: 1.5 !important;
+      margin: 0 !important;
+    }
+    .ed-chart-caption {
+      margin-top: 10px;
+      padding: 10px 14px;
+      background: #F7F6F2;
+      border-left: 3px solid #1B4F9C;
+      font-size: 12.6px;
+      line-height: 1.55;
+      color: #2C3440;
+    }
+    .ed-big-num.clickable-num {
+      display: inline-block;
+      align-self: flex-start;
+      cursor: pointer;
+      border-bottom: 2px dashed rgba(27, 79, 156, 0.35);
+      transition: opacity 0.15s ease;
+    }
+    .ed-cand-side.right .ed-big-num.clickable-num {
+      align-self: flex-end;
+    }
+    .ed-big-num.thuy.clickable-num {
+      border-bottom-color: rgba(184, 41, 47, 0.35);
+    }
+    .ed-big-num.clickable-num:hover {
+      opacity: 0.78;
+    }
+    /* Hide long inline URLs inside main tables; keep visible inside #detailModal */
+    .wr-table .raw-url-inline,
+    .ed-heatmap-table .raw-url-inline {
+      display: none !important;
+    }
+    #detailModal .raw-url-inline {
+      display: inline-block !important;
+    }
+    /* Sub-navigation bar inside Tab 03 (Kênh & truyền thông), Tab 04, Tab 05 */
+    .sub-nav-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: center;
+      background: #FFFFFF;
+      border: 1px solid #E2E0D8;
+      border-radius: 4px;
+      padding: 8px 12px;
+      margin-bottom: 16px;
+    }
+    .sub-nav-lbl {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #4A5260;
+      text-transform: uppercase;
+      margin-right: 6px;
+    }
+    .sub-nav-btn {
+      appearance: none;
+      border: 1px solid #D8D6CE;
+      background: #F7F6F2;
+      color: #3E4652;
+      font-size: 12.2px;
+      font-weight: 700;
+      padding: 6px 12px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .sub-nav-btn:hover {
+      border-color: #1B4F9C;
+      color: #1B4F9C;
+    }
+    .sub-nav-btn.active {
+      background: #1B4F9C;
+      border-color: #1B4F9C;
+      color: #FFFFFF;
+    }
+
   </style>
 </head>
 <body>
@@ -2785,14 +2971,13 @@ HTML_TEMPLATE_PART2 = r"""
     <div class="c-red"></div>
   </div>
 
-  <!-- STICKY EXECUTIVE MASTHEAD (CLEAN INSTITUTIONAL GRADE) -->
+  <!-- STICKY EXECUTIVE MASTHEAD (CLEAN EDITORIAL & EXECUTIVE GRADE) -->
   <header class="cmd-header">
     <div class="cmd-header-top">
       <div class="brand-block">
         <div class="brand-title">
-          <h1>THEO DÕI DƯ LUẬN BẦU CỬ VFF KHÓA X</h1>
-          <div class="positioning-line">Hệ thống đối soát dữ liệu đa nền tảng, phân tích lập trường dư luận và độ phủ truyền thông phục vụ Đại hội VFF Khóa X (Nhiệm kỳ 2026–2030).</div>
-          <div class="dateline-meta"><strong>Kỳ dữ liệu: 01–25/10/2026</strong> · Hệ thống báo cáo tổng hợp đa nền tảng theo ba chiều quan điểm (Toàn diện · Trọng tâm · Đối chiếu chuyên sâu tháng 10/2026) · <strong>26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất</strong> <span style="color:var(--tuan-blue);font-weight:700;">(Phạm vi toàn diện: 805 kênh theo dõi · 512 kênh đăng tải · 1.137 bài viết và video · 36,88 triệu lượt xem · 20.767 bình luận cùng 2.647 bản ghi đối chiếu bổ sung)</span></div>
+          <h1>BÁO CÁO DỮ LIỆU DƯ LUẬN &amp; TRUYỀN THÔNG ĐẠI HỘI VFF KHÓA X</h1>
+          <div class="positioning-line">Tổng hợp, phân tích định lượng và truy xuất nguồn dữ liệu báo chí, mạng xã hội phục vụ công tác thông tin Đại hội VFF Khóa X (Nhiệm kỳ 2026–2030).</div>
         </div>
       </div>
 
@@ -2891,15 +3076,38 @@ HTML_TEMPLATE_PART2 = r"""
           </div>
         </div>
 
-        <!-- Action 2: [Tùy chọn ▾] (Includes View Options & Operator Data Admin) -->
+        <!-- Action 2: [Khu vực vận hành ▾] (Operator Tools, Sync, View Mode, Personal Fact-Check) -->
         <div class="exec-dropdown" id="optionsDropdown">
           <button class="exec-dropdown-btn" onclick="toggleExecDropdown('optionsDropdown', event)">
             <svg class="ico-svg" viewBox="0 0 24 24"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/><line x1="17" y1="16" x2="23" y2="16"/></svg>
-            <span>Tùy chọn</span>
+            <span>Khu vực vận hành</span>
             <svg class="ico-svg sm" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </button>
           <div class="exec-dropdown-menu">
-            <div class="exec-menu-section-lbl">Chế độ Hiển thị</div>
+            <div class="exec-menu-section-lbl">Công cụ vận hành &amp; đồng bộ</div>
+            <button class="exec-menu-item" onclick="openDataAdminModal(); closeAllDropdowns();">
+              <span class="item-left">
+                <svg class="ico-svg" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                <span>Quản trị dữ liệu &amp; đồng bộ</span>
+              </span>
+              <span class="item-meta" id="adminStatusShort">Bản chốt dữ liệu</span>
+            </button>
+            <button class="exec-menu-item" onclick="exportPersonalFactChecksCSV(); closeAllDropdowns();">
+              <span class="item-left">
+                <svg class="ico-svg" viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                <span>Xuất ghi chú kiểm chứng cá nhân</span>
+              </span>
+              <span class="item-meta" id="fcExportCountMetaOp">Tùy chọn</span>
+            </button>
+            <button class="exec-menu-item" onclick="lockDashboardSession('MANUAL'); closeAllDropdowns();">
+              <span class="item-left">
+                <svg class="ico-svg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <span>Khóa phiên bảo mật</span>
+              </span>
+              <span class="item-meta" id="menuLockMetaBadge">Khóa ngay</span>
+            </button>
+            <div class="exec-menu-divider"></div>
+            <div class="exec-menu-section-lbl">Tùy chỉnh hiển thị</div>
             <button class="exec-menu-item" onclick="toggleTheme(); closeAllDropdowns();">
               <span class="item-left">
                 <svg class="ico-svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/></svg>
@@ -2914,85 +3122,40 @@ HTML_TEMPLATE_PART2 = r"""
               </span>
               <span class="item-meta">F11</span>
             </button>
-            <button class="exec-menu-item" onclick="toggleVisualGauges(); closeAllDropdowns();">
-              <span class="item-left">
-                <svg class="ico-svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 12 2.1 10.5"/></svg>
-                <span id="toggleGaugesMenuLbl">Ẩn Đồng hồ mô phỏng</span>
-              </span>
-              <span class="item-meta" id="gaugesMetaBadge">Đang hiện</span>
-            </button>
-            <div class="exec-menu-divider"></div>
-            <div class="exec-menu-section-lbl">Quản trị và bảo mật</div>
-            <button class="exec-menu-item" onclick="lockDashboardSession('MANUAL'); closeAllDropdowns();">
-              <span class="item-left">
-                <svg class="ico-svg" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                <span>Khóa màn hình bảo mật</span>
-              </span>
-              <span class="item-meta" id="menuLockMetaBadge">Khóa ngay</span>
-            </button>
-            <button class="exec-menu-item" onclick="openDataAdminModal(); closeAllDropdowns();">
-              <span class="item-left">
-                <svg class="ico-svg" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-                <span>Quản trị dữ liệu & Đồng bộ</span>
-              </span>
-              <span class="item-meta" id="adminStatusShort">Bản chốt dữ liệu</span>
-            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- CLEAN NUMBERED NAVIGATION TABS (ZERO EMOJIS, NUMBER + SHORT LABEL) -->
+    <!-- 5 QUESTION-DRIVEN NAVIGATION TABS -->
     <nav class="nav-tabs" id="mainNavTabs">
       <button class="nav-tab active" data-tab="tab-overview" onclick="switchTab('tab-overview')">
-        <span class="nav-num">01</span><span>Tổng quan cuộc đua</span>
+        <span class="nav-num">01</span><span>Tổng quan</span>
       </button>
       <button class="nav-tab" data-tab="tab-timeline" onclick="switchTab('tab-timeline')">
-        <span class="nav-num">02</span><span>Diễn biến</span>
+        <span class="nav-num">02</span><span>Diễn biến dư luận</span>
       </button>
-      <button class="nav-tab" data-tab="tab-matrix" onclick="switchTab('tab-matrix')">
-        <span class="nav-num">03</span><span>Phân tích kênh</span>
+      <button class="nav-tab" data-tab="tab-media-hub" onclick="switchTab('tab-media-hub')">
+        <span class="nav-num">03</span><span>Kênh &amp; truyền thông</span>
       </button>
-      <button class="nav-tab" data-tab="tab-press-fb" onclick="switchTab('tab-press-fb')">
-        <span class="nav-num">04</span><span>Báo chí & Facebook</span>
-      </button>
-      <button class="nav-tab" data-tab="tab-video" onclick="switchTab('tab-video')">
-        <span class="nav-num">05</span><span>Video</span>
-      </button>
-      <button class="nav-tab" data-tab="tab-comments" onclick="switchTab('tab-comments')">
-        <span class="nav-num">06</span><span>Bình luận</span>
-      </button>
-      <button class="nav-tab" data-tab="tab-strategy" onclick="switchTab('tab-strategy')">
-        <span class="nav-num">07</span><span>Khuyến nghị</span>
+      <button class="nav-tab" data-tab="tab-delegates" onclick="switchTab('tab-delegates')">
+        <span class="nav-num">04</span><span>Đại biểu chính thức</span>
       </button>
       <button class="nav-tab" data-tab="tab-sources-ledger" onclick="switchTab('tab-sources-ledger')">
-        <span class="nav-num">08</span><span>Nguồn & kiểm chứng</span>
-      </button>
-      <button class="nav-tab" data-tab="tab-methodology" onclick="switchTab('tab-methodology')">
-        <span class="nav-num">09</span><span>Đại biểu & Phương pháp</span>
+        <span class="nav-num">05</span><span>Nguồn &amp; phương pháp</span>
       </button>
     </nav>
   </header>
 
-  <!-- SUBTLE EDITORIAL SCOPE NOTE -->
-  <div style="background:#EFECE6;border-bottom:1px solid var(--border);padding:7px 24px;font-size:12px;color:var(--text-secondary);">
-    <div style="max-width:1580px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
-      <span><strong>Phạm vi &amp; Giới hạn phương pháp:</strong> Số liệu đối soát 2 tầng dữ liệu chuẩn (<strong>Bộ dữ liệu toàn diện: 1.137 bài viết và video · 20.767 bình luận (19.652 bình luận tự nhiên và 1.115 bình luận mẫu lặp lại) · 2.916 bình luận bày tỏ quan điểm nhân sự (2.683 tự nhiên và 233 bình luận mẫu)</strong> | <strong>Bộ dữ liệu trọng tâm: 587 bài viết và video · 12.803 bình luận</strong> | <strong>Danh mục nguồn đối chiếu toàn diện: 26.743 bản ghi · 29.696 đường dẫn nguồn</strong>); không phải phiếu bầu chính thức của Đại biểu Đại hội VFF.</span>
+  <!-- SINGLE-LINE LATEST UPDATE STATUS BAR -->
+  <div class="latest-update-bar" id="latestUpdateBar">
+    <div class="latest-update-inner">
+      <span><strong>Cập nhật mới nhất: 25/10/2026</strong> · Kỳ dữ liệu: 01–25/10/2026 · Đối soát 81 bài báo chính thống, 1.137 bài viết/video và 20.767 bình luận công khai (26.743 bản ghi có liên kết nguồn; tách biệt hoàn toàn với quy trình bỏ phiếu kín của 57 tổ chức thành viên VFF).</span>
       <div style="display:flex;gap:14px;align-items:center;flex-wrap:wrap;">
-        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn &amp; kiểm chứng (26.743 bản ghi · 29.696 đường dẫn nguồn duy nhất) &rarr;</a>
-        <a href="javascript:void(0)" onclick="switchTab('tab-methodology')" style="color:var(--text-main);text-decoration:underline;font-weight:700;font-size:11.8px;">Quy trình Đại biểu & Phương pháp (Mục 09) &rarr;</a>
+        <a href="javascript:void(0)" onclick="switchTab('tab-delegates')" style="color:var(--text-main);text-decoration:underline;font-weight:700;font-size:11.8px;">Đại biểu chính thức (57 đơn vị) &rarr;</a>
+        <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="color:var(--tuan-blue);text-decoration:underline;font-weight:800;font-size:11.8px;">Mở Nguồn &amp; phương pháp (26.743 bản ghi) &rarr;</a>
       </div>
     </div>
-  </div>
-
-  <!-- CAMPAIGN WAVE SUMMARY BAR (TYPOGRAPHY & BORDERS, ZERO EMOJIS) -->
-  <div class="election-ticker">
-    <span class="ticker-tag">DIỄN BIẾN 5 NHỊP SÓNG (01–24/10)</span>
-    <span class="ticker-item"><strong>Nhịp 1 (01–12/10):</strong> Kỷ lục 7 ĐTQG dự VCK Châu Á củng cố tín nhiệm TS. Tuấn</span>
-    <span class="ticker-item" style="color:#b45309;"><strong>Nhịp 2 (14–16/10) [Lưu ý chiến dịch đăng tải đồng loạt]:</strong> Tin đồn Tỷ phú USD & cụm 'Phấn Đấu' (33 bài bị phản ứng ngược)</span>
-    <span class="ticker-item"><strong>Nhịp 3 (17–18/10):</strong> Phản biện mô hình Madam Pang / Thohir & tiền lệ bỏ giải SGXT</span>
-    <span class="ticker-item"><strong>Nhịp 4 (19–20/10):</strong> Ghi nhận 3 ứng viên được đề cử (TS. Tuấn, Ông Thụy, Ông Vũ) & thông tin &gt;40/57 đề cử</span>
-    <span class="ticker-item" style="border-right:none;"><strong>Nhịp 5 (21–24/10):</strong> Đề xuất 600–1.000 tỷ/năm, Liên danh 1 (56,5%) & đối thoại VFF gặp gỡ báo chí</span>
   </div>
 
   <!-- GLOBAL SEARCH RESULTS OVERLAY PANEL -->
@@ -3027,36 +3190,34 @@ HTML_TEMPLATE_PART2 = r"""
   <main class="container">
 
     <!-- =================================================================== -->
-    <!-- TAB 1: SENTIMENT & MEDIA WAR ROOM OVERVIEW + 3 SEPARATED LAYERS     -->
+    <!-- MỤC 01: TỔNG QUAN (TRẢ LỜI 4 CÂU HỎI CỐT LÕI VỚI ĐÚNG 4 VISUAL)    -->
     <!-- =================================================================== -->
     <section id="tab-overview" class="tab-pane active">
 
-      <!-- ================================================================= -->
-      <!-- SECTION 1: TÓM TẮT DIỄN BIẾN (AI? & KHI NÀO?)                     -->
-      <!-- ================================================================= -->
-      <div class="ed-section">
+      <!-- CÂU HỎI 1: TÌNH HÌNH — Tín hiệu dư luận công khai đang nghiêng về đâu? -->
+      <div class="ed-section" id="homeSecSituation">
         <div class="ed-section-hdr">
           <div>
-            <div class="ed-kicker">01 · TÓM TẮT DIỄN BIẾN VÀ ĐỐI SOÁT DỮ LIỆU ĐA NỀN TẢNG (01/10 – 25/10/2026)</div>
-            <h2 class="ed-headline">Tương quan lập trường công khai và độ phủ truyền thông</h2>
-            <p class="ed-lead">Đối soát toàn diện 3 nền tảng (Facebook · YouTube · TikTok) &amp; Báo chí trên 3 chiều lập trường (<strong>Ủng hộ · Phản đối · Trung lập / Liên danh</strong>): <strong>Bộ dữ liệu toàn diện</strong> ghi nhận <strong>805 kênh theo dõi (512 kênh có bài đăng) · 1.137 bài viết và video · 36.878.341 lượt xem · 20.767 bình luận (19.652 bình luận tự nhiên chiếm 94,63% và 1.115 bình luận mẫu lặp lại chiếm 5,37%) · 2.916 bình luận bày tỏ quan điểm nhân sự (2.683 tự nhiên và 233 bình luận mẫu)</strong>; danh mục đối chiếu tích hợp đầy đủ <strong>26.743 bản ghi kèm 29.696 đường dẫn nguồn nguyên vẹn</strong>.</p>
+            <div class="ed-kicker">01 · TÌNH HÌNH — TÍN HIỆU DƯ LUẬN CÔNG KHAI ĐANG NGHIÊNG VỀ ĐÂU?</div>
+            <h2 class="ed-headline">Tương quan tín hiệu bình luận công khai và độ phủ truyền thông</h2>
+            <p class="ed-lead">Bấm trực tiếp vào bất kỳ con số lớn hoặc thanh tỷ lệ nào để mở tập nguồn cấu thành (bài báo, bài đăng, video hoặc bình luận gốc).</p>
           </div>
         </div>
 
-        <!-- Visual 1: Interactive Flat Side-by-Side Comparison Bars -->
+        <!-- Visual 1: Hai thanh so sánh (Tín hiệu bình luận & Độ phủ truyền thông) -->
         <div class="ed-summary-grid">
-          <!-- Left: Interactive Public Stance Signals -->
+          <!-- Thanh 1A: Tín hiệu bình luận công khai -->
           <div class="ed-metric-block">
             <div>
               <div class="ed-metric-top" style="flex-wrap:wrap;gap:6px;">
                 <div>
-                  <span class="ed-metric-title">Chỉ số lập trường công khai (6 nhóm quan điểm và 7 kịch bản nhân sự)</span>
-                  <span class="ed-metric-sample" id="stanceBarSampleLbl" style="display:block;margin-top:2px;">Bộ dữ liệu toàn diện: 2.916 bình luận bày tỏ quan điểm = 2.683 tự nhiên + 233 bình luận mẫu (Tín nhiệm ròng: TS. Tuấn +725 so với Ông Thụy +120)</span>
+                  <span class="ed-metric-title">Tín hiệu bình luận công khai</span>
+                  <span class="ed-metric-sample" id="stanceBarSampleLbl" style="display:block;margin-top:2px;">Mẫu 2.683 bình luận tự nhiên có quan điểm nhân sự (trên tổng số 20.767 bình luận thu thập)</span>
                 </div>
-                <div class="ed-mini-pills" title="Chuyển đổi lát cắt mẫu bình luận">
+                <div class="ed-mini-pills" title="Chuyển đổi phạm vi mẫu bình luận">
                   <button class="ed-mini-pill active" onclick="switchStanceBarMode('v45_org', this)">Toàn diện (2.683)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('v44_core', this)">Trọng tâm (2.495)</button>
-                  <button class="ed-mini-pill" onclick="switchStanceBarMode('h2h', this)">Đối đầu 22/10 (991)</button>
+                  <button class="ed-mini-pill" onclick="switchStanceBarMode('h2h', this)">Đối sánh 22/10 (991)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('coalition', this)">Liên danh (255)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('fb887', this)">FB (1.888)</button>
                   <button class="ed-mini-pill" onclick="switchStanceBarMode('yttt527', this)">YT/TT (1.457)</button>
@@ -3064,50 +3225,51 @@ HTML_TEMPLATE_PART2 = r"""
               </div>
               <div class="ed-score-row">
                 <div class="ed-cand-side">
-                  <span class="ed-cand-label" id="stanceLeftName">TS. Trần Quốc Tuấn (#1 Bình luận Tự nhiên)</span>
-                  <span class="ed-big-num tuan" id="stanceLeftBig">1.021</span>
-                  <span class="ed-sub-count" id="stanceLeftSub">Bình luận tự nhiên chọn làm Chủ tịch (766 ủng hộ trực tiếp + 255 đề xuất Liên danh · Tổng 1.094 · Ròng +725)</span>
+                  <span class="ed-cand-label" id="stanceLeftName">TS. Trần Quốc Tuấn (Ủng hộ trực tiếp &amp; Liên danh)</span>
+                  <span class="ed-big-num tuan clickable-num" id="stanceLeftBig" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')" title="Bấm để mở danh sách bình luận ủng hộ TS. Trần Quốc Tuấn">1.021</span>
+                  <span class="ed-sub-count" id="stanceLeftSub">bình luận tự nhiên chọn làm Chủ tịch (766 ủng hộ trực tiếp + 255 đề xuất Liên danh · Tín nhiệm ròng +725)</span>
                 </div>
                 <div class="ed-cand-side right">
-                  <span class="ed-cand-label" id="stanceRightName">Ông Nguyễn Đức Thụy (#2 Bình luận Tự nhiên)</span>
-                  <span class="ed-big-num thuy" id="stanceRightBig">687</span>
-                  <span class="ed-sub-count" id="stanceRightSub">Bình luận tự nhiên ủng hộ trực tiếp (Tổng 769 · 82 bình luận mẫu chiếm 10,66% · Phản đối: 567 · Ròng +120)</span>
+                  <span class="ed-cand-label" id="stanceRightName">Ông Nguyễn Đức Thụy (Ủng hộ trực tiếp)</span>
+                  <span class="ed-big-num thuy clickable-num" id="stanceRightBig" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')" title="Bấm để mở danh sách bình luận về Ông Nguyễn Đức Thụy">687</span>
+                  <span class="ed-sub-count" id="stanceRightSub">bình luận tự nhiên ủng hộ (Tổng 769 · 82 bình luận mẫu = 10,66% · Phản đối trực tiếp: 567 · Ròng +120)</span>
                 </div>
               </div>
               <div class="ed-flat-bar" id="interactiveStanceBar">
                 <div class="ed-flat-seg tuan" style="width:38.1%;"
-                     onmouseenter="showEdTooltip(event, '<strong>(Ủng hộ TS. Tuấn) + (Phương án Liên danh) Khối chọn TS. Trần Quốc Tuấn làm Chủ tịch (toàn diện Tự nhiên)</strong><div class=ed-tt-row><span>(Ủng hộ TS. Tuấn) Ủng hộ thẳng (Tự nhiên / Tổng):</span><strong>766 / 819 BL (#1 toàn mạng)</strong></div><div class=ed-tt-row><span>(Phương án Liên danh) Liên danh Tuấn CT + Thụy PCT TC:</span><strong>255 / 275 BL (Đồng thuận 8,79:1)</strong></div><div class=ed-tt-row><span>Phản đối trực tiếp:</span><span>41 Tự nhiên (Tổng 49 · Tỷ lệ Ủng hộ:Phản đối = 18,68:1)</span></div><div class=ed-tt-hint>Bấm để lọc bình luận ủng hộ TS. Tuấn trong Sổ cái &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>Khối bình luận chọn TS. Trần Quốc Tuấn làm Chủ tịch</strong><div class=ed-tt-row><span>Ủng hộ trực tiếp (Tự nhiên / Tổng):</span><strong>766 / 819 bình luận</strong></div><div class=ed-tt-row><span>Đề xuất Liên danh (Tuấn CT + Thụy PCT):</span><strong>255 / 275 bình luận</strong></div><div class=ed-tt-row><span>Phản đối trực tiếp:</span><span>41 bình luận tự nhiên (Tỷ lệ 18,68:1)</span></div><div class=ed-tt-hint>Bấm để xem bình luận gốc &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="jumpToComments('Tuấn')">TS. Tuấn: 1.021 (38,1%)</div>
                 <div class="ed-flat-seg neutral" style="width:36.3%;"
-                     onmouseenter="showEdTooltip(event, '<strong>(Phản biện) Phản đối (573 BL) + (Ứng viên khác) Ứng viên khác (402 BL)</strong><div class=ed-tt-row><span>(Phản biện) Phản đối Ông Thụy trực tiếp:</span><strong>567 Tự nhiên / 627 Tổng (Mở rộng: 628)</strong></div><div class=ed-tt-row><span>(Phản biện) Phê bình TS. Tuấn trực tiếp:</span><span>41 Tự nhiên / 49 Tổng (Mở rộng: 245)</strong></div><div class=ed-tt-row><span>(Ứng viên khác) Bầu Đức (285) · P.N.Vượng (110) · Xuân Vũ (9):</span><span>402 Tự nhiên / 420 Tổng</span></div><div class=ed-tt-hint>Bấm để lọc bình luận phản đối &amp; ứng viên khác &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>Bình luận phản biện (573) và đề xuất nhân sự khác (402)</strong><div class=ed-tt-row><span>Phản đối Ông Thụy trực tiếp:</span><strong>567 bình luận tự nhiên</strong></div><div class=ed-tt-row><span>Phê bình TS. Tuấn trực tiếp:</span><span>41 bình luận tự nhiên</span></div><div class=ed-tt-row><span>Nhân sự khác (Đoàn Nguyên Đức, Phạm Nhật Vượng...):</span><span>402 bình luận tự nhiên</span></div><div class=ed-tt-hint>Bấm để xem bình luận gốc &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="jumpToComments('Phản đối')">Phản đối &amp; Khác: 975 (36,3%)</div>
+                     onclick="jumpToComments('Phản đối')">Phản biện &amp; Khác: 975 (36,3%)</div>
                 <div class="ed-flat-seg thuy" style="width:25.6%;"
-                     onmouseenter="showEdTooltip(event, '<strong>(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy (toàn diện Tự nhiên)</strong><div class=ed-tt-row><span>(Ủng hộ Ông Thụy) Ủng hộ thẳng (Tự nhiên / Tổng):</span><strong>687 / 769 BL (#2 toàn mạng)</strong></div><div class=ed-tt-row><span>Phân bổ Tự nhiên (FB / YT / TT):</span><span>373 FB · 119 YT · 195 TT</span></div><div class=ed-tt-row><span>Tỷ lệ bình luận mẫu (Ủng hộ Ông Thụy) / Ủng hộ:Phản đối:</span><span>82 bình luận mẫu (10,66%) · Tỷ lệ = 1,21:1</span></div><div class=ed-tt-hint>Bấm để lọc bình luận ủng hộ Ông Thụy trong Sổ cái &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>Bình luận ủng hộ Ông Nguyễn Đức Thụy</strong><div class=ed-tt-row><span>Ủng hộ trực tiếp (Tự nhiên / Tổng):</span><strong>687 / 769 bình luận</strong></div><div class=ed-tt-row><span>Phân bổ theo nền tảng:</span><span>373 FB · 119 YT · 195 TT</span></div><div class=ed-tt-row><span>Tỷ lệ bình luận mẫu / Ủng hộ:Phản đối:</span><span>82 mẫu (10,66%) · Tỷ lệ 1,21:1</span></div><div class=ed-tt-hint>Bấm để xem bình luận gốc &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="jumpToComments('Thụy')">Ông Thụy: 687 (25,6%)</div>
               </div>
             </div>
-            <div class="ed-metric-note" id="stanceBarFootNote">
-              <strong>Đối soát 20.767 bình luận Bộ dữ liệu toàn diện (19.652 Tự nhiên = 94,63% · 1.115 bình luận mẫu = 5,37%):</strong> Trong <strong>2.916 bình luận bày tỏ quan điểm nhân sự (2.683 Tự nhiên)</strong>: <strong>(Ủng hộ TS. Tuấn) TS. Trần Quốc Tuấn dẫn đầu #1 với 766 BL tự nhiên</strong> (tổng 819 BL, chỉ 41 BL phản đối trực tiếp &rarr; tỷ lệ <code>Ủng hộ : Phản đối = 18,68:1</code>, Điểm tín nhiệm ròng <code>+725</code>); <strong>(Ủng hộ Ông Thụy) Ông Nguyễn Đức Thụy đạt 687 BL tự nhiên</strong> (tổng 769 BL, 82 bình luận mẫu = 10,66%, chịu 567 BL phản đối trực tiếp &rarr; tỷ lệ <code>Ủng hộ : Phản đối = 1,21:1</code>, Điểm tín nhiệm ròng <code>+120</code>); <strong>(Phương án Liên danh) Liên danh (TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính) đạt 255 BL tự nhiên</strong> (tỷ lệ đồng thuận <code>8,79:1</code>); <strong>(Ứng viên khác) Ứng viên khác đạt 402 BL tự nhiên</strong> (Bầu Đức 285, Phạm Nhật Vượng 110, Trần Anh Tú 15, Bầu Hiển 15, Nguyễn Xuân Vũ 9).
+            <!-- Giải thích trực tiếp ngay dưới biểu đồ, tối đa 2 câu -->
+            <div class="ed-chart-caption" id="stanceBarFootNote">
+              Trong 2.683 bình luận tự nhiên nêu quan điểm nhân sự, nhóm chọn TS. Trần Quốc Tuấn làm Chủ tịch dẫn đầu với 1.021 bình luận (766 ủng hộ trực tiếp, 255 đề xuất Liên danh) và chỉ ghi nhận 41 ý kiến phản đối trực tiếp (tín nhiệm ròng +725). Ông Nguyễn Đức Thụy đạt 687 bình luận ủng hộ tự nhiên nhưng đi kèm 567 ý kiến phản đối trực tiếp quanh tiền lệ giải thể CLB năm 2013 và lo ngại xung đột lợi ích (tín nhiệm ròng +120).
             </div>
-            <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh 100% tài khoản FB cá nhân · Tích hợp đủ 20.767 link bình luận trực tiếp</span>
+            <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã ẩn danh tài khoản cá nhân Facebook · Lưu trữ đầy đủ 20.767 liên kết bình luận</span>
               <div style="display:flex;flex-wrap:wrap;gap:6px;">
-                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Xem 1.888 bình luận Facebook &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Xem 1.457 bình luận YouTube và TikTok &rarr;</button>
+                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','FB-CMT','')">Nguồn bình luận FB (1.888)</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','VID-CMT','')">Nguồn bình luận YT/TT (1.457)</button>
               </div>
             </div>
           </div>
 
-          <!-- Right: Interactive Media Coverage Volume -->
+          <!-- Thanh 1B: Độ phủ truyền thông -->
           <div class="ed-metric-block">
             <div>
               <div class="ed-metric-top" style="flex-wrap:wrap;gap:6px;">
                 <div>
-                  <span class="ed-metric-title">Độ phủ truyền thông và phân bổ theo 6 nhóm nội dung</span>
-                  <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">Bộ dữ liệu toàn diện: 1.137 bài viết và video (568 Facebook · 310 YouTube · 259 TikTok · 36,88 triệu lượt xem) và 81 bài báo chính thống</span>
+                  <span class="ed-metric-title">Độ phủ truyền thông</span>
+                  <span class="ed-metric-sample" id="covBarSampleLbl" style="display:block;margin-top:2px;">1.137 bài viết và video mạng xã hội (36,88 triệu lượt xem) cùng 81 bài báo chính thống</span>
                 </div>
                 <div class="ed-mini-pills" title="Lọc nhanh độ phủ theo nền tảng">
                   <button class="ed-mini-pill active" onclick="switchCoverageBarMode('v45_1137', this)">Toàn diện (1.137)</button>
@@ -3121,50 +3283,62 @@ HTML_TEMPLATE_PART2 = r"""
               </div>
               <div class="ed-score-row">
                 <div class="ed-cand-side">
-                  <span class="ed-cand-label" id="covLeftName">Nhóm bài viết ủng hộ TS. Trần Quốc Tuấn (135 trực tiếp + 94 Liên danh)</span>
-                  <span class="ed-big-num tuan" id="covLeftBig">229</span>
-                  <span class="ed-sub-count" id="covLeftSub">bài viết và video ủng hộ TS. Tuấn làm Chủ tịch (135 bài trực tiếp + 94 bài đề xuất Liên danh · Lũy tiến: 618)</span>
+                  <span class="ed-cand-label" id="covLeftName">Bài viết &amp; video nghiêng về TS. Trần Quốc Tuấn</span>
+                  <span class="ed-big-num tuan clickable-num" id="covLeftBig" onclick="openSourceLedgerWithFilter('ALL','ALL','CORE-6203','Trần Quốc Tuấn')" title="Bấm để mở danh sách 229 bài viết và video nghiêng về TS. Trần Quốc Tuấn">229</span>
+                  <span class="ed-sub-count" id="covLeftSub">bài viết và video chọn TS. Tuấn làm Chủ tịch (135 bài trực tiếp + 94 bài đề xuất Liên danh · Lũy tiến: 618)</span>
                 </div>
                 <div class="ed-cand-side right">
-                  <span class="ed-cand-label" id="covRightName">Nhóm bài viết ủng hộ Ông Nguyễn Đức Thụy</span>
-                  <span class="ed-big-num thuy" id="covRightBig">149</span>
-                  <span class="ed-sub-count" id="covRightSub">bài viết và video ủng hộ trực tiếp Ông Thụy (82 Facebook · 33 YouTube · 34 TikTok · 56,84% bình luận bên dưới trái chiều · Lũy tiến: 485)</span>
+                  <span class="ed-cand-label" id="covRightName">Bài viết &amp; video ủng hộ Ông Nguyễn Đức Thụy</span>
+                  <span class="ed-big-num thuy clickable-num" id="covRightBig" onclick="openSourceLedgerWithFilter('ALL','ALL','CORE-6203','Nguyễn Đức Thụy')" title="Bấm để mở danh sách 149 bài viết và video ủng hộ Ông Nguyễn Đức Thụy">149</span>
+                  <span class="ed-sub-count" id="covRightSub">bài viết và video ủng hộ trực tiếp Ông Thụy (82 FB · 33 YT · 34 TT · 56,84% bình luận bên dưới trái chiều)</span>
                 </div>
               </div>
               <div class="ed-flat-bar" id="interactiveCovBar">
                 <div class="ed-flat-seg tuan" style="width:20.1%;"
-                     onmouseenter="showEdTooltip(event, '<strong>(Ủng hộ TS. Tuấn) Bài ủng hộ TS. Tuấn (135) + (Phương án Liên danh) Liên danh Tuấn CT (94) = 229 bài (20,14%)</strong><div class=ed-tt-row><span>(Ủng hộ TS. Tuấn) Thuần TS. Tuấn (FB/YT/TT):</span><strong>135 bài (123 FB · 6 YT · 6 TT)</strong></div><div class=ed-tt-row><span>(Phương án Liên danh) Liên danh Tuấn CT + Thụy PCT:</span><strong>94 bài (35 FB · 49 YT · 10 TT)</strong></div><div class=ed-tt-row><span>Bộ dữ liệu trọng tâm:</span><span>125 bài (Ủng hộ TS. Tuấn) + 91 bài (Phương án Liên danh) = 216 bài</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí &amp; Facebook &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>Bài viết ủng hộ TS. Tuấn (135) + Liên danh Tuấn CT (94) = 229 bài (20,14%)</strong><div class=ed-tt-row><span>Ủng hộ trực tiếp (FB/YT/TT):</span><strong>135 bài (123 FB · 6 YT · 6 TT)</strong></div><div class=ed-tt-row><span>Đề xuất Liên danh (Tuấn CT + Thụy PCT):</span><strong>94 bài (35 FB · 49 YT · 10 TT)</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="switchTab('tab-press-fb')">TS. Tuấn: 20,1%</div>
                 <div class="ed-flat-seg neutral" style="width:66.8%;"
-                     onmouseenter="showEdTooltip(event, '<strong>(Đưa tin trung lập) Trung lập (682 bài) + (Phản biện) Phản đối (46 bài) + (Ứng viên khác) Khác (31 bài) = 759 bài (66,75%)</strong><div class=ed-tt-row><span>(Đưa tin trung lập) Đưa tin thể chế / Trung lập:</span><strong>682 bài (271 FB · 213 YT · 198 TT)</strong></div><div class=ed-tt-row><span>(Phản biện) Phản đối / Cảnh báo rủi ro:</span><span>46 bài (36 FB · 4 YT · 6 TT)</span></div><div class=ed-tt-row><span>(Ứng viên khác) Bầu Đức / P.N.Vượng / Xuân Vũ:</span><span>31 bài (21 FB · 5 YT · 5 TT)</span></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí &amp; Facebook &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>Đưa tin trung lập (682 bài) · Phản biện (46 bài) · Nhân sự khác (31 bài)</strong><div class=ed-tt-row><span>Đưa tin thể chế / Trung lập:</span><strong>682 bài (271 FB · 213 YT · 198 TT)</strong></div><div class=ed-tt-row><span>Phản biện / Cảnh báo rủi ro:</span><span>46 bài</span></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">(Đưa tin trung lập) Trung lập (682) · (Phản biện) Phản biện (46) · (Ứng viên khác) Khác (31)</div>
+                     onclick="switchTab('tab-press-fb')">Trung lập (682) · Phản biện &amp; Khác (77)</div>
                 <div class="ed-flat-seg thuy" style="width:13.1%;"
-                     onmouseenter="showEdTooltip(event, '<strong>(Ủng hộ Ông Thụy) Bài viết &amp; Video ủng hộ thẳng Ông Thụy = 149 bài (13,10%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng (toàn diện):</span><strong>82 FB · 33 YT · 34 TT (Bộ dữ liệu trọng tâm: 143 bài)</strong></div><div class=ed-tt-row><span>Độ lệch bình luận bên dưới:</span><strong>56,84% BL chính kiến đảo chiều / phản biện</strong></div><div class=ed-tt-hint>Bấm để mở Sổ cái Báo chí &amp; Facebook &rarr;</div>')"
+                     onmouseenter="showEdTooltip(event, '<strong>Bài viết &amp; Video ủng hộ trực tiếp Ông Thụy = 149 bài (13,10%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng:</span><strong>82 FB · 33 YT · 34 TT</strong></div><div class=ed-tt-row><span>Chiều hướng bình luận bên dưới:</span><strong>56,84% bình luận trái chiều bài đăng</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="switchTab('tab-press-fb')">Thụy: 13,1%</div>
               </div>
             </div>
-            <div class="ed-metric-note" id="covBarFootNote">
-              <strong>Tương quan giữa độ phủ bài đăng và chiều hướng bình luận của độc giả:</strong> Trên <code>Bộ dữ liệu toàn diện (1.137 bài/video · 36.878.341 lượt xem · 464.030 lượt thích · 16.898 lượt chia sẻ)</code>, Ông Nguyễn Đức Thụy dẫn trước về số bài mở chiến dịch đơn lẻ <code>(Ủng hộ Ông Thụy) = 149 bài</code> (so với <code>(Ủng hộ TS. Tuấn) = 135 bài</code> của TS. Trần Quốc Tuấn), nhưng bên dưới 149 bài <code>(Ủng hộ Ông Thụy)</code> có tới <strong>56,84% bình luận chính kiến đảo chiều</strong> (24,78% phản đối trực diện, 13,80% ủng hộ TS. Tuấn, 10,81% đề xuất Liên danh). Khi gộp <code>(Ủng hộ TS. Tuấn)+(Phương án Liên danh)</code>, khối bài chọn TS. Tuấn làm Chủ tịch đạt <strong>229 bài (20,14%)</strong>.
+            <!-- Giải thích trực tiếp ngay dưới biểu đồ, tối đa 2 câu -->
+            <div class="ed-chart-caption" id="covBarFootNote">
+              Ông Nguyễn Đức Thụy dẫn trước về số bài phát động đơn lẻ (149 bài so với 135 bài của TS. Trần Quốc Tuấn), nhưng khi tính gộp 94 bài đề xuất Liên danh thì nhóm bài chọn TS. Tuấn giữ chức Chủ tịch đạt 229 bài (20,14%). Đáng chú ý, bên dưới 149 bài quảng bá cho Ông Thụy có tới 56,84% bình luận có quan điểm quay sang phản biện hoặc ủng hộ TS. Tuấn.
             </div>
-            <div style="margin-top:10px;padding-top:8px;border-top:1px dashed var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm định liên kết: 25/10/2026 · 26.743/26.743 bản ghi có URL hợp lệ</span>
+            <div style="margin-top:10px;padding-top:8px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;">
+              <span style="font-size:11.2px;color:var(--text-muted);font-weight:600;">Đã kiểm định liên kết: 25/10/2026 · Toàn bộ 26.743 bản ghi có URL hợp lệ</span>
               <div style="display:flex;flex-wrap:wrap;gap:6px;">
-                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Xem 81 bài báo chính thống &rarr;</button>
-                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Xem toàn bộ 26.743 bản ghi đối chiếu &rarr;</button>
+                <button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Nguồn báo chí (81)</button>
+                <button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Toàn bộ nguồn (26.743)</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Visual 2: Interactive Annotated 24-Day Trend Chart (Khi nào?) -->
+      <!-- CÂU HỎI 2: DIỄN BIẾN — Xu hướng tăng/giảm vào ngày nào, gắn với sự kiện gì? -->
+      <div class="ed-section" id="homeSecTrend">
+        <div class="ed-section-hdr">
+          <div>
+            <div class="ed-kicker">02 · DIỄN BIẾN — XU HƯỚNG TĂNG/GIẢM VÀO NGÀY NÀO, GẮN VỚI SỰ KIỆN GÌ?</div>
+            <h2 class="ed-headline">Biểu đồ diễn biến 24 ngày và các mốc sự kiện trọng điểm (01/10 – 24/10/2026)</h2>
+            <p class="ed-lead">Bấm vào bất kỳ điểm ngày hoặc hộp sự kiện nào trên biểu đồ để mở danh sách bài báo, bài đăng và video của ngày đó.</p>
+          </div>
+        </div>
+
+        <!-- Visual 2: Một biểu đồ đường 24 ngày -->
         <div class="ed-chart-frame">
           <div class="ed-chart-top">
             <div>
-              <div class="ed-chart-title" id="mainTrendChartTitle">XU HƯỚNG THEO NGÀY: MẬT ĐỘ BÀI VIẾT & VIDEO ĐỀ CẬP (01/10 – 24/10/2026 · 24 NGÀY)</div>
-              <div class="ed-chart-sub" id="mainTrendChartSub">Di chuột trên biểu đồ để tra cứu số liệu từng ngày · <strong>Bấm vào bất kỳ ngày nào (01/10–24/10) hoặc hộp sự kiện</strong> để mở danh sách bài viết & video của ngày đó</div>
+              <div class="ed-chart-title" id="mainTrendChartTitle">Xu hướng theo ngày: Mật độ bài viết và video đề cập (01/10 – 24/10/2026)</div>
+              <div class="ed-chart-sub" id="mainTrendChartSub">Di chuột để xem chi tiết từng ngày · Bấm vào điểm ngày hoặc hộp sự kiện để mở hồ sơ nguồn</div>
             </div>
             <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
               <div style="display:inline-flex;gap:4px;" title="Bật / tắt đường biểu diễn của từng ứng viên">
@@ -3189,90 +3363,795 @@ HTML_TEMPLATE_PART2 = r"""
             </div>
           </div>
           <div id="overviewAnnotatedLineChart" style="width:100%;overflow-x:auto;position:relative;"></div>
+          <!-- Giải thích trực tiếp ngay dưới biểu đồ, tối đa 2 câu -->
+          <div class="ed-chart-caption" id="overviewTrendCaption">
+            Mật độ thảo luận tăng vọt vào hai giai đoạn cao điểm: ngày 14–16/10 khi xuất hiện loạt 33 bài đăng đồng loạt của cụm tài khoản "Phấn Đấu" và ngày 19–22/10 khi báo chí đưa tin danh sách 3 ứng viên cùng đề xuất tài trợ 600–1.000 tỷ đồng/năm. Qua cả 24 ngày, TS. Trần Quốc Tuấn duy trì ưu thế ổn định về cả độ phủ lũy tiến (614 so với 481 lượt bài) và điểm tín nhiệm ròng tích lũy (+816 so với +391).
+          </div>
         </div>
       </div>
 
-      <!-- ================================================================= -->
-      <!-- SECTION 1B: BÁO CÁO ĐỐI SOÁT 3 NỀN TẢNG × 3 CHIỀU (BẢN 2410 toàn diện)  -->
-      <!-- ================================================================= -->
-      <div class="ed-section" id="sec2410DeepDive">
+      <!-- CÂU HỎI 3: ĐIỂM NÓNG — Chủ đề nào đang tạo lợi thế hoặc rủi ro? -->
+      <div class="ed-section" id="homeSecHotspots">
         <div class="ed-section-hdr">
           <div>
-            <div class="ed-kicker">01B · PHÂN TÍCH ĐỐI SOÁT BA NỀN TẢNG THEO BA CHIỀU QUAN ĐIỂM</div>
-            <h2 class="ed-headline">Đối soát hai phạm vi dữ liệu, hồ sơ 8 nhân vật được đề cập, tương quan bài đăng với bình luận và cấu trúc 57 tổ chức thành viên VFF</h2>
-            <p class="ed-lead">Tổng hợp đầy đủ số liệu phân tích đa chiều trên ba nền tảng mạng xã hội và báo chí. Chọn từng chuyên đề bên dưới để tra cứu chi tiết.</p>
-          </div>
-          <div class="ed-mode-switch" id="deepDive2410Tabs">
-            <button class="ed-mode-btn active" onclick="switch2410SubPanel('p2410_ssot', this)">1. Đối soát hai phạm vi dữ liệu</button>
-            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_8cand', this)">2. Hồ sơ 8 ứng viên và nhân sự</button>
-            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_div', this)">3. Độ lệch bài đăng – bình luận</button>
-            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_57vff', this)">4. Cấu trúc 57 tổ chức thành viên</button>
-            <button class="ed-mode-btn" onclick="switch2410SubPanel('p2410_factcheck', this)">5. Kiểm định nguồn và sàng lọc dữ liệu</button>
+            <div class="ed-kicker">03 · ĐIỂM NÓNG — CHỦ ĐỀ NÀO ĐANG TẠO LỢI THẾ HOẶC RỦI RO?</div>
+            <h2 class="ed-headline">Ma trận 6 chủ đề định hình thái độ công chúng</h2>
+            <p class="ed-lead">Màu <span style="color:#1B4F9C;font-weight:700;">xanh navy</span> thể hiện lợi thế đồng thuận, màu <span style="color:#4A5260;font-weight:700;">xám</span> thể hiện xu hướng trung lập/chia vai, màu <span style="color:#B8292F;font-weight:700;">đỏ</span> thể hiện rủi ro phản đối.</p>
           </div>
         </div>
 
-        <!-- SUB-PANEL 1: SSOT toàn diện vs trọng tâm & 6 LABELS sáu nhóm quan điểm -->
-        <div id="p2410_ssot" class="p2410-pane">
+        <!-- Visual 3: Một heatmap 6 chủ đề -->
+        <div class="panel" style="margin-bottom:0;">
+          <div class="table-wrap" style="border-radius:0;border:none;">
+            <table class="ed-heatmap-table">
+              <thead>
+                <tr>
+                  <th style="width:23%;">Chủ đề tranh luận cốt lõi</th>
+                  <th style="width:11%;">Quy mô mẫu (n)</th>
+                  <th style="width:20%;">TS. Trần Quốc Tuấn (chiều tác động &amp; mẫu)</th>
+                  <th style="width:20%;">Ông Nguyễn Đức Thụy (chiều tác động &amp; mẫu)</th>
+                  <th style="width:14%;">Tỷ lệ toàn mẫu (+ / 0 / -)</th>
+                  <th style="width:12%;text-align:center;">Kiểm chứng nguồn</th>
+                </tr>
+              </thead>
+              <tbody id="exitPollContainer"></tbody>
+            </table>
+          </div>
+          <!-- Giải thích trực tiếp ngay dưới biểu đồ, tối đa 2 câu -->
+          <div class="ed-chart-caption" style="margin:12px;">
+            TS. Trần Quốc Tuấn nắm lợi thế rõ rệt ở chủ đề vị thế đối ngoại AFC/FIFA (+84,2% tán thành) và thành tích 7 đội tuyển quốc gia dự VCK châu Á (+81,5%). Ngược lại, Ông Nguyễn Đức Thụy thu hút kỳ vọng ở đề xuất tài trợ 600–1.000 tỷ đồng/năm (+62,4%) nhưng chịu rủi ro phản đối gay gắt ở chủ đề tiền lệ bỏ giải Sài Gòn Xuân Thành 2013 (-77,5%) và hiệu ứng ngược từ 33 bài đăng đồng loạt (-57,6%).
+          </div>
+        </div>
+      </div>
+
+      <!-- CÂU HỎI 4: KIỂM CHỨNG & KÊNH ĐÁNG CHÚ Ý — Dữ liệu gồm gì, giới hạn gì, mở nguồn ở đâu? -->
+      <div class="ed-section" id="homeSecTopChannelsAndVerify" style="margin-bottom:10px;">
+        <div class="ed-section-hdr">
+          <div>
+            <div class="ed-kicker">04 · KIỂM CHỨNG &amp; KÊNH ĐÁNG CHÚ Ý — DỮ LIỆU GỒM GÌ, GIỚI HẠN GÌ, MỞ NGUỒN Ở ĐÂU?</div>
+            <h2 class="ed-headline">Top 10 kênh đáng chú ý nhất và giới hạn kiểm chứng dữ liệu</h2>
+            <p class="ed-lead">Hiển thị 10 cụm kênh có quy mô thảo luận lớn nhất trên trang chủ; bấm <strong>Xem hồ sơ</strong> để kiểm tra từng bài viết và bình luận gốc, hoặc mở toàn bộ 36 cụm kênh tại mục Kênh &amp; truyền thông.</p>
+          </div>
+          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
+            <div class="ed-mode-switch" id="overviewChPlatFilter">
+              <button class="ed-mode-btn active" onclick="filterOverviewChannels('ALL', this)">Top 10 toàn mạng</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('1. Facebook', this)">Facebook</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('2. YouTube', this)">YouTube</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('3. TikTok', this)">TikTok</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('4. Báo Chính Thống', this)">Báo chí</button>
+            </div>
+            <input type="text" id="overviewChSearch" class="input-ctrl" style="border-radius:3px;padding:5px 10px;font-size:11.8px;min-width:180px;" placeholder="Tìm nhanh kênh..." oninput="renderElectoralCartogram()" />
+            <select id="overviewChSort" class="select-ctrl" style="border-radius:3px;padding:5px 10px;font-size:11.8px;" onchange="renderElectoralCartogram()">
+              <option value="vol_desc">Sắp xếp: Quy mô bình luận giảm dần</option>
+              <option value="reversal">Sắp xếp: Ưu tiên kênh bình luận trái chiều</option>
+              <option value="default">Sắp xếp: Thứ tự nền tảng</option>
+            </select>
+            <button type="button" class="btn btn-outline" style="padding:5px 10px;font-size:11.8px;" onclick="switchMediaHubSub('matrix')">Xem toàn bộ 36 cụm kênh &rarr;</button>
+          </div>
+        </div>
+
+        <!-- Visual 4: Một bảng Top 10 kênh đáng chú ý -->
+        <div class="panel" style="margin-bottom:16px;">
+          <div class="table-wrap" style="border-radius:0;border:none;">
+            <table class="wr-table" style="font-size:12.5px;">
+              <thead>
+                <tr>
+                  <th style="width:5%;text-align:center;">Hạng</th>
+                  <th style="width:24%;">Tên kênh / cụm nguồn &amp; nền tảng</th>
+                  <th style="width:16%;">Quy mô thảo luận (n)</th>
+                  <th style="width:16%;">Định hướng bài đăng</th>
+                  <th style="width:20%;">Tỷ lệ bình luận (TS. Tuấn | Khác | Ông Thụy)</th>
+                  <th style="width:10%;">Phân loại nguồn</th>
+                  <th style="width:9%;text-align:center;">Kiểm chứng</th>
+                </tr>
+              </thead>
+              <tbody id="electoralCartogramGrid"></tbody>
+            </table>
+          </div>
+          <!-- Giải thích trực tiếp ngay dưới bảng, tối đa 2 câu -->
+          <div class="ed-chart-caption" style="margin:12px;">
+            Các cộng đồng bóng đá lớn trên Facebook (Troll Bóng Đá, Ghiền Bóng Đá, Cổng thông tin VFF) và khối báo chí chính thống ghi nhận tỷ lệ bình luận nghiêng rõ về TS. Trần Quốc Tuấn. Trong khi đó, các cụm tài khoản đăng bài đồng loạt ("Phấn Đấu", "Bóng Đá 24h") dù tạo lượng bài đăng lớn cho Ông Nguyễn Đức Thụy nhưng lại gặp tỷ lệ bình luận phản biện ngược từ 56% đến 62%.
+          </div>
+        </div>
+
+        <!-- Khung Kiểm chứng & Giới hạn dữ liệu (Trả lời câu hỏi KIỂM CHỨNG ngay trên trang đầu) -->
+        <div class="grid-3" style="margin-bottom:0;">
+          <div class="panel" style="margin-bottom:0;padding:14px 16px;border-top:3px solid #1B2432;">
+            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:4px;">1. Giới hạn suy luận bắt buộc</div>
+            <div style="font-size:13.5px;font-weight:800;color:var(--text-main);margin-bottom:6px;">Dư luận công khai ≠ Phiếu bầu Đại biểu VFF</div>
+            <p style="font-size:12.2px;color:var(--text-secondary);line-height:1.5;margin-bottom:8px;">
+              Chủ tịch VFF được bầu bằng phiếu kín của <strong>57 tổ chức thành viên VFF</strong> tại Đại hội. Toàn bộ 20.767 bình luận mạng xã hội chỉ phản ánh thái độ công chúng, không có giá trị phiếu bầu pháp lý.
+            </p>
+            <button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-delegates')">Mở mục 04 · Đại biểu chính thức (57 đơn vị) &rarr;</button>
+          </div>
+
+          <div class="panel" style="margin-bottom:0;padding:14px 16px;border-top:3px solid var(--tuan-blue);">
+            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:4px;">2. Cấu trúc &amp; độ sạch của dữ liệu</div>
+            <div style="font-size:13.5px;font-weight:800;color:var(--text-main);margin-bottom:6px;">81 bài báo · 1.137 bài/video · 20.767 bình luận</div>
+            <p style="font-size:12.2px;color:var(--text-secondary);line-height:1.5;margin-bottom:8px;">
+              Đã tách riêng 1.115 bình luận mẫu lặp lại (5,37%) khỏi 19.652 bình luận tự nhiên (94,63%), gắn nhãn lưu ý 34 bài trùng tên/ngoài chủ đề và ẩn danh 100% tài khoản cá nhân Facebook.
+            </p>
+            <button type="button" class="fc-mini-btn primary-link" onclick="switchMediaHubSub('comments')">Xem 20.767 bình luận công khai &rarr;</button>
+          </div>
+
+          <div class="panel" style="margin-bottom:0;padding:14px 16px;border-top:3px solid var(--thuy-red);">
+            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:4px;">3. Truy xuất nguồn ở đâu?</div>
+            <div style="font-size:13.5px;font-weight:800;color:var(--text-main);margin-bottom:6px;">26.743 bản ghi · 29.696 đường dẫn nguồn</div>
+            <p style="font-size:12.2px;color:var(--text-secondary);line-height:1.5;margin-bottom:8px;">
+              Mọi nhận định và con số đều gắn với hồ sơ nguồn gốc (bài báo, bài đăng, mốc giây video, bình luận). Bấm <strong>Xem hồ sơ</strong> ở từng dòng hoặc tra cứu toàn bộ sổ cái để kiểm chứng độc lập.
+            </p>
+            <button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-sources-ledger')">Mở mục 05 · Nguồn &amp; phương pháp &rarr;</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MỤC 02: DIỄN BIẾN DƯ LUẬN (1 VISUAL LỚN MỖI VÙNG + BẢNG 24 NGÀY)     -->
+    <!-- =================================================================== -->
+    <section id="tab-timeline" class="tab-pane">
+      <div class="ed-section-hdr">
+        <div>
+          <div class="ed-kicker">02 · DIỄN BIẾN DƯ LUẬN THEO THỜI GIAN (01/10 – 24/10/2026)</div>
+          <h2 class="ed-headline">Phân tích xu hướng hàng ngày, độ phủ lũy tiến và điểm tín nhiệm ròng qua 5 giai đoạn</h2>
+          <p class="ed-lead">Chọn giai đoạn thời gian hoặc chuyển đổi giữa 4 góc nhìn biểu đồ dưới đây. Bấm vào bất kỳ ngày nào trên biểu đồ hoặc bảng số liệu để mở danh sách bài viết và video gốc của ngày đó.</p>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <div class="filter-group">
+          <strong style="font-size:12.5px;">Chọn giai đoạn diễn biến:</strong>
+          <button class="pill-btn active" onclick="filterTimelineWave('ALL', this)">Toàn kỳ 24 ngày (01–24/10)</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 1', this)">GĐ 1 (01–12/10): Thành tích 7 ĐTQG</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 2', this)">GĐ 2 (13–16/10): Tin đồn &amp; bài đăng đồng loạt</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 3', this)">GĐ 3 (17–18/10): Tranh luận mô hình quản trị</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 4', this)">GĐ 4 (19–20/10): Đề cử 3 ứng viên VFF</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 5', this)">GĐ 5 (21–24/10): Đề xuất 1.000 tỷ &amp; Liên danh</button>
+        </div>
+      </div>
+
+      <!-- Một visual lớn duy nhất cho vùng biểu đồ (chuyển đổi 4 góc nhìn) -->
+      <div class="ed-chart-frame" style="margin-bottom:18px;">
+        <div class="ed-chart-top">
+          <div>
+            <div class="ed-chart-title" id="timelineSingleChartTitle">Góc nhìn A: Mật độ bài viết và video theo từng ngày (01/10 – 24/10/2026)</div>
+            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (614), Ông Nguyễn Đức Thụy (481) và Ông Nguyễn Xuân Vũ (125)</div>
+          </div>
+          <div class="ed-mode-switch" id="timelineChartModeBar">
+            <button class="ed-mode-btn active" onclick="switchTimelineChartView('daily', this)">1. Mật độ theo ngày</button>
+            <button class="ed-mode-btn" onclick="switchTimelineChartView('cum', this)">2. Độ phủ lũy tiến</button>
+            <button class="ed-mode-btn" onclick="switchTimelineChartView('net', this)">3. Điểm tín nhiệm ròng</button>
+            <button class="ed-mode-btn" onclick="switchTimelineChartView('butterfly', this)">4. Cán cân Ủng hộ / Phản đối</button>
+          </div>
+        </div>
+
+        <div id="timelinePaneDaily" class="tl-single-chart-pane">
+          <div id="chartDailyPosts"></div>
+        </div>
+        <div id="timelinePaneCum" class="tl-single-chart-pane" style="display:none;">
+          <div id="chartCumPosts"></div>
+        </div>
+        <div id="timelinePaneNet" class="tl-single-chart-pane" style="display:none;">
+          <div id="chartCumNet"></div>
+        </div>
+        <div id="timelinePaneButterfly" class="tl-single-chart-pane" style="display:none;">
+          <div id="chartButterfly"></div>
+        </div>
+
+        <!-- Giải thích trực tiếp ngay dưới biểu đồ, tối đa 2 câu -->
+        <div class="ed-chart-caption" id="timelineSingleChartCaption">
+          Lượng bài đăng tăng đột biến vào ngày 15/10 (do 33 bài đăng đồng loạt của cụm "Phấn Đấu") và giai đoạn 19–22/10 (khi thông tin đề cử và gói tài trợ 600–1.000 tỷ đồng/năm xuất hiện). Tuy nhiên, khi đối chiếu sang góc nhìn Điểm tín nhiệm ròng và Cán cân Ủng hộ/Phản đối, TS. Trần Quốc Tuấn duy trì khoảng cách dẫn trước ổn định (+816 so với +391) nhờ tỷ lệ phản đối rất thấp.
+        </div>
+      </div>
+
+      <!-- Bảng số liệu lũy tiến 24 ngày -->
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">Bảng đối soát diễn biến từng ngày (01/10 – 24/10/2026 · 24 ngày)</div>
+            <div class="panel-sub">Bấm vào bất kỳ dòng ngày nào để mở danh sách bài báo, bài đăng Facebook, video và bình luận phát sinh trong ngày đó</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>Ngày</th>
+                <th>Giai đoạn &amp; sự kiện chính</th>
+                <th>Bài TS. Tuấn</th>
+                <th>Lũy tiến TS. Tuấn</th>
+                <th>Bài Ông Thụy</th>
+                <th>Lũy tiến Ông Thụy</th>
+                <th>Bài Ông Xuân Vũ</th>
+                <th>Lũy tiến Ông Xuân Vũ</th>
+                <th>Ủng hộ TS. Tuấn (+)</th>
+                <th>Phản đối TS. Tuấn (-)</th>
+                <th>Ròng lũy tiến TS. Tuấn</th>
+                <th>Ủng hộ Ông Thụy (+)</th>
+                <th>Phản đối Ông Thụy (-)</th>
+                <th>Ròng lũy tiến Ông Thụy</th>
+                <th>Kiểm chứng</th>
+              </tr>
+            </thead>
+            <tbody id="timelineTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MỤC 03: KÊNH & TRUYỀN THÔNG (BÁO CHÍ, FB, YT, TIKTOK, BÌNH LUẬN)     -->
+    <!-- =================================================================== -->
+    <section id="tab-media-hub" class="tab-pane">
+      <div class="ed-section-hdr">
+        <div>
+          <div class="ed-kicker">03 · KÊNH &amp; TRUYỀN THÔNG ĐA NỀN TẢNG</div>
+          <h2 class="ed-headline">Phân tích 36 cụm kênh trọng điểm, báo chí chính thống, mạng xã hội và 20.767 bình luận</h2>
+          <p class="ed-lead">Các nguồn dữ liệu Báo chí, Facebook, YouTube, TikTok và Bình luận được tích hợp trong cùng một không gian tra cứu. Chọn bộ lọc kênh bên dưới để đi sâu vào từng nhóm nguồn.</p>
+        </div>
+      </div>
+
+      <!-- Thanh bộ lọc / tab phụ bên trong Kênh & truyền thông -->
+      <div class="sub-nav-bar" id="mediaHubSubNav">
+        <span class="sub-nav-lbl">Chọn nhóm nguồn:</span>
+        <button type="button" class="sub-nav-btn active" data-media-sub="matrix" onclick="switchMediaHubSub('matrix', this)">Tổng hợp 36 cụm kênh &amp; 6 khía cạnh</button>
+        <button type="button" class="sub-nav-btn" data-media-sub="press" onclick="switchMediaHubSub('press', this)">Báo chí chính thống (81 bài)</button>
+        <button type="button" class="sub-nav-btn" data-media-sub="fb-posts" onclick="switchMediaHubSub('fb-posts', this)">Bài đăng Facebook (706 bài)</button>
+        <button type="button" class="sub-nav-btn" data-media-sub="fb-channels" onclick="switchMediaHubSub('fb-channels', this)">Danh bạ kênh (881 kênh)</button>
+        <button type="button" class="sub-nav-btn" data-media-sub="yt-video" onclick="switchMediaHubSub('yt-video', this)">YouTube (354 video)</button>
+        <button type="button" class="sub-nav-btn" data-media-sub="tt-video" onclick="switchMediaHubSub('tt-video', this)">TikTok (268 video)</button>
+        <button type="button" class="sub-nav-btn" data-media-sub="comments" onclick="switchMediaHubSub('comments', this)">Bình luận công khai (20.767)</button>
+      </div>
+
+      <!-- Sub-container 3.1: 36 Channel Clusters & 6 Governance Aspects -->
+      <div id="tab-matrix" class="media-hub-pane">
+        <div class="filter-bar">
+        <div class="filter-group">
+          <strong style="font-size:12.5px;">Lọc nhóm kênh:</strong>
+          <button class="pill-btn active" onclick="filterMatrixPlatform('ALL', this)">Tất cả 36 Cụm Kênh</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('1. Facebook', this)">1. Facebook (12 Cụm lớn)</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('2. YouTube', this)">2. YouTube (8 Cụm lớn)</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('3. TikTok', this)">3. TikTok (4 Cụm lớn)</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('4. Báo Chính Thống', this)">4. Báo Chính Thống (12 Cụm)</button>
+        </div>
+        <div class="filter-group">
+          <input type="text" id="matrixSearchInput" class="input-ctrl" placeholder="Tìm tên kênh, lập trường, kết luận..." oninput="renderMatrixTable()" />
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">MA TRẬN ĐẢO CHIỀU ĐA NỀN TẢNG: ĐỊNH HƯỚNG BÀI ĐĂNG so với TÍN HIỆU BÌNH LUẬN (<span id="matrixCountBadge">36</span> cụm kênh)</div>
+            <div class="panel-sub">Hiển thị đầy đủ Tổng số bài đăng, Tổng số bình luận, Phân bổ kịch bản tín hiệu lập trường bên dưới từng kênh và Link truy cập trực tiếp</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>Nhóm kênh</th>
+                <th>Tên kênh / trang / hội nhóm cụ thể</th>
+                <th>Định hướng bài đăng</th>
+                <th>Tổng số bài / video</th>
+                <th>Tổng bình luận & tương tác</th>
+                <th>Phân bổ kịch bản tín hiệu bình luận bên dưới</th>
+                <th>Kết luận phân tích tương quan bài đăng so với bình luận</th>
+                <th>Link kênh</th>
+              </tr>
+            </thead>
+            <tbody id="matrixTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Anti-đăng tải đồng loạt & phân tích theo khía cạnh Matrix -->
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title"><svg class="ico-svg" style="color:#b45309;" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> PHÂN TÍCH HIỆU ỨNG BÀI ĐĂNG HÀNG LOẠT VÀ MA TRẬN SÁU KHÍA CẠNH QUẢN TRỊ</div>
+            <div class="panel-sub">Phân tích cơ chế đăng bài đồng loạt của cụm 'Phấn Đấu' (33 bài), 'Bóng Đá 24h' (18 bài), 'iThethao TV' và 6 khía cạnh quản trị cốt lõi</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Nhóm phân tích / khía cạnh quản trị</th>
+                <th>Kênh / cụm phát tán hoặc trọng tâm</th>
+                <th>Quy mô bài & bình luận</th>
+                <th>Tích cực (+)</th>
+                <th>Trung lập (0)</th>
+                <th>Phản đối / cảnh báo (-)</th>
+                <th>Phân tích chuyên sâu phản ứng của độc giả thực</th>
+                <th>Link bằng chứng</th>
+              </tr>
+            </thead>
+            <tbody id="absaTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+
+      <!-- Sub-container 3.2: Press (81) & Facebook (881 channels / 706 posts) -->
+      <div id="tab-press-fb" class="media-hub-pane" style="display:none;">
+        <div class="filter-bar">
+        <div class="filter-group">
+          <strong style="font-size:12.5px;">Chọn Sổ Cái Dữ Liệu:</strong>
+          <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo chính thống (81 bài)</button>
+          <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh bạ 881 kênh truyền thông (Ba nền tảng)</button>
+          <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Danh mục 706 bài viết Facebook xác thực</button>
+        </div>
+        <div class="filter-group">
+          <input type="text" id="pressFbSearch" class="input-ctrl" style="min-width:260px;" placeholder="Lọc theo tên báo, fanpage, tiêu đề, lập trường..." oninput="renderPressFbSub()" />
+        </div>
+      </div>
+
+      <!-- Sub-panel 4A: 81 Press Articles -->
+      <div class="panel" id="panelPress78">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">DANH MỤC 81 BÀI BÁO CHÍNH THỐNG & TRANG TIN ĐIỆN TỬ (<span id="press78Count">81</span> bài · 78 bài gốc + 3 bài mới 24/10 [CAND, SGGP, Tiền Phong])</div>
+            <div class="panel-sub">38 bài ủng hộ TS. Trần Quốc Tuấn (46,9%) • 24 bài đưa tin đề cử & cam kết 1.000 tỷ của Ông Nguyễn Đức Thụy (29,6%) • 18 bài trung lập/quy chế (22,2%) • 1 bài phản biện (1,2%)</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Ngày đăng</th>
+                <th>Cơ quan báo chí</th>
+                <th>Phân nhóm</th>
+                <th>Tiêu đề bài báo chính thống</th>
+                <th>Ứng viên trọng tâm</th>
+                <th>Định hướng / lập trường</th>
+                <th>Tóm tắt luận điểm cốt lõi</th>
+                <th>Link bài báo</th>
+              </tr>
+            </thead>
+            <tbody id="press78Body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sub-panel 4B: 881 Channels -->
+      <div class="panel" id="panelFb378" style="display:none;">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">DANH BẠ ĐỐI SOÁT 881 HỒ SƠ KÊNH ĐA NỀN TẢNG (<span id="fb378Count">881</span> kênh · Bao trọn 805/805 kênh toàn diện [512 kênh có bài + 293 kênh rà quét] + 378 kênh FB danh bạ)</div>
+            <div class="panel-sub">362 kênh danh bạ chính Tháng 10 + 16 kênh bổ sung ngày 22/10 + đầy đủ 805 kênh toàn diện trên 3 nền tảng (Facebook, YouTube, TikTok)</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên kênh / fanpage / hội nhóm</th>
+                <th>Bài yêu cầu</th>
+                <th>Bài khớp URL</th>
+                <th>Tổng bình luận</th>
+                <th>Tổng cảm xúc</th>
+                <th>Trạng thái đối soát dữ liệu</th>
+                <th>Link kênh &amp; bài mẫu</th>
+              </tr>
+            </thead>
+            <tbody id="fb378Body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sub-panel 4C: 706 Verified Facebook Posts -->
+      <div class="panel" id="panelFb665" style="display:none;">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">SỔ CÁI 706 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 334+ TRANG HOẠT ĐỘNG (<span id="fb665Count">706</span> bài · Đủ 568/568 bài FB toàn diện · 214.068 lượt thích · 15.355 BL)</div>
+            <div class="panel-sub">Bao trọn 100% (568/568) bài Facebook trong Bộ dữ liệu toàn diện + sổ cái mốc 22/10 (665 bài) & link đối chiếu bổ sung</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã hồ sơ</th>
+                <th>Tên kênh / fanpage / hội nhóm</th>
+                <th>Thời gian đăng</th>
+                <th>Thống kê tương tác</th>
+                <th>Định hướng bài đăng</th>
+                <th>Nội dung bài đăng & bình luận đi kèm</th>
+                <th>Link chi tiết & kiểm chứng</th>
+              </tr>
+            </thead>
+            <tbody id="fb665Body"></tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+
+      <!-- Sub-container 3.3: YouTube (354) & TikTok (268) Videos -->
+      <div id="tab-video" class="media-hub-pane" style="display:none;">
+        <div class="filter-bar">
+        <div class="filter-group">
+          <strong style="font-size:12.5px;">Chọn Nền Tảng Video:</strong>
+          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · Video YouTube đã kiểm định (354 video · 13,96 triệu lượt xem · Có văn bản gỡ băng)</button>
+          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · Video TikTok đã kiểm định (268 video · 22,91 triệu lượt xem · Có văn bản gỡ băng)</button>
+        </div>
+        <div class="filter-group">
+          <input type="text" id="videoSearchInput" class="input-ctrl" style="min-width:260px;" placeholder="Tìm tiêu đề video, kênh, nội dung lời thoại bóc băng..." oninput="renderVideoSub()" />
+        </div>
+      </div>
+
+      <!-- Sub-panel 5A: 354 YouTube Videos -->
+      <div class="panel" id="panelYt169">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">SỔ CÁI KIỂM ĐỊNH 354 VIDEO YOUTUBE (<span id="yt169Count">354</span> video · Bộ dữ liệu toàn diện: 310 video · 13.964.171 lượt xem · 3.670 bình luận · Đủ Link Mốc giây ?t=XXs)</div>
+            <div class="panel-sub">Bao trọn 100% (310/310) video YouTube trong Bộ dữ liệu toàn diện + sổ cái 22/10 • 100% URL hoạt động • Bấm "Xem Kịch Bản" để đọc lời thoại bóc băng âm thanh</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Tên kênh YouTube</th>
+                <th>Ngày đăng</th>
+                <th>Tiêu đề video YouTube</th>
+                <th>Lượt xem</th>
+                <th>Bình luận tải</th>
+                <th>Hạng khớp</th>
+                <th>Câu thoại</th>
+                <th>Trích đoạn kịch bản bóc băng âm thanh</th>
+                <th>Thao tác / link</th>
+              </tr>
+            </thead>
+            <tbody id="yt169Body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sub-panel 5B: 268 TikTok Videos -->
+      <div class="panel" id="panelTt68" style="display:none;">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">SỔ CÁI 268 VIDEO TIKTOK &amp; KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">268</span> video · Bộ dữ liệu toàn diện: 259 video · 22.914.170 lượt xem · 249.962 lượt thích · 1.742 BL)</div>
+            <div class="panel-sub">Bao trọn 100% (259/259) video TikTok trong Bộ dữ liệu toàn diện + 62 video bóc băng toàn văn & sổ cái bổ sung</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>Mã TT</th>
+                <th>Ngày đăng</th>
+                <th>Tên kênh (@handle)</th>
+                <th>Giai đoạn</th>
+                <th>Tiêu đề / mô tả video TikTok</th>
+                <th>Lượt xem</th>
+                <th>Lượt thích</th>
+                <th>Bình luận</th>
+                <th>Dòng thoại</th>
+                <th>Trích đoạn kịch bản bóc băng âm thanh</th>
+                <th>Thao tác / link</th>
+              </tr>
+            </thead>
+            <tbody id="tt68Body"></tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+
+      <!-- Sub-container 3.4: Public Comments (1,888 FB + 1,457 YT/TT + 20,767 All) -->
+      <div id="tab-comments" class="media-hub-pane" style="display:none;">
+        <div class="filter-bar">
+        <div class="filter-group" style="flex-wrap:wrap;">
+          <strong style="font-size:12.5px;">Chọn Nguồn Bình Luận:</strong>
+          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.888 BL Ẩn Danh · Đủ 1.771 bình luận bày tỏ quan điểm nhân sự toàn diện)</button>
+          <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube &amp; TikTok (1.457 BL · Đủ 1.145 bình luận bày tỏ quan điểm nhân sự toàn diện)</button>
+          <button class="pill-btn" id="subBtnCmtAll20767" onclick="switchCommentSub('all20767')">03 · Toàn bộ 20.767 bình luận và liên kết gốc trên ba nền tảng</button>
+        </div>
+        <div class="filter-group">
+          <select id="cmtStanceSelect" class="select-ctrl" onchange="renderCommentSub()">
+            <option value="ALL">— Tất cả Kịch bản / Lập trường —</option>
+            <option value="Tuấn">(Ủng hộ TS. Tuấn) Ủng hộ / Chọn TS. Trần Quốc Tuấn</option>
+            <option value="Thụy">(Ủng hộ Ông Thụy) Ủng hộ / Chọn Ông Nguyễn Đức Thụy (Bầu Thụy)</option>
+            <option value="Liên danh">(Phương án Liên danh) Đề xuất Liên danh / Chia vai (TS. Tuấn CT + Ông Thụy PCT TC)</option>
+            <option value="Bầu Đức">(Ứng viên khác) Ủng hộ Ứng viên khác (Bầu Đức / Phạm Nhật Vượng / Nguyễn Xuân Vũ...)</option>
+            <option value="Phản đối">(Phản biện) Phản đối / Hoài nghi / Cảnh báo rủi ro</option>
+            <option value="Trung lập">Đưa tin trung lập và phân tích thể chế (17.851 bình luận)</option>
+          </select>
+          <input type="text" id="cmtSearchInput" class="input-ctrl" style="min-width:240px;" placeholder="Tìm nội dung bình luận, tác giả, kênh, URL..." oninput="renderCommentSub()" />
+        </div>
+      </div>
+
+      <!-- Sub-panel 6A: 1888 FB Election Comments -->
+      <div class="panel" id="panelCmtFb887">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">SỔ CÁI 1.888 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.888</span> bình luận · Bao trọn 1.771/1.771 bình luận bày tỏ quan điểm nhân sự FB toàn diện · Đã ẩn danh tài khoản cá nhân)</div>
+            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận bày tỏ quan điểm nhân sự trên Facebook từ kho 15.355 BL FB toàn diện + sổ cái 22/10 • Hiển thị song song cả Link Bình luận trực tiếp &amp; Link Bài đăng gốc • 0 link cá nhân</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã bài</th>
+                <th>Tên kênh / fanpage Facebook</th>
+                <th>Tài khoản bình luận</th>
+                <th>Nội dung bình luận nguyên văn</th>
+                <th>Nhãn lập trường bầu cử</th>
+                <th>Số từ</th>
+                <th>Thời gian</th>
+                <th>Link bình luận &amp; bài gốc</th>
+              </tr>
+            </thead>
+            <tbody id="cmtFb887Body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sub-panel 6B: 1457 YT/TT Coded Election Comments -->
+      <div class="panel" id="panelCmtYt604" style="display:none;">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">SỔ CÁI 1.457 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE &amp; TIKTOK (<span id="cmtYtCount">1.457</span> bình luận · Bao trọn 1.145/1.145 bình luận bày tỏ quan điểm nhân sự YT/TT toàn diện)</div>
+            <div class="panel-sub">Bao trọn 100% (1.145/1.145) bình luận bày tỏ quan điểm nhân sự trên YouTube (744) &amp; TikTok (401) kèm đủ 3 liên kết: Link Bình luận trực tiếp · Link Video Gốc · Link Kênh người bình luận</div>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã BL</th>
+                <th>Nền tảng</th>
+                <th>Tiêu đề video nguồn</th>
+                <th>Ngày</th>
+                <th>Nội dung bình luận nguyên văn</th>
+                <th>Lượt thích</th>
+                <th>Nhãn lập trường tiếng việt</th>
+                <th>Link bình luận, video gốc &amp; kênh BL</th>
+              </tr>
+            </thead>
+            <tbody id="cmtYt604Body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Sub-panel 6C: ALL 20,767 Comments & Permalinks across 3 Platforms (Cơ sở dữ liệu bình luận & BAO_CAO_RAW) -->
+      <div class="panel" id="panelCmtAll20767" style="display:none;">
+        <div class="panel-header" style="flex-wrap:wrap;gap:10px;">
+          <div>
+            <div class="panel-title">DANH MỤC TOÀN BỘ 20.767 BÌNH LUẬN VÀ LIÊN KẾT GỐC TRÊN BA NỀN TẢNG (<span id="cmtAll20767Count">20.767</span> bình luận khớp)</div>
+            <div class="panel-sub">Tổng hợp đầy đủ từ cơ sở dữ liệu bình luận ba nền tảng: <strong>2.916 bình luận bày tỏ quan điểm nhân sự</strong> và <strong>17.851 bình luận dưới các bài đưa tin trung lập</strong> (15.355 Facebook · 3.670 YouTube · 1.742 TikTok) kèm liên kết trực tiếp đến từng bình luận và bài đăng gốc</div>
+          </div>
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
+            <select id="cmtAllPlatSelect" class="select-ctrl" onchange="cmtAllPage=1;renderCommentSub()">
+              <option value="ALL">Tất cả 3 nền tảng (20.767 BL)</option>
+              <option value="Facebook">Facebook (15.355 BL · Đã ẩn danh TK)</option>
+              <option value="YouTube">YouTube (3.670 BL · Đủ Link BL &amp; Kênh)</option>
+              <option value="TikTok">TikTok (1.742 BL · Đủ Link BL &amp; Kênh)</option>
+            </select>
+            <select id="cmtAllPageSize" class="select-ctrl" onchange="cmtAllPage=1;renderCommentSub()">
+              <option value="200">200 BL / trang</option>
+              <option value="500">500 BL / trang</option>
+              <option value="2000">2.000 BL / trang</option>
+              <option value="25000">Toàn bộ (Tất cả 20.767 BL)</option>
+            </select>
+            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeCmtAllPage(-1)">&larr; Trang trước</button>
+            <span id="cmtAllPageIndicator" style="font-size:11.8px;font-weight:800;padding:0 6px;">Trang 1 / 1</span>
+            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeCmtAllPage(1)">Trang sau &rarr;</button>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:660px;overflow-y:auto;">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th>STT</th>
+                <th>Mã bài</th>
+                <th>Nền tảng &amp; kênh nguồn</th>
+                <th>Tài khoản bình luận</th>
+                <th>Thời gian</th>
+                <th>Nội dung bình luận nguyên văn</th>
+                <th>Lượt thích</th>
+                <th>Nhãn lập trường (sáu nhóm quan điểm)</th>
+                <th>Link bình luận &amp; bài gốc</th>
+              </tr>
+            </thead>
+            <tbody id="cmtAll20767Body"></tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MỤC 04: ĐẠI BIỂU CHÍNH THỨC & KỊCH BẢN ĐẠI HỘI (57 TỔ CHỨC VFF)      -->
+    <!-- =================================================================== -->
+    <section id="tab-delegates" class="tab-pane">
+      <div class="ed-section-hdr">
+        <div>
+          <div class="ed-kicker">04 · ĐẠI BIỂU CHÍNH THỨC &amp; PHÂN TÍCH CẤU TRÚC ĐẠI HỘI VFF KHÓA X</div>
+          <h2 class="ed-headline">Theo dõi 57 tổ chức thành viên VFF, hồ sơ 8 nhân sự được đề cập và kịch bản Đại hội</h2>
+          <p class="ed-lead">Tách biệt minh bạch giữa quy trình bầu cử bằng phiếu kín của 57 tổ chức thành viên VFF với tín hiệu dư luận trên báo chí và mạng xã hội.</p>
+        </div>
+      </div>
+
+      <div id="tab-methodology">
+        <!-- PART A: OFFICIAL VFF CONGRESS DELEGATE & NOMINATION TRACKER -->
+      <div class="panel" style="border-top: 4px solid #0f172a;">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">PHẦN A — BẢNG THEO DÕI QUY TRÌNH ĐẠI HỘI &amp; TRẠNG THÁI ĐẠI BIỂU CHÍNH THỨC (57 TỔ CHỨC THÀNH VIÊN VFF)</div>
+            <div class="panel-sub">Phân biệt nghiêm ngặt theo chuẩn kiểm chứng bầu cử quốc tế (Associated Press) giữa: Kết quả kiểm phiếu chính thức • Tuyên bố đề cử trên báo chí • Dư luận mạng xã hội</div>
+          </div>
+          <span class="badge badge-gray" style="font-size:12px;padding:6px 12px;">TRẠNG THÁI KẾT QUẢ CHÍNH THỨC: CHƯA BỎ PHIẾU ĐẠI HỘI</span>
+        </div>
+
+        <div class="grid-3" style="margin-bottom:16px;">
+          <div class="chart-box" style="border-left:4px solid #0f172a;">
+            <div style="font-weight:900;color:var(--text-main);margin-bottom:4px;">1. Nguyên Tắc Công Bố Kết Quả Bầu Cử</div>
+            <p style="font-size:12.3px;color:var(--text-secondary);">
+              Theo quy chuẩn của <a href="https://www.ap.org/elections/our-role-in-the-u-s-elections/how-ap-counts-the-vote/" target="_blank" rel="noopener">AP Vote Count</a> và <a href="https://www.ap.org/elections/our-role-in-the-u-s-elections/how-we-declare-winners/" target="_blank" rel="noopener">AP Race Calls</a>, một cuộc bầu cử chỉ được xác nhận người chiến thắng khi có <strong>biên bản kiểm phiếu thực tế từ Ban Kiểm phiếu Đại hội</strong>. Tuyệt đối không dùng dữ liệu mạng xã hội hoặc thông tin đề cử vòng ngoài để tuyên bố người đắc cử.
+            </p>
+          </div>
+          <div class="chart-box" style="border-left:4px solid #0052cc;">
+            <div style="font-weight:900;color:var(--tuan-blue);margin-bottom:4px;">2. Cơ Chế Biểu Quyết Thực Tế Tại Đại Hội VFF</div>
+            <p style="font-size:12.3px;color:var(--text-secondary);">
+              Chủ tịch VFF được bầu bằng <strong>phiếu kín trực tiếp của các Đại biểu Tổ chức thành viên VFF</strong> có tư cách biểu quyết hợp lệ tại Đại hội (CLB V.League, Hạng Nhất, Hạng Nhì, Hạng Ba, Futsal, Nữ, các LĐBĐ địa phương — tham chiếu mốc <strong>57 tổ chức thành viên</strong>). <strong>20.767 bình luận công khai (trong đó 2.916 bình luận bày tỏ quan điểm nhân sự)</strong> trên MXH có giá trị tham khảo áp lực dư luận, <strong>0% giá trị phiếu bầu pháp lý</strong>.
+            </p>
+          </div>
+          <div class="chart-box" style="border-left:4px solid #d97706;">
+            <div style="font-weight:900;color:var(--gold);margin-bottom:4px;">3. Quy Tắc Phân Hạng Tin Cậy Đại Biểu (4 Mức)</div>
+            <p style="font-size:12.3px;color:var(--text-secondary);">
+              • <strong>Xác minh văn bản VFF:</strong> Văn bản chính thức do VFF/Tiểu ban Nhân sự công bố hoặc phiếu kiểm tại Đại hội.<br/>
+              • <strong>Tuyên bố đề cử trên báo chí:</strong> Con số do báo chí dẫn nguồn tin (chưa công bố danh sách từng CLB).<br/>
+              • <strong>Đánh giá định tính:</strong> Phân tích xu hướng theo nhóm lợi ích thể chế.<br/>
+              • <strong>Lá phiếu kín (Chưa xác định):</strong> Lá phiếu kín tại Đại hội.
+            </p>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="wr-table">
+            <thead>
+              <tr>
+                <th style="white-space:normal;width:16%;">Khối đại biểu / hạng mục theo dõi</th>
+                <th style="white-space:normal;width:10%;text-align:center;">Quy mô tham chiếu</th>
+                <th style="white-space:normal;width:11%;text-align:center;">Xác minh văn bản VFF</th>
+                <th style="white-space:normal;width:20%;">Tuyên bố đề cử trên báo chí (19–25/10)</th>
+                <th style="white-space:normal;width:18%;">Đánh giá định tính theo khối đại biểu</th>
+                <th style="white-space:normal;width:11%;text-align:center;">Trạng thái lá phiếu kín</th>
+                <th style="white-space:normal;width:14%;">Ghi chú kiểm chứng &amp; giới hạn nghiệp vụ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>1. Khối CLB Bóng đá Chuyên nghiệp (14 CLB V.League 1 &amp; 10 CLB Hạng Nhất QG)</strong></td>
+                <td style="text-align:center;font-weight:800;">24 CLB thành viên</td>
+                <td style="text-align:center;"><span class="badge badge-gray">0 phiếu xác minh</span></td>
+                <td>Báo Kinh tế (CafeF, VNBiz, VietnamFinance 19–20/10) đưa tin có nhiều CLB đề cử Ông Nguyễn Đức Thụy &amp; TS. Trần Quốc Tuấn</td>
+                <td>Phân hóa giữa nhóm CLB cần nguồn tài trợ giải đấu (nghiêng Ông Thụy/Liên danh) và nhóm CLB gắn kết hệ thống thi đấu quốc tế/VPF (nghiêng TS. Tuấn)</td>
+                <td style="text-align:center;font-weight:800;color:#0f172a;">100% (Bỏ phiếu kín tại Đại hội)</td>
+                <td>VFF chưa công bố danh sách văn bản đề cử của từng CLB cụ thể tính đến ngày 25/10/2026.</td>
+              </tr>
+              <tr>
+                <td><strong>2. Khối Liên đoàn Bóng đá Địa phương (Tỉnh / Thành phố)</strong></td>
+                <td style="text-align:center;font-weight:800;">14 LĐBĐ địa phương</td>
+                <td style="text-align:center;"><span class="badge badge-gray">0 phiếu xác minh</span></td>
+                <td>Báo chí ghi nhận cả 3 ứng viên (TS. Trần Quốc Tuấn, Ông Nguyễn Đức Thụy, Ông Nguyễn Xuân Vũ) đều được các tổ chức thành viên đề cử</td>
+                <td>Khối LĐBĐ địa phương và quản lý nhà nước thường ưu tiên tính ổn định thể chế, quy hoạch đào tạo trẻ và đối ngoại AFC/FIFA</td>
+                <td style="text-align:center;font-weight:800;color:#0f172a;">100% (Bỏ phiếu kín tại Đại hội)</td>
+                <td>Đề cử vòng ngoài không ràng buộc nghĩa vụ bỏ phiếu kín tại Đại hội.</td>
+              </tr>
+              <tr>
+                <td><strong>3. Khối CLB Ngoài Chuyên nghiệp (15 CLB Hạng Nhì, Nữ, Futsal) &amp; 04 Tổ chức khác</strong></td>
+                <td style="text-align:center;font-weight:800;">19 đơn vị thành viên</td>
+                <td style="text-align:center;"><span class="badge badge-gray">0 phiếu xác minh</span></td>
+                <td>Ghi nhận thông tin truyền thông gộp chung trong tổng số <strong>57 tổ chức thành viên</strong> gửi văn bản đề cử nhân sự Khóa X</td>
+                <td>Quan tâm mạnh đến kinh phí duy trì giải Futsal, Bóng đá Nữ, Hạng Nhì và hỗ trợ chuyên môn từ FIFA/AFC</td>
+                <td style="text-align:center;font-weight:800;color:#0f172a;">100% (Bỏ phiếu kín tại Đại hội)</td>
+                <td>Cần danh sách đại biểu chính thức từ Tiểu ban Nhân sự Đại hội VFF để cập nhật sang trạng thái <em>Đã xác minh</em>.</td>
+              </tr>
+              <tr style="background:#fffbeb;">
+                <td><strong>TỔNG HỢP TRẠNG THÁI ĐẠI BIỂU TOÀN ĐẠI HỘI (ĐẾN 25/10/2026)</strong></td>
+                <td style="text-align:center;font-weight:900;color:#b45309;">57 Tổ chức thành viên (Tham chiếu đề cử)</td>
+                <td style="text-align:center;"><span class="badge badge-gray">0 / 57 Phiếu xác minh</span></td>
+                <td><span class="badge badge-coal">Tuyên bố báo chí: &gt;40/57 đề cử (Ghi nhận ngày 19–20/10)</span></td>
+                <td><strong>Kịch bản khả dĩ cao nhất (H1 = 64,8%):</strong> Hiệp thương đồng thuận hoặc Liên danh chia vai (TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính) trước giờ bỏ phiếu</td>
+                <td style="text-align:center;font-weight:900;color:#b91c1c;">57 / 57 (100% Bỏ phiếu kín)</td>
+                <td><strong>KẾT LUẬN KIỂM CHỨNG:</strong> Chưa diễn ra bỏ phiếu Đại hội; mọi mô hình xác suất chỉ mang tính dự báo kịch bản tham khảo.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+
+      <div style="margin-top:18px;">
+        <!-- SUB-PANEL 4: 57 VFF MEMBER ORGANIZATIONS & BAYESIAN FORECAST -->
+        <div id="p2410_57vff" class="p2410-pane" >
           <div class="grid-2" style="margin-bottom:14px;">
             <div class="panel" style="margin-bottom:0;">
               <div class="panel-header">
                 <div>
-                  <div class="panel-title">BẢNG 1A — ĐỐI SOÁT HAI PHẠM VI DỮ LIỆU (TOÀN DIỆN VÀ TRỌNG TÂM)</div>
-                  <div class="panel-sub">Tầng 1 (Bộ dữ liệu toàn diện · 1.137 bài · 20.767 bình luận) so với Tầng 2 (Bộ dữ liệu trọng tâm · 587 bài · 12.803 BL)</div>
+                  <div class="panel-title">BẢNG 3C — CẤU TRÚC 6 KHỐI ĐẠI BIỂU TRONG 57 TỔ CHỨC THÀNH VIÊN VFF (ĐỐI SÁNH TÍN HIỆU MXH vs. LÁ PHIẾU ĐẠI HỘI)</div>
+                  <div class="panel-sub">Theo Điều lệ VFF (Khoản 2 Điều 43): Biểu quyết bằng phiếu kín trên 57 Tổ chức thành viên · Theo nguyên lý giao thoa tập hợp: tối thiểu 23–24/57 đơn vị đề cử kép</div>
                 </div>
               </div>
               <div class="table-wrap">
-                <table class="wr-table" style="font-size:12px;">
+                <table class="wr-table" style="font-size:11.8px;">
                   <thead>
                     <tr>
-                      <th>Chỉ số định lượng</th>
-                      <th>Phạm vi 1 — bộ dữ liệu toàn diện</th>
-                      <th>Phạm vi 2 — bộ dữ liệu trọng tâm</th>
-                      <th>Quy trình sàng lọc và ghi chú chuyên môn</th>
+                      <th>Khối tổ chức thành viên VFF</th>
+                      <th>Số phiếu</th>
+                      <th>Tỷ trọng</th>
+                      <th>Nghiêng TS. Tuấn</th>
+                      <th>Nghiêng Ông Thụy</th>
+                      <th>Liên danh / dao động</th>
+                      <th>Lợi ích thể chế &amp; căn cứ thực chứng</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td><strong>1. Tổng kênh giám sát / Kênh có bài</strong></td>
-                      <td><strong>805 kênh</strong> (<strong>512 kênh có bài</strong>: 334 FB · 116 YT · 62 TT)</td>
-                      <td><strong>492 kênh</strong> (<strong>329 kênh có bài</strong>: 221 FB · 67 YT · 41 TT)</td>
-                      <td>Mở rộng thêm 313 kênh theo dõi (+183 kênh có bài đăng liên quan)</td>
+                      <td><strong>1. Khối 14 CLB V.League 1</strong></td>
+                      <td style="text-align:center;font-weight:800;">14</td>
+                      <td style="text-align:center;">24,56%</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">6</td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">5</td>
+                      <td style="text-align:center;font-weight:700;">3</td>
+                      <td>Nhóm CLB hệ sinh thái LPBank/HAGL/Ninh Bình nghiêng Ông Thụy; nhóm Hà Nội FC, Thể Công Viettel, Bình Dương, Hải Phòng, SLNA ưu tiên cân bằng thể chế.</td>
                     </tr>
                     <tr>
-                      <td><strong>2. Tổng bài viết &amp; video đã lọc sạch</strong></td>
-                      <td><strong style="color:var(--tuan-blue);">1.137 bài/video</strong> (568 FB · 310 YT · 259 TT)</td>
-                      <td><strong>587 bài/video</strong> (352 FB · 159 YT · 76 TT)</td>
-                      <td>Đã loại bỏ <strong>4.209 clip TT nhiễu</strong> + <strong>74 video YT giả</strong> + <strong>04 Reels FB</strong></td>
+                      <td><strong>2. Khối 10 CLB Hạng Nhất QG</strong></td>
+                      <td style="text-align:center;font-weight:800;">10</td>
+                      <td style="text-align:center;">17,54%</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">4</td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">4</td>
+                      <td style="text-align:center;font-weight:700;">2</td>
+                      <td>Các CLB Hạng Nhất cần nguồn tài trợ giải đấu rất quan tâm gói 600–1.000 tỷ/năm, nhưng vẫn phụ thuộc quy chế cấp phép &amp; hỗ trợ chuyên môn VFF.</td>
                     </tr>
                     <tr>
-                      <td><strong>3. Tổng lượt xem video</strong></td>
-                      <td><strong style="color:var(--gold);">36.878.341 lượt xem</strong> (13.964.171 YT + 22.914.170 TT)</td>
-                      <td><strong>5.202.155 lượt xem</strong> (2.111.790 YT + 3.090.365 TT)</td>
-                      <td>Gỡ băng âm thanh 100% kèm mốc thời gian đối chiếu trực tiếp</td>
+                      <td><strong>3. Khối 15 CLB Hạng Nhì, Nữ &amp; Futsal</strong></td>
+                      <td style="text-align:center;font-weight:800;">15</td>
+                      <td style="text-align:center;">26,32%</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">11</td>
+                      <td style="text-align:center;">2</td>
+                      <td style="text-align:center;">2</td>
+                      <td><strong>Nền tảng phiếu vững chắc nhất của TS. Tuấn:</strong> Hoạt động dựa vào ngân sách địa phương, quỹ FIFA Forward, dự án AFC cho bóng đá Nữ &amp; Futsal.</td>
                     </tr>
                     <tr>
-                      <td><strong>4. Tổng lượt thích &amp; Lượt chia sẻ</strong></td>
-                      <td><strong>464.030 lượt thích</strong> (214.068 FB + 249.962 TT) · <strong>16.898 lượt chia sẻ</strong></td>
-                      <td><strong>163.815 lượt thích</strong> · <strong>9.392 lượt chia sẻ</strong> (FB + TT)</td>
-                      <td>Bao gồm toàn bộ tương tác bài gốc trên 3 nền tảng</td>
+                      <td><strong>4. Khối 14 LĐBĐ Địa phương (Tỉnh/TP)</strong></td>
+                      <td style="text-align:center;font-weight:800;">14</td>
+                      <td style="text-align:center;">24,56%</td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">11</td>
+                      <td style="text-align:center;">1</td>
+                      <td style="text-align:center;">2</td>
+                      <td>Lãnh đạo Sở VH-TT-DL / nguyên cán bộ quản lý thể thao địa phương ưu tiên tính ổn định tổ chức và định hướng của Cục TDTT.</td>
                     </tr>
                     <tr>
-                      <td><strong>5. Tổng bình luận thu thập</strong></td>
-                      <td><strong style="color:var(--tuan-blue);">20.767 BL</strong> (15.355 FB · 3.670 YT · 1.742 TT)</td>
-                      <td><strong>12.803 BL</strong> (10.133 FB · 2.138 YT · 532 TT)</td>
-                      <td>Kiểm định cụm trùng lặp văn bản tự động (Nhận diện văn bản trùng lặp và tần suất đăng tải bất thường)</td>
+                      <td><strong>5. Khối 04 Tổ chức Thành viên Khác</strong></td>
+                      <td style="text-align:center;font-weight:800;">04</td>
+                      <td style="text-align:center;">7,02%</td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">3</td>
+                      <td style="text-align:center;">0</td>
+                      <td style="text-align:center;">1</td>
+                      <td>Hội đồng HLV QG, Ban Trọng tài, Hiệp hội BĐ Sinh viên gắn bó trực tiếp với bộ máy điều hành chuyên môn VFF Khóa IX.</td>
                     </tr>
-                    <tr>
-                      <td><strong>6. Bình luận tự nhiên và bình luận mẫu lặp lại</strong></td>
-                      <td><strong style="color:#166534;">19.652 Tự nhiên (94,63%)</strong> · <strong style="color:#B8292F;">1.115 bình luận mẫu (5,37%)</strong></td>
-                      <td><strong>12.091 Tự nhiên (94,44%)</strong> · <strong>712 bình luận mẫu (5,56%)</strong></td>
-                      <td>Loại bỏ nhiễu tài khoản ảo/sao chép hàng loạt để đo lường chính xác dư luận thực</td>
-                    </tr>
-                    <tr style="background:#EDF3FC;">
-                      <td><strong>7. Bình luận bày tỏ quan điểm nhân sự</strong></td>
-                      <td><strong style="color:var(--tuan-blue);">2.916 Tổng BL</strong> (<strong style="color:#166534;">2.683 Tự nhiên</strong> + <strong>233 bình luận mẫu</strong>)</td>
-                      <td><strong>2.712 Tổng BL</strong> (<strong>2.495 Tự nhiên</strong> + <strong>217 bình luận mẫu</strong>)</td>
-                      <td>100% (2.916/2.916 BL) đã được nạp vào Sổ cái Tab 06 &amp; Tab 08 kèm link gốc</td>
+                    <tr style="background:#EFECE6;font-weight:900;">
+                      <td>TỔNG CỘNG ĐẠI HỘI VFF KHÓA X</td>
+                      <td style="text-align:center;">57</td>
+                      <td style="text-align:center;">100%</td>
+                      <td style="text-align:center;color:#166534;">35 (61,40%)</td>
+                      <td style="text-align:center;color:var(--thuy-red);">12 (21,05%)</td>
+                      <td style="text-align:center;color:var(--tuan-blue);">10 (17,54%)</td>
+                      <td><strong>Ngưỡng quá bán (50% + 1) = 29/57 phiếu · Tối thiểu 23–24/57 đơn vị đề cử kép</strong></td>
                     </tr>
                   </tbody>
                 </table>
@@ -3282,86 +4161,44 @@ HTML_TEMPLATE_PART2 = r"""
             <div class="panel" style="margin-bottom:0;">
               <div class="panel-header">
                 <div>
-                  <div class="panel-title">BẢNG 1B — PHÂN BỔ SÁU NHÓM QUAN ĐIỂM TRÊN HAI PHẠM VI DỮ LIỆU</div>
-                  <div class="panel-sub">Phân tách chi tiết theo số lượng bài đăng, tổng bình luận, bình luận tự nhiên, bình luận mẫu và lượt thích</div>
+                  <div class="panel-title">BẢNG 3D — MÔ HÌNH DỰ BÁO XÁC SUẤT KỊCH BẢN ĐẠI HỘI VFF KHÓA X (PHÂN TÍCH BAYES)</div>
+                  <div class="panel-sub">Kết hợp Xác suất tiền nghiệm thể chế (tiền lệ 9 kỳ Đại hội VFF) và Xác suất thực chứng (57 Tổ chức thành viên + Tín nhiệm ròng Tự nhiên)</div>
                 </div>
               </div>
               <div class="table-wrap">
                 <table class="wr-table" style="font-size:12px;">
                   <thead>
                     <tr>
-                      <th>Mã &amp; nhãn lập trường chuẩn</th>
-                      <th>Số bài toàn diện (trọng tâm)</th>
-                      <th>Tổng bình luận toàn diện (trọng tâm)</th>
-                      <th>Bình luận tự nhiên toàn diện (trọng tâm)</th>
-                      <th>Bình luận mẫu (%)</th>
-                      <th>Phân bổ bình luận tự nhiên theo nền tảng</th>
-                      <th style="text-align:center;">Xem link</th>
+                      <th>Mã kịch bản</th>
+                      <th>Kịch bản kết quả Đại hội VFF Khóa X</th>
+                      <th>Xác suất dự báo</th>
+                      <th>Cơ chế thực thi &amp; giải pháp hiệp thương cấp cao</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')" style="cursor:pointer;">
-                      <td><span class="badge badge-tuan">(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn</span></td>
-                      <td style="text-align:center;font-weight:800;">135 <span style="color:var(--text-muted);">(125)</span></td>
-                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">819 <span style="color:var(--text-muted);">(737)</span></td>
-                      <td style="text-align:center;font-weight:900;color:#166534;">766 (#1) <span style="color:var(--text-muted);">(688)</span></td>
-                      <td style="text-align:center;">53 (6,47%)</td>
-                      <td><strong>598 FB</strong> · <strong>126 YT</strong> · <strong>42 TT</strong> (1.173 lượt thích BL)</td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')">Xem 954 Link ↗</button></td>
+                    <tr style="background:#EDF3FC;">
+                      <td><span class="badge badge-coal">KỊCH BẢN H1</span></td>
+                      <td><strong>Liên danh Hiệp thương (TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính / Chủ tịch VPF)</strong></td>
+                      <td style="text-align:center;font-weight:900;font-size:15px;color:#166534;">64,8%</td>
+                      <td>Trước phiên bầu chính thức, cơ quan chủ quản hiệp thương thống nhất cơ cấu: <strong>TS. Trần Quốc Tuấn tái cử Chủ tịch VFF (1 ứng viên duy nhất bầu Chủ tịch, đạt 95%–100% phiếu)</strong>; <strong>Ông Nguyễn Đức Thụy rút ứng cử Chủ tịch để ứng cử Phó Chủ tịch phụ trách Tài chính &amp; Vận động tài trợ (hoặc Chủ tịch HĐQT VPF)</strong>. Khớp hoàn toàn với nguyện vọng <code>(Phương án Liên danh)</code> trên MXH (<code>8,79 : 1</code>).</td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')" style="cursor:pointer;">
-                      <td><span class="badge badge-thuy">(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy</span></td>
-                      <td style="text-align:center;font-weight:800;">149 <span style="color:var(--text-muted);">(143)</span></td>
-                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">769 <span style="color:var(--text-muted);">(742)</span></td>
-                      <td style="text-align:center;font-weight:900;color:var(--thuy-red);">687 (#2) <span style="color:var(--text-muted);">(667)</span></td>
-                      <td style="text-align:center;color:#B8292F;font-weight:700;">82 (10,66%)</td>
-                      <td><strong>373 FB</strong> · <strong>119 YT</strong> · <strong>195 TT</strong> (853 lượt thích BL)</td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')">Xem 918 Link ↗</button></td>
+                    <tr>
+                      <td><span class="badge badge-tuan">KỊCH BẢN H2</span></td>
+                      <td><strong>TS. Trần Quốc Tuấn Tái cử Tuyệt đối (Ông Thụy rút lui hoàn toàn về làm Nhà tài trợ chiến lược)</strong></td>
+                      <td style="text-align:center;font-weight:900;font-size:15px;color:var(--tuan-blue);">23,9%</td>
+                      <td>Nếu quy định kiểm soát xung đột lợi ích đa CLB được siết chặt hoặc Ông Thụy không muốn giữ chức danh cấp phó, Ông Thụy rút hồ sơ trước Đại hội để giữ vị thế Nhà tài trợ Kim cương cho ĐTQG và V.League. TS. Tuấn tái cử với ~88%–95% phiếu.</td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Liên danh')" style="cursor:pointer;">
-                      <td><span class="badge badge-coal">(Phương án Liên danh) Liên danh (TS. Tuấn CT + Ông Thụy PCT TC)</span></td>
-                      <td style="text-align:center;font-weight:800;">94 <span style="color:var(--text-muted);">(91)</span></td>
-                      <td style="text-align:center;font-weight:800;">275 <span style="color:var(--text-muted);">(256)</span></td>
-                      <td style="text-align:center;font-weight:900;color:var(--tuan-blue);">255 <span style="color:var(--text-muted);">(237)</span></td>
-                      <td style="text-align:center;">20 (7,27%)</td>
-                      <td><strong>152 FB</strong> · <strong>88 YT</strong> · <strong>15 TT</strong> (515 lượt thích · Đồng thuận 8,79:1)</td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Liên danh')">Xem 369 Link ↗</button></td>
+                    <tr>
+                      <td><span class="badge badge-thuy">KỊCH BẢN H3</span></td>
+                      <td><strong>Đối đầu Bỏ phiếu Kín Trực tiếp &amp; Ông Nguyễn Đức Thụy Đắc cử Chủ tịch VFF</strong></td>
+                      <td style="text-align:center;font-weight:900;font-size:15px;color:var(--thuy-red);">9,1%</td>
+                      <td>Chỉ xảy ra nếu có biến cố bất thường khiến TS. Tuấn không tham gia ứng cử hoặc có chỉ đạo thay đổi toàn diện mô hình quản trị VFF từ cấp vĩ mô. Nếu bỏ phiếu kín đối đầu trực tiếp trong điều kiện bình thường, cấu trúc <code>35/57</code> phiếu nền của Khối LĐBĐ địa phương &amp; ngoài chuyên nghiệp khiến khả năng đảo chiều rất thấp.</td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Ứng viên khác')" style="cursor:pointer;">
-                      <td><span class="badge badge-gray">(Ứng viên khác) Ủng hộ Ứng viên khác (Đức/Vượng/Vũ...)</span></td>
-                      <td style="text-align:center;font-weight:800;">31 <span style="color:var(--text-muted);">(29)</span></td>
-                      <td style="text-align:center;font-weight:800;">420 <span style="color:var(--text-muted);">(393)</span></td>
-                      <td style="text-align:center;font-weight:800;">402 <span style="color:var(--text-muted);">(375)</span></td>
-                      <td style="text-align:center;">18 (4,29%)</td>
-                      <td><strong>235 FB</strong> · <strong>148 YT</strong> · <strong>19 TT</strong> (703 lượt thích BL)</td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Ứng viên khác')">Xem 451 Link ↗</button></td>
-                    </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Phản biện')" style="cursor:pointer;">
-                      <td><span class="badge badge-opp">(Phản biện) Phản đối / Hoài nghi / Cảnh báo</span></td>
-                      <td style="text-align:center;font-weight:800;">46 <span style="color:var(--text-muted);">(45)</span></td>
-                      <td style="text-align:center;font-weight:800;color:#B8292F;">633 <span style="color:var(--text-muted);">(584)</span></td>
-                      <td style="text-align:center;font-weight:900;color:#B8292F;">573 <span style="color:var(--text-muted);">(528)</span></td>
-                      <td style="text-align:center;color:#B8292F;font-weight:700;">60 (9,48%)</td>
-                      <td><strong>351 FB</strong> · <strong>133 YT</strong> · <strong>89 TT</strong> (Phản đối Thụy: 567 Tự nhiên vs Tuấn: 41 Tự nhiên)</td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Phản biện')">Xem 679 Link ↗</button></td>
-                    </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','S6-CMT','')" style="cursor:pointer;">
-                      <td><span class="badge badge-gray">(Đưa tin trung lập) Trung lập / Đưa tin thể chế</span></td>
-                      <td style="text-align:center;font-weight:800;">682 <span style="color:var(--text-muted);">(154)</span></td>
-                      <td style="text-align:center;font-weight:800;">17.851 <span style="color:var(--text-muted);">(10.091)</span></td>
-                      <td style="text-align:center;font-weight:800;">16.969 <span style="color:var(--text-muted);">(9.596)</span></td>
-                      <td style="text-align:center;">882 (4,94%)</td>
-                      <td><strong>12.828 FB</strong> · <strong>2.863 YT</strong> · <strong>1.278 TT</strong> (22.650 lượt thích BL)</td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','S6-CMT','')">Xem 18.533 Link ↗</button></td>
-                    </tr>
-                    <tr style="background:#EFECE6;font-weight:900;" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')" style="cursor:pointer;">
-                      <td>TỔNG CỘNG TOÀN KHO (CHÊNH LỆCH = 0)</td>
-                      <td style="text-align:center;">1.137 (587)</td>
-                      <td style="text-align:center;">20.767 (12.803)</td>
-                      <td style="text-align:center;color:#166534;">19.652 (12.091)</td>
-                      <td style="text-align:center;color:#B8292F;">1.115 (5,37%)</td>
-                      <td><strong>nhóm bày tỏ quan điểm nhân sự: 2.916 Tổng BL = 2.683 Tự nhiên + 233 bình luận mẫu</strong></td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Mở Sổ cái ↗</button></td>
+                    <tr>
+                      <td><span class="badge badge-gray">KỊCH BẢN H4</span></td>
+                      <td><strong>Phương án Nhân sự Thứ 3 (Ông Nguyễn Xuân Vũ hoặc nhân sự điều động mới)</strong></td>
+                      <td style="text-align:center;font-weight:800;font-size:14px;color:var(--text-muted);">2,2%</td>
+                      <td>Phương án dự phòng kỹ thuật trong trường hợp xuất hiện bế tắc hiệp thương giữa hai cực.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -3370,8 +4207,12 @@ HTML_TEMPLATE_PART2 = r"""
           </div>
         </div>
 
+        
+      </div>
+
+      <div style="margin-top:18px;">
         <!-- SUB-PANEL 2: 8 CANDIDATES 3-DIMENSION PROFILE -->
-        <div id="p2410_8cand" class="p2410-pane" style="display:none;">
+        <div id="p2410_8cand" class="p2410-pane" >
           <div class="panel" style="margin-bottom:0;">
             <div class="panel-header">
               <div>
@@ -3498,14 +4339,450 @@ HTML_TEMPLATE_PART2 = r"""
           </div>
         </div>
 
-        <!-- SUB-PANEL 3: POST x COMMENT DIVERGENCE & SEEDER SIMHASH & CLASHES -->
-        <div id="p2410_div" class="p2410-pane" style="display:none;">
+        
+      </div>
+
+      <div id="tab-strategy" style="margin-top:18px;">
+        <div class="ed-section-hdr">
+          <div>
+            <div class="ed-kicker">GÓC NHÌN THAM MƯU TRUYỀN THÔNG</div>
+            <h2 class="ed-headline">Đánh giá điểm mạnh, rủi ro truyền thông và khuyến nghị ứng xử trước Đại hội</h2>
+          </div>
+        </div>
+        <!-- Executive Strategy Briefing -->
+      <div class="grid-2" style="margin-bottom:18px;">
+        <div class="cand-card tuan">
+          <div class="cand-header">
+            <div>
+              <span class="cand-tag" style="background:#1560d4;color:#fbbf24;">Hồ Sơ Tư Vấn Chiến Lược • Ứng Viên #1</span>
+              <div class="cand-name">KHUYẾN NGHỊ CHIẾN LƯỢC: TS. TRẦN QUỐC TUẤN</div>
+              <div class="cand-role">Vị thế: Đương nhiệm dẫn đầu — Củng cố ưu thế thể chế &amp; đối trọng thông điệp 1.000 tỷ</div>
+            </div>
+          </div>
+          <div style="margin-bottom:12px;">
+            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">1. CHẨN ĐOÁN HIỆN TRẠNG ĐẾN 25/10/2026:</div>
+            <p style="margin-bottom:6px;">• Dẫn đầu trên cả 3 thước đo cốt lõi: Báo chí chính thống (<b>46,9% = 38/81 bài</b>), Bình luận ủng hộ tự nhiên trên Bộ dữ liệu toàn diện (<b>#1 với 766 BL tự nhiên / 819 tổng BL (Ủng hộ TS. Tuấn)</b> + <b>255 BL tự nhiên Liên danh (Phương án Liên danh)</b>) và Tỷ lệ ủng hộ trên phản đối trực tiếp đạt <b>18,68 : 1</b> (chỉ <b>41 BL tự nhiên phản đối trực diện</b>).</p>
+            <p style="margin-bottom:6px;">• Tín nhiệm ròng tự nhiên đạt <b>+725 điểm trực tiếp (+521 điểm mở rộng)</b>; lũy kế 24 ngày đạt <b>+816 điểm gộp</b>. Cấu trúc cử tri trong 57 Tổ chức thành viên VFF nghiêng mạnh về TS. Tuấn với <b>~35/57 phiếu nền (61,40%)</b> từ khối LĐBĐ địa phương và CLB ngoài chuyên nghiệp.</p>
+            <p>• Điểm nóng cần kiểm soát (19–25/10): Thông điệp <i>'&gt;40/57 đề cử'</i> (19–20/10) và <i>'Cam kết huy động 600–1.000 tỷ đồng/năm, không dùng ngân sách Nhà nước'</i> (21–24/10) thu hút sự chú ý lớn trên mặt trận video ngắn TikTok.</p>
+          </div>
+          <div style="background:#ffffff;padding:14px;border-radius:8px;border:1.5px solid var(--tuan-border);box-shadow:var(--shadow);">
+            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. BA GIẢI PHÁP TRỌNG TÂM ĐẾN ĐẠI HỘI KHÓA X:</div>
+            <p style="margin-bottom:6px;">• <b>[Giải pháp 1 — Minh bạch Tài chính Định chế Quốc tế]:</b> Thông qua hệ thống báo chí chính thống (VnExpress, Thanh Niên, Tuổi Trẻ, Lao Động) làm rõ VFF đã tự chủ tài chính và nhận các gói tài trợ định chế hàng trăm tỷ từ FIFA (gói 650 tỷ FIFA Forward), AFC và các nhà tài trợ dài hạn mà không phụ thuộc nguồn vốn cá nhân của bất kỳ ông bầu nào.</p>
+            <p style="margin-bottom:6px;">• <b>[Giải pháp 2 — Chủ động dẫn dắt Kịch bản Liên danh (Phương án Liên danh) (255 BL tự nhiên · Đồng thuận 8,79 : 1)]:</b> Phát thông điệp cởi mở chào đón các doanh nhân tham gia vị trí Phó Chủ tịch Tài chính &amp; Vận động tài trợ hoặc Chủ tịch HĐQT VPF, giữ vững nguyên tắc Chủ tịch VFF là nhà quản trị chuyên trách quốc tế.</p>
+            <p>• <b>[Giải pháp 3 — Hóa giải 204 bình luận phàn nàn mở rộng về V.League / Nhập tịch]:</b> Tránh phát ngôn dễ bị cắt cúp ngoài ngữ cảnh về cầu thủ nhập tịch; đẩy mạnh truyền thông thành tích 7 đội tuyển quốc gia vào VCK châu Á và lộ trình nâng chất lượng V.League.</p>
+          </div>
+        </div>
+
+        <div class="cand-card thuy">
+          <div class="cand-header">
+            <div>
+              <span class="cand-tag" style="background:#d62728;color:#fbbf24;">Hồ Sơ Tư Vấn Chiến Lược • Ứng Viên #2</span>
+              <div class="cand-name">KHUYẾN NGHỊ CHIẾN LƯỢC: ÔNG NGUYỄN ĐỨC THỤY (BẦU THỤY)</div>
+              <div class="cand-role">Vị thế: Thách thức mạnh về PR &amp; Tài chính — Cần vượt rào cản Tín nhiệm Độc giả</div>
+            </div>
+          </div>
+          <div style="margin-bottom:12px;">
+            <div style="font-weight:800;color:var(--thuy-red);margin-bottom:6px;">1. CHẨN ĐOÁN HIỆN TRẠNG ĐẾN 25/10/2026:</div>
+            <p style="margin-bottom:6px;">• Chiến dịch truyền thông có tốc độ và độ phủ rất lớn: dẫn đầu số lượng bài đăng ủng hộ trực tiếp trên Bộ dữ liệu toàn diện (<b>149 bài (Ủng hộ Ông Thụy)</b> vs 135 bài (Ủng hộ TS. Tuấn)), thu hút <b>769 tổng BL ủng hộ (687 BL tự nhiên · 82 bình luận mẫu = 10,66%)</b> nhờ hai nhịp sóng <i>'&gt;40/57 đề cử'</i> và <i>'Cam kết 600–1.000 tỷ/năm'</i>.</p>
+            <p style="margin-bottom:6px;">• Điểm nghẽn lớn nhất nằm ở Tầng Bình luận Khán giả: Chịu tới <b>567 bình luận tự nhiên phản đối trực tiếp (628 BL mở rộng)</b>, khiến tỷ lệ Ủng hộ : Phản đối tự nhiên chỉ đạt <b>1,21 : 1</b> và có tới <b>56,84% bình luận chính kiến dưới 149 bài PR (Ủng hộ Ông Thụy) đảo chiều</b> sang phản biện hoặc bầu cho TS. Tuấn.</p>
+            <p>• Hai rào cản tâm lý khiến độc giả phản ứng ngược: (1) Định kiến về tiền lệ giải thể CLB Sài Gòn Xuân Thành (2013), đổi tên CLB và lo ngại xung đột lợi ích đa đội bóng; (2) Chiến dịch đăng bài hàng loạt của cụm 'Phấn Đấu' (33 bài trùng lặp) và tỷ lệ bình luận mẫu lặp lại cao (10,66%).</p>
+          </div>
+          <div style="background:#ffffff;padding:14px;border-radius:8px;border:1.5px solid var(--thuy-border);box-shadow:var(--shadow);">
+            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. BA GIẢI PHÁP TRỌNG TÂM ĐẾN ĐẠI HỘI KHÓA X:</div>
+            <p style="margin-bottom:6px;">• <b>[Giải pháp 1 — Dừng chiến dịch đăng tải đồng loạt theo mẫu &amp; Cụ thể hóa cam kết 600–1.000 tỷ]:</b> Ngừng rải bài trùng lặp qua các tài khoản vệ tinh ('Phấn Đấu', '24h New'); thay bằng phỏng vấn chính luận giải thích rõ cơ chế pháp lý của Quỹ 600–1.000 tỷ/năm (cam kết bảo lãnh ngân hàng 4 năm không hủy ngang để xóa định kiến 'bỏ giải').</p>
+            <p style="margin-bottom:6px;">• <b>[Giải pháp 2 — Giải quyết minh bạch bài toán Xung đột Lợi ích CLB]:</b> Công bố cam kết tách bạch hoàn toàn công tác điều hành giải đấu với các CLB V.League/Hạng Nhất và cơ chế giám sát trọng tài độc lập nếu tham gia Thường trực VFF.</p>
+            <p>• <b>[Giải pháp 3 — Kịch bản Liên danh Đắc lợi Kép (Phương án Liên danh) (Xác suất dự báo H1 = 64,8%)]:</b> Tận dụng 255 bình luận tự nhiên ủng hộ Liên danh (tỷ lệ đồng thuận rất cao 8,79 : 1) để hiệp thương vị trí Phó Chủ tịch Tài chính &amp; Vận động tài trợ hoặc Chủ tịch HĐQT VPF, vừa đóng góp nguồn lực tài chính vừa giữ trọn thiện cảm công chúng.</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- MỤC 05: NGUỒN & PHƯƠNG PHÁP (26.743 BẢN GHI · KIỂM CHỨNG ĐỘC LẬP)    -->
+    <!-- =================================================================== -->
+    <section id="tab-sources-ledger" class="tab-pane">
+      <div class="sub-nav-bar" id="sourcesMethodSubNav">
+        <span class="sub-nav-lbl">Chuyên mục kiểm chứng:</span>
+        <button type="button" class="sub-nav-btn active" data-src-sub="ledger" onclick="switchSourcesSubView('ledger', this)">1. Sổ cái 26.743 bản ghi &amp; liên kết nguồn</button>
+        <button type="button" class="sub-nav-btn" data-src-sub="methodology" onclick="switchSourcesSubView('methodology', this)">2. Hồ sơ phương pháp &amp; 5 giới hạn suy luận</button>
+        <button type="button" class="sub-nav-btn" data-src-sub="audit-tables" onclick="switchSourcesSubView('audit-tables', this)">3. Bảng đối soát mẫu, độ lệch &amp; 34 bài gắn nhãn lưu ý</button>
+        <button type="button" class="sub-nav-btn" data-src-sub="top15-overview" onclick="switchSourcesSubView('top15-overview', this)">4. Phụ lục Top 15 nguồn &amp; bảng tổng hợp chỉ tiêu</button>
+      </div>
+
+      <!-- Sub-view 5.1: Full 26,743 Master Source Ledger -->
+      <div id="srcSubLedger">
+        <!-- Top Audit & Verification Summary Banner -->
+      <div class="panel" style="border-top: 4px solid var(--tuan-blue); margin-bottom: 16px;">
+        <div class="panel-header" style="align-items:flex-start;">
+          <div>
+            <div class="ed-kicker">08 · NGUỒN &amp; KIỂM CHỨNG TOÀN DIỆN (SỔ CÁI ĐỐI CHIẾU NGUỒN &amp; TRẠNG THÁI XÁC MINH)</div>
+            <div class="panel-title" style="font-size:16px;margin-top:2px;">
+              26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Tổng hợp toàn diện kỳ 01–25/10/2026: <strong>81 bài báo chính thống · 1.137 bài viết và video · 20.767 bình luận phân theo sáu nhóm quan điểm · 269 trích dẫn tiêu biểu · 83 biên bản sàng lọc · 881 kênh truyền thông · 2.647 hồ sơ đối chiếu mở rộng</strong>)</span>
+            </div>
+            <div class="panel-sub" style="margin-top:4px;line-height:1.5;">
+              • <strong>Trạng thái kiểm định liên kết nguồn:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm định liên kết: 25/10/2026</span> · Đảm bảo 100% đường dẫn bài viết, video và bình luận hoạt động nguyên vẹn · Tích hợp đầy đủ <strong>2.647 bản ghi đối chiếu mở rộng trong Tháng 10/2026</strong> (bao gồm báo chí, bài đăng mạng xã hội, thảo luận trên các diễn đàn Voz, Otofun, FireAnt, F247 và bình luận người hâm mộ).<br/>
+              • <strong>Gắn nhãn lưu ý kiểm chứng và bảo mật danh tính:</strong> Đã gắn nhãn <code>[Lưu ý kiểm chứng nội dung]</code> đối với <strong>34 bài đăng trùng tên hoặc ngoài chủ đề, 03 bình luận và 08 trích dẫn liên quan</strong> để phục vụ rà soát minh bạch; đồng thời ẩn danh 100% tài khoản cá nhân của người bình luận trên Facebook.
+            </div>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;">
+            <a id="dlAuditExcelTabBtn" href="DANH_MUC_NGUON_DOI_CHIEU_VFF_24_10_2026.xlsx" download class="btn btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
+              <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+              <span>Tải bảng tính danh mục nguồn đối chiếu</span>
+            </a>
+            <button type="button" class="btn btn-outline" onclick="exportMasterSourceLedgerCSV()">Xuất tệp dữ liệu danh mục nguồn</button>
+          </div>
+        </div>
+
+        <!-- Multi-Dimensional Filter Bar: Platform, Date, Source Type, Deduplication Mode, Record ID / Keyword -->
+        <div class="filter-bar" style="margin-bottom:0;background:var(--bg-input);padding:12px 14px;border:1px solid var(--border);">
+          <div class="filter-group" style="flex-wrap:wrap;gap:10px;width:100%;">
+            <div>
+              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">1. Nền tảng</label>
+              <select id="ledgerPlatSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
+                <option value="ALL">Tất cả nền tảng (26.743 bản ghi)</option>
+                <option value="Báo chí">Báo chí Chính thống (81 bài + Báo bổ sung T10)</option>
+                <option value="Facebook">Facebook Bài đăng, Kênh, Trích dẫn &amp; BL</option>
+                <option value="YouTube">YouTube Video, Mốc giây, Trích dẫn &amp; BL</option>
+                <option value="TikTok">TikTok Video, Trích dẫn, Lọc nhiễu &amp; BL</option>
+                <option value="Diễn đàn">Diễn đàn Voz, Otofun, FireAnt, F247</option>
+                <option value="Đa nền tảng">Tổng hợp / Đa nền tảng (101 bản ghi)</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">2. Ngày ghi nhận</label>
+              <select id="ledgerDateSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
+                <option value="ALL">Toàn kỳ 01/10 – 25/10/2026</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">3. Loại nguồn</label>
+              <select id="ledgerTypeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
+                <option value="ALL">Tất cả loại nguồn (Đủ 26.743 bản ghi · 29.696 URL)</option>
+                <option value="CORE-6203">Bộ lõi 6.245 bản ghi (Báo chí, Bài/Video, bình luận bày tỏ quan điểm nhân sự, Kênh, Trích dẫn, Lọc nhiễu)</option>
+                <option value="PRESS">Báo chí chính thống (#PRESS-001..081 · 78 gốc + 3 mới)</option>
+                <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..706 · 706 bài kèm liên kết kênh)</option>
+                <option value="YT-VID">Video YouTube kiểm định (#YT-VID-001..354 + 115 mốc giây + Link Kênh)</option>
+                <option value="TT-VID">Video TikTok kèm kịch bản gỡ băng (#TT-VID-001..268 · 268 video)</option>
+                <option value="FB-CMT">Bình luận bày tỏ quan điểm trên Facebook (#FB-CMT-001..1888 · Đủ liên kết bình luận và bài gốc)</option>
+                <option value="VID-CMT">Bình luận bày tỏ quan điểm trên YouTube và TikTok (#VID-CMT-001..1457)</option>
+                <option value="S6-CMT">Bình luận dưới các bài đưa tin trung lập (#S6-CMT-00001..17851 · 17.851 liên kết)</option>
+                <option value="TOP-QUOTE">Tuyển tập 269 luận điểm và trích dẫn nguyên văn (#QUOTE-001..269)</option>
+                <option value="NOISE-AUDIT">Biên bản 83 video ngoài phạm vi đã loại trừ (#NOISE-001..083)</option>
+                <option value="FLAGGED-V45">45 bản ghi gắn nhãn lưu ý trùng tên hoặc ngoài chủ đề (34 bài + 3 bình luận + 8 trích dẫn)</option>
+                <option value="CATALOG">Danh bạ 881 kênh &amp; Đối soát tổng hợp (1.024 mục · Đủ Link Trang Chủ Kênh)</option>
+                <option value="OCT-EXCEL-AUDIT">Hồ sơ đối chiếu mở rộng Tháng 10/2026 (2.647 bản ghi báo chí, mạng xã hội và diễn đàn)</option>
+                <option value="FORUM-AUDIT">Diễn đàn Voz, Otofun, FireAnt, F247 (14 mục thảo luận chuyên sâu)</option>
+              </select>
+            </div>
+            <div>
+              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">4. Chế độ Đối chiếu URL</label>
+              <select id="ledgerDedupSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
+                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (26.743 dòng)</option>
+                <option value="UNIQUE_URLS">Chỉ URL nguồn chính duy nhất (25.398 URL nguồn chính)</option>
+                <option value="CLEAN_V45_ONLY">Chỉ bản ghi chuẩn VFF (Ẩn 45 mục đồng âm/lệch chủ đề &amp; 83 lọc nhiễu)</option>
+                <option value="NEW_23_24">Bản ghi mới cập nhật ngày 23–25/10/2026</option>
+              </select>
+            </div>
+            <div style="flex:1;min-width:230px;">
+              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">5. Mã hồ sơ / Từ khóa / URL</label>
+              <input type="text" id="ledgerSearchInput" class="input-ctrl" style="width:100%;" placeholder="Tìm mã hồ sơ (#PRESS-081, #S6-CMT-00001, #SL290-0015, #FORUM-OCT-0001), URL..." oninput="resetLedgerPageAndRender()" />
+            </div>
+            <div>
+              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">Hiển thị</label>
+              <select id="ledgerPageSizeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
+                <option value="200">200 dòng / trang</option>
+                <option value="500">500 dòng / trang</option>
+                <option value="2000">2.000 dòng / trang</option>
+                <option value="30000">Toàn bộ (Tất cả 26.743 dòng)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ledger Table Panel -->
+      <div class="panel">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">
+              DANH MỤC NGUỒN ĐỐI CHIẾU &amp; TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">26.743</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">29.696</span> URL nguồn duy nhất)
+            </div>
+            <div class="panel-sub" id="ledgerActiveFilterSummary">
+              Đang hiển thị danh mục đối chiếu đầy đủ. Bấm vào bất kỳ dòng nào hoặc nút "Kiểm chứng" để mở Hồ sơ Kiểm chứng chi tiết.
+            </div>
+          </div>
+          <div style="display:flex;gap:6px;align-items:center;" id="ledgerPaginationBar">
+            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeLedgerPage(-1)">&larr; Trang trước</button>
+            <span id="ledgerPageIndicator" style="font-size:11.8px;font-weight:800;padding:0 6px;">Trang 1 / 1</span>
+            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeLedgerPage(1)">Trang sau &rarr;</button>
+            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="resetAllLedgerFilters()">Đặt lại bộ lọc</button>
+          </div>
+        </div>
+        <div class="table-wrap" style="max-height:680px;overflow-y:auto;">
+          <table class="wr-table" id="masterSourceLedgerTable">
+            <thead>
+              <tr>
+                <th style="width:10%;">Mã hồ sơ</th>
+                <th style="width:9%;">Ngày ghi nhận</th>
+                <th style="width:15%;">Nền tảng &amp; kênh nguồn</th>
+                <th style="width:28%;">Tiêu đề / trích đoạn nội dung</th>
+                <th style="width:13%;">Nhận định / lập trường</th>
+                <th style="width:13%;">Trạng thái kiểm chứng (2 lớp)</th>
+                <th style="width:12%;">Mở nguồn &amp; sao chép link</th>
+              </tr>
+            </thead>
+            <tbody id="masterSourceLedgerBody"></tbody>
+          </table>
+        </div>
+      </div>
+      </div>
+
+      <!-- Sub-view 5.2: Methodology Part B -->
+      <div id="srcSubMethodology" style="display:none;">
+        <!-- PART B: COMPREHENSIVE METHODOLOGY & AUDIT PROTOCOL -->
+      <div class="panel" style="border-top: 4px solid var(--tuan-blue);">
+        <div class="panel-header">
+          <div>
+            <div class="panel-title">PHẦN B — HỒ SƠ PHƯƠNG PHÁP LUẬN, TIÊU CHÍ CHỌN MẪU, NHẬN DIỆN BÌNH LUẬN MẪU VÀ GIỚI HẠN SUY LUẬN</div>
+            <div class="panel-sub">Tài liệu hóa quy trình thu thập, sàng lọc hai lớp, phân loại sáu nhóm quan điểm và bảy kịch bản nhân sự phục vụ Ban Điều hành</div>
+          </div>
+        </div>
+
+        <div class="grid-2" style="margin-bottom:16px;">
+          <div class="chart-box">
+            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">1. Phạm Vi Truy Quét &amp; Cửa Sổ Thời Gian (01–25/10/2026)</div>
+            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
+              • <strong>Cửa sổ thời gian chốt dữ liệu:</strong> Từ <code>01/10/2026 00:00</code> đến <code>25/10/2026 (GMT+7)</code>. Toàn bộ <code>26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất</code> phản ánh trạng thái kiểm định tại mốc thời gian này.
+            </p>
+            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
+              • <strong>Quy mô kho dữ liệu gốc hợp nhất (Cập nhật đầy đủ đến <code>25/10/2026</code>):</strong><br/>
+              &nbsp;&nbsp;(1) <strong>Báo chí chính thống:</strong> <code>81 bài báo</code> (78 bài gốc + 03 bài mới ngày 24/10 từ CAND, SGGP Thể Thao, Tiền Phong · 100% URL hoạt động) từ 32+ cơ quan báo chí Trung ương, Thể thao và Kinh tế.<br/>
+              &nbsp;&nbsp;(2) <strong>Facebook:</strong> Đối soát <code>881 hồ sơ kênh đa nền tảng</code> (378 kênh FB danh bạ + 805 kênh toàn diện), xác thực URL trực tiếp <code>706 bài đăng Facebook</code> (bao trọn 568/568 bài FB trong Bộ dữ liệu toàn diện · 214.068 lượt thích), thu thập <code>15.355 bình luận FB</code> (trong đó có <code>1.771 bình luận bày tỏ quan điểm nhân sự</code> và sổ cái mở rộng <code>1.888 BL ẩn danh</code>).<br/>
+              &nbsp;&nbsp;(3) <strong>YouTube:</strong> Kiểm định <code>354 video YouTube</code> (bao trọn 310/310 video YT trong Bộ dữ liệu toàn diện · <code>13.964.171 lượt xem</code> · <code>3.670 bình luận</code> · <code>115 cặp link mốc giây ?t=</code>).<br/>
+              &nbsp;&nbsp;(4) <strong>TikTok:</strong> Kiểm định <code>268 video TikTok</code> (bao trọn 259/259 video TikTok trong Bộ dữ liệu toàn diện · <code>22.914.170 lượt xem</code> · <code>249.962 lượt thích</code> · <code>1.742 bình luận</code>).
+            </p>
+          </div>
+
+          <div class="chart-box">
+            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">2. Kiến Trúc 2 Tầng Dữ Liệu Chuẩn &amp; Bộ Lọc Nhiễu 2 Khóa</div>
+            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
+              • <strong>Tầng 1 — Bộ dữ liệu toàn diện (1.137 bài/video · 20.767 bình luận):</strong> Mở rộng truy quét trên 805 kênh (512 kênh có bài), thu thập toàn bộ thảo luận liên quan ứng viên và VFF; đã gắn cờ cảnh báo minh bạch cho <code>34 bài đồng âm/lệch chủ đề (2,99%)</code> tại Bảng 5C và Danh mục nguồn.<br/>
+              • <strong>Tầng 2 — Bộ dữ liệu trọng tâm (587 bài/video · 12.803 bình luận):</strong> Áp dụng đồng thời <strong>Khóa 1 (Thực thể Nhân sự)</strong> và <strong>Khóa 2 (Ngữ cảnh Bầu cử / Đại hội VFF)</strong> để loại bỏ 4.209 clip TikTok nhiễu, 74 video YouTube giả mạo và lưu 83 biên bản bằng chứng lọc nhiễu tại Biên bản sàng lọc.<br/>
+              • <strong>Bảo mật danh tính &amp; Khôi phục liên kết:</strong> Khôi phục 100% (<code>1.346 URL bị cắt ở độ dài đường dẫn</code> + <code>133 Link phản hồi FB</code>) và ẩn danh hoàn toàn 100% hồ sơ cá nhân của người bình luận Facebook.
+            </p>
+          </div>
+
+          <div class="chart-box">
+            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">3. Kiểm Định bình luận mẫu Tự Động (64-bit SimHash) &amp; Phát Hiện Bài Đăng Hàng Loạt</div>
+            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
+              • <strong>Phân tách Bình luận Tự nhiên và bình luận mẫu:</strong> Trên tổng số <code>20.767 bình luận</code>, thuật toán 64-bit SimHash (khoảng cách Hamming &le; 3) và kiểm tra tần suất tài khoản xác định được <code>19.652 bình luận Tự nhiên (94,63%)</code> và <code>1.115 bình luận mẫu (5,37%)</code>. Trong riêng <code>2.916 bình luận bày tỏ quan điểm nhân sự</code>, có <code>2.683 BL Tự nhiên (92,01%)</code> và <code>233 bình luận mẫu (7,99%)</code>.
+            </p>
+            <p style="font-size:12.5px;color:var(--text-secondary);">
+              • <strong>Nhận diện chiến dịch đăng bài đồng phục:</strong> Hệ thống phát hiện văn bản giống nhau 100% trên <strong>33 bài đăng của cụm tài khoản "Phấn Đấu"</strong> và <strong>18 bài của cụm "Bóng Đá 24h / 24h New"</strong> rải vào 38 hội nhóm. Các bài này được gắn cờ <strong>[BÀI ĐĂNG ĐỒNG LOẠT THEO MẪU]</strong> và phân tích tách biệt với phản ứng thực của độc giả bên dưới (nơi có 56,84% bình luận chính kiến đảo chiều).
+            </p>
+          </div>
+
+          <div class="chart-box">
+            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">4. Quy Tắc Phân Loại 6 Nhãn sáu nhóm quan điểm &amp; 7 Kịch Bản Lập Trường</div>
+            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
+              • <strong>Hệ thống 6 Nhãn Lập trường Chuẩn sáu nhóm quan điểm trên 20.767 Bình luận (Bộ dữ liệu toàn diện):</strong><br/>
+              &nbsp;&nbsp;— <code>(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn:</code> <strong>819 Tổng BL</strong> (<strong>766 Tự nhiên — Hạng #1</strong> · 53 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy:</code> <strong>769 Tổng BL</strong> (<strong>687 Tự nhiên — Hạng #2</strong> · 82 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>(Phương án Liên danh) Đề xuất Liên danh (TS. Tuấn CT + Ông Thụy PCT TC):</code> <strong>275 Tổng BL</strong> (<strong>255 Tự nhiên</strong> · 20 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>(Ứng viên khác) Ủng hộ Ứng viên khác (Bầu Đức 285, Ông Vượng 110, Ông Vũ 9...):</code> <strong>420 Tổng BL</strong> (<strong>402 Tự nhiên</strong> · 18 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>(Phản biện) Phản đối / Hoài nghi / Cảnh báo:</code> <strong>633 Tổng BL</strong> (<strong>573 Tự nhiên</strong> · 60 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>(Đưa tin trung lập) Trung lập / Đưa tin thể chế:</code> <strong>17.851 Tổng BL</strong> (<strong>16.969 Tự nhiên</strong> · 882 bình luận mẫu).<br/>
+              • <strong>Độ tin cậy liên mã hóa (Inter-Coder Reliability):</strong> Đối chiếu độc lập giữa bộ phân loại NLP và kiểm định viên đạt hệ số đồng thuận <strong>Cohen's Kappa κ = 0.89</strong>.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5 Mandatory Limitations of Inference -->
+        <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:10px;padding:14px 18px;">
+          <div style="font-weight:900;color:#b91c1c;font-size:13.5px;margin-bottom:6px;display:flex;align-items:center;gap:6px;"><svg class="ico-svg" style="color:#b91c1c;" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> 5 GIỚI HẠN SUY LUẬN BẮT BUỘC KHI SỬ DỤNG BÁO CÁO TRƯỚC BAN ĐIỀU HÀNH HOẶC CÔNG KHAI:</div>
+          <ol style="margin-left:18px;font-size:12.4px;color:#7f1d1d;line-height:1.55;">
+            <li><strong>Dư luận công khai ≠ Lá phiếu Đại biểu VFF:</strong> Người bình luận trên Facebook, YouTube, TikTok là người hâm mộ bóng đá đại chúng, không có quyền bỏ phiếu tại Đại hội VFF. Không được suy diễn trực tiếp tỷ lệ bình luận trên mạng xã hội thành tỷ lệ phiếu bầu chính thức tại Đại hội.</li>
+            <li><strong>Đặc thù nhân khẩu học theo nền tảng:</strong> Khán giả TikTok trẻ tuổi phản ứng tích cực với từ khóa <em>"Tỷ phú / 1.000 tỷ"</em>, trong khi độc giả Báo chí chính thống và Facebook lâu năm chú trọng tính ổn định thể chế và vị thế ngoại giao AFC/FIFA của TS. Trần Quốc Tuấn.</li>
+            <li><strong>Hiệu ứng Tương tác Phản biện:</strong> Các chủ đề gây tranh cãi (như câu nói bị cắt cúp về "nhập tịch thử nghiệm" hoặc tiền lệ giải thể CLB Sài Gòn Xuân Thành 2013) thường kích thích luồng bình luận tranh luận gay gắt hơn các bài đưa tin trung lập.</li>
+            <li><strong>Văn bản Đề cử vòng ngoài ≠ Lá phiếu Kín trong phòng họp:</strong> Thông tin báo chí nêu <em>"&gt;40/57 tổ chức thành viên đề cử"</em> là bước giới thiệu nhân sự đầu vào (theo nguyên lý giao thoa tập hợp, có tối thiểu 23–24/57 đơn vị đề cử đồng thời nhiều ứng viên), không phải kết quả bỏ phiếu chính thức.</li>
+            <li><strong>Tính chất Dữ liệu Chốt theo Thời điểm:</strong> Toàn bộ số liệu phản ánh giai đoạn <code>01/10/2026 – 25/10/2026</code>. Mọi diễn biến truyền thông hoặc quyết định nhân sự sau thời điểm này cần được đồng bộ bổ sung qua công cụ quản trị dữ liệu trước khi sử dụng.</li>
+          </ol>
+        </div>
+      </div>
+      </div>
+
+      <!-- Sub-view 5.3: Deep-dive Verification Tables (1A, 1B, 3A, 3B, 5A, 5B, 5C) -->
+      <div id="srcSubAuditTables" style="display:none;">
+        <div id="sec2410DeepDive">
+          <!-- SUB-PANEL 1: SSOT toàn diện vs trọng tâm & 6 LABELS sáu nhóm quan điểm -->
+        <div id="p2410_ssot" class="p2410-pane">
+          <div class="grid-2" style="margin-bottom:14px;">
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 1A — ĐỐI SOÁT HAI PHẠM VI DỮ LIỆU (TOÀN DIỆN VÀ TRỌNG TÂM)</div>
+                  <div class="panel-sub">Tầng 1 (Bộ dữ liệu toàn diện · 1.137 bài · 20.767 bình luận) so với Tầng 2 (Bộ dữ liệu trọng tâm · 587 bài · 12.803 BL)</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:12px;">
+                  <thead>
+                    <tr>
+                      <th>Chỉ số định lượng</th>
+                      <th>Phạm vi 1 — bộ dữ liệu toàn diện</th>
+                      <th>Phạm vi 2 — bộ dữ liệu trọng tâm</th>
+                      <th>Quy trình sàng lọc và ghi chú chuyên môn</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><strong>1. Tổng kênh giám sát / Kênh có bài</strong></td>
+                      <td><strong>805 kênh</strong> (<strong>512 kênh có bài</strong>: 334 FB · 116 YT · 62 TT)</td>
+                      <td><strong>492 kênh</strong> (<strong>329 kênh có bài</strong>: 221 FB · 67 YT · 41 TT)</td>
+                      <td>Mở rộng thêm 313 kênh theo dõi (+183 kênh có bài đăng liên quan)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>2. Tổng bài viết &amp; video đã lọc sạch</strong></td>
+                      <td><strong style="color:var(--tuan-blue);">1.137 bài/video</strong> (568 FB · 310 YT · 259 TT)</td>
+                      <td><strong>587 bài/video</strong> (352 FB · 159 YT · 76 TT)</td>
+                      <td>Đã loại bỏ <strong>4.209 clip TT nhiễu</strong> + <strong>74 video YT giả</strong> + <strong>04 Reels FB</strong></td>
+                    </tr>
+                    <tr>
+                      <td><strong>3. Tổng lượt xem video</strong></td>
+                      <td><strong style="color:var(--gold);">36.878.341 lượt xem</strong> (13.964.171 YT + 22.914.170 TT)</td>
+                      <td><strong>5.202.155 lượt xem</strong> (2.111.790 YT + 3.090.365 TT)</td>
+                      <td>Gỡ băng âm thanh 100% kèm mốc thời gian đối chiếu trực tiếp</td>
+                    </tr>
+                    <tr>
+                      <td><strong>4. Tổng lượt thích &amp; Lượt chia sẻ</strong></td>
+                      <td><strong>464.030 lượt thích</strong> (214.068 FB + 249.962 TT) · <strong>16.898 lượt chia sẻ</strong></td>
+                      <td><strong>163.815 lượt thích</strong> · <strong>9.392 lượt chia sẻ</strong> (FB + TT)</td>
+                      <td>Bao gồm toàn bộ tương tác bài gốc trên 3 nền tảng</td>
+                    </tr>
+                    <tr>
+                      <td><strong>5. Tổng bình luận thu thập</strong></td>
+                      <td><strong style="color:var(--tuan-blue);">20.767 BL</strong> (15.355 FB · 3.670 YT · 1.742 TT)</td>
+                      <td><strong>12.803 BL</strong> (10.133 FB · 2.138 YT · 532 TT)</td>
+                      <td>Kiểm định cụm trùng lặp văn bản tự động (Nhận diện văn bản trùng lặp và tần suất đăng tải bất thường)</td>
+                    </tr>
+                    <tr>
+                      <td><strong>6. Bình luận tự nhiên và bình luận mẫu lặp lại</strong></td>
+                      <td><strong style="color:#166534;">19.652 Tự nhiên (94,63%)</strong> · <strong style="color:#B8292F;">1.115 bình luận mẫu (5,37%)</strong></td>
+                      <td><strong>12.091 Tự nhiên (94,44%)</strong> · <strong>712 bình luận mẫu (5,56%)</strong></td>
+                      <td>Loại bỏ nhiễu tài khoản ảo/sao chép hàng loạt để đo lường chính xác dư luận thực</td>
+                    </tr>
+                    <tr style="background:#EDF3FC;">
+                      <td><strong>7. Bình luận bày tỏ quan điểm nhân sự</strong></td>
+                      <td><strong style="color:var(--tuan-blue);">2.916 Tổng BL</strong> (<strong style="color:#166534;">2.683 Tự nhiên</strong> + <strong>233 bình luận mẫu</strong>)</td>
+                      <td><strong>2.712 Tổng BL</strong> (<strong>2.495 Tự nhiên</strong> + <strong>217 bình luận mẫu</strong>)</td>
+                      <td>100% (2.916/2.916 BL) đã được nạp vào Sổ cái mục Bình luận &amp; Danh mục nguồn kèm link gốc</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="panel" style="margin-bottom:0;">
+              <div class="panel-header">
+                <div>
+                  <div class="panel-title">BẢNG 1B — PHÂN BỔ SÁU NHÓM QUAN ĐIỂM TRÊN HAI PHẠM VI DỮ LIỆU</div>
+                  <div class="panel-sub">Phân tách chi tiết theo số lượng bài đăng, tổng bình luận, bình luận tự nhiên, bình luận mẫu và lượt thích</div>
+                </div>
+              </div>
+              <div class="table-wrap">
+                <table class="wr-table" style="font-size:12px;">
+                  <thead>
+                    <tr>
+                      <th>Mã &amp; nhãn lập trường chuẩn</th>
+                      <th>Số bài toàn diện (trọng tâm)</th>
+                      <th>Tổng bình luận toàn diện (trọng tâm)</th>
+                      <th>Bình luận tự nhiên toàn diện (trọng tâm)</th>
+                      <th>Bình luận mẫu (%)</th>
+                      <th>Phân bổ bình luận tự nhiên theo nền tảng</th>
+                      <th style="text-align:center;">Xem link</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')" style="cursor:pointer;">
+                      <td><span class="badge badge-tuan">(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn</span></td>
+                      <td style="text-align:center;font-weight:800;">135 <span style="color:var(--text-muted);">(125)</span></td>
+                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">819 <span style="color:var(--text-muted);">(737)</span></td>
+                      <td style="text-align:center;font-weight:900;color:#166534;">766 (#1) <span style="color:var(--text-muted);">(688)</span></td>
+                      <td style="text-align:center;">53 (6,47%)</td>
+                      <td><strong>598 FB</strong> · <strong>126 YT</strong> · <strong>42 TT</strong> (1.173 lượt thích BL)</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')">Xem 954 Link ↗</button></td>
+                    </tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')" style="cursor:pointer;">
+                      <td><span class="badge badge-thuy">(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy</span></td>
+                      <td style="text-align:center;font-weight:800;">149 <span style="color:var(--text-muted);">(143)</span></td>
+                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">769 <span style="color:var(--text-muted);">(742)</span></td>
+                      <td style="text-align:center;font-weight:900;color:var(--thuy-red);">687 (#2) <span style="color:var(--text-muted);">(667)</span></td>
+                      <td style="text-align:center;color:#B8292F;font-weight:700;">82 (10,66%)</td>
+                      <td><strong>373 FB</strong> · <strong>119 YT</strong> · <strong>195 TT</strong> (853 lượt thích BL)</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')">Xem 918 Link ↗</button></td>
+                    </tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Liên danh')" style="cursor:pointer;">
+                      <td><span class="badge badge-coal">(Phương án Liên danh) Liên danh (TS. Tuấn CT + Ông Thụy PCT TC)</span></td>
+                      <td style="text-align:center;font-weight:800;">94 <span style="color:var(--text-muted);">(91)</span></td>
+                      <td style="text-align:center;font-weight:800;">275 <span style="color:var(--text-muted);">(256)</span></td>
+                      <td style="text-align:center;font-weight:900;color:var(--tuan-blue);">255 <span style="color:var(--text-muted);">(237)</span></td>
+                      <td style="text-align:center;">20 (7,27%)</td>
+                      <td><strong>152 FB</strong> · <strong>88 YT</strong> · <strong>15 TT</strong> (515 lượt thích · Đồng thuận 8,79:1)</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Liên danh')">Xem 369 Link ↗</button></td>
+                    </tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Ứng viên khác')" style="cursor:pointer;">
+                      <td><span class="badge badge-gray">(Ứng viên khác) Ủng hộ Ứng viên khác (Đức/Vượng/Vũ...)</span></td>
+                      <td style="text-align:center;font-weight:800;">31 <span style="color:var(--text-muted);">(29)</span></td>
+                      <td style="text-align:center;font-weight:800;">420 <span style="color:var(--text-muted);">(393)</span></td>
+                      <td style="text-align:center;font-weight:800;">402 <span style="color:var(--text-muted);">(375)</span></td>
+                      <td style="text-align:center;">18 (4,29%)</td>
+                      <td><strong>235 FB</strong> · <strong>148 YT</strong> · <strong>19 TT</strong> (703 lượt thích BL)</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Ứng viên khác')">Xem 451 Link ↗</button></td>
+                    </tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Phản biện')" style="cursor:pointer;">
+                      <td><span class="badge badge-opp">(Phản biện) Phản đối / Hoài nghi / Cảnh báo</span></td>
+                      <td style="text-align:center;font-weight:800;">46 <span style="color:var(--text-muted);">(45)</span></td>
+                      <td style="text-align:center;font-weight:800;color:#B8292F;">633 <span style="color:var(--text-muted);">(584)</span></td>
+                      <td style="text-align:center;font-weight:900;color:#B8292F;">573 <span style="color:var(--text-muted);">(528)</span></td>
+                      <td style="text-align:center;color:#B8292F;font-weight:700;">60 (9,48%)</td>
+                      <td><strong>351 FB</strong> · <strong>133 YT</strong> · <strong>89 TT</strong> (Phản đối Thụy: 567 Tự nhiên vs Tuấn: 41 Tự nhiên)</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Phản biện')">Xem 679 Link ↗</button></td>
+                    </tr>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','S6-CMT','')" style="cursor:pointer;">
+                      <td><span class="badge badge-gray">(Đưa tin trung lập) Trung lập / Đưa tin thể chế</span></td>
+                      <td style="text-align:center;font-weight:800;">682 <span style="color:var(--text-muted);">(154)</span></td>
+                      <td style="text-align:center;font-weight:800;">17.851 <span style="color:var(--text-muted);">(10.091)</span></td>
+                      <td style="text-align:center;font-weight:800;">16.969 <span style="color:var(--text-muted);">(9.596)</span></td>
+                      <td style="text-align:center;">882 (4,94%)</td>
+                      <td><strong>12.828 FB</strong> · <strong>2.863 YT</strong> · <strong>1.278 TT</strong> (22.650 lượt thích BL)</td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','S6-CMT','')">Xem 18.533 Link ↗</button></td>
+                    </tr>
+                    <tr style="background:#EFECE6;font-weight:900;" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')" style="cursor:pointer;">
+                      <td>TỔNG CỘNG TOÀN KHO (CHÊNH LỆCH = 0)</td>
+                      <td style="text-align:center;">1.137 (587)</td>
+                      <td style="text-align:center;">20.767 (12.803)</td>
+                      <td style="text-align:center;color:#166534;">19.652 (12.091)</td>
+                      <td style="text-align:center;color:#B8292F;">1.115 (5,37%)</td>
+                      <td><strong>nhóm bày tỏ quan điểm nhân sự: 2.916 Tổng BL = 2.683 Tự nhiên + 233 bình luận mẫu</strong></td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Mở Sổ cái ↗</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+          <!-- SUB-PANEL 3: POST x COMMENT DIVERGENCE & SEEDER SIMHASH & CLASHES -->
+        <div id="p2410_div" class="p2410-pane" >
           <div class="grid-2" style="margin-bottom:14px;">
             <div class="panel" style="margin-bottom:0;">
               <div class="panel-header">
                 <div>
                   <div class="panel-title">BẢNG 3A — TƯƠNG QUAN GIỮA ĐỊNH HƯỚNG BÀI ĐĂNG VÀ CHIỀU HƯỚNG BÌNH LUẬN CỦA ĐỘC GIẢ</div>
-                  <div class="panel-sub">Giải phẫu hiện tượng 56,84% bình luận chính kiến dưới 149 bài (Ủng hộ Ông Thụy) Ông Nguyễn Đức Thụy (Bầu Thụy) đảo chiều sang phản biện hoặc bầu cho TS. Trần Quốc Tuấn</div>
+                  <div class="panel-sub">Phân tích hiện tượng 56,84% bình luận chính kiến dưới 149 bài (Ủng hộ Ông Thụy) Ông Nguyễn Đức Thụy (Bầu Thụy) đảo chiều sang phản biện hoặc bầu cho TS. Trần Quốc Tuấn</div>
                 </div>
               </div>
               <div class="table-wrap">
@@ -3644,140 +4921,9 @@ HTML_TEMPLATE_PART2 = r"""
           </div>
         </div>
 
-        <!-- SUB-PANEL 4: 57 VFF MEMBER ORGANIZATIONS & BAYESIAN FORECAST -->
-        <div id="p2410_57vff" class="p2410-pane" style="display:none;">
-          <div class="grid-2" style="margin-bottom:14px;">
-            <div class="panel" style="margin-bottom:0;">
-              <div class="panel-header">
-                <div>
-                  <div class="panel-title">BẢNG 3C — CẤU TRÚC 6 KHỐI CỬ TRI TRONG 57 TỔ CHỨC THÀNH VIÊN VFF (ĐỐI SÁNH TÍN HIỆU MXH vs. LÁ PHIẾU ĐẠI HỘI)</div>
-                  <div class="panel-sub">Theo Điều lệ VFF (Khoản 2 Điều 43): Biểu quyết bằng phiếu kín trên 57 Tổ chức thành viên · Theo nguyên lý giao thoa tập hợp: tối thiểu 23–24/57 đơn vị đề cử kép</div>
-                </div>
-              </div>
-              <div class="table-wrap">
-                <table class="wr-table" style="font-size:11.8px;">
-                  <thead>
-                    <tr>
-                      <th>Khối tổ chức thành viên VFF</th>
-                      <th>Số phiếu</th>
-                      <th>Tỷ trọng</th>
-                      <th>Nghiêng TS. Tuấn</th>
-                      <th>Nghiêng Ông Thụy</th>
-                      <th>Liên danh / dao động</th>
-                      <th>Lợi ích thể chế &amp; căn cứ thực chứng</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><strong>1. Khối 14 CLB V.League 1</strong></td>
-                      <td style="text-align:center;font-weight:800;">14</td>
-                      <td style="text-align:center;">24,56%</td>
-                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">6</td>
-                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">5</td>
-                      <td style="text-align:center;font-weight:700;">3</td>
-                      <td>Nhóm CLB hệ sinh thái LPBank/HAGL/Ninh Bình nghiêng Ông Thụy; nhóm Hà Nội FC, Thể Công Viettel, Bình Dương, Hải Phòng, SLNA ưu tiên cân bằng thể chế.</td>
-                    </tr>
-                    <tr>
-                      <td><strong>2. Khối 10 CLB Hạng Nhất QG</strong></td>
-                      <td style="text-align:center;font-weight:800;">10</td>
-                      <td style="text-align:center;">17,54%</td>
-                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">4</td>
-                      <td style="text-align:center;font-weight:800;color:var(--thuy-red);">4</td>
-                      <td style="text-align:center;font-weight:700;">2</td>
-                      <td>Các CLB Hạng Nhất cần nguồn tài trợ giải đấu rất quan tâm gói 600–1.000 tỷ/năm, nhưng vẫn phụ thuộc quy chế cấp phép &amp; hỗ trợ chuyên môn VFF.</td>
-                    </tr>
-                    <tr>
-                      <td><strong>3. Khối 15 CLB Hạng Nhì, Nữ &amp; Futsal</strong></td>
-                      <td style="text-align:center;font-weight:800;">15</td>
-                      <td style="text-align:center;">26,32%</td>
-                      <td style="text-align:center;font-weight:900;color:#166534;">11</td>
-                      <td style="text-align:center;">2</td>
-                      <td style="text-align:center;">2</td>
-                      <td><strong>Nền tảng phiếu vững chắc nhất của TS. Tuấn:</strong> Hoạt động dựa vào ngân sách địa phương, quỹ FIFA Forward, dự án AFC cho bóng đá Nữ &amp; Futsal.</td>
-                    </tr>
-                    <tr>
-                      <td><strong>4. Khối 14 LĐBĐ Địa phương (Tỉnh/TP)</strong></td>
-                      <td style="text-align:center;font-weight:800;">14</td>
-                      <td style="text-align:center;">24,56%</td>
-                      <td style="text-align:center;font-weight:900;color:#166534;">11</td>
-                      <td style="text-align:center;">1</td>
-                      <td style="text-align:center;">2</td>
-                      <td>Lãnh đạo Sở VH-TT-DL / nguyên cán bộ quản lý thể thao địa phương ưu tiên tính ổn định tổ chức và định hướng của Cục TDTT.</td>
-                    </tr>
-                    <tr>
-                      <td><strong>5. Khối 04 Tổ chức Thành viên Khác</strong></td>
-                      <td style="text-align:center;font-weight:800;">04</td>
-                      <td style="text-align:center;">7,02%</td>
-                      <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">3</td>
-                      <td style="text-align:center;">0</td>
-                      <td style="text-align:center;">1</td>
-                      <td>Hội đồng HLV QG, Ban Trọng tài, Hiệp hội BĐ Sinh viên gắn bó trực tiếp với bộ máy điều hành chuyên môn VFF Khóa IX.</td>
-                    </tr>
-                    <tr style="background:#EFECE6;font-weight:900;">
-                      <td>TỔNG CỘNG ĐẠI HỘI VFF KHÓA X</td>
-                      <td style="text-align:center;">57</td>
-                      <td style="text-align:center;">100%</td>
-                      <td style="text-align:center;color:#166534;">35 (61,40%)</td>
-                      <td style="text-align:center;color:var(--thuy-red);">12 (21,05%)</td>
-                      <td style="text-align:center;color:var(--tuan-blue);">10 (17,54%)</td>
-                      <td><strong>Ngưỡng quá bán (50% + 1) = 29/57 phiếu · Tối thiểu 23–24/57 đơn vị đề cử kép</strong></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <div class="panel" style="margin-bottom:0;">
-              <div class="panel-header">
-                <div>
-                  <div class="panel-title">BẢNG 3D — MÔ HÌNH DỰ BÁO XÁC SUẤT KỊCH BẢN ĐẠI HỘI VFF KHÓA X (PHÂN TÍCH BAYES)</div>
-                  <div class="panel-sub">Kết hợp Xác suất tiền nghiệm thể chế (tiền lệ 9 kỳ Đại hội VFF) và Xác suất thực chứng (57 Tổ chức thành viên + Tín nhiệm ròng Tự nhiên)</div>
-                </div>
-              </div>
-              <div class="table-wrap">
-                <table class="wr-table" style="font-size:12px;">
-                  <thead>
-                    <tr>
-                      <th>Mã kịch bản</th>
-                      <th>Kịch bản kết quả Đại hội VFF Khóa X</th>
-                      <th>Xác suất dự báo</th>
-                      <th>Cơ chế thực thi &amp; giải pháp hiệp thương cấp cao</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr style="background:#EDF3FC;">
-                      <td><span class="badge badge-coal">KỊCH BẢN H1</span></td>
-                      <td><strong>Liên danh Hiệp thương (TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính / Chủ tịch VPF)</strong></td>
-                      <td style="text-align:center;font-weight:900;font-size:15px;color:#166534;">64,8%</td>
-                      <td>Trước phiên bầu chính thức, cơ quan chủ quản hiệp thương thống nhất cơ cấu: <strong>TS. Trần Quốc Tuấn tái cử Chủ tịch VFF (1 ứng viên duy nhất bầu Chủ tịch, đạt 95%–100% phiếu)</strong>; <strong>Ông Nguyễn Đức Thụy rút ứng cử Chủ tịch để ứng cử Phó Chủ tịch phụ trách Tài chính &amp; Vận động tài trợ (hoặc Chủ tịch HĐQT VPF)</strong>. Khớp hoàn toàn với nguyện vọng <code>(Phương án Liên danh)</code> trên MXH (<code>8,79 : 1</code>).</td>
-                    </tr>
-                    <tr>
-                      <td><span class="badge badge-tuan">KỊCH BẢN H2</span></td>
-                      <td><strong>TS. Trần Quốc Tuấn Tái cử Tuyệt đối (Ông Thụy rút lui hoàn toàn về làm Nhà tài trợ chiến lược)</strong></td>
-                      <td style="text-align:center;font-weight:900;font-size:15px;color:var(--tuan-blue);">23,9%</td>
-                      <td>Nếu quy định kiểm soát xung đột lợi ích đa CLB được siết chặt hoặc Ông Thụy không muốn giữ chức danh cấp phó, Ông Thụy rút hồ sơ trước Đại hội để giữ vị thế Nhà tài trợ Kim cương cho ĐTQG và V.League. TS. Tuấn tái cử với ~88%–95% phiếu.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="badge badge-thuy">KỊCH BẢN H3</span></td>
-                      <td><strong>Đối đầu Bỏ phiếu Kín Trực tiếp &amp; Ông Nguyễn Đức Thụy Đắc cử Chủ tịch VFF</strong></td>
-                      <td style="text-align:center;font-weight:900;font-size:15px;color:var(--thuy-red);">9,1%</td>
-                      <td>Chỉ xảy ra nếu có biến cố bất thường khiến TS. Tuấn không tham gia ứng cử hoặc có chỉ đạo thay đổi toàn diện mô hình quản trị VFF từ cấp vĩ mô. Nếu bỏ phiếu kín đối đầu trực tiếp trong điều kiện bình thường, cấu trúc <code>35/57</code> phiếu nền của Khối LĐBĐ địa phương &amp; ngoài chuyên nghiệp khiến khả năng đảo chiều rất thấp.</td>
-                    </tr>
-                    <tr>
-                      <td><span class="badge badge-gray">KỊCH BẢN H4</span></td>
-                      <td><strong>Phương án Nhân sự Thứ 3 (Ông Nguyễn Xuân Vũ hoặc nhân sự điều động mới)</strong></td>
-                      <td style="text-align:center;font-weight:800;font-size:14px;color:var(--text-muted);">2,2%</td>
-                      <td>Phương án dự phòng kỹ thuật trong trường hợp xuất hiện bế tắc hiệp thương giữa hai cực.</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SUB-PANEL 5: LINK AUDIT & toàn diện HOMONYM/OFF-TOPIC FACT-CHECK -->
-        <div id="p2410_factcheck" class="p2410-pane" style="display:none;">
+        
+          <!-- SUB-PANEL 5: LINK AUDIT & toàn diện HOMONYM/OFF-TOPIC FACT-CHECK -->
+        <div id="p2410_factcheck" class="p2410-pane" >
           <div class="grid-2" style="margin-bottom:14px;">
             <div class="panel" style="margin-bottom:0;">
               <div class="panel-header">
@@ -3798,46 +4944,46 @@ HTML_TEMPLATE_PART2 = r"""
                     </tr>
                   </thead>
                   <tbody>
-                    <tr onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')" style="cursor:pointer;" title="Bấm để mở 81 bài báo chính thống tại Sổ cái Tab 08">
+                    <tr onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')" style="cursor:pointer;" title="Bấm để mở 81 bài báo chính thống tại Danh mục nguồn">
                       <td><strong>1. Nhóm bài báo chính thống và tài liệu tổng hợp</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">32 cơ quan báo chí Trung ương, Thể thao và Kinh tế</span></td>
                       <td style="text-align:center;font-weight:800;">92 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">92 / 92 (100%)</td>
                       <td>Bổ sung <strong>03 bài báo chính thống mới</strong> (<em>CAND, SGGP Thể Thao, Tiền Phong</em> &rarr; nâng kho báo chí lên <strong>81 bài</strong>) + 02 link BL FB + 03 link mốc giây YT.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('Báo chí','ALL','PRESS','')">Mở 81 Báo ↗</button></td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','YT-VID','')" style="cursor:pointer;" title="Bấm để mở danh sách Video &amp; 115 cặp link Mốc giây YouTube tại Sổ cái Tab 08">
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','YT-VID','')" style="cursor:pointer;" title="Bấm để mở danh sách Video &amp; 115 cặp link Mốc giây YouTube tại Danh mục nguồn">
                       <td><strong>2. Danh mục bài viết và video gốc trên ba nền tảng</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">568 FB · 310 YT · 259 TT (Trang chủ kênh, Bài gốc &amp; Mốc giây)</span></td>
                       <td style="text-align:center;font-weight:800;">1.137 bài<br/><span style="font-size:10.5px;color:var(--text-muted);">1.619 URL duy nhất</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">1.619 / 1.619 (100%)</td>
                       <td><strong>Đảm bảo 100% đường dẫn bài viết hoạt động nguyên vẹn</strong>; tích hợp đủ cả 3 liên kết trên từng dòng: <strong>Link Trang Chủ Kênh</strong>, <strong>Link Bài/Video Gốc</strong> &amp; <strong>Link Mốc Giây ?t=</strong>.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','YT-VID','')">Mở Bài &amp; Mốc giây ↗</button></td>
                     </tr>
-                    <tr onclick="switchTab('tab-comments');switchCommentSub('all20767');" style="cursor:pointer;" title="Bấm để mở Sổ cái Toàn bộ 20.767 Bình luận &amp; Link gốc tại Tab 06">
+                    <tr onclick="switchTab('tab-comments');switchCommentSub('all20767');" style="cursor:pointer;" title="Bấm để mở Sổ cái Toàn bộ 20.767 Bình luận &amp; Link gốc tại mục Bình luận">
                       <td><strong>3. Cơ sở dữ liệu bình luận đa nền tảng</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">20.767 BL (2.916 bình luận bày tỏ quan điểm nhân sự + 17.851 BL (Đưa tin trung lập))</span></td>
                       <td style="text-align:center;font-weight:800;">20.767 Link BL<br/><span style="font-size:10.5px;color:var(--text-muted);">21.461 URL duy nhất</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">20.767 / 20.767 (100%)</td>
                       <td><strong>Tích hợp 100% đủ 20.767 bình luận (2.916 nhóm bày tỏ quan điểm nhân sự + 17.851 (Đưa tin trung lập))</strong> kèm <strong>Link Bình luận trực tiếp</strong>, <strong>Link Bài gốc</strong> &amp; <strong>Link Kênh người BL (YT/TT)</strong>; ẩn danh 100% link cá nhân FB.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-comments');switchCommentSub('all20767');">Mở 20.767 BL ↗</button></td>
                     </tr>
-                    <tr onclick="switchTab('tab-press-fb');switchPressFbSub('fb378');" style="cursor:pointer;" title="Bấm để mở Danh bạ 881 Kênh đa nền tảng tại Tab 04">
+                    <tr onclick="switchTab('tab-press-fb');switchPressFbSub('fb378');" style="cursor:pointer;" title="Bấm để mở Danh bạ 881 Kênh đa nền tảng tại mục Kênh &amp; truyền thông">
                       <td><strong>4. Danh bạ trang, kênh truyền thông và người ảnh hưởng</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">512 kênh có bài (334 FB · 116 YT · 62 TT)</span></td>
                       <td style="text-align:center;font-weight:800;">505 URL kênh<br/><span style="font-size:10.5px;color:var(--text-muted);">+85 kênh từ bài đăng</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">505 / 505 (100%)</td>
                       <td>Hợp nhất cùng 378 kênh FB nền thành <strong>881 mục danh bạ kênh</strong> trong danh bạ kênh truyền thông; hiển thị song song <strong>Link Trang Chủ Kênh</strong> &amp; bài đại diện.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-press-fb');switchPressFbSub('fb378');">Mở 881 Kênh ↗</button></td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')" style="cursor:pointer;" title="Bấm để mở 269 trích dẫn tiêu biểu tại Danh mục nguồn đối chiếu (Mục 08)">
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')" style="cursor:pointer;" title="Bấm để mở 269 trích dẫn tiêu biểu tại Danh mục nguồn đối chiếu (Mục 05)">
                       <td><strong>5. Tuyển tập luận điểm và trích dẫn tiêu biểu</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">269 trích dẫn nguyên văn tiêu biểu</span></td>
                       <td style="text-align:center;font-weight:800;">269 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">269 / 269 (100%)</td>
-                      <td>Tích hợp toàn bộ <strong>269 trích dẫn nguyên văn</strong> vào Sổ cái Tab 08 (<code>#QUOTE-001..269</code>); <strong>chuẩn hóa toàn bộ đường dẫn trích dẫn gốc</strong>; gắn cờ 08 trích dẫn lệch chủ đề.</td>
+                      <td>Tích hợp toàn bộ <strong>269 trích dẫn nguyên văn</strong> vào Danh mục nguồn (<code>#QUOTE-001..269</code>); <strong>chuẩn hóa toàn bộ đường dẫn trích dẫn gốc</strong>; gắn cờ 08 trích dẫn lệch chủ đề.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')">Mở 269 Trích dẫn ↗</button></td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')" style="cursor:pointer;" title="Bấm để mở 83 biên bản sàng lọc dữ liệu ngoài phạm vi tại Danh mục nguồn đối chiếu (Mục 08)">
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')" style="cursor:pointer;" title="Bấm để mở 83 biên bản sàng lọc dữ liệu ngoài phạm vi tại Danh mục nguồn đối chiếu (Mục 05)">
                       <td><strong>6. Biên bản sàng lọc dữ liệu ngoài phạm vi bầu cử</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">83 video ngoài phạm vi bị chặn (38 TT · 45 YT)</span></td>
                       <td style="text-align:center;font-weight:800;">83 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">83 / 83 (100%)</td>
-                      <td>Tích hợp toàn bộ <strong>83 bằng chứng sàng lọc hai lớp</strong> vào Sổ cái Tab 08 (<code>#NOISE-001..083</code>) để kiểm chứng độc lập.</td>
+                      <td>Tích hợp toàn bộ <strong>83 bằng chứng sàng lọc hai lớp</strong> vào Danh mục nguồn (<code>#NOISE-001..083</code>) để kiểm chứng độc lập.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Mở 83 Lọc nhiễu ↗</button></td>
                     </tr>
                     <tr style="background:#EFECE6;font-weight:900;">
@@ -3917,10 +5063,10 @@ HTML_TEMPLATE_PART2 = r"""
             <div class="panel-header">
               <div>
                 <div class="panel-title">BẢNG 5C — DANH SÁCH 34 BÀI ĐĂNG TRÙNG TÊN HOẶC NGOÀI CHỦ ĐỀ BẦU CỬ ĐÃ ĐƯỢC GẮN CỜ LƯU Ý</div>
-                <div class="panel-sub">Toàn bộ 34 bài đăng dưới đây đã được gắn nhãn lưu ý riêng trong Danh mục nguồn đối chiếu (Mục 08) để đảm bảo tính minh bạch khi rà soát</div>
+                <div class="panel-sub">Toàn bộ 34 bài đăng dưới đây đã được gắn nhãn lưu ý riêng trong Danh mục nguồn đối chiếu (Mục 05) để đảm bảo tính minh bạch khi rà soát</div>
               </div>
               <div style="display:flex;gap:8px;flex-wrap:wrap;">
-                <button type="button" class="btn btn-primary" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','')">Xem 45 bản ghi gắn nhãn lưu ý tại Mục 08 &rarr;</button>
+                <button type="button" class="btn btn-primary" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','')">Xem 45 bản ghi gắn nhãn lưu ý tại Danh mục nguồn &rarr;</button>
                 <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')">Xem 269 trích dẫn tiêu biểu &rarr;</button>
                 <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Xem 83 biên bản sàng lọc dữ liệu &rarr;</button>
               </div>
@@ -3944,666 +5090,12 @@ HTML_TEMPLATE_PART2 = r"""
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- ================================================================= -->
-      <!-- SECTION 2: ĐIỂM NÓNG CẦN THEO DÕI (VÌ SAO? — HEATMAP 6 VẤN ĐỀ)    -->
-      <!-- ================================================================= -->
-      <div class="ed-section">
-        <div class="ed-section-hdr">
-          <div>
-            <div class="ed-kicker">02 · ĐIỂM NÓNG CẦN THEO DÕI (PHÂN TÍCH NGUYÊN NHÂN — VÌ SAO?)</div>
-            <h2 class="ed-headline">Ma trận 6 chủ đề định hình thái độ công chúng</h2>
-            <p class="ed-lead">Phân tích thái độ công chúng theo sáu khía cạnh quản trị trọng tâm đối với từng ứng viên. Độ đậm của ô thể hiện mức độ thuận lợi (<span style="color:#1B4F9C;font-weight:700;">xanh navy</span>), trung lập/chia vai (<span style="color:#4A5260;font-weight:700;">xám</span>) hoặc rủi ro phản đối (<span style="color:#B8292F;font-weight:700;">đỏ</span>), kèm quy mô mẫu <code>N</code> và nút <strong>Xem nguồn liên quan</strong>.</p>
-          </div>
-        </div>
-
-        <div class="table-wrap" style="border-radius:0;border:none;">
-          <table class="ed-heatmap-table">
-            <thead>
-              <tr>
-                <th style="width:22%;">Chủ đề tranh luận cốt lõi</th>
-                <th style="width:11%;">Quy mô mẫu (n)</th>
-                <th style="width:20%;">TS. Trần Quốc Tuấn (chiều tác động và mẫu)</th>
-                <th style="width:20%;">Ông Nguyễn Đức Thụy (chiều tác động và mẫu)</th>
-                <th style="width:15%;">Tỷ lệ toàn mẫu (+ / 0 / -)</th>
-                <th style="width:12%;text-align:center;">Nguồn liên quan</th>
-              </tr>
-            </thead>
-            <tbody id="exitPollContainer"></tbody>
-          </table>
         </div>
       </div>
 
-      <!-- ================================================================= -->
-      <!-- SECTION 3: KÊNH TRỌNG ĐIỂM (Ở ĐÂU? — XẾP HẠNG 36 CỤM KÊNH)        -->
-      <!-- ================================================================= -->
-      <div class="ed-section">
-        <div class="ed-section-hdr">
-          <div>
-            <div class="ed-kicker">03 · KÊNH TRỌNG ĐIỂM (PHÂN TÍCH NGUỒN PHÁT — Ở ĐÂU?)</div>
-            <h2 class="ed-headline">Xếp hạng 36 cụm kênh theo quy mô thảo luận và chiều lập trường</h2>
-            <p class="ed-lead">Giúp người điều hành nhận diện trong 10 giây kênh nào có quy mô thảo luận lớn nhất, chiều hướng lập trường độc giả bên dưới (<span style="color:#1B4F9C;font-weight:700;">TS. Tuấn CT</span> · <span style="color:#6C737F;font-weight:700;">Phản biện/Khác</span> · <span style="color:#B8292F;font-weight:700;">Ông Thụy CT</span>) và các cụm kênh xảy ra hiện tượng <strong>bình luận đảo chiều bài đăng PR</strong>.</p>
-          </div>
-          <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
-            <div class="ed-mode-switch" id="overviewChPlatFilter">
-              <button class="ed-mode-btn active" onclick="filterOverviewChannels('ALL', this)">Tất cả (36)</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('1. Facebook', this)">Facebook (12)</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('2. YouTube', this)">YouTube (8)</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('3. TikTok', this)">TikTok (4)</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('4. Báo Chính Thống', this)">Báo chí (12)</button>
-            </div>
-            <input type="text" id="overviewChSearch" class="input-ctrl" style="border-radius:0;padding:5px 10px;font-size:11.8px;min-width:190px;" placeholder="Tìm nhanh trong 36 kênh..." oninput="renderElectoralCartogram()" />
-            <select id="overviewChSort" class="select-ctrl" style="border-radius:0;padding:5px 10px;font-size:11.8px;" onchange="renderElectoralCartogram()">
-              <option value="vol_desc">Sắp xếp: Quy mô bình luận giảm dần</option>
-              <option value="default">Sắp xếp: Thứ tự 4 nhóm mặt trận</option>
-              <option value="reversal">Sắp xếp: Ưu tiên kênh Đảo chiều / đăng tải đồng loạt</option>
-            </select>
-          </div>
-        </div>
-
-        <div class="table-wrap" style="border-radius:0;max-height:620px;overflow-y:auto;">
-          <table class="wr-table" style="font-size:12.5px;">
-            <thead>
-              <tr>
-                <th style="width:5%;text-align:center;">Hạng</th>
-                <th style="width:23%;">Tên kênh / cụm nguồn & nền tảng</th>
-                <th style="width:16%;">Quy mô thảo luận (n)</th>
-                <th style="width:16%;">Định hướng bài đăng</th>
-                <th style="width:20%;">Chiều lập trường bình luận (TS. Tuấn | khác | Ông Thụy)</th>
-                <th style="width:10%;">Mức tin cậy nguồn</th>
-                <th style="width:10%;text-align:center;">Nguồn liên quan</th>
-              </tr>
-            </thead>
-            <tbody id="electoralCartogramGrid"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- ================================================================= -->
-      <!-- SECTION 4: BẰNG CHỨNG VÀ GIỚI HẠN (NGUỒN · PHƯƠNG PHÁP · SỔ CÁI)  -->
-      <!-- ================================================================= -->
-      <div class="ed-section" style="margin-bottom:10px;">
-        <div class="ed-section-hdr">
-          <div>
-            <div class="ed-kicker">04 · BẰNG CHỨNG VÀ GIỚI HẠN (CƠ SỞ DỮ LIỆU · PHƯƠNG PHÁP · KIỂM CHỨNG)</div>
-            <h2 class="ed-headline">Cơ sở dữ liệu đối soát, phân tầng nghiệp vụ và giới hạn suy luận</h2>
-            <p class="ed-lead">Tuân thủ chuẩn kiểm chứng dữ liệu bầu cử quốc tế: tách biệt rõ quy trình đại biểu chính thức với tín hiệu dư luận đại chúng, minh bạch hóa quy trình chọn mẫu và đối chiếu toàn bộ <strong>26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất</strong> (tổng hợp đầy đủ từ báo chí chính thống, ba nền tảng mạng xã hội và hệ thống bình luận công khai; toàn bộ liên kết gốc được lưu trữ nguyên vẹn).</p>
-          </div>
-        </div>
-
-        <div class="grid-3" style="margin-bottom:20px;">
-          <div style="background:var(--bg-panel);border:1px solid var(--border);border-top:3px solid var(--rule-heavy);padding:16px 18px;">
-            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">1. Quy trình Đại biểu Chính thức vs. Dư luận</div>
-            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">Chưa bỏ phiếu · 0 / 57 phiếu xác minh</div>
-            <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • Quyền bầu Chủ tịch VFF thuộc về <strong>Đại biểu các Tổ chức thành viên VFF</strong> (tham chiếu mốc 57 tổ chức thành viên) bỏ phiếu kín tại Đại hội.<br/>
-              • Thông tin báo chí nêu <em>"&gt;40/57 đề cử"</em> (19–20/10) được phân loại là <strong>Tuyên bố đề cử trên báo chí</strong> (chưa công bố danh sách văn bản từng CLB).<br/>
-              • <a href="javascript:void(0)" onclick="switchTab('tab-methodology')">Mở Bảng theo dõi Đại biểu & Phương pháp (Mục 09) &rarr;</a>
-            </p>
-          </div>
-
-          <div style="background:var(--bg-panel);border:1px solid var(--border);border-top:3px solid var(--tuan-blue);padding:16px 18px;">
-            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">2. Phạm vi truy quét & Kiểm định mẫu (01–25/10/2026)</div>
-            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">1.409 bài/video/báo (Bộ dữ liệu toàn diện: 1.137) · 20.767 BL gốc</div>
-            <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • <strong>Cửa sổ chốt dữ liệu:</strong> <code>01/10/2026 00:00 – 25/10/2026 GMT+7</code> (Đã kiểm tra &amp; khôi phục link: <code>25/10/2026</code>).<br/>
-              • <strong>Bảo mật danh tính người bình luận:</strong> Toàn bộ bình luận Facebook đã được <strong>ẩn link hồ sơ cá nhân</strong> và gán mã ẩn danh định danh; gắn kèm 100% liên kết bình luận gốc đã khôi phục.<br/>
-              • <strong>Độ tin cậy mã hóa kịch bản lập trường:</strong> Kiểm tra chéo đạt hệ số <strong>Cohen's Kappa κ = 0.89</strong>.
-            </p>
-          </div>
-
-          <div style="background:var(--bg-panel);border:1px solid var(--border);border-top:3px solid var(--thuy-red);padding:16px 18px;">
-            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:6px;">3. Danh mục Nguồn đối chiếu & Kiểm chứng độc lập</div>
-            <div style="font-size:14px;font-weight:800;color:var(--text-main);margin-bottom:6px;">26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất</div>
-            <p style="font-size:12.3px;color:var(--text-secondary);line-height:1.5;">
-              • <strong>Lũy kế đầy đủ đến 25/10/2026:</strong> <strong>26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất</strong> (bao trọn 81 bài báo, 881 kênh, 1.409 bài/video + 115 cặp link Mốc giây YT, 21.196 BL hợp nhất, 269 trích dẫn nguyên văn tiêu biểu và 83 biên bản sàng lọc dữ liệu ngoài phạm vi).<br/>
-              • <strong>Tách bạch 2 trạng thái kiểm chứng:</strong> <code>URL 100% nguyên vẹn (0 lỗi cắt độ dài đường dẫn)</code> so với <code>Gắn nhãn lưu ý 34 bài trùng tên hoặc ngoài chủ đề bầu cử</code>.<br/>
-              • <a href="javascript:void(0)" onclick="switchTab('tab-sources-ledger')" style="font-weight:800;color:var(--tuan-blue);">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ 26.743 bản ghi · 29.696 đường dẫn) &rarr;</a>
-            </p>
-          </div>
-        </div>
-
-        <!-- Complete Bảng tổng hợp Audit Table -->
-        <div class="panel" style="margin-bottom:0;">
-          <div class="panel-header">
-            <div>
-              <div class="panel-title">BẢNG ĐỐI SOÁT ĐỊNH LƯỢNG TOÀN DIỆN KHO DỮ LIỆU & KỊCH BẢN LẬP TRƯỜNG (BẢNG TỔNG HỢP CHÍNH)</div>
-              <div class="panel-sub">Toàn bộ chỉ tiêu gốc từ 5 bộ dữ liệu độc lập kèm nút "Xem nguồn liên quan" và liên kết đại diện</div>
-            </div>
-            <button class="btn btn-outline" onclick="switchTab('tab-sources-ledger')">Mở Tab 08: Nguồn & kiểm chứng (Toàn bộ 26.743 bản ghi · 29.696 đường dẫn) &rarr;</button>
-          </div>
-          <div class="table-wrap" style="border-radius:0;">
-            <table class="wr-table">
-              <thead>
-                <tr>
-                  <th>Nhóm chỉ tiêu / hạng mục</th>
-                  <th>Phân loại chi tiết</th>
-                  <th>Quy mô / số lượng (n)</th>
-                  <th>Tỷ lệ % tổng mẫu</th>
-                  <th>Tỷ lệ % đối đầu</th>
-                  <th>Phân bổ theo nền tảng</th>
-                  <th>Diễn giải dữ liệu & ngữ cảnh</th>
-                  <th>Nguồn đối chiếu</th>
-                </tr>
-              </thead>
-              <tbody id="overviewTableBody"></tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 2: DIỄN BIẾN LŨY TIẾN 24 NGÀY & CẢM XÚC THEO THỜI GIAN          -->
-    <!-- =================================================================== -->
-    <section id="tab-timeline" class="tab-pane">
-      <div class="filter-bar">
-        <div class="filter-group">
-          <strong style="font-size:12.5px;">Chọn Nhịp Sóng Chiến Dịch:</strong>
-          <button class="pill-btn active" onclick="filterTimelineWave('ALL', this)">Toàn kỳ 24 Ngày (01–24/10)</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 1', this)">Nhịp 1 (01–12/10): Khởi phát & ĐTQG</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 2', this)">Nhịp 2 (13–16/10): iThethao & đăng tải đồng loạt</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 3', this)">Nhịp 3 (17–18/10): Phản biện Madam Pang</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 4', this)">Nhịp 4 (19–20/10): Chốt 3 ỨV & >40/57 Đề cử</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 5', this)">Nhịp 5 (21–24/10): Cam kết 1.000 Tỷ, Liên danh & Họp báo VFF</button>
-        </div>
-      </div>
-
-      <!-- 4 Interactive SVG Charts -->
-      <div class="grid-2" style="margin-bottom:18px;">
-        <div class="chart-box">
-          <div class="chart-title">
-            <span>A. MẬT ĐỘ BÀI ĐĂNG & VIDEO THEO NGÀY (01/10 – 24/10/2026)</span>
-            <span style="font-size:11px;color:var(--text-muted);"><span class="dot-ind blue"></span>TS. Tuấn (614) · <span class="dot-ind red"></span>Ông Thụy (481) · <span class="dot-ind amber"></span>Ông Xuân Vũ (125)</span>
-          </div>
-          <div id="chartDailyPosts"></div>
-        </div>
-        <div class="chart-box">
-          <div class="chart-title">
-            <span>B. ĐƯỜNG CONG LŨY TIẾN ĐỘ PHỦ TRUYỀN THÔNG 24 NGÀY (01–24/10/2026)</span>
-            <span style="font-size:11px;color:var(--text-muted);">Cộng dồn lũy tiến từng ứng viên qua 5 nhịp sóng</span>
-          </div>
-          <div id="chartCumPosts"></div>
-        </div>
-        <div class="chart-box">
-          <div class="chart-title">
-            <span>C. ĐƯỜNG CONG TÍN NHIỆM RÒNG TÍCH LŨY 24 NGÀY (CỘNG DỒN ỦNG HỘ TRỪ PHẢN ĐỐI)</span>
-            <span style="font-size:11px;color:var(--text-muted);"><span class="dot-ind blue"></span>TS. Tuấn (+816 điểm gộp) vs <span class="dot-ind red"></span>Ông Thụy (+391 điểm gộp)</span>
-          </div>
-          <div id="chartCumNet"></div>
-        </div>
-        <div class="chart-box">
-          <div class="chart-title">
-            <span>D. CÁN CÂN ỦNG HỘ (+) vs. PHẢN ĐỐI (-) THEO TỪNG NGÀY (BÀI VIẾT + BÌNH LUẬN)</span>
-            <span style="font-size:11px;color:var(--text-muted);">Phía trên 0: Ủng hộ (+) • Phía dưới 0: Phản đối (-)</span>
-          </div>
-          <div id="chartButterfly"></div>
-        </div>
-      </div>
-
-      <!-- 24-Day Progression Table -->
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">BẢNG SỐ LIỆU LŨY TIẾN TỪNG NGÀY & 5 NHỊP SÓNG CHIẾN DỊCH (01/10 – 24/10/2026 · 24 NGÀY)</div>
-            <div class="panel-sub">Theo dõi chi tiết từng ngày: Bài đăng/Video trong ngày, Lũy tiến cộng dồn, Tích cực (+), Phản đối (-) và Điểm Tín nhiệm Ròng</div>
-          </div>
-        </div>
-        <div class="table-wrap">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>Ngày</th>
-                <th>Nhịp sóng chiến dịch</th>
-                <th>Bài TS. Tuấn</th>
-                <th>Lũy tiến TS. Tuấn</th>
-                <th>Bài Ông Thụy</th>
-                <th>Lũy tiến Ông Thụy</th>
-                <th>Bài Ông Xuân Vũ</th>
-                <th>Lũy tiến Ông Xuân Vũ</th>
-                <th>Tích cực TS. Tuấn (+)</th>
-                <th>Phản đối TS. Tuấn (-)</th>
-                <th>Ròng lũy tiến TS. Tuấn</th>
-                <th>Tích cực Ông Thụy (+)</th>
-                <th>Phản đối Ông Thụy (-)</th>
-                <th>Ròng lũy tiến Ông Thụy</th>
-                <th>Link minh chứng</th>
-              </tr>
-            </thead>
-            <tbody id="timelineTableBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 3: MA TRẬN ĐẢO CHIỀU (36 CỤM KÊNH) & ĐỊNH DANH 4 NỀN TẢNG       -->
-    <!-- =================================================================== -->
-    <section id="tab-matrix" class="tab-pane">
-      <div class="filter-bar">
-        <div class="filter-group">
-          <strong style="font-size:12.5px;">Lọc Mặt Trận:</strong>
-          <button class="pill-btn active" onclick="filterMatrixPlatform('ALL', this)">Tất cả 36 Cụm Kênh</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('1. Facebook', this)">1. Facebook (12 Cụm lớn)</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('2. YouTube', this)">2. YouTube (8 Cụm lớn)</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('3. TikTok', this)">3. TikTok (4 Cụm lớn)</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('4. Báo Chính Thống', this)">4. Báo Chính Thống (12 Cụm)</button>
-        </div>
-        <div class="filter-group">
-          <input type="text" id="matrixSearchInput" class="input-ctrl" placeholder="Tìm tên kênh, lập trường, kết luận..." oninput="renderMatrixTable()" />
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">MA TRẬN ĐẢO CHIỀU ĐA NỀN TẢNG: ĐỊNH HƯỚNG BÀI ĐĂNG so với TÍN HIỆU BÌNH LUẬN (<span id="matrixCountBadge">36</span> cụm kênh)</div>
-            <div class="panel-sub">Hiển thị đầy đủ Tổng số bài đăng, Tổng số bình luận, Phân bổ kịch bản tín hiệu lập trường bên dưới từng kênh và Link truy cập trực tiếp</div>
-          </div>
-        </div>
-        <div class="table-wrap">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>Mặt trận</th>
-                <th>Tên kênh / trang / hội nhóm cụ thể</th>
-                <th>Định hướng bài đăng</th>
-                <th>Tổng số bài / video</th>
-                <th>Tổng bình luận & tương tác</th>
-                <th>Phân bổ kịch bản tín hiệu bình luận bên dưới</th>
-                <th>Kết luận giải phẫu tương quan bài đăng so với bình luận</th>
-                <th>Link kênh</th>
-              </tr>
-            </thead>
-            <tbody id="matrixTableBody"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Anti-đăng tải đồng loạt & phân tích theo khía cạnh Matrix -->
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title"><svg class="ico-svg" style="color:#b45309;" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> PHÂN TÍCH HIỆU ỨNG BÀI ĐĂNG HÀNG LOẠT VÀ MA TRẬN SÁU KHÍA CẠNH QUẢN TRỊ</div>
-            <div class="panel-sub">Giải phẫu cơ chế rải bài đồng phục của cụm 'Phấn Đấu' (33 bài), 'Bóng Đá 24h' (18 bài), 'iThethao TV' và 6 khía cạnh quản trị cốt lõi</div>
-          </div>
-        </div>
-        <div class="table-wrap">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Nhóm phân tích / khía cạnh quản trị</th>
-                <th>Kênh / cụm phát tán hoặc trọng tâm</th>
-                <th>Quy mô bài & bình luận</th>
-                <th>Tích cực (+)</th>
-                <th>Trung lập (0)</th>
-                <th>Phản đối / cảnh báo (-)</th>
-                <th>Phân tích chuyên sâu phản ứng của độc giả thực</th>
-                <th>Link bằng chứng</th>
-              </tr>
-            </thead>
-            <tbody id="absaTableBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 4: BÁO CHÍ (81 BÀI) & FACEBOOK (881 KÊNH / 706 BÀI XÁC THỰC)    -->
-    <!-- =================================================================== -->
-    <section id="tab-press-fb" class="tab-pane">
-      <div class="filter-bar">
-        <div class="filter-group">
-          <strong style="font-size:12.5px;">Chọn Sổ Cái Dữ Liệu:</strong>
-          <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo chính thống (81 bài)</button>
-          <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh bạ 881 kênh truyền thông (Ba nền tảng)</button>
-          <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Danh mục 706 bài viết Facebook xác thực</button>
-        </div>
-        <div class="filter-group">
-          <input type="text" id="pressFbSearch" class="input-ctrl" style="min-width:260px;" placeholder="Lọc theo tên báo, fanpage, tiêu đề, lập trường..." oninput="renderPressFbSub()" />
-        </div>
-      </div>
-
-      <!-- Sub-panel 4A: 81 Press Articles -->
-      <div class="panel" id="panelPress78">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">DANH MỤC 81 BÀI BÁO CHÍNH THỐNG & TRANG TIN ĐIỆN TỬ (<span id="press78Count">81</span> bài · 78 bài gốc + 3 bài mới 24/10 [CAND, SGGP, Tiền Phong])</div>
-            <div class="panel-sub">38 bài ủng hộ TS. Trần Quốc Tuấn (46,9%) • 24 bài đưa tin đề cử & cam kết 1.000 tỷ của Ông Nguyễn Đức Thụy (29,6%) • 18 bài trung lập/quy chế (22,2%) • 1 bài phản biện (1,2%)</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Ngày đăng</th>
-                <th>Cơ quan báo chí</th>
-                <th>Phân nhóm</th>
-                <th>Tiêu đề bài báo chính thống</th>
-                <th>Ứng viên trọng tâm</th>
-                <th>Định hướng / lập trường</th>
-                <th>Tóm tắt luận điểm cốt lõi</th>
-                <th>Link bài báo</th>
-              </tr>
-            </thead>
-            <tbody id="press78Body"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Sub-panel 4B: 881 Channels -->
-      <div class="panel" id="panelFb378" style="display:none;">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">DANH BẠ ĐỐI SOÁT 881 HỒ SƠ KÊNH ĐA NỀN TẢNG (<span id="fb378Count">881</span> kênh · Bao trọn 805/805 kênh toàn diện [512 kênh có bài + 293 kênh rà quét] + 378 kênh FB danh bạ)</div>
-            <div class="panel-sub">362 kênh danh bạ chính Tháng 10 + 16 kênh bổ sung ngày 22/10 + đầy đủ 805 kênh toàn diện trên 3 nền tảng (Facebook, YouTube, TikTok)</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Tên kênh / fanpage / hội nhóm</th>
-                <th>Bài yêu cầu</th>
-                <th>Bài khớp URL</th>
-                <th>Tổng bình luận</th>
-                <th>Tổng cảm xúc</th>
-                <th>Trạng thái đối soát dữ liệu</th>
-                <th>Link kênh &amp; bài mẫu</th>
-              </tr>
-            </thead>
-            <tbody id="fb378Body"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Sub-panel 4C: 706 Verified Facebook Posts -->
-      <div class="panel" id="panelFb665" style="display:none;">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">SỔ CÁI 706 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 334+ TRANG HOẠT ĐỘNG (<span id="fb665Count">706</span> bài · Đủ 568/568 bài FB toàn diện · 214.068 lượt thích · 15.355 BL)</div>
-            <div class="panel-sub">Bao trọn 100% (568/568) bài Facebook trong Bộ dữ liệu toàn diện + sổ cái mốc 22/10 (665 bài) & link đối chiếu bổ sung</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Mã hồ sơ</th>
-                <th>Tên kênh / fanpage / hội nhóm</th>
-                <th>Thời gian đăng</th>
-                <th>Thống kê tương tác</th>
-                <th>Định hướng bài đăng</th>
-                <th>Nội dung bài đăng & bình luận đi kèm</th>
-                <th>Link chi tiết & kiểm chứng</th>
-              </tr>
-            </thead>
-            <tbody id="fb665Body"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 5: KHO VIDEO & KỊCH BẢN YOUTUBE (354) & TIKTOK (268)            -->
-    <!-- =================================================================== -->
-    <section id="tab-video" class="tab-pane">
-      <div class="filter-bar">
-        <div class="filter-group">
-          <strong style="font-size:12.5px;">Chọn Nền Tảng Video:</strong>
-          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · Video YouTube đã kiểm định (354 video · 13,96 triệu lượt xem · Có văn bản gỡ băng)</button>
-          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · Video TikTok đã kiểm định (268 video · 22,91 triệu lượt xem · Có văn bản gỡ băng)</button>
-        </div>
-        <div class="filter-group">
-          <input type="text" id="videoSearchInput" class="input-ctrl" style="min-width:260px;" placeholder="Tìm tiêu đề video, kênh, nội dung lời thoại bóc băng..." oninput="renderVideoSub()" />
-        </div>
-      </div>
-
-      <!-- Sub-panel 5A: 354 YouTube Videos -->
-      <div class="panel" id="panelYt169">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">SỔ CÁI KIỂM ĐỊNH 354 VIDEO YOUTUBE (<span id="yt169Count">354</span> video · Bộ dữ liệu toàn diện: 310 video · 13.964.171 lượt xem · 3.670 bình luận · Đủ Link Mốc giây ?t=XXs)</div>
-            <div class="panel-sub">Bao trọn 100% (310/310) video YouTube trong Bộ dữ liệu toàn diện + sổ cái 22/10 • 100% URL hoạt động • Bấm "Xem Kịch Bản" để đọc lời thoại bóc băng âm thanh</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Tên kênh YouTube</th>
-                <th>Ngày đăng</th>
-                <th>Tiêu đề video YouTube</th>
-                <th>Lượt xem</th>
-                <th>Bình luận tải</th>
-                <th>Hạng khớp</th>
-                <th>Câu thoại</th>
-                <th>Trích đoạn kịch bản bóc băng âm thanh</th>
-                <th>Thao tác / link</th>
-              </tr>
-            </thead>
-            <tbody id="yt169Body"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Sub-panel 5B: 268 TikTok Videos -->
-      <div class="panel" id="panelTt68" style="display:none;">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">SỔ CÁI 268 VIDEO TIKTOK &amp; KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">268</span> video · Bộ dữ liệu toàn diện: 259 video · 22.914.170 lượt xem · 249.962 lượt thích · 1.742 BL)</div>
-            <div class="panel-sub">Bao trọn 100% (259/259) video TikTok trong Bộ dữ liệu toàn diện + 62 video bóc băng toàn văn & sổ cái bổ sung</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>Mã TT</th>
-                <th>Ngày đăng</th>
-                <th>Tên kênh (@handle)</th>
-                <th>Giai đoạn</th>
-                <th>Tiêu đề / mô tả video TikTok</th>
-                <th>Lượt xem</th>
-                <th>Lượt thích</th>
-                <th>Bình luận</th>
-                <th>Dòng thoại</th>
-                <th>Trích đoạn kịch bản bóc băng âm thanh</th>
-                <th>Thao tác / link</th>
-              </tr>
-            </thead>
-            <tbody id="tt68Body"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 6: SỔ CÁI 20.767 BÌNH LUẬN 3 NỀN TẢNG (2.916 nhóm bày tỏ quan điểm nhân sự + 17.851 (Đưa tin trung lập)) -->
-    <!-- =================================================================== -->
-    <section id="tab-comments" class="tab-pane">
-      <div class="filter-bar">
-        <div class="filter-group" style="flex-wrap:wrap;">
-          <strong style="font-size:12.5px;">Chọn Nguồn Bình Luận:</strong>
-          <button class="pill-btn active" id="subBtnCmtFb" onclick="switchCommentSub('fb887')">01 · Tín Hiệu Bình Luận Facebook (1.888 BL Ẩn Danh · Đủ 1.771 bình luận bày tỏ quan điểm nhân sự toàn diện)</button>
-          <button class="pill-btn" id="subBtnCmtYt" onclick="switchCommentSub('yttt604')">02 · Tín Hiệu Bình Luận YouTube &amp; TikTok (1.457 BL · Đủ 1.145 bình luận bày tỏ quan điểm nhân sự toàn diện)</button>
-          <button class="pill-btn" id="subBtnCmtAll20767" onclick="switchCommentSub('all20767')">03 · Toàn bộ 20.767 bình luận và liên kết gốc trên ba nền tảng</button>
-        </div>
-        <div class="filter-group">
-          <select id="cmtStanceSelect" class="select-ctrl" onchange="renderCommentSub()">
-            <option value="ALL">— Tất cả Kịch bản / Lập trường —</option>
-            <option value="Tuấn">(Ủng hộ TS. Tuấn) Ủng hộ / Chọn TS. Trần Quốc Tuấn</option>
-            <option value="Thụy">(Ủng hộ Ông Thụy) Ủng hộ / Chọn Ông Nguyễn Đức Thụy (Bầu Thụy)</option>
-            <option value="Liên danh">(Phương án Liên danh) Đề xuất Liên danh / Chia vai (TS. Tuấn CT + Ông Thụy PCT TC)</option>
-            <option value="Bầu Đức">(Ứng viên khác) Ủng hộ Ứng viên khác (Bầu Đức / Phạm Nhật Vượng / Nguyễn Xuân Vũ...)</option>
-            <option value="Phản đối">(Phản biện) Phản đối / Hoài nghi / Cảnh báo rủi ro</option>
-            <option value="Trung lập">Đưa tin trung lập và phân tích thể chế (17.851 bình luận)</option>
-          </select>
-          <input type="text" id="cmtSearchInput" class="input-ctrl" style="min-width:240px;" placeholder="Tìm nội dung bình luận, tác giả, kênh, URL..." oninput="renderCommentSub()" />
-        </div>
-      </div>
-
-      <!-- Sub-panel 6A: 1888 FB Election Comments -->
-      <div class="panel" id="panelCmtFb887">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">SỔ CÁI 1.888 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.888</span> bình luận · Bao trọn 1.771/1.771 bình luận bày tỏ quan điểm nhân sự FB toàn diện · Đã ẩn danh tài khoản cá nhân)</div>
-            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận bày tỏ quan điểm nhân sự trên Facebook từ kho 15.355 BL FB toàn diện + sổ cái 22/10 • Hiển thị song song cả Link Bình luận trực tiếp &amp; Link Bài đăng gốc • 0 link cá nhân</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Mã bài</th>
-                <th>Tên kênh / fanpage Facebook</th>
-                <th>Tài khoản bình luận</th>
-                <th>Nội dung bình luận nguyên văn</th>
-                <th>Nhãn lập trường bầu cử</th>
-                <th>Số từ</th>
-                <th>Thời gian</th>
-                <th>Link bình luận &amp; bài gốc</th>
-              </tr>
-            </thead>
-            <tbody id="cmtFb887Body"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Sub-panel 6B: 1457 YT/TT Coded Election Comments -->
-      <div class="panel" id="panelCmtYt604" style="display:none;">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">SỔ CÁI 1.457 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE &amp; TIKTOK (<span id="cmtYtCount">1.457</span> bình luận · Bao trọn 1.145/1.145 bình luận bày tỏ quan điểm nhân sự YT/TT toàn diện)</div>
-            <div class="panel-sub">Bao trọn 100% (1.145/1.145) bình luận bày tỏ quan điểm nhân sự trên YouTube (744) &amp; TikTok (401) kèm đủ 3 liên kết: Link Bình luận trực tiếp · Link Video Gốc · Link Kênh người bình luận</div>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Mã BL</th>
-                <th>Nền tảng</th>
-                <th>Tiêu đề video nguồn</th>
-                <th>Ngày</th>
-                <th>Nội dung bình luận nguyên văn</th>
-                <th>Lượt thích</th>
-                <th>Nhãn lập trường tiếng việt</th>
-                <th>Link bình luận, video gốc &amp; kênh BL</th>
-              </tr>
-            </thead>
-            <tbody id="cmtYt604Body"></tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- Sub-panel 6C: ALL 20,767 Comments & Permalinks across 3 Platforms (Cơ sở dữ liệu bình luận & BAO_CAO_RAW) -->
-      <div class="panel" id="panelCmtAll20767" style="display:none;">
-        <div class="panel-header" style="flex-wrap:wrap;gap:10px;">
-          <div>
-            <div class="panel-title">DANH MỤC TOÀN BỘ 20.767 BÌNH LUẬN VÀ LIÊN KẾT GỐC TRÊN BA NỀN TẢNG (<span id="cmtAll20767Count">20.767</span> bình luận khớp)</div>
-            <div class="panel-sub">Tổng hợp đầy đủ từ cơ sở dữ liệu bình luận ba nền tảng: <strong>2.916 bình luận bày tỏ quan điểm nhân sự</strong> và <strong>17.851 bình luận dưới các bài đưa tin trung lập</strong> (15.355 Facebook · 3.670 YouTube · 1.742 TikTok) kèm liên kết trực tiếp đến từng bình luận và bài đăng gốc</div>
-          </div>
-          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap;">
-            <select id="cmtAllPlatSelect" class="select-ctrl" onchange="cmtAllPage=1;renderCommentSub()">
-              <option value="ALL">Tất cả 3 nền tảng (20.767 BL)</option>
-              <option value="Facebook">Facebook (15.355 BL · Đã ẩn danh TK)</option>
-              <option value="YouTube">YouTube (3.670 BL · Đủ Link BL &amp; Kênh)</option>
-              <option value="TikTok">TikTok (1.742 BL · Đủ Link BL &amp; Kênh)</option>
-            </select>
-            <select id="cmtAllPageSize" class="select-ctrl" onchange="cmtAllPage=1;renderCommentSub()">
-              <option value="200">200 BL / trang</option>
-              <option value="500">500 BL / trang</option>
-              <option value="2000">2.000 BL / trang</option>
-              <option value="25000">Toàn bộ (Tất cả 20.767 BL)</option>
-            </select>
-            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeCmtAllPage(-1)">&larr; Trang trước</button>
-            <span id="cmtAllPageIndicator" style="font-size:11.8px;font-weight:800;padding:0 6px;">Trang 1 / 1</span>
-            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeCmtAllPage(1)">Trang sau &rarr;</button>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:660px;overflow-y:auto;">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th>STT</th>
-                <th>Mã bài</th>
-                <th>Nền tảng &amp; kênh nguồn</th>
-                <th>Tài khoản bình luận</th>
-                <th>Thời gian</th>
-                <th>Nội dung bình luận nguyên văn</th>
-                <th>Lượt thích</th>
-                <th>Nhãn lập trường (sáu nhóm quan điểm)</th>
-                <th>Link bình luận &amp; bài gốc</th>
-              </tr>
-            </thead>
-            <tbody id="cmtAll20767Body"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 7: KHUYẾN NGHỊ CHIẾN LƯỢC, TOP 15 KIỂM CHỨNG & KIẾN TRÚC VẬN HÀNH -->
-    <!-- =================================================================== -->
-    <section id="tab-strategy" class="tab-pane">
-      <!-- Executive Strategy Briefing -->
-      <div class="grid-2" style="margin-bottom:18px;">
-        <div class="cand-card tuan">
-          <div class="cand-header">
-            <div>
-              <span class="cand-tag" style="background:#1560d4;color:#fbbf24;">Hồ Sơ Tư Vấn Chiến Lược • Ứng Viên #1</span>
-              <div class="cand-name">KHUYẾN NGHỊ CHIẾN LƯỢC: TS. TRẦN QUỐC TUẤN</div>
-              <div class="cand-role">Vị thế: Đương nhiệm dẫn đầu — Củng cố ưu thế thể chế &amp; đối trọng thông điệp 1.000 tỷ</div>
-            </div>
-          </div>
-          <div style="margin-bottom:12px;">
-            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">1. CHẨN ĐOÁN HIỆN TRẠNG ĐẾN 25/10/2026:</div>
-            <p style="margin-bottom:6px;">• Dẫn đầu trên cả 3 thước đo cốt lõi: Báo chí chính thống (<b>46,9% = 38/81 bài</b>), Bình luận ủng hộ tự nhiên trên Bộ dữ liệu toàn diện (<b>#1 với 766 BL tự nhiên / 819 tổng BL (Ủng hộ TS. Tuấn)</b> + <b>255 BL tự nhiên Liên danh (Phương án Liên danh)</b>) và Tỷ lệ ủng hộ trên phản đối trực tiếp đạt <b>18,68 : 1</b> (chỉ <b>41 BL tự nhiên phản đối trực diện</b>).</p>
-            <p style="margin-bottom:6px;">• Tín nhiệm ròng tự nhiên đạt <b>+725 điểm trực tiếp (+521 điểm mở rộng)</b>; lũy kế 24 ngày đạt <b>+816 điểm gộp</b>. Cấu trúc cử tri trong 57 Tổ chức thành viên VFF nghiêng mạnh về TS. Tuấn với <b>~35/57 phiếu nền (61,40%)</b> từ khối LĐBĐ địa phương và CLB ngoài chuyên nghiệp.</p>
-            <p>• Điểm nóng cần kiểm soát (19–25/10): Thông điệp <i>'&gt;40/57 đề cử'</i> (19–20/10) và <i>'Cam kết huy động 600–1.000 tỷ đồng/năm, không dùng ngân sách Nhà nước'</i> (21–24/10) thu hút sự chú ý lớn trên mặt trận video ngắn TikTok.</p>
-          </div>
-          <div style="background:#ffffff;padding:14px;border-radius:8px;border:1.5px solid var(--tuan-border);box-shadow:var(--shadow);">
-            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. BA GIẢI PHÁP TRỌNG TÂM ĐẾN ĐẠI HỘI KHÓA X:</div>
-            <p style="margin-bottom:6px;">• <b>[Giải pháp 1 — Minh bạch Tài chính Định chế Quốc tế]:</b> Thông qua hệ thống báo chí chính thống (VnExpress, Thanh Niên, Tuổi Trẻ, Lao Động) làm rõ VFF đã tự chủ tài chính và nhận các gói tài trợ định chế hàng trăm tỷ từ FIFA (gói 650 tỷ FIFA Forward), AFC và các nhà tài trợ dài hạn mà không phụ thuộc nguồn vốn cá nhân của bất kỳ ông bầu nào.</p>
-            <p style="margin-bottom:6px;">• <b>[Giải pháp 2 — Chủ động dẫn dắt Kịch bản Liên danh (Phương án Liên danh) (255 BL tự nhiên · Đồng thuận 8,79 : 1)]:</b> Phát thông điệp cởi mở chào đón các doanh nhân tham gia vị trí Phó Chủ tịch Tài chính &amp; Vận động tài trợ hoặc Chủ tịch HĐQT VPF, giữ vững nguyên tắc Chủ tịch VFF là nhà quản trị chuyên trách quốc tế.</p>
-            <p>• <b>[Giải pháp 3 — Hóa giải 204 bình luận phàn nàn mở rộng về V.League / Nhập tịch]:</b> Tránh phát ngôn dễ bị cắt cúp ngoài ngữ cảnh về cầu thủ nhập tịch; đẩy mạnh truyền thông thành tích 7 đội tuyển quốc gia vào VCK châu Á và lộ trình nâng chất lượng V.League.</p>
-          </div>
-        </div>
-
-        <div class="cand-card thuy">
-          <div class="cand-header">
-            <div>
-              <span class="cand-tag" style="background:#d62728;color:#fbbf24;">Hồ Sơ Tư Vấn Chiến Lược • Ứng Viên #2</span>
-              <div class="cand-name">KHUYẾN NGHỊ CHIẾN LƯỢC: ÔNG NGUYỄN ĐỨC THỤY (BẦU THỤY)</div>
-              <div class="cand-role">Vị thế: Thách thức mạnh về PR &amp; Tài chính — Cần vượt rào cản Tín nhiệm Độc giả</div>
-            </div>
-          </div>
-          <div style="margin-bottom:12px;">
-            <div style="font-weight:800;color:var(--thuy-red);margin-bottom:6px;">1. CHẨN ĐOÁN HIỆN TRẠNG ĐẾN 25/10/2026:</div>
-            <p style="margin-bottom:6px;">• Chiến dịch truyền thông có tốc độ và độ phủ rất lớn: dẫn đầu số lượng bài đăng ủng hộ trực tiếp trên Bộ dữ liệu toàn diện (<b>149 bài (Ủng hộ Ông Thụy)</b> vs 135 bài (Ủng hộ TS. Tuấn)), thu hút <b>769 tổng BL ủng hộ (687 BL tự nhiên · 82 bình luận mẫu = 10,66%)</b> nhờ hai nhịp sóng <i>'&gt;40/57 đề cử'</i> và <i>'Cam kết 600–1.000 tỷ/năm'</i>.</p>
-            <p style="margin-bottom:6px;">• Điểm nghẽn lớn nhất nằm ở Tầng Bình luận Khán giả: Chịu tới <b>567 bình luận tự nhiên phản đối trực tiếp (628 BL mở rộng)</b>, khiến tỷ lệ Ủng hộ : Phản đối tự nhiên chỉ đạt <b>1,21 : 1</b> và có tới <b>56,84% bình luận chính kiến dưới 149 bài PR (Ủng hộ Ông Thụy) đảo chiều</b> sang phản biện hoặc bầu cho TS. Tuấn.</p>
-            <p>• Hai rào cản tâm lý khiến độc giả phản ứng ngược: (1) Định kiến về tiền lệ giải thể CLB Sài Gòn Xuân Thành (2013), đổi tên CLB và lo ngại xung đột lợi ích đa đội bóng; (2) Chiến dịch đăng bài hàng loạt của cụm 'Phấn Đấu' (33 bài trùng lặp) và tỷ lệ bình luận mẫu lặp lại cao (10,66%).</p>
-          </div>
-          <div style="background:#ffffff;padding:14px;border-radius:8px;border:1.5px solid var(--thuy-border);box-shadow:var(--shadow);">
-            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. BA GIẢI PHÁP TRỌNG TÂM ĐẾN ĐẠI HỘI KHÓA X:</div>
-            <p style="margin-bottom:6px;">• <b>[Giải pháp 1 — Dừng chiến dịch đăng tải đồng loạt theo mẫu &amp; Cụ thể hóa cam kết 600–1.000 tỷ]:</b> Ngừng rải bài trùng lặp qua các tài khoản vệ tinh ('Phấn Đấu', '24h New'); thay bằng phỏng vấn chính luận giải thích rõ cơ chế pháp lý của Quỹ 600–1.000 tỷ/năm (cam kết bảo lãnh ngân hàng 4 năm không hủy ngang để xóa định kiến 'bỏ giải').</p>
-            <p style="margin-bottom:6px;">• <b>[Giải pháp 2 — Giải quyết minh bạch bài toán Xung đột Lợi ích CLB]:</b> Công bố cam kết tách bạch hoàn toàn công tác điều hành giải đấu với các CLB V.League/Hạng Nhất và cơ chế giám sát trọng tài độc lập nếu tham gia Thường trực VFF.</p>
-            <p>• <b>[Giải pháp 3 — Kịch bản Liên danh Đắc lợi Kép (Phương án Liên danh) (Xác suất dự báo H1 = 64,8%)]:</b> Tận dụng 255 bình luận tự nhiên ủng hộ Liên danh (tỷ lệ đồng thuận rất cao 8,79 : 1) để hiệp thương vị trí Phó Chủ tịch Tài chính &amp; Vận động tài trợ hoặc Chủ tịch HĐQT VPF, vừa đóng góp nguồn lực tài chính vừa giữ trọn thiện cảm công chúng.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Top 15 Verification Appendix -->
+      <!-- Sub-view 5.4: Top 15 Appendix & Complete Overview Quantitative Table -->
+      <div id="srcSubTop15Overview" style="display:none;">
+        <!-- Top 15 Verification Appendix -->
       <div class="panel">
         <div class="panel-header">
           <div>
@@ -4630,323 +5122,35 @@ HTML_TEMPLATE_PART2 = r"""
           </table>
         </div>
       </div>
-
-      <!-- Executive Data Verification & Reporting Governance Panel -->
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">QUY CHUẨN ĐỐI SOÁT DỮ LIỆU, TRÍCH XUẤT BÁO CÁO VÀ BẢO MẬT THÔNG TIN</div>
-            <div class="panel-sub">Đảm bảo tính minh bạch, truy xuất trực tiếp từng nguồn thông tin và tuân thủ quy chuẩn bảo mật dữ liệu phục vụ Ban Điều hành</div>
-          </div>
-        </div>
-        <div class="grid-3">
-          <div class="chart-box">
-            <div style="font-weight:800;color:var(--gold);margin-bottom:6px;">1. Hồ sơ dữ liệu độc lập và toàn vẹn</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);">Báo cáo tích hợp sẵn toàn bộ <b>26.743 bản ghi có liên kết đối chiếu và 29.696 đường dẫn nguồn duy nhất</b> lũy kế từ ngày 01/10 đến 25/10/2026. Người xem có thể tra cứu, lọc chéo và mở trực tiếp từng bài báo, bài đăng, video hoặc bình luận gốc ngay trên trình duyệt.</p>
-          </div>
-          <div class="chart-box">
-            <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. Kiểm chứng chéo và lưu trữ nhận định</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);">Tại bất kỳ bảng dữ liệu nào, người dùng có thể bấm vào dòng thông tin hoặc nút <b>"Kiểm chứng"</b> để mở hồ sơ chi tiết, đối chiếu văn bản gốc với kịch bản gỡ băng âm thanh và ghi chú nhận định kiểm chứng riêng.</p>
-          </div>
-          <div class="chart-box">
-            <div style="font-weight:800;color:var(--green);margin-bottom:6px;">3. Trích xuất báo cáo và bảo mật danh tính</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);">Toàn bộ tài khoản người bình luận cá nhân trên mạng xã hội đều được ẩn danh để bảo vệ quyền riêng tư. Ban Điều hành có thể tải xuống các bộ hồ sơ đối chiếu hoặc xuất bảng biểu hiện hành qua trình đơn <b>"Xuất dữ liệu"</b> ở góc trên bên phải.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 8: NGUỒN & KIỂM CHỨNG (SỔ CÁI ĐỐI CHIẾU NGUỒN TOÀN DIỆN)       -->
-    <!-- =================================================================== -->
-    <section id="tab-sources-ledger" class="tab-pane">
-      <!-- Top Audit & Verification Summary Banner -->
-      <div class="panel" style="border-top: 4px solid var(--tuan-blue); margin-bottom: 16px;">
-        <div class="panel-header" style="align-items:flex-start;">
-          <div>
-            <div class="ed-kicker">08 · NGUỒN &amp; KIỂM CHỨNG TOÀN DIỆN (SỔ CÁI ĐỐI CHIẾU NGUỒN &amp; TRẠNG THÁI XÁC MINH)</div>
-            <div class="panel-title" style="font-size:16px;margin-top:2px;">
-              26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Tổng hợp toàn diện kỳ 01–25/10/2026: <strong>81 bài báo chính thống · 1.137 bài viết và video · 20.767 bình luận phân theo sáu nhóm quan điểm · 269 trích dẫn tiêu biểu · 83 biên bản sàng lọc · 881 kênh truyền thông · 2.647 hồ sơ đối chiếu mở rộng</strong>)</span>
-            </div>
-            <div class="panel-sub" style="margin-top:4px;line-height:1.5;">
-              • <strong>Trạng thái kiểm định liên kết nguồn:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm định liên kết: 25/10/2026</span> · Đảm bảo 100% đường dẫn bài viết, video và bình luận hoạt động nguyên vẹn · Tích hợp đầy đủ <strong>2.647 bản ghi đối chiếu mở rộng trong Tháng 10/2026</strong> (bao gồm báo chí, bài đăng mạng xã hội, thảo luận trên các diễn đàn Voz, Otofun, FireAnt, F247 và bình luận người hâm mộ).<br/>
-              • <strong>Gắn nhãn lưu ý kiểm chứng và bảo mật danh tính:</strong> Đã gắn nhãn <code>[Lưu ý kiểm chứng nội dung]</code> đối với <strong>34 bài đăng trùng tên hoặc ngoài chủ đề, 03 bình luận và 08 trích dẫn liên quan</strong> để phục vụ rà soát minh bạch; đồng thời ẩn danh 100% tài khoản cá nhân của người bình luận trên Facebook.
-            </div>
-          </div>
-          <div style="display:flex;gap:8px;flex-wrap:wrap;flex-shrink:0;">
-            <a id="dlAuditExcelTabBtn" href="DANH_MUC_NGUON_DOI_CHIEU_VFF_24_10_2026.xlsx" download class="btn btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;gap:6px;">
-              <svg class="ico-svg" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
-              <span>Tải bảng tính danh mục nguồn đối chiếu</span>
-            </a>
-            <button type="button" class="btn btn-outline" onclick="exportMasterSourceLedgerCSV()">Xuất tệp dữ liệu danh mục nguồn</button>
-          </div>
-        </div>
-
-        <!-- Multi-Dimensional Filter Bar: Platform, Date, Source Type, Deduplication Mode, Record ID / Keyword -->
-        <div class="filter-bar" style="margin-bottom:0;background:var(--bg-input);padding:12px 14px;border:1px solid var(--border);">
-          <div class="filter-group" style="flex-wrap:wrap;gap:10px;width:100%;">
+        <div style="margin-top:18px;">
+          <!-- Complete Bảng tổng hợp Audit Table -->
+        <div class="panel" style="margin-bottom:0;">
+          <div class="panel-header">
             <div>
-              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">1. Nền tảng</label>
-              <select id="ledgerPlatSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Tất cả nền tảng (26.743 bản ghi)</option>
-                <option value="Báo chí">Báo chí Chính thống (81 bài + Báo bổ sung T10)</option>
-                <option value="Facebook">Facebook Bài đăng, Kênh, Trích dẫn &amp; BL</option>
-                <option value="YouTube">YouTube Video, Mốc giây, Trích dẫn &amp; BL</option>
-                <option value="TikTok">TikTok Video, Trích dẫn, Lọc nhiễu &amp; BL</option>
-                <option value="Diễn đàn">Diễn đàn Voz, Otofun, FireAnt, F247</option>
-                <option value="Đa nền tảng">Tổng hợp / Đa nền tảng (101 bản ghi)</option>
-              </select>
+              <div class="panel-title">BẢNG ĐỐI SOÁT ĐỊNH LƯỢNG TOÀN DIỆN KHO DỮ LIỆU & KỊCH BẢN LẬP TRƯỜNG (BẢNG TỔNG HỢP CHÍNH)</div>
+              <div class="panel-sub">Toàn bộ chỉ tiêu gốc từ 5 bộ dữ liệu độc lập kèm nút "Xem nguồn liên quan" và liên kết đại diện</div>
             </div>
-            <div>
-              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">2. Ngày ghi nhận</label>
-              <select id="ledgerDateSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Toàn kỳ 01/10 – 25/10/2026</option>
-              </select>
-            </div>
-            <div>
-              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">3. Loại nguồn</label>
-              <select id="ledgerTypeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL">Tất cả loại nguồn (Đủ 26.743 bản ghi · 29.696 URL)</option>
-                <option value="CORE-6203">Bộ lõi 6.245 bản ghi (Báo chí, Bài/Video, bình luận bày tỏ quan điểm nhân sự, Kênh, Trích dẫn, Lọc nhiễu)</option>
-                <option value="PRESS">Báo chí chính thống (#PRESS-001..081 · 78 gốc + 3 mới)</option>
-                <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..706 · 706 bài kèm liên kết kênh)</option>
-                <option value="YT-VID">Video YouTube kiểm định (#YT-VID-001..354 + 115 mốc giây + Link Kênh)</option>
-                <option value="TT-VID">Video TikTok kèm kịch bản gỡ băng (#TT-VID-001..268 · 268 video)</option>
-                <option value="FB-CMT">Bình luận bày tỏ quan điểm trên Facebook (#FB-CMT-001..1888 · Đủ liên kết bình luận và bài gốc)</option>
-                <option value="VID-CMT">Bình luận bày tỏ quan điểm trên YouTube và TikTok (#VID-CMT-001..1457)</option>
-                <option value="S6-CMT">Bình luận dưới các bài đưa tin trung lập (#S6-CMT-00001..17851 · 17.851 liên kết)</option>
-                <option value="TOP-QUOTE">Tuyển tập 269 luận điểm và trích dẫn nguyên văn (#QUOTE-001..269)</option>
-                <option value="NOISE-AUDIT">Biên bản 83 video ngoài phạm vi đã loại trừ (#NOISE-001..083)</option>
-                <option value="FLAGGED-V45">45 bản ghi gắn nhãn lưu ý trùng tên hoặc ngoài chủ đề (34 bài + 3 bình luận + 8 trích dẫn)</option>
-                <option value="CATALOG">Danh bạ 881 kênh &amp; Đối soát tổng hợp (1.024 mục · Đủ Link Trang Chủ Kênh)</option>
-                <option value="OCT-EXCEL-AUDIT">Hồ sơ đối chiếu mở rộng Tháng 10/2026 (2.647 bản ghi báo chí, mạng xã hội và diễn đàn)</option>
-                <option value="FORUM-AUDIT">Diễn đàn Voz, Otofun, FireAnt, F247 (14 mục thảo luận chuyên sâu)</option>
-              </select>
-            </div>
-            <div>
-              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">4. Chế độ Đối chiếu URL</label>
-              <select id="ledgerDedupSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="ALL_RECORDS">Toàn bộ bản ghi có liên kết (26.743 dòng)</option>
-                <option value="UNIQUE_URLS">Chỉ URL nguồn chính duy nhất (25.398 URL nguồn chính)</option>
-                <option value="CLEAN_V45_ONLY">Chỉ bản ghi chuẩn VFF (Ẩn 45 mục đồng âm/lệch chủ đề &amp; 83 lọc nhiễu)</option>
-                <option value="NEW_23_24">Bản ghi mới cập nhật ngày 23–25/10/2026</option>
-              </select>
-            </div>
-            <div style="flex:1;min-width:230px;">
-              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">5. Mã hồ sơ / Từ khóa / URL</label>
-              <input type="text" id="ledgerSearchInput" class="input-ctrl" style="width:100%;" placeholder="Tìm mã hồ sơ (#PRESS-081, #S6-CMT-00001, #SL290-0015, #FORUM-OCT-0001), URL..." oninput="resetLedgerPageAndRender()" />
-            </div>
-            <div>
-              <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">Hiển thị</label>
-              <select id="ledgerPageSizeSelect" class="select-ctrl" onchange="resetLedgerPageAndRender()">
-                <option value="200">200 dòng / trang</option>
-                <option value="500">500 dòng / trang</option>
-                <option value="2000">2.000 dòng / trang</option>
-                <option value="30000">Toàn bộ (Tất cả 26.743 dòng)</option>
-              </select>
-            </div>
+            <button class="btn btn-outline" onclick="switchTab('tab-sources-ledger')">Mở danh mục 26.743 bản ghi nguồn (Toàn bộ 26.743 bản ghi · 29.696 đường dẫn) &rarr;</button>
           </div>
-        </div>
-      </div>
-
-      <!-- Ledger Table Panel -->
-      <div class="panel">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">
-              DANH MỤC NGUỒN ĐỐI CHIẾU &amp; TRẠNG THÁI KIỂM CHỨNG ĐỘC LẬP (<span id="ledgerFilteredCount">26.743</span> bản ghi khớp · <span id="ledgerUniqueUrlCount">29.696</span> URL nguồn duy nhất)
-            </div>
-            <div class="panel-sub" id="ledgerActiveFilterSummary">
-              Đang hiển thị danh mục đối chiếu đầy đủ. Bấm vào bất kỳ dòng nào hoặc nút "Kiểm chứng" để mở Hồ sơ Kiểm chứng chi tiết.
-            </div>
-          </div>
-          <div style="display:flex;gap:6px;align-items:center;" id="ledgerPaginationBar">
-            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeLedgerPage(-1)">&larr; Trang trước</button>
-            <span id="ledgerPageIndicator" style="font-size:11.8px;font-weight:800;padding:0 6px;">Trang 1 / 1</span>
-            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="changeLedgerPage(1)">Trang sau &rarr;</button>
-            <button type="button" class="btn btn-outline" style="padding:4px 10px;font-size:11.5px;" onclick="resetAllLedgerFilters()">Đặt lại bộ lọc</button>
-          </div>
-        </div>
-        <div class="table-wrap" style="max-height:680px;overflow-y:auto;">
-          <table class="wr-table" id="masterSourceLedgerTable">
-            <thead>
-              <tr>
-                <th style="width:10%;">Mã hồ sơ</th>
-                <th style="width:9%;">Ngày ghi nhận</th>
-                <th style="width:15%;">Nền tảng &amp; kênh nguồn</th>
-                <th style="width:28%;">Tiêu đề / trích đoạn nội dung</th>
-                <th style="width:13%;">Nhận định / lập trường</th>
-                <th style="width:13%;">Trạng thái kiểm chứng (2 lớp)</th>
-                <th style="width:12%;">Mở nguồn &amp; sao chép link</th>
-              </tr>
-            </thead>
-            <tbody id="masterSourceLedgerBody"></tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-    <!-- =================================================================== -->
-    <!-- TAB 9: THEO DÕI ĐẠI BIỂU CHÍNH THỨC & HỒ SƠ PHƯƠNG PHÁP LUẬN        -->
-    <!-- =================================================================== -->
-    <section id="tab-methodology" class="tab-pane">
-      <!-- PART A: OFFICIAL VFF CONGRESS DELEGATE & NOMINATION TRACKER -->
-      <div class="panel" style="border-top: 4px solid #0f172a;">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">PHẦN A — BẢNG THEO DÕI QUY TRÌNH ĐẠI HỘI &amp; TRẠNG THÁI ĐẠI BIỂU CHÍNH THỨC (57 TỔ CHỨC THÀNH VIÊN VFF)</div>
-            <div class="panel-sub">Phân biệt nghiêm ngặt theo chuẩn kiểm chứng bầu cử quốc tế (Associated Press) giữa: Kết quả kiểm phiếu chính thức • Tuyên bố đề cử trên báo chí • Dư luận mạng xã hội</div>
-          </div>
-          <span class="badge badge-gray" style="font-size:12px;padding:6px 12px;">TRẠNG THÁI KẾT QUẢ CHÍNH THỨC: CHƯA BỎ PHIẾU ĐẠI HỘI</span>
-        </div>
-
-        <div class="grid-3" style="margin-bottom:16px;">
-          <div class="chart-box" style="border-left:4px solid #0f172a;">
-            <div style="font-weight:900;color:var(--text-main);margin-bottom:4px;">1. Nguyên Tắc Công Bố Kết Quả Bầu Cử</div>
-            <p style="font-size:12.3px;color:var(--text-secondary);">
-              Theo quy chuẩn của <a href="https://www.ap.org/elections/our-role-in-the-u-s-elections/how-ap-counts-the-vote/" target="_blank" rel="noopener">AP Vote Count</a> và <a href="https://www.ap.org/elections/our-role-in-the-u-s-elections/how-we-declare-winners/" target="_blank" rel="noopener">AP Race Calls</a>, một cuộc bầu cử chỉ được xác nhận người chiến thắng khi có <strong>biên bản kiểm phiếu thực tế từ Ban Kiểm phiếu Đại hội</strong>. Tuyệt đối không dùng dữ liệu mạng xã hội hoặc thông tin đề cử vòng ngoài để tuyên bố người đắc cử.
-            </p>
-          </div>
-          <div class="chart-box" style="border-left:4px solid #0052cc;">
-            <div style="font-weight:900;color:var(--tuan-blue);margin-bottom:4px;">2. Cơ Chế Biểu Quyết Thực Tế Tại Đại Hội VFF</div>
-            <p style="font-size:12.3px;color:var(--text-secondary);">
-              Chủ tịch VFF được bầu bằng <strong>phiếu kín trực tiếp của các Đại biểu Tổ chức thành viên VFF</strong> có tư cách biểu quyết hợp lệ tại Đại hội (CLB V.League, Hạng Nhất, Hạng Nhì, Hạng Ba, Futsal, Nữ, các LĐBĐ địa phương — tham chiếu mốc <strong>57 tổ chức thành viên</strong>). <strong>20.767 bình luận công khai (trong đó 2.916 bình luận bày tỏ quan điểm nhân sự)</strong> trên MXH có giá trị tham khảo áp lực dư luận, <strong>0% giá trị phiếu bầu pháp lý</strong>.
-            </p>
-          </div>
-          <div class="chart-box" style="border-left:4px solid #d97706;">
-            <div style="font-weight:900;color:var(--gold);margin-bottom:4px;">3. Quy Tắc Phân Hạng Tin Cậy Đại Biểu (4 Mức)</div>
-            <p style="font-size:12.3px;color:var(--text-secondary);">
-              • <strong>Xác minh văn bản VFF:</strong> Văn bản chính thức do VFF/Tiểu ban Nhân sự công bố hoặc phiếu kiểm tại Đại hội.<br/>
-              • <strong>Tuyên bố đề cử trên báo chí:</strong> Con số do báo chí dẫn nguồn tin (chưa công bố danh sách từng CLB).<br/>
-              • <strong>Đánh giá định tính:</strong> Phân tích xu hướng theo nhóm lợi ích thể chế.<br/>
-              • <strong>Lá phiếu kín (Chưa xác định):</strong> Lá phiếu kín tại Đại hội.
-            </p>
+          <div class="table-wrap" style="border-radius:0;">
+            <table class="wr-table">
+              <thead>
+                <tr>
+                  <th>Nhóm chỉ tiêu / hạng mục</th>
+                  <th>Phân loại chi tiết</th>
+                  <th>Quy mô / số lượng (n)</th>
+                  <th>Tỷ lệ % tổng mẫu</th>
+                  <th>Tỷ lệ % đối đầu</th>
+                  <th>Phân bổ theo nền tảng</th>
+                  <th>Diễn giải dữ liệu & ngữ cảnh</th>
+                  <th>Nguồn đối chiếu</th>
+                </tr>
+              </thead>
+              <tbody id="overviewTableBody"></tbody>
+            </table>
           </div>
         </div>
 
-        <div class="table-wrap">
-          <table class="wr-table">
-            <thead>
-              <tr>
-                <th style="white-space:normal;width:16%;">Khối đại biểu / hạng mục theo dõi</th>
-                <th style="white-space:normal;width:10%;text-align:center;">Quy mô tham chiếu</th>
-                <th style="white-space:normal;width:11%;text-align:center;">Xác minh văn bản VFF</th>
-                <th style="white-space:normal;width:20%;">Tuyên bố đề cử trên báo chí (19–25/10)</th>
-                <th style="white-space:normal;width:18%;">Đánh giá định tính theo khối cử tri</th>
-                <th style="white-space:normal;width:11%;text-align:center;">Trạng thái lá phiếu kín</th>
-                <th style="white-space:normal;width:14%;">Ghi chú kiểm chứng &amp; giới hạn nghiệp vụ</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><strong>1. Khối CLB Bóng đá Chuyên nghiệp (14 CLB V.League 1 &amp; 10 CLB Hạng Nhất QG)</strong></td>
-                <td style="text-align:center;font-weight:800;">24 CLB thành viên</td>
-                <td style="text-align:center;"><span class="badge badge-gray">0 phiếu xác minh</span></td>
-                <td>Báo Kinh tế (CafeF, VNBiz, VietnamFinance 19–20/10) đưa tin có nhiều CLB đề cử Ông Nguyễn Đức Thụy &amp; TS. Trần Quốc Tuấn</td>
-                <td>Phân hóa giữa nhóm CLB cần nguồn tài trợ giải đấu (nghiêng Ông Thụy/Liên danh) và nhóm CLB gắn kết hệ thống thi đấu quốc tế/VPF (nghiêng TS. Tuấn)</td>
-                <td style="text-align:center;font-weight:800;color:#0f172a;">100% (Bỏ phiếu kín tại Đại hội)</td>
-                <td>VFF chưa công bố danh sách văn bản đề cử của từng CLB cụ thể tính đến ngày 25/10/2026.</td>
-              </tr>
-              <tr>
-                <td><strong>2. Khối Liên đoàn Bóng đá Địa phương (Tỉnh / Thành phố)</strong></td>
-                <td style="text-align:center;font-weight:800;">14 LĐBĐ địa phương</td>
-                <td style="text-align:center;"><span class="badge badge-gray">0 phiếu xác minh</span></td>
-                <td>Báo chí ghi nhận cả 3 ứng viên (TS. Trần Quốc Tuấn, Ông Nguyễn Đức Thụy, Ông Nguyễn Xuân Vũ) đều được các tổ chức thành viên đề cử</td>
-                <td>Khối LĐBĐ địa phương và quản lý nhà nước thường ưu tiên tính ổn định thể chế, quy hoạch đào tạo trẻ và đối ngoại AFC/FIFA</td>
-                <td style="text-align:center;font-weight:800;color:#0f172a;">100% (Bỏ phiếu kín tại Đại hội)</td>
-                <td>Đề cử vòng ngoài không ràng buộc nghĩa vụ bỏ phiếu kín tại Đại hội.</td>
-              </tr>
-              <tr>
-                <td><strong>3. Khối CLB Ngoài Chuyên nghiệp (15 CLB Hạng Nhì, Nữ, Futsal) &amp; 04 Tổ chức khác</strong></td>
-                <td style="text-align:center;font-weight:800;">19 đơn vị thành viên</td>
-                <td style="text-align:center;"><span class="badge badge-gray">0 phiếu xác minh</span></td>
-                <td>Ghi nhận thông tin truyền thông gộp chung trong tổng số <strong>57 tổ chức thành viên</strong> gửi văn bản đề cử nhân sự Khóa X</td>
-                <td>Quan tâm mạnh đến kinh phí duy trì giải Futsal, Bóng đá Nữ, Hạng Nhì và hỗ trợ chuyên môn từ FIFA/AFC</td>
-                <td style="text-align:center;font-weight:800;color:#0f172a;">100% (Bỏ phiếu kín tại Đại hội)</td>
-                <td>Cần danh sách đại biểu chính thức từ Tiểu ban Nhân sự Đại hội VFF để cập nhật sang trạng thái <em>Đã xác minh</em>.</td>
-              </tr>
-              <tr style="background:#fffbeb;">
-                <td><strong>TỔNG HỢP TRẠNG THÁI ĐẠI BIỂU TOÀN ĐẠI HỘI (ĐẾN 25/10/2026)</strong></td>
-                <td style="text-align:center;font-weight:900;color:#b45309;">57 Tổ chức thành viên (Tham chiếu đề cử)</td>
-                <td style="text-align:center;"><span class="badge badge-gray">0 / 57 Phiếu xác minh</span></td>
-                <td><span class="badge badge-coal">Tuyên bố báo chí: &gt;40/57 đề cử (Ghi nhận ngày 19–20/10)</span></td>
-                <td><strong>Kịch bản khả dĩ cao nhất (H1 = 64,8%):</strong> Hiệp thương đồng thuận hoặc Liên danh chia vai (TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính) trước giờ bỏ phiếu</td>
-                <td style="text-align:center;font-weight:900;color:#b91c1c;">57 / 57 (100% Bỏ phiếu kín)</td>
-                <td><strong>KẾT LUẬN KIỂM CHỨNG:</strong> Chưa diễn ra bỏ phiếu Đại hội; mọi mô hình xác suất chỉ mang tính dự báo kịch bản tham khảo.</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <!-- PART B: COMPREHENSIVE METHODOLOGY & AUDIT PROTOCOL -->
-      <div class="panel" style="border-top: 4px solid var(--tuan-blue);">
-        <div class="panel-header">
-          <div>
-            <div class="panel-title">PHẦN B — HỒ SƠ PHƯƠNG PHÁP LUẬN, TIÊU CHÍ CHỌN MẪU, NHẬN DIỆN BÌNH LUẬN MẪU VÀ GIỚI HẠN SUY LUẬN</div>
-            <div class="panel-sub">Tài liệu hóa quy trình thu thập, sàng lọc hai lớp, phân loại sáu nhóm quan điểm và bảy kịch bản nhân sự phục vụ Ban Điều hành</div>
-          </div>
-        </div>
-
-        <div class="grid-2" style="margin-bottom:16px;">
-          <div class="chart-box">
-            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">1. Phạm Vi Truy Quét &amp; Cửa Sổ Thời Gian (01–25/10/2026)</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Cửa sổ thời gian chốt dữ liệu:</strong> Từ <code>01/10/2026 00:00</code> đến <code>25/10/2026 (GMT+7)</code>. Toàn bộ <code>26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất</code> phản ánh trạng thái kiểm định tại mốc thời gian này.
-            </p>
-            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Quy mô kho dữ liệu gốc hợp nhất (Cập nhật đầy đủ đến <code>25/10/2026</code>):</strong><br/>
-              &nbsp;&nbsp;(1) <strong>Báo chí chính thống:</strong> <code>81 bài báo</code> (78 bài gốc + 03 bài mới ngày 24/10 từ CAND, SGGP Thể Thao, Tiền Phong · 100% URL hoạt động) từ 32+ cơ quan báo chí Trung ương, Thể thao và Kinh tế.<br/>
-              &nbsp;&nbsp;(2) <strong>Facebook:</strong> Đối soát <code>881 hồ sơ kênh đa nền tảng</code> (378 kênh FB danh bạ + 805 kênh toàn diện), xác thực URL trực tiếp <code>706 bài đăng Facebook</code> (bao trọn 568/568 bài FB trong Bộ dữ liệu toàn diện · 214.068 lượt thích), thu thập <code>15.355 bình luận FB</code> (trong đó có <code>1.771 bình luận bày tỏ quan điểm nhân sự</code> và sổ cái mở rộng <code>1.888 BL ẩn danh</code>).<br/>
-              &nbsp;&nbsp;(3) <strong>YouTube:</strong> Kiểm định <code>354 video YouTube</code> (bao trọn 310/310 video YT trong Bộ dữ liệu toàn diện · <code>13.964.171 lượt xem</code> · <code>3.670 bình luận</code> · <code>115 cặp link mốc giây ?t=</code>).<br/>
-              &nbsp;&nbsp;(4) <strong>TikTok:</strong> Kiểm định <code>268 video TikTok</code> (bao trọn 259/259 video TikTok trong Bộ dữ liệu toàn diện · <code>22.914.170 lượt xem</code> · <code>249.962 lượt thích</code> · <code>1.742 bình luận</code>).
-            </p>
-          </div>
-
-          <div class="chart-box">
-            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">2. Kiến Trúc 2 Tầng Dữ Liệu Chuẩn &amp; Bộ Lọc Nhiễu 2 Khóa</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Tầng 1 — Bộ dữ liệu toàn diện (1.137 bài/video · 20.767 bình luận):</strong> Mở rộng truy quét trên 805 kênh (512 kênh có bài), thu thập toàn bộ thảo luận liên quan ứng viên và VFF; đã gắn cờ cảnh báo minh bạch cho <code>34 bài đồng âm/lệch chủ đề (2,99%)</code> tại Bảng 5C và Sổ cái Tab 08.<br/>
-              • <strong>Tầng 2 — Bộ dữ liệu trọng tâm (587 bài/video · 12.803 bình luận):</strong> Áp dụng đồng thời <strong>Khóa 1 (Thực thể Nhân sự)</strong> và <strong>Khóa 2 (Ngữ cảnh Bầu cử / Đại hội VFF)</strong> để loại bỏ 4.209 clip TikTok nhiễu, 74 video YouTube giả mạo và lưu 83 biên bản bằng chứng lọc nhiễu tại Biên bản sàng lọc.<br/>
-              • <strong>Bảo mật danh tính &amp; Khôi phục liên kết:</strong> Khôi phục 100% (<code>1.346 URL bị cắt ở độ dài đường dẫn</code> + <code>133 Link phản hồi FB</code>) và ẩn danh hoàn toàn 100% hồ sơ cá nhân của người bình luận Facebook.
-            </p>
-          </div>
-
-          <div class="chart-box">
-            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">3. Kiểm Định bình luận mẫu Tự Động (64-bit SimHash) &amp; Phát Hiện Bài Đăng Hàng Loạt</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Phân tách Bình luận Tự nhiên và bình luận mẫu:</strong> Trên tổng số <code>20.767 bình luận</code>, thuật toán 64-bit SimHash (khoảng cách Hamming &le; 3) và kiểm tra tần suất tài khoản xác định được <code>19.652 bình luận Tự nhiên (94,63%)</code> và <code>1.115 bình luận mẫu (5,37%)</code>. Trong riêng <code>2.916 bình luận bày tỏ quan điểm nhân sự</code>, có <code>2.683 BL Tự nhiên (92,01%)</code> và <code>233 bình luận mẫu (7,99%)</code>.
-            </p>
-            <p style="font-size:12.5px;color:var(--text-secondary);">
-              • <strong>Nhận diện chiến dịch đăng bài đồng phục:</strong> Hệ thống phát hiện văn bản giống nhau 100% trên <strong>33 bài đăng của cụm tài khoản "Phấn Đấu"</strong> và <strong>18 bài của cụm "Bóng Đá 24h / 24h New"</strong> rải vào 38 hội nhóm. Các bài này được gắn cờ <strong>[BÀI ĐĂNG ĐỒNG LOẠT THEO MẪU]</strong> và phân tích tách biệt với phản ứng thực của độc giả bên dưới (nơi có 56,84% bình luận chính kiến đảo chiều).
-            </p>
-          </div>
-
-          <div class="chart-box">
-            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">4. Quy Tắc Phân Loại 6 Nhãn sáu nhóm quan điểm &amp; 7 Kịch Bản Lập Trường</div>
-            <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Hệ thống 6 Nhãn Lập trường Chuẩn sáu nhóm quan điểm trên 20.767 Bình luận (Bộ dữ liệu toàn diện):</strong><br/>
-              &nbsp;&nbsp;— <code>(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn:</code> <strong>819 Tổng BL</strong> (<strong>766 Tự nhiên — Hạng #1</strong> · 53 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy:</code> <strong>769 Tổng BL</strong> (<strong>687 Tự nhiên — Hạng #2</strong> · 82 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Phương án Liên danh) Đề xuất Liên danh (TS. Tuấn CT + Ông Thụy PCT TC):</code> <strong>275 Tổng BL</strong> (<strong>255 Tự nhiên</strong> · 20 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Ứng viên khác) Ủng hộ Ứng viên khác (Bầu Đức 285, Ông Vượng 110, Ông Vũ 9...):</code> <strong>420 Tổng BL</strong> (<strong>402 Tự nhiên</strong> · 18 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Phản biện) Phản đối / Hoài nghi / Cảnh báo:</code> <strong>633 Tổng BL</strong> (<strong>573 Tự nhiên</strong> · 60 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Đưa tin trung lập) Trung lập / Đưa tin thể chế:</code> <strong>17.851 Tổng BL</strong> (<strong>16.969 Tự nhiên</strong> · 882 bình luận mẫu).<br/>
-              • <strong>Độ tin cậy liên mã hóa (Inter-Coder Reliability):</strong> Đối chiếu độc lập giữa bộ phân loại NLP và kiểm định viên đạt hệ số đồng thuận <strong>Cohen's Kappa κ = 0.89</strong>.
-            </p>
-          </div>
-        </div>
-
-        <!-- 5 Mandatory Limitations of Inference -->
-        <div style="background:#fef2f2;border:1.5px solid #fca5a5;border-radius:10px;padding:14px 18px;">
-          <div style="font-weight:900;color:#b91c1c;font-size:13.5px;margin-bottom:6px;display:flex;align-items:center;gap:6px;"><svg class="ico-svg" style="color:#b91c1c;" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> 5 GIỚI HẠN SUY LUẬN BẮT BUỘC KHI SỬ DỤNG BÁO CÁO TRƯỚC BAN ĐIỀU HÀNH HOẶC CÔNG KHAI:</div>
-          <ol style="margin-left:18px;font-size:12.4px;color:#7f1d1d;line-height:1.55;">
-            <li><strong>Dư luận công khai ≠ Lá phiếu Đại biểu VFF:</strong> Người bình luận trên Facebook, YouTube, TikTok là người hâm mộ bóng đá đại chúng, không có quyền bỏ phiếu tại Đại hội VFF. Không được suy diễn trực tiếp tỷ lệ bình luận trên mạng xã hội thành tỷ lệ phiếu bầu chính thức tại Đại hội.</li>
-            <li><strong>Đặc thù nhân khẩu học theo nền tảng:</strong> Khán giả TikTok trẻ tuổi phản ứng tích cực với từ khóa <em>"Tỷ phú / 1.000 tỷ"</em>, trong khi độc giả Báo chí chính thống và Facebook lâu năm chú trọng tính ổn định thể chế và vị thế ngoại giao AFC/FIFA của TS. Trần Quốc Tuấn.</li>
-            <li><strong>Hiệu ứng Tương tác Phản biện:</strong> Các chủ đề gây tranh cãi (như câu nói bị cắt cúp về "nhập tịch thử nghiệm" hoặc tiền lệ giải thể CLB Sài Gòn Xuân Thành 2013) thường kích thích luồng bình luận tranh luận gay gắt hơn các bài đưa tin trung lập.</li>
-            <li><strong>Văn bản Đề cử vòng ngoài ≠ Lá phiếu Kín trong phòng họp:</strong> Thông tin báo chí nêu <em>"&gt;40/57 tổ chức thành viên đề cử"</em> là bước giới thiệu nhân sự đầu vào (theo nguyên lý giao thoa tập hợp, có tối thiểu 23–24/57 đơn vị đề cử đồng thời nhiều ứng viên), không phải kết quả bỏ phiếu chính thức.</li>
-            <li><strong>Tính chất Dữ liệu Chốt theo Thời điểm:</strong> Toàn bộ số liệu phản ánh giai đoạn <code>01/10/2026 – 25/10/2026</code>. Mọi diễn biến truyền thông hoặc quyết định nhân sự sau thời điểm này cần được đồng bộ bổ sung qua công cụ quản trị dữ liệu trước khi sử dụng.</li>
-          </ol>
         </div>
       </div>
     </section>
@@ -5116,7 +5320,7 @@ HTML_TEMPLATE_PART3 = r"""
         return `<span class="fc-status-pill review" title="${esc(entry.note || 'Cần xem lại')}">! Xem lại</span>`;
       }
       if (entry.status === 'rejected') {
-        return `<span class="fc-status-pill rejected" title="${esc(entry.note || 'Không hợp lý / Loại bỏ')}">✕ Loại bỏ</span>`;
+        return `<span class="fc-status-pill rejected" title="${esc(entry.note || 'Không hợp lý / Loại bỏ')}">Loại bỏ</span>`;
       }
       return '';
     }
@@ -5155,7 +5359,7 @@ HTML_TEMPLATE_PART3 = r"""
       const cleanLbl = cleanEmojiText(label) || 'Mở nguồn';
       const hasFc = opts && opts.sheet && opts.idx !== undefined && opts.idx !== null;
       const fcBtnHtml = hasFc
-        ? `<button type="button" class="fc-mini-btn audit-btn" onclick="event.stopPropagation();openItemFactCheckModal('${opts.sheet}', ${Number(opts.idx)})" title="Mở Hồ sơ Kiểm chứng từng bài & bình luận đi kèm">Kiểm chứng</button>`
+        ? `<button type="button" class="fc-mini-btn primary-link" onclick="event.stopPropagation();openItemFactCheckModal('${opts.sheet}', ${Number(opts.idx)})" title="Xem hồ sơ chi tiết, trích đoạn và toàn bộ liên kết gốc">Xem hồ sơ</button>`
         : '';
       const fcBadgeHtml = hasFc ? renderFcStatusBadge(opts.sheet, opts.idx) : '';
       const extraList = (opts && Array.isArray(opts.extraUrls))
@@ -5175,13 +5379,12 @@ HTML_TEMPLATE_PART3 = r"""
       return `
         <div class="fc-link-cell" onclick="event.stopPropagation();">
           <div class="fc-btn-row">
-            <a href="${esc(u)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn primary-link" title="Mở liên kết gốc trong tab mới: ${esc(u)}">
+            ${fcBtnHtml}
+            <a href="${esc(u)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn ${hasFc ? '' : 'primary-link'}" title="Mở trực tiếp liên kết gốc: ${esc(u)}">
               <span>${esc(cleanLbl)}</span>
               <svg class="ico-svg sm" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </a>
             ${extraBtnsHtml}
-            <button type="button" class="fc-mini-btn" onclick="copyUrlToClipboard('${esc(u)}', this, event)" title="Sao chép URL gốc vào bộ nhớ tạm">Sao chép link</button>
-            ${fcBtnHtml}
             ${fcBadgeHtml}
           </div>
           ${rawUrlRowHtml}
@@ -5189,8 +5392,132 @@ HTML_TEMPLATE_PART3 = r"""
       `;
     }
 
-    // Switch Main Tab
+    // Switch Sub-Section inside Mục 03: Kênh & truyền thông
+    function switchMediaHubSub(subKey, btnEl) {
+      let targetTab = 'tab-media-hub';
+      currentTab = targetTab;
+      document.querySelectorAll('.nav-tab').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-tab') === targetTab);
+      });
+      document.querySelectorAll('.tab-pane').forEach(p => {
+        p.classList.toggle('active', p.id === targetTab);
+      });
+
+      const panes = ['tab-matrix', 'tab-press-fb', 'tab-video', 'tab-comments'];
+      let activePaneId = 'tab-matrix';
+      if (subKey === 'matrix') {
+        activePaneId = 'tab-matrix';
+      } else if (subKey === 'press') {
+        activePaneId = 'tab-press-fb';
+        switchPressFbSub('press');
+      } else if (subKey === 'fb-channels') {
+        activePaneId = 'tab-press-fb';
+        switchPressFbSub('fb378');
+      } else if (subKey === 'fb-posts') {
+        activePaneId = 'tab-press-fb';
+        switchPressFbSub('fb665');
+      } else if (subKey === 'yt-video') {
+        activePaneId = 'tab-video';
+        switchVideoSub('yt169');
+      } else if (subKey === 'tt-video') {
+        activePaneId = 'tab-video';
+        switchVideoSub('tt68');
+      } else if (subKey === 'comments') {
+        activePaneId = 'tab-comments';
+      }
+
+      panes.forEach(pid => {
+        const el = document.getElementById(pid);
+        if (el) el.style.display = (pid === activePaneId) ? 'block' : 'none';
+      });
+
+      document.querySelectorAll('#mediaHubSubNav .sub-nav-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-media-sub') === subKey);
+      });
+    }
+
+    // Switch Sub-View inside Mục 05: Nguồn & phương pháp
+    function switchSourcesSubView(viewKey, btnEl) {
+      const map = {
+        'ledger': 'srcSubLedger',
+        'methodology': 'srcSubMethodology',
+        'audit-tables': 'srcSubAuditTables',
+        'top15-overview': 'srcSubTop15Overview'
+      };
+      Object.entries(map).forEach(([k, id]) => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = (k === viewKey) ? 'block' : 'none';
+      });
+      document.querySelectorAll('#sourcesMethodSubNav .sub-nav-btn').forEach(b => {
+        b.classList.toggle('active', b.getAttribute('data-src-sub') === viewKey);
+      });
+      if (viewKey === 'ledger') renderMasterSourceLedger();
+    }
+
+    // Switch Single Large Chart inside Mục 02: Diễn biến dư luận
+    function switchTimelineChartView(mode, btnEl) {
+      const paneMap = {
+        'daily': 'timelinePaneDaily',
+        'cum': 'timelinePaneCum',
+        'net': 'timelinePaneNet',
+        'butterfly': 'timelinePaneButterfly'
+      };
+      Object.entries(paneMap).forEach(([k, id]) => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = (k === mode) ? 'block' : 'none';
+      });
+      if (btnEl && btnEl.parentElement) {
+        btnEl.parentElement.querySelectorAll('.ed-mode-btn').forEach(b => b.classList.remove('active'));
+        btnEl.classList.add('active');
+      }
+      const titleEl = document.getElementById('timelineSingleChartTitle');
+      const subEl = document.getElementById('timelineSingleChartSub');
+      const capEl = document.getElementById('timelineSingleChartCaption');
+      if (mode === 'daily') {
+        if (titleEl) titleEl.textContent = 'Góc nhìn 1: Mật độ bài viết và video theo từng ngày (01/10 – 24/10/2026)';
+        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (614), Ông Nguyễn Đức Thụy (481) và Ông Nguyễn Xuân Vũ (125)';
+        if (capEl) capEl.textContent = 'Lượng bài đăng tăng đột biến vào ngày 15/10 (do 33 bài đăng đồng loạt của cụm "Phấn Đấu") và giai đoạn 19–22/10 (khi thông tin đề cử và gói tài trợ 600–1.000 tỷ đồng/năm xuất hiện). Bấm vào bất kỳ cột ngày nào để mở danh sách bài viết của ngày đó.';
+      } else if (mode === 'cum') {
+        if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy tiến độ phủ truyền thông 24 ngày (01/10 – 24/10/2026)';
+        if (subEl) subEl.textContent = 'Cộng dồn lượt bài viết và video đề cập từng ứng viên qua 24 ngày theo dõi';
+        if (capEl) capEl.textContent = 'Tính lũy kế 24 ngày, TS. Trần Quốc Tuấn dẫn đầu với 614 lượt bài viết và video đề cập, tiếp theo là Ông Nguyễn Đức Thụy (481 lượt) và Ông Nguyễn Xuân Vũ (125 lượt). Khoảng cách độ phủ duy trì ổn định ngay cả trong tuần cao điểm trước Đại hội.';
+      } else if (mode === 'net') {
+        if (titleEl) titleEl.textContent = 'Góc nhìn 3: Đường cong điểm tín nhiệm ròng tích lũy 24 ngày (Ủng hộ trừ Phản đối)';
+        if (subEl) subEl.textContent = 'So sánh hiệu số tích lũy giữa tín hiệu ủng hộ (+) và phản đối (-) của TS. Trần Quốc Tuấn (+816) và Ông Nguyễn Đức Thụy (+391)';
+        if (capEl) capEl.textContent = 'Điểm tín nhiệm ròng tích lũy của TS. Trần Quốc Tuấn đạt +816 điểm nhờ lượng ý kiến phản đối trực diện rất thấp. Ngược lại, đường tín nhiệm ròng của Ông Nguyễn Đức Thụy (+391) tăng chậm hơn do mỗi đợt bài quảng bá đều đi kèm luồng bình luận phản biện.';
+      } else if (mode === 'butterfly') {
+        if (titleEl) titleEl.textContent = 'Góc nhìn 4: Cán cân Ủng hộ (+) và Phản đối (-) theo từng ngày';
+        if (subEl) subEl.textContent = 'Phía trên trục 0 thể hiện lượng tín hiệu ủng hộ (+); phía dưới trục 0 thể hiện lượng tín hiệu phản đối (-)';
+        if (capEl) capEl.textContent = 'Biểu đồ đối xứng cho thấy các ngày 15–18/10 và 21–22/10 phát sinh đồng thời cả lượng bình luận ủng hộ lẫn lượng bình luận phản đối lớn bên dưới các bài viết về Ông Nguyễn Đức Thụy. Trong khi đó, tín hiệu dành cho TS. Trần Quốc Tuấn tập trung chủ yếu ở nửa dương.';
+      }
+    }
+
+    // Switch Main Tab (Supports the 5 Primary Tabs + Legacy Tab Routing)
     function switchTab(tabId) {
+      if (tabId === 'tab-matrix') {
+        switchMediaHubSub('matrix');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        return;
+      }
+      if (tabId === 'tab-press-fb') {
+        switchMediaHubSub('press');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        return;
+      }
+      if (tabId === 'tab-video') {
+        switchMediaHubSub('yt-video');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        return;
+      }
+      if (tabId === 'tab-comments') {
+        switchMediaHubSub('comments');
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        return;
+      }
+      if (tabId === 'tab-strategy' || tabId === 'tab-methodology') {
+        tabId = 'tab-delegates';
+      }
+
       currentTab = tabId;
       document.querySelectorAll('.nav-tab').forEach(b => {
         b.classList.toggle('active', b.getAttribute('data-tab') === tabId);
@@ -5202,24 +5529,23 @@ HTML_TEMPLATE_PART3 = r"""
       if (tabId === 'tab-timeline') {
         renderTimelineCharts();
       } else if (tabId === 'tab-sources-ledger') {
-        renderMasterSourceLedger();
+        switchSourcesSubView('ledger');
       }
     }
 
     function jumpToFilter(sub, kw) {
-      switchTab('tab-press-fb');
-      switchPressFbSub('press');
+      switchMediaHubSub('press');
       const inp = document.getElementById('pressFbSearch');
-      inp.value = kw;
+      if (inp) inp.value = kw;
       renderPressFbSub();
     }
 
     function jumpToComments(kw) {
-      switchTab('tab-comments');
+      switchMediaHubSub('comments');
       const sel = document.getElementById('cmtStanceSelect');
-      sel.value = 'ALL';
+      if (sel) sel.value = 'ALL';
       const inp = document.getElementById('cmtSearchInput');
-      inp.value = kw;
+      if (inp) inp.value = kw;
       renderCommentSub();
     }
 
@@ -5479,7 +5805,7 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg tuan" style="width:38.1%;" onclick="jumpToComments('Tuấn')">TS. Tuấn: 1.021 (38,1%)</div>
           <div class="ed-flat-seg neutral" style="width:36.3%;" onclick="jumpToComments('Phản đối')">Phản đối & Khác: 975 (36,3%)</div>
           <div class="ed-flat-seg thuy" style="width:25.6%;" onclick="jumpToComments('Thụy')">Ông Thụy: 687 (25,6%)</div>`;
-        note.innerHTML = `<strong>Đối soát 20.767 bình luận Bộ dữ liệu toàn diện (19.652 Tự nhiên = 94,63% · 1.115 bình luận mẫu = 5,37%):</strong> Trong <strong>2.916 bình luận bày tỏ quan điểm nhân sự (2.683 Tự nhiên)</strong>: <strong>(Ủng hộ TS. Tuấn) TS. Tuấn dẫn đầu #1 Tự nhiên với 766 BL</strong> (819 Tổng BL, chỉ 41 BL phản đối trực tiếp &rarr; <code>Ủng hộ : Phản đối = 18,68 : 1</code>, Ròng <code>+725</code>); <strong>(Ủng hộ Ông Thụy) Ông Thụy đạt 687 BL Tự nhiên</strong> (769 Tổng BL, 82 bình luận mẫu = 10,66%, chịu 567 BL phản đối trực tiếp &rarr; <code>Ủng hộ : Phản đối = 1,21 : 1</code>, Ròng <code>+120</code>); <strong>(Phương án Liên danh) Liên danh (TS. Tuấn CT + Ông Thụy PCT TC) đạt 255 BL Tự nhiên</strong> (đồng thuận <code>8,79 : 1</code>); <strong>(Ứng viên khác) Ứng viên khác đạt 402 BL Tự nhiên</strong>.`;
+        note.innerHTML = `Trong 2.683 bình luận tự nhiên nêu quan điểm nhân sự, nhóm chọn TS. Trần Quốc Tuấn làm Chủ tịch dẫn đầu với 1.021 bình luận (766 ủng hộ trực tiếp, 255 đề xuất Liên danh) và chỉ ghi nhận 41 ý kiến phản đối trực tiếp (tín nhiệm ròng +725). Ông Nguyễn Đức Thụy đạt 687 bình luận ủng hộ tự nhiên nhưng đi kèm 567 ý kiến phản đối trực tiếp quanh tiền lệ giải thể CLB năm 2013 và lo ngại xung đột lợi ích (tín nhiệm ròng +120).`;
       } else if (mode === 'v44_core') {
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm: 2.712 bình luận bày tỏ quan điểm nhân sự = 2.495 Tự nhiên + 217 bình luận mẫu (Trên 587 bài/video lõi)';
         lName.textContent = 'TS. Tuấn (Bộ dữ liệu trọng tâm Tự nhiên)';
@@ -5607,7 +5933,7 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg tuan" style="width:20.1%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 20,1%</div>
           <div class="ed-flat-seg neutral" style="width:66.8%;" onclick="switchTab('tab-press-fb')">(Đưa tin trung lập) Trung lập (682) · (Phản biện) Phản biện (46) · (Ứng viên khác) Khác (31)</div>
           <div class="ed-flat-seg thuy" style="width:13.1%;" onclick="switchTab('tab-press-fb')">Thụy: 13,1%</div>`;
-        note.innerHTML = `<strong>Tương quan giữa độ phủ bài đăng và chiều hướng bình luận của độc giả:</strong> Trên Kho Mở rộng <code>toàn diện (1.137 bài/video · 36.878.341 lượt xem · 464.030 lượt thích · 16.898 lượt chia sẻ)</code>, Ông Thụy dẫn trước về số bài mở chiến dịch đơn lẻ <code>(Ủng hộ Ông Thụy) = 149 bài</code> (so với <code>(Ủng hộ TS. Tuấn) = 135 bài</code> của TS. Tuấn), nhưng bên dưới 149 bài <code>(Ủng hộ Ông Thụy)</code> có tới <strong>56,84% bình luận chính kiến lệch pha</strong>. Khi gộp <code>(Ủng hộ TS. Tuấn)+(Phương án Liên danh)</code>, khối bài chọn TS. Tuấn làm Chủ tịch đạt <strong>229 bài (20,14%)</strong>.`;
+        note.innerHTML = `Ông Nguyễn Đức Thụy dẫn trước về số bài phát động đơn lẻ (149 bài so với 135 bài của TS. Trần Quốc Tuấn), nhưng khi tính gộp 94 bài đề xuất Liên danh thì nhóm bài chọn TS. Tuấn giữ chức Chủ tịch đạt 229 bài (20,14%). Đáng chú ý, bên dưới 149 bài quảng bá cho Ông Thụy có tới 56,84% bình luận có quan điểm quay sang phản biện hoặc ủng hộ TS. Tuấn.`;
       } else if (mode === 'v44_587') {
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm: 587 bài/video (352 FB · 159 YT · 76 TT · 5,20M lượt xem · Đã lọc 4.287 clip nhiễu)';
         lName.textContent = 'Khối bài TS. Tuấn ((Ủng hộ TS. Tuấn) 125 + (Phương án Liên danh) 91)';
@@ -5792,7 +6118,7 @@ HTML_TEMPLATE_PART3 = r"""
       // 4 Key Event Vertical Annotations in Dedicated Non-Overlapping Top Band (y = 6..38)
       const events = [
         { idx: 7,  date: '08/10', title: '7 ĐTQG dự VCK Châu Á', sub: 'Củng cố tín nhiệm TS. Tuấn', boxX: 235, boxW: 172 },
-        { idx: 14, date: '15/10', title: 'Tin đồn & đăng tải đồng loạt PR',  sub: "33 bài 'Phấn Đấu' phản ứng ngược", boxX: 446, boxW: 176 },
+        { idx: 14, date: '15/10', title: '33 bài đăng đồng loạt',  sub: "Cụm 'Phấn Đấu' gây phản ứng ngược", boxX: 442, boxW: 178 },
         { idx: 18, date: '19/10', title: 'Đề cử 3 ứng viên VFF',  sub: 'Báo kinh tế nêu >40/57 đề cử', boxX: 632, boxW: 170 },
         { idx: 20, date: '21/10', title: 'Gói 600–1.000 tỷ/năm',  sub: 'Xu hướng Liên danh (N = 214)', boxX: 812, boxW: 172 }
       ];
@@ -6071,7 +6397,7 @@ HTML_TEMPLATE_PART3 = r"""
             <div style="font-size:11.5px;color:#3E4652;">Lũy tiến: <strong>${esc(r.c6)}</strong> · Tín hiệu: <strong>+${esc(r.c12)}</strong> / <strong>${esc(r.c13)}</strong> (Ròng: <strong>+${esc(r.c14)}</strong>)</div>
           </div>
           <div style="padding:10px 12px;background:#F7F7F5;border:1px solid #D8D6CE;border-top:3px solid #8C6D1F;">
-            <div style="font-size:11px;font-weight:800;color:#8C6D1F;text-transform:uppercase;">Ông Nguyễn Xuân Vũ & Nhịp sóng</div>
+            <div style="font-size:11px;font-weight:800;color:#8C6D1F;text-transform:uppercase;">Ông Nguyễn Xuân Vũ & Giai đoạn</div>
             <div style="font-size:18px;font-weight:900;color:#141923;margin:2px 0;">${esc(r.c7)} bài/video (Lũy tiến: ${esc(r.c8)})</div>
             <div style="font-size:11.5px;color:#3E4652;">${esc(r.c2)}</div>
           </div>
@@ -6143,7 +6469,7 @@ HTML_TEMPLATE_PART3 = r"""
           sample: 'N = 95 bài · 311 BL',
           tuanCls: 'hm-cell-pos-mild',
           tuanVal: 'Hưởng lợi gián tiếp từ tâm lý phòng vệ',
-          tuanSub: 'Cử tri bình luận chọn phương án an toàn thể chế (nhà quản lý chuyên trách)',
+          tuanSub: 'Độc giả bình luận chọn phương án an toàn thể chế (nhà quản lý chuyên trách)',
           thuyCls: 'hm-cell-neg-strong',
           thuyVal: '-77,5% Phản đối / Cảnh giác cao',
           thuySub: 'n = 210 BL phản đối trực diện + 101 BL lo ngại xung đột CLB',
@@ -6215,10 +6541,7 @@ HTML_TEMPLATE_PART3 = r"""
             </div>
           </td>
           <td style="text-align:center;" onclick="event.stopPropagation();">
-            <div style="display:flex;flex-direction:column;gap:4px;align-items:center;">
-              <button class="fc-mini-btn primary-link" style="padding:4px 8px;font-size:10.8px;" onclick="openIssueDrilldownModal(${idx})">Xem ${repCounts[idx] || 12} nguồn liên quan &rarr;</button>
-              <button class="fc-mini-btn" style="padding:2px 6px;font-size:10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','${esc(it.kw)}')">Mở trong Sổ cái nguồn</button>
-            </div>
+            <button class="fc-mini-btn primary-link" style="padding:5px 10px;font-size:11.2px;" onclick="openIssueDrilldownModal(${idx})">Nguồn (${repCounts[idx] || 12})</button>
           </td>
         </tr>
       `).join('');
@@ -6376,7 +6699,7 @@ HTML_TEMPLATE_PART3 = r"""
       if (tuanN === 0 && thuyN === 0) {
         if (kbStr.includes('100%') || kbStr.includes('72%') || kbStr.includes('48 bình luận')) {
           tuanN = 35; thuyN = 5; otherN = 8;
-        } else if (kbStr.includes('19 phiếu chọn Tuấn')) {
+        } else if (kbStr.includes('19 phiếu chọn Tuấn') || kbStr.includes('19 bình luận chọn')) {
           tuanN = 19; thuyN = 14; otherN = 10;
         } else if (kbStr.includes('11/15 bình luận')) {
           tuanN = 11; thuyN = 2; otherN = 2;
@@ -6458,7 +6781,8 @@ HTML_TEMPLATE_PART3 = r"""
 
       window._edChannelItemsMap = {};
       items.forEach((it, rIdx) => { window._edChannelItemsMap[it.idx] = { it, rank: rIdx + 1 }; });
-      tbody.innerHTML = items.map((it, rankIdx) => {
+      const displayItems = (!qCh && overviewChannelPlat === 'ALL') ? items.slice(0, 10) : items.slice(0, 12);
+      tbody.innerHTML = displayItems.map((it, rankIdx) => {
         const volPct = Math.max(4, Math.min(100, Math.round((it.cmtCount / maxCmt) * 100)));
         return `
           <tr onclick="openClusterTileModal(${it.idx})" style="cursor:pointer;"
@@ -6471,7 +6795,7 @@ HTML_TEMPLATE_PART3 = r"""
               <div style="font-weight:800;color:var(--text-main);">${esc(it.name)}</div>
               <div style="font-size:11px;color:var(--text-muted);margin-top:2px;">
                 <strong>${esc(it.plat)}</strong>
-                ${it.isReversal ? `<span style="margin-left:6px;color:#B8292F;font-weight:800;">[Đảo chiều bình luận]</span>` : ''}
+                ${it.isReversal ? `<span style="margin-left:6px;color:#B8292F;font-weight:800;">[Bình luận trái chiều]</span>` : ''}
               </div>
             </td>
             <td>
@@ -6489,26 +6813,22 @@ HTML_TEMPLATE_PART3 = r"""
               ${stanceBadge(it.postStance)}
             </td>
             <td>
-              <div class="ch-stance-bar" title="Tỷ lệ tín hiệu bình luận: Tuấn CT ${it.tuanPct}% | Phản biện/Khác ${it.otherPct}% | Thụy CT ${it.thuyPct}%">
+              <div class="ch-stance-bar" title="Tỷ lệ tín hiệu bình luận: TS. Tuấn ${it.tuanPct}% | Phản biện/Khác ${it.otherPct}% | Ông Thụy ${it.thuyPct}%">
                 <div style="width:${it.tuanPct}%;background:#1B4F9C;"></div>
                 <div style="width:${it.otherPct}%;background:#9E9C93;"></div>
                 <div style="width:${it.thuyPct}%;background:#B8292F;"></div>
               </div>
               <div style="display:flex;justify-content:space-between;font-size:11px;font-weight:700;">
-                <span style="color:#1B4F9C;">Tuấn: ${it.tuanPct}% (${it.tuanN})</span>
+                <span style="color:#1B4F9C;">TS. Tuấn: ${it.tuanPct}% (${it.tuanN})</span>
                 <span style="color:#6C737F;">Khác: ${it.otherPct}%</span>
-                <span style="color:#B8292F;">Thụy: ${it.thuyPct}% (${it.thuyN})</span>
+                <span style="color:#B8292F;">Ông Thụy: ${it.thuyPct}% (${it.thuyN})</span>
               </div>
             </td>
             <td>
               <span class="trust-tag ${it.trustCls}">${esc(it.trustLbl)}</span>
             </td>
             <td style="text-align:center;" onclick="event.stopPropagation();">
-              <div style="display:flex;flex-direction:column;gap:4px;align-items:center;">
-                <button type="button" class="fc-mini-btn primary-link" style="padding:3px 7px;font-size:10.5px;" onclick="openClusterTileModal(${it.idx})">Xem nguồn liên quan &rarr;</button>
-                <a href="${esc(it.row.c8)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn" style="padding:2px 6px;font-size:10px;" title="Mở liên kết đại diện cụm kênh">Mở đại diện ↗</a>
-                <a href="${esc(it.row.c8)}" target="_blank" rel="noopener noreferrer" class="raw-url-inline" title="${esc(it.row.c8)}">${esc(it.row.c8)}</a>
-              </div>
+              <button type="button" class="fc-mini-btn primary-link" style="padding:5px 10px;font-size:11px;" onclick="openClusterTileModal(${it.idx})">Xem hồ sơ</button>
             </td>
           </tr>
         `;
@@ -7545,7 +7865,7 @@ HTML_TEMPLATE_PART3 = r"""
         sourceName = `${r.plat || ''} · ${r.page || ''}`;
         titleOrAuthor = `Tác giả / Kênh: ${r.author || ''}`;
         metricsStr = `${fmtNum(r.metric || 0)} tương tác · ${r.user_type || ''}`;
-        mainContent = (r.fc_warning ? `[⚠️ ${r.fc_warning}]\n\n` : '') + (r.quote || '');
+        mainContent = (r.fc_warning ? `[Lưu ý: ${r.fc_warning}]\n\n` : '') + (r.quote || '');
         origStance = (r.fc_warning ? '[Lưu ý nội dung ngoài phạm vi] ' : '') + (r.stance || '');
         primaryUrl = r.url || '';
       } else if (sheetKey === '8_Bien_Ban_Loc_Nhieu_2_Khoa') {
@@ -7572,7 +7892,7 @@ HTML_TEMPLATE_PART3 = r"""
         dateStr = r.date || '';
         sourceName = `${r.plat || ''} · ${r.channel || ''}`;
         titleOrAuthor = r.channel || '';
-        metricsStr = `${r.fc_verdict || '✓ Đã đối soát từ file Excel Tháng 10'} · Nguồn: ${r.source_file || ''}`;
+        metricsStr = `${r.fc_verdict || 'Đã đối soát từ hồ sơ tháng 10'} · Nguồn: ${r.source_file || ''}`;
         mainContent = `• Nội dung / Trích dẫn gốc: ${r.excerpt || ''}\n• Kết quả kiểm chứng chéo: ${r.fc_verdict || ''}\n• File Excel nguồn: ${r.source_file || ''}`;
         origStance = r.stance || '';
         primaryUrl = r.url || '';
@@ -7895,30 +8215,35 @@ HTML_TEMPLATE_PART3 = r"""
           <div style="padding:12px;background:#FFFFFF;border:1px solid var(--border-strong);font-size:13px;line-height:1.55;white-space:pre-wrap;max-height:220px;overflow-y:auto;">${escLinkify(mainContent)}</div>
         </div>
 
-        <!-- Interactive Personal Fact-Check Audit Panel -->
-        <div style="padding:12px 14px;background:#F7F7F5;border:1.5px solid #141923;margin-bottom:12px;">
-          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
-            <strong style="font-size:12.5px;text-transform:uppercase;color:#141923;">Bảng Tự Kiểm Chứng &amp; Điều Chỉnh Nhãn Lập Trường:</strong>
-            <span id="fcSavedNotice" style="font-size:11.5px;font-weight:700;color:#166534;">${savedFc.updated_at ? `Đã lưu lúc ${esc(savedFc.updated_at)}` : 'Tự động lưu trên trình duyệt'}</span>
-          </div>
-          <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
-            <button type="button" id="fcBtnVerified" class="fc-verdict-btn ${savedFc.status === 'verified' ? 'active-verified' : ''}" onclick="setModalFcVerdict('${sheetKey}', ${rowIdx}, 'verified')">✓ Hợp lý / Đã xác nhận</button>
-            <button type="button" id="fcBtnReview" class="fc-verdict-btn ${savedFc.status === 'review' ? 'active-review' : ''}" onclick="setModalFcVerdict('${sheetKey}', ${rowIdx}, 'review')">! Cần xem lại / Nghi vấn</button>
-            <button type="button" id="fcBtnRejected" class="fc-verdict-btn ${savedFc.status === 'rejected' ? 'active-rejected' : ''}" onclick="setModalFcVerdict('${sheetKey}', ${rowIdx}, 'rejected')">✕ Không hợp lý / Loại bỏ</button>
-          </div>
-          <div class="grid-2" style="gap:10px;">
-            <div>
-              <label style="font-size:11.5px;font-weight:700;display:block;margin-bottom:4px;">Nhãn lập trường sáu nhóm quan điểm (Có thể đổi nếu chưa hợp lý):</label>
-              <select id="fcOverrideStanceSelect" class="select-ctrl" style="width:100%;border-radius:0;" onchange="saveModalFcDetails('${sheetKey}', ${rowIdx})">
-                ${stanceOptions.map(opt => `<option value="${esc(opt)}" ${opt === currentEffStance ? 'selected' : ''}>${esc(opt)}</option>`).join('')}
-              </select>
+        <!-- Operator Personal Fact-Check Audit Panel (Tucked inside Khu vực vận hành) -->
+        <details style="padding:10px 14px;background:#F7F6F2;border:1px solid #D8D6CE;border-radius:4px;margin-bottom:12px;">
+          <summary style="cursor:pointer;font-size:12px;font-weight:800;color:#3E4652;user-select:none;">
+            Khu vực vận hành: Ghi chú &amp; điều chỉnh nhãn kiểm chứng nội bộ (${savedFc.updated_at ? `Đã lưu lúc ${esc(savedFc.updated_at)}` : 'Bấm để mở'})
+          </summary>
+          <div style="margin-top:10px;padding-top:10px;border-top:1px solid #E2E0D8;">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:8px;">
+              <strong style="font-size:12px;color:#141923;">Đánh dấu trạng thái rà soát:</strong>
+              <span id="fcSavedNotice" style="font-size:11.5px;font-weight:700;color:#166534;">${savedFc.updated_at ? `Đã lưu lúc ${esc(savedFc.updated_at)}` : 'Tự động lưu trên trình duyệt'}</span>
             </div>
-            <div>
-              <label style="font-size:11.5px;font-weight:700;display:block;margin-bottom:4px;">Ghi chú kiểm chứng:</label>
-              <input type="text" id="fcPersonalNoteInput" class="input-ctrl" style="width:100%;border-radius:0;" placeholder="Nhập nhận xét kiểm chứng cho bài/bình luận này..." value="${esc(savedFc.note || '')}" oninput="saveModalFcDetails('${sheetKey}', ${rowIdx})" />
+            <div style="display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;">
+              <button type="button" id="fcBtnVerified" class="fc-verdict-btn ${savedFc.status === 'verified' ? 'active-verified' : ''}" onclick="setModalFcVerdict('${sheetKey}', ${rowIdx}, 'verified')">Hợp lý / Đã xác nhận</button>
+              <button type="button" id="fcBtnReview" class="fc-verdict-btn ${savedFc.status === 'review' ? 'active-review' : ''}" onclick="setModalFcVerdict('${sheetKey}', ${rowIdx}, 'review')">Cần xem lại</button>
+              <button type="button" id="fcBtnRejected" class="fc-verdict-btn ${savedFc.status === 'rejected' ? 'active-rejected' : ''}" onclick="setModalFcVerdict('${sheetKey}', ${rowIdx}, 'rejected')">Không hợp lý</button>
+            </div>
+            <div class="grid-2" style="gap:10px;">
+              <div>
+                <label style="font-size:11.5px;font-weight:700;display:block;margin-bottom:4px;">Nhãn lập trường (có thể điều chỉnh):</label>
+                <select id="fcOverrideStanceSelect" class="select-ctrl" style="width:100%;border-radius:3px;" onchange="saveModalFcDetails('${sheetKey}', ${rowIdx})">
+                  ${stanceOptions.map(opt => `<option value="${esc(opt)}" ${opt === currentEffStance ? 'selected' : ''}>${esc(opt)}</option>`).join('')}
+                </select>
+              </div>
+              <div>
+                <label style="font-size:11.5px;font-weight:700;display:block;margin-bottom:4px;">Ghi chú kiểm chứng:</label>
+                <input type="text" id="fcPersonalNoteInput" class="input-ctrl" style="width:100%;border-radius:3px;" placeholder="Nhập nhận xét kiểm chứng..." value="${esc(savedFc.note || '')}" oninput="saveModalFcDetails('${sheetKey}', ${rowIdx})" />
+              </div>
             </div>
           </div>
-        </div>
+        </details>
 
         ${relatedHtml}
       `;
@@ -8319,7 +8644,7 @@ HTML_TEMPLATE_PART3 = r"""
           stance: r.stance || '',
           url: r.url || '',
           extraUrls: Array.isArray(r.extraUrls) ? r.extraUrls.slice() : [],
-          fcVerdict: r.fc_verdict || '✓ Đã kiểm chứng từ file Excel Tháng 10',
+          fcVerdict: r.fc_verdict || 'Đã kiểm chứng từ hồ sơ tháng 10',
           sheet: 'October_Excel_Supplement',
           idx
         });
@@ -8484,6 +8809,7 @@ HTML_TEMPLATE_PART3 = r"""
 
     function openSourceLedgerWithFilter(plat = 'ALL', dateVal = 'ALL', typeVal = 'ALL', kw = '') {
       switchTab('tab-sources-ledger');
+      switchSourcesSubView('ledger');
       const p = document.getElementById('ledgerPlatSelect');
       const d = document.getElementById('ledgerDateSelect');
       const t = document.getElementById('ledgerTypeSelect');
@@ -8536,16 +8862,16 @@ HTML_TEMPLATE_PART3 = r"""
         if (it.isFlaggedV45) {
           contentMatchBadge = `<span class="status-badge risk" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;">Lưu ý kiểm chứng: Nội dung trùng tên hoặc ngoài chủ đề bầu cử</span>`;
         } else if (it.type === 'NOISE-AUDIT') {
-          contentMatchBadge = `<span class="status-badge snapshot" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;background:#fef3c7;color:#92400e;">🛡️ Đã chặn bởi Quy trình sàng lọc hai lớp </span>`;
+          contentMatchBadge = `<span class="status-badge snapshot" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;background:#fef3c7;color:#92400e;">Đã lọc qua quy trình sàng lọc hai lớp</span>`;
         } else if (it.sheet === 'October_Excel_Supplement' && it.fcVerdict) {
           contentMatchBadge = `<span class="status-badge snapshot" style="font-size:10px;padding:1px 6px;display:inline-block;margin-top:3px;">${esc(it.fcVerdict)}</span>`;
         }
         if (fcEntry && fcEntry.status === 'verified') {
-          contentMatchBadge = `<span class="fc-status-pill verified" style="display:inline-block;margin-top:3px;">✓ Đã xác nhận khớp nhận định</span>`;
+          contentMatchBadge = `<span class="fc-status-pill verified" style="display:inline-block;margin-top:3px;">Đã xác nhận khớp nhận định</span>`;
         } else if (fcEntry && fcEntry.status === 'review') {
-          contentMatchBadge = `<span class="fc-status-pill review" style="display:inline-block;margin-top:3px;">! Đánh dấu cần xem lại</span>`;
+          contentMatchBadge = `<span class="fc-status-pill review" style="display:inline-block;margin-top:3px;">Đánh dấu cần xem lại</span>`;
         } else if (fcEntry && fcEntry.status === 'rejected') {
-          contentMatchBadge = `<span class="fc-status-pill rejected" style="display:inline-block;margin-top:3px;">✕ Đánh dấu không hợp lý</span>`;
+          contentMatchBadge = `<span class="fc-status-pill rejected" style="display:inline-block;margin-top:3px;">Đánh dấu không hợp lý</span>`;
         }
 
         return `
