@@ -14,8 +14,8 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
 <html lang="vi" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>THEO DÕI DƯ LUẬN BẦU CỬ VFF KHÓA X (01–22/10/2026) — Chuyên trang Dữ liệu & Độ phủ Truyền thông</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <title>THEO DÕI DƯ LUẬN BẦU CỬ VFF KHÓA X (01–24/10/2026) — Chuyên trang Dữ liệu & Độ phủ Truyền thông</title>
   <style>
     :root, :root[data-theme="light"] {
       --bg-main: #f4f6fb;
@@ -2330,6 +2330,360 @@ HTML_TEMPLATE_PART1 = """<!DOCTYPE html>
       border-color: #B8292F;
     }
 
+    /* ===================================================================== */
+    /* COMPREHENSIVE MOBILE & TABLET RESPONSIVE OPTIMIZATION                 */
+    /* ===================================================================== */
+    html, body {
+      max-width: 100vw;
+      overflow-x: hidden;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .gs-pass-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    .gs-pass-wrap .gs-auth-input {
+      padding-right: 64px;
+      font-size: 16px;
+    }
+    .gs-pass-toggle {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 1px solid var(--border-strong);
+      background: var(--bg-panel);
+      color: var(--text-secondary);
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 8px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    @media (max-width: 768px) {
+      /* 1. Lock Screen Mobile Optimization */
+      .gs-auth-overlay {
+        padding: 12px;
+        align-items: center;
+        overflow-y: auto;
+      }
+      .gs-auth-card {
+        padding: 20px 16px;
+        max-width: 100% !important;
+        width: 100%;
+      }
+      .gs-auth-title {
+        font-size: 17px;
+      }
+      .gs-auth-sub {
+        font-size: 12px;
+        margin-bottom: 12px;
+        padding-bottom: 10px;
+      }
+      .gs-auth-input {
+        font-size: 16px !important;
+        padding: 11px 12px;
+      }
+
+      /* 2. Masthead & Single-Row Swipeable Navigation Tabs */
+      .cmd-header {
+        position: relative;
+        padding: 12px 12px 0;
+      }
+      .cmd-header-top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding-bottom: 10px;
+      }
+      .brand-title h1 {
+        font-size: 18.5px;
+        line-height: 1.2;
+      }
+      .brand-title .positioning-line {
+        font-size: 12px;
+        line-height: 1.35;
+      }
+      .brand-title .dateline-meta {
+        font-size: 10.8px;
+        line-height: 1.45;
+        word-break: break-word;
+      }
+      .header-controls {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: space-between;
+      }
+      .global-search-wrap {
+        flex: 1 1 100%;
+        width: 100%;
+        order: 1;
+      }
+      .global-search-input {
+        width: 100% !important;
+        min-width: 0 !important;
+        font-size: 16px !important;
+        padding: 8px 10px 8px 32px !important;
+        box-sizing: border-box;
+      }
+      .header-meta-group {
+        flex: 1 1 100%;
+        order: 2;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+        padding: 6px 8px;
+        white-space: normal;
+        justify-content: flex-start;
+      }
+      .status-badge {
+        font-size: 10px;
+        padding: 3px 7px;
+      }
+      .exec-dropdown {
+        flex: 1 1 calc(50% - 4px);
+        order: 3;
+      }
+      .exec-dropdown-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 8px 10px;
+        font-size: 12px;
+      }
+      .exec-dropdown-menu {
+        position: fixed !important;
+        left: 10px !important;
+        right: 10px !important;
+        top: auto !important;
+        width: calc(100vw - 20px) !important;
+        min-width: 0 !important;
+        max-width: calc(100vw - 20px) !important;
+        max-height: 75vh;
+        overflow-y: auto;
+        z-index: 10005;
+      }
+      .nav-tabs {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 2px;
+        margin: 0 -12px;
+        padding: 0 12px;
+      }
+      .nav-tabs::-webkit-scrollbar {
+        display: none;
+      }
+      .nav-tab {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 9px 11px 8px;
+        font-size: 12px;
+      }
+
+      /* 3. Main Container & Editorial Overview (Tab 01) */
+      .container {
+        padding: 12px 10px 40px;
+      }
+      .ed-section {
+        margin-bottom: 24px;
+        padding-top: 10px;
+      }
+      .ed-section-hdr {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+        margin-bottom: 12px;
+      }
+      .ed-headline {
+        font-size: 17px;
+        line-height: 1.25;
+      }
+      .ed-lead {
+        font-size: 12.2px;
+        line-height: 1.45;
+      }
+      .ed-summary-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+        padding: 12px;
+      }
+      .ed-metric-top {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 6px;
+      }
+      .ed-mini-pills {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .ed-mini-pill {
+        flex: 1 0 auto;
+        white-space: nowrap;
+        padding: 5px 8px;
+        font-size: 10.8px;
+        text-align: center;
+      }
+      .ed-score-row {
+        gap: 8px;
+      }
+      .ed-big-num {
+        font-size: 26px;
+      }
+      .ed-cand-label {
+        font-size: 12px;
+      }
+      .ed-sub-count {
+        font-size: 10.8px;
+        line-height: 1.3;
+      }
+      .ed-flat-bar {
+        height: 26px;
+      }
+      .ed-flat-seg {
+        font-size: 10.2px;
+        padding: 0 5px;
+      }
+
+      /* 4. Interactive SVG Charts on Mobile */
+      .ed-chart-frame {
+        padding: 12px 10px;
+      }
+      .ed-chart-top {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+      }
+      .ed-chart-title {
+        font-size: 12.8px;
+        line-height: 1.35;
+      }
+      .ed-chart-sub {
+        font-size: 11.2px;
+        line-height: 1.4;
+      }
+      .ed-mode-switch {
+        width: 100%;
+        display: flex;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .ed-mode-btn {
+        flex: 1 0 auto;
+        white-space: nowrap;
+        text-align: center;
+        padding: 6px 8px;
+        font-size: 11px;
+      }
+      #overviewAnnotatedLineChart {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 4px;
+      }
+      #overviewAnnotatedLineChart svg {
+        min-width: 660px;
+        height: auto;
+      }
+
+      /* 5. Filter Bars, Panels & Tables Across All 9 Tabs */
+      .filter-bar {
+        flex-direction: column;
+        align-items: stretch !important;
+        padding: 10px !important;
+        gap: 8px !important;
+      }
+      .filter-group {
+        width: 100% !important;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px !important;
+      }
+      .filter-group > div {
+        flex: 1 1 100% !important;
+        min-width: 0 !important;
+        width: 100% !important;
+      }
+      .input-ctrl, .select-ctrl {
+        width: 100% !important;
+        min-width: 0 !important;
+        font-size: 16px !important;
+        padding: 8px 10px !important;
+        box-sizing: border-box;
+      }
+      .pill-btn {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 7px 9px;
+        font-size: 11.2px;
+      }
+      .panel-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 8px;
+        padding: 10px 12px;
+      }
+      .panel-title {
+        font-size: 13.5px !important;
+        line-height: 1.35;
+      }
+      .panel-sub {
+        font-size: 11.5px !important;
+        line-height: 1.4;
+      }
+      #ledgerPaginationBar {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 4px;
+      }
+      .table-wrap {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        max-width: 100%;
+      }
+      .wr-table th, .wr-table td,
+      .ed-heatmap-table th, .ed-heatmap-table td {
+        padding: 8px 8px;
+        font-size: 11.5px;
+      }
+
+      /* 6. Modals on Mobile */
+      .modal-backdrop {
+        padding: 6px;
+        align-items: flex-end;
+      }
+      .modal-box {
+        width: 100% !important;
+        max-width: 100% !important;
+        max-height: 92vh !important;
+        border-radius: 8px 8px 0 0 !important;
+      }
+      .modal-hdr {
+        padding: 10px 12px;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .modal-hdr strong {
+        font-size: 13px !important;
+        line-height: 1.35;
+        flex: 1;
+      }
+      .modal-body {
+        padding: 12px;
+        font-size: 12.2px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -3717,11 +4071,14 @@ HTML_TEMPLATE_PART2 = r"""
       <form id="gsAuthForm" onsubmit="submitGoogleSheetAuth(event)">
         <div class="gs-auth-field">
           <label class="gs-auth-label" for="gsAuthPassword">Mật khẩu truy cập</label>
-          <input id="gsAuthPassword" type="password" class="gs-auth-input" autocomplete="current-password" required autofocus placeholder="Nhập mật khẩu..." />
+          <div class="gs-pass-wrap">
+            <input id="gsAuthPassword" type="password" class="gs-auth-input" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" required autofocus placeholder="Nhập mật khẩu..." />
+            <button type="button" class="gs-pass-toggle" onclick="toggleGsPasswordVis(this)">Hiện</button>
+          </div>
         </div>
 
         <div style="margin-top:14px;">
-          <button type="submit" id="gsAuthSubmitBtn" class="btn btn-primary" style="width:100%;padding:11px 16px;font-size:13.5px;font-weight:800;justify-content:center;">
+          <button type="submit" id="gsAuthSubmitBtn" class="btn btn-primary" style="width:100%;padding:12px 16px;font-size:14px;font-weight:800;justify-content:center;">
             Mở khóa số liệu &rarr;
           </button>
         </div>
@@ -4092,7 +4449,21 @@ HTML_TEMPLATE_PART3 = r"""
     // =====================================================================
     // FLOATING EDITORIAL TOOLTIP & INTERACTIVE SUMMARY BARS (VISUAL #1)
     // =====================================================================
+    function toggleGsPasswordVis(btn) {
+      const inp = document.getElementById('gsAuthPassword');
+      if (!inp) return;
+      if (inp.type === 'password') {
+        inp.type = 'text';
+        if (btn) btn.textContent = 'Ẩn';
+      } else {
+        inp.type = 'password';
+        if (btn) btn.textContent = 'Hiện';
+      }
+      inp.focus();
+    }
+
     function showEdTooltip(evt, htmlContent) {
+      if (window.innerWidth <= 768) return;
       const tt = document.getElementById('edFloatingTooltip');
       if (!tt) return;
       tt.innerHTML = htmlContent;
