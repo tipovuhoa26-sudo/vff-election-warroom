@@ -3527,12 +3527,12 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn giai đoạn diễn biến:</strong>
-          <button class="pill-btn active" onclick="filterTimelineWave('ALL', this)">Toàn kỳ 24 ngày (01–24/10)</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 1', this)">GĐ 1 (01–12/10): Thành tích 7 ĐTQG</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 2', this)">GĐ 2 (13–16/10): Tin đồn &amp; bài đăng đồng loạt</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 3', this)">GĐ 3 (17–18/10): Tranh luận mô hình quản trị</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 4', this)">GĐ 4 (19–20/10): Đề cử 3 ứng viên VFF</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Nhịp 5', this)">GĐ 5 (21–24/10): Đề xuất 1.000 tỷ &amp; Liên danh</button>
+          <button class="pill-btn active" onclick="filterTimelineWave('ALL', this)">Toàn kỳ (01–25/10)</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 1', this)">GĐ 1 (01–12/10): Thành tích 7 ĐTQG</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 2', this)">GĐ 2 (13–16/10): Tin đồn &amp; bài đăng đồng loạt</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 3', this)">GĐ 3 (17–18/10): Tranh luận mô hình quản trị</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 4', this)">GĐ 4 (19–20/10): Đề cử 3 ứng viên VFF</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 5', this)">GĐ 5 (21–25/10): Đề xuất 1.000 tỷ &amp; Liên danh</button>
         </div>
       </div>
 
@@ -3540,8 +3540,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="ed-chart-frame" style="margin-bottom:18px;">
         <div class="ed-chart-top">
           <div>
-            <div class="ed-chart-title" id="timelineSingleChartTitle">Góc nhìn A: Mật độ bài viết và video theo từng ngày (01/10 – 24/10/2026)</div>
-            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (614), Ông Nguyễn Đức Thụy (481) và Ông Nguyễn Xuân Vũ (125)</div>
+            <div class="ed-chart-title" id="timelineSingleChartTitle">Góc nhìn A: Mật độ bài viết và video theo từng ngày (01/10 – 25/10/2026)</div>
+            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (617), Ông Nguyễn Đức Thụy (484) và Ông Nguyễn Xuân Vũ (126)</div>
           </div>
           <div class="ed-mode-switch" id="timelineChartModeBar">
             <button class="ed-mode-btn active" onclick="switchTimelineChartView('daily', this)">1. Mật độ theo ngày</button>
@@ -3566,25 +3566,25 @@ HTML_TEMPLATE_PART2 = r"""
 
         <!-- Giải thích trực tiếp ngay dưới biểu đồ: Tách bạch Fact-base và Hàm ý -->
         <div class="ed-chart-caption" id="timelineSingleChartCaption">
-          <div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Số lượng bài đăng tăng cao vào ngày 15/10 (ghi nhận 33 bài đăng có nội dung trùng lặp từ cụm trang "Phấn Đấu") và giai đoạn 19–22/10 (khi báo chí đăng tải danh sách 3 ứng viên cùng thông tin đề xuất 600–1.000 tỷ đồng/năm). Tính lũy kế 24 ngày, tổng điểm bình luận ròng của TS. Trần Quốc Tuấn đạt +816 và của Ông Nguyễn Đức Thụy đạt +391.</div>
+          <div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Số lượng bài đăng tăng cao vào ngày 15/10 (ghi nhận 33 bài đăng có nội dung trùng lặp từ cụm trang "Phấn Đấu") và giai đoạn 19–22/10 (khi báo chí đăng tải danh sách 3 ứng viên cùng thông tin đề xuất 600–1.000 tỷ đồng/năm). Tính lũy kế toàn kỳ, tổng điểm bình luận ròng của TS. Trần Quốc Tuấn đạt +818 và của Ông Nguyễn Đức Thụy đạt +393.</div>
           <div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Chuyển đổi giữa 4 góc nhìn biểu đồ cho thấy sự khác biệt giữa mật độ phát sinh bài viết theo ngày và xu hướng tích lũy bình luận tự nhiên của người đọc.</div>
         </div>
       </div>
 
-      <!-- Bảng số liệu lũy kế 24 ngày -->
+      <!-- Bảng số liệu lũy kế theo từng ngày -->
       <div class="panel">
         <div class="panel-header">
           <div>
-            <div class="panel-title">Bảng đối soát diễn biến từng ngày (01/10 – 24/10/2026 · 24 ngày)</div>
-            <div class="panel-sub">Bấm vào bất kỳ dòng ngày nào để mở danh sách bài báo, bài đăng Facebook, video và bình luận phát sinh trong ngày đó</div>
+            <div class="panel-title">Bảng đối soát diễn biến từng ngày (01/10 – 25/10/2026 · <span id="timelineRowCountBadge">25</span> mốc ngày)</div>
+            <div class="panel-sub">[Fact-base]: Thống kê số lượng bài viết/video và bình luận ủng hộ (+), phản đối (-), điểm ròng lũy kế theo từng ngày · Bấm vào bất kỳ dòng ngày nào để mở danh sách bài báo, bài đăng Facebook, video và bình luận phát sinh trong ngày đó</div>
           </div>
         </div>
         <div class="table-wrap">
           <table class="wr-table">
             <thead>
               <tr>
-                <th>Ngày</th>
-                <th>Giai đoạn &amp; sự kiện chính</th>
+                <th>[Fact-base] Ngày</th>
+                <th>[Phân kỳ] Giai đoạn &amp; sự kiện chính</th>
                 <th>Bài TS. Tuấn</th>
                 <th>Lũy kế TS. Tuấn</th>
                 <th>Bài Ông Thụy</th>
@@ -5493,21 +5493,21 @@ HTML_TEMPLATE_PART3 = r"""
       const subEl = document.getElementById('timelineSingleChartSub');
       const capEl = document.getElementById('timelineSingleChartCaption');
       if (mode === 'daily') {
-        if (titleEl) titleEl.textContent = 'Góc nhìn 1: Mật độ bài viết và video theo từng ngày (01/10 – 24/10/2026)';
-        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (614), Ông Nguyễn Đức Thụy (481) và Ông Nguyễn Xuân Vũ (125)';
-        if (capEl) capEl.textContent = 'Lượng bài đăng tăng đột biến vào ngày 15/10 (do 33 bài đăng đồng loạt của cụm "Phấn Đấu") và giai đoạn 19–22/10 (khi thông tin đề cử và gói tài trợ 600–1.000 tỷ đồng/năm xuất hiện). Bấm vào bất kỳ cột ngày nào để mở danh sách bài viết của ngày đó.';
+        if (titleEl) titleEl.textContent = 'Góc nhìn 1: Mật độ bài viết và video theo từng ngày (01/10 – 25/10/2026)';
+        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (617), Ông Nguyễn Đức Thụy (484) và Ông Nguyễn Xuân Vũ (126)';
+        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Số lượng bài đăng tăng vào ngày 15/10 (ghi nhận 33 bài đăng có văn bản trùng lặp từ cụm trang "Phấn Đấu") và giai đoạn 19–22/10 (khi thông tin đề cử 3 ứng viên và đề xuất 600–1.000 tỷ đồng/năm xuất hiện).</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Bấm vào bất kỳ cột ngày nào để đối chiếu danh sách bài viết phát sinh thực tế trong ngày đó.</div>';
       } else if (mode === 'cum') {
-        if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy kế độ phủ truyền thông 24 ngày (01/10 – 24/10/2026)';
-        if (subEl) subEl.textContent = 'Cộng dồn lượt bài viết và video đề cập từng ứng viên qua 24 ngày theo dõi';
-        if (capEl) capEl.textContent = 'Tính lũy kế 24 ngày, TS. Trần Quốc Tuấn dẫn đầu với 614 lượt bài viết và video đề cập, tiếp theo là Ông Nguyễn Đức Thụy (481 lượt) và Ông Nguyễn Xuân Vũ (125 lượt). Khoảng cách độ phủ duy trì ổn định ngay cả trong tuần cao điểm trước Đại hội.';
+        if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy kế độ phủ truyền thông toàn kỳ (01/10 – 25/10/2026)';
+        if (subEl) subEl.textContent = 'Cộng dồn lượt bài viết và video đề cập từng ứng viên qua các ngày theo dõi';
+        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Tính lũy kế toàn kỳ, TS. Trần Quốc Tuấn ghi nhận 617 lượt bài viết và video đề cập, tiếp theo là Ông Nguyễn Đức Thụy (484 lượt) và Ông Nguyễn Xuân Vũ (126 lượt).</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Khoảng cách độ phủ truyền thông duy trì ổn định trong cả giai đoạn cao điểm trước Đại hội.</div>';
       } else if (mode === 'net') {
-        if (titleEl) titleEl.textContent = 'Góc nhìn 3: Đường cong điểm tín nhiệm ròng tích lũy 24 ngày (Ủng hộ trừ Phản đối)';
-        if (subEl) subEl.textContent = 'So sánh hiệu số tích lũy giữa tín hiệu ủng hộ (+) và phản đối (-) của TS. Trần Quốc Tuấn (+816) và Ông Nguyễn Đức Thụy (+391)';
-        if (capEl) capEl.textContent = 'Điểm tín nhiệm ròng tích lũy của TS. Trần Quốc Tuấn đạt +816 điểm nhờ lượng ý kiến phản đối trực diện rất thấp. Ngược lại, đường tín nhiệm ròng của Ông Nguyễn Đức Thụy (+391) tăng chậm hơn do mỗi đợt bài quảng bá đều đi kèm luồng bình luận phản biện.';
+        if (titleEl) titleEl.textContent = 'Góc nhìn 3: Đường cong điểm bình luận ròng tích lũy (Ủng hộ trừ Phản đối)';
+        if (subEl) subEl.textContent = 'So sánh hiệu số tích lũy giữa bình luận ủng hộ (+) và phản đối (-) của TS. Trần Quốc Tuấn (+818) và Ông Nguyễn Đức Thụy (+393)';
+        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Điểm bình luận ròng tích lũy của TS. Trần Quốc Tuấn đạt +818 điểm; của Ông Nguyễn Đức Thụy đạt +393 điểm.</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Đường điểm ròng của Ông Nguyễn Đức Thụy tăng chậm hơn số lượng bài đăng do các đợt bài quảng bá đi kèm bình luận phản biện từ người đọc.</div>';
       } else if (mode === 'butterfly') {
-        if (titleEl) titleEl.textContent = 'Góc nhìn 4: Cán cân Ủng hộ (+) và Phản đối (-) theo từng ngày';
-        if (subEl) subEl.textContent = 'Phía trên trục 0 thể hiện lượng tín hiệu ủng hộ (+); phía dưới trục 0 thể hiện lượng tín hiệu phản đối (-)';
-        if (capEl) capEl.textContent = 'Biểu đồ đối xứng cho thấy các ngày 15–18/10 và 21–22/10 phát sinh đồng thời cả lượng bình luận ủng hộ lẫn lượng bình luận phản đối lớn bên dưới các bài viết về Ông Nguyễn Đức Thụy. Trong khi đó, tín hiệu dành cho TS. Trần Quốc Tuấn tập trung chủ yếu ở nửa dương.';
+        if (titleEl) titleEl.textContent = 'Góc nhìn 4: Cán cân bình luận Ủng hộ (+) và Phản đối (-) theo từng ngày';
+        if (subEl) subEl.textContent = 'Phía trên trục 0 thể hiện lượng bình luận ủng hộ (+); phía dưới trục 0 thể hiện lượng bình luận phản đối (-)';
+        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Các ngày 15–18/10 và 21–22/10 ghi nhận đồng thời cả lượng bình luận ủng hộ (+) và lượng bình luận phản đối (-) bên dưới các bài viết đề cập Ông Nguyễn Đức Thụy.</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Phản ánh sự phân hóa quan điểm của độc giả mạng xã hội trước chủ đề tài trợ tài chính và cơ chế quản trị.</div>';
       }
     }
 
@@ -5545,8 +5545,19 @@ HTML_TEMPLATE_PART3 = r"""
         p.classList.toggle('active', p.id === tabId);
       });
       window.scrollTo({ top: 0, behavior: 'instant' });
-      if (tabId === 'tab-timeline') {
+      if (tabId === 'tab-overview') {
+        renderElectionNeedles();
+        renderElectoralCartogram();
+        renderExitPolls();
+      } else if (tabId === 'tab-timeline') {
+        renderTimelineTable();
         renderTimelineCharts();
+      } else if (tabId === 'tab-media-hub') {
+        renderMatrixTable();
+        renderAbsaTable();
+        renderPressFbSub();
+        renderVideoSub();
+        renderCommentSub();
       } else if (tabId === 'tab-sources-ledger') {
         switchSourcesSubView('ledger');
       }
@@ -5562,9 +5573,26 @@ HTML_TEMPLATE_PART3 = r"""
     function jumpToComments(kw) {
       switchMediaHubSub('comments');
       const sel = document.getElementById('cmtStanceSelect');
-      if (sel) sel.value = 'ALL';
       const inp = document.getElementById('cmtSearchInput');
-      if (inp) inp.value = kw;
+      const k = String(kw || '').trim();
+      const stanceMap = {
+        'Tuấn': 'Tuấn',
+        'Ủng hộ Ông Trần Quốc Tuấn': 'Tuấn',
+        'Thụy': 'Thụy',
+        'Ủng hộ Ông Nguyễn Đức Thụy': 'Thụy',
+        'Liên danh': 'Liên danh',
+        'Phản đối': 'Phản đối',
+        'Phản biện': 'Phản đối',
+        'Bầu Đức': 'Bầu Đức',
+        'Trung lập': 'Trung lập'
+      };
+      if (stanceMap[k]) {
+        if (sel) sel.value = stanceMap[k];
+        if (inp) inp.value = '';
+      } else {
+        if (sel) sel.value = 'ALL';
+        if (inp) inp.value = k;
+      }
       renderCommentSub();
     }
 
@@ -7303,23 +7331,35 @@ HTML_TEMPLATE_PART3 = r"""
 
     // Render Tab 2: 24-Day Timeline Table & 4 Interactive SVG Charts
     function filterTimelineWave(wave, btn) {
-      currentWaveFilter = wave;
-      btn.parentElement.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      currentWaveFilter = wave || 'ALL';
+      if (btn && btn.parentElement) {
+        btn.parentElement.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      }
       renderTimelineTable();
       renderTimelineCharts();
     }
 
     function getFilteredTimelineRows() {
       const all = (DB.sheets['02_Luy_Tien_22_Ngay'] || {}).rows || [];
-      if (currentWaveFilter === 'ALL') return all;
-      return all.filter(r => String(r.c2 || '').includes(currentWaveFilter));
+      if (!currentWaveFilter || currentWaveFilter === 'ALL') return all;
+      const numMatch = String(currentWaveFilter).match(/\d+/);
+      const gdTag = numMatch ? `Giai đoạn ${numMatch[0]}` : currentWaveFilter;
+      const nhipTag = numMatch ? `Nhịp ${numMatch[0]}` : currentWaveFilter;
+      const filtered = all.filter(r => {
+        const s = String(r.c2 || '');
+        return s.includes(currentWaveFilter) || s.includes(gdTag) || s.includes(nhipTag);
+      });
+      return filtered.length ? filtered : all;
     }
 
     function renderTimelineTable() {
       const allRows = (DB.sheets['02_Luy_Tien_22_Ngay'] || {}).rows || [];
       const rows = getFilteredTimelineRows();
+      const cntBadge = document.getElementById('timelineRowCountBadge');
+      if (cntBadge) cntBadge.textContent = rows.length;
       const tbody = document.getElementById('timelineTableBody');
+      if (!tbody) return;
       tbody.innerHTML = rows.map(r => {
         const dayIdx = allRows.indexOf(r);
         return `
@@ -7338,7 +7378,7 @@ HTML_TEMPLATE_PART3 = r"""
           <td style="text-align:center;color:#22c55e;font-weight:700;">+${esc(r.c12)}</td>
           <td style="text-align:center;color:var(--thuy-red);font-weight:700;">${esc(r.c13)}</td>
           <td style="text-align:center;font-weight:900;color:var(--thuy-red);">+${esc(r.c14)}</td>
-          <td>${linkBtn(r.c15, 'Minh chứng', { sheet: '02_Luy_Tien_22_Ngay', idx: dayIdx })}</td>
+          <td onclick="event.stopPropagation();">${linkBtn(r.c15, 'Minh chứng', { sheet: '02_Luy_Tien_22_Ngay', idx: dayIdx })}</td>
         </tr>`;
       }).join('');
     }
@@ -7631,14 +7671,18 @@ HTML_TEMPLATE_PART3 = r"""
     }
 
     function renderPressFbSub() {
-      const q = (document.getElementById('pressFbSearch').value || '').trim().toLowerCase();
-      if (currentPressFbSub === 'press') {
-        const all = (DB.sheets['04_78_Bai_Bao_Chinh_Thong'] || {}).rows || [];
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r }) =>
-          !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
-        );
-        document.getElementById('press78Count').textContent = rows.length;
-        document.getElementById('press78Body').innerHTML = rows.map(({ r, idx }) => `
+      const q = ((document.getElementById('pressFbSearch') || {}).value || '').trim().toLowerCase();
+
+      // 1. Press 81
+      const allPress = (DB.sheets['04_78_Bai_Bao_Chinh_Thong'] || {}).rows || [];
+      const pressRows = allPress.map((r, idx) => ({ r, idx })).filter(({ r }) =>
+        !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
+      );
+      const pressCntEl = document.getElementById('press78Count');
+      if (pressCntEl) pressCntEl.textContent = pressRows.length;
+      const pressBodyEl = document.getElementById('press78Body');
+      if (pressBodyEl) {
+        pressBodyEl.innerHTML = pressRows.map(({ r, idx }) => `
           <tr onclick="openItemFactCheckModal('04_78_Bai_Bao_Chinh_Thong', ${idx})" style="cursor:pointer;" title="Bấm để mở Hồ sơ Kiểm chứng bài báo này">
             <td style="text-align:center;font-weight:800;">${esc(r.c1)}</td>
             <td style="text-align:center;white-space:nowrap;">${esc(r.c2)}</td>
@@ -7648,16 +7692,21 @@ HTML_TEMPLATE_PART3 = r"""
             <td>${esc(r.c6)}</td>
             <td>${stanceBadge(getEffectiveStance('04_78_Bai_Bao_Chinh_Thong', idx, r.c7))}</td>
             <td>${esc(r.c8)}</td>
-            <td>${linkBtn(r.c9, 'Đọc báo', { sheet: '04_78_Bai_Bao_Chinh_Thong', idx })}</td>
+            <td onclick="event.stopPropagation();">${linkBtn(r.c9, 'Đọc báo', { sheet: '04_78_Bai_Bao_Chinh_Thong', idx })}</td>
           </tr>
         `).join('');
-      } else if (currentPressFbSub === 'fb378') {
-        const all = (DB.sheets['05_378_Kenh_Facebook_Danh_Ba'] || {}).rows || [];
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r }) =>
-          !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
-        );
-        document.getElementById('fb378Count').textContent = rows.length;
-        document.getElementById('fb378Body').innerHTML = rows.map(({ r, idx }) => `
+      }
+
+      // 2. Channels 881
+      const allFb378 = (DB.sheets['05_378_Kenh_Facebook_Danh_Ba'] || {}).rows || [];
+      const fb378Rows = allFb378.map((r, idx) => ({ r, idx })).filter(({ r }) =>
+        !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
+      );
+      const fb378CntEl = document.getElementById('fb378Count');
+      if (fb378CntEl) fb378CntEl.textContent = fb378Rows.length;
+      const fb378BodyEl = document.getElementById('fb378Body');
+      if (fb378BodyEl) {
+        fb378BodyEl.innerHTML = fb378Rows.map(({ r, idx }) => `
           <tr onclick="openFb378ChannelModal(${idx})" style="cursor:pointer;" title="Bấm để xem toàn bộ các bài viết và bình luận thuộc kênh này">
             <td style="text-align:center;font-weight:800;">${esc(r.c1)}</td>
             <td><strong style="color:var(--tuan-blue);text-decoration:underline;">${esc(cleanEmojiText(r.c2))}</strong></td>
@@ -7666,28 +7715,33 @@ HTML_TEMPLATE_PART3 = r"""
             <td style="text-align:center;font-weight:700;color:#22c55e;">${fmtNum(r.c5)}</td>
             <td style="text-align:center;font-weight:700;color:var(--gold);">${fmtNum(r.c6)}</td>
             <td>${formatAuditStatus(r.c7)}</td>
-            <td>${linkBtn(r.c8, 'Mở kênh / Bài', { sheet: '05_378_Kenh_Facebook_Danh_Ba', idx, extraUrls: [{ label: 'Trang chủ kênh', url: r.c9 }, { label: 'Link kênh phụ', url: r.c10 }] })}</td>
+            <td onclick="event.stopPropagation();">${linkBtn(r.c8, 'Mở kênh / Bài', { sheet: '05_378_Kenh_Facebook_Danh_Ba', idx, extraUrls: [{ label: 'Trang chủ kênh', url: r.c9 }, { label: 'Link kênh phụ', url: r.c10 }] })}</td>
           </tr>
         `).join('');
-      } else {
-        const all = (DB.sheets['06_665_Bai_Facebook_Xac_Thuc'] || {}).rows || [];
-        const allCmts = (DB.sheets['09_887_Binh_Luan_Bau_Cu_FB'] || {}).rows || [];
-        const s6List = ((DB.extra_2410 || {}).s6_comments_17851 || []);
-        const cmtByPostId = {};
-        allCmts.forEach(c => {
-          const pid = String(c.c2 || '').split('(')[0].trim();
-          if (pid) cmtByPostId[pid] = (cmtByPostId[pid] || 0) + 1;
-        });
-        const s6ByPostId = {};
-        s6List.forEach(s => {
-          const pid = String(s[2] || '').trim();
-          if (pid) s6ByPostId[pid] = (s6ByPostId[pid] || 0) + 1;
-        });
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r }) =>
-          !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
-        );
-        document.getElementById('fb665Count').textContent = rows.length;
-        document.getElementById('fb665Body').innerHTML = rows.map(({ r, idx }) => {
+      }
+
+      // 3. FB Verified Posts 706
+      const allFb665 = (DB.sheets['06_665_Bai_Facebook_Xac_Thuc'] || {}).rows || [];
+      const allCmts = (DB.sheets['09_887_Binh_Luan_Bau_Cu_FB'] || {}).rows || [];
+      const s6List = ((DB.extra_2410 || {}).s6_comments_17851 || []);
+      const cmtByPostId = {};
+      allCmts.forEach(c => {
+        const pid = String(c.c2 || '').split('(')[0].trim();
+        if (pid) cmtByPostId[pid] = (cmtByPostId[pid] || 0) + 1;
+      });
+      const s6ByPostId = {};
+      s6List.forEach(s => {
+        const pid = String(s[2] || '').trim();
+        if (pid) s6ByPostId[pid] = (s6ByPostId[pid] || 0) + 1;
+      });
+      const fb665Rows = allFb665.map((r, idx) => ({ r, idx })).filter(({ r }) =>
+        !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
+      );
+      const fb665CntEl = document.getElementById('fb665Count');
+      if (fb665CntEl) fb665CntEl.textContent = fb665Rows.length;
+      const fb665BodyEl = document.getElementById('fb665Body');
+      if (fb665BodyEl) {
+        fb665BodyEl.innerHTML = fb665Rows.map(({ r, idx }) => {
           const pcode = String(r.c2 || '').trim();
           const attachedCnt = cmtByPostId[pcode] || 0;
           const s6Cnt = s6ByPostId[pcode] || 0;
@@ -7704,7 +7758,7 @@ HTML_TEMPLATE_PART3 = r"""
             <td>${esc(r.c5)}</td>
             <td>${stanceBadge(getEffectiveStance('06_665_Bai_Facebook_Xac_Thuc', idx, r.c8 || 'Tin bầu cử VFF'))}</td>
             <td style="max-width:410px;"><div style="max-height:86px;overflow-y:auto;padding-right:4px;line-height:1.45;">${escLinkify(r.c6)}</div></td>
-            <td>${linkBtn(r.c7, 'Bài gốc FB', { sheet: '06_665_Bai_Facebook_Xac_Thuc', idx, extraUrls: [{ label: 'Trang chủ Page', url: r.c9 }] })}</td>
+            <td onclick="event.stopPropagation();">${linkBtn(r.c7, 'Bài gốc FB', { sheet: '06_665_Bai_Facebook_Xac_Thuc', idx, extraUrls: [{ label: 'Trang chủ Page', url: r.c9 }] })}</td>
           </tr>`;
         }).join('');
       }
@@ -7721,14 +7775,18 @@ HTML_TEMPLATE_PART3 = r"""
     }
 
     function renderVideoSub() {
-      const q = (document.getElementById('videoSearchInput').value || '').trim().toLowerCase();
-      if (currentVideoSub === 'yt169') {
-        const all = (DB.sheets['07_169_Video_YouTube_Audited'] || {}).rows || [];
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r }) =>
-          !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
-        );
-        document.getElementById('yt169Count').textContent = rows.length;
-        document.getElementById('yt169Body').innerHTML = rows.map(({ r, idx }) => `
+      const q = ((document.getElementById('videoSearchInput') || {}).value || '').trim().toLowerCase();
+
+      // 1. YouTube 354
+      const allYt = (DB.sheets['07_169_Video_YouTube_Audited'] || {}).rows || [];
+      const ytRows = allYt.map((r, idx) => ({ r, idx })).filter(({ r }) =>
+        !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
+      );
+      const ytCntEl = document.getElementById('yt169Count');
+      if (ytCntEl) ytCntEl.textContent = ytRows.length;
+      const ytBodyEl = document.getElementById('yt169Body');
+      if (ytBodyEl) {
+        ytBodyEl.innerHTML = ytRows.map(({ r, idx }) => `
           <tr onclick="openItemFactCheckModal('07_169_Video_YouTube_Audited', ${idx})" style="cursor:pointer;">
             <td style="text-align:center;font-weight:800;">${esc(r.c1)}</td>
             <td><strong>${esc(r.c3)}</strong></td>
@@ -7739,18 +7797,23 @@ HTML_TEMPLATE_PART3 = r"""
             <td>${stanceBadge(r.c11)}</td>
             <td style="text-align:center;font-weight:700;">${fmtNum(r.c12)} dòng (${fmtNum(r.c13)} từ)</td>
             <td style="font-size:11.8px;color:var(--text-secondary);max-width:340px;">${escLinkify(r.c15)}</td>
-            <td>
+            <td onclick="event.stopPropagation();">
               ${linkBtn(r.c17, 'Xem YouTube', { sheet: '07_169_Video_YouTube_Audited', idx, extraUrls: [{ label: 'Video gốc', url: r.c18 }, { label: 'Trang chủ kênh', url: r.c19 }] })}
             </td>
           </tr>
         `).join('');
-      } else {
-        const all = (DB.sheets['08_68_Video_TikTok_Kich_Ban'] || {}).rows || [];
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r }) =>
-          !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
-        );
-        document.getElementById('tt68Count').textContent = rows.length;
-        document.getElementById('tt68Body').innerHTML = rows.map(({ r, idx }) => `
+      }
+
+      // 2. TikTok 268
+      const allTt = (DB.sheets['08_68_Video_TikTok_Kich_Ban'] || {}).rows || [];
+      const ttRows = allTt.map((r, idx) => ({ r, idx })).filter(({ r }) =>
+        !q || Object.values(r).some(v => String(v).toLowerCase().includes(q))
+      );
+      const ttCntEl = document.getElementById('tt68Count');
+      if (ttCntEl) ttCntEl.textContent = ttRows.length;
+      const ttBodyEl = document.getElementById('tt68Body');
+      if (ttBodyEl) {
+        ttBodyEl.innerHTML = ttRows.map(({ r, idx }) => `
           <tr onclick="openItemFactCheckModal('08_68_Video_TikTok_Kich_Ban', ${idx})" style="cursor:pointer;">
             <td style="font-weight:800;">${esc(r.c1)}</td>
             <td style="white-space:nowrap;">${esc(r.c2)}</td>
@@ -7762,7 +7825,7 @@ HTML_TEMPLATE_PART3 = r"""
             <td style="text-align:center;font-weight:700;color:#22c55e;">${fmtNum(r.c11)}</td>
             <td style="text-align:center;font-weight:700;">${fmtNum(r.c13)}</td>
             <td style="font-size:11.8px;color:var(--text-secondary);max-width:340px;">${escLinkify(r.c14)}</td>
-            <td>
+            <td onclick="event.stopPropagation();">
               ${linkBtn(r.c15, 'Xem TikTok', { sheet: '08_68_Video_TikTok_Kich_Ban', idx, extraUrls: [{ label: 'Trang chủ kênh', url: r.c16 }] })}
             </td>
           </tr>
@@ -7880,22 +7943,51 @@ HTML_TEMPLATE_PART3 = r"""
       renderCommentSub();
     }
 
+    function matchesCommentStanceFilter(text, stance, filterVal) {
+      if (!filterVal || filterVal === 'ALL') return true;
+      const s = String(stance || '').toLowerCase();
+      const t = String(text || '').toLowerCase();
+      const comb = s + ' ' + t;
+      if (filterVal === 'Tuấn') {
+        if (s.includes('liên danh') || s.includes('kết hợp') || s.includes('phân vai')) return false;
+        return ['quốc tuấn', 'ts. tuấn', 'ông tuấn'].some(k => s.includes(k)) || (s.includes('ủng hộ') && t.includes('tuấn'));
+      }
+      if (filterVal === 'Thụy') {
+        if (s.includes('liên danh') || s.includes('kết hợp') || s.includes('phân vai')) return false;
+        return ['đức thụy', 'bầu thụy', 'ông thụy'].some(k => s.includes(k)) || (s.includes('ủng hộ') && t.includes('thụy'));
+      }
+      if (filterVal === 'Liên danh') {
+        return ['liên danh', 'kết hợp', 'chia vai', 'phân vai', 'dung hòa', 'phó chủ tịch'].some(k => comb.includes(k));
+      }
+      if (filterVal === 'Bầu Đức') {
+        return ['ứng viên khác', 'nhân vật khác', 'bầu đức', 'nhật vượng', 'xuân vũ', 'bầu hiển', 'hải lơ'].some(k => comb.includes(k));
+      }
+      if (filterVal === 'Phản đối') {
+        return ['phản biện', 'cảnh báo', 'cảnh giác', 'phản đối', 'lo ngại', 'hoài nghi', 'bỏ giải'].some(k => comb.includes(k));
+      }
+      if (filterVal === 'Trung lập') {
+        return ['trung lập', 'không bày tỏ', 'đưa tin', 'quy trình', 'nhận định chung', 'thể chế', 'điều lệ', 'đại hội'].some(k => comb.includes(k));
+      }
+      return comb.includes(filterVal.toLowerCase());
+    }
+
     function renderCommentSub() {
-      const stanceFilter = document.getElementById('cmtStanceSelect').value;
-      const q = (document.getElementById('cmtSearchInput').value || '').trim().toLowerCase();
-      if (currentCmtSub === 'fb887') {
-        const all = (DB.sheets['09_887_Binh_Luan_Bau_Cu_FB'] || {}).rows || [];
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r, idx }) => {
-          const effStance = getEffectiveStance('09_887_Binh_Luan_Bau_Cu_FB', idx, r.c6);
-          if (stanceFilter !== 'ALL') {
-            const combined = `${r.c5} ${effStance}`.toLowerCase();
-            if (!combined.includes(stanceFilter.toLowerCase())) return false;
-          }
-          if (q && !Object.values(r).some(v => String(v).toLowerCase().includes(q))) return false;
-          return true;
-        });
-        document.getElementById('cmtFbCount').textContent = rows.length;
-        document.getElementById('cmtFb887Body').innerHTML = rows.map(({ r, idx }) => `
+      const stanceFilter = ((document.getElementById('cmtStanceSelect') || {}).value || 'ALL');
+      const q = ((document.getElementById('cmtSearchInput') || {}).value || '').trim().toLowerCase();
+
+      // 1. FB 1,888 Coded Comments
+      const allFb = (DB.sheets['09_887_Binh_Luan_Bau_Cu_FB'] || {}).rows || [];
+      const fbRows = allFb.map((r, idx) => ({ r, idx })).filter(({ r, idx }) => {
+        const effStance = getEffectiveStance('09_887_Binh_Luan_Bau_Cu_FB', idx, r.c6);
+        if (!matchesCommentStanceFilter(r.c5, effStance, stanceFilter)) return false;
+        if (q && !Object.values(r).some(v => String(v).toLowerCase().includes(q))) return false;
+        return true;
+      });
+      const fbCntEl = document.getElementById('cmtFbCount');
+      if (fbCntEl) fbCntEl.textContent = fbRows.length;
+      const fbBodyEl = document.getElementById('cmtFb887Body');
+      if (fbBodyEl) {
+        fbBodyEl.innerHTML = fbRows.map(({ r, idx }) => `
           <tr onclick="openItemFactCheckModal('09_887_Binh_Luan_Bau_Cu_FB', ${idx})" style="cursor:pointer;" title="Bấm để đối chiếu bình luận này với nội dung bài đăng Facebook gốc">
             <td style="text-align:center;font-weight:800;">${esc(r.c1)}</td>
             <td><span class="badge badge-coal">${esc(r.c2)}</span></td>
@@ -7908,22 +8000,24 @@ HTML_TEMPLATE_PART3 = r"""
             <td>${stanceBadge(getEffectiveStance('09_887_Binh_Luan_Bau_Cu_FB', idx, r.c6))}</td>
             <td style="text-align:center;">${esc(r.c7)}</td>
             <td style="white-space:nowrap;">${esc(r.c8)}</td>
-            <td>${linkBtn(r.c9, 'Link BL', { sheet: '09_887_Binh_Luan_Bau_Cu_FB', idx, extraUrls: [{ label: 'Bài đăng gốc', url: r.c10 }] })}</td>
+            <td onclick="event.stopPropagation();">${linkBtn(r.c9, 'Link BL', { sheet: '09_887_Binh_Luan_Bau_Cu_FB', idx, extraUrls: [{ label: 'Bài đăng gốc', url: r.c10 }] })}</td>
           </tr>
         `).join('');
-      } else if (currentCmtSub === 'yttt604') {
-        const all = (DB.sheets['10_604_Binh_Luan_Bau_Cu_YT_TT'] || {}).rows || [];
-        const rows = all.map((r, idx) => ({ r, idx })).filter(({ r, idx }) => {
-          const effStance = getEffectiveStance('10_604_Binh_Luan_Bau_Cu_YT_TT', idx, r.c11);
-          if (stanceFilter !== 'ALL') {
-            const combined = `${r.c8} ${effStance}`.toLowerCase();
-            if (!combined.includes(stanceFilter.toLowerCase())) return false;
-          }
-          if (q && !Object.values(r).some(v => String(v).toLowerCase().includes(q))) return false;
-          return true;
-        });
-        document.getElementById('cmtYtCount').textContent = rows.length;
-        document.getElementById('cmtYt604Body').innerHTML = rows.map(({ r, idx }) => `
+      }
+
+      // 2. YT/TT 1,457 Coded Comments
+      const allYt = (DB.sheets['10_604_Binh_Luan_Bau_Cu_YT_TT'] || {}).rows || [];
+      const ytRows = allYt.map((r, idx) => ({ r, idx })).filter(({ r, idx }) => {
+        const effStance = getEffectiveStance('10_604_Binh_Luan_Bau_Cu_YT_TT', idx, r.c11);
+        if (!matchesCommentStanceFilter(r.c8, effStance, stanceFilter)) return false;
+        if (q && !Object.values(r).some(v => String(v).toLowerCase().includes(q))) return false;
+        return true;
+      });
+      const ytCntEl = document.getElementById('cmtYtCount');
+      if (ytCntEl) ytCntEl.textContent = ytRows.length;
+      const ytBodyEl = document.getElementById('cmtYt604Body');
+      if (ytBodyEl) {
+        ytBodyEl.innerHTML = ytRows.map(({ r, idx }) => `
           <tr onclick="openItemFactCheckModal('10_604_Binh_Luan_Bau_Cu_YT_TT', ${idx})" style="cursor:pointer;" title="Bấm để đối chiếu bình luận này với kịch bản video gốc">
             <td style="text-align:center;font-weight:800;">${esc(r.c1)}</td>
             <td><span class="badge badge-gray">${esc(r.c2)}</span></td>
@@ -7933,54 +8027,52 @@ HTML_TEMPLATE_PART3 = r"""
             <td style="max-width:420px;">${escLinkify(r.c8)}</td>
             <td style="text-align:center;font-weight:700;color:var(--gold);">${esc(r.c9)}</td>
             <td>${stanceBadge(getEffectiveStance('10_604_Binh_Luan_Bau_Cu_YT_TT', idx, r.c11))}</td>
-            <td>${linkBtn(r.c13, 'Link BL', { sheet: '10_604_Binh_Luan_Bau_Cu_YT_TT', idx, extraUrls: [{ label: 'Video gốc', url: r.c14 }, { label: 'Kênh người BL', url: r.c15 }] })}</td>
+            <td onclick="event.stopPropagation();">${linkBtn(r.c13, 'Link BL', { sheet: '10_604_Binh_Luan_Bau_Cu_YT_TT', idx, extraUrls: [{ label: 'Video gốc', url: r.c14 }, { label: 'Kênh người BL', url: r.c15 }] })}</td>
           </tr>
         `).join('');
-      } else {
-        const all = getAll20767CommentList();
-        const platFilter = ((document.getElementById('cmtAllPlatSelect') || {}).value || 'ALL');
-        const filtered = all.filter(it => {
-          if (platFilter !== 'ALL' && it.plat !== platFilter) return false;
-          if (stanceFilter !== 'ALL') {
-            const combined = `${it.text} ${it.stance}`.toLowerCase();
-            if (!combined.includes(stanceFilter.toLowerCase())) return false;
-          }
-          if (q) {
-            const hay = `${it.pcode} ${it.plat} ${it.channel} ${it.author} ${it.text} ${it.stance} ${it.permalink} ${it.postUrl}`.toLowerCase();
-            if (!hay.includes(q)) return false;
-          }
-          return true;
-        });
-        const cntEl = document.getElementById('cmtAll20767Count');
-        if (cntEl) cntEl.textContent = filtered.length.toLocaleString('vi-VN');
-        const pageSize = Number(((document.getElementById('cmtAllPageSize') || {}).value) || 200);
-        const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
-        if (cmtAllPage > totalPages) cmtAllPage = totalPages;
-        const startIdx = (cmtAllPage - 1) * pageSize;
-        const pageItems = filtered.slice(startIdx, startIdx + pageSize);
-        const pageInd = document.getElementById('cmtAllPageIndicator');
-        if (pageInd) {
-          pageInd.textContent = `Trang ${cmtAllPage} / ${totalPages} (${filtered.length ? startIdx + 1 : 0}–${Math.min(filtered.length, startIdx + pageItems.length)})`;
+      }
+
+      // 3. All 20,767 Comments
+      const all = getAll20767CommentList();
+      const platFilter = ((document.getElementById('cmtAllPlatSelect') || {}).value || 'ALL');
+      const filtered = all.filter(it => {
+        if (platFilter !== 'ALL' && it.plat !== platFilter) return false;
+        if (!matchesCommentStanceFilter(it.text, it.stance, stanceFilter)) return false;
+        if (q) {
+          const hay = `${it.pcode} ${it.plat} ${it.channel} ${it.author} ${it.text} ${it.stance} ${it.permalink} ${it.postUrl}`.toLowerCase();
+          if (!hay.includes(q)) return false;
         }
-        const tbody = document.getElementById('cmtAll20767Body');
-        if (tbody) {
-          tbody.innerHTML = pageItems.map(it => `
-            <tr onclick="openItemFactCheckModal('${it.sheet}', ${it.idx})" style="cursor:pointer;" title="Bấm để mở Hồ sơ Kiểm chứng bình luận này">
-              <td style="text-align:center;font-weight:800;">${esc(it.stt)}</td>
-              <td><span class="badge badge-coal">${esc(it.pcode)}</span></td>
-              <td><strong>${esc(it.plat)}</strong> · ${esc(it.channel)}</td>
-              <td>
-                <strong>${esc(it.author)}</strong>
-                ${it.plat === 'Facebook' ? `<div style="font-size:10px;color:var(--text-muted);">Đã ẩn link cá nhân FB</div>` : ''}
-              </td>
-              <td style="white-space:nowrap;">${esc(it.date)}</td>
-              <td style="max-width:410px;">${escLinkify(it.text)}</td>
-              <td style="text-align:center;font-weight:700;color:var(--gold);">${esc(it.likes)}</td>
-              <td>${stanceBadge(getEffectiveStance(it.sheet, it.idx, it.stance))}</td>
-              <td>${linkBtn(it.permalink, 'Link BL', { sheet: it.sheet, idx: it.idx, extraUrls: [{ label: 'Bài/Video gốc', url: it.postUrl }, { label: 'Kênh người BL', url: it.authorUrl }] })}</td>
-            </tr>
-          `).join('');
-        }
+        return true;
+      });
+      const cntEl = document.getElementById('cmtAll20767Count');
+      if (cntEl) cntEl.textContent = filtered.length.toLocaleString('vi-VN');
+      const pageSize = Number(((document.getElementById('cmtAllPageSize') || {}).value) || 200);
+      const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+      if (cmtAllPage > totalPages) cmtAllPage = totalPages;
+      const startIdx = (cmtAllPage - 1) * pageSize;
+      const pageItems = filtered.slice(startIdx, startIdx + pageSize);
+      const pageInd = document.getElementById('cmtAllPageIndicator');
+      if (pageInd) {
+        pageInd.textContent = `Trang ${cmtAllPage} / ${totalPages} (${filtered.length ? startIdx + 1 : 0}–${Math.min(filtered.length, startIdx + pageItems.length)})`;
+      }
+      const tbody = document.getElementById('cmtAll20767Body');
+      if (tbody) {
+        tbody.innerHTML = pageItems.map(it => `
+          <tr onclick="openItemFactCheckModal('${it.sheet}', ${it.idx})" style="cursor:pointer;" title="Bấm để mở Hồ sơ Kiểm chứng bình luận này">
+            <td style="text-align:center;font-weight:800;">${esc(it.stt)}</td>
+            <td><span class="badge badge-coal">${esc(it.pcode)}</span></td>
+            <td><strong>${esc(it.plat)}</strong> · ${esc(it.channel)}</td>
+            <td>
+              <strong>${esc(it.author)}</strong>
+              ${it.plat === 'Facebook' ? `<div style="font-size:10px;color:var(--text-muted);">Đã ẩn link cá nhân FB</div>` : ''}
+            </td>
+            <td style="white-space:nowrap;">${esc(it.date)}</td>
+            <td style="max-width:410px;">${escLinkify(it.text)}</td>
+            <td style="text-align:center;font-weight:700;color:var(--gold);">${esc(it.likes)}</td>
+            <td>${stanceBadge(getEffectiveStance(it.sheet, it.idx, it.stance))}</td>
+            <td onclick="event.stopPropagation();">${linkBtn(it.permalink, 'Link BL', { sheet: it.sheet, idx: it.idx, extraUrls: [{ label: 'Bài/Video gốc', url: it.postUrl }, { label: 'Kênh người BL', url: it.authorUrl }] })}</td>
+          </tr>
+        `).join('');
       }
     }
 
@@ -9528,21 +9620,25 @@ HTML_TEMPLATE_PART3 = r"""
         if (dlAu1) dlAu1.href = '/download/audit-excel';
         if (dlAu2) dlAu2.href = '/download/audit-excel';
       }
-      updateFcExportCounter();
-      checkServerConnection();
-      renderElectionNeedles();
-      renderElectoralCartogram();
-      renderExitPolls();
-      renderOverviewTable();
-      renderTimelineTable();
-      renderTimelineCharts();
-      renderMatrixTable();
-      renderAbsaTable();
-      renderPressFbSub();
-      renderVideoSub();
-      renderCommentSub();
-      renderTop15Table();
-      initMasterSourceLedger();
+      [
+        updateFcExportCounter,
+        checkServerConnection,
+        renderElectionNeedles,
+        renderElectoralCartogram,
+        renderExitPolls,
+        renderOverviewTable,
+        renderTimelineTable,
+        renderTimelineCharts,
+        renderMatrixTable,
+        renderAbsaTable,
+        renderPressFbSub,
+        renderVideoSub,
+        renderCommentSub,
+        renderTop15Table,
+        initMasterSourceLedger
+      ].forEach(fn => {
+        try { fn(); } catch (err) { console.error('Render error in ' + fn.name + ':', err); }
+      });
     }
 
     function unmountAndPurgeDashboardDom() {
