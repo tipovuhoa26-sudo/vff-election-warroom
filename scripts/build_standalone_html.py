@@ -3435,10 +3435,10 @@ HTML_TEMPLATE_PART2 = r"""
           <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap;">
             <div class="ed-mode-switch" id="overviewChPlatFilter">
               <button class="ed-mode-btn active" onclick="filterOverviewChannels('ALL', this)">Top 10 toàn mạng</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('1. Facebook', this)">Facebook</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('2. YouTube', this)">YouTube</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('3. TikTok', this)">TikTok</button>
-              <button class="ed-mode-btn" onclick="filterOverviewChannels('4. Báo Chính Thống', this)">Báo chí</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('Facebook', this)">Facebook</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('YouTube', this)">YouTube</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('TikTok', this)">TikTok</button>
+              <button class="ed-mode-btn" onclick="filterOverviewChannels('Báo chí', this)">Báo chí</button>
             </div>
             <input type="text" id="overviewChSearch" class="input-ctrl" style="border-radius:3px;padding:5px 10px;font-size:11.8px;min-width:180px;" placeholder="Tìm nhanh kênh..." oninput="renderElectoralCartogram()" />
             <select id="overviewChSort" class="select-ctrl" style="border-radius:3px;padding:5px 10px;font-size:11.8px;" onchange="renderElectoralCartogram()">
@@ -3629,11 +3629,11 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Lọc nhóm kênh:</strong>
-          <button class="pill-btn active" onclick="filterMatrixPlatform('ALL', this)">Tất cả 36 Cụm Kênh</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('1. Facebook', this)">1. Facebook (12 Cụm lớn)</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('2. YouTube', this)">2. YouTube (8 Cụm lớn)</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('3. TikTok', this)">3. TikTok (4 Cụm lớn)</button>
-          <button class="pill-btn" onclick="filterMatrixPlatform('4. Báo Chính Thống', this)">4. Báo Chính Thống (12 Cụm)</button>
+          <button class="pill-btn active" onclick="filterMatrixPlatform('ALL', this)">Tất cả 36 cụm kênh</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('Facebook', this)">Facebook (12 cụm)</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('YouTube', this)">YouTube (8 cụm)</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('TikTok', this)">TikTok (4 cụm)</button>
+          <button class="pill-btn" onclick="filterMatrixPlatform('Báo chí', this)">Báo chí chính thống (12 cụm)</button>
         </div>
         <div class="filter-group">
           <input type="text" id="matrixSearchInput" class="input-ctrl" placeholder="Tìm tên kênh, lập trường, kết luận..." oninput="renderMatrixTable()" />
@@ -3751,8 +3751,8 @@ HTML_TEMPLATE_PART2 = r"""
               <tr>
                 <th>STT</th>
                 <th>Tên kênh / fanpage / hội nhóm</th>
-                <th>Bài yêu cầu</th>
-                <th>Bài khớp URL</th>
+                <th>Bài ghi nhận</th>
+                <th>Bài đã đối chiếu URL</th>
                 <th>Tổng bình luận</th>
                 <th>Tổng cảm xúc</th>
                 <th>Trạng thái đối soát dữ liệu</th>
@@ -4672,7 +4672,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>3. Tổng lượt xem video</strong></td>
                       <td><strong style="color:var(--gold);">36.878.341 lượt xem</strong> (13.964.171 YT + 22.914.170 TT)</td>
                       <td><strong>5.202.155 lượt xem</strong> (2.111.790 YT + 3.090.365 TT)</td>
-                      <td>trích xuất lời thoại 100% kèm mốc thời gian đối chiếu trực tiếp</td>
+                      <td>Trích xuất lời thoại 100% kèm mốc thời gian đối chiếu trực tiếp</td>
                     </tr>
                     <tr>
                       <td><strong>4. Tổng lượt thích &amp; Lượt chia sẻ</strong></td>
@@ -4784,7 +4784,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;">20.767 (12.803)</td>
                       <td style="text-align:center;color:#166534;">19.652 (12.091)</td>
                       <td style="text-align:center;color:#B8292F;">1.115 (5,37%)</td>
-                      <td><strong>nhóm bày tỏ quan điểm nhân sự: 2.916 Tổng BL = 2.683 Tự nhiên + 233 bình luận mẫu</strong></td>
+                      <td><strong>Nhóm bày tỏ quan điểm nhân sự: 2.916 tổng bình luận = 2.683 tự nhiên + 233 bình luận mẫu</strong></td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Mở Danh mục ↗</button></td>
                     </tr>
                   </tbody>
@@ -4802,7 +4802,7 @@ HTML_TEMPLATE_PART2 = r"""
               <div class="panel-header">
                 <div>
                   <div class="panel-title">BẢNG 3A — TƯƠNG QUAN GIỮA ĐỊNH HƯỚNG BÀI ĐĂNG VÀ CHIỀU HƯỚNG BÌNH LUẬN CỦA ĐỘC GIẢ</div>
-                  <div class="panel-sub">Phân tích hiện tượng 56,84% bình luận chính kiến dưới 149 bài (Ủng hộ Ông Thụy) Ông Nguyễn Đức Thụy (Bầu Thụy) đảo chiều sang phản biện hoặc bầu cho TS. Trần Quốc Tuấn</div>
+                  <div class="panel-sub">Phân tích hiện tượng 56,84% bình luận nêu quan điểm dưới 149 bài ủng hộ Ông Nguyễn Đức Thụy đảo chiều sang phản biện hoặc bầu cho TS. Trần Quốc Tuấn</div>
                 </div>
               </div>
               <div class="table-wrap">
@@ -5260,10 +5260,10 @@ HTML_TEMPLATE_PART3 = r"""
       const s = String(txt || '');
       const sl = s.toLowerCase();
       let cls = 'badge-gray';
-      if (sl.includes('tuấn') && !sl.includes('phản đối')) cls = 'badge-tuan';
-      else if (sl.includes('thụy') && !sl.includes('phản đối')) cls = 'badge-thuy';
-      else if (sl.includes('liên danh') || sl.includes('trung lập') || sl.includes('khảo sát')) cls = 'badge-coal';
-      else if (sl.includes('phản đối') || sl.includes('phản biện') || sl.includes('cảnh báo')) cls = 'badge-opp';
+      if (sl.includes('liên danh') || sl.includes('trung lập') || sl.includes('khảo sát') || sl.includes('đưa tin chính thức') || sl.includes('thông tin thể chế') || sl.includes('báo chí thể chế') || sl.includes('đưa tin đối ngoại') || sl.includes('đưa tin hoạt động')) cls = 'badge-coal';
+      else if (sl.includes('phản đối') || sl.includes('phản biện') || sl.includes('cảnh báo') || sl.includes('tin đồn')) cls = 'badge-opp';
+      else if (sl.includes('tuấn')) cls = 'badge-tuan';
+      else if (sl.includes('thụy')) cls = 'badge-thuy';
       return `<span class="badge ${cls}">${esc(s)}</span>`;
     }
 
@@ -5278,10 +5278,10 @@ HTML_TEMPLATE_PART3 = r"""
     function formatAuditStatus(txt) {
       const raw = String(txt || '').trim();
       const cleaned = raw.replace(/^[\u2705\u2611\u26A0\uFE0F\s]+/, '').trim();
-      if (raw.includes('\u2705') || cleaned.toUpperCase().includes('KHỚP ĐỦ')) {
+      if (raw.includes('\u2705') || cleaned.toUpperCase().includes('KHỚP ĐỦ') || cleaned.toUpperCase().includes('ĐẦY ĐỦ')) {
         return `<span class="status-badge verified" style="font-size:10.5px;padding:2px 8px;">Đã kiểm chứng</span> <span style="font-size:11.8px;">${esc(cleaned)}</span>`;
       }
-      if (raw.includes('\u2611') || cleaned.toUpperCase().includes('ĐÃ CÓ')) {
+      if (raw.includes('\u2611') || cleaned.toUpperCase().includes('ĐÃ CÓ') || cleaned.toUpperCase().includes('ĐỐI CHIẾU')) {
         return `<span class="status-badge snapshot" style="font-size:10.5px;padding:2px 8px;">Đối soát URL</span> <span style="font-size:11.8px;">${esc(cleaned)}</span>`;
       }
       if (raw.includes('\u26A0') || cleaned.toUpperCase().includes('CHƯA')) {
@@ -5913,46 +5913,46 @@ HTML_TEMPLATE_PART3 = r"""
         sampleEl.textContent = 'Cắt lớp nhóm bình luận đề xuất Liên danh chia vai (Bộ dữ liệu toàn diện: 255 Tự nhiên / 275 Tổng · Mốc 7 kịch bản: 214)';
         lName.textContent = 'Liên danh 1 (TS. Tuấn Chủ tịch)';
         lBig.textContent = '56,5%';
-        lSub.textContent = '121 / 214 tín hiệu phân vai: TS. Tuấn Chủ tịch + Ông Thụy Phó CT Tài chính ((Phương án Liên danh) toàn diện: 255 Tự nhiên)';
+        lSub.textContent = '121 / 214 tín hiệu phân vai: TS. Tuấn Chủ tịch + Ông Thụy Phó Chủ tịch Tài chính (Phương án Liên danh toàn diện: 255 tự nhiên)';
         rName.textContent = 'Liên danh 2 (Ông Thụy Chủ tịch)';
         rBig.textContent = '43,5%';
-        rSub.textContent = '93 / 214 tín hiệu phân vai: Ông Thụy Chủ tịch + TS. Tuấn Phó CT Chuyên môn';
+        rSub.textContent = '93 / 214 tín hiệu phân vai: Ông Thụy Chủ tịch + TS. Tuấn Phó Chủ tịch Chuyên môn';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:56.5%;"
-               onmouseenter="showEdTooltip(event, '<strong>Liên danh 1 (N = 121)</strong><div class=ed-tt-row><span>Cấu trúc:</span><strong>TS. Tuấn CT + Ông Thụy Phó CT Tài chính</strong></div><div class=ed-tt-row><span>Tỷ trọng trong khối Liên danh:</span><strong>56,5% (121 / 214)</strong></div><div class=ed-tt-hint>Bấm để xem bình luận đề xuất Liên danh &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Liên danh 1 (N = 121)</strong><div class=ed-tt-row><span>Cấu trúc:</span><strong>TS. Tuấn Chủ tịch + Ông Thụy Phó Chủ tịch Tài chính</strong></div><div class=ed-tt-row><span>Tỷ trọng trong khối Liên danh:</span><strong>56,5% (121 / 214)</strong></div><div class=ed-tt-hint>Bấm để xem bình luận đề xuất Liên danh &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-               onclick="jumpToComments('Liên danh')">LD1: TS. Tuấn CT + Ông Thụy Phó TC (56,5% · 121)</div>
+               onclick="jumpToComments('Liên danh')">Liên danh 1: TS. Tuấn Chủ tịch + Ông Thụy Phó TC (56,5% · 121)</div>
           <div class="ed-flat-seg thuy" style="width:43.5%;"
-               onmouseenter="showEdTooltip(event, '<strong>Liên danh 2 (N = 93)</strong><div class=ed-tt-row><span>Cấu trúc:</span><strong>Ông Thụy CT + TS. Tuấn Phó CT Chuyên môn</strong></div><div class=ed-tt-row><span>Tỷ trọng trong khối Liên danh:</span><strong>43,5% (93 / 214)</strong></div><div class=ed-tt-hint>Bấm để xem bình luận đề xuất Liên danh &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Liên danh 2 (N = 93)</strong><div class=ed-tt-row><span>Cấu trúc:</span><strong>Ông Thụy Chủ tịch + TS. Tuấn Phó Chủ tịch Chuyên môn</strong></div><div class=ed-tt-row><span>Tỷ trọng trong khối Liên danh:</span><strong>43,5% (93 / 214)</strong></div><div class=ed-tt-hint>Bấm để xem bình luận đề xuất Liên danh &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-               onclick="jumpToComments('Liên danh')">LD2: Ông Thụy CT + TS. Tuấn Phó CM (43,5% · 93)</div>`;
-        note.innerHTML = `<strong>Xu hướng đồng thuận Liên danh (Phương án Liên danh) (255 BL Tự nhiên trên Bộ dữ liệu toàn diện · Tỷ lệ đồng thuận 8,79 : 1):</strong> Đông đảo độc giả đề xuất kết hợp thế mạnh ngoại giao quốc tế FIFA/AFC của TS. Tuấn với nguồn lực tài trợ của Ông Thụy.`;
+               onclick="jumpToComments('Liên danh')">Liên danh 2: Ông Thụy Chủ tịch + TS. Tuấn Phó CM (43,5% · 93)</div>`;
+        note.innerHTML = `<strong>Xu hướng đồng thuận Liên danh (255 bình luận tự nhiên trên Bộ dữ liệu toàn diện · Tỷ lệ đồng thuận 8,79 : 1):</strong> Đông đảo độc giả đề xuất kết hợp thế mạnh ngoại giao quốc tế FIFA/AFC của TS. Tuấn với nguồn lực tài trợ của Ông Thụy.`;
       } else if (mode === 'fb887') {
         sampleEl.textContent = 'Tín hiệu bình luận trên Facebook (Danh sách 1.888 bình luận ẩn danh · 1.771 bình luận nêu quan điểm nhân sự trên 15.355 bình luận FB)';
-        lName.textContent = 'TS. Trần Quốc Tuấn (Facebook — Trực tiếp & Liên danh)';
+        lName.textContent = 'TS. Trần Quốc Tuấn (Facebook · Trực tiếp & Liên danh)';
         lBig.textContent = '750';
         lSub.textContent = 'bình luận tự nhiên trên Facebook (598 ủng hộ trực tiếp + 152 đề xuất Liên danh · Tỷ trọng: 52,1%)';
-        rName.textContent = 'Ông Nguyễn Đức Thụy (Facebook — Ủng hộ trực tiếp)';
+        rName.textContent = 'Ông Nguyễn Đức Thụy (Facebook · Ủng hộ trực tiếp)';
         rBig.textContent = '373';
         rSub.textContent = 'bình luận tự nhiên ủng hộ trên Facebook (Phản biện trên Facebook: 351 · Tỷ trọng: 30,3%)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:52.1%;" onclick="jumpToComments('Tuấn')">FB TS. Tuấn CT: 750 Tự nhiên (52,1%)</div>
-          <div class="ed-flat-seg neutral" style="width:17.6%;" onclick="jumpToComments('Phản đối')">Phản biện / Khác (586 Tự nhiên)</div>
+          <div class="ed-flat-seg tuan" style="width:52.1%;" onclick="jumpToComments('Tuấn')">FB TS. Tuấn Chủ tịch: 750 tự nhiên (52,1%)</div>
+          <div class="ed-flat-seg neutral" style="width:17.6%;" onclick="jumpToComments('Phản đối')">Phản biện / Khác (586 tự nhiên)</div>
           <div class="ed-flat-seg thuy" style="width:30.3%;" onclick="jumpToComments('Thụy')">FB Ông Thụy: 373 tự nhiên (30,3%)</div>`;
-        note.innerHTML = `<strong>Đặc trưng độc giả Facebook (15.355 tổng BL · 1.888 BL chính kiến đã ẩn danh tài khoản cá nhân):</strong> Cộng đồng các diễn đàn bóng đá chuyên sâu trên Facebook nghiêng mạnh về TS. Trần Quốc Tuấn (598 BL Tự nhiên (Ủng hộ TS. Tuấn) + 152 (Phương án Liên danh) = 750 so với 373 BL (Ủng hộ Ông Thụy) của Ông Thụy).`;
+        note.innerHTML = `<strong>Đặc trưng độc giả Facebook (15.355 tổng bình luận · 1.888 bình luận nêu quan điểm đã ẩn danh tài khoản cá nhân):</strong> Cộng đồng các diễn đàn bóng đá chuyên sâu trên Facebook nghiêng mạnh về TS. Trần Quốc Tuấn (598 bình luận tự nhiên ủng hộ trực tiếp + 152 đề xuất Liên danh = 750 so với 373 bình luận ủng hộ Ông Thụy).`;
       } else if (mode === 'yttt527') {
         sampleEl.textContent = 'Tín hiệu bình luận trên YouTube & TikTok (Danh sách 1.457 bình luận · 1.145 bình luận nêu quan điểm nhân sự trên 5.412 bình luận YT/TT)';
-        lName.textContent = 'TS. Trần Quốc Tuấn (YouTube & TikTok — Trực tiếp & Liên danh)';
+        lName.textContent = 'TS. Trần Quốc Tuấn (YouTube & TikTok · Trực tiếp & Liên danh)';
         lBig.textContent = '271';
         lSub.textContent = 'bình luận tự nhiên trên YouTube & TikTok (168 ủng hộ trực tiếp: 126 YT + 42 TT · 103 đề xuất Liên danh)';
-        rName.textContent = 'Ông Nguyễn Đức Thụy (YouTube & TikTok — Ủng hộ trực tiếp)';
+        rName.textContent = 'Ông Nguyễn Đức Thụy (YouTube & TikTok · Ủng hộ trực tiếp)';
         rBig.textContent = '314';
         rSub.textContent = 'bình luận tự nhiên ủng hộ trên YouTube & TikTok (119 YT + 195 TT · Phản biện YT/TT: 222)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:27.8%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT TS. Tuấn CT: 271 Tự nhiên</div>
+          <div class="ed-flat-seg tuan" style="width:27.8%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT TS. Tuấn Chủ tịch: 271 tự nhiên</div>
           <div class="ed-flat-seg neutral" style="width:40.0%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">Phản biện (222) & Ứng viên khác (167)</div>
           <div class="ed-flat-seg thuy" style="width:32.2%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT Ông Thụy: 314 tự nhiên</div>`;
-        note.innerHTML = `<strong>Đặc trưng khán giả Video (1.457 bình luận chính kiến YouTube & TikTok):</strong> Khán giả trẻ trên TikTok phản ứng tích cực với từ khóa "1.000 tỷ" (195 BL Tự nhiên (Ủng hộ Ông Thụy)), trong khi khán giả bình luận dài trên YouTube nghiêng về TS. Tuấn (126 (Ủng hộ TS. Tuấn) + 88 (Phương án Liên danh) = 214) và có tỷ lệ phản biện/cảnh giác cao.`;
+        note.innerHTML = `<strong>Đặc trưng khán giả Video (1.457 bình luận nêu quan điểm trên YouTube & TikTok):</strong> Khán giả trẻ trên TikTok phản ứng tích cực với từ khóa "1.000 tỷ" (195 bình luận tự nhiên ủng hộ Ông Thụy), trong khi khán giả bình luận dài trên YouTube nghiêng về TS. Tuấn (126 ủng hộ trực tiếp + 88 đề xuất Liên danh = 214) và có tỷ lệ phản biện/cảnh giác cao.`;
       }
     }
 
@@ -5996,7 +5996,7 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg tuan" style="width:36.8%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 216 (36,8%)</div>
           <div class="ed-flat-seg neutral" style="width:38.8%;" onclick="switchTab('tab-press-fb')">Trung lập & Khác: 228 (38,8%)</div>
           <div class="ed-flat-seg thuy" style="width:24.4%;" onclick="switchTab('tab-press-fb')">Ông Thụy: 143 (24,4%)</div>`;
-        note.innerHTML = `<strong>Cấu trúc 587 bài/video Bộ dữ liệu trọng tâm:</strong> <code>(Ủng hộ Ông Thụy) Ông Thụy = 143 bài (24,36%)</code> · <code>(Ủng hộ TS. Tuấn) TS. Tuấn = 125 bài (21,29%)</code> · <code>Phương án Liên danh = 91 bài (15,50%)</code> · <code>(Ứng viên khác) Ứng viên khác = 29 bài (4,94%)</code> · <code>Phản đối = 45 bài (7,67%)</code> · <code>Trung lập = 154 bài (26,24%)</code>.`;
+        note.innerHTML = `<strong>Cấu trúc 587 bài/video Bộ dữ liệu trọng tâm:</strong> <code>Ủng hộ Ông Thụy = 143 bài (24,36%)</code> · <code>Ủng hộ TS. Tuấn = 125 bài (21,29%)</code> · <code>Phương án Liên danh = 91 bài (15,50%)</code> · <code>Ứng viên khác = 29 bài (4,94%)</code> · <code>Phản biện = 45 bài (7,67%)</code> · <code>Trung lập = 154 bài (26,24%)</code>.`;
       } else if (mode === 'all974') {
         sampleEl.textContent = 'Lượt bài viết & video đề cập lũy kế 24 ngày (01–24/10: 614 vs 481 · Danh mục xác thực đến 25/10: 1.409 bài/video/báo)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
@@ -6739,9 +6739,9 @@ HTML_TEMPLATE_PART3 = r"""
       const cmtMatch = cmtStr.match(/([\d.]+)\s*bình luận/i);
       const cmtCount = cmtMatch ? Number(cmtMatch[1].replace(/\./g, '')) : 20;
 
-      // Parse coded support for Tuan vs Thuy
-      const tuanMatch = kbStr.match(/Khối Tuấn CT:\s*(\d+)/i);
-      const thuyMatch = kbStr.match(/Khối Thụy CT:\s*(\d+)/i);
+      // Parse coded support for Tuan vs Thuy (supports both CT and Chủ tịch)
+      const tuanMatch = kbStr.match(/Khối Tuấn\s*(?:CT|Chủ tịch):\s*(\d+)/i);
+      const thuyMatch = kbStr.match(/Khối Thụy\s*(?:CT|Chủ tịch):\s*(\d+)/i);
       let tuanN = tuanMatch ? Number(tuanMatch[1]) : 0;
       let thuyN = thuyMatch ? Number(thuyMatch[1]) : 0;
       let otherN = 0;
@@ -6753,14 +6753,14 @@ HTML_TEMPLATE_PART3 = r"""
           tuanN = 19; thuyN = 14; otherN = 10;
         } else if (kbStr.includes('11/15 bình luận')) {
           tuanN = 11; thuyN = 2; otherN = 2;
-        } else if (kbStr.includes('Trên FB CafeF')) {
+        } else if (kbStr.includes('Trên FB CafeF') || kbStr.includes('Trên Facebook CafeF')) {
           tuanN = 4; thuyN = 15; otherN = 7;
         } else {
           tuanN = 12; thuyN = 12; otherN = 8;
         }
       } else {
         // Sum remaining numbers mentioned in 7KB string as "Other / Opposition"
-        const oppMatches = [...kbStr.matchAll(/(?:Phản đối[^:]*|Khác|Bầu Đức|Trung lập[^:]*):\s*(\d+)/gi)];
+        const oppMatches = [...kbStr.matchAll(/(?:Phản đối[^:]*|Nhân sự khác|Khác|Bầu Đức[^:]*|Hỏi quy trình|Trung lập[^:]*):\s*(\d+)/gi)];
         otherN = oppMatches.reduce((s, m) => s + Number(m[1]), 0);
         if (otherN === 0) otherN = Math.max(2, Math.round((tuanN + thuyN) * 0.18));
       }
@@ -6773,13 +6773,13 @@ HTML_TEMPLATE_PART3 = r"""
       // Determine Source Trust Level & Reversal status
       let trustLbl = 'Kênh KOL / Chuyên trang';
       let trustCls = '';
-      if (String(r.c1).includes('Báo Chính Thống') || nameStr.includes('Liên đoàn Bóng đá') || nameStr.includes('VFF Official') || nameStr.includes('Cổng thông tin VFF')) {
+      if (String(r.c1).toLowerCase().includes('báo') || nameStr.includes('Liên đoàn Bóng đá') || nameStr.includes('VFF Official') || nameStr.includes('Cổng thông tin VFF')) {
         trustLbl = 'Định chế / Báo chính thống';
         trustCls = 'official';
       } else if (nameStr.includes('Phấn Đấu') || nameStr.includes('Nghiệp Dư') || nameStr.includes('iThethao')) {
         trustLbl = 'Cụm đăng tải đồng loạt / Tin đồn';
         trustCls = 'seeding';
-      } else if (nameStr.includes('Ghiền') || nameStr.includes('Ngày Nay')) {
+      } else if (nameStr.includes('Ghiền') || nameStr.includes('Ngày Nay') || nameStr.includes('Cộng đồng bóng đá')) {
         trustLbl = 'Cộng đồng mở';
       }
 
@@ -6808,7 +6808,8 @@ HTML_TEMPLATE_PART3 = r"""
       let items = rows.map((r, i) => parseChannelMetrics(r, i));
 
       if (overviewChannelPlat !== 'ALL') {
-        items = items.filter(it => String(it.row.c1).includes(overviewChannelPlat));
+        const pFilter = overviewChannelPlat.replace(/^\d+\.\s*/, '').toLowerCase();
+        items = items.filter(it => String(it.row.c1 || '').toLowerCase().includes(pFilter));
       }
       const qCh = ((document.getElementById('overviewChSearch') || {}).value || '').trim().toLowerCase();
       if (qCh) {
@@ -6852,7 +6853,7 @@ HTML_TEMPLATE_PART3 = r"""
               <div class="ch-vol-wrap">
                 <div style="display:flex;justify-content:space-between;font-size:11.5px;font-weight:700;">
                   <span>${it.cmtCount.toLocaleString("vi-VN")} bình luận</span>
-                  <span style="color:var(--text-muted);font-weight:500;">${esc(it.volText.split('/')[0])}</span>
+                  <span style="color:var(--text-muted);font-weight:500;">${esc(it.volText.replace(/\s*\([^)]*\)/g, ''))}</span>
                 </div>
                 <div class="ch-vol-bar-bg">
                   <div class="ch-vol-bar-fill" style="width:${volPct}%;"></div>
@@ -6896,28 +6897,30 @@ HTML_TEMPLATE_PART3 = r"""
       else if (lower.includes('troll bóng đá')) tokens = ['troll bóng đá', 'trollbongda'];
       else if (lower.includes('ghiền bóng đá')) tokens = ['ghiền bóng đá'];
       else if (lower.includes('vff.org.vn') || lower.includes('cổng thông tin vff')) tokens = ['vff.org.vn', 'cổng thông tin vff'];
-      else if (lower.includes('vff') || lower.includes('liên đoàn bóng đá')) tokens = ['liên đoàn bóng đá việt nam'];
+      else if (lower.includes('vff official') || lower.includes('vtv') || lower.includes('fpt bóng đá việt')) tokens = ['vff channel', 'vtv', 'fpt bóng đá', 'htv', 'vov', 'next sports'];
+      else if (lower.includes('vlog minh hải')) tokens = ['vlog minh hải', 'minh hải'];
+      else if (lower.includes('bóngđá tv') || lower.includes('19h30')) tokens = ['bóngđá tv', 'bongda tv', '19h30'];
+      else if (lower.includes('mai anh tài') || lower.includes('ted trần')) tokens = ['mai anh tài', 'ted trần'];
+      else if (lower.includes('liên đoàn bóng đá')) tokens = ['liên đoàn bóng đá việt nam'];
       else if (lower.includes('bóng đá ngày nay')) tokens = ['bóng đá ngày nay'];
       else if (lower.includes('nhịp đập bóng đá')) tokens = ['nhịp đập bóng đá', 'beat bóng đá', 'blv anh quân'];
-      else if (lower.includes('văn hiến') || lower.includes('ninh bình') || lower.includes('thép xanh')) tokens = ['văn hiến', 'ninh bình', 'nam định', 'thép xanh'];
+      else if (lower.includes('văn hiến') || lower.includes('ninh bình') || lower.includes('thép xanh')) tokens = ['văn hiến', 'ninh bình', 'nam định', 'thép xanh', 'bắc ninh'];
       else if (lower.includes('minh châu')) tokens = ['minh châu'];
       else if (lower.includes('nghiệp dư')) tokens = ['nghiệp dư'];
       else if (lower.includes('người đưa tin')) tokens = ['người đưa tin'];
-      else if (lower.includes('cộng đồng bóng đá') || lower.includes('38 hội nhóm')) tokens = ['hội nhóm', 'cộng đồng', 'fandom', 'cđv'];
+      else if (lower.includes('cộng đồng bóng đá') || lower.includes('38 hội nhóm')) tokens = ['cộng đồng bóng đá', 'v-league', 'bóng đá việt nam', 'hội cđv', 'diễn đàn bóng đá'];
       else if (lower.includes('ithethao')) tokens = ['ithethao'];
       else if (lower.includes('tuyền văn hóa')) tokens = ['tuyền văn hóa'];
       else if (lower.includes('mạnh cường')) tokens = ['mạnh cường'];
       else if (lower.includes('rồng vàng')) tokens = ['rồng vàng'];
       else if (lower.includes('quốc bửu')) tokens = ['quốc bửu'];
       else if (lower.includes('chuyện bên lề')) tokens = ['chuyện bên lề'];
-      else if (lower.includes('sân cỏ') || lower.includes('bình luận bóng đá')) tokens = ['sân cỏ', 'bình luận bóng đá', 'k+'];
-      else if (lower.includes('vtv') || lower.includes('fpt') || lower.includes('htv') || lower.includes('vov')) tokens = ['vtv', 'fpt', 'htv', 'vov', 'next sports'];
-      else if (lower.includes('sport5') || lower.includes('vnexpress') || lower.includes('việt nam mới')) tokens = ['sport5', 'vnexpress', 'việt nam mới'];
-      else if (lower.includes('hạnh nguyễn') || lower.includes('tấn tài') || lower.includes('tạ biên cương')) tokens = ['hạnh nguyễn', 'tấn tài', 'biên cương', 'blv'];
-      else if (lower.includes('tiktok thể thao') || lower.includes('fpt bóng đá')) tokens = ['fpt', 'tiktok', 'v.league'];
-      else if (lower.includes('re-up') || lower.includes('clip ngắn')) tokens = ['tiktok', '1000 tỷ', 'bầu thụy'];
-      else if (lower.includes('nhân dân') || lower.includes('ttxvn') || lower.includes('chính phủ')) tokens = ['nhân dân', 'ttxvn', 'chính phủ', 'quân đội', 'vov'];
-      else if (lower.includes('vff.org.vn') || lower.includes('cổng thông tin vff')) tokens = ['vff.org.vn', 'vff'];
+      else if (lower.includes('sân cỏ') || lower.includes('bình luận bóng đá')) tokens = ['sân cỏ', 'bình luận bóng đá', 'k+', 'blv anh quân'];
+      else if (lower.includes('sport5') || lower.includes('việt nam mới')) tokens = ['sport5', 'vnexpress', 'việt nam mới', 'thanh niên', 'tuổi trẻ'];
+      else if (lower.includes('hạnh nguyễn') || lower.includes('tấn tài') || lower.includes('tạ biên cương')) tokens = ['hạnh nguyễn', 'tấn tài', 'biên cương', 'blv', 'nhà báo'];
+      else if (lower.includes('tiktok thể thao') || lower.includes('fpt bóng đá')) tokens = ['fpt', 'thethao', 'vleague', 'bóng đá', 'bongda'];
+      else if (lower.includes('re-up') || lower.includes('clip ngắn')) tokens = ['1000 tỷ', '1.000 tỷ', 'bầu thụy', 'chủ tịch vff'];
+      else if (lower.includes('nhân dân') || lower.includes('ttxvn') || lower.includes('chính phủ')) tokens = ['nhân dân', 'ttxvn', 'chính phủ', 'quân đội', 'vov', 'công an nhân dân', 'cand'];
       else if (lower.includes('thanh niên')) tokens = ['thanh niên'];
       else if (lower.includes('tuổi trẻ')) tokens = ['tuổi trẻ'];
       else if (lower.includes('vnexpress')) tokens = ['vnexpress'];
@@ -6927,10 +6930,12 @@ HTML_TEMPLATE_PART3 = r"""
       else if (lower.includes('bongdaplus') || lower.includes('thể thao & văn hóa')) tokens = ['bongdaplus', 'thể thao', 'bóng đá'];
       else if (lower.includes('cafef') || lower.includes('vnbiz')) tokens = ['cafef', 'vnbiz', 'kinh tế'];
       else if (lower.includes('vietnamfinance') || lower.includes('nhà đầu tư') || lower.includes('công thương')) tokens = ['vietnamfinance', 'nhà đầu tư', 'công thương', 'tài chính'];
-      else if (lower.includes('24h.com.vn') || lower.includes('soha') || lower.includes('znews')) tokens = ['24h', 'soha', 'znews', 'zing', 'kenh14', 'danviet'];
+      else if (lower.includes('24h.com.vn') || lower.includes('soha') || lower.includes('znews')) tokens = ['24h', 'soha', 'znews', 'zing', 'kenh14', 'danviet', 'dân việt'];
       else {
-        const cleaned = rawName.split('(')[0].trim().toLowerCase();
-        if (cleaned) tokens = [cleaned];
+        const cleaned = rawName.split('(')[0].replace(/—/g, '').trim().toLowerCase();
+        if (cleaned) {
+          tokens = cleaned.split(/\s*[&\/]\s*/).map(s => s.trim()).filter(Boolean);
+        }
       }
 
       const matchTokens = (str) => {
@@ -6944,20 +6949,144 @@ HTML_TEMPLATE_PART3 = r"""
       const isTt = pLow.includes('tiktok');
       const isPress = pLow.includes('báo');
 
+      const parseOctWeight = (dateStr) => {
+        const s = String(dateStr || '');
+        const m = s.match(/(\d{1,2})\/(\d{1,2})(?:\/(\d{4}))?/);
+        if (!m) return 0;
+        const d = Number(m[1]) || 0;
+        const mo = Number(m[2]) || 0;
+        return mo * 100 + d;
+      };
+
+      const isLeadershipRelated = (text) => {
+        const s = String(text || '').toLowerCase();
+        return /trần quốc tuấn|quốc tuấn|bầu thụy|đức thụy|xuân vũ|chủ tịch|đại hội|nhiệm kỳ|afc|fifa|thường trực|ứng viên|bầu cử/.test(s);
+      };
+
       const pressRows = isPress ? ((DB.sheets['04_78_Bai_Bao_Chinh_Thong'] || {}).rows || [])
-        .map((r, i) => ({ r, i })).filter(o => matchTokens(o.r.c3) || matchTokens(o.r.c9)) : [];
+        .map((r, i) => ({ r, i }))
+        .filter(o => matchTokens(o.r.c3) || matchTokens(o.r.c9) || (primaryUrl && o.r.c9 === primaryUrl))
+        .sort((a, b) => {
+          const aPin = (primaryUrl && a.r.c9 === primaryUrl) ? 1 : 0;
+          const bPin = (primaryUrl && b.r.c9 === primaryUrl) ? 1 : 0;
+          if (aPin !== bPin) return bPin - aPin;
+          return parseOctWeight(b.r.c2) - parseOctWeight(a.r.c2);
+        }) : [];
+
       const fbPosts = (isFb || isPress) ? ((DB.sheets['06_665_Bai_Facebook_Xac_Thuc'] || {}).rows || [])
-        .map((r, i) => ({ r, i })).filter(o => matchTokens(o.r.c3) || (primaryUrl && o.r.c7 === primaryUrl)) : [];
+        .map((r, i) => ({ r, i }))
+        .filter(o => matchTokens(o.r.c3) || (primaryUrl && o.r.c7 === primaryUrl))
+        .sort((a, b) => {
+          const aPin = (primaryUrl && a.r.c7 === primaryUrl) ? 1 : 0;
+          const bPin = (primaryUrl && b.r.c7 === primaryUrl) ? 1 : 0;
+          if (aPin !== bPin) return bPin - aPin;
+          const aLead = isLeadershipRelated(a.r.c6 + ' ' + a.r.c8) ? 1 : 0;
+          const bLead = isLeadershipRelated(b.r.c6 + ' ' + b.r.c8) ? 1 : 0;
+          if (aLead !== bLead) return bLead - aLead;
+          return parseOctWeight(b.r.c4) - parseOctWeight(a.r.c4);
+        }) : [];
+
       const ytVideos = isYt ? ((DB.sheets['07_169_Video_YouTube_Audited'] || {}).rows || [])
-        .map((r, i) => ({ r, i })).filter(o => matchTokens(o.r.c3) || (primaryUrl && o.r.c17 === primaryUrl)) : [];
+        .map((r, i) => ({ r, i }))
+        .filter(o => matchTokens(o.r.c3) || (primaryUrl && (o.r.c17 === primaryUrl || o.r.c18 === primaryUrl)))
+        .sort((a, b) => {
+          const aPin = (primaryUrl && (a.r.c17 === primaryUrl || a.r.c18 === primaryUrl)) ? 1 : 0;
+          const bPin = (primaryUrl && (b.r.c17 === primaryUrl || b.r.c18 === primaryUrl)) ? 1 : 0;
+          if (aPin !== bPin) return bPin - aPin;
+          return parseOctWeight(b.r.c4) - parseOctWeight(a.r.c4);
+        }) : [];
+
       const ttVideos = isTt ? ((DB.sheets['08_68_Video_TikTok_Kich_Ban'] || {}).rows || [])
-        .map((r, i) => ({ r, i })).filter(o => matchTokens(o.r.c3) || matchTokens(o.r.c4) || (primaryUrl && o.r.c15 === primaryUrl)) : [];
+        .map((r, i) => ({ r, i }))
+        .filter(o => matchTokens(o.r.c3) || matchTokens(o.r.c4) || matchTokens(o.r.c7) || (primaryUrl && o.r.c15 === primaryUrl))
+        .sort((a, b) => {
+          const aPin = (primaryUrl && a.r.c15 === primaryUrl) ? 1 : 0;
+          const bPin = (primaryUrl && b.r.c15 === primaryUrl) ? 1 : 0;
+          if (aPin !== bPin) return bPin - aPin;
+          return parseOctWeight(b.r.c2) - parseOctWeight(a.r.c2);
+        }) : [];
+
       const fbCmts = (isFb || isPress) ? ((DB.sheets['09_887_Binh_Luan_Bau_Cu_FB'] || {}).rows || [])
-        .map((r, i) => ({ r, i })).filter(o => matchTokens(o.r.c3) || (primaryUrl && o.r.c9 === primaryUrl)) : [];
+        .map((r, i) => ({ r, i }))
+        .filter(o => matchTokens(o.r.c3) || (primaryUrl && (o.r.c9 === primaryUrl || o.r.c10 === primaryUrl)))
+        .sort((a, b) => {
+          const aPin = (primaryUrl && (a.r.c9 === primaryUrl || a.r.c10 === primaryUrl)) ? 1 : 0;
+          const bPin = (primaryUrl && (b.r.c9 === primaryUrl || b.r.c10 === primaryUrl)) ? 1 : 0;
+          if (aPin !== bPin) return bPin - aPin;
+          return parseOctWeight(b.r.c8) - parseOctWeight(a.r.c8);
+        }) : [];
+
       const ytCmts = (isYt || isTt) ? ((DB.sheets['10_604_Binh_Luan_Bau_Cu_YT_TT'] || {}).rows || [])
-        .map((r, i) => ({ r, i })).filter(o => matchTokens(o.r.c4) || (primaryUrl && o.r.c13 === primaryUrl)) : [];
+        .map((r, i) => ({ r, i }))
+        .filter(o => matchTokens(o.r.c4) || matchTokens(o.r.c3) || (primaryUrl && (o.r.c13 === primaryUrl || o.r.c14 === primaryUrl))) : [];
 
       return { pressRows, fbPosts, ytVideos, ttVideos, fbCmts, ytCmts };
+    }
+
+    function findRepresentativeRecordByUrl(url) {
+      if (!url) return null;
+      const u = String(url).trim();
+      const fbRows = ((DB.sheets['06_665_Bai_Facebook_Xac_Thuc'] || {}).rows || []);
+      const fbIdx = fbRows.findIndex(x => x.c7 === u);
+      if (fbIdx >= 0) {
+        const f = fbRows[fbIdx];
+        return {
+          typeLbl: 'Bài đăng mẫu tiêu biểu trên Facebook',
+          codeLbl: `${f.c2} · Ngày đăng: ${f.c4}`,
+          metricsLbl: `Tương tác riêng của bài đăng này: ${f.c5}`,
+          excerpt: f.c6,
+          stance: f.c8 || 'Đưa tin hoạt động VFF',
+          sheet: '06_665_Bai_Facebook_Xac_Thuc',
+          idx: fbIdx,
+          url: f.c7
+        };
+      }
+      const pressRows = ((DB.sheets['04_78_Bai_Bao_Chinh_Thong'] || {}).rows || []);
+      const pIdx = pressRows.findIndex(x => x.c9 === u);
+      if (pIdx >= 0) {
+        const p = pressRows[pIdx];
+        return {
+          typeLbl: 'Bài báo chính thống tiêu biểu của cụm nguồn',
+          codeLbl: `Bài báo #${p.c1} · ${p.c3} · Ngày xuất bản: ${p.c2}`,
+          metricsLbl: `Nhân vật trọng tâm: ${p.c6}`,
+          excerpt: `${p.c5} — ${p.c8}`,
+          stance: p.c7,
+          sheet: '04_78_Bai_Bao_Chinh_Thong',
+          idx: pIdx,
+          url: p.c9
+        };
+      }
+      const ytRows = ((DB.sheets['07_169_Video_YouTube_Audited'] || {}).rows || []);
+      const yIdx = ytRows.findIndex(x => x.c17 === u || x.c18 === u);
+      if (yIdx >= 0) {
+        const y = ytRows[yIdx];
+        return {
+          typeLbl: 'Video YouTube tiêu biểu của cụm kênh',
+          codeLbl: `Mã video: ${y.c2} · Ngày đăng: ${y.c4}`,
+          metricsLbl: `Quy mô riêng của video này: ${fmtNum(y.c7)} lượt xem · ${fmtNum(y.c8)} lượt thích · ${fmtNum(y.c10)} bình luận`,
+          excerpt: `${y.c5} — ${String(y.c15 || '').slice(0, 220)}`,
+          stance: y.c11,
+          sheet: '07_169_Video_YouTube_Audited',
+          idx: yIdx,
+          url: y.c17
+        };
+      }
+      const ttRows = ((DB.sheets['08_68_Video_TikTok_Kich_Ban'] || {}).rows || []);
+      const tIdx = ttRows.findIndex(x => x.c15 === u);
+      if (tIdx >= 0) {
+        const t = ttRows[tIdx];
+        return {
+          typeLbl: 'Video TikTok tiêu biểu của cụm kênh',
+          codeLbl: `Mã video: ${t.c1} · Ngày đăng: ${t.c2}`,
+          metricsLbl: `Quy mô riêng của video này: ${fmtNum(t.c9)} lượt xem · ${fmtNum(t.c10)} lượt thích · ${fmtNum(t.c11)} bình luận`,
+          excerpt: `${t.c7} — ${String(t.c14 || '').slice(0, 220)}`,
+          stance: t.c6,
+          sheet: '08_68_Video_TikTok_Kich_Ban',
+          idx: tIdx,
+          url: t.c15
+        };
+      }
+      return null;
     }
 
     function openClusterTileModal(idx) {
@@ -6967,6 +7096,7 @@ HTML_TEMPLATE_PART3 = r"""
       hideEdTooltip();
 
       const matched = matchChannelRecords(r.c2, r.c1, r.c8);
+      const repInfo = findRepresentativeRecordByUrl(r.c8);
       const modal = document.getElementById('detailModal');
       document.getElementById('modalTitle').textContent = `Hồ sơ Kiểm chứng Cụm Kênh #${idx + 1}: ${r.c2}`;
 
@@ -6975,22 +7105,24 @@ HTML_TEMPLATE_PART3 = r"""
       if (matched.pressRows.length) {
         tablesHtml += `
           <div style="margin-top:14px;font-weight:800;font-size:12px;text-transform:uppercase;color:#141923;border-bottom:2px solid #141923;padding-bottom:4px;">
-            Danh sách Bài Báo Chính Thống thuộc cụm kênh này (${matched.pressRows.length} bài)
+            Danh sách Bài Báo Chính Thống thuộc cụm kênh này (${matched.pressRows.length} bài · Bài tiêu biểu xếp đầu)
           </div>
           <div style="max-height:240px;overflow-y:auto;border:1px solid var(--border);margin-top:6px;">
             <table class="wr-table" style="font-size:12px;">
               <thead><tr><th>STT</th><th>Ngày</th><th>Báo</th><th>Tiêu đề & luận điểm chính</th><th>Lập trường</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
               <tbody>
-                ${matched.pressRows.map(({ r: p, i: pIdx }) => `
-                  <tr>
-                    <td style="text-align:center;font-weight:800;">#${esc(p.c1)}</td>
+                ${matched.pressRows.map(({ r: p, i: pIdx }) => {
+                  const isPin = r.c8 && p.c9 === r.c8;
+                  return `
+                  <tr style="${isPin ? 'background:#EDF3FC;' : ''}">
+                    <td style="text-align:center;font-weight:800;">#${esc(p.c1)}${isPin ? '<div style="font-size:9.5px;color:#1B4F9C;font-weight:800;">[Bài tiêu biểu]</div>' : ''}</td>
                     <td style="white-space:nowrap;">${esc(p.c2)}</td>
                     <td><strong>${esc(p.c3)}</strong></td>
                     <td><strong>${esc(p.c5)}</strong><div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">${esc(p.c8)}</div></td>
                     <td>${stanceBadge(getEffectiveStance('04_78_Bai_Bao_Chinh_Thong', pIdx, p.c7))}</td>
                     <td>${linkBtn(p.c9, 'Đọc báo', { sheet: '04_78_Bai_Bao_Chinh_Thong', idx: pIdx })}</td>
-                  </tr>
-                `).join('')}
+                  </tr>`;
+                }).join('')}
               </tbody>
             </table>
           </div>
@@ -7000,23 +7132,25 @@ HTML_TEMPLATE_PART3 = r"""
       if (matched.fbPosts.length) {
         tablesHtml += `
           <div style="margin-top:14px;font-weight:800;font-size:12px;text-transform:uppercase;color:#141923;border-bottom:2px solid #141923;padding-bottom:4px;">
-            Danh sách Bài Đăng Facebook Xác Thực thuộc cụm kênh này (${matched.fbPosts.length} bài)
+            Danh sách Bài Đăng Facebook đã xác thực thuộc cụm kênh này (${matched.fbPosts.length} bài · Bài tiêu biểu & tin lãnh đạo VFF xếp đầu)
           </div>
           <div style="max-height:260px;overflow-y:auto;border:1px solid var(--border);margin-top:6px;">
             <table class="wr-table" style="font-size:12px;">
-              <thead><tr><th>Mã</th><th>Kênh / fanpage</th><th>Ngày</th><th>Tương tác</th><th>Định hướng bài</th><th>Nội dung bài viết</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
+              <thead><tr><th>Mã bài</th><th>Kênh / fanpage</th><th>Ngày đăng</th><th>Tương tác riêng bài này</th><th>Nhãn nội dung bài</th><th>Nội dung bài viết</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
               <tbody>
-                ${matched.fbPosts.map(({ r: f, i: fIdx }) => `
-                  <tr>
-                    <td><span class="badge badge-coal">${esc(f.c2)}</span></td>
+                ${matched.fbPosts.map(({ r: f, i: fIdx }) => {
+                  const isPin = r.c8 && f.c7 === r.c8;
+                  return `
+                  <tr style="${isPin ? 'background:#EDF3FC;' : ''}">
+                    <td><span class="badge badge-coal">${esc(f.c2)}</span>${isPin ? '<div style="font-size:9.5px;color:#1B4F9C;font-weight:800;margin-top:2px;">[Bài tiêu biểu đính kèm]</div>' : ''}</td>
                     <td><strong>${esc(f.c3)}</strong></td>
                     <td style="white-space:nowrap;">${esc(f.c4)}</td>
                     <td>${esc(f.c5)}</td>
-                    <td>${stanceBadge(getEffectiveStance('06_665_Bai_Facebook_Xac_Thuc', fIdx, f.c8 || 'Tin bầu cử'))}</td>
+                    <td>${stanceBadge(getEffectiveStance('06_665_Bai_Facebook_Xac_Thuc', fIdx, f.c8 || 'Tin hoạt động VFF'))}</td>
                     <td style="max-width:340px;">${esc(f.c6)}</td>
                     <td>${linkBtn(f.c7, 'Bài FB', { sheet: '06_665_Bai_Facebook_Xac_Thuc', idx: fIdx })}</td>
-                  </tr>
-                `).join('')}
+                  </tr>`;
+                }).join('')}
               </tbody>
             </table>
           </div>
@@ -7032,24 +7166,28 @@ HTML_TEMPLATE_PART3 = r"""
             <table class="wr-table" style="font-size:12px;">
               <thead><tr><th>Kênh</th><th>Ngày</th><th>Tiêu đề & trích đoạn lời thoại</th><th>Lượt xem</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
               <tbody>
-                ${matched.ytVideos.map(({ r: y, i: yIdx }) => `
-                  <tr>
-                    <td><strong>YT · ${esc(y.c3)}</strong></td>
+                ${matched.ytVideos.map(({ r: y, i: yIdx }) => {
+                  const isPin = r.c8 && (y.c17 === r.c8 || y.c18 === r.c8);
+                  return `
+                  <tr style="${isPin ? 'background:#EDF3FC;' : ''}">
+                    <td><strong>YT · ${esc(y.c3)}</strong>${isPin ? '<div style="font-size:9.5px;color:#1B4F9C;font-weight:800;">[Video tiêu biểu]</div>' : ''}</td>
                     <td style="white-space:nowrap;">${esc(y.c4)}</td>
                     <td><strong>${esc(y.c5)}</strong><div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">${esc(String(y.c15 || '').slice(0, 160))}...</div></td>
                     <td style="text-align:right;font-weight:700;">${fmtNum(y.c7)} lượt xem</td>
                     <td>${linkBtn(y.c17, 'Xem YT', { sheet: '07_169_Video_YouTube_Audited', idx: yIdx })}</td>
-                  </tr>
-                `).join('')}
-                ${matched.ttVideos.map(({ r: t, i: tIdx }) => `
-                  <tr>
-                    <td><strong>TT · ${esc(t.c3)}</strong></td>
+                  </tr>`;
+                }).join('')}
+                ${matched.ttVideos.map(({ r: t, i: tIdx }) => {
+                  const isPin = r.c8 && t.c15 === r.c8;
+                  return `
+                  <tr style="${isPin ? 'background:#EDF3FC;' : ''}">
+                    <td><strong>TT · ${esc(t.c3)}</strong>${isPin ? '<div style="font-size:9.5px;color:#1B4F9C;font-weight:800;">[Video tiêu biểu]</div>' : ''}</td>
                     <td style="white-space:nowrap;">${esc(t.c2)}</td>
                     <td><strong>${esc(t.c7)}</strong><div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">${esc(String(t.c14 || '').slice(0, 160))}...</div></td>
                     <td style="text-align:right;font-weight:700;">${fmtNum(t.c9)} lượt xem</td>
                     <td>${linkBtn(t.c15, 'Xem TT', { sheet: '08_68_Video_TikTok_Kich_Ban', idx: tIdx })}</td>
-                  </tr>
-                `).join('')}
+                  </tr>`;
+                }).join('')}
               </tbody>
             </table>
           </div>
@@ -7059,7 +7197,7 @@ HTML_TEMPLATE_PART3 = r"""
       if (matched.fbCmts.length || matched.ytCmts.length) {
         tablesHtml += `
           <div style="margin-top:14px;font-weight:800;font-size:12px;text-transform:uppercase;color:#141923;border-bottom:2px solid #141923;padding-bottom:4px;">
-            Danh sách Bình Luận Độc Giả bên dưới cụm kênh này (FB: ${matched.fbCmts.length} · YT/TT: ${matched.ytCmts.length})
+            Danh sách Bình Luận Công Khai bên dưới cụm kênh này (FB: ${matched.fbCmts.length} · YT/TT: ${matched.ytCmts.length})
           </div>
           <div style="max-height:260px;overflow-y:auto;border:1px solid var(--border);margin-top:6px;">
             <table class="wr-table" style="font-size:12px;">
@@ -7089,22 +7227,53 @@ HTML_TEMPLATE_PART3 = r"""
         `;
       }
 
-      document.getElementById('modalContent').innerHTML = `
-        <div style="display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-bottom:12px;">
-          <div style="padding:12px;background:var(--bg-input);border:1px solid var(--border);">
-            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);">Thông tin Cụm Kênh & Định hướng Bài đăng</div>
-            <div style="font-size:15px;font-weight:900;margin:4px 0;">${esc(r.c2)} (${esc(r.c1)})</div>
-            <p style="font-size:12.3px;margin:4px 0;"><strong>Quy mô bài/video:</strong> ${esc(r.c4)} · <strong>Tương tác & BL:</strong> ${esc(r.c5)}</p>
-            <p style="font-size:12.3px;margin:4px 0;"><strong>Định hướng bài đăng:</strong> ${stanceBadge(getEffectiveStance('03_Ma_Tran_Dao_Chieu_36_Kenh', idx, r.c3))}</p>
-            <div style="margin-top:8px;"><strong>Link đại diện cụm kênh:</strong> ${linkBtn(r.c8, 'Mở bài/kênh đại diện', { sheet: '03_Ma_Tran_Dao_Chieu_36_Kenh', idx })}</div>
-          </div>
-          <div style="padding:12px;background:#EFECE6;border:1px solid #D8D6CE;">
-            <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--tuan-blue);">Phân bổ 7 Kịch bản Bình luận & Kết luận Đối chiếu</div>
-            <p style="font-size:12.3px;font-weight:700;margin:4px 0;color:#141923;">${esc(r.c6)}</p>
-            <hr style="border:none;border-top:1px solid #C8C6BC;margin:6px 0;"/>
-            <p style="font-size:12px;color:#3E4652;">${esc(r.c7)}</p>
+      const repBannerHtml = repInfo ? `
+        <div style="padding:11px 14px;background:#EDF3FC;border:1px solid #B8D0F4;margin-bottom:12px;">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:10px;">
+            <div style="flex:1;min-width:260px;">
+              <div style="font-size:10.8px;font-weight:800;text-transform:uppercase;color:#1B4F9C;letter-spacing:0.03em;">
+                3. ${esc(repInfo.typeLbl)} (1 mẫu đại diện trong tổng số ${esc(r.c4)} của cụm kênh)
+              </div>
+              <div style="font-size:12px;font-weight:800;color:#141923;margin-top:3px;">
+                ${esc(repInfo.codeLbl)} · <span style="color:#1B4F9C;">${esc(repInfo.metricsLbl)}</span>
+              </div>
+              <div style="font-size:12px;color:#2C3440;margin-top:4px;background:#FFFFFF;padding:7px 10px;border:1px solid #D8D6CE;line-height:1.45;">
+                "${esc(repInfo.excerpt)}"
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+              ${stanceBadge(repInfo.stance)}
+              <div style="display:flex;gap:6px;flex-wrap:wrap;">
+                <a href="${esc(repInfo.url)}" target="_blank" rel="noopener noreferrer" class="fc-mini-btn primary-link" style="text-decoration:none;padding:5px 10px;font-size:11.2px;">Mở bài tiêu biểu này ↗</a>
+                <button type="button" class="fc-mini-btn audit-btn" style="padding:5px 10px;font-size:11.2px;" onclick="openItemFactCheckModal('${repInfo.sheet}', ${repInfo.idx})">Hồ sơ bài tiêu biểu</button>
+              </div>
+            </div>
           </div>
         </div>
+      ` : `
+        <div style="padding:10px 14px;background:#EDF3FC;border:1px solid #B8D0F4;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+          <div style="font-size:12px;color:#141923;"><strong>3. Đường dẫn nguồn tiêu biểu của cụm kênh:</strong> <code>${esc(r.c8)}</code></div>
+          <div>${linkBtn(r.c8, 'Mở nguồn tiêu biểu')}</div>
+        </div>
+      `;
+
+      document.getElementById('modalContent').innerHTML = `
+        <div style="display:grid;grid-template-columns:1.15fr 1fr;gap:12px;margin-bottom:10px;">
+          <div style="padding:12px;background:var(--bg-input);border:1px solid var(--border);">
+            <div style="font-size:10.8px;font-weight:800;text-transform:uppercase;color:var(--text-muted);letter-spacing:0.03em;">1. Thống kê gộp toàn cụm kênh (Kỳ dữ liệu 01–24/10/2026)</div>
+            <div style="font-size:15px;font-weight:900;margin:4px 0;color:#141923;">${esc(r.c2)} <span style="font-size:12px;font-weight:700;color:var(--text-muted);">(${esc(r.c1)})</span></div>
+            <p style="font-size:12.3px;margin:4px 0;"><strong>Tổng số bài/video toàn kênh:</strong> ${esc(r.c4)} · <strong>Tổng tương tác & bình luận toàn kênh:</strong> ${esc(r.c5)}</p>
+            <p style="font-size:12.3px;margin:4px 0;"><strong>Tính chất / Định hướng nội dung kênh:</strong> ${stanceBadge(getEffectiveStance('03_Ma_Tran_Dao_Chieu_36_Kenh', idx, r.c3))}</p>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">* Số liệu ở khung này là tổng hợp lũy kế của toàn bộ ${esc(r.c4)} thuộc cụm kênh (xem danh sách từng bài ở bảng dưới).</div>
+          </div>
+          <div style="padding:12px;background:#EFECE6;border:1px solid #D8D6CE;">
+            <div style="font-size:10.8px;font-weight:800;text-transform:uppercase;color:var(--tuan-blue);letter-spacing:0.03em;">2. Phân bổ tín hiệu bình luận công khai dưới kênh</div>
+            <p style="font-size:12.2px;font-weight:700;margin:4px 0;color:#141923;">${esc(r.c6)}</p>
+            <hr style="border:none;border-top:1px solid #C8C6BC;margin:6px 0;"/>
+            <p style="font-size:11.8px;color:#3E4652;margin:0;"><strong>Nhận định đối chiếu bài đăng & bình luận:</strong> ${esc(r.c7)}</p>
+          </div>
+        </div>
+        ${repBannerHtml}
         ${tablesHtml}
       `;
       modal.classList.add('open');
@@ -7336,8 +7505,9 @@ HTML_TEMPLATE_PART3 = r"""
     function renderMatrixTable() {
       const all = (DB.sheets['03_Ma_Tran_Dao_Chieu_36_Kenh'] || {}).rows || [];
       const q = (document.getElementById('matrixSearchInput').value || '').trim().toLowerCase();
+      const pFilter = currentMatrixPlat.replace(/^\d+\.\s*/, '').toLowerCase();
       const filtered = all.map((r, idx) => ({ r, idx })).filter(({ r }) => {
-        if (currentMatrixPlat !== 'ALL' && !String(r.c1).includes(currentMatrixPlat)) return false;
+        if (currentMatrixPlat !== 'ALL' && !String(r.c1 || '').toLowerCase().includes(pFilter)) return false;
         if (q && !Object.values(r).some(v => String(v).toLowerCase().includes(q))) return false;
         return true;
       });
@@ -7351,7 +7521,7 @@ HTML_TEMPLATE_PART3 = r"""
           <td style="text-align:center;">${esc(r.c5)}</td>
           <td><strong style="color:var(--tuan-blue);">${esc(r.c6)}</strong></td>
           <td>${esc(r.c7)}</td>
-          <td>${linkBtn(r.c8, 'Mở kênh', { sheet: '03_Ma_Tran_Dao_Chieu_36_Kenh', idx })}</td>
+          <td onclick="event.stopPropagation();">${linkBtn(r.c8, 'Mở bài tiêu biểu', { sheet: '03_Ma_Tran_Dao_Chieu_36_Kenh', idx })}</td>
         </tr>
       `).join('');
     }
@@ -7397,7 +7567,7 @@ HTML_TEMPLATE_PART3 = r"""
           <div>
             <div style="font-size:15px;font-weight:900;">${esc(chName)}</div>
             <div style="font-size:12.3px;color:var(--text-secondary);margin-top:4px;">
-              Bài yêu cầu: <strong>${fmtNum(ch.c3)}</strong> · Bài khớp URL: <strong>${fmtNum(ch.c4)}</strong> · Tổng bình luận: <strong>${fmtNum(ch.c5)}</strong> · Tổng cảm xúc: <strong>${fmtNum(ch.c6)}</strong>
+              Bài ghi nhận: <strong>${fmtNum(ch.c3)}</strong> · Bài đã đối chiếu URL: <strong>${fmtNum(ch.c4)}</strong> · Tổng bình luận: <strong>${fmtNum(ch.c5)}</strong> · Tổng cảm xúc: <strong>${fmtNum(ch.c6)}</strong>
             </div>
             <div style="margin-top:6px;">${formatAuditStatus(ch.c7)}</div>
           </div>
@@ -8186,14 +8356,20 @@ HTML_TEMPLATE_PART3 = r"""
             </div>
           `;
         }
+      } else if (sheetKey === '03_Ma_Tran_Dao_Chieu_36_Kenh') {
+        openClusterTileModal(rowIdx);
+        return;
+      } else if (sheetKey === '05_378_Kenh_Facebook_Danh_Ba') {
+        openFb378ChannelModal(rowIdx);
+        return;
       } else {
-        // Generic fallback for sheets 01, 02, 03, 05, 11, 12
+        // Structured fallback for sheets 01, 02, 11, 12
         const vals = Object.values(r);
         primaryUrl = vals.find(v => String(v).startsWith('http')) || '';
         if (r.c9 && String(r.c9).startsWith('http') && r.c9 !== primaryUrl) extraModalUrls.push({ label: 'Mở trang chủ kênh', url: r.c9 });
         sourceName = r.c2 || r.c3 || '';
         titleOrAuthor = r.c1 || '';
-        mainContent = vals.join(' | ');
+        mainContent = vals.filter(Boolean).map(v => `• ${v}`).join('\n');
         origStance = r.c6 || r.c7 || r.c3 || '';
       }
 
