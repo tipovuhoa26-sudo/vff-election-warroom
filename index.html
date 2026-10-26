@@ -401981,13 +401981,13 @@
         svg += `<text x="${padL - 8}" y="${y + 4}" text-anchor="end" font-size="11" fill="#6C737F" font-weight="600">${val}</text>`;
       }
 
-      // 4 Key Event Vertical Annotations in Dedicated Non-Overlapping Top Band (y = 6..38)
+      // 5 Key Event Vertical Annotations in Dedicated Non-Overlapping Top Band (y = 6..38), each aligned strictly over its date xAt(idx)
       const events = [
-        { idx: 7,  date: '08/10', title: '7 ĐTQG dự VCK Châu Á', sub: 'Củng cố tín nhiệm TS. Tuấn', boxX: 180, boxW: 152 },
-        { idx: 14, date: '15/10', title: '33 bài đăng đồng loạt',  sub: "Cụm 'Phấn Đấu' phản ứng ngược", boxX: 342, boxW: 158 },
-        { idx: 18, date: '19/10', title: 'Đề cử 3 ứng viên VFF',  sub: 'Báo kinh tế nêu >40/57 đề cử', boxX: 510, boxW: 152 },
-        { idx: 20, date: '21/10', title: 'Gói 600–1.000 tỷ/năm',  sub: 'Xu hướng Liên danh chia vai', boxX: 672, boxW: 150 },
-        { idx: 24, date: '25–26/10', title: 'Ông Vũ thôi CT Bóng bàn', sub: 'U15 thắng 4-1 & Đua BCH VFF', boxX: 832, boxW: 162 }
+        { idx: 7,  date: '08/10', title: '7 ĐTQG dự VCK Châu Á', sub: 'Củng cố tín nhiệm TS. Tuấn', boxX: 210, boxW: 164 },
+        { idx: 14, date: '15/10', title: '33 bài đăng đồng loạt',  sub: "Cụm 'Phấn Đấu' phản ứng ngược", boxX: 382, boxW: 160 },
+        { idx: 18, date: '19/10', title: 'Đề cử 3 ứng viên VFF',  sub: 'Báo kinh tế nêu >40/57 đề cử', boxX: 550, boxW: 150 },
+        { idx: 20, date: '21/10', title: 'Gói 600–1.000 tỷ/năm',  sub: 'Xu hướng Liên danh chia vai', boxX: 708, boxW: 154 },
+        { idx: 24, date: '25–26/10', title: 'Ông Vũ thôi CT Bóng bàn', sub: 'U15 thắng 4-1 & Đua BCH VFF', boxX: 868, boxW: 188 }
       ];
 
       events.forEach(ev => {
@@ -401996,8 +401996,8 @@
         svg += `<circle cx="${ex}" cy="38" r="2.2" fill="#6C737F" />`;
         svg += `<g class="ev-annot-group" onclick="openDayDrilldownModal(${ev.idx})" onmouseenter="hoverOverviewDay(event, ${ev.idx})" onmousemove="moveEdTooltip(event)">`;
         svg += `<rect x="${ev.boxX}" y="6" width="${ev.boxW}" height="31" fill="#F7F7F5" stroke="#C8C6BC" stroke-width="1" rx="2"/>`;
-        svg += `<text x="${ev.boxX + 7}" y="19" text-anchor="start" font-size="9.6" font-weight="800" fill="#141923">${ev.date} · ${ev.title}</text>`;
-        svg += `<text x="${ev.boxX + 7}" y="31" text-anchor="start" font-size="9.1" font-weight="500" fill="#4A5260">${ev.sub}</text>`;
+        svg += `<text x="${ev.boxX + 7}" y="19" text-anchor="start" font-size="8.85" font-weight="800" fill="#141923">${ev.date} · ${ev.title}</text>`;
+        svg += `<text x="${ev.boxX + 7}" y="31" text-anchor="start" font-size="8.45" font-weight="500" fill="#4A5260">${ev.sub}</text>`;
         svg += `</g>`;
       });
 
@@ -402062,8 +402062,9 @@
       // X-axis date ticks
       labels.forEach((lbl, i) => {
         const x = xAt(i);
+        const isKeyDate = (i === 7 || i === 14 || i === 18 || i === 20 || i === 21 || i === 24 || i === 25);
         svg += `<line x1="${x}" y1="${padT + plotH}" x2="${x}" y2="${padT + plotH + 5}" stroke="#141923" stroke-width="1"/>`;
-        svg += `<text id="ovDateLbl_${i}" x="${x}" y="${H - 12}" text-anchor="middle" font-size="10.2" fill="${i === 7 || i === 14 || i === 18 || i === 20 || i === 21 ? '#141923' : '#6C737F'}" font-weight="${i === 7 || i === 14 || i === 18 || i === 20 || i === 21 ? '800' : '500'}">${lbl}</text>`;
+        svg += `<text id="ovDateLbl_${i}" x="${x}" y="${H - 12}" text-anchor="middle" font-size="10.2" fill="${isKeyDate ? '#141923' : '#6C737F'}" font-weight="${isKeyDate ? '800' : '500'}">${lbl}</text>`;
       });
 
       // Full-height Interactive Hit Columns for all 22 Days (hover + click to drill down)
