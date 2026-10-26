@@ -3292,7 +3292,7 @@ HTML_TEMPLATE_PART2 = r"""
                 <div class="ed-cand-side">
                   <span class="ed-cand-label" id="covLeftName">Bài viết &amp; video nghiêng về TS. Trần Quốc Tuấn</span>
                   <span class="ed-big-num tuan clickable-num" id="covLeftBig" onclick="openSourceLedgerWithFilter('ALL','ALL','CORE-6203','Trần Quốc Tuấn')" title="Bấm để mở danh sách 229 bài viết và video nghiêng về TS. Trần Quốc Tuấn">229</span>
-                  <span class="ed-sub-count" id="covLeftSub">bài viết và video chọn TS. Tuấn làm Chủ tịch (135 bài trực tiếp + 94 bài đề xuất Liên danh · Lũy tiến: 618)</span>
+                  <span class="ed-sub-count" id="covLeftSub">bài viết và video chọn TS. Tuấn làm Chủ tịch (135 bài trực tiếp + 94 bài đề xuất Liên danh · Lũy kế: 618)</span>
                 </div>
                 <div class="ed-cand-side right">
                   <span class="ed-cand-label" id="covRightName">Bài viết &amp; video ủng hộ Ông Nguyễn Đức Thụy</span>
@@ -3364,7 +3364,7 @@ HTML_TEMPLATE_PART2 = r"""
               </div>
               <div class="ed-mode-switch">
                 <button class="ed-mode-btn active" onclick="switchOverviewTrendMode('daily', this)">Theo ngày (Bài/Video)</button>
-                <button class="ed-mode-btn" onclick="switchOverviewTrendMode('cum', this)">Lũy tiến 24 ngày (614 vs 481)</button>
+                <button class="ed-mode-btn" onclick="switchOverviewTrendMode('cum', this)">Lũy kế 24 ngày (614 vs 481)</button>
                 <button class="ed-mode-btn" onclick="switchOverviewTrendMode('net', this)">Tín nhiệm ròng (+816 vs +391)</button>
               </div>
             </div>
@@ -3372,7 +3372,7 @@ HTML_TEMPLATE_PART2 = r"""
           <div id="overviewAnnotatedLineChart" style="width:100%;overflow-x:auto;position:relative;"></div>
           <!-- Giải thích trực tiếp ngay dưới biểu đồ, tối đa 2 câu -->
           <div class="ed-chart-caption" id="overviewTrendCaption">
-            Mật độ thảo luận tăng vọt vào hai giai đoạn cao điểm: ngày 14–16/10 khi xuất hiện loạt 33 bài đăng đồng loạt của cụm tài khoản "Phấn Đấu" và ngày 19–22/10 khi báo chí đưa tin danh sách 3 ứng viên cùng đề xuất tài trợ 600–1.000 tỷ đồng/năm. Qua cả 24 ngày, TS. Trần Quốc Tuấn duy trì ưu thế ổn định về cả độ phủ lũy tiến (614 so với 481 lượt bài) và điểm tín nhiệm ròng tích lũy (+816 so với +391).
+            Mật độ thảo luận tăng vọt vào hai giai đoạn cao điểm: ngày 14–16/10 khi xuất hiện loạt 33 bài đăng đồng loạt của cụm tài khoản "Phấn Đấu" và ngày 19–22/10 khi báo chí đưa tin danh sách 3 ứng viên cùng đề xuất tài trợ 600–1.000 tỷ đồng/năm. Qua cả 24 ngày, TS. Trần Quốc Tuấn duy trì ưu thế ổn định về cả độ phủ lũy kế (614 so với 481 lượt bài) và điểm tín nhiệm ròng tích lũy (+816 so với +391).
           </div>
         </div>
       </div>
@@ -3485,7 +3485,7 @@ HTML_TEMPLATE_PART2 = r"""
             <div style="font-size:11px;font-weight:800;text-transform:uppercase;color:var(--text-muted);margin-bottom:4px;">3. Truy xuất nguồn ở đâu?</div>
             <div style="font-size:13.5px;font-weight:800;color:var(--text-main);margin-bottom:6px;">26.743 bản ghi · 29.696 đường dẫn nguồn</div>
             <p style="font-size:12.2px;color:var(--text-secondary);line-height:1.5;margin-bottom:8px;">
-              Mọi nhận định và con số đều gắn với hồ sơ nguồn gốc (bài báo, bài đăng, mốc giây video, bình luận). Bấm <strong>Xem hồ sơ</strong> ở từng dòng hoặc tra cứu toàn bộ sổ cái để kiểm chứng độc lập.
+              Mọi nhận định và con số đều gắn với hồ sơ nguồn gốc (bài báo, bài đăng, mốc giây video, bình luận). Bấm <strong>Xem hồ sơ</strong> ở từng dòng hoặc tra cứu toàn bộ danh mục nguồn để kiểm chứng độc lập.
             </p>
             <button type="button" class="fc-mini-btn primary-link" onclick="switchTab('tab-sources-ledger')">Mở mục 05 · Nguồn &amp; phương pháp &rarr;</button>
           </div>
@@ -3501,7 +3501,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="ed-section-hdr">
         <div>
           <div class="ed-kicker">02 · DIỄN BIẾN DƯ LUẬN THEO THỜI GIAN (01/10 – 24/10/2026)</div>
-          <h2 class="ed-headline">Phân tích xu hướng hàng ngày, độ phủ lũy tiến và điểm tín nhiệm ròng qua 5 giai đoạn</h2>
+          <h2 class="ed-headline">Phân tích xu hướng hàng ngày, độ phủ lũy kế và điểm tín nhiệm ròng qua 5 giai đoạn</h2>
           <p class="ed-lead">Chọn giai đoạn thời gian hoặc chuyển đổi giữa 4 góc nhìn biểu đồ dưới đây. Bấm vào bất kỳ ngày nào trên biểu đồ hoặc bảng số liệu để mở danh sách bài viết và video gốc của ngày đó.</p>
         </div>
       </div>
@@ -3527,7 +3527,7 @@ HTML_TEMPLATE_PART2 = r"""
           </div>
           <div class="ed-mode-switch" id="timelineChartModeBar">
             <button class="ed-mode-btn active" onclick="switchTimelineChartView('daily', this)">1. Mật độ theo ngày</button>
-            <button class="ed-mode-btn" onclick="switchTimelineChartView('cum', this)">2. Độ phủ lũy tiến</button>
+            <button class="ed-mode-btn" onclick="switchTimelineChartView('cum', this)">2. Độ phủ lũy kế</button>
             <button class="ed-mode-btn" onclick="switchTimelineChartView('net', this)">3. Điểm tín nhiệm ròng</button>
             <button class="ed-mode-btn" onclick="switchTimelineChartView('butterfly', this)">4. Cán cân Ủng hộ / Phản đối</button>
           </div>
@@ -3552,7 +3552,7 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
       </div>
 
-      <!-- Bảng số liệu lũy tiến 24 ngày -->
+      <!-- Bảng số liệu lũy kế 24 ngày -->
       <div class="panel">
         <div class="panel-header">
           <div>
@@ -3567,17 +3567,17 @@ HTML_TEMPLATE_PART2 = r"""
                 <th>Ngày</th>
                 <th>Giai đoạn &amp; sự kiện chính</th>
                 <th>Bài TS. Tuấn</th>
-                <th>Lũy tiến TS. Tuấn</th>
+                <th>Lũy kế TS. Tuấn</th>
                 <th>Bài Ông Thụy</th>
-                <th>Lũy tiến Ông Thụy</th>
+                <th>Lũy kế Ông Thụy</th>
                 <th>Bài Ông Xuân Vũ</th>
-                <th>Lũy tiến Ông Xuân Vũ</th>
+                <th>Lũy kế Ông Xuân Vũ</th>
                 <th>Ủng hộ TS. Tuấn (+)</th>
                 <th>Phản đối TS. Tuấn (-)</th>
-                <th>Ròng lũy tiến TS. Tuấn</th>
+                <th>Ròng lũy kế TS. Tuấn</th>
                 <th>Ủng hộ Ông Thụy (+)</th>
                 <th>Phản đối Ông Thụy (-)</th>
-                <th>Ròng lũy tiến Ông Thụy</th>
+                <th>Ròng lũy kế Ông Thụy</th>
                 <th>Kiểm chứng</th>
               </tr>
             </thead>
@@ -3630,7 +3630,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel">
         <div class="panel-header">
           <div>
-            <div class="panel-title">MA TRẬN ĐẢO CHIỀU ĐA NỀN TẢNG: ĐỊNH HƯỚNG BÀI ĐĂNG so với TÍN HIỆU BÌNH LUẬN (<span id="matrixCountBadge">36</span> cụm kênh)</div>
+            <div class="panel-title">ĐỐI SÁNH ĐA NỀN TẢNG: ĐỊNH HƯỚNG BÀI ĐĂNG VÀ TÍN HIỆU BÌNH LUẬN (<span id="matrixCountBadge">36</span> cụm kênh)</div>
             <div class="panel-sub">Hiển thị đầy đủ Tổng số bài đăng, Tổng số bình luận, Phân bổ kịch bản tín hiệu lập trường bên dưới từng kênh và Link truy cập trực tiếp</div>
           </div>
         </div>
@@ -3686,7 +3686,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div id="tab-press-fb" class="media-hub-pane" style="display:none;">
         <div class="filter-bar">
         <div class="filter-group">
-          <strong style="font-size:12.5px;">Chọn Sổ Cái Dữ Liệu:</strong>
+          <strong style="font-size:12.5px;">Chọn danh mục dữ liệu:</strong>
           <button class="pill-btn active" id="subBtnPress" onclick="switchPressFbSub('press')">01 · Báo chính thống (81 bài)</button>
           <button class="pill-btn" id="subBtnFb378" onclick="switchPressFbSub('fb378')">02 · Danh bạ 881 kênh truyền thông (Ba nền tảng)</button>
           <button class="pill-btn" id="subBtnFb665" onclick="switchPressFbSub('fb665')">03 · Danh mục 706 bài viết Facebook xác thực</button>
@@ -3755,8 +3755,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelFb665" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 706 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 334+ TRANG HOẠT ĐỘNG (<span id="fb665Count">706</span> bài · Đủ 568/568 bài FB toàn diện · 214.068 lượt thích · 15.355 BL)</div>
-            <div class="panel-sub">Bao trọn 100% (568/568) bài Facebook trong Bộ dữ liệu toàn diện + sổ cái mốc 22/10 (665 bài) & link đối chiếu bổ sung</div>
+            <div class="panel-title">DANH MỤC 706 BÀI VIẾT FACEBOOK XÁC THỰC URL GỐC TRÊN 334+ TRANG HOẠT ĐỘNG (<span id="fb665Count">706</span> bài · Đủ 568/568 bài FB toàn diện · 214.068 lượt thích · 15.355 BL)</div>
+            <div class="panel-sub">Bao trọn 100% (568/568) bài Facebook trong Bộ dữ liệu toàn diện + dữ liệu mốc 22/10 (665 bài) & link đối chiếu bổ sung</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3784,11 +3784,11 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="filter-bar">
         <div class="filter-group">
           <strong style="font-size:12.5px;">Chọn Nền Tảng Video:</strong>
-          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · Video YouTube đã kiểm định (354 video · 13,96 triệu lượt xem · Có văn bản gỡ băng)</button>
-          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · Video TikTok đã kiểm định (268 video · 22,91 triệu lượt xem · Có văn bản gỡ băng)</button>
+          <button class="pill-btn active" id="subBtnYt169" onclick="switchVideoSub('yt169')">01 · Video YouTube đã kiểm định (354 video · 13,96 triệu lượt xem · Có nội dung lời thoại)</button>
+          <button class="pill-btn" id="subBtnTt68" onclick="switchVideoSub('tt68')">02 · Video TikTok đã kiểm định (268 video · 22,91 triệu lượt xem · Có nội dung lời thoại)</button>
         </div>
         <div class="filter-group">
-          <input type="text" id="videoSearchInput" class="input-ctrl" style="min-width:260px;" placeholder="Tìm tiêu đề video, kênh, nội dung lời thoại bóc băng..." oninput="renderVideoSub()" />
+          <input type="text" id="videoSearchInput" class="input-ctrl" style="min-width:260px;" placeholder="Tìm tiêu đề video, kênh, nội dung lời thoại..." oninput="renderVideoSub()" />
         </div>
       </div>
 
@@ -3796,8 +3796,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelYt169">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI KIỂM ĐỊNH 354 VIDEO YOUTUBE (<span id="yt169Count">354</span> video · Bộ dữ liệu toàn diện: 310 video · 13.964.171 lượt xem · 3.670 bình luận · Đủ Link Mốc giây ?t=XXs)</div>
-            <div class="panel-sub">Bao trọn 100% (310/310) video YouTube trong Bộ dữ liệu toàn diện + sổ cái 22/10 • 100% URL hoạt động • Bấm "Xem Kịch Bản" để đọc lời thoại bóc băng âm thanh</div>
+            <div class="panel-title">DANH MỤC 354 VIDEO YOUTUBE ĐÃ KIỂM ĐỊNH (<span id="yt169Count">354</span> video · Bộ dữ liệu toàn diện: 310 video · 13.964.171 lượt xem · 3.670 bình luận · Đủ Link Mốc giây ?t=XXs)</div>
+            <div class="panel-sub">Bao trọn 100% (310/310) video YouTube trong Bộ dữ liệu toàn diện + dữ liệu mốc 22/10 • 100% URL hoạt động • Bấm vào từng dòng để đọc nội dung lời thoại video</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3810,9 +3810,9 @@ HTML_TEMPLATE_PART2 = r"""
                 <th>Tiêu đề video YouTube</th>
                 <th>Lượt xem</th>
                 <th>Bình luận tải</th>
-                <th>Hạng khớp</th>
+                <th>Phân loại / Mức liên quan</th>
                 <th>Câu thoại</th>
-                <th>Trích đoạn kịch bản bóc băng âm thanh</th>
+                <th>Trích đoạn nội dung lời thoại</th>
                 <th>Thao tác / link</th>
               </tr>
             </thead>
@@ -3825,8 +3825,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelTt68" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 268 VIDEO TIKTOK &amp; KỊCH BẢN BÓC BĂNG GIỌNG NÓI (<span id="tt68Count">268</span> video · Bộ dữ liệu toàn diện: 259 video · 22.914.170 lượt xem · 249.962 lượt thích · 1.742 BL)</div>
-            <div class="panel-sub">Bao trọn 100% (259/259) video TikTok trong Bộ dữ liệu toàn diện + 62 video bóc băng toàn văn & sổ cái bổ sung</div>
+            <div class="panel-title">DANH MỤC 268 VIDEO TIKTOK &amp; NỘI DUNG LỜI THOẠI (<span id="tt68Count">268</span> video · Bộ dữ liệu toàn diện: 259 video · 22.914.170 lượt xem · 249.962 lượt thích · 1.742 BL)</div>
+            <div class="panel-sub">Bao trọn 100% (259/259) video TikTok trong Bộ dữ liệu toàn diện + 62 video trích xuất lời thoại toàn văn & danh mục bổ sung</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3842,7 +3842,7 @@ HTML_TEMPLATE_PART2 = r"""
                 <th>Lượt thích</th>
                 <th>Bình luận</th>
                 <th>Dòng thoại</th>
-                <th>Trích đoạn kịch bản bóc băng âm thanh</th>
+                <th>Trích đoạn nội dung lời thoại</th>
                 <th>Thao tác / link</th>
               </tr>
             </thead>
@@ -3864,11 +3864,11 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="filter-group">
           <select id="cmtStanceSelect" class="select-ctrl" onchange="renderCommentSub()">
             <option value="ALL">— Tất cả Kịch bản / Lập trường —</option>
-            <option value="Tuấn">(Ủng hộ TS. Tuấn) Ủng hộ / Chọn TS. Trần Quốc Tuấn</option>
-            <option value="Thụy">(Ủng hộ Ông Thụy) Ủng hộ / Chọn Ông Nguyễn Đức Thụy (Bầu Thụy)</option>
-            <option value="Liên danh">(Phương án Liên danh) Đề xuất Liên danh / Chia vai (TS. Tuấn CT + Ông Thụy PCT TC)</option>
-            <option value="Bầu Đức">(Ứng viên khác) Ủng hộ Ứng viên khác (Bầu Đức / Phạm Nhật Vượng / Nguyễn Xuân Vũ...)</option>
-            <option value="Phản đối">(Phản biện) Phản đối / Hoài nghi / Cảnh báo rủi ro</option>
+            <option value="Tuấn">Ủng hộ / Chọn TS. Trần Quốc Tuấn</option>
+            <option value="Thụy">Ủng hộ / Chọn Ông Nguyễn Đức Thụy (Bầu Thụy)</option>
+            <option value="Liên danh">Đề xuất Liên danh / Chia vai (TS. Tuấn CT + Ông Thụy PCT TC)</option>
+            <option value="Bầu Đức">Ủng hộ Ứng viên khác (Bầu Đức / Phạm Nhật Vượng / Nguyễn Xuân Vũ...)</option>
+            <option value="Phản đối">Phản biện / Hoài nghi / Cảnh báo rủi ro</option>
             <option value="Trung lập">Đưa tin trung lập và phân tích thể chế (17.851 bình luận)</option>
           </select>
           <input type="text" id="cmtSearchInput" class="input-ctrl" style="min-width:240px;" placeholder="Tìm nội dung bình luận, tác giả, kênh, URL..." oninput="renderCommentSub()" />
@@ -3879,8 +3879,8 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelCmtFb887">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 1.888 BÌNH LUẬN LẬP TRƯỜNG TRÊN FACEBOOK (<span id="cmtFbCount">1.888</span> bình luận · Bao trọn 1.771/1.771 bình luận bày tỏ quan điểm nhân sự FB toàn diện · Đã ẩn danh tài khoản cá nhân)</div>
-            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận bày tỏ quan điểm nhân sự trên Facebook từ kho 15.355 BL FB toàn diện + sổ cái 22/10 • Hiển thị song song cả Link Bình luận trực tiếp &amp; Link Bài đăng gốc • 0 link cá nhân</div>
+            <div class="panel-title">DANH SÁCH 1.888 BÌNH LUẬN NÊU QUAN ĐIỂM TRÊN FACEBOOK (<span id="cmtFbCount">1.888</span> bình luận · Bao trọn 1.771/1.771 bình luận bày tỏ quan điểm nhân sự FB toàn diện · Đã ẩn danh tài khoản cá nhân)</div>
+            <div class="panel-sub">Bao trọn 100% (1.771/1.771) bình luận bày tỏ quan điểm nhân sự trên Facebook từ kho 15.355 BL FB toàn diện + dữ liệu mốc 22/10 • Hiển thị song song cả Link Bình luận trực tiếp &amp; Link Bài đăng gốc • 0 link cá nhân</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -3907,7 +3907,7 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" id="panelCmtYt604" style="display:none;">
         <div class="panel-header">
           <div>
-            <div class="panel-title">SỔ CÁI 1.457 BÌNH LUẬN LẬP TRƯỜNG MÃ HÓA TRÊN YOUTUBE &amp; TIKTOK (<span id="cmtYtCount">1.457</span> bình luận · Bao trọn 1.145/1.145 bình luận bày tỏ quan điểm nhân sự YT/TT toàn diện)</div>
+            <div class="panel-title">DANH SÁCH 1.457 BÌNH LUẬN NÊU QUAN ĐIỂM TRÊN YOUTUBE &amp; TIKTOK (<span id="cmtYtCount">1.457</span> bình luận · Bao trọn 1.145/1.145 bình luận bày tỏ quan điểm nhân sự YT/TT toàn diện)</div>
             <div class="panel-sub">Bao trọn 100% (1.145/1.145) bình luận bày tỏ quan điểm nhân sự trên YouTube (744) &amp; TikTok (401) kèm đủ 3 liên kết: Link Bình luận trực tiếp · Link Video Gốc · Link Kênh người bình luận</div>
           </div>
         </div>
@@ -4082,7 +4082,7 @@ HTML_TEMPLATE_PART2 = r"""
       </div>
 
       <div style="margin-top:18px;">
-        <!-- SUB-PANEL 4: 57 VFF MEMBER ORGANIZATIONS & BAYESIAN FORECAST -->
+        <!-- SUB-PANEL 4: 57 VFF MEMBER ORGANIZATIONS & SCENARIO ANALYSIS -->
         <div id="p2410_57vff" class="p2410-pane" >
           <div class="grid-2" style="margin-bottom:14px;">
             <div class="panel" style="margin-bottom:0;">
@@ -4168,8 +4168,8 @@ HTML_TEMPLATE_PART2 = r"""
             <div class="panel" style="margin-bottom:0;">
               <div class="panel-header">
                 <div>
-                  <div class="panel-title">BẢNG 3D — MÔ HÌNH DỰ BÁO XÁC SUẤT KỊCH BẢN ĐẠI HỘI VFF KHÓA X (PHÂN TÍCH BAYES)</div>
-                  <div class="panel-sub">Kết hợp Xác suất tiền nghiệm thể chế (tiền lệ 9 kỳ Đại hội VFF) và Xác suất thực chứng (57 Tổ chức thành viên + Tín nhiệm ròng Tự nhiên)</div>
+                  <div class="panel-title">BẢNG 3D — PHÂN TÍCH CÁC KỊCH BẢN ĐẠI HỘI VFF KHÓA X</div>
+                  <div class="panel-sub">Kết hợp tiền lệ 9 kỳ Đại hội VFF, cơ cấu 57 Tổ chức thành viên và tín hiệu dư luận tự nhiên</div>
                 </div>
               </div>
               <div class="table-wrap">
@@ -4370,7 +4370,7 @@ HTML_TEMPLATE_PART2 = r"""
             <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">1. CHẨN ĐOÁN HIỆN TRẠNG ĐẾN 25/10/2026:</div>
             <p style="margin-bottom:6px;">• Dẫn đầu trên cả 3 thước đo cốt lõi: Báo chí chính thống (<b>46,9% = 38/81 bài</b>), Bình luận ủng hộ tự nhiên trên Bộ dữ liệu toàn diện (<b>#1 với 766 BL tự nhiên / 819 tổng BL (Ủng hộ TS. Tuấn)</b> + <b>255 BL tự nhiên Liên danh (Phương án Liên danh)</b>) và Tỷ lệ ủng hộ trên phản đối trực tiếp đạt <b>18,68 : 1</b> (chỉ <b>41 BL tự nhiên phản đối trực diện</b>).</p>
             <p style="margin-bottom:6px;">• Tín nhiệm ròng tự nhiên đạt <b>+725 điểm trực tiếp (+521 điểm mở rộng)</b>; lũy kế 24 ngày đạt <b>+816 điểm gộp</b>. Cấu trúc cử tri trong 57 Tổ chức thành viên VFF nghiêng mạnh về TS. Tuấn với <b>~35/57 phiếu nền (61,40%)</b> từ khối LĐBĐ địa phương và CLB ngoài chuyên nghiệp.</p>
-            <p>• Điểm nóng cần kiểm soát (19–25/10): Thông điệp <i>'&gt;40/57 đề cử'</i> (19–20/10) và <i>'Cam kết huy động 600–1.000 tỷ đồng/năm, không dùng ngân sách Nhà nước'</i> (21–24/10) thu hút sự chú ý lớn trên mặt trận video ngắn TikTok.</p>
+            <p>• Điểm nóng cần kiểm soát (19–25/10): Thông điệp <i>'&gt;40/57 đề cử'</i> (19–20/10) và <i>'Cam kết huy động 600–1.000 tỷ đồng/năm, không dùng ngân sách Nhà nước'</i> (21–24/10) thu hút sự chú ý lớn trên nền tảng video ngắn TikTok.</p>
           </div>
           <div style="background:#ffffff;padding:14px;border-radius:8px;border:1.5px solid var(--tuan-border);box-shadow:var(--shadow);">
             <div style="font-weight:800;color:var(--tuan-blue);margin-bottom:6px;">2. BA GIẢI PHÁP TRỌNG TÂM ĐẾN ĐẠI HỘI KHÓA X:</div>
@@ -4411,7 +4411,7 @@ HTML_TEMPLATE_PART2 = r"""
     <section id="tab-sources-ledger" class="tab-pane">
       <div class="sub-nav-bar" id="sourcesMethodSubNav">
         <span class="sub-nav-lbl">Chuyên mục kiểm chứng:</span>
-        <button type="button" class="sub-nav-btn active" data-src-sub="ledger" onclick="switchSourcesSubView('ledger', this)">1. Sổ cái 26.743 bản ghi &amp; liên kết nguồn</button>
+        <button type="button" class="sub-nav-btn active" data-src-sub="ledger" onclick="switchSourcesSubView('ledger', this)">1. Danh mục 26.743 bản ghi &amp; liên kết nguồn</button>
         <button type="button" class="sub-nav-btn" data-src-sub="methodology" onclick="switchSourcesSubView('methodology', this)">2. Hồ sơ phương pháp &amp; 5 giới hạn suy luận</button>
         <button type="button" class="sub-nav-btn" data-src-sub="audit-tables" onclick="switchSourcesSubView('audit-tables', this)">3. Bảng đối soát mẫu, độ lệch &amp; 34 bài gắn nhãn lưu ý</button>
         <button type="button" class="sub-nav-btn" data-src-sub="top15-overview" onclick="switchSourcesSubView('top15-overview', this)">4. Phụ lục Top 15 nguồn &amp; bảng tổng hợp chỉ tiêu</button>
@@ -4423,9 +4423,9 @@ HTML_TEMPLATE_PART2 = r"""
       <div class="panel" style="border-top: 4px solid var(--tuan-blue); margin-bottom: 16px;">
         <div class="panel-header" style="align-items:flex-start;">
           <div>
-            <div class="ed-kicker">08 · NGUỒN &amp; KIỂM CHỨNG TOÀN DIỆN (SỔ CÁI ĐỐI CHIẾU NGUỒN &amp; TRẠNG THÁI XÁC MINH)</div>
+            <div class="ed-kicker">05 · NGUỒN &amp; PHƯƠNG PHÁP (DANH MỤC ĐỐI CHIẾU NGUỒN &amp; TRẠNG THÁI XÁC MINH)</div>
             <div class="panel-title" style="font-size:16px;margin-top:2px;">
-              26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Tổng hợp toàn diện kỳ 01–25/10/2026: <strong>81 bài báo chính thống · 1.137 bài viết và video · 20.767 bình luận phân theo sáu nhóm quan điểm · 269 trích dẫn tiêu biểu · 83 biên bản sàng lọc · 881 kênh truyền thông · 2.647 hồ sơ đối chiếu mở rộng</strong>)</span>
+              26.743 bản ghi có liên kết đối chiếu · 29.696 đường dẫn nguồn duy nhất <span style="font-weight:600;color:var(--text-secondary);font-size:13px;">(Tổng hợp toàn diện kỳ 01–25/10/2026: <strong>81 bài báo chính thống · 1.137 bài viết và video · 20.767 bình luận phân theo sáu nhóm quan điểm · 269 trích dẫn tiêu biểu · 83 mục sàng lọc ngoài phạm vi · 881 kênh truyền thông · 2.647 hồ sơ đối chiếu mở rộng</strong>)</span>
             </div>
             <div class="panel-sub" style="margin-top:4px;line-height:1.5;">
               • <strong>Trạng thái kiểm định liên kết nguồn:</strong> <span class="status-badge verified" style="padding:1px 7px;font-size:10.5px;">Đã kiểm định liên kết: 25/10/2026</span> · Đảm bảo 100% đường dẫn bài viết, video và bình luận hoạt động nguyên vẹn · Tích hợp đầy đủ <strong>2.647 bản ghi đối chiếu mở rộng trong Tháng 10/2026</strong> (bao gồm báo chí, bài đăng mạng xã hội, thảo luận trên các diễn đàn Voz, Otofun, FireAnt, F247 và bình luận người hâm mộ).<br/>
@@ -4470,12 +4470,12 @@ HTML_TEMPLATE_PART2 = r"""
                 <option value="PRESS">Báo chí chính thống (#PRESS-001..081 · 78 gốc + 3 mới)</option>
                 <option value="FB-POST">Bài đăng Facebook xác thực (#FB-POST-001..706 · 706 bài kèm liên kết kênh)</option>
                 <option value="YT-VID">Video YouTube kiểm định (#YT-VID-001..354 + 115 mốc giây + Link Kênh)</option>
-                <option value="TT-VID">Video TikTok kèm kịch bản gỡ băng (#TT-VID-001..268 · 268 video)</option>
+                <option value="TT-VID">Video TikTok kèm kịch bản trích xuất lời thoại (#TT-VID-001..268 · 268 video)</option>
                 <option value="FB-CMT">Bình luận bày tỏ quan điểm trên Facebook (#FB-CMT-001..1888 · Đủ liên kết bình luận và bài gốc)</option>
                 <option value="VID-CMT">Bình luận bày tỏ quan điểm trên YouTube và TikTok (#VID-CMT-001..1457)</option>
                 <option value="S6-CMT">Bình luận dưới các bài đưa tin trung lập (#S6-CMT-00001..17851 · 17.851 liên kết)</option>
                 <option value="TOP-QUOTE">Tuyển tập 269 luận điểm và trích dẫn nguyên văn (#QUOTE-001..269)</option>
-                <option value="NOISE-AUDIT">Biên bản 83 video ngoài phạm vi đã loại trừ (#NOISE-001..083)</option>
+                <option value="NOISE-AUDIT">Danh sách 83 video ngoài phạm vi đã loại trừ (#NOISE-001..083)</option>
                 <option value="FLAGGED-V45">45 bản ghi gắn nhãn lưu ý trùng tên hoặc ngoài chủ đề (34 bài + 3 bình luận + 8 trích dẫn)</option>
                 <option value="CATALOG">Danh bạ 881 kênh &amp; Đối soát tổng hợp (1.024 mục · Đủ Link Trang Chủ Kênh)</option>
                 <option value="OCT-EXCEL-AUDIT">Hồ sơ đối chiếu mở rộng Tháng 10/2026 (2.647 bản ghi báo chí, mạng xã hội và diễn đàn)</option>
@@ -4493,7 +4493,7 @@ HTML_TEMPLATE_PART2 = r"""
             </div>
             <div style="flex:1;min-width:230px;">
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">5. Mã hồ sơ / Từ khóa / URL</label>
-              <input type="text" id="ledgerSearchInput" class="input-ctrl" style="width:100%;" placeholder="Tìm mã hồ sơ (#PRESS-081, #S6-CMT-00001, #SL290-0015, #FORUM-OCT-0001), URL..." oninput="resetLedgerPageAndRender()" />
+              <input type="text" id="ledgerSearchInput" class="input-ctrl" style="width:100%;" placeholder="Tìm mã hồ sơ (#PRESS-081, #FB-GQL-001, #YT-001, #FORUM-OCT-0001), URL..." oninput="resetLedgerPageAndRender()" />
             </div>
             <div>
               <label style="font-size:10.5px;font-weight:800;text-transform:uppercase;color:var(--text-muted);display:block;margin-bottom:3px;">Hiển thị</label>
@@ -4565,7 +4565,7 @@ HTML_TEMPLATE_PART2 = r"""
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
               • <strong>Quy mô kho dữ liệu gốc hợp nhất (Cập nhật đầy đủ đến <code>25/10/2026</code>):</strong><br/>
               &nbsp;&nbsp;(1) <strong>Báo chí chính thống:</strong> <code>81 bài báo</code> (78 bài gốc + 03 bài mới ngày 24/10 từ CAND, SGGP Thể Thao, Tiền Phong · 100% URL hoạt động) từ 32+ cơ quan báo chí Trung ương, Thể thao và Kinh tế.<br/>
-              &nbsp;&nbsp;(2) <strong>Facebook:</strong> Đối soát <code>881 hồ sơ kênh đa nền tảng</code> (378 kênh FB danh bạ + 805 kênh toàn diện), xác thực URL trực tiếp <code>706 bài đăng Facebook</code> (bao trọn 568/568 bài FB trong Bộ dữ liệu toàn diện · 214.068 lượt thích), thu thập <code>15.355 bình luận FB</code> (trong đó có <code>1.771 bình luận bày tỏ quan điểm nhân sự</code> và sổ cái mở rộng <code>1.888 BL ẩn danh</code>).<br/>
+              &nbsp;&nbsp;(2) <strong>Facebook:</strong> Đối soát <code>881 hồ sơ kênh đa nền tảng</code> (378 kênh FB danh bạ + 805 kênh toàn diện), xác thực URL trực tiếp <code>706 bài đăng Facebook</code> (bao trọn 568/568 bài FB trong Bộ dữ liệu toàn diện · 214.068 lượt thích), thu thập <code>15.355 bình luận FB</code> (trong đó có <code>1.771 bình luận bày tỏ quan điểm nhân sự</code> và danh mục mở rộng <code>1.888 BL ẩn danh</code>).<br/>
               &nbsp;&nbsp;(3) <strong>YouTube:</strong> Kiểm định <code>354 video YouTube</code> (bao trọn 310/310 video YT trong Bộ dữ liệu toàn diện · <code>13.964.171 lượt xem</code> · <code>3.670 bình luận</code> · <code>115 cặp link mốc giây ?t=</code>).<br/>
               &nbsp;&nbsp;(4) <strong>TikTok:</strong> Kiểm định <code>268 video TikTok</code> (bao trọn 259/259 video TikTok trong Bộ dữ liệu toàn diện · <code>22.914.170 lượt xem</code> · <code>249.962 lượt thích</code> · <code>1.742 bình luận</code>).
             </p>
@@ -4575,32 +4575,32 @@ HTML_TEMPLATE_PART2 = r"""
             <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">2. Kiến Trúc 2 Tầng Dữ Liệu Chuẩn &amp; Bộ Lọc Nhiễu 2 Khóa</div>
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
               • <strong>Tầng 1 — Bộ dữ liệu toàn diện (1.137 bài/video · 20.767 bình luận):</strong> Mở rộng truy quét trên 805 kênh (512 kênh có bài), thu thập toàn bộ thảo luận liên quan ứng viên và VFF; đã gắn cờ cảnh báo minh bạch cho <code>34 bài đồng âm/lệch chủ đề (2,99%)</code> tại Bảng 5C và Danh mục nguồn.<br/>
-              • <strong>Tầng 2 — Bộ dữ liệu trọng tâm (587 bài/video · 12.803 bình luận):</strong> Áp dụng đồng thời <strong>Khóa 1 (Thực thể Nhân sự)</strong> và <strong>Khóa 2 (Ngữ cảnh Bầu cử / Đại hội VFF)</strong> để loại bỏ 4.209 clip TikTok nhiễu, 74 video YouTube giả mạo và lưu 83 biên bản bằng chứng lọc nhiễu tại Biên bản sàng lọc.<br/>
+              • <strong>Tầng 2 — Bộ dữ liệu trọng tâm (587 bài/video · 12.803 bình luận):</strong> Áp dụng đồng thời <strong>Khóa 1 (Thực thể Nhân sự)</strong> và <strong>Khóa 2 (Ngữ cảnh Bầu cử / Đại hội VFF)</strong> để loại bỏ 4.209 clip TikTok nhiễu, 74 video YouTube giả mạo và lưu 83 mục dữ liệu ngoài phạm vi tại Danh sách sàng lọc.<br/>
               • <strong>Bảo mật danh tính &amp; Khôi phục liên kết:</strong> Khôi phục 100% (<code>1.346 URL bị cắt ở độ dài đường dẫn</code> + <code>133 Link phản hồi FB</code>) và ẩn danh hoàn toàn 100% hồ sơ cá nhân của người bình luận Facebook.
             </p>
           </div>
 
           <div class="chart-box">
-            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">3. Kiểm Định bình luận mẫu Tự Động (64-bit SimHash) &amp; Phát Hiện Bài Đăng Hàng Loạt</div>
+            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">3. Nhận Diện Bình Luận Trùng Lặp Theo Mẫu &amp; Chiến Dịch Đăng Tải Hàng Loạt</div>
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Phân tách Bình luận Tự nhiên và bình luận mẫu:</strong> Trên tổng số <code>20.767 bình luận</code>, thuật toán 64-bit SimHash (khoảng cách Hamming &le; 3) và kiểm tra tần suất tài khoản xác định được <code>19.652 bình luận Tự nhiên (94,63%)</code> và <code>1.115 bình luận mẫu (5,37%)</code>. Trong riêng <code>2.916 bình luận bày tỏ quan điểm nhân sự</code>, có <code>2.683 BL Tự nhiên (92,01%)</code> và <code>233 bình luận mẫu (7,99%)</code>.
+              • <strong>Phân tách Bình luận Tự nhiên và bình luận mẫu:</strong> Trên tổng số <code>20.767 bình luận</code>, quy trình đối chiếu độ tương đồng văn bản và kiểm tra tần suất tài khoản xác định được <code>19.652 bình luận Tự nhiên (94,63%)</code> và <code>1.115 bình luận mẫu (5,37%)</code>. Trong riêng <code>2.916 bình luận bày tỏ quan điểm nhân sự</code>, có <code>2.683 BL Tự nhiên (92,01%)</code> và <code>233 bình luận mẫu (7,99%)</code>.
             </p>
             <p style="font-size:12.5px;color:var(--text-secondary);">
-              • <strong>Nhận diện chiến dịch đăng bài đồng phục:</strong> Hệ thống phát hiện văn bản giống nhau 100% trên <strong>33 bài đăng của cụm tài khoản "Phấn Đấu"</strong> và <strong>18 bài của cụm "Bóng Đá 24h / 24h New"</strong> rải vào 38 hội nhóm. Các bài này được gắn cờ <strong>[BÀI ĐĂNG ĐỒNG LOẠT THEO MẪU]</strong> và phân tích tách biệt với phản ứng thực của độc giả bên dưới (nơi có 56,84% bình luận chính kiến đảo chiều).
+              • <strong>Nhận diện chiến dịch đăng bài đăng trùng lặp theo mẫu:</strong> Hệ thống phát hiện văn bản giống nhau 100% trên <strong>33 bài đăng của cụm tài khoản "Phấn Đấu"</strong> và <strong>18 bài của cụm "Bóng Đá 24h / 24h New"</strong> rải vào 38 hội nhóm. Các bài này được gắn cờ <strong>[BÀI ĐĂNG ĐỒNG LOẠT THEO MẪU]</strong> và phân tích tách biệt với phản ứng thực của độc giả bên dưới (nơi có 56,84% bình luận chính kiến đảo chiều).
             </p>
           </div>
 
           <div class="chart-box">
-            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">4. Quy Tắc Phân Loại 6 Nhãn sáu nhóm quan điểm &amp; 7 Kịch Bản Lập Trường</div>
+            <div style="font-weight:900;color:var(--tuan-blue);font-size:14px;margin-bottom:8px;">4. Quy Tắc Phân Loại 6 Nhóm Quan Điểm &amp; 7 Kịch Bản Nhân Sự</div>
             <p style="font-size:12.5px;color:var(--text-secondary);margin-bottom:6px;">
-              • <strong>Hệ thống 6 Nhãn Lập trường Chuẩn sáu nhóm quan điểm trên 20.767 Bình luận (Bộ dữ liệu toàn diện):</strong><br/>
-              &nbsp;&nbsp;— <code>(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn:</code> <strong>819 Tổng BL</strong> (<strong>766 Tự nhiên — Hạng #1</strong> · 53 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy:</code> <strong>769 Tổng BL</strong> (<strong>687 Tự nhiên — Hạng #2</strong> · 82 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Phương án Liên danh) Đề xuất Liên danh (TS. Tuấn CT + Ông Thụy PCT TC):</code> <strong>275 Tổng BL</strong> (<strong>255 Tự nhiên</strong> · 20 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Ứng viên khác) Ủng hộ Ứng viên khác (Bầu Đức 285, Ông Vượng 110, Ông Vũ 9...):</code> <strong>420 Tổng BL</strong> (<strong>402 Tự nhiên</strong> · 18 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Phản biện) Phản đối / Hoài nghi / Cảnh báo:</code> <strong>633 Tổng BL</strong> (<strong>573 Tự nhiên</strong> · 60 bình luận mẫu).<br/>
-              &nbsp;&nbsp;— <code>(Đưa tin trung lập) Trung lập / Đưa tin thể chế:</code> <strong>17.851 Tổng BL</strong> (<strong>16.969 Tự nhiên</strong> · 882 bình luận mẫu).<br/>
-              • <strong>Độ tin cậy liên mã hóa (Inter-Coder Reliability):</strong> Đối chiếu độc lập giữa bộ phân loại NLP và kiểm định viên đạt hệ số đồng thuận <strong>Cohen's Kappa κ = 0.89</strong>.
+              • <strong>Hệ thống 6 nhóm quan điểm chuẩn trên 20.767 Bình luận (Bộ dữ liệu toàn diện):</strong><br/>
+              &nbsp;&nbsp;— <code>Ủng hộ TS. Trần Quốc Tuấn:</code> <strong>819 Tổng BL</strong> (<strong>766 Tự nhiên — Hạng #1</strong> · 53 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>Ủng hộ Ông Nguyễn Đức Thụy:</code> <strong>769 Tổng BL</strong> (<strong>687 Tự nhiên — Hạng #2</strong> · 82 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>Đề xuất Liên danh (TS. Tuấn CT + Ông Thụy PCT TC):</code> <strong>275 Tổng BL</strong> (<strong>255 Tự nhiên</strong> · 20 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>Ủng hộ Ứng viên khác (Bầu Đức 285, Ông Vượng 110, Ông Vũ 9...):</code> <strong>420 Tổng BL</strong> (<strong>402 Tự nhiên</strong> · 18 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>Phản biện / Hoài nghi / Cảnh báo:</code> <strong>633 Tổng BL</strong> (<strong>573 Tự nhiên</strong> · 60 bình luận mẫu).<br/>
+              &nbsp;&nbsp;— <code>Trung lập / Đưa tin thể chế:</code> <strong>17.851 Tổng BL</strong> (<strong>16.969 Tự nhiên</strong> · 882 bình luận mẫu).<br/>
+              • <strong>Độ tin cậy phân loại độc lập (Inter-Coder Reliability):</strong> Đối chiếu độc lập giữa bộ phân loại NLP và kiểm định viên đạt hệ số đồng thuận <strong>Cohen's Kappa κ = 0.89</strong>.
             </p>
           </div>
         </div>
@@ -4659,7 +4659,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>3. Tổng lượt xem video</strong></td>
                       <td><strong style="color:var(--gold);">36.878.341 lượt xem</strong> (13.964.171 YT + 22.914.170 TT)</td>
                       <td><strong>5.202.155 lượt xem</strong> (2.111.790 YT + 3.090.365 TT)</td>
-                      <td>Gỡ băng âm thanh 100% kèm mốc thời gian đối chiếu trực tiếp</td>
+                      <td>trích xuất lời thoại 100% kèm mốc thời gian đối chiếu trực tiếp</td>
                     </tr>
                     <tr>
                       <td><strong>4. Tổng lượt thích &amp; Lượt chia sẻ</strong></td>
@@ -4683,7 +4683,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>7. Bình luận bày tỏ quan điểm nhân sự</strong></td>
                       <td><strong style="color:var(--tuan-blue);">2.916 Tổng BL</strong> (<strong style="color:#166534;">2.683 Tự nhiên</strong> + <strong>233 bình luận mẫu</strong>)</td>
                       <td><strong>2.712 Tổng BL</strong> (<strong>2.495 Tự nhiên</strong> + <strong>217 bình luận mẫu</strong>)</td>
-                      <td>100% (2.916/2.916 BL) đã được nạp vào Sổ cái mục Bình luận &amp; Danh mục nguồn kèm link gốc</td>
+                      <td>100% (2.916/2.916 BL) đã được tích hợp vào mục Bình luận &amp; Danh mục nguồn kèm đường dẫn gốc</td>
                     </tr>
                   </tbody>
                 </table>
@@ -4712,7 +4712,7 @@ HTML_TEMPLATE_PART2 = r"""
                   </thead>
                   <tbody>
                     <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')" style="cursor:pointer;">
-                      <td><span class="badge badge-tuan">(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn</span></td>
+                      <td><span class="badge badge-tuan">Ủng hộ TS. Trần Quốc Tuấn</span></td>
                       <td style="text-align:center;font-weight:800;">135 <span style="color:var(--text-muted);">(125)</span></td>
                       <td style="text-align:center;font-weight:800;color:var(--tuan-blue);">819 <span style="color:var(--text-muted);">(737)</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">766 (#1) <span style="color:var(--text-muted);">(688)</span></td>
@@ -4721,7 +4721,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Trần Quốc Tuấn')">Xem 954 Link ↗</button></td>
                     </tr>
                     <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')" style="cursor:pointer;">
-                      <td><span class="badge badge-thuy">(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy</span></td>
+                      <td><span class="badge badge-thuy">Ủng hộ Ông Nguyễn Đức Thụy</span></td>
                       <td style="text-align:center;font-weight:800;">149 <span style="color:var(--text-muted);">(143)</span></td>
                       <td style="text-align:center;font-weight:800;color:var(--thuy-red);">769 <span style="color:var(--text-muted);">(742)</span></td>
                       <td style="text-align:center;font-weight:900;color:var(--thuy-red);">687 (#2) <span style="color:var(--text-muted);">(667)</span></td>
@@ -4730,7 +4730,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Nguyễn Đức Thụy')">Xem 918 Link ↗</button></td>
                     </tr>
                     <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Liên danh')" style="cursor:pointer;">
-                      <td><span class="badge badge-coal">(Phương án Liên danh) Liên danh (TS. Tuấn CT + Ông Thụy PCT TC)</span></td>
+                      <td><span class="badge badge-coal">Phương án Liên danh (TS. Tuấn CT + Ông Thụy PCT TC)</span></td>
                       <td style="text-align:center;font-weight:800;">94 <span style="color:var(--text-muted);">(91)</span></td>
                       <td style="text-align:center;font-weight:800;">275 <span style="color:var(--text-muted);">(256)</span></td>
                       <td style="text-align:center;font-weight:900;color:var(--tuan-blue);">255 <span style="color:var(--text-muted);">(237)</span></td>
@@ -4739,7 +4739,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Liên danh')">Xem 369 Link ↗</button></td>
                     </tr>
                     <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Ứng viên khác')" style="cursor:pointer;">
-                      <td><span class="badge badge-gray">(Ứng viên khác) Ủng hộ Ứng viên khác (Đức/Vượng/Vũ...)</span></td>
+                      <td><span class="badge badge-gray">Ủng hộ Ứng viên khác (Đức/Vượng/Vũ...)</span></td>
                       <td style="text-align:center;font-weight:800;">31 <span style="color:var(--text-muted);">(29)</span></td>
                       <td style="text-align:center;font-weight:800;">420 <span style="color:var(--text-muted);">(393)</span></td>
                       <td style="text-align:center;font-weight:800;">402 <span style="color:var(--text-muted);">(375)</span></td>
@@ -4748,7 +4748,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Ứng viên khác')">Xem 451 Link ↗</button></td>
                     </tr>
                     <tr onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Phản biện')" style="cursor:pointer;">
-                      <td><span class="badge badge-opp">(Phản biện) Phản đối / Hoài nghi / Cảnh báo</span></td>
+                      <td><span class="badge badge-opp">Phản biện / Hoài nghi / Cảnh báo</span></td>
                       <td style="text-align:center;font-weight:800;">46 <span style="color:var(--text-muted);">(45)</span></td>
                       <td style="text-align:center;font-weight:800;color:#B8292F;">633 <span style="color:var(--text-muted);">(584)</span></td>
                       <td style="text-align:center;font-weight:900;color:#B8292F;">573 <span style="color:var(--text-muted);">(528)</span></td>
@@ -4757,7 +4757,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','Phản biện')">Xem 679 Link ↗</button></td>
                     </tr>
                     <tr onclick="openSourceLedgerWithFilter('ALL','ALL','S6-CMT','')" style="cursor:pointer;">
-                      <td><span class="badge badge-gray">(Đưa tin trung lập) Trung lập / Đưa tin thể chế</span></td>
+                      <td><span class="badge badge-gray">Trung lập / Đưa tin thể chế</span></td>
                       <td style="text-align:center;font-weight:800;">682 <span style="color:var(--text-muted);">(154)</span></td>
                       <td style="text-align:center;font-weight:800;">17.851 <span style="color:var(--text-muted);">(10.091)</span></td>
                       <td style="text-align:center;font-weight:800;">16.969 <span style="color:var(--text-muted);">(9.596)</span></td>
@@ -4772,7 +4772,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;color:#166534;">19.652 (12.091)</td>
                       <td style="text-align:center;color:#B8292F;">1.115 (5,37%)</td>
                       <td><strong>nhóm bày tỏ quan điểm nhân sự: 2.916 Tổng BL = 2.683 Tự nhiên + 233 bình luận mẫu</strong></td>
-                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Mở Sổ cái ↗</button></td>
+                      <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn audit-btn" onclick="openSourceLedgerWithFilter('ALL','ALL','ALL','')">Mở Danh mục ↗</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -4782,7 +4782,7 @@ HTML_TEMPLATE_PART2 = r"""
         </div>
 
         
-          <!-- SUB-PANEL 3: POST x COMMENT DIVERGENCE & SEEDER SIMHASH & CLASHES -->
+          <!-- SUB-PANEL 3: POST x COMMENT DIVERGENCE & CLASHES -->
         <div id="p2410_div" class="p2410-pane" >
           <div class="grid-2" style="margin-bottom:14px;">
             <div class="panel" style="margin-bottom:0;">
@@ -4799,17 +4799,17 @@ HTML_TEMPLATE_PART2 = r"""
                       <th>Định hướng bài đăng</th>
                       <th>Số bài</th>
                       <th>Tổng BL</th>
-                      <th>BL (ủng hộ Ông Thụy) Thụy</th>
-                      <th>BL (ủng hộ TS. Tuấn) Tuấn</th>
-                      <th>BL (phương án liên danh) liên danh</th>
-                      <th>BL (ứng viên khác) khác</th>
-                      <th>BL (phản biện) phản đối</th>
+                      <th>BL ủng hộ Ông Thụy</th>
+                      <th>BL ủng hộ TS. Tuấn</th>
+                      <th>BL đề xuất Liên danh</th>
+                      <th>BL ứng viên khác</th>
+                      <th>BL phản biện / phản đối</th>
                       <th>Độ lệch / đảo chiều khán giả</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr style="background:#F9E5E6;">
-                      <td><strong>(Ủng hộ Ông Thụy) Bài ủng hộ Ông Thụy (Bầu Thụy)</strong></td>
+                      <td><strong>Bài ủng hộ Ông Thụy (Bầu Thụy)</strong></td>
                       <td style="text-align:center;font-weight:800;">149</td>
                       <td style="text-align:center;font-weight:800;">2.940</td>
                       <td style="text-align:center;font-weight:800;color:var(--thuy-red);">467 (43,16%)</td>
@@ -4817,10 +4817,10 @@ HTML_TEMPLATE_PART2 = r"""
                       <td style="text-align:center;font-weight:700;">117 (10,81%)</td>
                       <td style="text-align:center;">81 (7,46%)</td>
                       <td style="text-align:center;font-weight:900;color:#B8292F;">268 (24,78%)</td>
-                      <td><strong style="color:#B8292F;">56,84% BL chính kiến lệch pha bài PR</strong></td>
+                      <td><strong style="color:#B8292F;">56,84% BL chính kiến trái chiều bài PR</strong></td>
                     </tr>
                     <tr style="background:#EDF3FC;">
-                      <td><strong>(Ủng hộ TS. Tuấn) Bài ủng hộ TS. Trần Quốc Tuấn</strong></td>
+                      <td><strong>Bài ủng hộ TS. Trần Quốc Tuấn</strong></td>
                       <td style="text-align:center;font-weight:800;">135</td>
                       <td style="text-align:center;font-weight:800;">2.456</td>
                       <td style="text-align:center;">35 (5,98%)</td>
@@ -4831,7 +4831,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong style="color:#166534;">78,63% đồng thuận chọn TS. Tuấn · Chỉ 9,57% phản đối</strong></td>
                     </tr>
                     <tr>
-                      <td><strong>(Phương án Liên danh) Bài đề xuất Liên danh</strong></td>
+                      <td><strong>Bài đề xuất Liên danh</strong></td>
                       <td style="text-align:center;font-weight:800;">94</td>
                       <td style="text-align:center;font-weight:800;">1.022</td>
                       <td style="text-align:center;">78 (22,94%)</td>
@@ -4842,7 +4842,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>45,29% nghiêng phương án TS. Tuấn làm Chủ tịch</strong></td>
                     </tr>
                     <tr>
-                      <td><strong>(Ứng viên khác) Bài Ứng viên khác</strong></td>
+                      <td><strong>Bài về ứng viên khác</strong></td>
                       <td style="text-align:center;font-weight:800;">31</td>
                       <td style="text-align:center;font-weight:800;">1.274</td>
                       <td style="text-align:center;">15 (6,25%)</td>
@@ -4853,7 +4853,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>Tập trung hoài niệm Bầu Đức &amp; PVF</strong></td>
                     </tr>
                     <tr>
-                      <td><strong>(Phản biện) Bài Phản biện / Cảnh báo</strong></td>
+                      <td><strong>Bài phản biện / cảnh báo</strong></td>
                       <td style="text-align:center;font-weight:800;">46</td>
                       <td style="text-align:center;font-weight:800;">714</td>
                       <td style="text-align:center;">27 (20,00%)</td>
@@ -4864,7 +4864,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>Cộng hưởng cảnh báo tiền lệ bỏ giải CLB</strong></td>
                     </tr>
                     <tr>
-                      <td><strong>(Đưa tin trung lập) Bài Trung lập / Đưa tin</strong></td>
+                      <td><strong>Bài đưa tin trung lập</strong></td>
                       <td style="text-align:center;font-weight:800;">682</td>
                       <td style="text-align:center;font-weight:800;">12.361</td>
                       <td style="text-align:center;">147 (27,53%)</td>
@@ -4965,7 +4965,7 @@ HTML_TEMPLATE_PART2 = r"""
                       <td><strong>Đảm bảo 100% đường dẫn bài viết hoạt động nguyên vẹn</strong>; tích hợp đủ cả 3 liên kết trên từng dòng: <strong>Link Trang Chủ Kênh</strong>, <strong>Link Bài/Video Gốc</strong> &amp; <strong>Link Mốc Giây ?t=</strong>.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','YT-VID','')">Mở Bài &amp; Mốc giây ↗</button></td>
                     </tr>
-                    <tr onclick="switchTab('tab-comments');switchCommentSub('all20767');" style="cursor:pointer;" title="Bấm để mở Sổ cái Toàn bộ 20.767 Bình luận &amp; Link gốc tại mục Bình luận">
+                    <tr onclick="switchTab('tab-comments');switchCommentSub('all20767');" style="cursor:pointer;" title="Bấm để mở Danh sách toàn bộ 20.767 bình luận &amp; đường dẫn gốc">
                       <td><strong>3. Cơ sở dữ liệu bình luận đa nền tảng</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">20.767 BL (2.916 bình luận bày tỏ quan điểm nhân sự + 17.851 BL (Đưa tin trung lập))</span></td>
                       <td style="text-align:center;font-weight:800;">20.767 Link BL<br/><span style="font-size:10.5px;color:var(--text-muted);">21.461 URL duy nhất</span></td>
                       <td style="text-align:center;font-weight:900;color:#166534;">20.767 / 20.767 (100%)</td>
@@ -4986,15 +4986,15 @@ HTML_TEMPLATE_PART2 = r"""
                       <td>Tích hợp toàn bộ <strong>269 trích dẫn nguyên văn</strong> vào Danh mục nguồn (<code>#QUOTE-001..269</code>); <strong>chuẩn hóa toàn bộ đường dẫn trích dẫn gốc</strong>; gắn cờ 08 trích dẫn lệch chủ đề.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')">Mở 269 Trích dẫn ↗</button></td>
                     </tr>
-                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')" style="cursor:pointer;" title="Bấm để mở 83 biên bản sàng lọc dữ liệu ngoài phạm vi tại Danh mục nguồn đối chiếu (Mục 05)">
-                      <td><strong>6. Biên bản sàng lọc dữ liệu ngoài phạm vi bầu cử</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">83 video ngoài phạm vi bị chặn (38 TT · 45 YT)</span></td>
+                    <tr onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')" style="cursor:pointer;" title="Bấm để mở 83 mục sàng lọc ngoài phạm vi dữ liệu ngoài phạm vi tại Danh mục nguồn đối chiếu (Mục 05)">
+                      <td><strong>6. Danh sách dữ liệu ngoài phạm vi đã loại trừ</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">83 video ngoài phạm vi bị chặn (38 TT · 45 YT)</span></td>
                       <td style="text-align:center;font-weight:800;">83 URL</td>
                       <td style="text-align:center;font-weight:900;color:#166534;">83 / 83 (100%)</td>
                       <td>Tích hợp toàn bộ <strong>83 bằng chứng sàng lọc hai lớp</strong> vào Danh mục nguồn (<code>#NOISE-001..083</code>) để kiểm chứng độc lập.</td>
                       <td style="text-align:center;" onclick="event.stopPropagation();"><button type="button" class="fc-mini-btn primary-link" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Mở 83 Lọc nhiễu ↗</button></td>
                     </tr>
                     <tr style="background:#EFECE6;font-weight:900;">
-                      <td>TỔNG HỢP SỔ CÁI KIỂM CHỨNG TOÀN DIỆN</td>
+                      <td>TỔNG HỢP DANH MỤC NGUỒN ĐỐI CHIẾU TOÀN DIỆN</td>
                       <td style="text-align:center;">100% Toàn Kho</td>
                       <td style="text-align:center;color:#166534;">26.743 bản ghi · 29.696 đường dẫn</td>
                       <td><strong>Khôi phục tổng cộng 1.346 URL bị cắt độ dài đường dẫn &amp; 133 Link phản hồi FB · 100% dòng có liên kết bấm trực tiếp · 0 thiếu sót</strong></td>
@@ -5075,7 +5075,7 @@ HTML_TEMPLATE_PART2 = r"""
               <div style="display:flex;gap:8px;flex-wrap:wrap;">
                 <button type="button" class="btn btn-primary" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','')">Xem 45 bản ghi gắn nhãn lưu ý tại Danh mục nguồn &rarr;</button>
                 <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','TOP-QUOTE','')">Xem 269 trích dẫn tiêu biểu &rarr;</button>
-                <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Xem 83 biên bản sàng lọc dữ liệu &rarr;</button>
+                <button type="button" class="btn btn-outline" style="font-size:11.5px;padding:5px 10px;" onclick="openSourceLedgerWithFilter('ALL','ALL','NOISE-AUDIT','')">Xem 83 mục sàng lọc ngoài phạm vi dữ liệu &rarr;</button>
               </div>
             </div>
             <div class="table-wrap" style="max-height:360px;overflow-y:auto;">
@@ -5167,11 +5167,11 @@ HTML_TEMPLATE_PART2 = r"""
   <!-- GLOBAL FLOATING EDITORIAL TOOLTIP -->
   <div id="edFloatingTooltip" class="ed-floating-tooltip"></div>
 
-  <!-- MODAL FOR gỡ băng âm thanh TRANSCRIPT & FULL DETAILS -->
+  <!-- MODAL FOR trích xuất lời thoại TRANSCRIPT & FULL DETAILS -->
   <div class="modal-backdrop" id="detailModal" onclick="if(event.target===this)closeModal()">
     <div class="modal-box">
       <div class="modal-hdr">
-        <strong id="modalTitle" style="font-size:14.5px;">Chi tiết Hồ sơ & Nội dung chi tiết và văn bản gỡ băng âm thanh</strong>
+        <strong id="modalTitle" style="font-size:14.5px;">Chi tiết Hồ sơ & Nội dung chi tiết và văn bản lời thoại</strong>
         <button class="btn btn-outline" onclick="closeModal()">Đóng cửa sổ</button>
       </div>
       <div class="modal-body" id="modalContent"></div>
@@ -5485,7 +5485,7 @@ HTML_TEMPLATE_PART3 = r"""
         if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (614), Ông Nguyễn Đức Thụy (481) và Ông Nguyễn Xuân Vũ (125)';
         if (capEl) capEl.textContent = 'Lượng bài đăng tăng đột biến vào ngày 15/10 (do 33 bài đăng đồng loạt của cụm "Phấn Đấu") và giai đoạn 19–22/10 (khi thông tin đề cử và gói tài trợ 600–1.000 tỷ đồng/năm xuất hiện). Bấm vào bất kỳ cột ngày nào để mở danh sách bài viết của ngày đó.';
       } else if (mode === 'cum') {
-        if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy tiến độ phủ truyền thông 24 ngày (01/10 – 24/10/2026)';
+        if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy kế độ phủ truyền thông 24 ngày (01/10 – 24/10/2026)';
         if (subEl) subEl.textContent = 'Cộng dồn lượt bài viết và video đề cập từng ứng viên qua 24 ngày theo dõi';
         if (capEl) capEl.textContent = 'Tính lũy kế 24 ngày, TS. Trần Quốc Tuấn dẫn đầu với 614 lượt bài viết và video đề cập, tiếp theo là Ông Nguyễn Đức Thụy (481 lượt) và Ông Nguyễn Xuân Vũ (125 lượt). Khoảng cách độ phủ duy trì ổn định ngay cả trong tuần cao điểm trước Đại hội.';
       } else if (mode === 'net') {
@@ -5790,7 +5790,7 @@ HTML_TEMPLATE_PART3 = r"""
         btn.parentElement.querySelectorAll('.ed-mini-pill').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
       }
-      const sampleEl = document.getElementById('stanceBarSampleLbl');
+      const sampleEl = document.getElementById('stanceBarSampleLbl') || { textContent: '' };
       const lName = document.getElementById('stanceLeftName');
       const lBig = document.getElementById('stanceLeftBig');
       const lSub = document.getElementById('stanceLeftSub');
@@ -5804,10 +5804,10 @@ HTML_TEMPLATE_PART3 = r"""
         sampleEl.textContent = 'Bộ dữ liệu toàn diện: 2.916 bình luận bày tỏ quan điểm = 2.683 tự nhiên + 233 bình luận mẫu (Tín nhiệm ròng: TS. Tuấn +725 so với Ông Thụy +120)';
         lName.textContent = 'TS. Trần Quốc Tuấn (#1 Tự nhiên)';
         lBig.textContent = '1.021';
-        lSub.textContent = 'BL Tự nhiên chọn làm CT ((Ủng hộ TS. Tuấn) 766 thẳng + (Phương án Liên danh) 255 Liên danh · 1.094 Tổng BL · Ròng +725)';
+        lSub.textContent = 'bình luận tự nhiên chọn làm Chủ tịch (766 ủng hộ trực tiếp + 255 đề xuất Liên danh · 1.094 tổng · Ròng +725)';
         rName.textContent = 'Ông Nguyễn Đức Thụy (#2 Tự nhiên)';
         rBig.textContent = '687';
-        rSub.textContent = 'BL Tự nhiên ủng hộ (Ủng hộ Ông Thụy) (769 Tổng BL · 82 bình luận mẫu = 10,66% · Phản đối trực tiếp: 567 · Ròng +120)';
+        rSub.textContent = 'bình luận tự nhiên ủng hộ trực tiếp (769 tổng · 82 bình luận trùng lặp = 10,66% · Phản đối trực tiếp: 567 · Ròng +120)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:38.1%;" onclick="jumpToComments('Tuấn')">TS. Tuấn: 1.021 (38,1%)</div>
           <div class="ed-flat-seg neutral" style="width:36.3%;" onclick="jumpToComments('Phản đối')">Phản đối & Khác: 975 (36,3%)</div>
@@ -5817,15 +5817,15 @@ HTML_TEMPLATE_PART3 = r"""
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm: 2.712 bình luận bày tỏ quan điểm nhân sự = 2.495 Tự nhiên + 217 bình luận mẫu (Trên 587 bài/video lõi)';
         lName.textContent = 'TS. Tuấn (Bộ dữ liệu trọng tâm Tự nhiên)';
         lBig.textContent = '925';
-        lSub.textContent = 'BL Tự nhiên chọn làm CT ((Ủng hộ TS. Tuấn) 688 thẳng + (Phương án Liên danh) 237 Liên danh · 993 Tổng BL · Ròng +653)';
+        lSub.textContent = 'bình luận tự nhiên chọn làm Chủ tịch (688 ủng hộ trực tiếp + 237 đề xuất Liên danh · 993 tổng · Ròng +653)';
         rName.textContent = 'Ông Thụy (Bộ dữ liệu trọng tâm Tự nhiên)';
         rBig.textContent = '667';
-        rSub.textContent = 'BL Tự nhiên ủng hộ (Ủng hộ Ông Thụy) (742 Tổng BL · 75 bình luận mẫu = 10,11% · Phản đối trực tiếp: 522 · Ròng +145)';
+        rSub.textContent = 'bình luận tự nhiên ủng hộ trực tiếp (742 tổng · 75 bình luận trùng lặp = 10,11% · Phản đối trực tiếp: 522 · Ròng +145)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:37.1%;" onclick="jumpToComments('Tuấn')">TS. Tuấn: 925 (37,1%)</div>
           <div class="ed-flat-seg neutral" style="width:36.2%;" onclick="jumpToComments('Phản đối')">Phản đối & Khác: 903 (36,2%)</div>
           <div class="ed-flat-seg thuy" style="width:26.7%;" onclick="jumpToComments('Thụy')">Ông Thụy: 667 (26,7%)</div>`;
-        note.innerHTML = `<strong>Đối soát Bộ dữ liệu trọng tâm (12.803 BL = 12.091 Tự nhiên + 712 bình luận mẫu):</strong> Ngay trên tập lõi khắt khe nhất, <strong>(Ủng hộ TS. Tuấn) TS. Tuấn vẫn dẫn đầu #1 Tự nhiên (688 BL Tự nhiên so với 667 BL Tự nhiên của (Ủng hộ Ông Thụy) Ông Thụy)</strong>, đồng thời tỷ lệ <code>Ủng hộ : Phản đối</code> trực tiếp của TS. Tuấn đạt <strong>19,66 : 1</strong> (688 vs 35) so với <strong>1,28 : 1</strong> (667 vs 522) của Ông Thụy.`;
+        note.innerHTML = `<strong>Đối soát Bộ dữ liệu trọng tâm (12.803 BL = 12.091 Tự nhiên + 712 bình luận mẫu):</strong> Ngay trên tập lõi khắt khe nhất, <strong>TS. Trần Quốc Tuấn vẫn dẫn đầu về bình luận tự nhiên (688 bình luận tự nhiên so với 667 của Ông Nguyễn Đức Thụy)</strong>, đồng thời tỷ lệ <code>Ủng hộ : Phản đối</code> trực tiếp của TS. Tuấn đạt <strong>19,66 : 1</strong> (688 vs 35) so với <strong>1,28 : 1</strong> (667 vs 522) của Ông Thụy.`;
       } else if (mode === 'h2h') {
         sampleEl.textContent = 'Tín hiệu bình luận có lập trường đối đầu trực tiếp (N = 991)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
@@ -5836,33 +5836,33 @@ HTML_TEMPLATE_PART3 = r"""
         rSub.textContent = '405 tín hiệu (312 ủng hộ thẳng + 93 Liên danh 2)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:59.1%;"
-               onmouseenter="showEdTooltip(event, '<strong>Khối chọn TS. Trần Quốc Tuấn làm Chủ tịch</strong><div class=ed-tt-row><span>Tỷ lệ đối đầu:</span><strong>59,1% (586 / 991)</strong></div><div class=ed-tt-row><span>Ủng hộ thẳng (KB1):</span><span>465 tín hiệu</span></div><div class=ed-tt-row><span>Liên danh 1 (TS. Tuấn CT + Ông Thụy Phó):</span><span>121 tín hiệu</span></div><div class=ed-tt-hint>Bấm để lọc bình luận trong Sổ cái &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Nhóm chọn TS. Trần Quốc Tuấn làm Chủ tịch</strong><div class=ed-tt-row><span>Tỷ lệ đối đầu:</span><strong>59,1% (586 / 991)</strong></div><div class=ed-tt-row><span>Ủng hộ thẳng (KB1):</span><span>465 tín hiệu</span></div><div class=ed-tt-row><span>Liên danh 1 (TS. Tuấn CT + Ông Thụy Phó):</span><span>121 tín hiệu</span></div><div class=ed-tt-hint>Bấm để lọc danh sách bình luận &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                onclick="jumpToComments('Tuấn')">TS. Tuấn 59,1% (586)</div>
           <div class="ed-flat-seg thuy" style="width:40.9%;"
-               onmouseenter="showEdTooltip(event, '<strong>Khối chọn Ông Nguyễn Đức Thụy làm Chủ tịch</strong><div class=ed-tt-row><span>Tỷ lệ đối đầu:</span><strong>40,9% (405 / 991)</strong></div><div class=ed-tt-row><span>Ủng hộ thẳng (KB3):</span><span>312 tín hiệu</span></div><div class=ed-tt-row><span>Liên danh 2 (Ông Thụy CT + TS. Tuấn Phó):</span><span>93 tín hiệu</span></div><div class=ed-tt-hint>Bấm để lọc bình luận trong Sổ cái &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Nhóm chọn Ông Nguyễn Đức Thụy làm Chủ tịch</strong><div class=ed-tt-row><span>Tỷ lệ đối đầu:</span><strong>40,9% (405 / 991)</strong></div><div class=ed-tt-row><span>Ủng hộ thẳng (KB3):</span><span>312 tín hiệu</span></div><div class=ed-tt-row><span>Liên danh 2 (Ông Thụy CT + TS. Tuấn Phó):</span><span>93 tín hiệu</span></div><div class=ed-tt-hint>Bấm để lọc danh sách bình luận &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                onclick="jumpToComments('Thụy')">Ông Thụy 40,9% (405)</div>`;
         note.innerHTML = `<strong>Ngữ cảnh mẫu 7 kịch bản (N = 1.414 bình luận mã hóa chuyên sâu):</strong> Ngoài 991 tín hiệu chọn ngôi Chủ tịch ở trên, có <strong>423 tín hiệu phản đối/cảnh báo (29,9%)</strong> gồm: 210 phản đối Ông Thụy (14,9%), 112 phản đối TS. Tuấn (7,9%) và 101 phản đối cả hai / đề cử người thứ ba (7,1%).`;
       } else if (mode === 'all1414') {
         sampleEl.textContent = 'Phân bổ toàn bộ 7 kịch bản bình luận (N = 1.414)';
-        lName.textContent = 'Khối chọn TS. Tuấn CT';
+        lName.textContent = 'Nhóm chọn TS. Tuấn làm Chủ tịch';
         lBig.textContent = '41,4%';
         lSub.textContent = '586 / 1.414 tín hiệu toàn mẫu (KB1: 32,9% + KB2: 8,6%)';
-        rName.textContent = 'Khối chọn Ông Thụy CT';
+        rName.textContent = 'Nhóm chọn Ông Thụy làm Chủ tịch';
         rBig.textContent = '28,6%';
         rSub.textContent = '405 / 1.414 tín hiệu toàn mẫu (KB3: 22,1% + KB4: 6,6%)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:41.4%;"
-               onmouseenter="showEdTooltip(event, '<strong>Khối TS. Tuấn CT trên toàn mẫu (N = 1.414)</strong><div class=ed-tt-row><span>Số lượng:</span><strong>586 / 1.414 (41,4%)</strong></div><div class=ed-tt-hint>Bấm để mở Sổ cái Bình luận &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Nhóm chọn TS. Tuấn làm Chủ tịch trên toàn mẫu (N = 1.414)</strong><div class=ed-tt-row><span>Số lượng:</span><strong>586 / 1.414 (41,4%)</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bình luận &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                onclick="jumpToComments('Tuấn')">TS. Tuấn CT: 41,4% (586)</div>
           <div class="ed-flat-seg neutral" style="width:29.9%;"
-               onmouseenter="showEdTooltip(event, '<strong>Khối Phản đối / Cảnh báo / Đề cử khác (KB5–KB7)</strong><div class=ed-tt-row><span>Tổng số:</span><strong>423 / 1.414 (29,9%)</strong></div><div class=ed-tt-row><span>KB5 (Phản đối Ông Thụy):</span><span>210 (14,9%)</span></div><div class=ed-tt-row><span>KB6 (Phản đối TS. Tuấn):</span><span>112 (7,9%)</span></div><div class=ed-tt-row><span>KB7 (Khác / Bầu Đức):</span><span>101 (7,1%)</span></div><div class=ed-tt-hint>Bấm để lọc bình luận phản đối &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Nhóm Phản biện / Cảnh báo / Đề cử khác (KB5–KB7)</strong><div class=ed-tt-row><span>Tổng số:</span><strong>423 / 1.414 (29,9%)</strong></div><div class=ed-tt-row><span>KB5 (Phản đối Ông Thụy):</span><span>210 (14,9%)</span></div><div class=ed-tt-row><span>KB6 (Phản đối TS. Tuấn):</span><span>112 (7,9%)</span></div><div class=ed-tt-row><span>KB7 (Khác / Bầu Đức):</span><span>101 (7,1%)</span></div><div class=ed-tt-hint>Bấm để lọc bình luận phản đối &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                onclick="jumpToComments('Phản đối')">Phản đối / Khác: 29,9% (423)</div>
           <div class="ed-flat-seg thuy" style="width:28.7%;"
-               onmouseenter="showEdTooltip(event, '<strong>Khối Ông Thụy CT trên toàn mẫu (N = 1.414)</strong><div class=ed-tt-row><span>Số lượng:</span><strong>405 / 1.414 (28,6%)</strong></div><div class=ed-tt-hint>Bấm để mở Sổ cái Bình luận &rarr;</div>')"
+               onmouseenter="showEdTooltip(event, '<strong>Nhóm chọn Ông Thụy làm Chủ tịch trên toàn mẫu (N = 1.414)</strong><div class=ed-tt-row><span>Số lượng:</span><strong>405 / 1.414 (28,6%)</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bình luận &rarr;</div>')"
                onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                onclick="jumpToComments('Thụy')">Ông Thụy CT: 28,6% (405)</div>`;
         note.innerHTML = `<strong>Cấu trúc 7 kịch bản (N = 1.414):</strong> KB1 TS. Tuấn thẳng (465) · KB2 Liên danh 1 TS. Tuấn CT (121) · KB3 Ông Thụy thẳng (312) · KB4 Liên danh 2 Ông Thụy CT (93) · KB5 Phản đối Ông Thụy (210) · KB6 Phản đối TS. Tuấn (112) · KB7 Khác/Bầu Đức (101).`;
@@ -5885,30 +5885,30 @@ HTML_TEMPLATE_PART3 = r"""
                onclick="jumpToComments('Liên danh')">LD2: Ông Thụy CT + TS. Tuấn Phó CM (43,5% · 93)</div>`;
         note.innerHTML = `<strong>Xu hướng đồng thuận Liên danh (Phương án Liên danh) (255 BL Tự nhiên trên Bộ dữ liệu toàn diện · Tỷ lệ đồng thuận 8,79 : 1):</strong> Đông đảo độc giả đề xuất kết hợp thế mạnh ngoại giao quốc tế FIFA/AFC của TS. Tuấn với nguồn lực tài trợ của Ông Thụy.`;
       } else if (mode === 'fb887') {
-        sampleEl.textContent = 'Tín hiệu bình luận trên Facebook (Sổ cái 1.888 BL ẩn danh · Đủ 1.771 bình luận bày tỏ quan điểm nhân sự toàn diện trên 15.355 BL FB)';
-        lName.textContent = 'TS. Tuấn (Facebook (Ủng hộ TS. Tuấn)+(Phương án Liên danh))';
+        sampleEl.textContent = 'Tín hiệu bình luận trên Facebook (Danh sách 1.888 bình luận ẩn danh · 1.771 bình luận nêu quan điểm nhân sự trên 15.355 bình luận FB)';
+        lName.textContent = 'TS. Trần Quốc Tuấn (Facebook — Trực tiếp & Liên danh)';
         lBig.textContent = '750';
-        lSub.textContent = 'BL Tự nhiên trên FB (598 (Ủng hộ TS. Tuấn) thẳng + 152 (Phương án Liên danh) Liên danh · Mốc 22/10: 52,1%)';
-        rName.textContent = 'Ông Thụy (Facebook (Ủng hộ Ông Thụy))';
+        lSub.textContent = 'bình luận tự nhiên trên Facebook (598 ủng hộ trực tiếp + 152 đề xuất Liên danh · Tỷ trọng: 52,1%)';
+        rName.textContent = 'Ông Nguyễn Đức Thụy (Facebook — Ủng hộ trực tiếp)';
         rBig.textContent = '373';
-        rSub.textContent = 'BL Tự nhiên ủng hộ (Ủng hộ Ông Thụy) trên FB (Phản đối (Phản biện) trên FB: 351 · Mốc 22/10: 30,3%)';
+        rSub.textContent = 'bình luận tự nhiên ủng hộ trên Facebook (Phản biện trên Facebook: 351 · Tỷ trọng: 30,3%)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:52.1%;" onclick="jumpToComments('Tuấn')">FB TS. Tuấn CT: 750 Tự nhiên (52,1%)</div>
           <div class="ed-flat-seg neutral" style="width:17.6%;" onclick="jumpToComments('Phản đối')">Phản biện / Khác (586 Tự nhiên)</div>
-          <div class="ed-flat-seg thuy" style="width:30.3%;" onclick="jumpToComments('Thụy')">FB Ông Thụy (Ủng hộ Ông Thụy): 373 Tự nhiên (30,3%)</div>`;
+          <div class="ed-flat-seg thuy" style="width:30.3%;" onclick="jumpToComments('Thụy')">FB Ông Thụy: 373 tự nhiên (30,3%)</div>`;
         note.innerHTML = `<strong>Đặc trưng độc giả Facebook (15.355 tổng BL · 1.888 BL chính kiến đã ẩn danh tài khoản cá nhân):</strong> Cộng đồng các diễn đàn bóng đá chuyên sâu trên Facebook nghiêng mạnh về TS. Trần Quốc Tuấn (598 BL Tự nhiên (Ủng hộ TS. Tuấn) + 152 (Phương án Liên danh) = 750 so với 373 BL (Ủng hộ Ông Thụy) của Ông Thụy).`;
       } else if (mode === 'yttt527') {
-        sampleEl.textContent = 'Tín hiệu bình luận trên YouTube & TikTok (Sổ cái 1.457 BL · Đủ 1.145 bình luận bày tỏ quan điểm nhân sự toàn diện trên 5.412 BL YT/TT)';
-        lName.textContent = 'TS. Tuấn (YT + TikTok (Ủng hộ TS. Tuấn)+(Phương án Liên danh))';
+        sampleEl.textContent = 'Tín hiệu bình luận trên YouTube & TikTok (Danh sách 1.457 bình luận · 1.145 bình luận nêu quan điểm nhân sự trên 5.412 bình luận YT/TT)';
+        lName.textContent = 'TS. Trần Quốc Tuấn (YouTube & TikTok — Trực tiếp & Liên danh)';
         lBig.textContent = '271';
-        lSub.textContent = 'BL Tự nhiên trên YT/TT (168 (Ủng hộ TS. Tuấn) thẳng: 126 YT + 42 TT · 103 (Phương án Liên danh) Liên danh)';
-        rName.textContent = 'Ông Thụy (YT + TikTok (Ủng hộ Ông Thụy))';
+        lSub.textContent = 'bình luận tự nhiên trên YouTube & TikTok (168 ủng hộ trực tiếp: 126 YT + 42 TT · 103 đề xuất Liên danh)';
+        rName.textContent = 'Ông Nguyễn Đức Thụy (YouTube & TikTok — Ủng hộ trực tiếp)';
         rBig.textContent = '314';
-        rSub.textContent = 'BL Tự nhiên ủng hộ (Ủng hộ Ông Thụy) trên YT/TT (119 YT + 195 TT · Phản đối (Phản biện) YT/TT: 222)';
+        rSub.textContent = 'bình luận tự nhiên ủng hộ trên YouTube & TikTok (119 YT + 195 TT · Phản biện YT/TT: 222)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:27.8%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT TS. Tuấn CT: 271 Tự nhiên</div>
-          <div class="ed-flat-seg neutral" style="width:40.0%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">Phản biện (Phản biện) (222) + Khác (Ứng viên khác) (167)</div>
-          <div class="ed-flat-seg thuy" style="width:32.2%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT Ông Thụy (Ủng hộ Ông Thụy): 314 Tự nhiên</div>`;
+          <div class="ed-flat-seg neutral" style="width:40.0%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">Phản biện (222) & Ứng viên khác (167)</div>
+          <div class="ed-flat-seg thuy" style="width:32.2%;" onclick="switchTab('tab-comments');switchCommentSub('yttt604')">YT/TT Ông Thụy: 314 tự nhiên</div>`;
         note.innerHTML = `<strong>Đặc trưng khán giả Video (1.457 bình luận chính kiến YouTube & TikTok):</strong> Khán giả trẻ trên TikTok phản ứng tích cực với từ khóa "1.000 tỷ" (195 BL Tự nhiên (Ủng hộ Ông Thụy)), trong khi khán giả bình luận dài trên YouTube nghiêng về TS. Tuấn (126 (Ủng hộ TS. Tuấn) + 88 (Phương án Liên danh) = 214) và có tỷ lệ phản biện/cảnh giác cao.`;
       }
     }
@@ -5918,7 +5918,7 @@ HTML_TEMPLATE_PART3 = r"""
         btn.parentElement.querySelectorAll('.ed-mini-pill').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
       }
-      const sampleEl = document.getElementById('covBarSampleLbl');
+      const sampleEl = document.getElementById('covBarSampleLbl') || { textContent: '' };
       const lName = document.getElementById('covLeftName');
       const lBig = document.getElementById('covLeftBig');
       const lSub = document.getElementById('covLeftSub');
@@ -5929,46 +5929,46 @@ HTML_TEMPLATE_PART3 = r"""
       const note = document.getElementById('covBarFootNote');
 
       if (mode === 'v45_1137') {
-        sampleEl.textContent = 'Bộ dữ liệu toàn diện: 1.137 bài/video (568 FB · 310 YT · 259 TT · 36,88M lượt xem) + 81 bài báo | Sổ cái: 1.409 bài/video/báo';
+        sampleEl.textContent = 'Bộ dữ liệu toàn diện: 1.137 bài viết & video (568 FB · 310 YT · 259 TT · 36,88M lượt xem) + 81 bài báo | Tổng hợp: 1.409 bài/video/báo';
         lName.textContent = 'Nhóm bài viết ủng hộ TS. Trần Quốc Tuấn (135 trực tiếp + 94 Liên danh)';
         lBig.textContent = '229';
-        lSub.textContent = 'bài viết và video ủng hộ TS. Tuấn làm Chủ tịch (135 bài trực tiếp + 94 bài đề xuất Liên danh · Lũy tiến: 618)';
+        lSub.textContent = 'bài viết và video ủng hộ TS. Tuấn làm Chủ tịch (135 bài trực tiếp + 94 bài đề xuất Liên danh · Lũy kế: 618)';
         rName.textContent = 'Nhóm bài viết ủng hộ Ông Nguyễn Đức Thụy';
         rBig.textContent = '149';
-        rSub.textContent = 'bài/video toàn diện ủng hộ thẳng (Ủng hộ Ông Thụy) (82 FB · 33 YT · 34 TT · 56,84% BL bên dưới lệch pha · Lũy tiến: 485)';
+        rSub.textContent = 'bài viết và video ủng hộ trực tiếp (82 FB · 33 YT · 34 TT · 56,84% bình luận bên dưới trái chiều · Lũy kế: 485)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:20.1%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 20,1%</div>
-          <div class="ed-flat-seg neutral" style="width:66.8%;" onclick="switchTab('tab-press-fb')">(Đưa tin trung lập) Trung lập (682) · (Phản biện) Phản biện (46) · (Ứng viên khác) Khác (31)</div>
+          <div class="ed-flat-seg neutral" style="width:66.8%;" onclick="switchTab('tab-press-fb')">Đưa tin trung lập (682) · Phản biện (46) · Ứng viên khác (31)</div>
           <div class="ed-flat-seg thuy" style="width:13.1%;" onclick="switchTab('tab-press-fb')">Thụy: 13,1%</div>`;
         note.innerHTML = `Ông Nguyễn Đức Thụy dẫn trước về số bài phát động đơn lẻ (149 bài so với 135 bài của TS. Trần Quốc Tuấn), nhưng khi tính gộp 94 bài đề xuất Liên danh thì nhóm bài chọn TS. Tuấn giữ chức Chủ tịch đạt 229 bài (20,14%). Đáng chú ý, bên dưới 149 bài quảng bá cho Ông Thụy có tới 56,84% bình luận có quan điểm quay sang phản biện hoặc ủng hộ TS. Tuấn.`;
       } else if (mode === 'v44_587') {
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm: 587 bài/video (352 FB · 159 YT · 76 TT · 5,20M lượt xem · Đã lọc 4.287 clip nhiễu)';
-        lName.textContent = 'Khối bài TS. Tuấn ((Ủng hộ TS. Tuấn) 125 + (Phương án Liên danh) 91)';
+        lName.textContent = 'Nhóm bài viết ủng hộ TS. Trần Quốc Tuấn (125 trực tiếp + 91 Liên danh)';
         lBig.textContent = '216';
-        lSub.textContent = 'bài/video Bộ dữ liệu trọng tâm chọn TS. Tuấn làm CT (125 bài (Ủng hộ TS. Tuấn) thuần + 91 bài (Phương án Liên danh) Liên danh = 36,80%)';
+        lSub.textContent = 'bài viết và video trọng tâm chọn TS. Tuấn làm Chủ tịch (125 bài ủng hộ trực tiếp + 91 bài đề xuất Liên danh = 36,80%)';
         rName.textContent = 'Nhóm bài viết ủng hộ Ông Nguyễn Đức Thụy';
         rBig.textContent = '143';
-        rSub.textContent = 'bài/video Bộ dữ liệu trọng tâm ủng hộ thẳng (Ủng hộ Ông Thụy) (24,36% tổng số bài Bộ dữ liệu trọng tâm)';
+        rSub.textContent = 'bài viết và video trọng tâm ủng hộ trực tiếp Ông Nguyễn Đức Thụy (chiếm 24,36% tập dữ liệu trọng tâm)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:36.8%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 216 (36,8%)</div>
           <div class="ed-flat-seg neutral" style="width:38.8%;" onclick="switchTab('tab-press-fb')">Trung lập & Khác: 228 (38,8%)</div>
           <div class="ed-flat-seg thuy" style="width:24.4%;" onclick="switchTab('tab-press-fb')">Ông Thụy: 143 (24,4%)</div>`;
-        note.innerHTML = `<strong>Cấu trúc 587 bài/video Bộ dữ liệu trọng tâm:</strong> <code>(Ủng hộ Ông Thụy) Ông Thụy = 143 bài (24,36%)</code> · <code>(Ủng hộ TS. Tuấn) TS. Tuấn = 125 bài (21,29%)</code> · <code>(Phương án Liên danh) Liên danh = 91 bài (15,50%)</code> · <code>(Ứng viên khác) Ứng viên khác = 29 bài (4,94%)</code> · <code>(Phản biện) Phản đối = 45 bài (7,67%)</code> · <code>(Đưa tin trung lập) Trung lập = 154 bài (26,24%)</code>.`;
+        note.innerHTML = `<strong>Cấu trúc 587 bài/video Bộ dữ liệu trọng tâm:</strong> <code>(Ủng hộ Ông Thụy) Ông Thụy = 143 bài (24,36%)</code> · <code>(Ủng hộ TS. Tuấn) TS. Tuấn = 125 bài (21,29%)</code> · <code>Phương án Liên danh = 91 bài (15,50%)</code> · <code>(Ứng viên khác) Ứng viên khác = 29 bài (4,94%)</code> · <code>Phản đối = 45 bài (7,67%)</code> · <code>Trung lập = 154 bài (26,24%)</code>.`;
       } else if (mode === 'all974') {
-        sampleEl.textContent = 'Lượt bài viết & video đề cập lũy tiến 24 ngày (01–24/10: 614 vs 481 · Sổ cái xác thực đến 25/10: 1.409 bài/video/báo)';
+        sampleEl.textContent = 'Lượt bài viết & video đề cập lũy kế 24 ngày (01–24/10: 614 vs 481 · Danh mục xác thực đến 25/10: 1.409 bài/video/báo)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
         lBig.textContent = '614';
-        lSub.textContent = 'lượt đề cập lũy tiến 24 ngày (44,5% định hướng tích cực)';
+        lSub.textContent = 'lượt đề cập lũy kế 24 ngày (44,5% định hướng tích cực)';
         rName.textContent = 'Ông Nguyễn Đức Thụy';
         rBig.textContent = '481';
-        rSub.textContent = 'lượt đề cập lũy tiến 24 ngày (32,4% định hướng tích cực)';
+        rSub.textContent = 'lượt đề cập lũy kế 24 ngày (32,4% định hướng tích cực)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:44.5%;" onclick="switchTab('tab-press-fb')">TS. Tuấn 44,5% (614)</div>
           <div class="ed-flat-seg neutral" style="width:23.1%;" onclick="switchTab('tab-press-fb')">Khác 23,1%</div>
           <div class="ed-flat-seg thuy" style="width:32.4%;" onclick="switchTab('tab-press-fb')">Ông Thụy 32,4% (481)</div>`;
         note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 25/10/2026: N = 1.409 bài/video/báo xác thực):</strong> Gồm <strong>81 bài báo chính thống (81 URL duy nhất)</strong>, <strong>706 bài Facebook xác thực URL</strong>, <strong>354 video YouTube</strong> và <strong>268 video TikTok</strong> (bao trọn 1.137/1.137 bài/video trong Bộ dữ liệu toàn diện). Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong>.`;
       } else if (mode === 'press78') {
-        sampleEl.textContent = 'Mặt trận Báo chí Chính thống & Trang tin (N = 81 bài · 78 bài gốc + 3 bài mới 24/10)';
+        sampleEl.textContent = 'Nhóm nguồn Báo chí chính thống & Trang tin điện tử (N = 81 bài · 78 bài giai đoạn 01–22/10 + 3 bài mới 24/10)';
         lName.textContent = 'TS. Tuấn (Báo chí)';
         lBig.textContent = '38 bài';
         lSub.textContent = '46,9% tổng số bài báo chính thống (Kỷ lục 7 ĐTQG, AFC, CAND, SGGP, Tiền Phong)';
@@ -5981,44 +5981,44 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg thuy" style="width:29.6%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Ông Thụy 24 (29,6%)</div>`;
         note.innerHTML = `<strong>Báo chí chính thống (81 bài):</strong> 38 bài ghi nhận thành tựu ĐTQG & vị thế ngoại giao AFC/FIFA của TS. Tuấn; 24 bài khối báo kinh tế/tài chính đưa tin Ông Thụy được đề cử và cam kết 1.000 tỷ; 18 bài đưa tin quy chế Đại hội + 1 bài phản biện.`;
       } else if (mode === 'fb665') {
-        sampleEl.textContent = 'Mặt trận Facebook xác thực URL gốc (Sổ cái 706 bài · Bao trọn 568 bài FB toàn diện · 214.068 lượt thích)';
+        sampleEl.textContent = 'Nền tảng Facebook xác thực đường dẫn gốc (Danh mục 706 bài · Bao trọn 568 bài FB toàn diện · 214.068 lượt thích)';
         lName.textContent = 'TS. Tuấn (Facebook)';
         lBig.textContent = '318+ bài';
-        lSub.textContent = '47,8% bài FB có định hướng tích cực (Bộ dữ liệu toàn diện: 132 bài (Ủng hộ TS. Tuấn)+(Phương án Liên danh) FB)';
+        lSub.textContent = '47,8% bài Facebook có định hướng tích cực (Bộ dữ liệu toàn diện: 132 bài ủng hộ trực tiếp & Liên danh)';
         rName.textContent = 'Ông Thụy (Facebook)';
         rBig.textContent = '212+ bài';
-        rSub.textContent = '31,9% bài FB (Bộ dữ liệu toàn diện: 82 bài (Ủng hộ Ông Thụy) FB · Gồm 33 bài đồng phục cụm Phấn Đấu)';
+        rSub.textContent = '31,9% bài Facebook (Bộ dữ liệu toàn diện: 82 bài ủng hộ trực tiếp · Gồm 33 bài đăng trùng lặp của cụm Phấn Đấu)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:47.8%;" onclick="switchTab('tab-press-fb');switchPressFbSub('fb665')">FB TS. Tuấn: 47,8%</div>
           <div class="ed-flat-seg neutral" style="width:20.3%;" onclick="switchTab('tab-press-fb');switchPressFbSub('fb665')">Trung lập: 20,3%</div>
           <div class="ed-flat-seg thuy" style="width:31.9%;" onclick="switchTab('tab-press-fb');switchPressFbSub('fb665')">FB Ông Thụy: 31,9%</div>`;
-        note.innerHTML = `<strong>Sổ cái 706 bài Facebook xác thực URL:</strong> Bao trọn 568/568 bài FB trong Bộ dữ liệu toàn diện + sổ cái 22/10. Bấm vào thanh trên để mở trực tiếp bảng 706 URL gốc.`;
+        note.innerHTML = `<strong>Danh mục 706 bài Facebook xác thực URL:</strong> Bao trọn 568/568 bài Facebook trong Bộ dữ liệu toàn diện và dữ liệu mốc 22/10. Bấm vào thanh trên để mở trực tiếp bảng 706 URL gốc.`;
       } else if (mode === 'yt169') {
-        sampleEl.textContent = 'Mặt trận Video YouTube kiểm định (Sổ cái 354 video · Bao trọn 310 video YT toàn diện · 13,96M lượt xem)';
+        sampleEl.textContent = 'Nền tảng YouTube đã kiểm định (Danh mục 354 video · Bao trọn 310 video YT toàn diện · 13,96M lượt xem)';
         lName.textContent = 'TS. Tuấn (YouTube)';
         lBig.textContent = '74 video';
-        lSub.textContent = 'Bộ dữ liệu toàn diện: 43 video (Ủng hộ TS. Tuấn) + 31 video (Phương án Liên danh) Liên danh (Bình luận chuyên sâu & ĐTQG)';
+        lSub.textContent = 'Bộ dữ liệu toàn diện: 43 video ủng hộ trực tiếp + 31 video đề xuất Liên danh (Bình luận chuyên sâu & ĐTQG)';
         rName.textContent = 'Ông Thụy (YouTube)';
         rBig.textContent = '33 video';
-        rSub.textContent = 'Bộ dữ liệu toàn diện: 33 video (Ủng hộ Ông Thụy) ủng hộ thẳng (Phân tích gói 1.000 tỷ & đề cử)';
+        rSub.textContent = 'Bộ dữ liệu toàn diện: 33 video ủng hộ trực tiếp (Phân tích gói tài trợ 600–1.000 tỷ & thông tin đề cử)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:40.2%;" onclick="switchTab('tab-video');switchVideoSub('yt169')">YT TS. Tuấn: 40,2%</div>
           <div class="ed-flat-seg neutral" style="width:26.7%;" onclick="switchTab('tab-video');switchVideoSub('yt169')">Đa chiều / Trung lập: 26,7%</div>
           <div class="ed-flat-seg thuy" style="width:33.1%;" onclick="switchTab('tab-video');switchVideoSub('yt169')">YT Ông Thụy: 33,1%</div>`;
-        note.innerHTML = `<strong>Kho 354 video YouTube (Bộ dữ liệu toàn diện: 310 video · 13.964.171 lượt xem · 3.670 bình luận):</strong> Bao trọn 310/310 video YT trong Bộ dữ liệu toàn diện kèm 115 cặp link mốc giây ?t= và kịch bản bóc băng âm thanh.`;
+        note.innerHTML = `<strong>Kho 354 video YouTube (Bộ dữ liệu toàn diện: 310 video · 13.964.171 lượt xem · 3.670 bình luận):</strong> Bao trọn 310/310 video YT trong Bộ dữ liệu toàn diện kèm 115 cặp link mốc giây ?t= và kịch bản trích xuất lời thoại.`;
       } else if (mode === 'tt62') {
-        sampleEl.textContent = 'Mặt trận Video ngắn TikTok (Sổ cái 268 video · Bao trọn 259 video TT toàn diện · 22,91M lượt xem)';
+        sampleEl.textContent = 'Nền tảng TikTok đã kiểm định (Danh mục 268 video · Bao trọn 259 video TT toàn diện · 22,91M lượt xem)';
         lName.textContent = 'TS. Tuấn (TikTok)';
         lBig.textContent = '23 video';
-        lSub.textContent = 'Bộ dữ liệu toàn diện: 9 video (Ủng hộ TS. Tuấn) + 14 video (Phương án Liên danh) Liên danh (Thông tin chính thống)';
+        lSub.textContent = 'Bộ dữ liệu toàn diện: 9 video ủng hộ trực tiếp + 14 video đề xuất Liên danh (Thông tin chính thống)';
         rName.textContent = 'Ông Thụy (TikTok)';
         rBig.textContent = '34 video';
-        rSub.textContent = 'Bộ dữ liệu toàn diện: 34 video (Ủng hộ Ông Thụy) ủng hộ thẳng (Hiệu ứng lan truyền từ khóa "1.000 tỷ")';
+        rSub.textContent = 'Bộ dữ liệu toàn diện: 34 video ủng hộ trực tiếp (Hiệu ứng lan truyền từ khóa "1.000 tỷ")';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:19.4%;" onclick="switchTab('tab-video');switchVideoSub('tt68')">TikTok TS. Tuấn: 19,4%</div>
           <div class="ed-flat-seg neutral" style="width:41.9%;" onclick="switchTab('tab-video');switchVideoSub('tt68')">So sánh / Tin nóng: 41,9%</div>
           <div class="ed-flat-seg thuy" style="width:38.7%;" onclick="switchTab('tab-video');switchVideoSub('tt68')">TikTok Ông Thụy: 38,7%</div>`;
-        note.innerHTML = `<strong>Kho 268 video TikTok (Bao trọn 259/259 video TikTok trong Bộ dữ liệu toàn diện · 22.914.170 lượt xem · 249.962 lượt thích):</strong> Bấm vào thanh để mở sổ cái 268 video TikTok.`;
+        note.innerHTML = `<strong>Kho 268 video TikTok (Bao trọn 259/259 video TikTok trong Bộ dữ liệu toàn diện · 22.914.170 lượt xem · 249.962 lượt thích):</strong> Bấm vào thanh để mở danh mục 268 video TikTok.`;
       }
     }
 
@@ -6091,7 +6091,7 @@ HTML_TEMPLATE_PART3 = r"""
         endLblTuan = `TS. Tuấn: ${lastRow.c4 || 614} lượt đề cập`;
         endLblThuy = `Ông Thụy: ${lastRow.c6 || 481} lượt đề cập`;
         endLblVu   = `Ông Vũ: ${lastRow.c8 || 125} lượt đề cập`;
-        if (titleEl) titleEl.textContent = 'ĐƯỜNG CONG ĐỘ PHỦ LŨY TIẾN 24 NGÀY (CỘNG DỒN 01/10 – 24/10/2026)';
+        if (titleEl) titleEl.textContent = 'ĐƯỜNG CONG ĐỘ PHỦ LŨY KẾ 24 NGÀY (CỘNG DỒN 01/10 – 24/10/2026)';
         if (subEl) subEl.innerHTML = 'Cộng dồn lượt bài viết & video đề cập qua 24 ngày (Lũy kế 24/10: N = 1.019 · Mốc 22/10: N = 974) · <strong>Bấm vào điểm ngày để xem hồ sơ gốc</strong>';
       } else {
         tuanSeries = rows.map(r => Number(r.c11) || 0);
@@ -6252,7 +6252,7 @@ HTML_TEMPLATE_PART3 = r"""
         <div style="font-size:11.2px;color:#4A5260;margin-bottom:6px;font-weight:600;">${esc(r.c2)}</div>
         <div class="ed-tt-row" style="color:#1B4F9C;font-weight:700;">
           <span>▪ TS. Trần Quốc Tuấn:</span>
-          <span>${esc(r.c3)} bài/ngày (Lũy tiến: ${esc(r.c4)})</span>
+          <span>${esc(r.c3)} bài/ngày (Lũy kế: ${esc(r.c4)})</span>
         </div>
         <div class="ed-tt-row" style="font-size:11px;color:#4A5260;padding-left:10px;">
           <span>Tín hiệu ngày (+ / - / Ròng):</span>
@@ -6260,7 +6260,7 @@ HTML_TEMPLATE_PART3 = r"""
         </div>
         <div class="ed-tt-row" style="color:#B8292F;font-weight:700;margin-top:4px;">
           <span>▪ Ông Nguyễn Đức Thụy:</span>
-          <span>${esc(r.c5)} bài/ngày (Lũy tiến: ${esc(r.c6)})</span>
+          <span>${esc(r.c5)} bài/ngày (Lũy kế: ${esc(r.c6)})</span>
         </div>
         <div class="ed-tt-row" style="font-size:11px;color:#4A5260;padding-left:10px;">
           <span>Tín hiệu ngày (+ / - / Ròng):</span>
@@ -6268,7 +6268,7 @@ HTML_TEMPLATE_PART3 = r"""
         </div>
         <div class="ed-tt-row" style="color:#8C6D1F;font-weight:600;margin-top:4px;">
           <span>▪ Ông Nguyễn Xuân Vũ:</span>
-          <span>${esc(r.c7)} bài/ngày (Lũy tiến: ${esc(r.c8)})</span>
+          <span>${esc(r.c7)} bài/ngày (Lũy kế: ${esc(r.c8)})</span>
         </div>
         <div class="ed-tt-hint">Bấm để mở danh sách bài viết & video ngày ${esc(String(r.c1).slice(0,5))} &rarr;</div>
       `;
@@ -6365,7 +6365,7 @@ HTML_TEMPLATE_PART3 = r"""
         listHtml += `<div style="margin-top:14px;font-weight:800;font-size:12px;text-transform:uppercase;color:#141923;border-bottom:2px solid #141923;padding-bottom:4px;">3. Video YouTube (${ytRows.length}) & TikTok (${ttRows.length}) ngày ${shortDate}</div>`;
         listHtml += `<div style="max-height:230px;overflow-y:auto;border:1px solid var(--border);margin-top:6px;">
           <table class="wr-table" style="font-size:12px;">
-            <thead><tr><th>Nền tảng / kênh</th><th>Tiêu đề video & trích đoạn gỡ băng âm thanh</th><th>Lượt xem</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
+            <thead><tr><th>Nền tảng / kênh</th><th>Tiêu đề video & trích đoạn lời thoại</th><th>Lượt xem</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
             <tbody>
               ${ytRows.map(({ x: y, idx: yIdx }) => `<tr><td><strong>YouTube · ${esc(y.c3)}</strong></td><td><strong>${esc(y.c5)}</strong><div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">${esc(String(y.c15 || '').slice(0, 160))}...</div></td><td style="text-align:right;font-weight:700;">${fmtNum(y.c7)} lượt xem</td><td>${linkBtn(y.c17, 'Xem YT', { sheet: '07_169_Video_YouTube_Audited', idx: yIdx })}</td></tr>`).join('')}
               ${ttRows.map(({ x: t, idx: tIdx }) => `<tr><td><strong>TikTok · ${esc(t.c3)}</strong></td><td><strong>${esc(t.c7)}</strong><div style="font-size:11px;color:var(--text-secondary);margin-top:2px;">${esc(String(t.c14 || '').slice(0, 160))}...</div></td><td style="text-align:right;font-weight:700;">${fmtNum(t.c9)} lượt xem</td><td>${linkBtn(t.c15, 'Xem TT', { sheet: '08_68_Video_TikTok_Kich_Ban', idx: tIdx })}</td></tr>`).join('')}
@@ -6388,7 +6388,7 @@ HTML_TEMPLATE_PART3 = r"""
       }
 
       if (!listHtml) {
-        listHtml = `<div style="margin-top:12px;padding:12px;background:#F7F7F5;border:1px solid var(--border);font-size:12.5px;">Các bài viết và bình luận của ngày <strong>${fullDate}</strong> được tổng hợp trong bảng lũy tiến 24 ngày. Bấm nút bên dưới để tra cứu toàn cục theo ngày.</div>`;
+        listHtml = `<div style="margin-top:12px;padding:12px;background:#F7F7F5;border:1px solid var(--border);font-size:12.5px;">Các bài viết và bình luận của ngày <strong>${fullDate}</strong> được tổng hợp trong bảng lũy kế 24 ngày. Bấm nút bên dưới để tra cứu toàn cục theo ngày.</div>`;
       }
 
       document.getElementById('modalContent').innerHTML = `
@@ -6396,16 +6396,16 @@ HTML_TEMPLATE_PART3 = r"""
           <div style="padding:10px 12px;background:#EDF3FC;border:1px solid #B8D0F4;border-top:3px solid #1B4F9C;">
             <div style="font-size:11px;font-weight:800;color:#1B4F9C;text-transform:uppercase;">TS. Trần Quốc Tuấn</div>
             <div style="font-size:18px;font-weight:900;color:#141923;margin:2px 0;">${esc(r.c3)} bài/video ngày ${shortDate}</div>
-            <div style="font-size:11.5px;color:#3E4652;">Lũy tiến: <strong>${esc(r.c4)}</strong> · Tín hiệu: <strong>+${esc(r.c9)}</strong> / <strong>${esc(r.c10)}</strong> (Ròng: <strong>+${esc(r.c11)}</strong>)</div>
+            <div style="font-size:11.5px;color:#3E4652;">Lũy kế: <strong>${esc(r.c4)}</strong> · Tín hiệu: <strong>+${esc(r.c9)}</strong> / <strong>${esc(r.c10)}</strong> (Ròng: <strong>+${esc(r.c11)}</strong>)</div>
           </div>
           <div style="padding:10px 12px;background:#F9E5E6;border:1px solid #EABec1;border-top:3px solid #B8292F;">
             <div style="font-size:11px;font-weight:800;color:#B8292F;text-transform:uppercase;">Ông Nguyễn Đức Thụy</div>
             <div style="font-size:18px;font-weight:900;color:#141923;margin:2px 0;">${esc(r.c5)} bài/video ngày ${shortDate}</div>
-            <div style="font-size:11.5px;color:#3E4652;">Lũy tiến: <strong>${esc(r.c6)}</strong> · Tín hiệu: <strong>+${esc(r.c12)}</strong> / <strong>${esc(r.c13)}</strong> (Ròng: <strong>+${esc(r.c14)}</strong>)</div>
+            <div style="font-size:11.5px;color:#3E4652;">Lũy kế: <strong>${esc(r.c6)}</strong> · Tín hiệu: <strong>+${esc(r.c12)}</strong> / <strong>${esc(r.c13)}</strong> (Ròng: <strong>+${esc(r.c14)}</strong>)</div>
           </div>
           <div style="padding:10px 12px;background:#F7F7F5;border:1px solid #D8D6CE;border-top:3px solid #8C6D1F;">
             <div style="font-size:11px;font-weight:800;color:#8C6D1F;text-transform:uppercase;">Ông Nguyễn Xuân Vũ & Giai đoạn</div>
-            <div style="font-size:18px;font-weight:900;color:#141923;margin:2px 0;">${esc(r.c7)} bài/video (Lũy tiến: ${esc(r.c8)})</div>
+            <div style="font-size:18px;font-weight:900;color:#141923;margin:2px 0;">${esc(r.c7)} bài/video (Lũy kế: ${esc(r.c8)})</div>
             <div style="font-size:11.5px;color:#3E4652;">${esc(r.c2)}</div>
           </div>
         </div>
@@ -6499,7 +6499,7 @@ HTML_TEMPLATE_PART3 = r"""
           kw: 'Liên danh'
         },
         {
-          topic: "6. Chiến dịch rải bài đồng phục ('Phấn Đấu' 33 bài / '24h New')",
+          topic: "6. Chiến dịch đăng tải hàng loạt theo mẫu ('Phấn Đấu' 33 bài / '24h New')",
           why: 'Phản ứng của độc giả trước các bài PR giống hệt nhau trên 38 hội nhóm',
           sample: 'N = 81 bài · 106 BL',
           tuanCls: 'hm-cell-pos-mild',
@@ -6566,7 +6566,7 @@ HTML_TEMPLATE_PART3 = r"""
         ['1.000 tỷ', '1000 tỷ', '600', 'tài chính', 'tài trợ', 'lpbank'],
         ['xuân thành', 'bỏ giải', 'xung đột', 'sài gòn', 'clb'],
         ['liên danh', 'phó chủ tịch', 'chia vai', 'cặp đôi', 'tài chính'],
-        ['phấn đấu', '24h new', 'đồng phục', 'đăng tải đồng loạt', 'copy']
+        ['phấn đấu', '24h new', 'trùng lặp', 'đăng tải đồng loạt', 'copy']
       ];
       const kws = kwListMap[idx] || [String(it.kw || '').toLowerCase()];
       const matchesAnyKw = (obj) => {
@@ -6644,7 +6644,7 @@ HTML_TEMPLATE_PART3 = r"""
         </div>
         <div style="max-height:260px;overflow-y:auto;border:1px solid var(--border);">
           <table class="wr-table" style="font-size:12px;">
-            <thead><tr><th>Nguồn / kênh</th><th>Tác giả</th><th>Nội dung bình luận nguyên văn</th><th>Mã hóa kịch bản</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
+            <thead><tr><th>Nguồn / kênh</th><th>Tác giả</th><th>Nội dung bình luận nguyên văn</th><th>Phân nhóm quan điểm</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
             <tbody>
               ${fbCmts.map(({ r: c, i: cIdx }) => `
                 <tr>
@@ -6666,8 +6666,8 @@ HTML_TEMPLATE_PART3 = r"""
           </table>
         </div>
         <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;">
-          <span style="font-size:11.5px;color:var(--text-muted);">Hệ số đồng thuận mã hóa phân tích theo khía cạnh: κ = 0.89 · Bấm "Kiểm chứng" ở từng dòng để đối chiếu hoặc đổi nhãn</span>
-          <button class="btn btn-primary" onclick="document.getElementById('detailModal').classList.remove('open');jumpToComments('${esc(it.kw)}');">Mở trong Sổ cái Bình luận (Mục 06) &rarr;</button>
+          <span style="font-size:11.5px;color:var(--text-muted);">Hệ số đồng thuận phân loại nội dung: κ = 0.89 · Bấm "Kiểm chứng" ở từng dòng để đối chiếu hoặc đổi nhãn</span>
+          <button class="btn btn-primary" onclick="document.getElementById('detailModal').classList.remove('open');jumpToComments('${esc(it.kw)}');">Mở trong Danh sách Bình luận &rarr;</button>
         </div>
       `;
       modal.classList.add('open');
@@ -6987,7 +6987,7 @@ HTML_TEMPLATE_PART3 = r"""
           </div>
           <div style="max-height:240px;overflow-y:auto;border:1px solid var(--border);margin-top:6px;">
             <table class="wr-table" style="font-size:12px;">
-              <thead><tr><th>Kênh</th><th>Ngày</th><th>Tiêu đề & trích đoạn gỡ băng âm thanh</th><th>Lượt xem</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
+              <thead><tr><th>Kênh</th><th>Ngày</th><th>Tiêu đề & trích đoạn lời thoại</th><th>Lượt xem</th><th>Link chi tiết & kiểm chứng</th></tr></thead>
               <tbody>
                 ${matched.ytVideos.map(({ r: y, i: yIdx }) => `
                   <tr>
@@ -7157,9 +7157,9 @@ HTML_TEMPLATE_PART3 = r"""
 
       // Chart B: Cumulative Line
       document.getElementById('chartCumPosts').innerHTML = buildLineChartSVG(labels, [
-        { name: 'Lũy tiến TS. Tuấn', data: tuanC, color: '#2575fc' },
-        { name: 'Lũy tiến Ông Thụy', data: thuyC, color: '#ef4444' },
-        { name: 'Lũy tiến Xuân Vũ', data: vuC, color: '#f59e0b' }
+        { name: 'Lũy kế TS. Tuấn', data: tuanC, color: '#2575fc' },
+        { name: 'Lũy kế Ông Thụy', data: thuyC, color: '#ef4444' },
+        { name: 'Lũy kế Xuân Vũ', data: vuC, color: '#f59e0b' }
       ]);
 
       // Chart C: Cumulative Net Sentiment
@@ -7398,7 +7398,7 @@ HTML_TEMPLATE_PART3 = r"""
                   <td style="white-space:nowrap;">${esc(c.c8)}</td>
                   <td>${linkBtn(c.c9, 'Bài FB', { sheet: '09_887_Binh_Luan_Bau_Cu_FB', idx: cIdx, authorUrl: c.c10 })}</td>
                 </tr>
-              `).join('') : `<tr><td colspan="6" style="text-align:center;color:var(--text-muted);">Không có bình luận định danh tách riêng trong sổ cái 1.888 BL</td></tr>`}
+              `).join('') : `<tr><td colspan="6" style="text-align:center;color:var(--text-muted);">Không có bình luận định danh tách riêng trong danh sách 1.888 bình luận</td></tr>`}
             </tbody>
           </table>
         </div>
@@ -7524,7 +7524,7 @@ HTML_TEMPLATE_PART3 = r"""
             <td><strong style="color:var(--tuan-blue);">${esc(r.c5)}</strong></td>
             <td style="text-align:right;font-weight:800;color:var(--gold);">${fmtNum(r.c7)}</td>
             <td style="text-align:center;font-weight:700;color:#22c55e;">${fmtNum(r.c10)}</td>
-            <td><span class="badge ${String(r.c11).includes('Tier1') ? 'badge-tuan' : 'badge-coal'}">${esc(r.c11)}</span></td>
+            <td>${stanceBadge(r.c11)}</td>
             <td style="text-align:center;font-weight:700;">${fmtNum(r.c12)} dòng (${fmtNum(r.c13)} từ)</td>
             <td style="font-size:11.8px;color:var(--text-secondary);max-width:340px;">${escLinkify(r.c15)}</td>
             <td>
@@ -7637,7 +7637,7 @@ HTML_TEMPLATE_PART3 = r"""
           date: s[6] || '',
           text: s[9] || '',
           likes: Number(s[7] || 0),
-          stance: `(Đưa tin trung lập) TRUNG LẬP / ĐƯA TIN / PHÂN TÍCH THỂ CHẾ · ${uType}`,
+          stance: `TRUNG LẬP / ĐƯA TIN / PHÂN TÍCH THỂ CHẾ · ${uType}`,
           permalink: s[10] || '',
           postUrl: s[11] || '',
           authorUrl: s[12] || '',
@@ -7860,7 +7860,7 @@ HTML_TEMPLATE_PART3 = r"""
         dateStr = r[6] || '';
         metricsStr = `${r[7] || 0} lượt thích · ${r[5] === 'R' ? 'Phản hồi' : 'Bình luận gốc'}`;
         mainContent = r[9] || '';
-        origStance = `(Đưa tin trung lập) TRUNG LẬP / ĐƯA TIN / PHÂN TÍCH THỂ CHẾ · ${uTypeLbl}`;
+        origStance = `TRUNG LẬP / ĐƯA TIN / PHÂN TÍCH THỂ CHẾ · ${uTypeLbl}`;
         primaryUrl = r[10] || r[11] || '';
         if (r[11] && r[11] !== primaryUrl) extraModalUrls.push({ label: 'Mở bài/video gốc', url: r[11] });
         if (r[12]) extraModalUrls.push({ label: 'Mở kênh người BL', url: r[12] });
@@ -7876,7 +7876,7 @@ HTML_TEMPLATE_PART3 = r"""
         origStance = (r.fc_warning ? '[Lưu ý nội dung ngoài phạm vi] ' : '') + (r.stance || '');
         primaryUrl = r.url || '';
       } else if (sheetKey === '8_Bien_Ban_Loc_Nhieu_2_Khoa') {
-        itemType = 'Biên bản Sàng lọc dữ liệu ngoài phạm vi (Đã loại trừ khỏi mẫu phân tích bầu cử)';
+        itemType = 'Mục dữ liệu ngoài phạm vi (Đã loại trừ khỏi mẫu phân tích bầu cử)';
         recordId = `NOISE #${r.stt} (${r.vid_id || ''})`;
         dateStr = r.date || '';
         sourceName = `${r.plat || ''} · ${r.channel || ''}`;
@@ -7960,7 +7960,7 @@ HTML_TEMPLATE_PART3 = r"""
                       <td style="text-align:center;font-weight:700;">#${esc(s[0])}</td>
                       <td><strong>${esc(s[4])}</strong><div style="font-size:10px;color:var(--text-muted);">Đã ẩn link cá nhân</div></td>
                       <td>${escLinkify(s[9])}</td>
-                      <td>${stanceBadge('(Đưa tin trung lập) Trung lập / Đưa tin')}</td>
+                      <td>${stanceBadge('Trung lập / Đưa tin')}</td>
                       <td>${linkBtn(s[10], 'Link BL', { sheet: '3_Raw_Comment_S6', idx: si })}</td>
                     </tr>
                   `).join('')}
@@ -7970,12 +7970,12 @@ HTML_TEMPLATE_PART3 = r"""
           `;
         }
       } else if (sheetKey === '07_169_Video_YouTube_Audited') {
-        itemType = 'Video YouTube đã kiểm định và gỡ băng âm thanh';
+        itemType = 'Video YouTube đã kiểm định và trích xuất lời thoại';
         recordId = `YT #${r.c1} (${r.c2})`;
         sourceName = r.c3;
         dateStr = r.c4;
         titleOrAuthor = r.c5;
-        metricsStr = `${fmtNum(r.c7)} lượt xem · ${fmtNum(r.c8)} lượt thích · ${fmtNum(r.c10)} bình luận · ${fmtNum(r.c12)} dòng thoại gỡ băng`;
+        metricsStr = `${fmtNum(r.c7)} lượt xem · ${fmtNum(r.c8)} lượt thích · ${fmtNum(r.c10)} bình luận · ${fmtNum(r.c12)} dòng lời thoại`;
         mainContent = r.c15;
         origStance = r.c11;
         primaryUrl = r.c17;
@@ -8015,7 +8015,7 @@ HTML_TEMPLATE_PART3 = r"""
                       <td><strong>${esc(s[4])}</strong><br/><span style="font-size:10.5px;color:var(--text-muted);">${esc(s[6])}</span></td>
                       <td>${escLinkify(s[9])}</td>
                       <td style="text-align:center;">${esc(s[7])}</td>
-                      <td>${stanceBadge('(Đưa tin trung lập) Trung lập / Đưa tin')}</td>
+                      <td>${stanceBadge('Trung lập / Đưa tin')}</td>
                       <td>${linkBtn(s[10], 'Link BL', { sheet: '3_Raw_Comment_S6', idx: si, extraUrls: [{ label: 'Kênh BL', url: s[12] }] })}</td>
                     </tr>
                   `).join('')}
@@ -8025,12 +8025,12 @@ HTML_TEMPLATE_PART3 = r"""
           `;
         }
       } else if (sheetKey === '08_68_Video_TikTok_Kich_Ban') {
-        itemType = 'Video TikTok & Kịch bản Bóc băng ';
+        itemType = 'Video TikTok & Nội dung lời thoại ';
         recordId = r.c1;
         dateStr = r.c2;
         sourceName = `${r.c3} (${r.c4})`;
         titleOrAuthor = r.c7;
-        metricsStr = `${fmtNum(r.c9)} lượt xem · ${fmtNum(r.c10)} lượt thích · ${fmtNum(r.c11)} BL · ${fmtNum(r.c13)} dòng thoại gỡ băng`;
+        metricsStr = `${fmtNum(r.c9)} lượt xem · ${fmtNum(r.c10)} lượt thích · ${fmtNum(r.c11)} BL · ${fmtNum(r.c13)} dòng lời thoại`;
         mainContent = r.c14;
         origStance = r.c6;
         primaryUrl = r.c15;
@@ -8066,7 +8066,7 @@ HTML_TEMPLATE_PART3 = r"""
                       <td><strong>#${esc(s[0])}</strong></td>
                       <td><strong>${esc(s[4])}</strong><br/><span style="font-size:10.5px;color:var(--text-muted);">${esc(s[6])}</span></td>
                       <td>${escLinkify(s[9])}</td>
-                      <td>${stanceBadge('(Đưa tin trung lập) Trung lập / Đưa tin')}</td>
+                      <td>${stanceBadge('Trung lập / Đưa tin')}</td>
                       <td>${linkBtn(s[10], 'Link BL', { sheet: '3_Raw_Comment_S6', idx: si, extraUrls: [{ label: 'Kênh BL', url: s[12] }] })}</td>
                     </tr>
                   `).join('')}
@@ -8126,7 +8126,7 @@ HTML_TEMPLATE_PART3 = r"""
             <div style="margin-top:12px;padding:12px;background:#EDF3FC;border:1px solid #B8D0F4;">
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
                 <strong style="font-size:12px;color:#1B4F9C;text-transform:uppercase;">Video YouTube Gốc (${esc(y.c3)} · ${esc(y.c4)}):</strong>
-                <button class="fc-mini-btn audit-btn" onclick="openItemFactCheckModal('07_169_Video_YouTube_Audited', ${ytIdx})">Xem Văn bản gỡ băng âm thanh Video Gốc &rarr;</button>
+                <button class="fc-mini-btn audit-btn" onclick="openItemFactCheckModal('07_169_Video_YouTube_Audited', ${ytIdx})">Xem văn bản lời thoại Video Gốc &rarr;</button>
               </div>
               <div style="font-size:12px;color:#141923;background:#FFFFFF;padding:8px 10px;border:1px solid #D8D6CE;"><strong>${esc(y.c5)}</strong><br/>${escLinkify(y.c15)}</div>
             </div>
@@ -8137,7 +8137,7 @@ HTML_TEMPLATE_PART3 = r"""
             <div style="margin-top:12px;padding:12px;background:#EDF3FC;border:1px solid #B8D0F4;">
               <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;">
                 <strong style="font-size:12px;color:#1B4F9C;text-transform:uppercase;">Video TikTok Gốc (${esc(t.c3)} · ${esc(t.c2)}):</strong>
-                <button class="fc-mini-btn audit-btn" onclick="openItemFactCheckModal('08_68_Video_TikTok_Kich_Ban', ${ttIdx})">Xem Văn bản gỡ băng âm thanh TikTok Gốc &rarr;</button>
+                <button class="fc-mini-btn audit-btn" onclick="openItemFactCheckModal('08_68_Video_TikTok_Kich_Ban', ${ttIdx})">Xem văn bản lời thoại TikTok Gốc &rarr;</button>
               </div>
               <div style="font-size:12px;color:#141923;background:#FFFFFF;padding:8px 10px;border:1px solid #D8D6CE;"><strong>${esc(t.c7)}</strong><br/>${escLinkify(t.c14)}</div>
             </div>
@@ -8157,14 +8157,14 @@ HTML_TEMPLATE_PART3 = r"""
       const currentEffStance = savedFc.overrideStance || origStance;
       const stanceOptions = [
         origStance,
-        '(Ủng hộ TS. Tuấn) Ủng hộ TS. Trần Quốc Tuấn làm Chủ tịch',
-        '(Ủng hộ Ông Thụy) Ủng hộ Ông Nguyễn Đức Thụy làm Chủ tịch',
-        '(Phương án Liên danh) Liên danh: Tuấn Chủ tịch + Thụy Phó CT Tài chính',
-        '(Ứng viên khác) Đề cử ứng viên khác (Bầu Đức, Phạm Nhật Vượng, Nguyễn Xuân Vũ...)',
-        '(Phản biện) Phản đối Ông Nguyễn Đức Thụy',
-        '(Phản biện) Phản đối TS. Trần Quốc Tuấn',
-        '(Phản biện) Phản đối cả hai / Hoài nghi quy trình',
-        '(Đưa tin trung lập) Trung lập / Đưa tin / Phân tích thể chế'
+        'Ủng hộ TS. Trần Quốc Tuấn làm Chủ tịch',
+        'Ủng hộ Ông Nguyễn Đức Thụy làm Chủ tịch',
+        'Phương án Liên danh: Tuấn Chủ tịch + Thụy Phó CT Tài chính',
+        'Đề cử ứng viên khác (Bầu Đức, Phạm Nhật Vượng, Nguyễn Xuân Vũ...)',
+        'Phản đối Ông Nguyễn Đức Thụy',
+        'Phản đối TS. Trần Quốc Tuấn',
+        'Phản đối cả hai / Hoài nghi quy trình',
+        'Trung lập / Đưa tin / Phân tích thể chế'
       ].filter((v, i, a) => v && a.indexOf(v) === i);
 
       const modal = document.getElementById('detailModal');
@@ -8217,7 +8217,7 @@ HTML_TEMPLATE_PART3 = r"""
 
         <div style="margin-bottom:12px;">
           <div style="font-weight:800;font-size:12px;text-transform:uppercase;color:#141923;margin-bottom:4px;">
-            Nội dung Toàn văn Bài viết / Văn bản gỡ băng âm thanh / Bình luận:
+            Nội dung Toàn văn Bài viết / văn bản lời thoại / Bình luận:
           </div>
           <div style="padding:12px;background:#FFFFFF;border:1px solid var(--border-strong);font-size:13px;line-height:1.55;white-space:pre-wrap;max-height:220px;overflow-y:auto;">${escLinkify(mainContent)}</div>
         </div>
@@ -8383,7 +8383,7 @@ HTML_TEMPLATE_PART3 = r"""
           rawDate: String(r.c4 || ''),
           plat: 'YouTube',
           type: 'YT-VID',
-          typeLabel: 'Video YouTube (gỡ băng âm thanh)',
+          typeLabel: 'Video YouTube (trích xuất lời thoại)',
           channel: r.c3 || 'YouTube',
           excerpt: `${r.c5 || ''} — ${String(r.c15 || '')}`,
           stance: r.c11 || '',
@@ -8422,7 +8422,7 @@ HTML_TEMPLATE_PART3 = r"""
           rawDate: String(r.c2 || ''),
           plat: 'TikTok',
           type: 'TT-VID',
-          typeLabel: 'Video TikTok (gỡ băng âm thanh)',
+          typeLabel: 'Video TikTok (trích xuất lời thoại)',
           channel: `${r.c3 || ''} (${r.c4 || ''})`,
           excerpt: `${r.c7 || ''} — ${String(r.c14 || '')}`,
           stance: r.c6 || '',
@@ -8491,7 +8491,7 @@ HTML_TEMPLATE_PART3 = r"""
         });
       });
 
-      // 6C. Biên bản sàng lọc (24/10): 83 Biên Bản Lọc Nhiễu 2 Khóa
+      // 6C. Danh sách sàng lọc (24/10): 83 Biên Bản Lọc Nhiễu 2 Khóa
       (extra2410.noise_filter_83 || []).forEach((r, idx) => {
         items.push({
           code: `#NOISE-${pad3(r.stt || (idx + 1))}`,
@@ -8499,7 +8499,7 @@ HTML_TEMPLATE_PART3 = r"""
           rawDate: String(r.date || ''),
           plat: r.plat || 'Đa nền tảng',
           type: 'NOISE-AUDIT',
-          typeLabel: 'Biên bản Sàng lọc dữ liệu ngoài phạm vi ',
+          typeLabel: 'Dữ liệu ngoài phạm vi đã loại trừ',
           channel: r.channel || '',
           excerpt: `[Đã chặn bởi Quy trình sàng lọc hai lớp] ${r.title || ''}`,
           stance: r.reason || 'ĐÃ LOẠI TRỪ QUA QUY TRÌNH SÀNG LỌC HAI LỚP',
@@ -8604,7 +8604,7 @@ HTML_TEMPLATE_PART3 = r"""
           rawDate: String(r.c1 || ''),
           plat: 'Đa nền tảng',
           type: 'CATALOG',
-          typeLabel: 'Mốc lũy tiến 24 ngày',
+          typeLabel: 'Mốc lũy kế 24 ngày',
           channel: r.c2 || '',
           excerpt: `Ngày ${r.c1}: Tuấn ${r.c3} bài (Lũy kế ${r.c4}) vs Thụy ${r.c5} bài (Lũy kế ${r.c6})`,
           stance: `Ròng Tuấn +${r.c11} | Thụy +${r.c14}`,
@@ -8629,7 +8629,7 @@ HTML_TEMPLATE_PART3 = r"""
           typeLabel: `Bình luận ${platName} dưới bài đưa tin trung lập (#${s[0]})`,
           channel: `${s[3] || platName} · ${s[4] || ''}`,
           excerpt: String(s[9] || ''),
-          stance: `(Đưa tin trung lập) TRUNG LẬP / ĐƯA TIN / PHÂN TÍCH THỂ CHẾ · ${uTypeLbl}`,
+          stance: `TRUNG LẬP / ĐƯA TIN / PHÂN TÍCH THỂ CHẾ · ${uTypeLbl}`,
           url: String(s[10] || s[11] || '').trim(),
           extraUrls: [{ label: 'Bài/Video gốc', url: s[11] }, { label: 'Kênh người BL', url: s[12] }],
           sheet: '3_Raw_Comment_S6',
@@ -8696,12 +8696,12 @@ HTML_TEMPLATE_PART3 = r"""
       if (!tbody) return;
       const list = ((DB && DB.extra_2410) || {}).homonym_flagged_34 || [];
       tbody.innerHTML = list.map((r, i) => `
-        <tr onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','${esc(r.post_code)}')" style="cursor:pointer;" title="Bấm để lọc mã ${esc(r.post_code)} trong Sổ cái Tab 08">
+        <tr onclick="openSourceLedgerWithFilter('ALL','ALL','FLAGGED-V45','${esc(r.post_code)}')" style="cursor:pointer;" title="Bấm để lọc mã ${esc(r.post_code)} trong Danh mục nguồn">
           <td style="font-weight:700;">${i + 1}</td>
           <td style="font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:800;color:var(--thuy-red);">${esc(r.post_code)}</td>
           <td><strong>${esc(r.plat)}</strong><br/><span style="font-size:11px;color:var(--text-muted);">${esc(r.date)}</span></td>
           <td><strong>${esc(r.channel)}</strong></td>
-          <td><span class="badge badge-gray" style="font-size:10.5px;">${esc(r.orig_stance || '(Đưa tin trung lập) Trung lập')}</span></td>
+          <td><span class="badge badge-gray" style="font-size:10.5px;">${esc(r.orig_stance || 'Trung lập')}</span></td>
           <td style="text-align:center;font-weight:800;">${r.cmts_all || 0} (${r.cmts_s15 || 0} quan điểm nhân sự)</td>
           <td style="max-width:340px;">
             <div style="max-height:54px;overflow-y:auto;line-height:1.4;margin-bottom:4px;">${escLinkify(r.title)}</div>
