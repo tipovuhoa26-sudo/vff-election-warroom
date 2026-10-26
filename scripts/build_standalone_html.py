@@ -3374,21 +3374,21 @@ HTML_TEMPLATE_PART2 = r"""
                 </button>
                 <button class="ed-series-toggle off" id="btnToggleSeriesVu" onclick="toggleOverviewSeries('vu', this)">
                   <span style="width:9px;height:9px;background:#8C6D1F;display:inline-block;"></span>
-                  <span>+ Ông Xuân Vũ (137)</span>
+                  <span>+ Ông Xuân Vũ (136)</span>
                 </button>
               </div>
               <div class="ed-mode-switch">
                 <button class="ed-mode-btn active" onclick="switchOverviewTrendMode('daily', this)">Theo ngày (Bài/Video)</button>
-                <button class="ed-mode-btn" onclick="switchOverviewTrendMode('cum', this)">Lũy kế 26 ngày (626 vs 495)</button>
-                <button class="ed-mode-btn" onclick="switchOverviewTrendMode('net', this)">Tín nhiệm ròng (+849 vs +399)</button>
+                <button class="ed-mode-btn" onclick="switchOverviewTrendMode('cum', this)">Lũy kế 26 ngày (634 vs 496)</button>
+                <button class="ed-mode-btn" onclick="switchOverviewTrendMode('net', this)">Tín nhiệm ròng (+827 vs +391)</button>
               </div>
             </div>
           </div>
           <div id="overviewAnnotatedLineChart" style="width:100%;overflow-x:auto;position:relative;"></div>
           <!-- Giải thích trực tiếp ngay dưới biểu đồ: Tách bạch Fact-base và Hàm ý -->
           <div class="ed-chart-caption" id="overviewTrendCaption">
-            <div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Dữ liệu 26 ngày (01–26/10/2026) ghi nhận các đỉnh phát sinh bài viết/video: giai đoạn 14–16/10 (33 bài đăng trùng lặp từ cụm trang "Phấn Đấu"), giai đoạn 19–22/10 (báo chí công bố danh sách 3 ứng viên cùng đề xuất 600–1.000 tỷ đồng/năm), và nhịp cập nhật mới ngày 25–26/10 (Báo Tiền Phong, Thể thao &amp; Văn hóa, Soha, Vietnam.vn đưa tin Ông Nguyễn Xuân Vũ dự kiến xin thôi Chủ tịch Liên đoàn Bóng bàn VN để tập trung tranh cử Đại hội X VFF; ĐT U15 Việt Nam thắng Mauritius 4-1 tại FIFA U15 World Cup &amp; Festival 2026; Việt Nam đăng cai U23 Đông Nam Á 2027). Tổng lũy kế 26 ngày đạt 626 lượt bài đề cập TS. Trần Quốc Tuấn, 495 lượt bài đề cập Ông Nguyễn Đức Thụy và 137 lượt bài đề cập Ông Nguyễn Xuân Vũ.</div>
-            <div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Các đợt tăng đột biến về số lượng bài đăng gắn liền với các sự kiện truyền thông cụ thể theo từng ngày; khi đối chiếu sang lũy kế bình luận ròng (+816 so với +391), xu hướng phản hồi của độc giả ổn định hơn so với biến động bài đăng ngắn hạn.</div>
+            <div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Dữ liệu 26 ngày (01–26/10/2026) ghi nhận các đỉnh phát sinh bài viết/video: giai đoạn 14–16/10 (33 bài đăng trùng lặp từ cụm trang "Phấn Đấu"), giai đoạn 19–22/10 (báo chí công bố danh sách 3 ứng viên cùng đề xuất 600–1.000 tỷ đồng/năm), và nhịp cập nhật mới ngày 25–26/10 (8 bài báo + 15 bài FB ngày 25/10 và 2 bài báo + 4 bài FB ngày 26/10 từ Báo Tiền Phong, Thể thao &amp; Văn hóa, Tạp chí Thương gia, Báo SGGP, Một Thế Giới, Đài HTV, Cổng TTĐT VFF đưa tin Ông Nguyễn Xuân Vũ xin thôi Chủ tịch Liên đoàn Bóng bàn VN để tập trung tranh cử Đại hội X VFF; cuộc đua 38 ứng viên vào 17 ghế BCH VFF; ĐT U15 Việt Nam thắng Mauritius 4-1). Tổng lũy kế 26 ngày đạt 634 lượt bài đề cập TS. Trần Quốc Tuấn, 496 lượt bài đề cập Ông Nguyễn Đức Thụy và 136 lượt bài đề cập Ông Nguyễn Xuân Vũ.</div>
+            <div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Các đợt tăng đột biến về số lượng bài đăng gắn liền với các sự kiện truyền thông cụ thể theo từng ngày; khi đối chiếu sang lũy kế bình luận ròng 26 ngày (+827 so với +391), xu hướng phản hồi của độc giả ổn định hơn so với biến động bài đăng ngắn hạn.</div>
           </div>
         </div>
       </div>
@@ -3541,7 +3541,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="ed-chart-top">
           <div>
             <div class="ed-chart-title" id="timelineSingleChartTitle">Góc nhìn A: Mật độ bài viết và video theo từng ngày (01/10 – 26/10/2026 · 26 ngày)</div>
-            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (626), Ông Nguyễn Đức Thụy (495) và Ông Nguyễn Xuân Vũ (137)</div>
+            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (634), Ông Nguyễn Đức Thụy (496) và Ông Nguyễn Xuân Vũ (136)</div>
           </div>
           <div class="ed-mode-switch" id="timelineChartModeBar">
             <button class="ed-mode-btn active" onclick="switchTimelineChartView('daily', this)">1. Mật độ theo ngày</button>
@@ -3566,7 +3566,7 @@ HTML_TEMPLATE_PART2 = r"""
 
         <!-- Giải thích trực tiếp ngay dưới biểu đồ: Tách bạch Fact-base và Hàm ý -->
         <div class="ed-chart-caption" id="timelineSingleChartCaption">
-          <div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Số lượng bài đăng tăng cao vào ngày 15/10 (ghi nhận 33 bài đăng có nội dung trùng lặp từ cụm trang "Phấn Đấu") và giai đoạn 19–22/10 (khi báo chí đăng tải danh sách 3 ứng viên cùng thông tin đề xuất 600–1.000 tỷ đồng/năm). Tính lũy kế toàn kỳ, tổng điểm bình luận ròng của TS. Trần Quốc Tuấn đạt +818 và của Ông Nguyễn Đức Thụy đạt +393.</div>
+          <div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Số lượng bài đăng tăng cao vào ngày 15/10 (ghi nhận 33 bài đăng có nội dung trùng lặp từ cụm trang "Phấn Đấu") và giai đoạn 19–22/10 (khi báo chí đăng tải danh sách 3 ứng viên cùng thông tin đề xuất 600–1.000 tỷ đồng/năm). Tính lũy kế toàn kỳ 26 ngày, tổng điểm bình luận ròng của TS. Trần Quốc Tuấn đạt +827 và của Ông Nguyễn Đức Thụy đạt +391.</div>
           <div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Chuyển đổi giữa 4 góc nhìn biểu đồ cho thấy sự khác biệt giữa mật độ phát sinh bài viết theo ngày và xu hướng tích lũy bình luận tự nhiên của người đọc.</div>
         </div>
       </div>
@@ -3720,7 +3720,7 @@ HTML_TEMPLATE_PART2 = r"""
         <div class="panel-header">
           <div>
             <div class="panel-title">DANH MỤC 91 BÀI BÁO CHÍNH THỐNG & TRANG TIN ĐIỆN TỬ (<span id="press78Count">91</span> bài · Cập nhật đến 26/10/2026)</div>
-            <div class="panel-sub">Gồm 78 bài gốc (01–22/10) + 3 bài mới (24/10) + 10 bài mới (25–26/10 từ Tiền Phong, Thể thao &amp; Văn hóa, SGGP, Soha, Vietnam.vn, VFF, HTV, Một Thế Giới)</div>
+            <div class="panel-sub">Gồm 78 bài gốc (01–22/10) + 3 bài mới (24/10) + 10 bài mới (25–26/10 từ Báo Tiền Phong, Thể thao &amp; Văn hóa, Tạp chí Thương gia, Báo SGGP, Một Thế Giới, Đài HTV, Cổng TTĐT VFF)</div>
           </div>
         </div>
         <div class="table-wrap" style="max-height:620px;overflow-y:auto;">
@@ -4216,7 +4216,7 @@ HTML_TEMPLATE_PART2 = r"""
                     <tr>
                       <td><span class="badge badge-gray">PHƯƠNG ÁN H4</span></td>
                       <td><strong>Phương án Nhân sự Thứ 3 (Ông Nguyễn Xuân Vũ hoặc nhân sự giới thiệu bổ sung)</strong></td>
-                      <td>Ghi nhận <strong>137 lượt nhắc tên</strong> (tăng mạnh ngày 25–26/10 khi Báo Tiền Phong, Thể thao &amp; Văn hóa, Soha, Vietnam.vn đưa tin ông dự kiến xin thôi chức Chủ tịch Liên đoàn Bóng bàn VN để tập trung tranh cử Đại hội X VFF). Ghi nhận <strong>9 bình luận tự nhiên ủng hộ</strong> và <strong>14 bình luận phản biện/hoài nghi</strong> (nhắc lại nhiệm kỳ Chủ tịch Bóng bàn chưa đạt chỉ tiêu HCV SEA Games 33 và vắng mặt ASIAD 20).</td>
+                      <td>Ghi nhận <strong>136 lượt nhắc tên</strong> (tăng mạnh ngày 25–26/10 khi Báo Tiền Phong, Thể thao &amp; Văn hóa, Tạp chí Thương gia, Báo SGGP đưa tin ông dự kiến xin thôi chức Chủ tịch Liên đoàn Bóng bàn VN để tập trung tranh cử Đại hội X VFF). Ghi nhận <strong>9 bình luận tự nhiên ủng hộ</strong> và <strong>14 bình luận phản biện/hoài nghi</strong> (nhắc lại nhiệm kỳ Chủ tịch Bóng bàn chưa đạt chỉ tiêu HCV SEA Games 33 và vắng mặt ASIAD 20).</td>
                       <td><strong>[Fact-base báo chí 25–26/10]:</strong> Trao đổi với Báo Tiền Phong (25/10), ông Nguyễn Xuân Vũ cho biết <em>"hiện chưa đưa ra quyết định cuối cùng"</em> về việc rút khỏi vị trí ứng cử Chủ tịch; đồng thời ông là <strong>ứng viên duy nhất cho ghế Phó Chủ tịch VFF phụ trách Truyền thông</strong>. Theo quy chế bỏ phiếu kín, ứng viên không trúng cử Chủ tịch vẫn có thể tranh cử xuống Phó Chủ tịch.</td>
                     </tr>
                   </tbody>
@@ -4320,7 +4320,7 @@ HTML_TEMPLATE_PART2 = r"""
                     <td style="text-align:center;font-weight:900;">6</td>
                     <td><strong>Ông Nguyễn Xuân Vũ</strong><br/><span style="font-size:11px;color:var(--text-muted);">Phó CT VFF Truyền thông · Chủ tịch CLB Phù Đổng</span></td>
                     <td><span class="badge badge-gray">Ứng viên được đề cử #3</span></td>
-                    <td style="text-align:center;font-weight:800;">137 lượt nhắc<br/><span style="font-size:10.8px;color:var(--text-muted);">Đề cử 3 ỨV &amp; thôi CT Bóng bàn (25–26/10)</span></td>
+                    <td style="text-align:center;font-weight:800;">136 lượt nhắc<br/><span style="font-size:10.8px;color:var(--text-muted);">Đề cử 3 ỨV &amp; thôi CT Bóng bàn (25–26/10)</span></td>
                     <td><strong>9 Tổng</strong> &rarr; <strong>9 Tự nhiên</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">0 bình luận mẫu (0%) · trọng tâm: 9 Tự nhiên</span></td>
                     <td><strong>6 FB</strong> · <strong>2 YT</strong> · <strong>1 TT</strong><br/><span style="font-size:10.8px;color:var(--text-muted);">Chủ yếu xuất hiện trong tin danh sách 3 ỨV</span></td>
                     <td><strong style="color:#B8292F;">14 Tự nhiên</strong> (14 Tổng)<br/><span style="font-size:10.8px;color:#B8292F;">Tranh luận mục tiêu dang dở LĐ Bóng bàn (25–26/10)</span></td>
@@ -5494,16 +5494,16 @@ HTML_TEMPLATE_PART3 = r"""
       const capEl = document.getElementById('timelineSingleChartCaption');
       if (mode === 'daily') {
         if (titleEl) titleEl.textContent = 'Góc nhìn 1: Mật độ bài viết và video theo từng ngày (01/10 – 26/10/2026 · 26 ngày)';
-        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (617), Ông Nguyễn Đức Thụy (484) và Ông Nguyễn Xuân Vũ (126)';
+        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (634), Ông Nguyễn Đức Thụy (496) và Ông Nguyễn Xuân Vũ (136)';
         if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Số lượng bài đăng tăng vào ngày 15/10 (ghi nhận 33 bài đăng có văn bản trùng lặp từ cụm trang "Phấn Đấu") và giai đoạn 19–22/10 (khi thông tin đề cử 3 ứng viên và đề xuất 600–1.000 tỷ đồng/năm xuất hiện).</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Bấm vào bất kỳ cột ngày nào để đối chiếu danh sách bài viết phát sinh thực tế trong ngày đó.</div>';
       } else if (mode === 'cum') {
         if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy kế độ phủ truyền thông toàn kỳ (01/10 – 26/10/2026 · 26 ngày)';
         if (subEl) subEl.textContent = 'Cộng dồn lượt bài viết và video đề cập từng ứng viên qua các ngày theo dõi';
-        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Tính lũy kế toàn kỳ, TS. Trần Quốc Tuấn ghi nhận 617 lượt bài viết và video đề cập, tiếp theo là Ông Nguyễn Đức Thụy (484 lượt) và Ông Nguyễn Xuân Vũ (126 lượt).</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Khoảng cách độ phủ truyền thông duy trì ổn định trong cả giai đoạn cao điểm trước Đại hội.</div>';
+        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Tính lũy kế toàn kỳ 26 ngày, TS. Trần Quốc Tuấn ghi nhận 634 lượt bài viết và video đề cập, tiếp theo là Ông Nguyễn Đức Thụy (496 lượt) và Ông Nguyễn Xuân Vũ (136 lượt).</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Khoảng cách độ phủ truyền thông duy trì ổn định trong cả giai đoạn cao điểm trước Đại hội.</div>';
       } else if (mode === 'net') {
         if (titleEl) titleEl.textContent = 'Góc nhìn 3: Đường cong điểm bình luận ròng tích lũy (Ủng hộ trừ Phản đối)';
-        if (subEl) subEl.textContent = 'So sánh hiệu số tích lũy giữa bình luận ủng hộ (+) và phản đối (-) của TS. Trần Quốc Tuấn (+818) và Ông Nguyễn Đức Thụy (+393)';
-        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Điểm bình luận ròng tích lũy của TS. Trần Quốc Tuấn đạt +818 điểm; của Ông Nguyễn Đức Thụy đạt +393 điểm.</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Đường điểm ròng của Ông Nguyễn Đức Thụy tăng chậm hơn số lượng bài đăng do các đợt bài quảng bá đi kèm bình luận phản biện từ người đọc.</div>';
+        if (subEl) subEl.textContent = 'So sánh hiệu số tích lũy giữa bình luận ủng hộ (+) và phản đối (-) của TS. Trần Quốc Tuấn (+827) và Ông Nguyễn Đức Thụy (+391)';
+        if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">[Dữ kiện đo lường — Fact-base]:</strong> Điểm bình luận ròng tích lũy 26 ngày của TS. Trần Quốc Tuấn đạt +827 điểm; của Ông Nguyễn Đức Thụy đạt +391 điểm.</div><div style="margin-top:4px;"><strong style="color:#475569;">[Hàm ý phân tích &amp; Giới hạn]:</strong> Đường điểm ròng của Ông Nguyễn Đức Thụy tăng chậm hơn số lượng bài đăng do các đợt bài quảng bá đi kèm bình luận phản biện từ người đọc.</div>';
       } else if (mode === 'butterfly') {
         if (titleEl) titleEl.textContent = 'Góc nhìn 4: Cán cân bình luận Ủng hộ (+) và Phản đối (-) theo từng ngày';
         if (subEl) subEl.textContent = 'Phía trên trục 0 thể hiện lượng bình luận ủng hộ (+); phía dưới trục 0 thể hiện lượng bình luận phản đối (-)';
@@ -6025,18 +6025,18 @@ HTML_TEMPLATE_PART3 = r"""
           <div class="ed-flat-seg thuy" style="width:24.4%;" onclick="switchTab('tab-press-fb')">Ông Thụy: 143 (24,4%)</div>`;
         note.innerHTML = `<strong>Cấu trúc 587 bài/video Bộ dữ liệu trọng tâm:</strong> <code>Ủng hộ Ông Thụy = 143 bài (24,36%)</code> · <code>Ủng hộ TS. Tuấn = 125 bài (21,29%)</code> · <code>Phương án Liên danh = 91 bài (15,50%)</code> · <code>Ứng viên khác = 29 bài (4,94%)</code> · <code>Phản biện = 45 bài (7,67%)</code> · <code>Trung lập = 154 bài (26,24%)</code>.`;
       } else if (mode === 'all974') {
-        sampleEl.textContent = 'Lượt bài viết & video đề cập lũy kế 24 ngày (01–24/10: 614 vs 481 · Danh mục xác thực đến 25/10: 1.409 bài/video/báo)';
+        sampleEl.textContent = 'Lượt bài viết & video đề cập lũy kế 26 ngày (01–26/10: 634 vs 496 · Danh mục xác thực đến 26/10: 1.467 bài/video/báo)';
         lName.textContent = 'TS. Trần Quốc Tuấn';
-        lBig.textContent = '614';
-        lSub.textContent = 'lượt đề cập lũy kế 24 ngày (44,5% định hướng tích cực)';
+        lBig.textContent = '634';
+        lSub.textContent = 'lượt đề cập lũy kế 26 ngày (44,8% định hướng tích cực)';
         rName.textContent = 'Ông Nguyễn Đức Thụy';
-        rBig.textContent = '481';
-        rSub.textContent = 'lượt đề cập lũy kế 24 ngày (32,4% định hướng tích cực)';
+        rBig.textContent = '496';
+        rSub.textContent = 'lượt đề cập lũy kế 26 ngày (32,3% định hướng tích cực)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:44.5%;" onclick="switchTab('tab-press-fb')">TS. Tuấn 44,5% (614)</div>
-          <div class="ed-flat-seg neutral" style="width:23.1%;" onclick="switchTab('tab-press-fb')">Khác 23,1%</div>
-          <div class="ed-flat-seg thuy" style="width:32.4%;" onclick="switchTab('tab-press-fb')">Ông Thụy 32,4% (481)</div>`;
-        note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 26/10/2026: N = 1.409 bài/video/báo xác thực):</strong> Gồm <strong>81 bài báo chính thống (81 URL duy nhất)</strong>, <strong>706 bài Facebook xác thực URL</strong>, <strong>354 video YouTube</strong> và <strong>268 video TikTok</strong> (bao trọn 1.137/1.137 bài/video trong Bộ dữ liệu toàn diện). Ông Nguyễn Xuân Vũ ghi nhận <strong>125 lượt đề cập</strong>.`;
+          <div class="ed-flat-seg tuan" style="width:44.8%;" onclick="switchTab('tab-press-fb')">TS. Tuấn 44,8% (634)</div>
+          <div class="ed-flat-seg neutral" style="width:22.9%;" onclick="switchTab('tab-press-fb')">Khác 22,9%</div>
+          <div class="ed-flat-seg thuy" style="width:32.3%;" onclick="switchTab('tab-press-fb')">Ông Thụy 32,3% (496)</div>`;
+        note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 26/10/2026: N = 1.467 bài/video/báo xác thực):</strong> Gồm <strong>91 bài báo chính thống (91 URL duy nhất)</strong>, <strong>754 bài Facebook xác thực URL</strong>, <strong>354 video YouTube</strong> và <strong>268 video TikTok</strong>. Ông Nguyễn Xuân Vũ ghi nhận <strong>136 lượt đề cập</strong>.`;
       } else if (mode === 'press78') {
         sampleEl.textContent = 'Nhóm nguồn Báo chí chính thống & Trang tin điện tử (N = 81 bài · 78 bài giai đoạn 01–22/10 + 3 bài mới 24/10)';
         lName.textContent = 'TS. Tuấn (Báo chí)';
@@ -6148,9 +6148,9 @@ HTML_TEMPLATE_PART3 = r"""
         thuySeries = rows.map(r => Number(r.c5) || 0);
         vuSeries   = rows.map(r => Number(r.c7) || 0);
         yMax = 80;
-        endLblTuan = `TS. Tuấn: ${lastRow.c3 || 4} bài/ngày (Lũy kế: ${lastRow.c4 || 614})`;
-        endLblThuy = `Ông Thụy: ${lastRow.c5 || 5} bài/ngày (Lũy kế: ${lastRow.c6 || 481})`;
-        endLblVu   = `Ông Vũ: ${lastRow.c7 || 2} bài/ngày (Lũy kế: ${lastRow.c8 || 125})`;
+        endLblTuan = `TS. Tuấn: ${lastRow.c3 || 5} bài/ngày (Lũy kế: ${lastRow.c4 || 634})`;
+        endLblThuy = `Ông Thụy: ${lastRow.c5 || 2} bài/ngày (Lũy kế: ${lastRow.c6 || 496})`;
+        endLblVu   = `Ông Vũ: ${lastRow.c7 || 2} bài/ngày (Lũy kế: ${lastRow.c8 || 136})`;
         if (titleEl) titleEl.textContent = 'XU HƯỚNG THEO NGÀY: MẬT ĐỘ BÀI VIẾT & VIDEO ĐỀ CẬP (01/10 – 26/10/2026 · 26 NGÀY)';
         if (subEl) subEl.innerHTML = 'Di chuột để xem chi tiết từng ngày · <strong>Bấm vào bất kỳ ngày nào (01/10–26/10) hoặc hộp sự kiện</strong> để mở danh sách bài báo, bài FB & video của ngày đó';
       } else if (overviewTrendMode === 'cum') {
@@ -6158,17 +6158,17 @@ HTML_TEMPLATE_PART3 = r"""
         thuySeries = rows.map(r => Number(r.c6) || 0);
         vuSeries   = rows.map(r => Number(r.c8) || 0);
         yMax = 680;
-        endLblTuan = `TS. Tuấn: ${lastRow.c4 || 614} lượt đề cập`;
-        endLblThuy = `Ông Thụy: ${lastRow.c6 || 481} lượt đề cập`;
-        endLblVu   = `Ông Vũ: ${lastRow.c8 || 125} lượt đề cập`;
+        endLblTuan = `TS. Tuấn: ${lastRow.c4 || 634} lượt đề cập`;
+        endLblThuy = `Ông Thụy: ${lastRow.c6 || 496} lượt đề cập`;
+        endLblVu   = `Ông Vũ: ${lastRow.c8 || 136} lượt đề cập`;
         if (titleEl) titleEl.textContent = 'ĐƯỜNG CONG ĐỘ PHỦ LŨY KẾ 26 NGÀY (CỘNG DỒN 01/10 – 26/10/2026)';
-        if (subEl) subEl.innerHTML = 'Cộng dồn lượt bài viết & video đề cập qua 26 ngày (Lũy kế 26/10: TS. Tuấn 626 · Ông Thụy 495 · Ông Vũ 137) · <strong>Bấm vào điểm ngày để xem hồ sơ gốc</strong>';
+        if (subEl) subEl.innerHTML = 'Cộng dồn lượt bài viết & video đề cập qua 26 ngày (Lũy kế 26/10: TS. Tuấn 634 · Ông Thụy 496 · Ông Vũ 136) · <strong>Bấm vào điểm ngày để xem hồ sơ gốc</strong>';
       } else {
         tuanSeries = rows.map(r => Number(r.c11) || 0);
         thuySeries = rows.map(r => Number(r.c14) || 0);
         vuSeries   = rows.map(r => Math.round((Number(r.c8) || 0) * 0.45));
         yMax = 880;
-        endLblTuan = `TS. Tuấn: +${lastRow.c11 || 816} điểm ròng`;
+        endLblTuan = `TS. Tuấn: +${lastRow.c11 || 827} điểm ròng`;
         endLblThuy = `Ông Thụy: +${lastRow.c14 || 391} điểm ròng`;
         endLblVu   = 'Ông Vũ: Trung lập / Đề cử';
         if (titleEl) titleEl.textContent = 'ĐƯỜNG CONG ĐIỂM TÍN NHIỆM RÒNG TÍCH LŨY (ỦNG HỘ TRỪ PHẢN ĐỐI, 01–26/10/2026)';
@@ -6349,7 +6349,7 @@ HTML_TEMPLATE_PART3 = r"""
     function hideOverviewCrosshair() {
       const line = document.getElementById('ovCrosshairLine');
       if (line) line.style.display = 'none';
-      for (let i = 0; i < 25; i++) {
+      for (let i = 0; i < 30; i++) {
         const dT = document.getElementById('ovDotTuan_' + i);
         const dTh = document.getElementById('ovDotThuy_' + i);
         const dV = document.getElementById('ovDotVu_' + i);
@@ -6372,8 +6372,8 @@ HTML_TEMPLATE_PART3 = r"""
       const isoPart = '2026-10-' + shortDate.slice(0, 2); // "2026-10-21"
 
       const matchDate = (val) => {
-        const s = String(val || '');
-        return s.includes(shortDate) || s.includes(altDateDash) || s.includes(isoPart);
+        const s = String(val || '').trim();
+        return s.includes(shortDate) || s.includes(isoPart) || s.startsWith(altDateDash);
       };
 
       const allPress = ((DB.sheets['04_78_Bai_Bao_Chinh_Thong'] || {}).rows || []);
@@ -6388,7 +6388,7 @@ HTML_TEMPLATE_PART3 = r"""
       const ytRows = allYt.map((x, idx) => ({ x, idx })).filter(o => matchDate(o.x.c4));
       const ttRows = allTt.map((x, idx) => ({ x, idx })).filter(o => matchDate(o.x.c2));
       const fbCmtRows = allFbCmt.map((x, idx) => ({ x, idx })).filter(o => matchDate(o.x.c8));
-      const ytCmtRows = allYtCmt.map((x, idx) => ({ x, idx })).filter(o => matchDate(o.x.c5));
+      const ytCmtRows = allYtCmt.map((x, idx) => ({ x, idx })).filter(o => Number(o.x.c1) >= 1458 ? matchDate(o.x.c6) : matchDate(o.x.c5));
 
       const modal = document.getElementById('detailModal');
       document.getElementById('modalTitle').textContent = `Hồ sơ Kiểm chứng Chi tiết Ngày ${fullDate} · ${r.c2}`;
@@ -6459,7 +6459,7 @@ HTML_TEMPLATE_PART3 = r"""
       }
 
       if (!listHtml) {
-        listHtml = `<div style="margin-top:12px;padding:12px;background:#F7F7F5;border:1px solid var(--border);font-size:12.5px;">Các bài viết và bình luận của ngày <strong>${fullDate}</strong> được tổng hợp trong bảng lũy kế 24 ngày. Bấm nút bên dưới để tra cứu toàn cục theo ngày.</div>`;
+        listHtml = `<div style="margin-top:12px;padding:12px;background:#F7F7F5;border:1px solid var(--border);font-size:12.5px;">Các bài viết và bình luận của ngày <strong>${fullDate}</strong> được tổng hợp trong bảng lũy kế 26 ngày. Bấm nút bên dưới để tra cứu toàn cục theo ngày.</div>`;
       }
 
       document.getElementById('modalContent').innerHTML = `
@@ -6482,7 +6482,7 @@ HTML_TEMPLATE_PART3 = r"""
         </div>
         ${listHtml}
         <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid var(--border);">
-          <button class="btn btn-outline" onclick="document.getElementById('detailModal').classList.remove('open');switchTab('tab-timeline');">Mở Bảng 24 Ngày (Mục 02)</button>
+          <button class="btn btn-outline" onclick="document.getElementById('detailModal').classList.remove('open');switchTab('tab-timeline');">Mở Bảng 26 Ngày (Mục 02)</button>
           <div style="display:flex;gap:8px;">
             <button class="btn btn-primary" onclick="document.getElementById('detailModal').classList.remove('open');document.getElementById('globalSearchInput').value='${shortDate}';handleGlobalSearch('${shortDate}');">Tra cứu toàn bộ hồ sơ ngày ${shortDate} &rarr;</button>
             ${linkBtn(r.c15, 'Link Minh chứng Chính')}
@@ -7416,7 +7416,7 @@ HTML_TEMPLATE_PART3 = r"""
 
       // Chart C: Cumulative Net Sentiment
       document.getElementById('chartCumNet').innerHTML = buildLineChartSVG(labels, [
-        { name: 'Tín nhiệm ròng TS. Tuấn (+816)', data: tuanNet, color: '#2575fc' },
+        { name: 'Tín nhiệm ròng TS. Tuấn (+827)', data: tuanNet, color: '#2575fc' },
         { name: 'Tín nhiệm ròng Ông Thụy (+391)', data: thuyNet, color: '#ef4444' }
       ]);
 
@@ -8918,7 +8918,7 @@ HTML_TEMPLATE_PART3 = r"""
           rawDate: String(r.c1 || ''),
           plat: 'Đa nền tảng',
           type: 'CATALOG',
-          typeLabel: 'Mốc lũy kế 24 ngày',
+          typeLabel: 'Mốc lũy kế 26 ngày',
           channel: r.c2 || '',
           excerpt: `Ngày ${r.c1}: Tuấn ${r.c3} bài (Lũy kế ${r.c4}) vs Thụy ${r.c5} bài (Lũy kế ${r.c6})`,
           stance: `Ròng Tuấn +${r.c11} | Thụy +${r.c14}`,
