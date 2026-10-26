@@ -1422,14 +1422,18 @@
       display: none;
       position: absolute;
       right: 0;
+      left: auto;
       top: calc(100% + 6px);
-      min-width: 240px;
+      width: max-content;
+      min-width: 320px;
+      max-width: calc(100vw - 24px);
       background: var(--bg-panel);
       border: 1px solid var(--border-strong);
       border-radius: 8px;
       box-shadow: 0 12px 32px rgba(15, 23, 42, 0.16);
       padding: 6px;
-      z-index: 1500;
+      z-index: 2500;
+      box-sizing: border-box;
     }
     .exec-dropdown.open .exec-dropdown-menu {
       display: block;
@@ -1446,7 +1450,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 10px;
+      gap: 14px;
       width: 100%;
       padding: 8px 10px;
       border: none;
@@ -1459,6 +1463,7 @@
       cursor: pointer;
       text-decoration: none !important;
       transition: background 0.12s;
+      box-sizing: border-box;
     }
     .exec-menu-item:hover {
       background: var(--table-hover);
@@ -1468,15 +1473,20 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
+      white-space: nowrap;
+      min-width: 0;
     }
     .exec-menu-item .item-meta {
       font-size: 10.5px;
       font-weight: 700;
       color: var(--text-muted);
       background: var(--bg-input);
-      padding: 1px 6px;
+      padding: 2px 7px;
       border-radius: 4px;
       border: 1px solid var(--border);
+      white-space: nowrap;
+      flex-shrink: 0;
+      line-height: 1.25;
     }
     .exec-menu-divider {
       height: 1px;
@@ -2488,6 +2498,9 @@
         max-height: 75vh;
         overflow-y: auto;
         z-index: 10005;
+      }
+      .exec-menu-item .item-left {
+        white-space: normal;
       }
       .nav-tabs {
         display: flex !important;
@@ -399411,19 +399424,49 @@
     }
 
 
-    // Dropdown Menu Controller
+    // Dropdown Menu Controller (Viewport-Aware Anti-Clipping Positioning)
+    function positionDropdownMenu(el) {
+      if (!el) return;
+      const menu = el.querySelector('.exec-dropdown-menu');
+      if (!menu) return;
+      if (window.innerWidth <= 768) {
+        menu.style.left = '';
+        menu.style.right = '';
+        return;
+      }
+      menu.style.left = 'auto';
+      menu.style.right = '0px';
+      const rect = menu.getBoundingClientRect();
+      if (rect.left < 12) {
+        menu.style.right = 'auto';
+        menu.style.left = '0px';
+        const rect2 = menu.getBoundingClientRect();
+        if (rect2.right > window.innerWidth - 12) {
+          const shift = (window.innerWidth - 12) - rect2.right;
+          menu.style.left = `${shift}px`;
+        }
+      }
+    }
+
     function toggleExecDropdown(id, ev) {
       if (ev) ev.stopPropagation();
       const el = document.getElementById(id);
       if (!el) return;
       const wasOpen = el.classList.contains('open');
       closeAllDropdowns();
-      if (!wasOpen) el.classList.add('open');
+      if (!wasOpen) {
+        el.classList.add('open');
+        positionDropdownMenu(el);
+      }
     }
 
     function closeAllDropdowns() {
       document.querySelectorAll('.exec-dropdown.open').forEach(d => d.classList.remove('open'));
     }
+
+    window.addEventListener('resize', () => {
+      document.querySelectorAll('.exec-dropdown.open').forEach(d => positionDropdownMenu(d));
+    });
 
     document.addEventListener('click', () => closeAllDropdowns());
 
@@ -403113,7 +403156,6 @@
           setGsAuthMessage('error', 'Mật khẩu không chính xác hoặc đã hết hạn.');
           return;
         }
-
         const nowMs = Date.now();
         const expiresAtMs = (result.security && result.security.expiresAtMs) ? Number(result.security.expiresAtMs) : (nowMs + 30 * 60000);
         const timeoutMinutes = (result.security && result.security.timeoutMinutes) ? Number(result.security.timeoutMinutes) : 30;
