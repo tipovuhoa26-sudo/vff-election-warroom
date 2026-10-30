@@ -3248,11 +3248,11 @@
                 <div class="ed-flat-seg neutral" style="width:22.1%;"
                      onmouseenter="showEdTooltip(event, '<strong>Bình luận phản biện (682) và đề xuất nhân sự khác (435) = 1.117 (22,1%)</strong><div class=ed-tt-row><span>Phản biện / Cảnh báo (429 FB + 253 YT/TT):</span><strong>682 bình luận</strong></div><div class=ed-tt-row><span>Ứng viên khác (177 FB + 258 YT/TT):</span><strong>435 bình luận</strong></div><div class=ed-tt-row><span>Bình luận trung lập đi kèm:</span><span>719 bình luận (341 FB + 378 YT/TT)</span></div><div class=ed-tt-hint>Bấm để xem bình luận gốc &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="jumpToComments('Phản đối')">Phản biện &amp; Khác: 1.117 (22,1%)</div>
+                     onclick="jumpToComments('Phản đối')">Khác: 1.117 (22,1%)</div>
                 <div class="ed-flat-seg thuy" style="width:23.2%;"
                      onmouseenter="showEdTooltip(event, '<strong>Bình luận ủng hộ Ông Nguyễn Đức Thụy (1.173 / 5.051 = 23,2%)</strong><div class=ed-tt-row><span>Ủng hộ trực tiếp:</span><strong>1.173 bình luận (631 FB + 542 YT/TT)</strong></div><div class=ed-tt-row><span>Phản biện trực diện:</span><span>682 bình luận</span></div><div class=ed-tt-row><span>Tín nhiệm ròng lũy kế 30 ngày:</span><span>+584 điểm</span></div><div class=ed-tt-hint>Bấm để xem bình luận gốc &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="jumpToComments('Thụy')">Ông Thụy: 1.173 (23,2%)</div>
+                     onclick="jumpToComments('Thụy')">Thụy: 1.173 (23,2%)</div>
               </div>
             </div>
             <!-- Chú giải số liệu và nhận định dưới biểu đồ -->
@@ -3311,7 +3311,7 @@
                 <div class="ed-flat-seg thuy" style="width:12.6%;"
                      onmouseenter="showEdTooltip(event, '<strong>Bài viết &amp; Video MXH ủng hộ trực tiếp Ông Thụy = 294 bài (12,64%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng MXH:</span><strong>146 FB · 93 YT · 55 TT</strong></div><div class=ed-tt-row><span>Báo chí chính thống (586 bài):</span><strong>+144 bài báo (Tổng toàn kho: 438)</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Ông Thụy: 294 (12,6%)</div>
+                     onclick="switchTab('tab-press-fb')">Thụy: 294</div>
               </div>
             </div>
             <!-- Chú giải số liệu và nhận định dưới biểu đồ -->
@@ -457653,6 +457653,10 @@
     ]
   }
 };
+    let _vaultTemplateHtml = '';
+    let _isDashboardUnlocked = false;
+    let _authOverlayClone = null;
+
     let DB = { meta: {}, sheets: {} };
     let currentTab = 'tab-overview';
     let currentWaveFilter = 'ALL';
@@ -458304,8 +458308,8 @@
         rSub.textContent = 'tín hiệu bình luận ủng hộ trực tiếp (631 FB + 542 YT/TT · Phản biện & Cảnh báo: 682 · Tín nhiệm ròng +584)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:54.7%;" onclick="jumpToComments('Tuấn')">TS. Tuấn: 2.761 (54,7%)</div>
-          <div class="ed-flat-seg neutral" style="width:22.1%;" onclick="jumpToComments('Phản đối')">Phản biện & Khác: 1.117 (22,1%)</div>
-          <div class="ed-flat-seg thuy" style="width:23.2%;" onclick="jumpToComments('Thụy')">Ông Thụy: 1.173 (23,2%)</div>`;
+          <div class="ed-flat-seg neutral" style="width:22.1%;" onclick="jumpToComments('Phản đối')">Khác: 1.117 (22,1%)</div>
+          <div class="ed-flat-seg thuy" style="width:23.2%;" onclick="jumpToComments('Thụy')">Thụy: 1.173 (23,2%)</div>`;
         note.innerHTML = `Trong 5.051 bình luận nêu quan điểm nhân sự trực diện (thuộc 5.770 bình luận mã hóa định danh = 3.200 FB + 2.570 YT/TT), nhóm chọn TS. Trần Quốc Tuấn làm Chủ tịch dẫn đầu với <strong>2.761</strong> bình luận (2.486 ủng hộ trực tiếp + 275 đề xuất Liên danh; tín nhiệm ròng +1.158). Ông Nguyễn Đức Thụy đạt <strong>1.173</strong> bình luận ủng hộ trực tiếp đi kèm 682 ý kiến phản biện (tín nhiệm ròng +584).`;
       } else if (mode === 'v44_core') {
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm (30 ngày): 4.480 bình luận bày tỏ quan điểm nhân sự trực diện (trên 1.185 bài/video lõi)';
@@ -458427,7 +458431,7 @@
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:26.7%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 620 (26,7%)</div>
           <div class="ed-flat-seg neutral" style="width:60.7%;" onclick="switchTab('tab-press-fb')">Trung lập & Khác: 1.412 (60,7%)</div>
-          <div class="ed-flat-seg thuy" style="width:12.6%;" onclick="switchTab('tab-press-fb')">Ông Thụy: 294 (12,6%)</div>`;
+          <div class="ed-flat-seg thuy" style="width:12.6%;" onclick="switchTab('tab-press-fb')">Thụy: 294</div>`;
         note.innerHTML = `Trong 2.326 bài viết/video mạng xã hội (958 FB · 870 YT · 498 TT), có <strong>620</strong> bài/video chọn TS. Trần Quốc Tuấn làm Chủ tịch (278 FB + 271 YT + 71 TT = 26,7%), <strong>294</strong> bài/video ủng hộ trực tiếp Ông Nguyễn Đức Thụy (146 FB + 93 YT + 55 TT = 12,6%) và <strong>1.412</strong> bài đưa tin trung lập/phản biện (60,7%). Tính gộp cả 586 bài báo chính thống (394 bài nghiêng về TS. Tuấn, 144 bài về Ông Thụy), tổng nguồn phát đạt <strong>1.014</strong> so với <strong>438</strong>.`;
       } else if (mode === 'v44_587') {
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm (30 ngày): 1.185 bài/video trực diện bầu cử VFF';
