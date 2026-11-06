@@ -283,7 +283,7 @@
     }
     .global-search-wrap {
       position: relative;
-      min-width: 280px;
+      min-width: 324px;
     }
     .global-search-input {
       width: 100%;
@@ -1941,8 +1941,9 @@
     .ed-flat-seg {
       display: block;
       line-height: 26px;
-      padding: 0 6px;
-      font-size: 11px;
+      padding: 0 3px;
+      font-size: 9.6px;
+      letter-spacing: -0.2px;
       font-weight: 700;
       color: #FFFFFF;
       white-space: nowrap;
@@ -1957,7 +1958,7 @@
       background: var(--tuan-blue);
       border-right: 2px solid #FFFFFF;
       text-align: left;
-      padding-left: 8px;
+      padding-left: 6px;
     }
     .ed-flat-seg.neutral {
       background: #6E7683;
@@ -1967,7 +1968,7 @@
     .ed-flat-seg.thuy {
       background: var(--thuy-red);
       text-align: right;
-      padding-right: 8px;
+      padding-right: 6px;
     }
     .ed-metric-note {
       font-size: 12px;
@@ -2992,7 +2993,7 @@
           <span class="global-search-icon" style="display:inline-flex;align-items:center;color:var(--text-muted);">
             <svg class="ico-svg" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
           </span>
-          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 33.531 bản ghi · 38.450 URL · 25.271 bình luận..." oninput="handleGlobalSearch(this.value)" />
+          <input id="globalSearchInput" type="text" class="global-search-input" placeholder="Tra cứu 33.531 bản ghi · 38.450 URL · 25.271 BL" oninput="handleGlobalSearch(this.value)" />
         </div>
 
         <!-- Clean Data Status Pill -->
@@ -3300,18 +3301,18 @@
                 </div>
               </div>
               <div class="ed-flat-bar" id="interactiveCovBar">
-                <div class="ed-flat-seg tuan" style="width:30.2%;"
+                <div class="ed-flat-seg tuan" style="width:30.7%;"
                      onmouseenter="showEdTooltip(event, '<strong>Bài viết &amp; Video MXH chọn TS. Tuấn (854 trực tiếp + 102 Liên danh) = 956 bài (30,70%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng MXH:</span><strong>384 FB · 435 YT · 137 TT</strong></div><div class=ed-tt-row><span>Báo chí chính thống (996 bài):</span><strong>+640 bài báo (Tổng toàn kho: 1.596)</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="switchTab('tab-press-fb')">TS. Tuấn: 956 (30,7%)</div>
-                <div class="ed-flat-seg neutral" style="width:53.6%;"
+                <div class="ed-flat-seg neutral" style="width:53.1%;"
                      onmouseenter="showEdTooltip(event, '<strong>Đưa tin trung lập &amp; Khác = 1.652 bài (53,1%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng MXH:</span><strong>614 FB · 623 YT · 415 TT</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
                      onclick="switchTab('tab-press-fb')">Trung lập &amp; Khác: 1.652 (53,1%)</div>
                 <div class="ed-flat-seg thuy" style="width:16.2%;"
                      onmouseenter="showEdTooltip(event, '<strong>Bài viết &amp; Video MXH ủng hộ trực tiếp Ông Thụy = 506 bài (16,25%)</strong><div class=ed-tt-row><span>Phân bổ 3 nền tảng MXH:</span><strong>205 FB · 204 YT · 97 TT</strong></div><div class=ed-tt-row><span>Báo chí chính thống (996 bài):</span><strong>+272 bài báo (Tổng toàn kho: 778)</strong></div><div class=ed-tt-hint>Bấm để mở danh sách bài viết &rarr;</div>')"
                      onmousemove="moveEdTooltip(event)" onmouseleave="hideEdTooltip()"
-                     onclick="switchTab('tab-press-fb')">Thụy: 506</div>
+                     onclick="switchTab('tab-press-fb')">Thụy: 506 (16,2%)</div>
               </div>
             </div>
             <!-- Chú giải số liệu và nhận định dưới biểu đồ -->
@@ -3517,7 +3518,7 @@
           <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 2', this)">GĐ 2 (13–16/10): Tin đồn &amp; bài đăng đồng loạt</button>
           <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 3', this)">GĐ 3 (17–18/10): Tranh luận mô hình quản trị</button>
           <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 4', this)">GĐ 4 (19–20/10): Đề cử 3 ứng viên VFF</button>
-          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 5', this)">GĐ 5 (21/10–02/11): Gói 1.000 tỷ, Đua CT/PCT VFF, FIFA tài trợ 25 triệu USD &amp; Vòng 6 V.League</button>
+          <button class="pill-btn" onclick="filterTimelineWave('Giai đoạn 5', this)">GĐ 5 (21/10–06/11): Gói 1.000 tỷ, Đua CT/PCT VFF, FIFA tài trợ 25 triệu USD &amp; Vòng 7 V.League</button>
         </div>
       </div>
 
@@ -3526,7 +3527,7 @@
         <div class="ed-chart-top">
           <div>
             <div class="ed-chart-title" id="timelineSingleChartTitle">Góc nhìn A: Mật độ bài viết và video theo từng ngày (01/10 – 06/11/2026 · 37 ngày)</div>
-            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (1.284), Ông Nguyễn Đức Thụy (907) và Ông Nguyễn Xuân Vũ (254)</div>
+            <div class="ed-chart-sub" id="timelineSingleChartSub">So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (1.608), Ông Nguyễn Đức Thụy (1.049) và Ông Nguyễn Xuân Vũ (290)</div>
           </div>
           <div class="ed-mode-switch" id="timelineChartModeBar">
             <button class="ed-mode-btn active" onclick="switchTimelineChartView('daily', this)">1. Mật độ theo ngày</button>
@@ -5477,7 +5478,7 @@
       const capEl = document.getElementById('timelineSingleChartCaption');
       if (mode === 'daily') {
         if (titleEl) titleEl.textContent = 'Góc nhìn 1: Mật độ bài viết và video theo từng ngày (01/10 – 06/11/2026 · 37 ngày)';
-        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (1.284), Ông Nguyễn Đức Thụy (907) và Ông Nguyễn Xuân Vũ (254)';
+        if (subEl) subEl.textContent = 'So sánh số lượng bài đăng và video xuất bản mỗi ngày giữa TS. Trần Quốc Tuấn (1.608), Ông Nguyễn Đức Thụy (1.049) và Ông Nguyễn Xuân Vũ (290)';
         if (capEl) capEl.innerHTML = '<div><strong style="color:var(--tuan-blue);">Số liệu ghi nhận:</strong> Số lượng bài đăng tăng vào ngày 15/10 (33 bài đăng trùng lặp từ cụm trang "Phấn Đấu"), giai đoạn 19–22/10 (đề cử 3 ứng viên & đề xuất 600–1.000 tỷ đồng/năm) và giai đoạn 25–30/10 (191 bài/video ngày 29/10 & 99 bài/video ngày 30/10).</div><div style="margin-top:4px;"><strong style="color:#475569;">Nhận định &amp; Lưu ý:</strong> Bấm vào bất kỳ cột ngày nào để đối chiếu danh sách bài viết phát sinh thực tế trong ngày đó.</div>';
       } else if (mode === 'cum') {
         if (titleEl) titleEl.textContent = 'Góc nhìn 2: Đường cong lũy kế độ phủ truyền thông toàn kỳ (01/10 – 06/11/2026 · 37 ngày)';
@@ -5962,9 +5963,9 @@
         rBig.textContent = '506';
         rSub.textContent = 'bài viết & video MXH ủng hộ trực tiếp Ông Thụy (205 FB · 204 YT · 97 TT | Cộng 272 bài báo = 778 · Lũy kế: 1.049)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:30.2%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 956 (30,7%)</div>
-          <div class="ed-flat-seg neutral" style="width:53.6%;" onclick="switchTab('tab-press-fb')">Trung lập & Khác: 1.652 (53,1%)</div>
-          <div class="ed-flat-seg thuy" style="width:16.2%;" onclick="switchTab('tab-press-fb')">Thụy: 506</div>`;
+          <div class="ed-flat-seg tuan" style="width:30.7%;" onclick="switchTab('tab-press-fb')">TS. Tuấn: 956 (30,7%)</div>
+          <div class="ed-flat-seg neutral" style="width:53.1%;" onclick="switchTab('tab-press-fb')">Trung lập & Khác: 1.652 (53,1%)</div>
+          <div class="ed-flat-seg thuy" style="width:16.2%;" onclick="switchTab('tab-press-fb')">Thụy: 506 (16,2%)</div>`;
         note.innerHTML = `Trong 3.114 bài viết/video mạng xã hội (1.203 FB · 1.262 YT · 649 TT), có <strong>956</strong> bài/video chọn TS. Trần Quốc Tuấn làm Chủ tịch (384 FB + 435 YT + 137 TT = 30,7%), <strong>506</strong> bài/video ủng hộ trực tiếp Ông Nguyễn Đức Thụy (205 FB + 204 YT + 97 TT = 16,2%) và <strong>1.652</strong> bài đưa tin trung lập/phản biện (53,1%). Tính gộp cả 996 bài báo chính thống (640 bài nghiêng về TS. Tuấn, 272 bài về Ông Thụy), tổng nguồn phát đạt <strong>1.596</strong> so với <strong>778</strong>.`;
       } else if (mode === 'v44_587') {
         sampleEl.textContent = 'Bộ dữ liệu trọng tâm (37 ngày): 1.372 bài/video trực diện bầu cử VFF';
@@ -5988,9 +5989,9 @@
         rBig.textContent = '1.049';
         rSub.textContent = 'lượt bài viết và video đề cập lũy kế 37 ngày (37,1% định hướng tích cực)';
         bar.innerHTML = `
-          <div class="ed-flat-seg tuan" style="width:52.5%;" onclick="switchTab('tab-press-fb')">TS. Tuấn 52,5% (1.284)</div>
+          <div class="ed-flat-seg tuan" style="width:52.5%;" onclick="switchTab('tab-press-fb')">TS. Tuấn 52,5% (1.608)</div>
           <div class="ed-flat-seg neutral" style="width:10.4%;" onclick="switchTab('tab-press-fb')">Ông Vũ & Khác 9,8% (290)</div>
-          <div class="ed-flat-seg thuy" style="width:37.1%;" onclick="switchTab('tab-press-fb')">Ông Thụy 37,1% (907)</div>`;
+          <div class="ed-flat-seg thuy" style="width:37.1%;" onclick="switchTab('tab-press-fb')">Ông Thụy 37,7% (1.049)</div>`;
         note.innerHTML = `<strong>Ngữ cảnh nguồn phát (Cập nhật đầy đủ đến 06/11/2026: N = 4.110 bài/video/báo xác thực):</strong> Gồm <strong>996 bài báo chính thống</strong>, <strong>1.203 bài Facebook xác thực URL</strong>, <strong>1.262 video YouTube</strong> và <strong>649 video TikTok</strong>. Ông Nguyễn Xuân Vũ ghi nhận <strong>290 lượt đề cập</strong>.`;
       } else if (mode === 'press78') {
         sampleEl.textContent = 'Nhóm nguồn Báo chí chính thống & Trang tin điện tử (N = 996 bài · Cập nhật đầy đủ đến 06/11/2026)';
@@ -5999,17 +6000,17 @@
         lSub.textContent = '64,3% tổng số bài báo chính thống (635 bài trực tiếp + 5 bài Liên danh: 7 ĐTQG, AFC/FIFA 25M USD, Huân chương Lao động)';
         rName.textContent = 'Ông Thụy (Báo chí)';
         rBig.textContent = '272 bài';
-        rSub.textContent = '27,9% tổng số bài báo (Đề cử & gói 600–1.000 tỷ, Đề xuất 18 đội V.League & CLB Ninh Bình)';
+        rSub.textContent = '27,3% tổng số bài báo (Đề cử & gói 600–1.000 tỷ, Đề xuất 18 đội V.League & CLB Ninh Bình)';
         bar.innerHTML = `
           <div class="ed-flat-seg tuan" style="width:64.0%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">TS. Tuấn: 640 (64,3%)</div>
-          <div class="ed-flat-seg neutral" style="width:8.1%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Khác: 63</div>
+          <div class="ed-flat-seg neutral" style="width:8.4%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Khác: 84 (8,4%)</div>
           <div class="ed-flat-seg thuy" style="width:27.9%;" onclick="switchTab('tab-press-fb');switchPressFbSub('press')">Ông Thụy: 272 (27,3%)</div>`;
         note.innerHTML = `<strong>Báo chí chính thống (996 bài cập nhật đến 06/11/2026):</strong> 640 bài ghi nhận công tác điều hành ĐTQG, đối ngoại AFC/FIFA của TS. Trần Quốc Tuấn; 272 bài đề cập Ông Nguyễn Đức Thụy; 84 bài đưa tin quy chế và nhân sự khác.`;
       } else if (mode === 'fb665') {
         sampleEl.textContent = 'Nền tảng Facebook xác thực đường dẫn gốc (Danh mục 1.203 bài · Cập nhật đến 06/11/2026)';
         lName.textContent = 'TS. Tuấn (Facebook)';
         lBig.textContent = '384 bài';
-        lSub.textContent = '31,7% tổng bài Facebook (305 bài ủng hộ trực tiếp + 32 bài đề xuất Liên danh)';
+        lSub.textContent = '31,9% tổng bài Facebook (348 bài ủng hộ trực tiếp + 36 bài đề xuất Liên danh)';
         rName.textContent = 'Ông Thụy (Facebook)';
         rBig.textContent = '205 bài';
         rSub.textContent = '17,0% tổng bài Facebook (205 bài ủng hộ trực tiếp · Gồm 33 bài đăng trùng lặp của cụm Phấn Đấu)';
@@ -6022,7 +6023,7 @@
         sampleEl.textContent = 'Nền tảng YouTube đã kiểm định (Danh mục 1.262 video · Cập nhật đến 06/11/2026 · 100% oEmbed 200 OK)';
         lName.textContent = 'TS. Tuấn (YouTube)';
         lBig.textContent = '435 video';
-        lSub.textContent = '34,3% tổng video YouTube (317 video ủng hộ trực tiếp + 49 video đề xuất Liên danh)';
+        lSub.textContent = '34,5% tổng video YouTube (380 video ủng hộ trực tiếp + 55 video đề xuất Liên danh)';
         rName.textContent = 'Ông Thụy (YouTube)';
         rBig.textContent = '204 video';
         rSub.textContent = '16,2% tổng video YouTube (204 video ủng hộ trực tiếp · Phân tích gói tài trợ 600–1.000 tỷ & CLB)';
@@ -6035,7 +6036,7 @@
         sampleEl.textContent = 'Nền tảng TikTok đã kiểm định (Danh mục 649 video · Cập nhật đến 06/11/2026)';
         lName.textContent = 'TS. Tuấn (TikTok)';
         lBig.textContent = '137 video';
-        lSub.textContent = '20,0% tổng video TikTok (107 video ủng hộ trực tiếp + 10 video đề xuất Liên danh)';
+        lSub.textContent = '21,1% tổng video TikTok (126 video ủng hộ trực tiếp + 11 video đề xuất Liên danh)';
         rName.textContent = 'Ông Thụy (TikTok)';
         rBig.textContent = '97 video';
         rSub.textContent = '14,9% tổng video TikTok (97 video ủng hộ trực tiếp · Hiệu ứng lan truyền từ khóa "1.000 tỷ")';
@@ -6130,7 +6131,7 @@
         if (subEl) subEl.innerHTML = 'Hiệu số tích lũy giữa tín hiệu ủng hộ (+) và phản đối (-) theo từng ngày · <strong>Bấm vào bất kỳ ngày nào để kiểm tra dữ liệu gốc</strong>';
       }
 
-      const W = 1140, H = 345, padL = 48, padR = 230, padT = 56, padB = 38;
+      const W = 1164, H = 345, padL = 42, padR = 240, padT = 56, padB = 38;
       const plotW = W - padL - padR, plotH = H - padT - padB;
       const stepX = plotW / (labels.length - 1);
 
@@ -6149,11 +6150,11 @@
 
       // 5 Key Event Vertical Annotations in Dedicated Non-Overlapping Top Band (y = 6..38), each aligned strictly over its date xAt(idx)
       const events = [
-        { idx: 7,  date: '08/10', title: '7 ĐTQG dự VCK Châu Á', sub: 'Củng cố tín nhiệm TS. Tuấn', boxX: 160, boxW: 158 },
-        { idx: 14, date: '15/10', title: '33 bài đăng đồng loạt',  sub: "Cụm 'Phấn Đấu' phản ứng ngược", boxX: 326, boxW: 180 },
-        { idx: 18, date: '19/10', title: 'Đề cử 3 ứng viên VFF',  sub: 'Báo kinh tế nêu >40/57 đề cử', boxX: 514, boxW: 152 },
-        { idx: 20, date: '21/10', title: 'Gói 600–1.000 tỷ/năm',  sub: 'Xu hướng Liên danh chia vai', boxX: 674, boxW: 160 },
-        { idx: 35, date: '25/10–06/11', title: 'FIFA 25M USD, ĐTVN & Đại hội X VFF', sub: 'Đại hội VFF, U17 đi UAE & Vòng 7 V.League', boxX: 842, boxW: 218 }
+        { idx: 7,  date: '08/10', title: '7 ĐTQG dự VCK Châu Á', sub: 'Củng cố tín nhiệm TS. Tuấn', boxX: 120, boxW: 162 },
+        { idx: 14, date: '15/10', title: '33 bài đăng đồng loạt',  sub: "Cụm 'Phấn Đấu' phản ứng ngược", boxX: 288, boxW: 168 },
+        { idx: 18, date: '19/10', title: 'Đề cử 3 ứng viên VFF',  sub: 'Báo kinh tế nêu >40/57 đề cử', boxX: 462, boxW: 154 },
+        { idx: 24, date: '21–25/10', title: 'Gói 600–1.000 tỷ/năm',  sub: 'Xu hướng Liên danh chia vai', boxX: 622, boxW: 178 },
+        { idx: 34, date: '25/10–06/11', title: 'FIFA 25M USD, ĐTVN & Đại hội X VFF', sub: 'Đại hội VFF, U17 đi UAE & Vòng 7 V.League', boxX: 806, boxW: 266 }
       ];
 
       events.forEach(ev => {
@@ -6230,7 +6231,7 @@
         const x = xAt(i);
         const isKeyDate = (i === 7 || i === 14 || i === 18 || i === 20 || i === 21 || i === 24 || i === 28 || i === 31 || i === 35 || i === 36);
         svg += `<line x1="${x}" y1="${padT + plotH}" x2="${x}" y2="${padT + plotH + 5}" stroke="#141923" stroke-width="1"/>`;
-        svg += `<text id="ovDateLbl_${i}" x="${x}" y="${H - 12}" text-anchor="middle" font-size="10.2" fill="${isKeyDate ? '#141923' : '#6C737F'}" font-weight="${isKeyDate ? '800' : '500'}">${lbl}</text>`;
+        svg += `<text id="ovDateLbl_${i}" x="${x}" y="${H - 12}" text-anchor="middle" font-size="8.6" letter-spacing="-0.25px" fill="${isKeyDate ? '#141923' : '#6C737F'}" font-weight="${isKeyDate ? '800' : '500'}">${lbl}</text>`;
       });
 
       // Full-height Interactive Hit Columns for all 22 Days (hover + click to drill down)
@@ -6249,7 +6250,7 @@
       const r = rows[idx];
       if (!r) return;
 
-      const W = 1140, padL = 48, padR = 230;
+      const W = 1164, padL = 42, padR = 240;
       const plotW = W - padL - padR;
       const stepX = plotW / (rows.length - 1);
       const x = padL + idx * stepX;
@@ -6442,7 +6443,7 @@
         </div>
         ${listHtml}
         <div style="margin-top:14px;display:flex;justify-content:space-between;align-items:center;padding-top:10px;border-top:1px solid var(--border);">
-          <button class="btn btn-outline" onclick="document.getElementById('detailModal').classList.remove('open');switchTab('tab-timeline');">Mở Bảng 36 Ngày (Mục 02)</button>
+          <button class="btn btn-outline" onclick="document.getElementById('detailModal').classList.remove('open');switchTab('tab-timeline');">Mở Bảng 37 Ngày (Mục 02)</button>
           <div style="display:flex;gap:8px;">
             <button class="btn btn-primary" onclick="document.getElementById('detailModal').classList.remove('open');document.getElementById('globalSearchInput').value='${shortDate}';handleGlobalSearch('${shortDate}');">Tra cứu toàn bộ hồ sơ ngày ${shortDate} &rarr;</button>
             ${linkBtn(r.c15, 'Link Minh chứng Chính')}
@@ -7377,7 +7378,7 @@
       // Chart C: Cumulative Net Sentiment
       document.getElementById('chartCumNet').innerHTML = buildLineChartSVG(labels, [
         { name: 'Tín nhiệm ròng TS. Tuấn (+1.597)', data: tuanNet, color: '#2575fc' },
-        { name: 'Tín nhiệm ròng Ông Thụy (+682)', data: thuyNet, color: '#ef4444' }
+        { name: 'Tín nhiệm ròng Ông Thụy (+798)', data: thuyNet, color: '#ef4444' }
       ]);
 
       // Chart D: Butterfly Positive vs Negative
@@ -7410,7 +7411,7 @@
         const h1 = (v1 / maxVal) * plotH, h2 = (v2 / maxVal) * plotH;
         svg += `<rect x="${cx - bw - 1}" y="${padT + plotH - h1}" width="${bw}" height="${h1}" fill="#1B4F9C" rx="1"/>`;
         svg += `<rect x="${cx + 1}" y="${padT + plotH - h2}" width="${bw}" height="${h2}" fill="#B8292F" rx="1"/>`;
-        if (i % 2 === 0 || labels.length <= 12) {
+        if (i % (labels.length > 28 ? 3 : 2) === 0 || i === labels.length - 1 || labels.length <= 12) {
           svg += `<text x="${cx}" y="${H - 12}" text-anchor="middle" font-size="9.5" fill="#4A5260" font-weight="600">${lbl}</text>`;
         }
         const dayIdx = resolveDayIndexByShortLabel(lbl);
@@ -7452,7 +7453,7 @@
       });
       labels.forEach((lbl, i) => {
         const x = padL + i * stepX;
-        if (i % 2 === 0 || labels.length <= 12) {
+        if (i % (labels.length > 28 ? 3 : 2) === 0 || i === labels.length - 1 || labels.length <= 12) {
           svg += `<text x="${x}" y="${H - 12}" text-anchor="middle" font-size="9.5" fill="#4A5260" font-weight="600">${lbl}</text>`;
         }
         const dayIdx = resolveDayIndexByShortLabel(lbl);
@@ -7484,7 +7485,7 @@
         svg += `<rect x="${cx + 1}" y="${zeroY - hThP}" width="${bw}" height="${hThP}" fill="#B8292F"/>`;
         svg += `<rect x="${cx - bw - 1}" y="${zeroY}" width="${bw}" height="${hTN}" fill="#6C737F"/>`;
         svg += `<rect x="${cx + 1}" y="${zeroY}" width="${bw}" height="${hThN}" fill="#9E9C93"/>`;
-        if (i % 2 === 0 || labels.length <= 12) {
+        if (i % (labels.length > 28 ? 3 : 2) === 0 || i === labels.length - 1 || labels.length <= 12) {
           svg += `<text x="${cx}" y="${H - 10}" text-anchor="middle" font-size="9.5" fill="#4A5260" font-weight="600">${lbl}</text>`;
         }
         const dayIdx = resolveDayIndexByShortLabel(lbl);
