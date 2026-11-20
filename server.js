@@ -8,10 +8,24 @@ const { execFile } = require('child_process');
 const PORT = process.env.PORT || 3088;
 const DATA_PATH = path.join(__dirname, 'data', 'warroom_db.json');
 const PUBLIC_DIR = path.join(__dirname, 'public');
-const EXCEL_PATH = path.resolve(__dirname, '../2210/BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_22_10_2026.xlsx');
-const AUDIT_EXCEL_PATH = path.resolve(__dirname, '../2210/DANH_MUC_NGUON_DOI_CHIEU_VFF_24_10_2026.xlsx');
-const PPTX_PATH = path.resolve(__dirname, '../2210/BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pptx');
-const PDF_PATH = path.resolve(__dirname, '../2210/BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pdf');
+
+function resolveExistingFile(filename) {
+  const candidates = [
+    path.join(PUBLIC_DIR, filename),
+    path.join(__dirname, filename),
+    path.resolve(__dirname, '..', filename),
+    path.resolve(__dirname, '../2210', filename)
+  ];
+  for (const c of candidates) {
+    if (fs.existsSync(c)) return c;
+  }
+  return path.join(PUBLIC_DIR, filename);
+}
+
+const EXCEL_PATH = resolveExistingFile('BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_24_10_2026.xlsx');
+const AUDIT_EXCEL_PATH = resolveExistingFile('DANH_MUC_NGUON_DOI_CHIEU_VFF_24_10_2026.xlsx');
+const PPTX_PATH = resolveExistingFile('BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pptx');
+const PDF_PATH = resolveExistingFile('BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pdf');
 
 let cachedDb = null;
 let lastDbMtime = 0;
@@ -70,6 +84,20 @@ const server = http.createServer((req, res) => {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type'
+    });
+    res.end();
+    return;
+  }
+
+  // Favicon handler: always 200 OK (never 404)
+  if (pathname === '/favicon.ico') {
+    const favPath = path.join(PUBLIC_DIR, 'favicon.ico');
+    if (fs.existsSync(favPath)) {
+      return sendFile(res, favPath, 'image/x-icon');
+    }
+    res.writeHead(204, {
+      'Content-Type': 'image/x-icon',
+      'Cache-Control': 'public, max-age=86400'
     });
     res.end();
     return;
