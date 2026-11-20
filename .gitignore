@@ -1,3 +1,15 @@
 .env*
 node_modules/
 .DS_Store
+assets/screenshots_raw/
+public/assets/screenshots_raw/
+assets/template_extracted/
+public/assets/template_extracted/
+assets/buzzmetrics_charts/
+public/assets/buzzmetrics_charts/
+assets/kompa_charts/
+public/assets/kompa_charts/
+assets/health_chart_*.png
+public/assets/health_chart_*.png
+assets/radar_chart_*.png
+public/assets/radar_chart_*.png
