@@ -114,7 +114,7 @@ const server = http.createServer((req, res) => {
       status: 'online',
       server_time: new Date().toISOString(),
       data_mode: (cachedDb && cachedDb.meta && cachedDb.meta.data_mode) || 'SNAPSHOT_FROZEN',
-      snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '22/10/2026 23:59 GMT+7',
+      snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '21/11/2026 23:59 GMT+7',
       last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || null,
       excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || excelMtime
     });
@@ -198,7 +198,7 @@ const server = http.createServer((req, res) => {
           status: 'ok',
           message: 'Đã đồng bộ dữ liệu thực tế từ Master Excel 12 Sheets thành công!',
           timestamp: new Date().toISOString(),
-          snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '22/10/2026 23:59 GMT+7',
+          snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '21/11/2026 23:59 GMT+7',
           last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || new Date().toISOString(),
           excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || null,
           html_rebuilt: !err2,
@@ -240,6 +240,9 @@ const server = http.createServer((req, res) => {
       '.json': 'application/json; charset=utf-8',
       '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
       '.png': 'image/png',
+      '.jpg': 'image/jpeg',
+      '.jpeg': 'image/jpeg',
+      '.webp': 'image/webp',
       '.svg': 'image/svg+xml'
     };
     return sendFile(res, fullStaticPath, mimeMap[ext] || 'application/octet-stream');
