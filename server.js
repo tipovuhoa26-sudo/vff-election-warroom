@@ -114,7 +114,7 @@ const server = http.createServer((req, res) => {
       status: 'online',
       server_time: new Date().toISOString(),
       data_mode: (cachedDb && cachedDb.meta && cachedDb.meta.data_mode) || 'SNAPSHOT_FROZEN',
-      snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '21/11/2026 23:59 GMT+7',
+      snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '23/11/2026 09:04 GMT+7',
       last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || null,
       excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || excelMtime
     });
@@ -156,7 +156,7 @@ const server = http.createServer((req, res) => {
     });
   }
 
-  // API: Global search across all 12 sheets (2,951 records)
+  // API: Global search across all 12 sheets (35,160 records)
   if (pathname === '/api/search' && req.method === 'GET') {
     loadDb();
     const q = (parsed.query.q || '').toString().trim().toLowerCase();
@@ -198,7 +198,7 @@ const server = http.createServer((req, res) => {
           status: 'ok',
           message: 'Đã đồng bộ dữ liệu thực tế từ Master Excel 12 Sheets thành công!',
           timestamp: new Date().toISOString(),
-          snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '21/11/2026 23:59 GMT+7',
+          snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '23/11/2026 09:04 GMT+7',
           last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || new Date().toISOString(),
           excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || null,
           html_rebuilt: !err2,
