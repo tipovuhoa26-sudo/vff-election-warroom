@@ -1,0 +1,3723 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-25T06:52:27Z",
+  "summary": {
+    "catalog_total": 102,
+    "catalog_real": 102,
+    "catalog_blocked": 0,
+    "s06_total": 1421,
+    "s06_captured": 1394,
+    "s06_login_walled": 8,
+    "s06_group_restricted": 4,
+    "s06_reel_blocked_or_timeout": 9,
+    "s06_404_or_dead": 6,
+    "s06_timeout": 0,
+    "s07_total": 2703,
+    "s07_captured": 2698,
+    "s07_unavailable": 5,
+    "s08_total": 720,
+    "s08_captured": 701,
+    "s08_captcha_or_blocked": 0,
+    "s08_404_or_dead": 19,
+    "total_dataset_rows": 4844,
+    "total_dataset_captured": 4793,
+    "total_dataset_blocked_or_unavailable": 51
+  },
+  "day55_press_official": [
+    {
+      "file": "afc_u17_clean.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/afc_u17_clean.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 456991,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "fifa_ranking_vietnam_99_clean.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/fifa_ranking_vietnam_99_clean.png",
+      "width": 1360,
+      "height": 900,
+      "bytes": 150524,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_afc_acle.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_afc_acle.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 644386,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_afc_cahn_kobe.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_afc_cahn_kobe.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 584884,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_afc_main.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_afc_main.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 276375,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_afc_u17.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_afc_u17.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 645050,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_forward.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_forward.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 819689,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_matchday-eight-preview-doha.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_matchday-eight-preview-doha.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 410781,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_news_en.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_news_en.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 732078,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_qualified-teams-round-of-32-knoc.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_qualified-teams-round-of-32-knoc.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 571762,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_u17.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_u17.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 636787,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_u17_news.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_u17_news.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 524344,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_u17_scores_fixtures.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_u17_scores_fixtures.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 101085,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_u17_standings.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_u17_standings.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 70213,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_vietnam-new-zealand-reaction.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_vietnam-new-zealand-reaction.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 499015,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_fifa_womens_wc.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_fifa_womens_wc.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 264930,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_tdtt_gov.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_tdtt_gov.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 944975,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_vff_dhx.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_vff_dhx.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 911131,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_vff_home.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_vff_home.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 1083397,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_vff_tb.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_vff_tb.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 423268,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "official_vpf_home.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/official_vpf_home.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 339053,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_001.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_001.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 577445,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_002.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_002.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 502442,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_003.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_003.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 180895,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_004.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_004.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 289707,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_005.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_005.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 259306,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_006.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_006.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 730532,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_007.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_007.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 252466,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_008.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_008.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 473902,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_009.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_009.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 155910,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_010.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_010.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 203016,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_011.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_011.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 143323,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_012.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_012.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 497891,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_013.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_013.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 419930,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_014.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_014.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 222529,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_015.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_015.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 158180,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_016.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_016.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 396700,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_017.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_017.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 785818,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_018.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_018.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 406680,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_019.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_019.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 733582,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_020.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_020.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 302261,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_021.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_021.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 204164,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_022.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_022.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 205568,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_023.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_023.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 228259,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_024.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_024.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 201113,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_025.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_025.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 493461,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_026.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_026.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 329815,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_027.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_027.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 220256,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_028.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_028.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 553846,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_029.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_029.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 219824,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_030.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_030.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 566001,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_031.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_031.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 224251,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_032.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_032.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 136739,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_033.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_033.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 820433,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_034.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_034.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 523616,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_035.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_035.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 526913,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_036.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_036.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 157619,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_037.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_037.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 203922,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_038.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_038.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 286183,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_039.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_039.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 413286,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_040.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_040.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 336366,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_041.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_041.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 161285,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_042.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_042.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 416671,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_043.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_043.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 262074,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_044.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_044.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 467380,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_045.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_045.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 573704,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_046.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_046.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 860211,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_047.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_047.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 668897,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_048.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_048.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 651282,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_049.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_049.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 401461,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_050.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_050.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 396502,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_051.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_051.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 814075,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_052.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_052.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 814029,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_053.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_053.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 144875,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_054.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_054.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 424528,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_055.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_055.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 90105,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_056.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_056.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 100893,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_057.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_057.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 238632,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_059.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_059.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 869463,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_060.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_060.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 470418,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_061.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_061.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 499742,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_062.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_062.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 245445,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_063.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_063.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 464377,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_064.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_064.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 486543,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_065.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_065.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 532204,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_066.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_066.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 407077,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_067.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_067.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 441689,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_068.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_068.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 119849,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_069.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_069.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 272278,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_070.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_070.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 369264,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_071.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_071.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 170526,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_072.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_072.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 278471,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_073.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_073.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 413938,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_074.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_074.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 450552,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_075.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_075.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 351445,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_076.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_076.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 357444,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_077.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_077.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 768886,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_078.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_078.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 811396,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_079.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_079.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 594577,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_080.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_080.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 591797,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_081.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_081.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 338569,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_082.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_082.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 178829,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_083.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_083.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 153521,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_084.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_084.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 553634,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_085.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_085.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 271050,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_086.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_086.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 675349,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_087.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_087.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 476478,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_088.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_088.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 644957,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_089.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_089.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 155020,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_090.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_090.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 248565,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_091.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_091.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 324130,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_092.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_092.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 625737,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_093.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_093.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 615180,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_094.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_094.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 582958,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_095.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_095.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 373035,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_096.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_096.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 320652,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_097.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_097.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 380455,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_098.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_098.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 205843,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_099.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_099.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 370783,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_100.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_100.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 429603,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_101.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_101.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 98290,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_102.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_102.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 80692,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_103.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_103.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 171991,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_104.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_104.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 664884,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_105.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_105.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 309976,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_106.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_106.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 115790,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_107.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_107.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 170453,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_108.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_108.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 492998,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_109.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_109.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 140597,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_110.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_110.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 352260,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_111.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_111.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 526430,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_112.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_112.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 145993,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_113.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_113.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 708002,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_114.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_114.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 328568,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_115.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_115.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 198220,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_116.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_116.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 510680,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_117.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_117.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 131034,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_118.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_118.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 236836,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_119.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_119.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 709525,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_120.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_120.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 183725,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_121.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_121.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 208418,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_122.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_122.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 457916,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_123.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_123.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 525064,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_124.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_124.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 691685,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_125.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_125.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 329164,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_126.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_126.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 458406,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_127.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_127.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 436700,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_128.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_128.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 373772,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_129.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_129.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 221939,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_130.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_130.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 621023,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_131.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_131.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 96803,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_132.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_132.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 845844,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_133.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_133.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 338466,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_134.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_134.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 490197,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_135.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_135.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 296847,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_136.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_136.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 215271,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_137.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_137.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 138596,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_138.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_138.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 224676,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_139.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_139.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 668810,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_140.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_140.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 258851,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_141.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_141.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 374342,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_142.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_142.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 375175,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_143.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_143.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 545486,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_144.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_144.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 143997,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_145.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_145.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 508812,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_146.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_146.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 574935,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_147.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_147.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 640391,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_148.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_148.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 294525,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_149.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_149.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 384525,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_150.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_150.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 435507,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_151.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_151.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 410072,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_152.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_152.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 137632,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_153.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_153.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 228865,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_154.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_154.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 384067,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_155.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_155.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 145103,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_156.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_156.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 418678,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_157.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_157.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 139525,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_158.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_158.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 112407,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_159.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_159.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 443421,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_160.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_160.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 218401,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_161.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_161.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 148585,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_162.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_162.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 561672,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_163.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_163.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 222018,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_164.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_164.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 707721,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_165.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_165.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 927226,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_166.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_166.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 467634,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_167.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_167.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 102606,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_168.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_168.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 661599,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_169.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_169.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 392860,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_170.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_170.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 196966,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_171.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_171.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 370954,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_172.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_172.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 191593,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_173.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_173.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 516203,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_174.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_174.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 497340,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_175.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_175.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 316980,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_176.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_176.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 342414,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_177.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_177.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 620081,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_178.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_178.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 152294,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_179.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_179.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 680201,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_002.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_002.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 660701,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_003.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_003.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 675913,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_004.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_004.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 641704,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_005.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_005.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 683941,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_006.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_006.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 694346,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_007.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_007.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 640298,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_008.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_008.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 684869,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_009.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_009.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 679060,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_010.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_010.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 487708,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_011.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_011.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 333270,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_012.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_012.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 545834,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_013.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_013.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 502804,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_014.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_014.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 436832,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_015.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_015.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 386841,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_016.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_016.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 343453,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_017.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_017.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 251724,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_018.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_018.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 364131,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_019.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_019.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 262535,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_020.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_020.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 431549,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_021.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_021.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 274063,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_022.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_022.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 170824,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_023.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_023.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 179107,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_024.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_024.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 422138,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_025.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_025.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 555350,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_026.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_026.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 191407,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_027.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_027.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 234454,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_028.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_028.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 369464,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_029.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_029.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 126451,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_030.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_030.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 613264,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_031.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_031.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 346634,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_033.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_033.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 357618,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_034.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_034.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 152037,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_035.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_035.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 460884,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_036.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_036.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 413085,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_037.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_037.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 498401,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_038.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_038.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 564703,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_039.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_039.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 535062,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_040.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_040.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 649045,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_042.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_042.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 762835,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_043.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_043.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 208030,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_044.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_044.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 556976,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_045.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_045.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 667089,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_046.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_046.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 557655,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_047.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_047.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 562099,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_048.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_048.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 163524,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_049.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_049.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 456937,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_050.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_050.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 321131,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_051.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_051.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 563903,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_052.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_052.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 870812,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_053.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_053.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 528805,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_054.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_054.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 539804,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_055.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_055.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 367381,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_056.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_056.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 518237,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_057.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_057.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 482629,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_058.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_058.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 138299,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_059.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_059.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 451759,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_060.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_060.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 565478,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_061.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_061.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 561632,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_062.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_062.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 437328,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_063.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_063.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 728096,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_064.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_064.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 230658,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_065.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_065.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 244744,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_066.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_066.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 506823,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_067.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_067.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 478083,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_068.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_068.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 128831,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_069.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_069.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 131859,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_070.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_070.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 118619,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_071.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_071.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 344259,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_072.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_072.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 377376,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_073.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_073.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 346106,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_074.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_074.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 132355,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_075.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_075.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 350145,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_076.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_076.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 349469,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_077.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_077.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 283743,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_078.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_078.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 156286,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_079.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_079.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 567025,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_080.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_080.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 393848,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_081.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_081.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 426321,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_082.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_082.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 179055,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_083.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_083.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 541168,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_084.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_084.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 467483,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_085.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_085.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 340087,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_086.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_086.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 253405,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_088.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_088.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 759398,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_089.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_089.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 643363,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_090.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_090.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 452481,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_091.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_091.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 652242,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_092.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_092.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 826983,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_093.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_093.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 120455,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_094.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_094.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 556610,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_095.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_095.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 399945,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_096.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_096.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 116106,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_097.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_097.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 110169,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_098.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_098.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 350359,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_100.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_100.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 323653,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_101.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_101.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 439011,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_102.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_102.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 397723,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_103.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_103.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 210446,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_104.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_104.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 396181,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_105.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_105.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 475486,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_106.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_106.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 552095,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_108.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_108.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 152975,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_109.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_109.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 171125,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_110.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_110.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 345086,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_111.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_111.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 154439,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_112.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_112.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 707941,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_113.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_113.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 482755,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_114.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_114.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 393750,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_115.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_115.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 841220,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_116.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_116.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 243112,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_117.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_117.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 299784,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_118.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_118.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 165314,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_119.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_119.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 554038,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_120.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_120.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 491773,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_121.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_121.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 896721,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_122.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_122.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 369168,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_123.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_123.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 158459,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_124.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_124.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 369281,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_125.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_125.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 149531,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_126.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_126.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 503851,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_127.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_127.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 552466,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_128.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_128.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 559796,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_129.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_129.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 449754,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_130.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_130.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 579212,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_131.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_131.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 578323,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_132.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_132.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 233813,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_133.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_133.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 229855,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_134.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_134.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 100485,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_135.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_135.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 358005,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_136.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_136.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 402565,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_137.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_137.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 282547,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_138.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_138.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 124249,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_139.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_139.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 270815,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_140.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_140.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 122004,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_141.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_141.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 243969,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_142.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_142.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 228804,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_143.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_143.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 254460,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_144.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_144.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 749682,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_145.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_145.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 107657,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_146.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_146.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 110888,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_147.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_147.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 229348,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_148.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_148.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 387876,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_149.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_149.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 265801,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_150.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_150.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 131738,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_151.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_151.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 94244,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_152.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_152.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 158317,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_153.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_153.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 92992,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_01.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_01.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 533141,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_02.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_02.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 460056,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_03.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_03.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 695385,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_04.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_04.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 685826,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_05.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_05.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 571054,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_06.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_06.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 273611,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_07.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_07.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 479668,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_08.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_08.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 617295,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_09.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_09.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 604237,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_10.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_10.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 599633,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_11.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_11.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 633084,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_2511_r2_add_12.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_2511_r2_add_12.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 698072,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_01.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_01.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 42941,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_02.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_02.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 164457,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_03.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_03.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 159962,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_04.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_04.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 102380,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_05.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_05.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 143704,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_06.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_06.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 136294,
+      "status": "CAPTURED_REAL"
+    },
+    {
+      "file": "press_day55_07.png",
+      "folder": "s04_press_official",
+      "rel_path": "assets/s04_press_official/press_day55_07.png",
+      "width": 1280,
+      "height": 900,
+      "bytes": 86075,
+      "status": "CAPTURED_REAL"
+    }
+  ],
+  "blocked_or_unavailable": [
+    {
+      "dataset": "S06",
+      "row_index": 101,
+      "row_key": "S06_0102",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0sh2TCCXymJKsxsRrBQP3r1HNVutpahGdu4rheDbWSKibMJsrWDyLBpGRD65PevV5l&id=61578239137912",
+      "reason_category": "DEAD_404_OR_UNAVAILABLE",
+      "detail": "Content unavailable/deleted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 123,
+      "row_key": "S06_0124",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02CYmUbL3URac7KSRZcbXSu9W6ZcoBfZhZ6jydZipRWh555y9uPL7YFnr3z7XGwEr7l&id=61578239137912",
+      "reason_category": "DEAD_404_OR_UNAVAILABLE",
+      "detail": "Content unavailable/deleted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 240,
+      "row_key": "S06_0241",
+      "url": "https://www.facebook.com/reel/2228148688581769",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 278,
+      "row_key": "S06_0279",
+      "url": "https://www.facebook.com/reel/1547013317481123",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 308,
+      "row_key": "S06_0309",
+      "url": "https://www.facebook.com/reel/2095986454612600",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 310,
+      "row_key": "S06_0311",
+      "url": "https://www.facebook.com/reel/1077823825059514",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 396,
+      "row_key": "S06_0397",
+      "url": "https://www.facebook.com/groups/1715252285361436/permalink/4717342458485722",
+      "reason_category": "FB_GROUP_RESTRICTED",
+      "detail": "Group content unavailable/restricted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 397,
+      "row_key": "S06_0398",
+      "url": "https://www.facebook.com/groups/1696588171256184/posts/2159036948344635/",
+      "reason_category": "FB_GROUP_RESTRICTED",
+      "detail": "Group content unavailable/restricted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 424,
+      "row_key": "S06_0425",
+      "url": "https://www.facebook.com/reel/1120005193949755",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 457,
+      "row_key": "S06_0458",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid0spfyAZZhwtQYk9uq5N2UWVcrGRQxGovdJu2EKn7k4AYZL9W956EXNTSXSrU3QHUwl&id=61578239137912",
+      "reason_category": "DEAD_404_OR_UNAVAILABLE",
+      "detail": "Content unavailable/deleted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 510,
+      "row_key": "S06_0511",
+      "url": "https://www.facebook.com/groups/timkiemcohoikinhdoanh/permalink/1100738049069295",
+      "reason_category": "FB_GROUP_RESTRICTED",
+      "detail": "Group content unavailable/restricted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 566,
+      "row_key": "S06_0567",
+      "url": "https://www.facebook.com/reel/1128990426318540/",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 568,
+      "row_key": "S06_0569",
+      "url": "https://www.facebook.com/groups/176200582475232/posts/28828913640110544/",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 575,
+      "row_key": "S06_0576",
+      "url": "https://www.facebook.com/reel/1477456447779844",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 576,
+      "row_key": "S06_0577",
+      "url": "https://www.facebook.com/reel/29053437977647325",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 577,
+      "row_key": "S06_0578",
+      "url": "https://www.facebook.com/reel/2967091643636738",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 585,
+      "row_key": "S06_0586",
+      "url": "https://www.facebook.com/groups/176200582475232/permalink/28828913640110544",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 607,
+      "row_key": "S06_0608",
+      "url": "https://www.facebook.com/groups/246543490636389/permalink/1478742480749811",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 636,
+      "row_key": "S06_0637",
+      "url": "https://www.facebook.com/groups/246543490636389/permalink/1481950173762375",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 639,
+      "row_key": "S06_0640",
+      "url": "https://www.facebook.com/groups/176200582475232/permalink/28727864100215499",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 646,
+      "row_key": "S06_0647",
+      "url": "https://www.facebook.com/groups/176200582475232/posts/28840737562261485/",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 661,
+      "row_key": "S06_0662",
+      "url": "https://www.facebook.com/groups/176200582475232/posts/28890464540622120/",
+      "reason_category": "FB_LOGIN_WALL",
+      "detail": "Text-only login wall prompt with 0 articles"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 680,
+      "row_key": "S06_0681",
+      "url": "https://www.facebook.com/story.php?story_fbid=122198948708941304&id=61578239137912",
+      "reason_category": "DEAD_404_OR_UNAVAILABLE",
+      "detail": "Content unavailable/deleted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 698,
+      "row_key": "S06_0699",
+      "url": "https://www.facebook.com/permalink.php?story_fbid=pfbid02PGPrzo7TRE2RNHxQizF4L3qhx6TMKBWxLg6s1UTy7x8qtywKG3gdHGncJRjGLA2Ql&id=61590190719433",
+      "reason_category": "DEAD_404_OR_UNAVAILABLE",
+      "detail": "Content unavailable/deleted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 726,
+      "row_key": "S06_0727",
+      "url": "https://www.facebook.com/groups/864491913152281/permalink/1083075974627206/",
+      "reason_category": "FB_GROUP_RESTRICTED",
+      "detail": "Group content unavailable/restricted marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 813,
+      "row_key": "S06_0814",
+      "url": "https://www.facebook.com/tran.quoc.tuan.11738/videos/1120145997231689",
+      "reason_category": "DEAD_404_OR_UNAVAILABLE",
+      "detail": "Matched video removed marker"
+    },
+    {
+      "dataset": "S06",
+      "row_index": 857,
+      "row_key": "S06_0858",
+      "url": "https://www.facebook.com/reel/1793752768625144",
+      "reason_category": "FB_REEL_BLOCKED_OR_TIMEOUT",
+      "detail": "Reel page unavailable/error marker"
+    },
+    {
+      "dataset": "S07",
+      "row_index": 693,
+      "row_key": "S07-0694-99MDp5nK9xo",
+      "url": "https://www.youtube.com/watch?v=99MDp5nK9xo",
+      "reason_category": "COPYRIGHT_OR_GEO_BLOCKED",
+      "detail": "Video không có sẵn\nVideo này đã bị chặn do có nội dung được xác nhận quyền sở hữu của Asian Football Confederation."
+    },
+    {
+      "dataset": "S07",
+      "row_index": 833,
+      "row_key": "S07-0834-O10yz2LwSxk",
+      "url": "https://www.youtube.com/watch?v=O10yz2LwSxk",
+      "reason_category": "UNAVAILABLE",
+      "detail": "Video không có sẵn"
+    },
+    {
+      "dataset": "S07",
+      "row_index": 968,
+      "row_key": "S07-0969-jqN8GcckHxE",
+      "url": "https://www.youtube.com/watch?v=jqN8GcckHxE",
+      "reason_category": "UNAVAILABLE",
+      "detail": "Video không có sẵn"
+    },
+    {
+      "dataset": "S07",
+      "row_index": 1252,
+      "row_key": "S07-1253-ZVspRt2ebY8",
+      "url": "https://www.youtube.com/watch?v=ZVspRt2ebY8",
+      "reason_category": "COPYRIGHT_OR_GEO_BLOCKED",
+      "detail": "Video không có sẵn\nNgười tải lên không cung cấp video này tại quốc gia của bạn"
+    },
+    {
+      "dataset": "S07",
+      "row_index": 1358,
+      "row_key": "S07-1359-sewN8koag2c",
+      "url": "https://www.youtube.com/watch?v=sewN8koag2c",
+      "reason_category": "UNAVAILABLE",
+      "detail": "Video không có sẵn\nHiện không có video này"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 54,
+      "row_key": "S08:TT-076",
+      "url": "https://www.tiktok.com/@.radar.sn.c/video/7699430218892643591",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_invalid,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 77,
+      "row_key": "S08:TT-057",
+      "url": "https://www.tiktok.com/@asiasports.bdvn/video/7699697117287222535",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 80,
+      "row_key": "S08:TT-063",
+      "url": "https://www.tiktok.com/@hahuyhieu227/video/7699718561966607637",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: status_self_see"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 84,
+      "row_key": "S08:TT-068",
+      "url": "https://www.tiktok.com/@thanhnham_12/video/7700183425554173202",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: status_self_see"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 86,
+      "row_key": "S08:TT-075",
+      "url": "https://www.tiktok.com/@nguyenvinh485/video/7699539050788605190",
+      "reason_category": "VIDEO_UNAVAILABLE",
+      "detail": "Rehydration statusCode=10222: author_secret"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 278,
+      "row_key": "S08:TT-0279",
+      "url": "https://www.tiktok.com/@ln33920/video/7700414992344010002",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: status_self_see"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 314,
+      "row_key": "S08:TT-0315",
+      "url": "https://www.tiktok.com/@nguyenle.rwm/video/7700944125310389524",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 316,
+      "row_key": "S08:TT-0317",
+      "url": "https://www.tiktok.com/@nguyenle.rwm/video/7700956984169745685",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 319,
+      "row_key": "S08:TT-0320",
+      "url": "https://www.tiktok.com/@nguyenle.rwm/video/7700849314985217300",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 342,
+      "row_key": "S08:TT-0343",
+      "url": "https://www.tiktok.com/@vietxuan_1978/video/7695295769649237268",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_geo_filter,status_deleted"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 382,
+      "row_key": "S08:TT-0383",
+      "url": "https://www.tiktok.com/@petikdotcom/video/7694347956518079765",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 436,
+      "row_key": "S08:TT-0437",
+      "url": "https://www.tiktok.com/@asiasportsvn/video/7701163382698970389",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 449,
+      "row_key": "S08:TT-0450",
+      "url": "https://www.tiktok.com/@asiasports.bdvn/video/7701325746333109524",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_status,status_reviewing"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 454,
+      "row_key": "S08:TT-0455",
+      "url": "https://www.tiktok.com/@chuquoc8000/video/7701300863100407061",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: status_deleted"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 469,
+      "row_key": "S08:TT-0470",
+      "url": "https://www.tiktok.com/@tedtrantv/video/7701666978583777542",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: item doesn't exist"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 477,
+      "row_key": "S08:TT-0478",
+      "url": "https://www.tiktok.com/@fptplay.bongdaviet/video/7701702834961632520",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: status_self_see"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 484,
+      "row_key": "S08:TT-0485",
+      "url": "https://www.tiktok.com/@vff.official/video/7702035093006462470",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: item doesn't exist"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 488,
+      "row_key": "S08:TT-0489",
+      "url": "https://www.tiktok.com/@fptplay.bongdaviet/video/7702114092747607857",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: item doesn't exist"
+    },
+    {
+      "dataset": "S08",
+      "row_index": 704,
+      "row_key": "S08:TT-0705",
+      "url": "https://www.tiktok.com/@daitinhot/video/7598089092110224648",
+      "reason_category": "DEAD_404",
+      "detail": "Rehydration statusCode=10204: author_geo_filter"
+    }
+  ]
+}

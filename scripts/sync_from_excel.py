@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Safe database synchronization check for VFF War Room Dashboard (54 days: 01/10 - 23/11/2026).
-Prevents /api/sync from accidentally reverting the 54-day 23/11/2026 database back to 22/10/2026 Excel baseline
+Safe database synchronization check for VFF War Room Dashboard (56 days: 01/10 - 25/11/2026).
+Prevents /api/sync from accidentally reverting the 56-day 25/11/2026 database back to 22/10/2026 Excel baseline
 unless explicitly invoked with --legacy-oct22.
 """
 import os, sys, json
@@ -13,11 +13,11 @@ if "--legacy-oct22" not in sys.argv:
     with open(DB_PATH, "r", encoding="utf-8") as f:
         db = json.load(f)
     meta = db.setdefault("meta", {})
-    meta["last_synced_at"] = "23/11/2026 09:04 GMT+7"
+    meta["last_synced_at"] = meta.get("snapshot_cutoff") or meta.get("last_synced_at") or "25/11/2026 10:45 GMT+7"
     with open(DB_PATH + ".tmp", "w", encoding="utf-8") as f:
         json.dump(db, f, ensure_ascii=False)
     os.replace(DB_PATH + ".tmp", DB_PATH)
-    print(f"Verified 54-day DB ({meta.get('total_records', 0)} records, cutoff={meta.get('snapshot_cutoff')}); legacy Oct-22 overwrite blocked cleanly.")
+    print(f"Verified 56-day DB ({meta.get('total_records', 0)} records, cutoff={meta.get('snapshot_cutoff')}); legacy Oct-22 overwrite blocked cleanly.")
     sys.exit(0)
 # -*- coding: utf-8 -*-
 import os

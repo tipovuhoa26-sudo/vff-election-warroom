@@ -46,20 +46,29 @@ function loadDb() {
 
 loadDb();
 
-function sendJson(res, status, payload) {
+function sendJson(res, status, payload, isHead = false) {
   const body = JSON.stringify(payload);
   res.writeHead(status, {
     'Content-Type': 'application/json; charset=utf-8',
+    'Content-Length': Buffer.byteLength(body, 'utf8'),
     'Access-Control-Allow-Origin': '*',
     'Cache-Control': 'no-store'
   });
-  res.end(body);
+  if (isHead) {
+    res.end();
+  } else {
+    res.end(body);
+  }
 }
 
-function sendFile(res, filePath, contentType, downloadName = null) {
+function sendFile(res, filePath, contentType, downloadName = null, isHead = false) {
   if (!fs.existsSync(filePath)) {
     res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-    res.end('404 Not Found: ' + filePath);
+    if (isHead) {
+      res.end();
+    } else {
+      res.end('404 Not Found: ' + filePath);
+    }
     return;
   }
   const stat = fs.statSync(filePath);
@@ -72,110 +81,34 @@ function sendFile(res, filePath, contentType, downloadName = null) {
     headers['Content-Disposition'] = `attachment; filename="${downloadName}"`;
   }
   res.writeHead(200, headers);
-  fs.createReadStream(filePath).pipe(res);
+  if (isHead) {
+    res.end();
+  } else {
+    fs.createReadStream(filePath).pipe(res);
+  }
 }
 
 const server = http.createServer((req, res) => {
   const parsed = url.parse(req.url, true);
-  const pathname = parsed.pathname;
+  const pathname = parsed.pathname || '/';
+  const isHead = req.method === 'HEAD';
+  const isGetOrHead = req.method === 'GET' || isHead;
 
   if (req.method === 'OPTIONS') {
     res.writeHead(204, {
       'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Methods': 'GET, HEAD, POST, OPTIONS',
       'Access-Control-Allow-Headers': 'Content-Type'
     });
     res.end();
     return;
   }
 
-  // Favicon handler: always 200 OK (never 404)
-  if (pathname === '/favicon.ico') {
-    const favPath = path.join(PUBLIC_DIR, 'favicon.ico');
-    if (fs.existsSync(favPath)) {
-      return sendFile(res, favPath, 'image/x-icon');
-    }
-    res.writeHead(204, {
-      'Content-Type': 'image/x-icon',
-      'Cache-Control': 'public, max-age=86400'
-    });
-    res.end();
-    return;
-  }
-
-  // API: Health & Snapshot Metadata
-  if (pathname === '/api/health' && req.method === 'GET') {
-    loadDb();
-    let excelMtime = null;
-    if (fs.existsSync(EXCEL_PATH)) {
-      excelMtime = fs.statSync(EXCEL_PATH).mtime.toISOString();
-    }
-    return sendJson(res, 200, {
-      status: 'online',
-      server_time: new Date().toISOString(),
-      data_mode: (cachedDb && cachedDb.meta && cachedDb.meta.data_mode) || 'SNAPSHOT_FROZEN',
-      snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '23/11/2026 09:04 GMT+7',
-      last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || null,
-      excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || excelMtime
-    });
-  }
-
-  // API: Full DB
-  if (pathname === '/api/db' && req.method === 'GET') {
-    loadDb();
-    return sendJson(res, 200, cachedDb || {});
-  }
-
-  // API: Meta & KPIs
-  if (pathname === '/api/meta' && req.method === 'GET') {
-    loadDb();
-    return sendJson(res, 200, cachedDb ? cachedDb.meta : {});
-  }
-
-  // API: Specific sheet with search & pagination
-  if (pathname.startsWith('/api/sheet/') && req.method === 'GET') {
-    loadDb();
-    const sheetName = decodeURIComponent(pathname.replace('/api/sheet/', ''));
-    const sheet = cachedDb && cachedDb.sheets ? cachedDb.sheets[sheetName] : null;
-    if (!sheet) {
-      return sendJson(res, 404, { error: 'Sheet not found', sheetName });
-    }
-    const q = (parsed.query.q || '').toString().trim().toLowerCase();
-    let rows = sheet.rows || [];
-    if (q) {
-      rows = rows.filter(r => Object.values(r).some(v => String(v).toLowerCase().includes(q)));
-    }
-    const offset = parseInt(parsed.query.offset || '0', 10);
-    const limit = parseInt(parsed.query.limit || '5000', 10);
-    return sendJson(res, 200, {
-      title: sheet.title,
-      subtitle: sheet.subtitle,
-      headers: sheet.headers,
-      total: rows.length,
-      rows: rows.slice(offset, offset + limit)
-    });
-  }
-
-  // API: Global search across all 12 sheets (35,160 records)
-  if (pathname === '/api/search' && req.method === 'GET') {
-    loadDb();
-    const q = (parsed.query.q || '').toString().trim().toLowerCase();
-    if (!q) return sendJson(res, 200, { query: '', count: 0, results: [] });
-    const results = [];
-    for (const [sn, sheet] of Object.entries(cachedDb.sheets || {})) {
-      for (const r of sheet.rows || []) {
-        if (Object.values(r).some(v => String(v).toLowerCase().includes(q))) {
-          results.push({ sheet: sn, headers: sheet.headers, row: r });
-          if (results.length >= 250) break;
-        }
-      }
-      if (results.length >= 250) break;
-    }
-    return sendJson(res, 200, { query: q, count: results.length, results });
-  }
-
   // API: Live sync from Master Excel
-  if (pathname === '/api/sync' && req.method === 'POST') {
+  if (pathname === '/api/sync') {
+    if (req.method !== 'POST') {
+      return sendJson(res, 405, { error: 'Method Not Allowed' }, isHead);
+    }
     if (!fs.existsSync(EXCEL_PATH)) {
       return sendJson(res, 404, {
         status: 'error',
@@ -194,44 +127,181 @@ const server = http.createServer((req, res) => {
       }
       execFile('python3', [buildScript], (err2, stdout2, stderr2) => {
         loadDb();
+        if (err2) {
+          return sendJson(res, 500, {
+            status: 'error',
+            message: 'Lỗi khi thực thi build_standalone_html.py: ' + err2.message,
+            html_rebuilt: false,
+            stderr: stderr2 || '',
+            stdout: (stdout || '') + '\n' + (stdout2 || '')
+          });
+        }
         return sendJson(res, 200, {
           status: 'ok',
           message: 'Đã đồng bộ dữ liệu thực tế từ Master Excel 12 Sheets thành công!',
           timestamp: new Date().toISOString(),
-          snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || '23/11/2026 09:04 GMT+7',
+          snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || null,
           last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || new Date().toISOString(),
           excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || null,
-          html_rebuilt: !err2,
-          stdout: stdout + '\n' + (stdout2 || '')
+          html_rebuilt: true,
+          stdout: (stdout || '') + '\n' + (stdout2 || '')
         });
       });
     });
     return;
   }
 
+  if (!isGetOrHead) {
+    return sendJson(res, 405, { error: 'Method Not Allowed' });
+  }
+
+  // Favicon handler: always 200/204 OK (never 404)
+  if (pathname === '/favicon.ico') {
+    const favPath = path.join(PUBLIC_DIR, 'favicon.ico');
+    if (fs.existsSync(favPath)) {
+      return sendFile(res, favPath, 'image/x-icon', null, isHead);
+    }
+    res.writeHead(204, {
+      'Content-Type': 'image/x-icon',
+      'Cache-Control': 'public, max-age=86400'
+    });
+    res.end();
+    return;
+  }
+
+  // API: Health & Snapshot Metadata
+  if (pathname === '/api/health') {
+    loadDb();
+    let excelMtime = null;
+    if (fs.existsSync(EXCEL_PATH)) {
+      excelMtime = fs.statSync(EXCEL_PATH).mtime.toISOString();
+    }
+    return sendJson(res, 200, {
+      status: 'online',
+      server_time: new Date().toISOString(),
+      data_mode: (cachedDb && cachedDb.meta && cachedDb.meta.data_mode) || 'SNAPSHOT_FROZEN',
+      snapshot_cutoff: (cachedDb && cachedDb.meta && cachedDb.meta.snapshot_cutoff) || null,
+      last_synced_at: (cachedDb && cachedDb.meta && cachedDb.meta.last_synced_at) || null,
+      excel_file_mtime: (cachedDb && cachedDb.meta && cachedDb.meta.excel_file_mtime) || excelMtime
+    }, isHead);
+  }
+
+  // API: Full DB
+  if (pathname === '/api/db') {
+    loadDb();
+    return sendJson(res, 200, cachedDb || {}, isHead);
+  }
+
+  // API: Meta & KPIs
+  if (pathname === '/api/meta') {
+    loadDb();
+    return sendJson(res, 200, cachedDb ? cachedDb.meta : {}, isHead);
+  }
+
+  // API: Specific sheet with search & pagination
+  if (pathname.startsWith('/api/sheet/')) {
+    loadDb();
+    let sheetName;
+    try {
+      sheetName = decodeURIComponent(pathname.replace('/api/sheet/', ''));
+    } catch (e) {
+      return sendJson(res, 400, { error: 'Malformed sheet name encoding' }, isHead);
+    }
+    const sheet = (cachedDb && cachedDb.sheets && Object.prototype.hasOwnProperty.call(cachedDb.sheets, sheetName))
+      ? cachedDb.sheets[sheetName]
+      : null;
+    if (!sheet) {
+      return sendJson(res, 404, { error: 'Sheet not found', sheetName }, isHead);
+    }
+    const rawOffset = parsed.query.offset;
+    const rawLimit = parsed.query.limit;
+    if (rawOffset !== undefined && !/^\d+$/.test(String(rawOffset))) {
+      return sendJson(res, 400, { error: 'Invalid offset parameter' }, isHead);
+    }
+    if (rawLimit !== undefined && !/^\d+$/.test(String(rawLimit))) {
+      return sendJson(res, 400, { error: 'Invalid limit parameter' }, isHead);
+    }
+    const q = (parsed.query.q || '').toString().trim().toLowerCase();
+    let rows = sheet.rows || [];
+    if (q) {
+      rows = rows.filter(r => Object.values(r).some(v => String(v).toLowerCase().includes(q)));
+    }
+    const offset = rawOffset !== undefined ? Math.max(0, parseInt(String(rawOffset), 10)) : 0;
+    const limit = rawLimit !== undefined ? Math.max(0, parseInt(String(rawLimit), 10)) : 5000;
+    return sendJson(res, 200, {
+      title: sheet.title,
+      subtitle: sheet.subtitle,
+      headers: sheet.headers,
+      total: rows.length,
+      rows: rows.slice(offset, offset + limit)
+    }, isHead);
+  }
+
+  // API: Global search across all 12 sheets (12 sheets + extra_2410)
+  if (pathname === '/api/search') {
+    loadDb();
+    if (!cachedDb || !cachedDb.sheets) {
+      return sendJson(res, 503, { error: 'Database unavailable' }, isHead);
+    }
+    const q = (parsed.query.q || '').toString().trim().toLowerCase();
+    if (!q) return sendJson(res, 200, { query: '', count: 0, results: [] }, isHead);
+    const results = [];
+    for (const [sn, sheet] of Object.entries(cachedDb.sheets || {})) {
+      for (const r of sheet.rows || []) {
+        if (Object.values(r).some(v => String(v).toLowerCase().includes(q))) {
+          results.push({ sheet: sn, headers: sheet.headers, row: r });
+          if (results.length >= 250) break;
+        }
+      }
+      if (results.length >= 250) break;
+    }
+    return sendJson(res, 200, { query: q, count: results.length, results }, isHead);
+  }
+
   // Downloads
   if (pathname === '/download/excel') {
-    return sendFile(res, EXCEL_PATH, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_24_10_2026.xlsx');
+    return sendFile(res, EXCEL_PATH, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'BAO_CAO_TONG_HOP_WARROOM_BAU_CU_VFF_24_10_2026.xlsx', isHead);
   }
   if (pathname === '/download/audit-excel') {
-    return sendFile(res, AUDIT_EXCEL_PATH, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'DANH_MUC_NGUON_DOI_CHIEU_VFF_24_10_2026.xlsx');
+    return sendFile(res, AUDIT_EXCEL_PATH, 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'DANH_MUC_NGUON_DOI_CHIEU_VFF_24_10_2026.xlsx', isHead);
   }
   if (pathname === '/download/pptx') {
-    return sendFile(res, PPTX_PATH, 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pptx');
+    return sendFile(res, PPTX_PATH, 'application/vnd.openxmlformats-officedocument.presentationml.presentation', 'BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pptx', isHead);
   }
   if (pathname === '/download/pdf') {
-    return sendFile(res, PDF_PATH, 'application/pdf', 'BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pdf');
+    return sendFile(res, PDF_PATH, 'application/pdf', 'BAO_CAO_WARROOM_BAU_CU_VFF_2026_US_ELECTION_STYLE.pdf', isHead);
   }
 
   // Default: Serve index.html
   if (pathname === '/' || pathname === '/index.html') {
-    return sendFile(res, path.join(PUBLIC_DIR, 'index.html'), 'text/html; charset=utf-8');
+    return sendFile(res, path.join(PUBLIC_DIR, 'index.html'), 'text/html; charset=utf-8', null, isHead);
+  }
+
+  // Read-only route for authoritative audit report
+  if (pathname === '/INTEGRITY_REPORT_LATEST.md') {
+    return sendFile(res, path.resolve(__dirname, '..', 'INTEGRITY_REPORT_LATEST.md'), 'text/markdown; charset=utf-8', null, isHead);
   }
 
   // Static files in public/
-  const safePath = path.normalize(pathname).replace(/^(\.\.[\/\\])+/, '');
-  const fullStaticPath = path.join(PUBLIC_DIR, safePath);
-  if (fs.existsSync(fullStaticPath) && fs.statSync(fullStaticPath).isFile()) {
+  let decodedPath;
+  try {
+    decodedPath = decodeURIComponent(pathname);
+  } catch (e) {
+    return sendJson(res, 400, { error: 'Malformed URL encoding' }, isHead);
+  }
+  if (decodedPath.includes('\0')) {
+    res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+    if (isHead) res.end(); else res.end('404 Not Found');
+    return;
+  }
+  const normalizedRel = path.posix.normalize('/' + decodedPath).replace(/^\/+/, '');
+  const fullStaticPath = path.resolve(PUBLIC_DIR, normalizedRel);
+  if (
+    fullStaticPath !== PUBLIC_DIR &&
+    fullStaticPath.startsWith(PUBLIC_DIR + path.sep) &&
+    fs.existsSync(fullStaticPath) &&
+    fs.statSync(fullStaticPath).isFile()
+  ) {
     const ext = path.extname(fullStaticPath).toLowerCase();
     const mimeMap = {
       '.html': 'text/html; charset=utf-8',
@@ -239,17 +309,22 @@ const server = http.createServer((req, res) => {
       '.css': 'text/css; charset=utf-8',
       '.json': 'application/json; charset=utf-8',
       '.xlsx': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      '.pdf': 'application/pdf',
+      '.pptx': 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+      '.md': 'text/markdown; charset=utf-8',
+      '.csv': 'text/csv; charset=utf-8',
+      '.ico': 'image/x-icon',
       '.png': 'image/png',
       '.jpg': 'image/jpeg',
       '.jpeg': 'image/jpeg',
       '.webp': 'image/webp',
       '.svg': 'image/svg+xml'
     };
-    return sendFile(res, fullStaticPath, mimeMap[ext] || 'application/octet-stream');
+    return sendFile(res, fullStaticPath, mimeMap[ext] || 'application/octet-stream', null, isHead);
   }
 
   res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
-  res.end('404 Not Found');
+  if (isHead) res.end(); else res.end('404 Not Found');
 });
 
 server.listen(PORT, () => {
